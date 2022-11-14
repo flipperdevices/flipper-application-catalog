@@ -1,0 +1,4 @@
+colorlog==6.7.0
+contextlib2==21.6.0
+PyYAML==6.0
+schema==0.7.5

@@ -1,0 +1,12 @@
+application:
+  name: "VZ89"
+  description: |
+    VZ89 sensor
+  changelog: |
+    - 0.1 - Initial release
+  github_url: "https://github.com/skotopes/flipper-vz89"
+  github_ref: "0.0.1"
+  manifest_path: ""
+  target:
+    - "zero"
+    - "nano"
