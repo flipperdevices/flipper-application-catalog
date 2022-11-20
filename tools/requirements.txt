@@ -1,4 +1,6 @@
 colorlog==6.7.0
 contextlib2==21.6.0
+dataclass-wizard==0.22.2
+GitPython==3.1.29
 PyYAML==6.0
 schema==0.7.5
