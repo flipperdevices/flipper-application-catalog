@@ -110,9 +110,11 @@ class AppBundler:
 
     def _load(self):
         try:
-            self._manifest = ApplicationManifest.from_yaml_file("manifest.yml")
+            self._manifest = ApplicationManifest.from_yaml_file(
+                self._manifest_yaml_path
+            )
         except FileNotFoundError:
-            raise BundlerException("File not found")
+            raise BundlerException(f"File '{self._manifest_yaml_path}' not found")
         except yaml.YAMLError as e:
             raise BundlerException(f"YAML error: {e}")
         self._log.info(f"Loaded app manifest from {self._manifest_yaml_path}")
