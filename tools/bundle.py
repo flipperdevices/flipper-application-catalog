@@ -5,7 +5,6 @@ import yaml
 import subprocess
 import logging
 import zipfile
-import argparse
 
 from dataclasses import dataclass, field
 from dataclass_wizard import YAMLWizard
@@ -13,6 +12,7 @@ from tempfile import TemporaryDirectory
 from git import Repo
 from pathlib import Path
 from shlex import quote
+from PIL import Image
 
 from flipper.app import App
 from flipper.appmanifest_core import AppManager, FlipperAppType, FlipperApplication
@@ -74,6 +74,8 @@ class ApplicationManifest(YAMLWizard):
 
 class AppBundler:
     UFBT_COMMAND = "ufbt.cmd" if os.name == "nt" else "ufbt"
+    ORANGE_BG_COLOR = (254, 138, 44)  # RGB for background color in screenshots
+    FLIPPER_SCREEN_SIZE = (128, 64)
 
     def __init__(self, manifest_yaml_path: str, bundle_path: str):
         self._log = logging.getLogger(self.__class__.__name__)
@@ -189,6 +191,32 @@ class AppBundler:
 
         self._log.debug(f"Updated: {self._manifest}")
 
+    def __process_screenshot(
+        self, screenshot_src_path: Path, screenshot_dst_path: Path
+    ):
+        self._validate_path(screenshot_src_path)
+        # Check image type / downsize x4 and convert to transparent png
+        img = Image.open(screenshot_src_path)
+        if img.mode != "RGBA":
+            img = img.convert("RGBA")
+        # TODO: guess downsize ratio?
+        downsized_resolution = (img.width // 4, img.height // 4)
+        if downsized_resolution != self.FLIPPER_SCREEN_SIZE:
+            raise BundlerException(
+                f"Screenshot {screenshot_src_path} has resolution {img.width}x{img.height}, "
+                f"expected {self.FLIPPER_SCREEN_SIZE[0]}x{self.FLIPPER_SCREEN_SIZE[1]}"
+            )
+
+        img = img.resize(downsized_resolution, resample=Image.Resampling.NEAREST)
+        # Set orange background to transparent
+        img.putdata(
+            tuple(
+                (255, 255, 255, 0) if pixel[:3] == self.ORANGE_BG_COLOR else pixel
+                for pixel in img.getdata()
+            )
+        )
+        img.save(screenshot_dst_path, "PNG")
+
     def _process_assets(self):
         icon_path = self._assets_dir / "icon.png"
         src_icon_path = self._code_dir / self._fam_manifest.fap_icon
@@ -200,13 +228,10 @@ class AppBundler:
         screenshot_dir.mkdir(parents=True, exist_ok=True)
         new_screenshot_paths = []
         for i, screenshot in enumerate(self._manifest.screenshots):
-            # TODO: check image type / convert to transparent png
             new_screenshot_path = (
                 screenshot_dir / f"{i}{os.path.splitext(screenshot)[1]}"
             )
-            screenshot_path = self._code_dir / screenshot
-            self._validate_path(screenshot_path)
-            shutil.copy(screenshot_path, new_screenshot_path)
+            self.__process_screenshot(self._code_dir / screenshot, new_screenshot_path)
             new_screenshot_paths.append(self._rel_path(new_screenshot_path))
 
         self._manifest.screenshots = new_screenshot_paths
