@@ -1,4 +1,3 @@
-import sys
 import os
 import shutil
 import yaml
@@ -91,9 +90,12 @@ class AppBundler:
         self._log.info(f"Working in '{self._working_dir}'")
         self._load()
 
-    def bundle(self):
+    def bundle(self, *, skip_lint: bool = False, skip_build: bool = False):
         self._fetch_sources()
-        self._check_sources()
+        if not skip_lint:
+            self._lint_sources()
+        if not skip_build:
+            self._build_sources()
         self._update_manifest_from_fap()
         self._process_includes()
         self._process_assets()
@@ -148,11 +150,15 @@ class AppBundler:
                 f"Unknown sourcecode type: {self._manifest.sourcecode.type}"
             )
 
-    def _check_sources(self):
+    def _lint_sources(self):
         try:
             self._log.info("Linting")
             subprocess.check_output([self.UFBT_COMMAND, "lint"], cwd=self._code_dir)
+        except subprocess.CalledProcessError as e:
+            raise BundlerException(f"Code checks failed: {e.output}")
 
+    def _build_sources(self):
+        try:
             self._log.info("Building")
             subprocess.check_output([self.UFBT_COMMAND], cwd=self._code_dir)
         except subprocess.CalledProcessError as e:
@@ -275,6 +281,18 @@ class Main(App):
             type=Path,
             help="Path to the bundle file",
         )
+        self.parser.add_argument(
+            "--nobuild",
+            action="store_true",
+            default=False,
+            help="Skip building the application",
+        )
+        self.parser.add_argument(
+            "--nolint",
+            action="store_true",
+            default=False,
+            help="Skip linting the application",
+        )
         self.parser.set_defaults(func=self.process)
 
     def before(self):
@@ -288,7 +306,7 @@ class Main(App):
             with AppBundler(
                 self.args.manifest_path, self.args.bundle_zip_path
             ) as bundler:
-                bundler.bundle()
+                bundler.bundle(skip_lint=self.args.nolint, skip_build=self.args.nobuild)
                 return 0
         except BundlerException as e:
             self.logger.exception(e)
