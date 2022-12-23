@@ -1,0 +1,86 @@
+name: "Build Flipper Application Package"
+author: "hedger"
+description: "Github Action that bundles your FZ app"
+inputs:
+  path:
+    description: "Path to bundle YML manifest"
+    required: true
+  channel:
+    description: "SDK channel to use"
+    required: false
+    default: "dev"
+  skip_lint:
+    description: "Skip lint checks"
+    required: false
+    default: "false"
+  skip_build:
+    description: "Skip build step"
+    required: false
+    default: "false"
+runs:
+  using: "composite"
+  steps:
+    - name: Set fap source path
+      shell: bash
+      run: >
+        if [ -z ${{ inputs.path }} ]; then
+          echo "YML_PATH=$GITHUB_WORKSPACE" >> $GITHUB_ENV
+        else
+          echo "YML_PATH=$GITHUB_WORKSPACE/${{ inputs.path }}" >> $GITHUB_ENV
+        fi
+
+    - name: Get ufbt
+      shell: bash
+      run: >
+        git clone https://github.com/flipperdevices/flipperzero-ufbt ${{ runner.temp }}/flipperzero-ufbt ;
+        echo "${{ runner.temp }}/flipperzero-ufbt" >> $GITHUB_PATH ;
+        echo "UFBT_ROOT=${{ runner.temp }}/flipperzero-ufbt" >> $GITHUB_ENV ;
+        echo "DIST_DIR=${{ runner.temp }}/dist" >> $GITHUB_ENV ;
+        echo "BUNDLER_ROOT=${{ github.action_path }}/../../../" >> $GITHUB_ENV
+
+    - name: Get commit id
+      shell: bash
+      run: >
+        echo "COMMIT_ID=latest" >> $GITHUB_ENV;
+        # curl -o directory.json https://update.flipperzero.one/firmware/directory.json;
+        # echo "COMMIT_ID=$(jq -r '.channels[0].versions[0].version' directory.json)" >> $GITHUB_ENV
+
+    - name: Cache toolchain
+      id: cache-fbt
+      uses: actions/cache@v3
+      env:
+        cache-name: cache-ufbt
+      with:
+        path: ${{ runner.temp }}/flipperzero-ufbt/.ufbt/
+        key: ${{ runner.os }}-${{ env.cache-name }}-${{ inputs.channel }}-${{ env.COMMIT_ID }}
+        restore-keys: |
+          ${{ runner.os }}-${{ env.cache-name }}-${{ inputs.channel }}-${{ env.COMMIT_ID }}
+
+    - if: ${{ steps.cache-fbt.outputs.cache-hit != 'true' }}
+      name: Update ufbt if cache not found
+      shell: bash
+      run: ufbt update --channel=${{ inputs.channel }}
+
+    - name: Setup build env
+      shell: bash
+      run: >
+        rm -rf ${{ env.DIST_DIR }} || true ;
+        mkdir ${{ env.DIST_DIR }} ;
+        BUNDLE_FLAGS="" ;
+        if [ ${{ inputs.skip_lint }} != 'false' ]; then
+          BUNDLE_FLAGS="--nolint" ;
+        fi ;
+        if [ ${{ inputs.skip_build }} != 'false' ]; then
+          BUNDLE_FLAGS="$BUNDLE_FLAGS --nobuild" ;
+        fi ;
+        export SCRIPT_PATH=${{ env.UFBT_ROOT }} ;
+        export FBT_TOOLCHAIN_PATH=$SCRIPT_PATH/.ufbt ;
+        source ${{ env.UFBT_ROOT }}/.ufbt/current/scripts/toolchain/fbtenv.sh ;
+        python3 -m pip install -r ${{ env.BUNDLER_ROOT }}/tools/requirements.txt ;
+        python3 ${{ env.BUNDLER_ROOT }}/tools/bundle.py $BUNDLE_FLAGS ${{ env.YML_PATH }} ${{ env.DIST_DIR }}/bundle.zip
+
+    - name: Upload artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: app
+        path: ${{ env.DIST_DIR }}/bundle.zip

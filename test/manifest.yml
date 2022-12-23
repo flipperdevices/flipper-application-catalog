@@ -1,0 +1,13 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/hedger/testapp.git
+    tag: v0.6
+description: |
+  A long app description.
+  Very long.
+changelog: "@CHANGELOG.md"
+screenshots:
+  - screenshots/flp0.png
+  - screenshots/flp1.png
+  - screenshots/flp2.png
