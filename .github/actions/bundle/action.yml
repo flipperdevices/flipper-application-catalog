@@ -17,6 +17,10 @@ inputs:
     description: "Skip build step"
     required: false
     default: "false"
+  bundle_output:
+    description: "Where to put app bundle. If empty, publishes an artifact"
+    required: false
+    default: ""
 runs:
   using: "composite"
   steps:
@@ -79,8 +83,15 @@ runs:
         python3 -m pip install -r ${{ env.BUNDLER_ROOT }}/tools/requirements.txt ;
         python3 ${{ env.BUNDLER_ROOT }}/tools/bundle.py $BUNDLE_FLAGS ${{ env.YML_PATH }} ${{ env.DIST_DIR }}/bundle.zip
 
+    - name: Copy bundle
+      if: inputs.bundle_output != ''
+      shell: bash
+      run: >
+        cp ${{ env.DIST_DIR }}/bundle.zip ${{ inputs.bundle_output }}
+
     - name: Upload artifact
+      if: inputs.bundle_output == ''
       uses: actions/upload-artifact@v3
       with:
-        name: app
+        name: bundle
         path: ${{ env.DIST_DIR }}/bundle.zip

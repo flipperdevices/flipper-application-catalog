@@ -8,7 +8,7 @@ on:
       - dev
 
 jobs:
-  bundle_dev:
+  bundle_dev_artifact:
     runs-on: ubuntu-latest
 
     steps:
@@ -19,4 +19,17 @@ jobs:
         uses: ./.github/actions/bundle
         with:
           path: test/manifest.yml
-          channel: dev
+
+  bundle_dev:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Build bundle
+        uses: ./.github/actions/bundle
+        with:
+          channel: rc
+          path: test/manifest.yml
+          bundle_output: app_bundle.zip
