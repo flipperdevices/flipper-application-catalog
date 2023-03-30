@@ -1,4 +1,4 @@
-name: Test action
+name: Bundle
 
 on:
   workflow_dispatch:
