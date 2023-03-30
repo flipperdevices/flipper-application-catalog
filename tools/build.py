@@ -28,13 +28,13 @@ class Main(App):
     def process(self):
         with Session() as session:
             # Get bundle from Archivarius through REST
-            bundle = self.get_bundle_zip(session, self.bundle_url)
+            bundle = self.get_bundle_zip(session, self.args.bundle_url)
 
             # processing bundle
             # ...
 
             # Post new application build to Archivarius through REST
-            self.post_application_build(session, self.upload_url, ...)
+            self.post_application_build(session, self.args.upload_url, ...)
 
         return 0
 
