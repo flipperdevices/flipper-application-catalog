@@ -14,7 +14,7 @@ class Main(App):
         self.parser.set_defaults(func=self.process)
 
     def process(self):
-        pass
+        return 0
 
 
 if __name__ == "__main__":
