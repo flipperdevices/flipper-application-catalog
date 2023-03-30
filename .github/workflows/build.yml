@@ -24,7 +24,6 @@ jobs:
           echo "${{ runner.temp }}/flipperzero-ufbt" >> $GITHUB_PATH ;
           echo "UFBT_ROOT=${{ runner.temp }}/flipperzero-ufbt" >> $GITHUB_ENV ;
           echo "DIST_DIR=${{ runner.temp }}/dist" >> $GITHUB_ENV ;
-          echo "BUNDLER_ROOT=${{ github.action_path }}/../../../" >> $GITHUB_ENV ;
           if [ ${{ inputs.channel }} == 'dev' ] ; then
             echo "UPDATE_CHANNEL=development" >> $GITHUB_ENV ;
           elif [ ${{ inputs.channel }} == 'rc' ] ; then
@@ -66,5 +65,5 @@ jobs:
           export SCRIPT_PATH=${{ env.UFBT_ROOT }} ;
           export FBT_TOOLCHAIN_PATH=$SCRIPT_PATH/.ufbt ;
           source ${{ env.UFBT_ROOT }}/.ufbt/current/scripts/toolchain/fbtenv.sh ;
-          python3 -m pip install -r ${{ env.BUNDLER_ROOT }}/tools/requirements.txt ;
-          python3 ${{ env.BUNDLER_ROOT }}/tools/build.py ${{ inputs.bundle_url }} ${{ inputs.upload_url }}
+          python3 -m pip install -r tools/requirements.txt ;
+          python3 tools/build.py ${{ inputs.bundle_url }} ${{ inputs.upload_url }}
