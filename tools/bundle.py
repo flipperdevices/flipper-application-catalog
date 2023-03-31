@@ -13,6 +13,7 @@ from pathlib import Path
 from shlex import quote
 from PIL import Image
 
+from typing import Dict, List
 from flipper.app import App
 from flipper.appmanifest_core import AppManager, FlipperAppType, FlipperApplication
 
@@ -24,7 +25,7 @@ class BundlerException(Exception):
 @dataclass
 class CodeLocation:
     type: str
-    location: dict[str, str]
+    location: Dict[str, str]
 
 
 @dataclass
@@ -38,8 +39,8 @@ class ApplicationManifest(YAMLWizard):
     category: str = "Misc"
     description: str = ""
     changelog: str = ""
-    screenshots: list[str] = field(default_factory=list)
-    targets: list[str] = field(default_factory=lambda: ["all"])
+    screenshots: List[str] = field(default_factory=list)
+    targets: List[str] = field(default_factory=lambda: ["all"])
 
     def sync_from(self, app: FlipperApplication):
         field_map = {

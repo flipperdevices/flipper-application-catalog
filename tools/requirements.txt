@@ -1,6 +1,15 @@
+certifi==2022.12.7
+charset-normalizer==3.1.0
 colorlog==6.7.0
 contextlib2==21.6.0
 dataclass-wizard==0.22.2
+gitdb==4.0.10
 GitPython==3.1.29
+idna==3.4
+Pillow==9.4.0
 PyYAML==6.0
+requests==2.28.2
 schema==0.7.5
+smmap==5.0.0
+typing_extensions==4.5.0
+urllib3==1.26.15
