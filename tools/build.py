@@ -1,7 +1,10 @@
 import io
 import os
+import time
+import subprocess
 import zipfile
 import tempfile
+from pathlib import Path
 from flipper.app import App
 from requests import Session
 
@@ -37,14 +40,16 @@ class Main(App):
         the received bundle from Archivarius
         :return: The path in which the build will be located
         """
-        os.chdir(bundle_path + "/code")
-        # create images (may not be needed in future versions)
-        if not os.path.exists("images"):
-            os.mkdir("images")
-        # run build
-        os.system("ufbt")
+        main_dir = os.path.join(bundle_path, "code")
 
-        return "./dist/demo_app.fap"
+        # create images (may not be needed in future versions)
+        if not os.path.exists(os.path.join(main_dir, "images")):
+            os.mkdir(os.path.join(main_dir, "images"))
+
+        # run ufbt to build
+        subprocess.call('ufbt', cwd=main_dir, shell=True)
+
+        return os.path.join(main_dir, *("dist", "demo_app.fap"))
 
     @staticmethod
     def upload_application_build(session: Session, uri: str, build_path: str) -> bool:
