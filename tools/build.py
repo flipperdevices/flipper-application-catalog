@@ -9,7 +9,13 @@ from flipper.app import App
 from requests import Session
 
 
-class Main(App):
+class RequestsMixin:
+    headers = {
+        "Authorization": f"Bearer {'*'}"
+    }
+
+
+class Main(App, RequestsMixin):
     def init(self):
         self.parser.add_argument(
             "bundle_url",
@@ -23,13 +29,12 @@ class Main(App):
 
     #http://172.30.1.22:8000/api/v0/application/application_bundle.zip
 
-    @staticmethod
-    def download_and_extract_bundle(session: Session, uri: str, extract_path: str) -> None:
+    def download_and_extract_bundle(self, session: Session, uri: str, extract_path: str) -> None:
         """
         A method for retrieving the bundle required for the build
         :return: Upload status code
         """
-        response = session.get(uri, stream=True)
+        response = session.get(uri, stream=True, headers=self.headers)
         z = zipfile.ZipFile(io.BytesIO(response.content))
         z.extractall(extract_path)
 
@@ -51,8 +56,7 @@ class Main(App):
 
         return os.path.join(main_dir, *("dist", "demo_app.fap"))
 
-    @staticmethod
-    def upload_application_build(session: Session, uri: str, build_path: str) -> bool:
+    def upload_application_build(self, session: Session, uri: str, build_path: str) -> bool:
         """
         Method for sending the final build to the Archivarius
         :return: Upload status code
@@ -60,7 +64,7 @@ class Main(App):
         files = {
             'build': open(build_path, 'rb')
         }
-        response = session.post(uri, files=files)
+        response = session.post(uri, files=files, headers=self.headers)
         return response.status_code == 201
 
     def process(self) -> int:
