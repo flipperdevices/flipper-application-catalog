@@ -18,42 +18,52 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: hedger/flipperzero-ufbt-action@v1a
 
-      - name: Get ufbt
-        shell: bash
-        run: >
-          git clone https://github.com/flipperdevices/flipperzero-ufbt ${{ runner.temp }}/flipperzero-ufbt ;
-          echo "${{ runner.temp }}/flipperzero-ufbt" >> $GITHUB_PATH ;
-          echo "UFBT_ROOT=${{ runner.temp }}/flipperzero-ufbt" >> $GITHUB_ENV ;
-          echo "DIST_DIR=${{ runner.temp }}/dist" >> $GITHUB_ENV ;
-          if [ ${{ inputs.channel }} == 'dev' ] ; then
-            echo "UPDATE_CHANNEL=development" >> $GITHUB_ENV ;
-          elif [ ${{ inputs.channel }} == 'rc' ] ; then
-            echo "UPDATE_CHANNEL=release-candidate" >> $GITHUB_ENV ;
-          elif [ ${{ inputs.channel }} == 'release' ] ; then
-            echo "UPDATE_CHANNEL=release" >> $GITHUB_ENV ;
-          else
-            echo Invalid channel type ;
-            exit 1 ;
-          fi
-
-      - name: Get commit id
-        shell: bash
-        run: >
-          curl -o ${{ runner.temp }}/directory.json https://update.flipperzero.one/firmware/directory.json;
-          echo VERSION_ID=$(jq -r '.channels[] | select(.id == ("${{ env.UPDATE_CHANNEL }}")).versions[0].version' ${{ runner.temp }}/directory.json) >> $GITHUB_ENV
-
-      - name: Cache toolchain
-        id: cache-ufbt
-        uses: actions/cache@v3
-        env:
-          cache-name: cache-ufbt
+      - name: Setup ufbt
+        uses: ./ # Uses an action in the root directory
         with:
-          path: ${{ runner.temp }}/flipperzero-ufbt/.ufbt/
-          key: ${{ runner.os }}-${{ env.cache-name }}-${{ inputs.channel }}-${{ env.VERSION_ID }}
-          restore-keys: |
-            ${{ runner.os }}-${{ env.cache-name }}-${{ inputs.channel }}-${{ env.VERSION_ID }}
+          use-ufbt-version: 'prerelease'
+          sdk-channel: 'dev'
+          task: 'none'
+
+#      - name: Checkout
+#        uses: actions/checkout@v3
+#
+#      - name: Get ufbt
+#        shell: bash
+#        run: >
+#          git clone https://github.com/flipperdevices/flipperzero-ufbt ${{ runner.temp }}/flipperzero-ufbt ;
+#          echo "${{ runner.temp }}/flipperzero-ufbt" >> $GITHUB_PATH ;
+#          echo "UFBT_ROOT=${{ runner.temp }}/flipperzero-ufbt" >> $GITHUB_ENV ;
+#          echo "DIST_DIR=${{ runner.temp }}/dist" >> $GITHUB_ENV ;
+#          if [ ${{ inputs.channel }} == 'dev' ] ; then
+#            echo "UPDATE_CHANNEL=development" >> $GITHUB_ENV ;
+#          elif [ ${{ inputs.channel }} == 'rc' ] ; then
+#            echo "UPDATE_CHANNEL=release-candidate" >> $GITHUB_ENV ;
+#          elif [ ${{ inputs.channel }} == 'release' ] ; then
+#            echo "UPDATE_CHANNEL=release" >> $GITHUB_ENV ;
+#          else
+#            echo Invalid channel type ;
+#            exit 1 ;
+#          fi
+#
+#      - name: Get commit id
+#        shell: bash
+#        run: >
+#          curl -o ${{ runner.temp }}/directory.json https://update.flipperzero.one/firmware/directory.json;
+#          echo VERSION_ID=$(jq -r '.channels[] | select(.id == ("${{ env.UPDATE_CHANNEL }}")).versions[0].version' ${{ runner.temp }}/directory.json) >> $GITHUB_ENV
+#
+#      - name: Cache toolchain
+#        id: cache-ufbt
+#        uses: actions/cache@v3
+#        env:
+#          cache-name: cache-ufbt
+#        with:
+#          path: ${{ runner.temp }}/flipperzero-ufbt/.ufbt/
+#          key: ${{ runner.os }}-${{ env.cache-name }}-${{ inputs.channel }}-${{ env.VERSION_ID }}
+#          restore-keys: |
+#            ${{ runner.os }}-${{ env.cache-name }}-${{ inputs.channel }}-${{ env.VERSION_ID }}
 
       - if: ${{ steps.cache-ufbt.outputs.cache-hit != 'true' }}
         name: Update ufbt if cache not found
