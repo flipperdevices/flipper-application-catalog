@@ -1,0 +1,30 @@
+name: Selftest
+
+on:
+  workflow_dispatch:
+
+jobs:
+  bundle_upload:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Build bundle
+        uses: ./.github/actions/bundle
+        with:
+          path: test/manifest.yml
+
+  bundle_copy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Build bundle
+        uses: ./.github/actions/bundle
+        with:
+          path: test/manifest.yml
+          bundle-output: app_bundle.zip

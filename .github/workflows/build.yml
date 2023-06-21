@@ -1,0 +1,94 @@
+name: Build
+run-name: Build ${{ inputs.application_name }} for ${{ inputs.target }}@${{ inputs.branch }}
+
+on:
+  workflow_dispatch:
+    inputs:
+      application_name:
+        description: "Application name"
+        required: false
+        default: Unknown
+      bundle_url:
+        description: "Application bundle URL"
+        required: true
+      branch:
+        description: "SDK branch to use"
+        required: true
+      target:
+        description: "SDK hardware target to use"
+        required: true
+      upload_url:
+        description: "Build results submit URL"
+        required: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Setup environment
+        id: env-setup
+        run: |
+          echo "::add-matcher::${{ github.workspace }}/.github/problem-matcher.json" 
+          echo "FAST_AUTH_TOKEN=${{ secrets.FAST_AUTH_TOKEN }}" >> $GITHUB_ENV
+          echo "ARCHIVARIUS_URL=${{ secrets.ARCHIVARIUS_URL }}" >> $GITHUB_ENV
+          echo "bundle-url=${{ secrets.ARCHIVARIUS_URL }}${{ inputs.bundle_url }}" >> $GITHUB_OUTPUT
+          echo "upload-url=${{ secrets.ARCHIVARIUS_URL }}${{ inputs.upload_url }}" >> $GITHUB_OUTPUT
+          echo "local-bundle-zip=${{ runner.temp }}/bundle.zip" >> $GITHUB_OUTPUT
+          echo "local-bundle-path=${{ runner.temp }}/app" >> $GITHUB_OUTPUT
+          echo "code-path=${{ runner.temp }}/app/code" >> $GITHUB_OUTPUT
+
+      - name: Download bundle file
+        run: |
+          curl --fail-with-body -L \
+            -H "Authorization: Bearer ${{ secrets.FAST_AUTH_TOKEN }}" \
+            -o ${{ steps.env-setup.outputs.local-bundle-zip }} \
+            ${{ steps.env-setup.outputs.bundle-url }}
+
+      - name: Unzip src bundle
+        run: |
+          unzip -qq ${{ steps.env-setup.outputs.local-bundle-zip }} -d ${{ steps.env-setup.outputs.local-bundle-path }}
+          APP_FAM="${{ steps.env-setup.outputs.code-path }}/application.fam"
+          echo "app-id=$(grep appid= $APP_FAM  | sed -n 's/.*appid="\([^"]*\)".*/\1/p')" >> $GITHUB_OUTPUT
+          echo "app-name=$(grep name= $APP_FAM | sed -n 's/.*name="\([^"]*\)".*/\1/p')" >> $GITHUB_OUTPUT
+
+      - name: Run ufbt
+        uses: flipperdevices/flipperzero-ufbt-action@v0.1.2
+        continue-on-error: true
+        id: ufbt
+        with: 
+          task: build
+          app-dir: ${{ steps.env-setup.outputs.code-path }}
+          sdk-branch: ${{ inputs.branch }}
+          sdk-hw-target: ${{ inputs.target }}
+
+      - name: Report build failures
+        id: report-build-failures
+        if: steps.ufbt.outputs.build-errors != ''
+        run: |
+          cat << "ERROR-EOF" > ${{ runner.temp }}/build-errors
+          ${{ steps.ufbt.outputs.build-errors }}
+          ERROR-EOF
+          curl --fail-with-body -G -X PATCH \
+            -H "Authorization: Bearer ${{ secrets.FAST_AUTH_TOKEN }}" \
+            --data-urlencode "code=1" \
+            --data-urlencode "description@${{ runner.temp }}/build-errors" \
+            ${{ steps.env-setup.outputs.upload-url }}/status
+          exit 1
+
+      - name: Zip artifacts
+        id: zip-artifacts
+        if: steps.ufbt.outputs.build-errors == ''
+        run: >
+          zip -qq -r -j ${{ runner.temp }}/build-artifacts.zip ${{ steps.ufbt.outputs.fap-artifacts }} ;
+          echo "artifact-path=${{ runner.temp }}/build-artifacts.zip" >> $GITHUB_OUTPUT
+
+      - name: Upload built files
+        if: steps.ufbt.outputs.build-errors == ''
+        run: |
+          curl --fail-with-body \
+            -H "Authorization: Bearer ${{ secrets.FAST_AUTH_TOKEN }}" \
+            -F "build=@${{ steps.zip-artifacts.outputs.artifact-path }}" \
+            ${{ steps.env-setup.outputs.upload-url }}
