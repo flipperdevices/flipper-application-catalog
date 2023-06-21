@@ -1,0 +1,123 @@
+name: Build and sumbit application package
+
+on:
+  push:
+    branches:
+      - dev
+  pull_request:
+
+jobs:
+  build-package:
+    name: Build and submit application package
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 1
+
+      - name: Get updated manifests
+        id: changed-files
+        uses: tj-actions/changed-files@v35
+        with:
+          files: |
+            **/manifest.yml
+          files_ignore: |
+            .github
+            test
+
+      - name: Check updated manifests
+        id: get-manifest
+        run: |
+          CHANGED_FILES_STR="${{ steps.changed-files.outputs.all_changed_files }}";
+          CHANGED_FILES=( $CHANGED_FILES_STR ) ;
+          CHANGED_FILES_COUNT=${#CHANGED_FILES[@]} ;
+          if [ "$CHANGED_FILES_COUNT" -gt "1" ] ; then
+            echo Only a single updated application manifest is expected! ;
+            exit 1 ;
+          elif [ "$CHANGED_FILES_COUNT" -eq "0" ] ; then
+            echo No updated application manifest found! ;
+            exit 0 ;
+          fi ;
+          echo "app-manifest=${CHANGED_FILES[0]}" >> $GITHUB_OUTPUT ;
+          echo "create-app-bundle=true" >> $GITHUB_OUTPUT ;
+
+      - name: Set up source code flag
+        id: source-code
+        run: |
+          if [ "${{ github.event_name }}" == "push" ] ; then
+            echo "skip=false" >> $GITHUB_OUTPUT ;
+          else
+            echo "skip=true" >> $GITHUB_OUTPUT ;
+          fi
+
+      - name: Run self-test
+        if: "!steps.get-manifest.outputs.create-app-bundle"
+        uses: ./.github/actions/bundle
+        with:
+          path: test/manifest.yml
+        
+      - name: Bundle application
+        id: app-bundle
+        if: steps.get-manifest.outputs.create-app-bundle
+        uses: ./.github/actions/bundle
+        with:
+          path: ${{ steps.get-manifest.outputs.app-manifest }}
+          skip-source-code: ${{ steps.source-code.outputs.skip }}
+          json-manifest: bundle.json
+          # Uncomment to submit bundles with broken code
+          # skip-build: true
+          # skip-lint: true
+
+      - name: Retry build with RC SDK
+        id: app-bundle-rc
+        if: steps.app-bundle.outcome == 'failure'
+        uses: ./.github/actions/bundle
+        with:
+          path: ${{ steps.get-manifest.outputs.app-manifest }}
+          skip-source-code: ${{ steps.source-code.outputs.skip }}
+          sdk-channel: rc
+          json-manifest: bundle.json
+
+      - name: Get succesful build output
+        id: get-bundle-path
+        if: steps.get-manifest.outputs.create-app-bundle && (steps.app-bundle.outputs.bundle-path != '' || steps.app-bundle-rc.outputs.bundle-path != '')
+        run: |
+          if [ -f "${{ steps.app-bundle.outputs.bundle-path }}" ] ; then
+            echo "path=${{ steps.app-bundle.outputs.bundle-path }}" >> $GITHUB_OUTPUT ;
+          elif [ -f $GITHUB_OUTPUT ] ; then
+            echo "path=${{ steps.app-bundle-rc.outputs.bundle-path }}" >> $GITHUB_OUTPUT ;
+          else
+            echo Failed to build application bundle! ;
+            exit 1 ;
+          fi
+          APPID=$(jq -r '.id' bundle.json) ;
+          APPVERSION=$(jq -r '.version' bundle.json) ;
+          echo "app-id=$APPID" >> $GITHUB_OUTPUT ;
+          echo "app-version=$APPVERSION" >> $GITHUB_OUTPUT ;
+
+      - name: Submit application bundle
+        id: bundle-submit
+        if: steps.get-manifest.outputs.create-app-bundle && github.event_name == 'push'
+        run: |
+          curl --fail-with-body \
+            -H "Authorization: Bearer ${{ secrets.FAST_AUTH_TOKEN }}" \
+            -F "bundle=@${{ steps.get-bundle-path.outputs.path }}" \
+            ${{ secrets.ARCHIVARIUS_URL }}/api/v0/application/version/bundle
+
+      - name: Check if version exists
+        if: steps.get-manifest.outputs.create-app-bundle && github.event_name != 'push' && steps.app-bundle.outputs.bundle-path != ''
+        run: |
+          VERSION_DATA=$(curl -s --fail-with-body \
+            ${{ secrets.ARCHIVARIUS_URL }}/api/v0/application/${{ steps.get-bundle-path.outputs.app-id }}/versions?version=${{ steps.get-bundle-path.outputs.app-version }});
+          if [ "$VERSION_DATA" != "[]" ] ; then
+            echo "Version ${{ steps.get-bundle-path.outputs.app-version }} for ${{ steps.get-bundle-path.outputs.app-id }} already exists!";
+            exit 1 ;
+          fi 
+
+      - name: Create bundle artifact
+        if: steps.get-manifest.outputs.create-app-bundle && github.event_name != 'push' && steps.app-bundle.outputs.bundle-path != ''
+        uses: actions/upload-artifact@v3
+        with:
+          name: bundle
+          path: ${{ steps.get-bundle-path.outputs.path }}
