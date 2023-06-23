@@ -29,6 +29,11 @@ jobs:
       - name: Check updated manifests
         id: get-manifest
         run: |
+          ARCHIVARIUS_URL=$(< .github/.ARCHIVARIUS_URL) ;
+          echo "ARCHIVARIUS_URL=${ARCHIVARIUS_URL}" >> $GITHUB_ENV ;
+          if [ "z{{ vars.CATALOG_STAGING }}" != "z" ] ; then
+            echo "BUNDLE_ALLOW_VERSION_MISMATCH=1" >> $GITHUB_ENV ;
+          fi ;
           CHANGED_FILES_STR="${{ steps.changed-files.outputs.all_changed_files }}";
           CHANGED_FILES=( $CHANGED_FILES_STR ) ;
           CHANGED_FILES_COUNT=${#CHANGED_FILES[@]} ;
@@ -103,17 +108,17 @@ jobs:
           curl --fail-with-body \
             -H "Authorization: Bearer ${{ secrets.FAST_AUTH_TOKEN }}" \
             -F "bundle=@${{ steps.get-bundle-path.outputs.path }}" \
-            ${{ secrets.ARCHIVARIUS_URL }}/api/v0/application/version/bundle
+            ${{ env.ARCHIVARIUS_URL }}/api/v0/application/version/bundle
 
       - name: Check if version exists
         if: steps.get-manifest.outputs.create-app-bundle && github.event_name != 'push' && steps.app-bundle.outputs.bundle-path != ''
         run: |
-          VERSION_DATA=$(curl -s --fail-with-body \
-            ${{ secrets.ARCHIVARIUS_URL }}/api/v0/application/${{ steps.get-bundle-path.outputs.app-id }}/versions?version=${{ steps.get-bundle-path.outputs.app-version }});
-          if [ "$VERSION_DATA" != "[]" ] ; then
-            echo "Version ${{ steps.get-bundle-path.outputs.app-version }} for ${{ steps.get-bundle-path.outputs.app-id }} already exists!";
+          VER_HTTP_CODE=$(curl -sw '%{http_code}' -o /dev/null \
+          "${{ env.ARCHIVARIUS_URL }}/api/v0/application/${{ steps.get-bundle-path.outputs.app-id }}/versions?version=${{ steps.get-bundle-path.outputs.app-version }}");
+          if [ "$VER_HTTP_CODE" != "404" ] ; then
+            echo "Version ${{ steps.get-bundle-path.outputs.app-version }} for ${{ steps.get-bundle-path.outputs.app-id }} already exists (or server failed, code ${VER_HTTP_CODE})!";
             exit 1 ;
-          fi 
+          fi
 
       - name: Create bundle artifact
         if: steps.get-manifest.outputs.create-app-bundle && github.event_name != 'push' && steps.app-bundle.outputs.bundle-path != ''

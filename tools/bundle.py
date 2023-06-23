@@ -62,7 +62,11 @@ class ApplicationManifest(YAMLWizard, key_transform="SNAKE"):
             "short_description": ("fap_description", None, False),
             "targets": ("targets", None, False),
             # Version matcher error flag must be set to "True" on release
-            "version": ("fap_version", lambda v: ".".join(map(str, v)), True),
+            "version": (
+                "fap_version",
+                lambda v: ".".join(map(str, v)),
+                os.environ.get("BUNDLE_ALLOW_VERSION_MISMATCH", "0") == "0",
+            ),
         }
 
         for yaml_field, (app_field, converter, must_match) in field_map.items():

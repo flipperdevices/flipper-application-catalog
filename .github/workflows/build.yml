@@ -31,11 +31,11 @@ jobs:
       - name: Setup environment
         id: env-setup
         run: |
+          ARCHIVARIUS_URL=$(< .github/.ARCHIVARIUS_URL)
+          echo "ARCHIVARIUS_URL=${ARCHIVARIUS_URL}" >> $GITHUB_ENV
           echo "::add-matcher::${{ github.workspace }}/.github/problem-matcher.json" 
-          echo "FAST_AUTH_TOKEN=${{ secrets.FAST_AUTH_TOKEN }}" >> $GITHUB_ENV
-          echo "ARCHIVARIUS_URL=${{ secrets.ARCHIVARIUS_URL }}" >> $GITHUB_ENV
-          echo "bundle-url=${{ secrets.ARCHIVARIUS_URL }}${{ inputs.bundle_url }}" >> $GITHUB_OUTPUT
-          echo "upload-url=${{ secrets.ARCHIVARIUS_URL }}${{ inputs.upload_url }}" >> $GITHUB_OUTPUT
+          echo "bundle-url=${ARCHIVARIUS_URL}${{ inputs.bundle_url }}" >> $GITHUB_OUTPUT
+          echo "upload-url=${ARCHIVARIUS_URL}${{ inputs.upload_url }}" >> $GITHUB_OUTPUT
           echo "local-bundle-zip=${{ runner.temp }}/bundle.zip" >> $GITHUB_OUTPUT
           echo "local-bundle-path=${{ runner.temp }}/app" >> $GITHUB_OUTPUT
           echo "code-path=${{ runner.temp }}/app/code" >> $GITHUB_OUTPUT
