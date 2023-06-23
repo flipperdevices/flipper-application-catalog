@@ -1,0 +1,13 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/hedger/flipper_nupogodi.git
+    commit_sha: c6594a33e5dcca89fecb4575c5d35cbac1da83ff
+category: "Games"
+short_description: |
+  "Ну, Погоди" - The classic Russian arcade game of quick reflexes, now on your Flipper Zero!
+description: "@README.md"
+changelog: "@changelog.md"
+screenshots:
+  - ".flipcorg/gallery/np1.png"
+  - ".flipcorg/gallery/np2.png"
