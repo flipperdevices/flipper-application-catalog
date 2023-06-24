@@ -20,7 +20,7 @@ Applications must be buildable with [ufbt](https://pypi.org/project/ufbt/) and c
 
 Application submission consists of two parts:
  - Application manifest: `applications/<category>/<application-id>/manifest.yml`, with all mandatory fields filled in. See [manifest format](./Manifest.md) for details.
- - An optional `README.md`` file with additional information about the application in the same directory as the manifest.
+ - An optional `README.md` file with additional information about the application in the same directory as the manifest.
 
 ## Validating Manifest
 
