@@ -6,13 +6,8 @@ sourcecode:
 category: "GPIO"
 short_description: |
   Pokemon exchange from Flipper Zero to Game Boy for Generation I (Pokemon Red, Blue, Yellow)
-name: "Pokemon Trading"
-id: "pokemon"
-version: "1.2"
 description: "@README_catalog.md"
 changelog: "@changelog.md"
-author: "Esteban Fuentealba"
-icon: "pokemon_10px.png"
 screenshots:
   - ".flipcorg/gallery/1.png"
   - ".flipcorg/gallery/2.png"

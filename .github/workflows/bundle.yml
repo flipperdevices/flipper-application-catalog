@@ -3,7 +3,7 @@ name: Build and sumbit application package
 on:
   push:
     branches:
-      - dev
+      - main
   pull_request:
 
 jobs:

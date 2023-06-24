@@ -354,10 +354,20 @@ class AppBundler:
 
         if len(known_ext_apps) == 0:
             raise BundlerException("No external applications found")
-        elif len(known_ext_apps) > 1:
-            raise BundlerException("Multiple external applications found")
+        elif len(known_ext_apps) == 1:
+            self._fam_manifest = known_ext_apps[0]
+        else:
+            if app := next(
+                filter(
+                    lambda app: app.appid == self._manifest.id, known_ext_apps
+                ),
+                None,
+            ):
+                self._log.info(f"Selected application {app.name}")
+                self._fam_manifest = app
+            else: 
+                raise BundlerException(f"Multiple external applications found, specify 'id' in the manifest.yml ({[app.appid for app in known_ext_apps]})")
 
-        self._fam_manifest = known_ext_apps[0]
         self._manifest.sync_from(self._fam_manifest)
 
     def _process_includes(self):
