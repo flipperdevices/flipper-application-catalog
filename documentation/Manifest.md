@@ -56,14 +56,16 @@ An application manifest is a YAML file that points to the application source cod
 | `short_description` | Yes | Short application description, plain text. | `fap_description` |
 | `description` | Yes | Application description. Supports limited Markdown. [Details](#loading-values-from-files) | None |
 | `name` | Yes | Application name | `name` |
-| `id` | Yes | Application ID. A lowercase string with no spaces. Must be unique | `appid` |
+| `id` | Yes | Application ID. A lowercase string with no spaces. Must be globally unique. | `appid` |
 | `category` | Yes | Application category. Must match manifest location within this repo. | `fap_category` |
 | `version` | Yes | Application version, in format "major.minor". | `fap_version` |
 | `author` | No | Application author | `fap_author` |
 | `icon` | No | Application icon. Must be 10x10 1-bit .png file. | `fap_icon` |
 | `targets` | No | A list of targets this application supports. See documentation on FAM Application Manifests for more. By default - includes all targets. | `targets` |
 
-It is recommended to specify as many fields as possible in `application.fam` and not in `manifest.yml`, to avoid duplication and keep the manifest file short.
+**It is recommended to specify as many fields as possible in `application.fam` and not in `manifest.yml`, to avoid duplication and keep the manifest file short.**
+
+If your `application.fam` defines multiple applications, you can specify the application ID in `manifest.yml` using `id` field. 
 
 The most important field is `sourcecode`. It points to the application source code repository. The repository must be public. See [Source code location](#source-code-location) for details.
 
