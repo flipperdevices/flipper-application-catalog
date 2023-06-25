@@ -1,0 +1,12 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/bettse/seader.git
+    commit_sha: 32a62619120e29134dad560346c55eb60c1ae32d
+short_description: Seader
+description: "Interface with a SAM from the Flipper Zero over UART"
+changelog: "@changelog.md"
+screenshots:
+  - .flipcorg/gallery/menu.png
+  - .flipcorg/gallery/pacs.png
+  - .flipcorg/gallery/save_menu.png
