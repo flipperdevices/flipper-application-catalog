@@ -50,9 +50,6 @@ jobs:
       - name: Unzip src bundle
         run: |
           unzip -qq ${{ steps.env-setup.outputs.local-bundle-zip }} -d ${{ steps.env-setup.outputs.local-bundle-path }}
-          APP_FAM="${{ steps.env-setup.outputs.code-path }}/application.fam"
-          echo "app-id=$(grep appid= $APP_FAM  | sed -n 's/.*appid="\([^"]*\)".*/\1/p')" >> $GITHUB_OUTPUT
-          echo "app-name=$(grep name= $APP_FAM | sed -n 's/.*name="\([^"]*\)".*/\1/p')" >> $GITHUB_OUTPUT
 
       - name: Run ufbt
         uses: flipperdevices/flipperzero-ufbt-action@v0.1.2
