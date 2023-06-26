@@ -4,7 +4,7 @@ sourcecode:
     origin: https://github.com/bettse/seader.git
     commit_sha: 32a62619120e29134dad560346c55eb60c1ae32d
 short_description: Seader
-description: "Interface with a SAM from the Flipper Zero over UART"
+description: "Requires addon: UART to mini-SIM adapter and HID SAM. Allows for reading credential from HID iClass, iClass SE, Desfire EV1, and Seos. Credentials can be saved in Flipper picopass format or as agnostic format for later features"
 changelog: "@changelog.md"
 screenshots:
   - .flipcorg/gallery/menu.png
