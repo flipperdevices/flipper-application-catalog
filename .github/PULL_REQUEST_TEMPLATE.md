@@ -8,7 +8,7 @@
 
 # Author Checklist (Fill this out)
 
-- [ ] I've read the [contribution guidelines](../blob/dev/documentation/Contributing.md) and my PR follows them
+- [ ] I've read the [contribution guidelines](../blob/main/documentation/Contributing.md) and my PR follows them
 - [ ] I own the code I'm submitting or have code owner's permission to submit it
 
 # Reviewer Checklist (Don't fill this out)
