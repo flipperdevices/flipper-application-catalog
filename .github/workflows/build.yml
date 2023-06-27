@@ -48,11 +48,11 @@ jobs:
             ${{ steps.env-setup.outputs.bundle-url }}
 
       - name: Unzip src bundle
+        id: unzip-bundle
         run: |
           unzip -qq ${{ steps.env-setup.outputs.local-bundle-zip }} -d ${{ steps.env-setup.outputs.local-bundle-path }}
-          APP_FAM="${{ steps.env-setup.outputs.code-path }}/application.fam"
-          echo "app-id=$(grep appid= $APP_FAM  | sed -n 's/.*appid="\([^"]*\)".*/\1/p')" >> $GITHUB_OUTPUT
-          echo "app-name=$(grep name= $APP_FAM | sed -n 's/.*name="\([^"]*\)".*/\1/p')" >> $GITHUB_OUTPUT
+          APPID=$(grep -e "^id: " "${{ steps.env-setup.outputs.local-bundle-path }}/manifest.yml" | cut -d" " -f2)
+          echo "appid=${APPID}" >> $GITHUB_OUTPUT
 
       - name: Run ufbt
         uses: flipperdevices/flipperzero-ufbt-action@v0.1.2
@@ -63,6 +63,7 @@ jobs:
           app-dir: ${{ steps.env-setup.outputs.code-path }}
           sdk-branch: ${{ inputs.branch }}
           sdk-hw-target: ${{ inputs.target }}
+          ufbt-args: -s fap_${{ steps.unzip-bundle.outputs.appid }}
 
       - name: Report build failures
         id: report-build-failures
