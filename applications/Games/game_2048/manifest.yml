@@ -1,0 +1,13 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/hedger/unleashedapps.git
+    subdir: game_2048
+    commit_sha: b572e0e13d7579d1de6dc43dd6389b545b6d039d
+short_description:  Slide and merge tiles to reach the elusive 2048 number on your Flipper!
+description: "@description.md"
+changelog: "@changelog.md"
+version: "0.3"
+screenshots:
+  - images/screenshot1.png
+  - images/screenshot2.png
