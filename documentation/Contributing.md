@@ -1,14 +1,13 @@
 # General Requirements
 
-Applications submitted to this repository must be open source and licensed under a permissive license (MIT, BSD, Apache, etc). The application source code must be hosted in a public Git repository. 
+ * Applications submitted to this repository must be licensed under an Open Source License of your choice, permitting building and distribution of the application in binary form by Flipper Application Catalogue's infrastructure.
+ * Applications and data they produce or process must not infringe on any third-party rights or trademarks.
 
-Applications are submitted as a pull request to this repository. The pull request must contain a manifest file with a link to the application source code repository and additional information, such as application name, description, author, screenshots, etc. 
-
-You can also include a `README.md` file with additional information about the application in the same directory as the manifest.
+Applications are submitted as a pull request to this repository. The pull request must contain a manifest file with a link to the application source code repository and additional information, such as application name, description, author, screenshots, etc. The application source code must be hosted in a public Git repository. 
 
 # Adding and Updating Applications
 
-To submit an application, fork this repository, add your application manifest and create a pull request, filling in the pull request template.
+To submit an application, fork this repository, add your application manifest and create a pull request, filling in the pull request template. You may also include a `README.md` file with additional information about the application in the same directory as the manifest.
 
 Recommended naming scheme for your branch is `<username>/<appid>_<appversion>`, where `username` is your GitHub username, `appid` is your application ID and `appversion` is your application's version. For example, `johndoe/myapp_1.0`.
 
