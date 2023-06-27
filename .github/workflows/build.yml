@@ -63,7 +63,6 @@ jobs:
           app-dir: ${{ steps.env-setup.outputs.code-path }}
           sdk-branch: ${{ inputs.branch }}
           sdk-hw-target: ${{ inputs.target }}
-          ufbt-args: -s fap_${{ steps.unzip-bundle.outputs.appid }}
 
       - name: Report build failures
         id: report-build-failures
@@ -83,7 +82,7 @@ jobs:
         id: zip-artifacts
         if: steps.ufbt.outputs.build-errors == ''
         run: >
-          zip -qq -r -j ${{ runner.temp }}/build-artifacts.zip ${{ steps.ufbt.outputs.fap-artifacts }} ;
+          zip -qq -r -j ${{ runner.temp }}/build-artifacts.zip $( grep ${{ steps.env-setup.outputs.appid }} <<< "${{ steps.ufbt.outputs.fap-artifacts }}" )
           echo "artifact-path=${{ runner.temp }}/build-artifacts.zip" >> $GITHUB_OUTPUT
 
       - name: Upload built files
