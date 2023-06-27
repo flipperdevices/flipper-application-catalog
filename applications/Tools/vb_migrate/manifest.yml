@@ -1,0 +1,14 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/GMMan/flipperzero-vb-migrate.git
+    commit_sha: e6c9da878ecbf879ec51c96ef131b745c69f1df4
+description: "@README_catalog.md"
+changelog: "@CHANGES.md"
+screenshots:
+  - .flipcorg/gallery/1.png
+  - .flipcorg/gallery/2.png
+  - .flipcorg/gallery/3.png
+  - .flipcorg/gallery/4.png
+  - .flipcorg/gallery/5.png
+  - .flipcorg/gallery/6.png
