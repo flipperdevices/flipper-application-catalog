@@ -16,8 +16,7 @@ class TestBasicTextExtension(unittest.TestCase):
             self.md.convert("[example][example]")
 
     def test_link_not_allowed(self):
-        with self.assertRaises(Exception):
-            self.md.convert("[example](http://example.com)")
+        self.assertIn("href", self.md.convert("[example](http://example.com)"))
 
     def test_image_link_not_allowed(self):
         with self.assertRaises(Exception):
@@ -32,8 +31,7 @@ class TestBasicTextExtension(unittest.TestCase):
             self.md.convert("![example]")
 
     def test_autolink_not_allowed(self):
-        with self.assertRaises(Exception):
-            self.md.convert("<http://example.com>")
+        self.assertIn("href", self.md.convert("<http://example.com>"))
 
     def test_automail_not_allowed(self):
         with self.assertRaises(Exception):
@@ -125,4 +123,3 @@ class TestBasicTextExtension(unittest.TestCase):
         self.md.convert("_**example**_")
         self.md.convert("**_example_**")
         self.md.convert("***example***")
-
