@@ -2,12 +2,12 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/quen0n/unitemp-flipperzero.git
-    commit_sha: 6dfe147c348877863d102771e0c6ade6e67cdbf8
+    commit_sha: 8541a2917422b89dea8d4933354cfd1ce18297d3
 category: "GPIO"
 short_description: |
   Application for reading temperature, humidity and pressure sensors like a DHT11/22, DS18B20, BMP280, HTU21 and more.
 description: "@README.md"
-changelog: "@changelog.md"
+changelog: "@CHANGELOG.md"
 version: "1.2"
 screenshots:
   - ".flipcorg/gallery/1.png"
