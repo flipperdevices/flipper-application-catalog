@@ -4,8 +4,6 @@ sourcecode:
     origin: https://github.com/oleksiikutuzov/flipperzero-lightmeter
     commit_sha: a24d644acf06a8381d38930d1b7260173978bc9c
     subdir: application
-id: "lightmeter"
-category: "GPIO"
 description: "@./README.md"
 changelog: "@./docs/changelog.md"
 screenshots:
