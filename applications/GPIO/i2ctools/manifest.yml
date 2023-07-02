@@ -1,0 +1,17 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/NaejEL/flipperzero-i2ctools.git
+    commit_sha: 51e0d451e25fab4b229ff020747c939e8f27d786
+id: "i2ctools"
+category: "GPIO"
+short_description: "Set of i2c tools"
+description: "@./docs/README.md"
+changelog: "@./docs/changelog.md"
+screenshots:
+  - "./screenshots/main_screen.png"
+  - "./screenshots/scan_screen.png"
+  - "./screenshots/sniff_screen.png"
+  - "./screenshots/send_screen.png"
+  - "./screenshots/infos_screen.png"
+
