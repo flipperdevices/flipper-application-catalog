@@ -1,0 +1,16 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/polarikus/flipper-zero_bc_scanner_emulator.git
+    commit_sha: 5baa4d52c5ce6585c444ef1bbec5c5c2a8e47cea
+id: "bc_scanner"
+category: "USB"
+short_description: "Emulates a barcode scanner for testing cash registers. Why buy a scanner when you have a flipper?"
+description: "@./.catalog/README.md"
+changelog: "@./.catalog/CHANGELOG.md"
+screenshots:
+  - "./.catalog/screenshots/AppIcon.png"
+  - "./.catalog/screenshots/BcFilemanage.png"
+  - "./.catalog/screenshots/BcRun.png"
+  - "./.catalog/screenshots/ScreeenBC.png"
+  - "./.catalog/screenshots/BcDone.png"
