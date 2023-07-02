@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/ginkage/FlippAirMouse.git
-    commit_sha: de2050d1899452e2db01a5f69566451284f3461a
+    commit_sha: 1006df3ad368e10c599886c4eba7d438f4c363d7
 short_description: Flipper Air Mouse
 description: "@DESCRIPTION.md"
 changelog: "@CHANGELOG.md"
