@@ -117,6 +117,7 @@ For fields that support loading values from files, Markdown formatting is suppor
  - Headers of levels 1-2
  - **Bold** and _italic_ text
  - Lists
+ - Links - automatic and inline
 
 ## Screenshots
 

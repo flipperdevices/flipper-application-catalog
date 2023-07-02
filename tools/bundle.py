@@ -156,13 +156,13 @@ class BasicTextExtension(Extension):
     def extendMarkdown(self, md):
         for md_element in (
             "backtick",
-            "reference",
-            "link",
+            # "reference",
+            # "link",
             "image_link",
             "image_reference",
             "short_reference",
             "short_image_ref",
-            "autolink",
+            # "autolink",
             "automail",
             "html",
             "entity",
