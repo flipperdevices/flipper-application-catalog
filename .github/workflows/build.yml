@@ -31,14 +31,14 @@ jobs:
       - name: Setup environment
         id: env-setup
         run: |
-          ARCHIVARIUS_URL=$(< .github/.ARCHIVARIUS_URL)
-          echo "ARCHIVARIUS_URL=${ARCHIVARIUS_URL}" >> $GITHUB_ENV
-          echo "::add-matcher::${{ github.workspace }}/.github/problem-matcher.json" 
-          echo "bundle-url=${ARCHIVARIUS_URL}${{ inputs.bundle_url }}" >> $GITHUB_OUTPUT
-          echo "upload-url=${ARCHIVARIUS_URL}${{ inputs.upload_url }}" >> $GITHUB_OUTPUT
-          echo "local-bundle-zip=${{ runner.temp }}/bundle.zip" >> $GITHUB_OUTPUT
-          echo "local-bundle-path=${{ runner.temp }}/app" >> $GITHUB_OUTPUT
-          echo "code-path=${{ runner.temp }}/app/code" >> $GITHUB_OUTPUT
+          ARCHIVARIUS_URL=$(< .github/.ARCHIVARIUS_URL) ;
+          echo "ARCHIVARIUS_URL=${ARCHIVARIUS_URL}" >> $GITHUB_ENV ;
+          echo "::add-matcher::${{ github.workspace }}/.github/problem-matcher.json" ;
+          echo "bundle-url=${ARCHIVARIUS_URL}${{ inputs.bundle_url }}" >> $GITHUB_OUTPUT ;
+          echo "upload-url=${ARCHIVARIUS_URL}${{ inputs.upload_url }}" >> $GITHUB_OUTPUT ; 
+          echo "local-bundle-zip=${{ runner.temp }}/bundle.zip" >> $GITHUB_OUTPUT ;
+          echo "local-bundle-path=${{ runner.temp }}/app" >> $GITHUB_OUTPUT ;
+          echo "code-path=${{ runner.temp }}/app/code" >> $GITHUB_OUTPUT ;
 
       - name: Download bundle file
         run: |
@@ -50,9 +50,9 @@ jobs:
       - name: Unzip src bundle
         id: unzip-bundle
         run: |
-          unzip -qq ${{ steps.env-setup.outputs.local-bundle-zip }} -d ${{ steps.env-setup.outputs.local-bundle-path }}
-          APPID=$(grep -e "^id: " "${{ steps.env-setup.outputs.local-bundle-path }}/manifest.yml" | cut -d" " -f2)
-          echo "appid=${APPID}" >> $GITHUB_OUTPUT
+          unzip -qq ${{ steps.env-setup.outputs.local-bundle-zip }} -d ${{ steps.env-setup.outputs.local-bundle-path }} ;
+          APPID=$(grep -e "^id: " "${{ steps.env-setup.outputs.local-bundle-path }}/manifest.yml" | cut -d" " -f2) ;
+          echo "appid=${APPID}" >> $GITHUB_OUTPUT ;
 
       - name: Run ufbt
         uses: flipperdevices/flipperzero-ufbt-action@v0.1.2
@@ -63,7 +63,6 @@ jobs:
           app-dir: ${{ steps.env-setup.outputs.code-path }}
           sdk-branch: ${{ inputs.branch }}
           sdk-hw-target: ${{ inputs.target }}
-          ufbt-args: -s fap_${{ steps.unzip-bundle.outputs.appid }}
 
       - name: Report build failures
         id: report-build-failures
@@ -76,15 +75,15 @@ jobs:
             -H "Authorization: Bearer ${{ secrets.FAST_AUTH_TOKEN }}" \
             --data-urlencode "code=1" \
             --data-urlencode "description@${{ runner.temp }}/build-errors" \
-            ${{ steps.env-setup.outputs.upload-url }}/status
-          exit 1
+            ${{ steps.env-setup.outputs.upload-url }}/status ;
+          exit 1 ;
 
       - name: Zip artifacts
         id: zip-artifacts
         if: steps.ufbt.outputs.build-errors == ''
         run: >
-          zip -qq -r -j ${{ runner.temp }}/build-artifacts.zip ${{ steps.ufbt.outputs.fap-artifacts }} ;
-          echo "artifact-path=${{ runner.temp }}/build-artifacts.zip" >> $GITHUB_OUTPUT
+          zip -qq -r -j ${{ runner.temp }}/build-artifacts.zip $( grep ${{ steps.unzip-bundle.outputs.appid }} <<< "${{ steps.ufbt.outputs.fap-artifacts }}" ) ;
+          echo "artifact-path=${{ runner.temp }}/build-artifacts.zip" >> $GITHUB_OUTPUT ;
 
       - name: Upload built files
         if: steps.ufbt.outputs.build-errors == ''
