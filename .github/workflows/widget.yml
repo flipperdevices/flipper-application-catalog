@@ -1,13 +1,7 @@
-name: Status
-run-name: Create build statuses for ${{ inputs.application-name }}
+name: Widget
+run-name: Create widgets for ${{ inputs.application-name }}
 
 on:
-  workflow_run:
-    workflows: ["bundle"]
-    branches:
-      - dev
-    types:
-      - completed
   workflow_dispatch:
     inputs:
       application-name:

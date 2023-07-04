@@ -84,7 +84,7 @@ class Main:
                 application_version_id=application_version["_id"]
             )
 
-            with open(f".github/BUILD_STATUSES_TEMPLATE.md", "r") as reader:
+            with open(f".github/WIDGETS_TEMPLATE.md", "r") as reader:
                 readme_file_arr = reader.readlines()
                 readme_file_arr.append("\n")
 
