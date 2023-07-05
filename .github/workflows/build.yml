@@ -1,5 +1,5 @@
 name: Build
-run-name: Build ${{ inputs.application_name }} (version ${{ inputs.application_version }}) for ${{ inputs.target }}@${{ inputs.branch }}
+run-name: Build ${{ inputs.application_name }} ${{ inputs.application_version }} for ${{ inputs.target }}@${{ inputs.branch }}
 
 on:
   workflow_dispatch:
