@@ -19,6 +19,14 @@ class Main:
             help="Application Name",
         )
         self.parser.add_argument(
+            "application_version_id",
+            help="Application Version ID",
+        )
+        self.parser.add_argument(
+            "application_semver",
+            help="Application Semver",
+        )
+        self.parser.add_argument(
             "application_category",
             help="Application Category",
         )
@@ -44,12 +52,12 @@ class Main:
         application_version_statuses: list,
         application_name: str,
         application_version_id: str,
-        application_version_semver: str,
+        application_semver: str,
     ) -> list:
         # change readme title
         readme_file_arr[
             2
-        ] = f"Latest **{application_name}** version is **{application_version_semver}**"
+        ] = f"Latest **{application_name}** version is **{application_semver}**"
 
         widget_template = (
             "[![{API} {TARGET}]({WIDGET_URL}/badge/{API}%20{TARGET}-{STATUS}-"
@@ -74,14 +82,14 @@ class Main:
 
     def process(self, args):
         try:
-            # Get current application version, for getting its build statuses
-            application_version = self.retrieve_application_version_from_catalog(
-                application_name=args.application_name
-            )
+            # # Get current application version, for getting its build statuses
+            # application_version = self.retrieve_application_version_from_catalog(
+            #     application_name=args.application_name
+            # )
 
             # Get application version build statuses
             application_version_statuses = self.retrieve_build_statuses_from_catalog(
-                application_version_id=application_version["_id"]
+                application_version_id=args.application_version_id,
             )
 
             with open(f".github/WIDGETS_TEMPLATE.md", "r") as reader:
@@ -92,8 +100,8 @@ class Main:
                 readme_file_arr,
                 application_version_statuses=application_version_statuses,
                 application_name=args.application_name,
-                application_version_semver=application_version["version"],
-                application_version_id=application_version["_id"],
+                application_semver=args.application_semver,
+                application_version_id=args.application_version_id,
             )
 
             with open(
