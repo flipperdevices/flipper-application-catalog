@@ -23,7 +23,7 @@ jobs:
         id: bundle
         shell: bash
         run: >
-          python3 ${{ env.CATALOG_ROOT_PATH }}/tools/widget.py \
+          python3 ./tools/widget.py \
             ${{ inputs.application-name }} ${{ inputs.application-category }} ;
 
       - name: Commit README widget file
