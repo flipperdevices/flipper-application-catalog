@@ -19,6 +19,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
+      - name: Setting envs
+        run: |
+          ARCHIVARIUS_URL=$(< .github/.ARCHIVARIUS_URL) ;
+          echo "ARCHIVARIUS_URL=${ARCHIVARIUS_URL}" >> $GITHUB_ENV ;
+          
       - name: Generate README widget file
         id: bundle
         shell: bash
