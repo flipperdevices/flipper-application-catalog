@@ -7,7 +7,6 @@ import sys
 
 
 class Main:
-    WIDGET_URL = 'https://img.shields.io'
     ARCHIVARIUS_URL = os.getenv('ARCHIVARIUS_URL')
 
     def __init__(self):
@@ -60,8 +59,9 @@ class Main:
         ] = f"Latest **{application_name}** version is **{application_semver}**"
 
         widget_template = (
-            "[![{API} {TARGET}]({WIDGET_URL}/badge/{API}%20{TARGET}-{STATUS}-"
-            "{COLOR})]({ARCHIVARIUS_URL}/api/v0/application/version/{APP_VERSION_ID}/build/{TARGET}/{API}/logs)"
+            "[![{API} {TARGET}]"
+            "({ARCHIVARIUS_URL}/api/v0/application/version/{APP_VERSION_ID}/build/{TARGET}/{API}/status/widget)]"
+            "({ARCHIVARIUS_URL}/api/v0/application/version/{APP_VERSION_ID}/build/{TARGET}/{API}/logs)"
         )
 
         # append build statuses
@@ -70,10 +70,7 @@ class Main:
                 widget_template.format(
                     API=status["sdk"]["api"],
                     TARGET=status["sdk"]["target"],
-                    STATUS=status["description"].replace(" ", "%20"),
-                    COLOR=status["color"],
                     ARCHIVARIUS_URL=self.ARCHIVARIUS_URL,
-                    WIDGET_URL=self.WIDGET_URL,
                     APP_VERSION_ID=application_version_id,
                 )
                 + "\n\n"
@@ -82,17 +79,12 @@ class Main:
 
     def process(self, args):
         try:
-            # # Get current application version, for getting its build statuses
-            # application_version = self.retrieve_application_version_from_catalog(
-            #     application_name=args.application_name
-            # )
-
             # Get application version build statuses
             application_version_statuses = self.retrieve_build_statuses_from_catalog(
                 application_version_id=args.application_version_id,
             )
 
-            with open(f".github/WIDGETS_TEMPLATE.md", "r") as reader:
+            with open(f".github/WIDGET_TEMPLATE.md", "r") as reader:
                 readme_file_arr = reader.readlines()
                 readme_file_arr.append("\n")
 

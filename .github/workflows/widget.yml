@@ -27,8 +27,8 @@ jobs:
 
       - name: Setting envs
         run: |
-          ARCHIVARIUS_URL=https://a778-92-39-134-138.ngrok.io;
-          echo "ARCHIVARIUS_URL=https://a778-92-39-134-138.ngrok.io" >> $GITHUB_ENV ;
+          ARCHIVARIUS_URL=$(< .github/.ARCHIVARIUS_URL) ;
+          echo "ARCHIVARIUS_URL=${ARCHIVARIUS_URL}" >> $GITHUB_ENV ;
           
       - name: Generate README widget file
         id: bundle
