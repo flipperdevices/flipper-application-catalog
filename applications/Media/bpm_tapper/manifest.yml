@@ -1,0 +1,16 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/xMasterX/all-the-plugins.git
+    commit_sha: 1606da9d9f0dbdc239387c9fb061bb25b4e94720
+    subdir: apps_source_code/bpmtapper
+id: "bpm_tapper"
+category: "Media"
+short_description: "Tap center button to measure BPM"
+description: "Tap center button to measure BPM"
+changelog: "v1.0 - Initial release"
+version: "1.0"
+author: "@panki27"
+name: "BPM Tapper"
+screenshots:
+  - "./img/1.png"

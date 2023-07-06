@@ -1,0 +1,18 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/xMasterX/all-the-plugins.git
+    commit_sha: 1606da9d9f0dbdc239387c9fb061bb25b4e94720
+    subdir: apps_source_code/brainfuck
+id: "brainfuck"
+category: "Tools"
+short_description: "Brainfuck language interpreter"
+description: "Brainfuck language interpreter"
+changelog: "v1.0 - Initial release"
+version: "1.0"
+author: "@nymda"
+name: "Brainfuck"
+screenshots:
+  - "./img/2.png"
+  - "./img/3.png"
+  - "./img/1.png"

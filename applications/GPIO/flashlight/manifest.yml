@@ -1,0 +1,16 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/xMasterX/all-the-plugins.git
+    commit_sha: 1606da9d9f0dbdc239387c9fb061bb25b4e94720
+    subdir: apps_source_code/flipper-flashlight
+id: "flashlight"
+category: "GPIO"
+short_description: "Enables 3.3v on pin 7/C3 when you press Ok and leaves it on when you exit app"
+description: "Enables 3.3v on pin 7/C3 when you press Ok and leaves it on when you exit app"
+changelog: "v1.0 - Initial release"
+version: "1.0"
+author: "@xMasterX"
+name: "Flashlight"
+screenshots:
+  - "./img/1.png"

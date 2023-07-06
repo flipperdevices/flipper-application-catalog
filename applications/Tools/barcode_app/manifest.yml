@@ -1,0 +1,18 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/xMasterX/all-the-plugins.git
+    commit_sha: 1606da9d9f0dbdc239387c9fb061bb25b4e94720
+    subdir: main_apps_sources/barcode_gen
+id: "barcode_app"
+category: "Tools"
+short_description: "App allows you to display various barcodes on flipper screen"
+description: "App allows you to display various barcodes on flipper screen"
+changelog: "v1.0 - Initial release"
+version: "1.0"
+author: "@Kingal1337"
+name: "Barcode App"
+screenshots:
+  - "./img/2.png"
+  - "./img/3.png"
+  - "./img/1.png"

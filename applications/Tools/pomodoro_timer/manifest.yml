@@ -1,0 +1,16 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/xMasterX/all-the-plugins.git
+    commit_sha: 1606da9d9f0dbdc239387c9fb061bb25b4e94720
+    subdir: apps_source_code/pomodoro
+id: "pomodoro_timer"
+category: "Tools"
+short_description: "Simple Pomodoro Timer app for Flipper Zero"
+description: "Simple Pomodoro Timer app for Flipper Zero"
+changelog: "v1.0 - Initial release"
+version: "1.0"
+author: "@sbrin"
+name: "Pomodoro Timer"
+screenshots:
+  - "./img/2.png"

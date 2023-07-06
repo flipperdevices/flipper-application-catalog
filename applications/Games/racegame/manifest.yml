@@ -1,0 +1,17 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/xMasterX/all-the-plugins.git
+    commit_sha: 1606da9d9f0dbdc239387c9fb061bb25b4e94720
+    subdir: apps_source_code/racegame
+id: "racegame"
+category: "Games"
+short_description: "Race game inspired by Race game in BrickGame 9999 in 1."
+description: "Race game inspired by Race game in BrickGame 9999 in 1."
+changelog: "v1.0 - Initial release"
+version: "1.0"
+author: "@zyuhel"
+name: "Race"
+screenshots:
+  - "./img/2.png"
+  - "./img/1.png"

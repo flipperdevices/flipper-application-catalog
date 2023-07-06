@@ -1,0 +1,16 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/xMasterX/all-the-plugins.git
+    commit_sha: 1606da9d9f0dbdc239387c9fb061bb25b4e94720
+    subdir: apps_source_code/flipper_analog_clock
+id: "analog_clock"
+category: "Tools"
+short_description: "Shows analog clock on Flipper screen"
+description: "Shows analog clock on Flipper screen"
+changelog: "v1.0 - Initial release"
+version: "1.0"
+author: "@scrolltex"
+name: "Analog Clock"
+screenshots:
+  - "./img/1.png"
