@@ -4,13 +4,8 @@ sourcecode:
     origin: https://github.com/xMasterX/all-the-plugins.git
     commit_sha: 1606da9d9f0dbdc239387c9fb061bb25b4e94720
     subdir: apps_source_code/game_of_life
-id: "gameoflife"
-category: "Games"
-short_description: "Life, is a cellular automaton devised by the British mathematician John Horton Conway in 1970."
 description: "Life, is a cellular automaton devised by the British mathematician John Horton Conway in 1970."
 changelog: "v1.0 - Initial release"
-version: "1.0"
 author: "@tgxn (original by @itsyourbedtime)"
-name: "Game of Life"
 screenshots:
   - "./img/1.png"

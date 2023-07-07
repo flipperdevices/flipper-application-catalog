@@ -4,14 +4,9 @@ sourcecode:
     origin: https://github.com/xMasterX/all-the-plugins.git
     commit_sha: 1606da9d9f0dbdc239387c9fb061bb25b4e94720
     subdir: apps_source_code/rubiks_cube_scrambler
-id: "rubiks_cube_scrambler"
-category: "Games"
-short_description: "App generates random moves to scramble a Rubik's cube."
 description: "App generates random moves to scramble a Rubik's cube."
 changelog: "v1.0 - Initial release"
-version: "1.0"
 author: "@RaZeSloth"
-name: "Rubik's Cube Scrambler"
 screenshots:
   - "./img/2.png"
   - "./img/1.png"

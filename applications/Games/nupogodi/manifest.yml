@@ -4,14 +4,9 @@ sourcecode:
     origin: https://github.com/xMasterX/all-the-plugins.git
     commit_sha: 1606da9d9f0dbdc239387c9fb061bb25b4e94720
     subdir: apps_source_code/nupogodi_game
-id: "nupogodi"
-category: "Games"
-short_description: "Elektronika IM-02 - Nu, Pogodi! / (Game & Watch - Egg) - Soviet retro game"
 description: "Elektronika IM-02 - Nu, Pogodi! / (Game & Watch - Egg) - Soviet retro game"
 changelog: "v1.0 - Initial release"
-version: "1.0"
 author: "@sionyx"
-name: "Nu pogodi"
 screenshots:
   - "./img/2.png"
   - "./img/3.png"

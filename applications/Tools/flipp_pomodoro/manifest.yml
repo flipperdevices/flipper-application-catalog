@@ -4,14 +4,9 @@ sourcecode:
     origin: https://github.com/xMasterX/all-the-plugins.git
     commit_sha: 1606da9d9f0dbdc239387c9fb061bb25b4e94720
     subdir: apps_source_code/flipp_pomodoro
-id: "flipp_pomodoro"
-category: "Tools"
-short_description: "Boost Your Productivity with the Pomodoro Timer"
 description: "Boost Your Productivity with the Pomodoro Timer"
 changelog: "v1.0 - Initial release"
-version: "1.0"
 author: "@Th3Un1q3"
-name: "Flipp Pomodoro"
 screenshots:
   - "./img/2.png"
   - "./img/1.png"

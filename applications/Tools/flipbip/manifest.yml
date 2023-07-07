@@ -4,14 +4,8 @@ sourcecode:
     origin: https://github.com/xMasterX/all-the-plugins.git
     commit_sha: 1606da9d9f0dbdc239387c9fb061bb25b4e94720
     subdir: apps_source_code/FlipBIP
-id: "flipbip"
-category: "Tools"
-short_description: "Crypto toolkit for Flipper"
-description: "Crypto toolkit for Flipper"
-changelog: "v1.0 - Initial release"
-version: "0.1"
+changelog: "v0.1 - Initial release"
 author: "Struan Clark (xtruan)"
-name: "FlipBIP Crypto Tool"
 screenshots:
   - "./img/2.png"
   - "./img/3.png"

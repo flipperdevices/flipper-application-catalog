@@ -4,14 +4,9 @@ sourcecode:
     origin: https://github.com/xMasterX/all-the-plugins.git
     commit_sha: 1606da9d9f0dbdc239387c9fb061bb25b4e94720
     subdir: main_apps_sources/uart_terminal
-id: "uart_terminal"
-category: "GPIO"
-short_description: "App to control various devices via UART interface."
 description: "App to control various devices via UART interface."
 changelog: "v1.0 - Initial release"
-version: "1.0"
 author: "@cool4uma & (some fixes by @xMasterX)"
-name: "UART Terminal"
 screenshots:
   - "./img/2.png"
   - "./img/3.png"

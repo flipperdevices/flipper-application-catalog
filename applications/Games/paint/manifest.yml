@@ -4,13 +4,8 @@ sourcecode:
     origin: https://github.com/xMasterX/all-the-plugins.git
     commit_sha: 1606da9d9f0dbdc239387c9fb061bb25b4e94720
     subdir: apps_source_code/paint
-id: "paint"
-category: "Games"
-short_description: "A basic Paint app, Click Ok to draw dot, hold Ok to enable drawing continuously, hold Back to clear the screen"
 description: "A basic Paint app, Click Ok to draw dot, hold Ok to enable drawing continuously, hold Back to clear the screen"
 changelog: "v1.0 - Initial release"
-version: "1.0"
 author: "@n-o-T-I-n-s-a-n-e"
-name: "Paint"
 screenshots:
   - "./img/1.png"

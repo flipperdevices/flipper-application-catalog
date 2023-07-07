@@ -4,14 +4,9 @@ sourcecode:
     origin: https://github.com/xMasterX/all-the-plugins.git
     commit_sha: 1606da9d9f0dbdc239387c9fb061bb25b4e94720
     subdir: apps_source_code/4inrow_game
-id: "4inrow"
-category: "Games"
-short_description: "4 in row Game"
 description: "4 in row Game"
 changelog: "v1.0 - Initial release"
-version: "1.0"
 author: "leo-need-more-coffee"
-name: "4 in row"
 screenshots:
   - "./img/2.png"
   - "./img/3.png"

@@ -4,14 +4,9 @@ sourcecode:
     origin: https://github.com/xMasterX/all-the-plugins.git
     commit_sha: 1606da9d9f0dbdc239387c9fb061bb25b4e94720
     subdir: apps_source_code/bluetooth-trigger
-id: "bt_trigger"
-category: "Bluetooth"
-short_description: "App allows you to control your smartphone camera via flipper"
 description: "App allows you to control your smartphone camera via flipper"
 changelog: "v1.0 - Initial release"
-version: "1.0"
 author: "@Nem0oo"
-name: "BT Trigger"
 screenshots:
   - "./img/2.png"
   - "./img/1.png"

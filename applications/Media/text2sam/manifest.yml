@@ -4,13 +4,8 @@ sourcecode:
     origin: https://github.com/xMasterX/all-the-plugins.git
     commit_sha: 1606da9d9f0dbdc239387c9fb061bb25b4e94720
     subdir: apps_source_code/flipperzero-text2sam
-id: "text2sam"
-category: "Media"
-short_description: "Enter text and hear it spoken by SAM (Software Automatic Mouth)"
 description: "Enter text and hear it spoken by SAM (Software Automatic Mouth)"
 changelog: "v1.0 - Initial release"
-version: "1.0"
 author: "@Round-Pi & (Fixes by @Willy-JL)"
-name: "Text to SAM"
 screenshots:
   - "./img/1.png"

@@ -4,14 +4,9 @@ sourcecode:
     origin: https://github.com/xMasterX/all-the-plugins.git
     commit_sha: 1606da9d9f0dbdc239387c9fb061bb25b4e94720
     subdir: apps_source_code/dice
-id: "dice_app"
-category: "Games"
-short_description: "Dice rolling, types: Coin, d4, d6, d8, d10, d12, d20, d100"
 description: "Dice rolling, types: Coin, d4, d6, d8, d10, d12, d20, d100"
 changelog: "v1.0 - Initial release"
-version: "1.0"
 author: "@Ka3u6y6a"
-name: "Dice"
 screenshots:
   - "./img/2.png"
   - "./img/1.png"

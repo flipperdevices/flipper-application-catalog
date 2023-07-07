@@ -4,14 +4,9 @@ sourcecode:
     origin: https://github.com/xMasterX/all-the-plugins.git
     commit_sha: 1606da9d9f0dbdc239387c9fb061bb25b4e94720
     subdir: apps_source_code/flipperzero-slots
-id: "slotmachine"
-category: "Games"
-short_description: "Simple Slots simulator game"
 description: "Simple Slots simulator game"
 changelog: "v1.0 - Initial release"
-version: "1.0"
 author: "@Daniel-dev-s"
-name: "Slot Machine"
 screenshots:
   - "./img/2.png"
   - "./img/1.png"

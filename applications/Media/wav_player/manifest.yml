@@ -4,14 +4,9 @@ sourcecode:
     origin: https://github.com/xMasterX/all-the-plugins.git
     commit_sha: 1606da9d9f0dbdc239387c9fb061bb25b4e94720
     subdir: main_apps_sources/wav_player
-id: "wav_player"
-category: "Media"
-short_description: "Audio player for WAV files, recommended to convert files to unsigned 8-bit PCM stereo, but it may work with others too"
 description: "Audio player for WAV files, recommended to convert files to unsigned 8-bit PCM stereo, but it may work with others too"
 changelog: "v1.0 - Initial release"
-version: "1.0"
 author: "@DrZlo13 & (ported, fixed by @xMasterX), (improved by @LTVA1)"
-name: "WAV Player"
 screenshots:
   - "./img/2.png"
   - "./img/3.png"

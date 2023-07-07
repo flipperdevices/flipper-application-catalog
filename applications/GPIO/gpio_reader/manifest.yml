@@ -4,14 +4,9 @@ sourcecode:
     origin: https://github.com/xMasterX/all-the-plugins.git
     commit_sha: 1606da9d9f0dbdc239387c9fb061bb25b4e94720
     subdir: apps_source_code/gpio_pins_reader
-id: "gpio_reader"
-category: "GPIO"
-short_description: "Read GPIO pins states, and display them on the screen"
 description: "Read GPIO pins states, and display them on the screen"
 changelog: "v1.0 - Initial release"
-version: "1.0"
 author: "@aureli1c"
-name: "[GPIO] Reader"
 screenshots:
   - "./img/2.png"
   - "./img/1.png"
