@@ -1,0 +1,11 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/xMasterX/all-the-plugins.git
+    commit_sha: 1606da9d9f0dbdc239387c9fb061bb25b4e94720
+    subdir: apps_source_code/flipper-dcf77
+description: "Sends the DCF77 time signal (badly) on the 125khz LFRFID antenna and on GPIO C3 pin"
+changelog: "v1.0 - Initial release"
+author: "@arha & @xMasterX"
+screenshots:
+  - "./img/1.png"
