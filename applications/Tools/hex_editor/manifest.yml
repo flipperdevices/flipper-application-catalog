@@ -1,0 +1,11 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/xMasterX/all-the-plugins.git
+    commit_sha: 1606da9d9f0dbdc239387c9fb061bb25b4e94720
+    subdir: apps_source_code/hex_editor
+description: "Read any file line by line, and use Ok to edit char. Useful for NFC file - Edit Dump feature without PC/Phone."
+changelog: "v1.0 - Initial release"
+author: "@dunaevai135"
+screenshots:
+  - "./img/1.png"

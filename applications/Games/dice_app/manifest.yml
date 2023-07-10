@@ -1,0 +1,12 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/xMasterX/all-the-plugins.git
+    commit_sha: 1606da9d9f0dbdc239387c9fb061bb25b4e94720
+    subdir: apps_source_code/dice
+description: "Dice rolling, types: Coin, d4, d6, d8, d10, d12, d20, d100"
+changelog: "v1.0 - Initial release"
+author: "@Ka3u6y6a"
+screenshots:
+  - "./img/2.png"
+  - "./img/1.png"
