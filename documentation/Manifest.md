@@ -33,7 +33,7 @@ This manifest must be placed in `applications/Sub-GHz/example_subghz_app/manifes
 Your application must be placed in one of the following categories:
 
  - **Sub-GHz**: Applications that use Sub-GHz radio.
- - **RFID 125**: Applications built for low-frequecy RFID subsystem.
+ - **RFID**: Applications built for low-frequecy RFID subsystem.
  - **NFC**: Applications for NFC subsystem.
  - **Infrared**: Infrared-related applications.
  - **GPIO**: Applications utilizing GPIO pins.
@@ -42,6 +42,7 @@ Your application must be placed in one of the following categories:
  - **Games**: Games.
  - **Media**: Media applications.
  - **Tools**: Utility applications.
+ - **Bluetooth**: Bluetooth LE applications.
 
 
 ## Manifest structure
