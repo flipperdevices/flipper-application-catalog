@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/AloneLiberty/FlipperNested.git
-    commit_sha: bcad03580ba8a93e03716140fce33c3345de04f6
+    commit_sha: eba6163d7ef22adef5f9fe4d77a78ccfcc27a952
 description: "@README.CATALOG.md"
 changelog: "@CHANGELOG.md"
 screenshots:
