@@ -2,10 +2,10 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/xMasterX/all-the-plugins.git
-    commit_sha: 1606da9d9f0dbdc239387c9fb061bb25b4e94720
+    commit_sha: 7502c9c9c4895a564bd90fd5e1df59023bfa4897
     subdir: main_apps_sources/dtmf_dolphin
 description: "DTMF (Dual-Tone Multi-Frequency) dialer, Bluebox, and Redbox."
-changelog: "v1.0 - Initial release"
+changelog: "v1.0 - Initial release, v1.1 - Icon fixes"
 author: "@litui & @xMasterX"
 screenshots:
   - "./img/2.png"
