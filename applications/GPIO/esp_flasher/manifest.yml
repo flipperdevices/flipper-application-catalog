@@ -1,0 +1,13 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/0xchocolate/flipperzero-esp-flasher.git
+    commit_sha: 0222d59de431573355d6b2444508a1c529d5d376
+id: "esp_flasher"
+category: "GPIO"
+short_description: "Flipper Zero app to flash ESP chips from the device (no computer connection needed!)"
+description: "@./docs/README.md"
+changelog: "@./docs/changelog.md"
+screenshots:
+  - "./screenshots/esp-flasher-browse.png"
+  - "./screenshots/esp-flasher-flashing.png"
