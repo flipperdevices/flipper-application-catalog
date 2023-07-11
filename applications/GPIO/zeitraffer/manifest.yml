@@ -3,11 +3,8 @@ sourcecode:
   location:
     origin: https://github.com/theageoflove/flipperzero-zeitraffer.git
     commit_sha: 4d3793bc5e9cf39fa02ad2c607190f1a6a304b71
-name: "Zeitraffer"
-appid: "zeitraffer"
 short_description: "Simple timelapse/intervalometer app"
 description: "./.catalog/README.md"
-version: "1.0"
 changelog: "v1.0 - Initial release"
 author: "Aurelius Rosenbaum"
 screenshots:
