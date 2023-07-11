@@ -7,12 +7,6 @@ on:
       application-name:
         description: "Application name"
         required: true
-      application-version-id:
-        description: "Application version ID"
-        required: true
-      application-semver:
-        description: "Application semver"
-        required: true
       application-category:
         description: "Application category"
         required: true
@@ -42,7 +36,7 @@ jobs:
         shell: bash
         run: >
           python3 ./tools/widget.py \
-            ${{ inputs.application-name }} ${{ inputs.application-version-id }} ${{ inputs.application-semver }} ${{ inputs.application-category }} ;
+            ${{ inputs.application-name }} ${{ inputs.application-category }} ;
 
       - name: Commit README widget file
         if: steps.check_files.outputs.files_exists == 'false'
