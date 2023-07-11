@@ -1,0 +1,11 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/jamisonderek/flipper-zero-tutorials.git
+    commit_sha: 00480d1fc8a464504ba18c09d68ebfde724be0e9
+    subdir: subghz/plugins/rock_paper_scissors
+description: "Play rock paper scissors with your friends using the Flipper Zero SubGHz radio!"
+changelog: "v1.3 - More robust radio communication\nv1.2 - Updated subghz API"
+author: "@jamisonderek"
+screenshots:
+  - "./.flipcorg/gallery/win.png"
