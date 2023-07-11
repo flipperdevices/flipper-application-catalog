@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/Programistich/battery_checker.git
-    commit_sha: 4b23b94c26613bdf9ca42a9dd4433b54b6a8e140
+    commit_sha: 4e513d536350147024319fa1997164a66cb1f525
 short_description: External battery checker
 description: "@README.md"
 changelog: "@CHANGELOG.md"
