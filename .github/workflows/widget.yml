@@ -27,10 +27,17 @@ jobs:
 
       - name: Setting envs
         run: |
-          ARCHIVARIUS_URL=https://ef7e-92-39-134-138.ngrok-free.app;
-          echo "ARCHIVARIUS_URL=https://ef7e-92-39-134-138.ngrok-free.app" >> $GITHUB_ENV ;
-          
+          ARCHIVARIUS_URL=$(< .github/.ARCHIVARIUS_URL) ;
+          echo "ARCHIVARIUS_URL=${ARCHIVARIUS_URL}" >> $GITHUB_ENV ;
+
+      - name: "Check README existence"
+        id: check_files
+        uses: andstor/file-existence-action@v2
+        with:
+          files: 'applications/${{ inputs.application-category }}/${{ inputs.application-name }}/README.md'
+
       - name: Generate README widget file
+        if: steps.check_files.outputs.files_exists == 'false'
         id: bundle
         shell: bash
         run: >
@@ -38,6 +45,7 @@ jobs:
             ${{ inputs.application-name }} ${{ inputs.application-version-id }} ${{ inputs.application-semver }} ${{ inputs.application-category }} ;
 
       - name: Commit README widget file
+        if: steps.check_files.outputs.files_exists == 'false'
         uses: EndBug/add-and-commit@v9
         with:
           add: 'applications/${{ inputs.application-category }}/${{ inputs.application-name }}/README.md'
