@@ -1,0 +1,11 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/xMasterX/all-the-plugins.git
+    commit_sha: 7502c9c9c4895a564bd90fd5e1df59023bfa4897
+    subdir: apps_source_code/flipper_pong
+description: "Simple pong game"
+changelog: "v1.0 - Initial release, v1.1 - Icon fixes"
+author: "@nmrr & @SimplyMinimal"
+screenshots:
+  - "./img/1.png"

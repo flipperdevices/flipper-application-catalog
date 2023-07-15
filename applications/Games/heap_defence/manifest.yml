@@ -1,0 +1,12 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/xMasterX/all-the-plugins.git
+    commit_sha: 1606da9d9f0dbdc239387c9fb061bb25b4e94720
+    subdir: main_apps_sources/heap_defence_game
+description: "Heap Defence game from hackathon (aka Stack Attack)"
+changelog: "v1.0 - Initial release"
+author: "@xMasterX (original implementation by @wquinoa & @Vedmein)"
+screenshots:
+  - "./img/2.png"
+  - "./img/1.png"
