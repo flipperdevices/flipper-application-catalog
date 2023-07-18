@@ -78,7 +78,7 @@ jobs:
           curl --fail-with-body \
             -H "Authorization: Bearer ${{ secrets.FAST_AUTH_TOKEN }}" \
             --data-binary "@${{ runner.temp }}/build-errors" \
-            ${{ steps.env-setup.outputs.upload-url }}/status ;
+            ${{ steps.env-setup.outputs.upload-url }}/status/fail ;
           exit 1 ;
 
       - name: Zip artifacts
