@@ -1,11 +1,15 @@
 name: Build
-run-name: Build ${{ inputs.application_name }} for ${{ inputs.target }}@${{ inputs.branch }}
+run-name: Build ${{ inputs.application_name }} ${{ inputs.application_version }} for ${{ inputs.target }}@${{ inputs.branch }}
 
 on:
   workflow_dispatch:
     inputs:
       application_name:
         description: "Application name"
+        required: false
+        default: Unknown
+      application_version:
+        description: "Application version"
         required: false
         default: Unknown
       bundle_url:

@@ -6,3 +6,4 @@ PyYAML==6.0
 smmap==5.0.0
 Markdown==3.4.3
 ufbt>=0.2.1
+requests==2.31.0
