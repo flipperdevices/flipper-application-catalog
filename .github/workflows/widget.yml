@@ -36,7 +36,7 @@ jobs:
         shell: bash
         run: >
           python3 ./tools/widget.py \
-            ${{ inputs.application-name }} ${{ inputs.application-category }} ;
+            "${{ inputs.application-name }}" "${{ inputs.application-category }}" ;
 
       - name: Commit README widget file
         if: steps.check_files.outputs.files_exists == 'false'
