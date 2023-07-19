@@ -205,9 +205,8 @@ class BasicTextExtension(Extension):
 class AppBundler:
     MANIFEST_YAML_NAME = "manifest.yml"
     UFBT_COMMAND = "ufbt"
-    ORANGE_BG_COLOR = (254, 138, 44)  # RGB for background color in screenshots
     FLIPPER_SCREEN_SIZE = (128, 64)
-    APP_SCREENSHOT_DOWNSCALE_FACTOR = 4
+    APP_SCREENSHOT_DOWNSCALE_FACTORS = (4, 8)
     FLIPPER_ICON_SIZE = (10, 10)
     APP_ID_REGEX = re.compile(r"^[a-z0-9_]+$")
 
@@ -358,15 +357,15 @@ class AppBundler:
             self._fam_manifest = known_ext_apps[0]
         else:
             if app := next(
-                filter(
-                    lambda app: app.appid == self._manifest.id, known_ext_apps
-                ),
+                filter(lambda app: app.appid == self._manifest.id, known_ext_apps),
                 None,
             ):
                 self._log.info(f"Selected application {app.name}")
                 self._fam_manifest = app
-            else: 
-                raise BundlerException(f"Multiple external applications found, specify 'id' in the manifest.yml ({[app.appid for app in known_ext_apps]})")
+            else:
+                raise BundlerException(
+                    f"Multiple external applications found, specify 'id' in the manifest.yml ({[app.appid for app in known_ext_apps]})"
+                )
 
         self._manifest.sync_from(self._fam_manifest)
 
@@ -391,9 +390,23 @@ class AppBundler:
         if img.mode != "RGBA":
             img = img.convert("RGBA")
         # TODO: guess downsize ratio?
+        downscale_factors = (
+            img.width // self.FLIPPER_SCREEN_SIZE[0],
+            img.height // self.FLIPPER_SCREEN_SIZE[1],
+        )
+        if (
+            downscale_factors[0] != downscale_factors[1]
+            or downscale_factors[0] not in self.APP_SCREENSHOT_DOWNSCALE_FACTORS
+        ):
+            raise BundlerException(
+                f"Screenshot {screenshot_src_path} has resolution {img.width}x{img.height}, "
+                f"downscaled to {downscale_factors[0]}x{downscale_factors[1]}, "
+                f"expected {self.FLIPPER_SCREEN_SIZE[0]}x{self.FLIPPER_SCREEN_SIZE[1]}"
+            )
+
         downscaled_resolution = (
-            img.width // self.APP_SCREENSHOT_DOWNSCALE_FACTOR,
-            img.height // self.APP_SCREENSHOT_DOWNSCALE_FACTOR,
+            img.width // downscale_factors[0],
+            img.height // downscale_factors[1],
         )
         if downscaled_resolution != self.FLIPPER_SCREEN_SIZE:
             raise BundlerException(
@@ -403,10 +416,10 @@ class AppBundler:
             )
 
         img = img.resize(downscaled_resolution, resample=Image.Resampling.NEAREST)
-        # Set orange background to transparent
+        # Set all non-black pixels to transparent
         img.putdata(
             tuple(
-                (255, 255, 255, 0) if pixel[:3] == self.ORANGE_BG_COLOR else pixel
+                (255, 255, 255, 0) if pixel[:3] != (0, 0, 0) else pixel
                 for pixel in img.getdata()
             )
         )
