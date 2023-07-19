@@ -1,13 +1,17 @@
 sourcecode:
   type: git
   location:
-    origin: https://github.com/xMasterX/all-the-plugins.git
-    commit_sha: bf22d6d2799729a5d9099abb623b8856e98d6db7
-    subdir: apps_source_code/FlipBIP
-description: "@README.md"
-changelog: "v0.1 - Initial release, v1.0 - Small updates"
-author: "Struan Clark (xtruan)"
+    origin: https://github.com/xtruan/FlipBIP.git
+    commit_sha: 0073c32afb03e50a2957617bfd3cb1f4663ac2f9
+description: "Crypto wallet"
+changelog: "v1.11.0 - Code cleanup and updates for catalog"
+author: "@xtruan"
 screenshots:
-  - "./img/2.png"
-  - "./img/3.png"
-  - "./img/1.png"
+  - "./catalog/startscreen.png"
+  - "./catalog/menu1.png"
+  - "./catalog/menu2.png"
+  - "./catalog/input_mnemonic.png"
+  - "./catalog/btc_loading.png"
+  - "./catalog/wallet_info.png"
+  - "./catalog/btc_receive.png"
+  - "./catalog/settings.png"
