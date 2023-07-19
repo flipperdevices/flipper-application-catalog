@@ -1,0 +1,8 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/Milk-Cool/EXTRA-demo.git
+    commit_sha: f6b253d9dd6696388bb1c8e32fde5162f2bb0f58
+description: "A demo app for the EXTRA library - adds more comamnds to the Flipper CLI"
+changelog: "v1.0 - Initial release"
+author: "milk_cool"
