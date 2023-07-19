@@ -1,0 +1,14 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/hedger/unleashedapps.git
+    subdir: ir_scope
+    commit_sha: 417615238d1793df4327df100c99ba75d4c7b20d
+short_description: Cool IR scope. Crazy cool.
+description: "Bla bla bla"
+changelog: Now available!
+version: 0.3
+screenshots:
+  - screenshots/ss0.png
+  - screenshots/ss1.png
+  - screenshots/ss2.png

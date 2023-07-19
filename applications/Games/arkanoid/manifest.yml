@@ -1,0 +1,13 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/hedger/unleashedapps.git
+    subdir: arkanoid
+    commit_sha: a385c6d911757a1709ec27d4770fd7c544e07a73
+short_description: A game of Arkanoid. Amazing.
+description: "@description.md"
+changelog: "@changelog.md"
+version: 0.3
+screenshots:
+  - screenshots/ss0.png
+  - screenshots/ss1.png
