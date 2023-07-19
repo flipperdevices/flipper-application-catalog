@@ -4,8 +4,8 @@ run-name: Create widgets for ${{ inputs.application-name }}
 on:
   workflow_dispatch:
     inputs:
-      application-name:
-        description: "Application name"
+      application-id:
+        description: "Application id"
         required: true
       application-category:
         description: "Application category"
@@ -28,7 +28,7 @@ jobs:
         id: check_files
         uses: andstor/file-existence-action@v2
         with:
-          files: 'applications/${{ inputs.application-category }}/${{ inputs.application-name }}/README.md'
+          files: 'applications/${{ inputs.application-category }}/${{ inputs.application-id }}/README.md'
 
       - name: Generate README widget file
         if: steps.check_files.outputs.files_exists == 'false'
@@ -36,12 +36,12 @@ jobs:
         shell: bash
         run: >
           python3 ./tools/widget.py \
-            "${{ inputs.application-name }}" "${{ inputs.application-category }}" ;
+            "${{ inputs.application-id }}" "${{ inputs.application-category }}" ;
 
       - name: Commit README widget file
         if: steps.check_files.outputs.files_exists == 'false'
         uses: EndBug/add-and-commit@v9
         with:
           pull: '--rebase --autostash'
-          add: 'applications/${{ inputs.application-category }}/${{ inputs.application-name }}/README.md'
+          add: 'applications/${{ inputs.application-category }}/${{ inputs.application-id }}/README.md'
           author_name: Git Action
