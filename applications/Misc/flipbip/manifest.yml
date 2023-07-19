@@ -3,7 +3,7 @@ sourcecode:
   location:
     origin: https://github.com/xtruan/FlipBIP.git
     commit_sha: e19ecc0145e2e63035682209f84e5ffd4fa4b2a7
-short_description: "Crypto wallet"
+description: "Crypto wallet"
 changelog: "v1.10.0"
 author: "@xtruan"
 screenshots:
