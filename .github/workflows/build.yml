@@ -68,14 +68,13 @@ jobs:
         id: report-build-failures
         if: steps.ufbt.outputs.build-errors != ''
         run: |
-          cat << "ERROR-EOF" > ${{ runner.temp }}/build-errors
+          cat << "UFBT-ERROR-EOF" > ${{ runner.temp }}/build-errors
           ${{ steps.ufbt.outputs.build-errors }}
-          ERROR-EOF
-          curl --fail-with-body -G -X PATCH \
+          UFBT-ERROR-EOF
+          curl --fail-with-body \
             -H "Authorization: Bearer ${{ secrets.FAST_AUTH_TOKEN }}" \
-            --data-urlencode "code=1" \
-            --data-urlencode "description@${{ runner.temp }}/build-errors" \
-            ${{ steps.env-setup.outputs.upload-url }}/status ;
+            --data-binary "@${{ runner.temp }}/build-errors" \
+            ${{ steps.env-setup.outputs.upload-url }}/status/fail ;
           exit 1 ;
 
       - name: Zip artifacts
