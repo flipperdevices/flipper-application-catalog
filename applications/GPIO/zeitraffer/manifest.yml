@@ -1,0 +1,16 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/hedger/flipperzero-zeitraffer.git
+    commit_sha: 65aa52f62b1a28d3286952966873f9c622ee05c0
+version: "0.7"
+short_description: "Zeitraffer - Time Lapse Camera control"
+description: "Bla bla bla."
+changelog: |
+  "Version 0.6:
+  - Added support for Flipper Zero v1.1"
+screenshots: 
+  - ".flipcorg/gallery/001.png"
+  - ".flipcorg/gallery/002.png"
+  - ".flipcorg/gallery/003.png"
+  - ".flipcorg/gallery/004.png"

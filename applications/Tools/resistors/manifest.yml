@@ -1,0 +1,14 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/hedger/flipper-zero-experimental-apps.git
+    commit_sha: 1deef5f197d2a780d0ab188796cf2c333c0f661a
+    subdir: resistors
+version: "1.7"
+short_description: "Resistor value calculator"
+description: "Resistor value calculator"
+category: Tools
+changelog: v0.1 - initial release
+screenshots:
+  - screenshots/v1.1/4-bar.png
+  - screenshots/v1.1/6-bar.png

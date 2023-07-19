@@ -1,0 +1,14 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/hedger/unleashedapps.git
+    subdir: spectrum_analyzer
+    commit_sha: de665d9cb57c8ac0b3ba5ea1c64ba5488517dec5
+short_description: Sub-GHz spectrum analyzer
+description: Sub-GHz spectrum analyzer
+changelog: "Version 0.1: initial release. 
+Version 0.2: totally the same."
+version: "0.3"
+screenshots:
+  - screenshots/ss0.png
+  - screenshots/ss1.png
