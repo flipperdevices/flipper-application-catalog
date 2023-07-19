@@ -7,7 +7,7 @@ import sys
 
 
 class Main:
-    ARCHIVARIUS_URL = os.getenv('ARCHIVARIUS_URL')
+    ARCHIVARIUS_URL = os.getenv("ARCHIVARIUS_URL")
 
     def __init__(self):
         self.logger = logging.getLogger()
@@ -49,7 +49,9 @@ class Main:
                 readme_file_arr = reader.readlines()
                 readme_file_arr.append("\n")
 
-            readme_file_arr = self.add_widget_to_readme(readme_file_arr,  application_name=args.application_name)
+            readme_file_arr = self.add_widget_to_readme(
+                readme_file_arr, application_name=args.application_name
+            )
 
             with open(
                 f"applications/{args.application_category}/{args.application_name}/README.md",
