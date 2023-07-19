@@ -11,6 +11,10 @@ class Main:
 
     def __init__(self):
         self.logger = logging.getLogger()
+        if self.ARCHIVARIUS_URL is None:
+            self.logger.error("ARCHIVARIUS_URL is not set in environment")
+            sys.exit(1)
+
         self.parser = argparse.ArgumentParser()
 
         self.parser.add_argument(
