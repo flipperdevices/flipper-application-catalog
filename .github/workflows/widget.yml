@@ -1,5 +1,5 @@
 name: Widget
-run-name: Create widgets for ${{ inputs.application-name }}
+run-name: Create widgets for ${{ inputs.application-id }}
 
 on:
   workflow_dispatch:
