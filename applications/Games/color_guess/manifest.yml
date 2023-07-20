@@ -1,13 +1,13 @@
 sourcecode:
   type: git
   location:
-    origin: https://github.com/xMasterX/all-the-plugins.git
+    origin: https://github.com/leedave/Leeds-Flipper-Zero-Applications
     commit_sha: 1606da9d9f0dbdc239387c9fb061bb25b4e94720
-    subdir: apps_source_code/color_guess
-description: "Color Guess"
+    subdir: Games/color_guess
+description: "Color Guessing Game using Hex Codes"
 changelog: "v1.0 - Initial release"
-author: "Leed"
+author: "Leedave"
 screenshots:
-  - "./img/2.png"
-  - "./img/3.png"
-  - "./img/1.png"
+  - "./screenshots/color_guess_1.png"
+  - "./screenshots/color_guess_2.png"
+  - "./screenshots/color_guess_3.png"
