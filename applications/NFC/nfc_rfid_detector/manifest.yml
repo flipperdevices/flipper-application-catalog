@@ -1,0 +1,14 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/flipperdevices/flipperzero-good-faps.git
+    commit_sha: 646276ae8d529b41d22d0ec5312923faabacdef6
+    subdir: nfc_rfid_detector
+description: "@./.flipcorg/README.md"
+changelog: "v1.0 - Initial release"
+author: "@SkorP"
+screenshots:
+  - "./.flipcorg/gallery/nfc-rfid-both-detected.png"
+  - "./.flipcorg/gallery/nfc-rfid-detection.png"
+  - "./.flipcorg/gallery/nfc-rfid-nfc-detected.png"
+  - "./.flipcorg/gallery/nfc-rfid-rfid-detected.png"
