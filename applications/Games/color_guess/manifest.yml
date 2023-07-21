@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/leedave/Leeds-Flipper-Zero-Applications
-    commit_sha: 9aa81c44372a4cac26d9ecaeec228539fb290a75
+    commit_sha: 5d11ae2e1b657c801a4b2004ac10a567435f5872
     subdir: Games/color_guess
 description: "Color Guessing Game using Hex Codes"
 changelog: "v1.0 - Initial release"
