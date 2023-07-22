@@ -1,0 +1,16 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/leedave/Leeds-Flipper-Zero-Applications
+    commit_sha: c5f7e6ee383dbf6f95f842885f2d2127d7287042
+    subdir: Tools/xremote
+description: "@./docs/README.md"
+changelog: "@./docs/changelog.md"
+author: "Leedave"
+screenshots:
+  - "./screenshots/xremote_1.png"
+  - "./screenshots/xremote_2.png"
+  - "./screenshots/xremote_3.png"
+  - "./screenshots/xremote_4.png"
+  - "./screenshots/xremote_5.png"
+  - "./screenshots/xremote_6.png"
