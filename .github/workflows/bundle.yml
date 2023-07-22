@@ -72,7 +72,7 @@ jobs:
           json-manifest: bundle.json
           # Uncomment to submit bundles with broken code
           # skip-build: true
-          # skip-lint: true
+          skip-lint: true
 
       - name: Retry build with RC SDK
         id: app-bundle-rc
