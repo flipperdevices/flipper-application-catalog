@@ -2,4 +2,9 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/anfractuosity/flipperscope.git
-    commit_sha: b184cc95b1ed76888e456e231e1f51652f6b4a50
+    commit_sha: 346bba0c36947e0dbd9ba584b3df72ea58644d54
+description: "Oscilloscope"
+changelog: "v0.1 - Initial release"
+screenshots:
+  - "./screenshots/freq.png"
+  - "./screenshots/volt.png"
