@@ -6,6 +6,7 @@ sourcecode:
     subdir: main_apps_sources/barcode_gen
 description: "App allows you to display various barcodes on flipper screen"
 changelog: "v1.0 - Initial release"
+author: "@Kingal1337"
 screenshots:
   - "./img/2.png"
   - "./img/3.png"
