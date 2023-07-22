@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/leedave/Leeds-Flipper-Zero-Applications
-    commit_sha: c5f7e6ee383dbf6f95f842885f2d2127d7287042
+    commit_sha: 31b65d7cda981325281dc4a65a77b4e798c61e3b
     subdir: Tools/xremote
 description: "@./docs/README.md"
 changelog: "@./docs/changelog.md"
