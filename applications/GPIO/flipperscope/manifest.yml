@@ -1,0 +1,10 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/anfractuosity/flipperscope.git
+    commit_sha: e1c593e8b63c92d8954be3f0c669b5fa6975293a
+description: "Oscilloscope application - apply signal to pin 16/PC0, with a voltage ranging from 0V to 2.5V and ground to pin 18/GND"
+changelog: "v0.1 - Initial release"
+screenshots:
+  - "./screenshots/freq.png"
+  - "./screenshots/volt.png"
