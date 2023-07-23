@@ -2,12 +2,12 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/DarkFlippers/Multi_Fuzzer.git
-    commit_sha: a6695e38904258c502dc35aff8cc8b2b627fdddc
+    commit_sha: 64a4d768b26ac2a21eb8423fa5e6552a9ef7465b
 id: "fuzzer_ibtn"
-category: "iButton"
 description: "@./catalog/docs/ibtn/README.md"
 changelog: "@./catalog/docs/ibtn/Changelog.md"
 screenshots:
   - "./catalog/screenshots/Main_menu.png"
   - "./catalog/screenshots/Attack_screen.png"
+  - "./catalog/screenshots/Pause.png"
   - "./catalog/screenshots/Field_editor.png"

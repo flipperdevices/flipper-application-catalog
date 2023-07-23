@@ -2,11 +2,12 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/oleksiikutuzov/flipperzero-lightmeter
-    commit_sha: a24d644acf06a8381d38930d1b7260173978bc9c
+    commit_sha: 13b958b07eb21813680bca39923151364f035daf
     subdir: application
-description: "@./README.md"
+description: "@./docs/README.md"
 changelog: "@./docs/changelog.md"
 screenshots:
   - "./.flipcorg/gallery/gui_main.png"
   - "./.flipcorg/gallery/gui_config.png"
+  - "./.flipcorg/gallery/gui_config_2.png"
   - "./.flipcorg/gallery/gui_lux_meter.png"
