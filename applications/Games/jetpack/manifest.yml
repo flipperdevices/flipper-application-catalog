@@ -1,0 +1,10 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/timstrasser/flipper-jetpack-joyride.git
+    commit_sha: dfd514d4c6a1605ed8d7d90441afc8ef094ddbcb
+description: 'A thrilling jetpack ride with obstacles and coins for Flipper Zero.'
+changelog: 'Initial release'
+author: '@timstrasser'
+screenshots:
+  - './docs/screenshots/gameplay.png'
