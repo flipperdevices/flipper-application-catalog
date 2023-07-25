@@ -1,0 +1,10 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/JadePossible/Flipper-Multi-Counter
+    commit_sha: 50ff87562b271419963d28951627dd50916dd093
+description: "Multi Counter App for tabletop games"
+changelog: "v1.0 - Initial release"
+author: "@JadePossible & Roro"
+screenshots:
+  - "./img/1.png"
