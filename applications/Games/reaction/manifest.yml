@@ -2,8 +2,9 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/Milk-Cool/fz-reaction-game.git
-    commit_sha: 98826068666bca6fb214bff56b674d1f1bed9083
-description: "Simple Flipper Zero reaction game"
+    commit_sha: b6529739e0fe0ee80b3fc42af0648bec481d92d5
+short_description: "Simple Flipper Zero reaction game"
+description: "@README.md"
 changelog: "v1.0 - Initial release"
 author: "milk_cool"
 screenshots:

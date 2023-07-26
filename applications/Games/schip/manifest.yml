@@ -1,0 +1,11 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/Milk-Cool/fz-schip.git
+    commit_sha: 3fb7fc2babf2bc284c549057f8dc708fc664e7f4
+short_description: "SUPER-CHIP emulator"
+description: "@README.md"
+changelog: "v1.0 - Initial release"
+author: "milk_cool"
+screenshots:
+  - "./.flipcorg/gallery/Screenshot-20230726-095024.png"

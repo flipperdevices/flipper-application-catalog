@@ -1,0 +1,11 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/Milk-Cool/fz-em4100-generator.git
+    commit_sha: d2901a9d74224432aaf3f68b6cdf884b200acd02
+short_description: "RFID potential universal keys generator"
+description: "@README.md"
+changelog: "v1.0 - Initial release"
+author: "milk_cool"
+screenshots:
+  - "./.flipcorg/gallery/Screenshot-20230223-203332.png"
