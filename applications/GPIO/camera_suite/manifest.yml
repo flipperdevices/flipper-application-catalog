@@ -3,7 +3,7 @@ category: "GPIO"
 changelog: "@./docs/CHANGELOG.md"
 description: "@./docs/README.md"
 icon: "icons/camera_suite.png"
-id: "camerasuite"
+id: "camera_suite"
 name: "[ESP32] Camera Suite"
 screenshots:
   - "screenshots/start_screen.png"
