@@ -9,7 +9,7 @@ category: "GPIO"
 short_description: "A camera suite application for the Flipper Zero ESP32-CAM module."
 description: "@./docs/README.md"
 changelog: "@./docs/CHANGELOG.md"
-author: "@CodyTolene"
+author: "@CodyTolene @Z4urce @leedave"
 screenshots:
   - "./screenshots/start_screen.png"
   - "./screenshots/main_menu.png"
