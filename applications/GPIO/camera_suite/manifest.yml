@@ -18,4 +18,4 @@ sourcecode:
     origin: https://github.com/CodyTolene/Flipper-Zero-Camera-Suite.git
     subdir: src-fap
   type: git
-version: 1.1.0
+version: 1.1
