@@ -14,7 +14,7 @@ screenshots:
 short_description: "A camera suite application for the Flipper Zero ESP32-CAM module."
 sourcecode:
   location:
-    commit_sha: f3f32d48ed6e2646ad9299343b5b7e2507d26a7b
+    commit_sha: e5e09549ea28ebfb438276196b7429efa9f16218
     origin: https://github.com/CodyTolene/Flipper-Zero-Camera-Suite.git
     subdir: src-fap
   type: git
