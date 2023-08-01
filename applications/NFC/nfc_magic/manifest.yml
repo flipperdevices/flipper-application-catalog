@@ -1,0 +1,12 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/flipperdevices/flipperzero-good-faps.git
+    commit_sha: 586836b6126353a0a9478271b98d4b8398304f14
+    subdir: nfc_magic
+description: "Write NFC magic (UID-changeable) tags"
+changelog: "v1.0 - Initial release"
+author: "@AloneLiberty"
+screenshots:
+  - ".catalog/screenshots/1.png"
+  - ".catalog/screenshots/2.png"

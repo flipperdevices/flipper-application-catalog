@@ -1,0 +1,12 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/flipperdevices/flipperzero-good-faps.git
+    commit_sha: 586836b6126353a0a9478271b98d4b8398304f14
+    subdir: mass_storage
+description: "Turns your Flipper into very slow USB Mass Storage device"
+changelog: "v1.0 - Initial release"
+author: "@nminaylov @kevinwallace"
+screenshots:
+  - ".catalog/screenshots/1.png"
+  - ".catalog/screenshots/2.png"
