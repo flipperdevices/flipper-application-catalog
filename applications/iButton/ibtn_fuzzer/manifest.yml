@@ -4,7 +4,7 @@ sourcecode:
     origin: https://github.com/hedger/unleashedapps.git
     subdir: ibtn_fuzzer
     commit_sha: 03138dc8ec4cafeda675a6614e065f1e7f729aae
-version: 0.3
+version: 0.5
 short_description: iButton Fuzzer is a powerful application for the Flipper Zero device that enables security enthusiasts to brute force access systems using 1-wire protocols.
 description: "@readme.md"
 changelog: "@changelog.md"
