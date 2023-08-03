@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/flipperdevices/flipperzero-good-faps.git
-    commit_sha: 586836b6126353a0a9478271b98d4b8398304f14
+    commit_sha: e4450727ff07ab3835e056377a6d61660f149e10
     subdir: hid_app
 id: "hid_ble"
 description: "BLE HID keyboard/mouse/media controls emulator"
