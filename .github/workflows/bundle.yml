@@ -46,6 +46,7 @@ jobs:
     needs: process-manifests
     if: needs.process-manifests.outputs.changed-manifests != '[]'
     strategy:
+      fail-fast: false
       matrix:
         manifest: ${{ fromJson(needs.process-manifests.outputs.changed-manifests) }}
     steps:
@@ -133,6 +134,7 @@ jobs:
     needs: process-manifests
     if: needs.process-manifests.outputs.deleted-manifests != '[]'
     strategy:
+      fail-fast: false
       matrix:
         manifest: ${{ fromJson(needs.process-manifests.outputs.deleted-manifests) }}
 
