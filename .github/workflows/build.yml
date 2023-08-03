@@ -86,8 +86,8 @@ jobs:
         if: steps.ufbt.outputs.build-errors == ''
         run: >
           FAP_PATH=$( grep ${{ steps.unzip-bundle.outputs.appid }} <<< "${{ steps.ufbt.outputs.fap-artifacts }}" ) ;
-          echo "SHA256 for $( basename $FAP_PATH ) = $( sha256 $FAP_PATH )" >> $GITHUB_STEP_SUMMARY ;
-          zip -qq -r -j ${{ runner.temp }}/build-artifacts.zip $FAP_PATH;
+          echo "SHA256 for $( basename $FAP_PATH ) = \`\`\`$( sha256sum $FAP_PATH )\`\`\`" >> $GITHUB_STEP_SUMMARY ;
+          zip -qq -r -j ${{ runner.temp }}/build-artifacts.zip $FAP_PATH ;
           echo "artifact-path=${{ runner.temp }}/build-artifacts.zip" >> $GITHUB_OUTPUT ;
 
       - name: Upload built files
