@@ -44,6 +44,7 @@ jobs:
     name: Build package
     runs-on: ubuntu-latest
     needs: process-manifests
+    if: needs.process-manifests.outputs.changed-manifests != '[]'
     strategy:
       matrix:
         manifest: ${{ fromJson(needs.process-manifests.outputs.changed-manifests) }}
@@ -56,7 +57,7 @@ jobs:
       - name: Set up source code flag
         id: source-code
         run: |
-          ARCHIVARIUS_URL=$(< .github/.ARCHIVARIUS_URL) ;
+          ARCHIVARIUS_URL=$( < .github/.ARCHIVARIUS_URL ) ;
           echo "ARCHIVARIUS_URL=${ARCHIVARIUS_URL}" >> $GITHUB_ENV ;
           if [ "z{{ vars.CATALOG_STAGING }}" != "z" ] ; then
             echo "BUNDLE_ALLOW_VERSION_MISMATCH=1" >> $GITHUB_ENV ;
@@ -95,8 +96,8 @@ jobs:
             echo Failed to build application bundle! ;
             exit 1 ;
           fi
-          APPID=$(jq -r '.id' bundle.json) ;
-          APPVERSION=$(jq -r '.version' bundle.json) ;
+          APPID=$( jq -r '.id' bundle.json ) ;
+          APPVERSION=$( jq -r '.version' bundle.json ) ;
           echo "app-id=$APPID" >> $GITHUB_OUTPUT ;
           echo "app-version=$APPVERSION" >> $GITHUB_OUTPUT ;
 
@@ -112,10 +113,10 @@ jobs:
       - name: Check if version exists
         if: needs.process-manifests.outputs.checks-only == 'true' && steps.app-bundle.outputs.bundle-path != ''
         run: |
-          VER_HTTP_CODE=$(curl -sw '%{http_code}' -o /dev/null \
-          "${{ env.ARCHIVARIUS_URL }}/api/v0/application/${{ steps.get-bundle-path.outputs.app-id }}/versions?version=${{ steps.get-bundle-path.outputs.app-version }}");
+          VER_HTTP_CODE=$( curl -sw '%{http_code}' -o /dev/null \
+          "${{ env.ARCHIVARIUS_URL }}/api/v0/application/${{ steps.get-bundle-path.outputs.app-id }}/versions?version=${{ steps.get-bundle-path.outputs.app-version }}" ) ;
           if [ "$VER_HTTP_CODE" != "404" ] ; then
-            echo "Version ${{ steps.get-bundle-path.outputs.app-version }} for ${{ steps.get-bundle-path.outputs.app-id }} already exists (or server failed, code ${VER_HTTP_CODE})!";
+            echo "Version ${{ steps.get-bundle-path.outputs.app-version }} for ${{ steps.get-bundle-path.outputs.app-id }} already exists (or server failed, code ${VER_HTTP_CODE})!" ;
             exit 1 ;
           fi
 
@@ -130,6 +131,7 @@ jobs:
     name: Delete app
     runs-on: ubuntu-latest
     needs: process-manifests
+    if: needs.process-manifests.outputs.deleted-manifests != '[]'
     strategy:
       matrix:
         manifest: ${{ fromJson(needs.process-manifests.outputs.deleted-manifests) }}
@@ -143,7 +145,7 @@ jobs:
       - name: Set up source code flag
         id: source-code
         run: |
-          ARCHIVARIUS_URL=$(< .github/.ARCHIVARIUS_URL) ;
+          ARCHIVARIUS_URL=$( < .github/.ARCHIVARIUS_URL ) ;
           echo "ARCHIVARIUS_URL=${ARCHIVARIUS_URL}" >> $GITHUB_ENV ;
           if [ "z{{ vars.CATALOG_STAGING }}" != "z" ] ; then
             echo "BUNDLE_ALLOW_VERSION_MISMATCH=1" >> $GITHUB_ENV ;
@@ -152,7 +154,7 @@ jobs:
       - name: Extract app id from path
         id: get-app-id
         run: |
-          echo "app-id=$(basename $(dirname ${{ matrix.manifest }}))" >> $GITHUB_OUTPUT ;
+          echo "app-id=$( basename $( dirname ${{ matrix.manifest }} ) )" >> $GITHUB_OUTPUT ;
 
       - name: Check if app exists on backend
         id: check-app-exists
@@ -167,3 +169,26 @@ jobs:
           curl --fail-with-body -X DELETE \
             -H "Authorization: Bearer ${{ secrets.FAST_AUTH_TOKEN }}" \
             ${{ env.ARCHIVARIUS_URL }}/api/v0/application/${{ steps.get-app-id.outputs.app-id }}
+
+  self-test:
+    name: Run self-test
+    runs-on: ubuntu-latest
+    needs: process-manifests
+    if: needs.process-manifests.outputs.deleted-manifests == '[]' && needs.process-manifests.outputs.changed-manifests == '[]'
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Run self-test
+        id: self-test
+        uses: ./.github/actions/bundle
+        with:
+          path: test/manifest.yml
+
+      - name: Create bundle artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: "test-bundle"
+          path: ${{ steps.self-test.outputs.bundle-path }}
