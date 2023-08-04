@@ -2,9 +2,9 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/gebeto/flipper-xbox-controller.git
-    commit_sha: 0329d3c7bd8be6feb82436091583d85eec32558d
+    commit_sha: 1da7675f60a479883d94d29dc7ddee20f194f6fc
 description: "Infrared remote control for Xbox One"
 changelog: "v1.0 - Initial release"
 author: "@gebeto"
 screenshots:
-  - "./img/1.png"
+  - "./img/screenshot.png"
