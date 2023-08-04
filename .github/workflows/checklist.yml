@@ -1,4 +1,4 @@
-name: Require Checklist
+name: Checklist
 
 on:
   pull_request:
@@ -7,8 +7,9 @@ on:
 jobs:
   checklist-check:
     runs-on: ubuntu-latest
-    name: Checks
+    name: Required checks
     steps:
       - uses: mheap/require-checklist-action@v2
         with:
-          requireChecklist: true # If this is true and there are no checklists detected, the action will fail
+          # If this is true and there are no checklists detected, the action will fail
+          requireChecklist: true
