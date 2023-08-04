@@ -44,18 +44,17 @@ jobs:
         id: diff-comment
         if: github.event_name == 'pull_request' && steps.changed-files.outputs.all_changed_files != ''
         run: |
-          echo "## Manifest changes" > diff.md ;
-          echo "### Changed manifests" >> diff.md ;
+          echo "### Code changes" >> diff.md ;
           for manifest in ${{ steps.changed-files.outputs.all_changed_files }} ; do
             SHA_DIFF=$( git diff ${{ github.event.pull_request.base.sha }} ${{ github.sha }} -- $manifest | grep "commit_sha: " ) ;
             OLD_SHA_VALUE=$( echo "$SHA_DIFF" | grep "-" | sed "s/.*: //" | xargs ) ;
             NEW_SHA_VALUE=$( echo "$SHA_DIFF" | grep "+" | sed "s/.*: //" | xargs ) ;
             REPO_URL=$( grep " origin: " $manifest | sed "s/.*origin: \(.*\)/\1/" | sed "s/\(.*\).git$/\1/" ) ;
-            echo "#### $manifest" >> diff.md ;
+            APP_ID=$(basename $( dirname $manifest ) ) ;
             if [ "z$OLD_SHA_VALUE" == "z" ] ; then
-              echo "[$manifest]($REPO_URL/tree/$NEW_SHA_VALUE)" >> diff.md ;
+              echo "New $APP_ID: [code]($REPO_URL/tree/$NEW_SHA_VALUE)" >> diff.md ;
             else
-              echo "[$manifest]($REPO_URL/compare/$OLD_SHA_VALUE...$NEW_SHA_VALUE)" >> diff.md ;
+              echo "Updated $APP_ID: [changes]($REPO_URL/compare/$OLD_SHA_VALUE...$NEW_SHA_VALUE)" >> diff.md ;
             fi ;
           done ;
           echo 'repo-diff<<REPO-DIFF-DATA-EOF' >> $GITHUB_OUTPUT ;
@@ -64,10 +63,11 @@ jobs:
 
       - name: Create or update diff comment
         if: steps.diff-comment.outputs.repo-diff != ''
-        uses: peter-evans/create-or-update-comment@v1
+        uses: peter-evans/create-or-update-comment@v3
         with:
           issue-number: ${{ github.event.pull_request.number }}
           body: ${{ steps.diff-comment.outputs.repo-diff }}
+
       
 
   build-package:
