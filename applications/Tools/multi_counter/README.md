@@ -1,3 +1,7 @@
+## Status
+
+[![multi_counter](https://catalog.flipperzero.one/application/multi_counter/widget)](https://catalog.flipperzero.one/application/multi_counter/page)
+
 # Flipper Multi Counter
 This is a simple external application for the [Flipper Zero](https://www.flipperzero.one) modified from [VS Counter](https://github.com/JadePossible/Flipper-Versus-Counter) version.
 The app give you access to up to 4 counters to count your scores for tabletop games for example.
