@@ -40,6 +40,17 @@ jobs:
           echo all-changed-files=$(echo "${{ steps.changed-files.outputs.all_changed_files }}" | jq -R -c 'split(" ")' ) >> $GITHUB_OUTPUT ;
           echo deleted-files=$(echo "${{ steps.changed-files.outputs.deleted_files }}" | jq -R -c 'split(" ")' ) >> $GITHUB_OUTPUT ;
 
+      - name: Generate comment with link to repo diff for changed manifests
+        id: diff-comment
+        if: github.event_name == 'pull_request' && steps.changed-files.outputs.all_changed_files != ''
+        run: |
+          echo "## Manifest changes" > diff.md ;
+          echo "### Changed manifests" >> diff.md ;
+          for manifest in ${{ steps.changed-files.outputs.all_changed_files }} ; do
+            git diff ${{ github.event.pull_request.base.sha }} ${{ github.sha }} -- $manifest >> diff.md ;
+          done ;
+          cat diff.md ;
+
   build-package:
     name: Build package
     runs-on: ubuntu-latest
