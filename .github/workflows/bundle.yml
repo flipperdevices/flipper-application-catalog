@@ -44,7 +44,7 @@ jobs:
         id: diff-comment
         if: github.event_name == 'pull_request' && steps.changed-files.outputs.all_changed_files != ''
         run: |
-          echo "### Code changes" >> diff.md ;
+          echo "### Application updates" >> diff.md ;
           for manifest in ${{ steps.changed-files.outputs.all_changed_files }} ; do
             SHA_DIFF=$( git diff ${{ github.event.pull_request.base.sha }} ${{ github.sha }} -- $manifest | grep "commit_sha: " ) ;
             OLD_SHA_VALUE=$( echo "$SHA_DIFF" | grep "-" | sed "s/.*: //" | xargs ) ;
@@ -61,14 +61,14 @@ jobs:
           cat diff.md >> $GITHUB_OUTPUT ;
           echo 'REPO-DIFF-DATA-EOF' >> $GITHUB_OUTPUT ;
 
-      - name: Find Comment
+      - name: Find diff comment
         uses: peter-evans/find-comment@v1
         id: find-comment
         if: steps.diff-comment.outputs.repo-diff != ''
         with:
           issue-number: ${{ github.event.pull_request.number }}
           comment-author: 'github-actions[bot]'
-          body-includes: '### Code changes'
+          body-includes: '### Application updates'
 
       - name: Create or update diff comment
         if: steps.diff-comment.outputs.repo-diff != ''
