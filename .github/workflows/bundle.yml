@@ -52,9 +52,9 @@ jobs:
             REPO_URL=$( grep " origin: " $manifest | sed "s/.*origin: \(.*\)/\1/" | sed "s/\(.*\).git$/\1/" ) ;
             APP_ID=$(basename $( dirname $manifest ) ) ;
             if [ "z$OLD_SHA_VALUE" == "z" ] ; then
-              echo "New \`$APP_ID\`: [code]($REPO_URL/tree/$NEW_SHA_VALUE)" >> diff.md ;
+              echo "New app \`$APP_ID\`: [repo]($REPO_URL/tree/$NEW_SHA_VALUE)" >> diff.md ;
             else
-              echo "Updated \`$APP_ID\`: [changes]($REPO_URL/compare/$OLD_SHA_VALUE...$NEW_SHA_VALUE)" >> diff.md ;
+              echo "Updated app \`$APP_ID\`: [changes]($REPO_URL/compare/$OLD_SHA_VALUE...$NEW_SHA_VALUE)" >> diff.md ;
             fi ;
           done ;
           echo 'repo-diff<<REPO-DIFF-DATA-EOF' >> $GITHUB_OUTPUT ;
