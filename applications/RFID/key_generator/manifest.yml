@@ -1,11 +1,11 @@
 sourcecode:
   type: git
   location:
-    origin: https://github.com/xMasterX/all-the-plugins.git
-    commit_sha: 1606da9d9f0dbdc239387c9fb061bb25b4e94720
-    subdir: apps_source_code/fz-em4100-generator
-description: "Generates EM4100 key lists from selected rfid key file for RFID fuzzer app"
-changelog: "v1.0 - Initial release"
-author: "@Milk-Cool"
+    origin: https://github.com/Milk-Cool/fz-em4100-generator.git
+    commit_sha: d8b67d779fa834cc28ca2f0d0ca7607ff8a96f65
+short_description: "RFID potential universal keys generator"
+description: "@README.md"
+changelog: "v1.1 - Increased version so that it shows up in the catalog; v1.0 - initial release"
+author: "milk_cool"
 screenshots:
-  - "./img/1.png"
+  - "./.flipcorg/gallery/Screenshot-20230223-203332.png"

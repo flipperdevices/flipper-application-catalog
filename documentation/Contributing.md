@@ -1,9 +1,17 @@
-# General Requirements
+# General Terms and Requirements
 
- * Applications submitted to this repository must be licensed under an Open Source License of your choice, permitting building and distribution of the application in binary form by Flipper Application Catalogue's infrastructure.
+ * Applications submitted to this repository must be licensed under an Open Source License of your choice, permitting building and distribution of the application in binary form by Flipper Application Catalog's infrastructure.
  * Applications and data they produce or process must not infringe on any third-party rights or trademarks.
+ * Submitted applications must not contain any malicious code or code that may cause harm to the user's device or data.
+ * Applications must comply with User-Generated Content Policies of [Play Store](https://support.google.com/googleplay/android-developer/answer/9876937) and [App Store](https://developer.apple.com/app-store/review/guidelines/#user-generated-content).
+    * We reserve the right to reject and remove applications that do not comply with these policies.
+ * In case if any changes to application metadata or source code are required, we will contact the application author of submitted pull request or using the contact information provided in the manifest file. If we do not receive a response within 14 days, the application will be removed from the catalog.
+    * If immediate changes are required to address a security vulnerability, copyright or other critical issue, we reserve the right to unpublish the application from the catalog before contacting the author.
 
-Applications are submitted as a pull request to this repository. The pull request must contain a manifest file with a link to the application source code repository and additional information, such as application name, description, author, screenshots, etc. The application source code must be hosted in a public Git repository. 
+Applications are submitted as a pull request to this repository.
+
+ * The pull request must contain a [manifest file](./Manifest.md) with a link to the application source code repository and additional information, such as application name, description, author, screenshots, etc. 
+ * Application's source code must be hosted in a public Git repository.
 
 # Adding and Updating Applications
 
@@ -31,10 +39,10 @@ source venv/bin/activate
 pip install -r tools/requirements.txt
 ```
 
-Then run the validation script:
+Then run the validation script, passing it the path to your manifest file:
 
 ```bash
-python3 tools/bundle.py applications/.../manifest.yml bundle.zip
+python3 tools/bundle.py applications/CATEGORY/APPID/manifest.yml bundle.zip
 ```
 
-If there are any errors, the script will print them and exit with non-zero exit code.
+If there are any errors, the script will print them and exit with non-zero exit code. **Be sure to fix all errors before submitting your application.**
