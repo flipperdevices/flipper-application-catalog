@@ -67,7 +67,7 @@ jobs:
           echo "${{ steps.diff-comment.outputs.repo-diff }}" >> $GITHUB_STEP_SUMMARY ;
 
       - name: Find diff comment
-        uses: peter-evans/find-comment@v1
+        uses: peter-evans/find-comment@v2.4.0
         id: find-comment
         if: steps.diff-comment.outputs.repo-diff != '' && !github.event.pull_request.head.repo.fork
         with:
