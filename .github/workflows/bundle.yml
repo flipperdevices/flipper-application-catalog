@@ -61,14 +61,23 @@ jobs:
           cat diff.md >> $GITHUB_OUTPUT ;
           echo 'REPO-DIFF-DATA-EOF' >> $GITHUB_OUTPUT ;
 
+      - name: Find Comment
+        uses: peter-evans/find-comment@v1
+        id: find-comment
+        if: steps.diff-comment.outputs.repo-diff != ''
+        with:
+          issue-number: ${{ github.event.pull_request.number }}
+          comment-author: 'github-actions[bot]'
+          body-includes: '### Code changes'
+
       - name: Create or update diff comment
         if: steps.diff-comment.outputs.repo-diff != ''
         uses: peter-evans/create-or-update-comment@v3
         with:
           issue-number: ${{ github.event.pull_request.number }}
+          comment-id: ${{ steps.find-comment.outputs.comment-id }}
           body: ${{ steps.diff-comment.outputs.repo-diff }}
 
-      
 
   build-package:
     name: Build package
