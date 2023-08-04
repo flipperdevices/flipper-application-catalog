@@ -82,9 +82,9 @@ jobs:
 
   build-package:
     name: Build package
-    runs-on: ubuntu-latest
     needs: process-manifests
     if: needs.process-manifests.outputs.changed-manifests != '[]'
+    runs-on: ubuntu-latest
     strategy:
       fail-fast: false
       matrix:
@@ -168,11 +168,12 @@ jobs:
           name: "${{ steps.get-bundle-path.outputs.app-id }}-${{ steps.get-bundle-path.outputs.app-version }}-bundle"
           path: ${{ steps.get-bundle-path.outputs.path }}
 
+
   delete-app:
     name: Delete app
-    runs-on: ubuntu-latest
-    needs: process-manifests
     if: needs.process-manifests.outputs.deleted-manifests != '[]'
+    needs: process-manifests
+    runs-on: ubuntu-latest
     strategy:
       fail-fast: false
       matrix:
@@ -236,9 +237,8 @@ jobs:
           path: ${{ steps.self-test.outputs.bundle-path }}
 
   report-status:
-    runs-on: ubuntu-latest
     needs: [ self-test, build-package, delete-app ]
+    if: always() && !contains(needs.*.result, 'failure')
+    runs-on: ubuntu-latest
     steps:
-      - name: Report status
-        run: |
-          echo "All good ✨" ;
+      - run: echo "All good ✨" ;
