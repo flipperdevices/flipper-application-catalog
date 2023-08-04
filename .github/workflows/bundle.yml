@@ -47,7 +47,16 @@ jobs:
           echo "## Manifest changes" > diff.md ;
           echo "### Changed manifests" >> diff.md ;
           for manifest in ${{ steps.changed-files.outputs.all_changed_files }} ; do
-            git diff ${{ github.event.pull_request.base.sha }} ${{ github.sha }} -- $manifest >> diff.md ;
+            SHA_DIFF=$( git diff ${{ github.event.pull_request.base.sha }} ${{ github.sha }} -- $manifest | grep "commit_sha: " ) ;
+            OLD_SHA_VALUE=$( echo "$SHA_DIFF" | grep "-" | sed "s/.*: //" | xargs ) ;
+            NEW_SHA_VALUE=$( echo "$SHA_DIFF" | grep "+" | sed "s/.*: //" | xargs ) ;
+            REPO_URL=$( grep " origin: " $manifest | sed "s/.*origin: \(.*\)/\1/" | sed "s/\(.*\).git$/\1/" ) ;
+            echo "#### $manifest" >> diff.md ;
+            if [ "z$OLD_SHA_VALUE" == "z" ] ; then
+              echo "[$manifest]($REPO_URL/blob/$NEW_SHA_VALUE/$manifest)" >> diff.md ;
+            else
+              echo "[$manifest]($REPO_URL/compare/$OLD_SHA_VALUE...$NEW_SHA_VALUE)" >> diff.md ;
+            fi ;
           done ;
           cat diff.md ;
 
