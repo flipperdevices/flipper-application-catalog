@@ -58,7 +58,9 @@ jobs:
               echo "[$manifest]($REPO_URL/compare/$OLD_SHA_VALUE...$NEW_SHA_VALUE)" >> diff.md ;
             fi ;
           done ;
-          echo "repo-diff=$( cat diff.md )" >> $GITHUB_OUTPUT ;
+          echo 'repo-diff<<REPO-DIFF-DATA-EOF' >> $GITHUB_OUTPUT ;
+          cat diff.md >> $GITHUB_OUTPUT ;
+          echo 'REPO-DIFF-DATA-EOF' >> $GITHUB_OUTPUT ;
 
       - name: Create or update diff comment
         if: steps.diff-comment.outputs.repo-diff != ''
