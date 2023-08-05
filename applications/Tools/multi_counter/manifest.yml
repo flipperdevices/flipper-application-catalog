@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/JadePossible/Flipper-Multi-Counter
-    commit_sha: d8926a6fb4b2612d33fe4ef2614dc015d456b597
+    commit_sha: d1199a11c614af8cb5e21c0842b46cb0ef9cd0fe
 description: "@README.md"
 changelog: "v1.0 - Initial release"
 author: "@JadePossible & Roro"
