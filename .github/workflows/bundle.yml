@@ -29,7 +29,7 @@ jobs:
             applications/**/manifest.yml
           files_ignore: |
             .github
-            test
+            example
 
       - name: JSONify changes
         id: set-json-output
@@ -234,7 +234,7 @@ jobs:
         id: self-test
         uses: ./.github/actions/bundle
         with:
-          path: test/manifest.yml
+          path: example/manifest.yml
 
       - name: Create bundle artifact
         uses: actions/upload-artifact@v3
