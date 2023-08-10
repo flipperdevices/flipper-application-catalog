@@ -1,0 +1,12 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/liamhays/ublox.git
+    commit_sha: ee4f9a3038d2bac1ba8b98ab0a5e1fdbf9ecfc20
+description: "@README.md"
+changelog: "@changelog.md"
+screenshots:
+  - screenshots/menu.png
+  - screenshots/data_display_handheld.png
+  - screenshots/data_display_car.png
+  - screenshots/sync_time.png
