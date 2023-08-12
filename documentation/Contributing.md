@@ -7,13 +7,11 @@
     * We reserve the right to reject and remove applications that do not comply with these policies.
  * In case if any changes to application metadata or source code are required, we will contact the application author of submitted pull request or using the contact information provided in the manifest file. If we do not receive a response within 14 days, the application will be removed from the catalog.
     * If immediate changes are required to address a security vulnerability, copyright or other critical issue, we reserve the right to unpublish the application from the catalog before contacting the author.
- * We also reserve the right at any time to reject and unpublish applications that do not comply with these terms and requirements, or for any other reason.
 
 Applications are submitted as a pull request to this repository.
 
  * The pull request must contain a [manifest file](./Manifest.md) with a link to the application source code repository and additional information, such as application name, description, author, screenshots, etc. 
  * Application's source code must be hosted in a public Git repository.
-
 
 # Adding and Updating Applications
 
