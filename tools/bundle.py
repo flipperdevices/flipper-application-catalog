@@ -14,7 +14,6 @@ from typing import Dict, List
 
 import yaml
 
-# import markdown2
 from dataclass_wizard import YAMLWizard
 from dataclass_wizard.dumpers import asdict
 from git import Repo
@@ -23,12 +22,20 @@ from markdown.extensions import Extension
 from markdown.preprocessors import HtmlBlockPreprocessor
 from PIL import Image
 
-# import markdown
-
+# Temporary hack 
+try:
+    import SCons
+except ImportError:
+    import sys
+    class _fbt_util_stub:
+        @staticmethod
+        def resolve_real_dir_node(node):
+            return node
+    sys.modules["fbt.util"] = _fbt_util_stub
+    
 
 class BundlerException(Exception):
     pass
-
 
 @dataclass
 class CodeLocation:
