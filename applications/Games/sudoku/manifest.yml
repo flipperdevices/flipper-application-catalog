@@ -1,0 +1,17 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/profelis/fz-sudoku.git
+    commit_sha: 0bf7afe852c992ee945e2bf66330ff9239f4f8b7
+name: "Sudoku"
+icon: "sudoku.png"
+id: "sudoku"
+description: "@README_catalog.md"
+short_description: "Sudoku game"
+category: "Games"
+version: "1.0"
+changelog: "@CHANGELOG.md"
+author: "@profelis"
+screenshots:
+  - "./screenshots/main.png"
+  - "./screenshots/menu.png"
