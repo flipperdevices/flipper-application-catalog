@@ -29,7 +29,7 @@ jobs:
             applications/**/manifest.yml
           files_ignore: |
             .github
-            test
+            example
 
       - name: JSONify changes
         id: set-json-output
@@ -57,6 +57,7 @@ jobs:
               echo "Updated app \`$APP_ID\`: [changes]($REPO_URL/compare/$OLD_SHA_VALUE...$NEW_SHA_VALUE)" >> diff.md ;
             fi ;
           done ;
+          echo 'repo-diff-md-file=diff.md' >> $GITHUB_OUTPUT ;
           echo 'repo-diff<<REPO-DIFF-DATA-EOF' >> $GITHUB_OUTPUT ;
           cat diff.md >> $GITHUB_OUTPUT ;
           echo 'REPO-DIFF-DATA-EOF' >> $GITHUB_OUTPUT ;
@@ -64,7 +65,7 @@ jobs:
       - name: Output diff to job status
         if: steps.diff-comment.outputs.repo-diff != ''
         run: |
-          echo "${{ steps.diff-comment.outputs.repo-diff }}" >> $GITHUB_STEP_SUMMARY ;
+          cat "${{ steps.diff-comment.outputs.repo-diff-md-file }}" >> $GITHUB_STEP_SUMMARY ;
 
       - name: Find diff comment
         uses: peter-evans/find-comment@v2.4.0
@@ -234,7 +235,7 @@ jobs:
         id: self-test
         uses: ./.github/actions/bundle
         with:
-          path: test/manifest.yml
+          path: example/manifest.yml
 
       - name: Create bundle artifact
         uses: actions/upload-artifact@v3
