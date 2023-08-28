@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/Racso/fzero-apps.git
-    commit_sha: e90cf9594aef9a73d45c116680999df75d6acd3f
+    commit_sha: 5ad78a4978147cabc579f3575bf358c43026a100
     subdir: zero
 description: "@README.md"
 changelog: "@./release/changelog.md"
