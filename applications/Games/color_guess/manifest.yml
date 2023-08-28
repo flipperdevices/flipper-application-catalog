@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/leedave/Leeds-Flipper-Zero-Applications
-    commit_sha: 6795ba139d71d69dffc1d86fec63f4c378e0cf17
+    commit_sha: 17c81bcde61c2dcec9908bd48e873d9258cbf075
     subdir: Games/color_guess
 description: "@./docs/README.md"
 changelog: "@./docs/changelog.md"
