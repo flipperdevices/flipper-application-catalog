@@ -548,10 +548,6 @@ class AppBundler:
         self._log.info(f"Saving updated manifest: {skip_source_code=}")
         self._manifest.to_yaml_file(self._tmp_path / self.MANIFEST_YAML_NAME)
 
-        if skip_source_code:
-            self._log.info("Removing source code")
-            shutil.rmtree(self._code_dir)
-
         with zipfile.ZipFile(
             self._bundle_path, mode="w", compression=zipfile.ZIP_DEFLATED
         ) as new_zip:
@@ -560,6 +556,10 @@ class AppBundler:
                 for folder_name in subfolders.copy():
                     if folder_name.startswith(".") or folder_name == "dist":
                         self._log.debug(f"Skipping folder {filename}")
+                        subfolders.remove(folder_name)
+                    # Exclude source code folder if requested
+                    if skip_source_code and self._code_dir == Path(folder, folder_name):
+                        self._log.debug(f"Skipping source code folder {folder}")
                         subfolders.remove(folder_name)
 
                 for filename in filenames:
