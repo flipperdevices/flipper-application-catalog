@@ -47,7 +47,7 @@ jobs:
           echo "### Application updates" >> diff.md ;
           for manifest in ${{ steps.changed-files.outputs.all_changed_files }} ; do
             SHA_DIFF=$( git diff --unified=0 ${{ github.event.pull_request.base.sha }} ${{ github.sha }} -- $manifest | grep "commit_sha: " ) ;
-            OLD_SHA_VALUE=$( echo "$SHA_DIFF" | grep -E '^\+' | sed "s/.*: //" | xargs ) ;
+            OLD_SHA_VALUE=$( echo "$SHA_DIFF" | grep -E '^\-' | sed "s/.*: //" | xargs ) ;
             NEW_SHA_VALUE=$( echo "$SHA_DIFF" | grep -E '^\+' | sed "s/.*: //" | xargs ) ;
             REPO_URL=$( grep " origin: " $manifest | sed "s/.*origin: \(.*\)/\1/" | sed "s/\(.*\).git$/\1/" ) ;
             APP_ID=$(basename $( dirname $manifest ) ) ;
