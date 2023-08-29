@@ -2,15 +2,15 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/htotoo/NRF24ChannelScanner
-    commit_sha: 5b74ae2bee0bfa39cb642cb902199742e2df517b
+    commit_sha: e7bfde49d95d6582c3d7d208c30ec3c51a933af1
     subdir: NRF24ChannelScanner
 short_description: |
   Scanning channels for usage with NRF24 
 description: |
   Application for scanning channels for usage data with NRF24 module and Flipper zero
-changelog: "@../changelog.md"
+changelog: "v1.3 - Added infinite scan option, and 5V auto on for some modules"
 author: "@htotoo"
 screenshots:
-  - "../.flipcorg/gallery/screen_open.png"
-  - "./.flipcorg/gallery/screen1.png."
+  - "./.flipcorg/gallery/screen_open.png"
+  - "./.flipcorg/gallery/screen1.png"
   
