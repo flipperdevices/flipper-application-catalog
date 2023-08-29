@@ -13,7 +13,6 @@ from tempfile import TemporaryDirectory
 from typing import Dict, List
 
 import yaml
-
 from dataclass_wizard import YAMLWizard
 from dataclass_wizard.dumpers import asdict
 from git import Repo
@@ -22,20 +21,23 @@ from markdown.extensions import Extension
 from markdown.preprocessors import HtmlBlockPreprocessor
 from PIL import Image
 
-# Temporary hack 
+# Temporary hack
 try:
     import SCons
 except ImportError:
     import sys
+
     class _fbt_util_stub:
         @staticmethod
         def resolve_real_dir_node(node):
             return node
+
     sys.modules["fbt.util"] = _fbt_util_stub
-    
+
 
 class BundlerException(Exception):
     pass
+
 
 @dataclass
 class CodeLocation:
@@ -543,7 +545,7 @@ class AppBundler:
             raise BundlerException(f"Markdown error: {e}")
 
     def _build_package(self, skip_source_code: bool = False):
-        self._log.info(f"Saving updated manifest: {skip_source_code}")
+        self._log.info(f"Saving updated manifest: {skip_source_code=}")
         self._manifest.to_yaml_file(self._tmp_path / self.MANIFEST_YAML_NAME)
 
         if skip_source_code:
@@ -575,9 +577,21 @@ class AppBundler:
         with open(manifest_path, "w") as f:
             json.dump(asdict(self._manifest), f, indent=4)
 
+    def package_artifacts(self, artifacts_path: Path):
+        self._log.info(f"Packaging artifacts: {artifacts_path}")
+        dist_dir = self._code_dir / "dist"
+        with zipfile.ZipFile(
+            artifacts_path, mode="w", compression=zipfile.ZIP_DEFLATED
+        ) as new_zip:
+            # Package "dist" folder with build artifacts
+            for folder, subfolders, filenames in os.walk(dist_dir):
+                for filename in filenames:
+                    file_path = Path(os.path.join(folder, filename))
+                    self._log.info(f"Adding {file_path}")
+                    new_zip.write(file_path, file_path.relative_to(dist_dir))
 
 class Main:
-    def __init__(self, no_exit=False):
+    def __init__(self):
         # Argument Parser
         # Logging
         self.logger = logging.getLogger()
@@ -622,6 +636,11 @@ class Main:
             default="",
             help="File to write extra manifest copy in JSON format to",
         )
+        self.parser.add_argument(
+            "--artifacts",
+            default=None,
+            help="ZIP file to write build artifacts to",
+        )
 
     def main(self):
         return self.process(self.parser.parse_args())
@@ -652,6 +671,8 @@ class Main:
                 )
                 if args.json:
                     bundler.write_manifest_json(args.json)
+                if args.artifacts:
+                    bundler.package_artifacts(Path(args.artifacts))
                 return 0
         except BundlerException as e:
             self.logger.error(e)
