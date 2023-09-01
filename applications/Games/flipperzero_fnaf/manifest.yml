@@ -1,0 +1,13 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/sillygir1/flipperzero-fnaf.git
+    commit_sha: 52f4cae24c53ba6439d13055347a92b552fa7808
+short_description: Five Nights at Flipper's
+description: "@README.md"
+changelog: "@./catalog/changelog.md"
+screenshots:
+  - catalog/1.png
+  - catalog/2.png
+  - catalog/3.png
+  - catalog/4.png
