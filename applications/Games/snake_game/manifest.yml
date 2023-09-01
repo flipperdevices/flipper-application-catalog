@@ -2,12 +2,11 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/flipperdevices/flipperzero-good-faps.git
-    commit_sha: b108d7aae1f4ab182cffea296e433dac164a1468
-    subdir: weather_station
+    commit_sha: e9879e3b8dd5cc619f18cfd95a62c2a2d176b6b8
+    subdir: snake_game
 description: "@.catalog/README.md"
-changelog: "v1.0 - Initial release, v1.1 - Added Auriol AHFL protocol"
-author: "@Skorpionm"
+changelog: "v1.0 - Initial release"
+author: "@OlegSchwann"
 screenshots:
   - ".catalog/screenshots/1.png"
   - ".catalog/screenshots/2.png"
-  - ".catalog/screenshots/3.png"

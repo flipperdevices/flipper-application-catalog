@@ -46,9 +46,9 @@ jobs:
         run: |
           echo "### Application updates" >> diff.md ;
           for manifest in ${{ steps.changed-files.outputs.all_changed_files }} ; do
-            SHA_DIFF=$( git diff ${{ github.event.pull_request.base.sha }} ${{ github.sha }} -- $manifest | grep "commit_sha: " ) ;
-            OLD_SHA_VALUE=$( echo "$SHA_DIFF" | grep "-" | sed "s/.*: //" | xargs ) ;
-            NEW_SHA_VALUE=$( echo "$SHA_DIFF" | grep "+" | sed "s/.*: //" | xargs ) ;
+            SHA_DIFF=$( git diff --unified=0 ${{ github.event.pull_request.base.sha }} ${{ github.sha }} -- $manifest | grep "commit_sha: " ) ;
+            OLD_SHA_VALUE=$( echo "$SHA_DIFF" | grep -E '^\-' | sed "s/.*: //" | xargs ) ;
+            NEW_SHA_VALUE=$( echo "$SHA_DIFF" | grep -E '^\+' | sed "s/.*: //" | xargs ) ;
             REPO_URL=$( grep " origin: " $manifest | sed "s/.*origin: \(.*\)/\1/" | sed "s/\(.*\).git$/\1/" ) ;
             APP_ID=$(basename $( dirname $manifest ) ) ;
             if [ "z$OLD_SHA_VALUE" == "z" ] ; then
@@ -57,6 +57,7 @@ jobs:
               echo "Updated app \`$APP_ID\`: [changes]($REPO_URL/compare/$OLD_SHA_VALUE...$NEW_SHA_VALUE)" >> diff.md ;
             fi ;
           done ;
+          echo 'repo-diff-md-file=diff.md' >> $GITHUB_OUTPUT ;
           echo 'repo-diff<<REPO-DIFF-DATA-EOF' >> $GITHUB_OUTPUT ;
           cat diff.md >> $GITHUB_OUTPUT ;
           echo 'REPO-DIFF-DATA-EOF' >> $GITHUB_OUTPUT ;
@@ -64,7 +65,7 @@ jobs:
       - name: Output diff to job status
         if: steps.diff-comment.outputs.repo-diff != ''
         run: |
-          echo "${{ steps.diff-comment.outputs.repo-diff }}" >> $GITHUB_STEP_SUMMARY ;
+          cat "${{ steps.diff-comment.outputs.repo-diff-md-file }}" >> $GITHUB_STEP_SUMMARY ;
 
       - name: Find diff comment
         uses: peter-evans/find-comment@v2.4.0
@@ -116,6 +117,7 @@ jobs:
           path: ${{ matrix.manifest }}
           skip-source-code: ${{ needs.process-manifests.outputs.checks-only }}
           json-manifest: bundle.json
+          build-artifacts-zip: true
           # Uncomment to submit bundles with broken code
           # skip-build: true
           skip-lint: true
@@ -129,6 +131,10 @@ jobs:
           skip-source-code: ${{ needs.process-manifests.outputs.checks-only }}
           sdk-channel: rc
           json-manifest: bundle.json
+          build-artifacts-zip: true
+          # Uncomment to submit bundles with broken code
+          # skip-build: true
+          skip-lint: true
 
       - name: Get succesful build output
         id: get-bundle-path
@@ -136,8 +142,10 @@ jobs:
         run: |
           if [ -f "${{ steps.app-bundle.outputs.bundle-path }}" ] ; then
             echo "path=${{ steps.app-bundle.outputs.bundle-path }}" >> $GITHUB_OUTPUT ;
+            echo "artifacts-path=${{ steps.app-bundle.outputs.artifacts-path }}" >> $GITHUB_OUTPUT ;
           elif [ -f $GITHUB_OUTPUT ] ; then
             echo "path=${{ steps.app-bundle-rc.outputs.bundle-path }}" >> $GITHUB_OUTPUT ;
+            echo "artifacts-path=${{ steps.app-bundle-rc.outputs.artifacts-path }}" >> $GITHUB_OUTPUT ;
           else
             echo Failed to build application bundle! ;
             exit 1 ;
@@ -167,13 +175,20 @@ jobs:
           fi
 
       - name: Create bundle artifact
-        if: needs.process-manifests.outputs.checks-only == 'true' && steps.app-bundle.outputs.bundle-path != ''
+        if: needs.process-manifests.outputs.checks-only == 'true' && steps.get-bundle-path.outputs.path != ''
         uses: actions/upload-artifact@v3
         with:
           name: "${{ steps.get-bundle-path.outputs.app-id }}-${{ steps.get-bundle-path.outputs.app-version }}-bundle"
           path: ${{ steps.get-bundle-path.outputs.path }}
 
-
+      - name: Create build artifacts artifact
+        if: needs.process-manifests.outputs.checks-only == 'true' && steps.get-bundle-path.outputs.artifacts-path != ''
+        uses: actions/upload-artifact@v3
+        with:
+          name: "${{ steps.get-bundle-path.outputs.app-id }}-${{ steps.get-bundle-path.outputs.app-version }}-build-artifacts"
+          path: ${{ steps.get-bundle-path.outputs.artifacts-path }}
+  
+  
   delete-app:
     name: Delete app
     needs: process-manifests

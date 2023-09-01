@@ -1,0 +1,15 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/meshchaninov/flipper-zero-mh-z19
+    commit_sha: 6120a542290469ab81b1691fad5cbcb709ff0172
+short_description: |
+  Measuring carbon dioxide (CO2) with mh-z19 
+description: |
+  Application for measuring carbon dioxide (CO2) with mh-z19 sensor and Flipper zero
+changelog: "@CHANGELOG.md"
+author: "@meshchaninov"
+screenshots:
+  - assets/Ok.png
+  - assets/Very.png
+  
