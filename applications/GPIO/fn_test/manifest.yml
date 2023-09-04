@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/polarikus/flipper-zero_fn_tester
-    commit_sha: 70bb665c2347a39a90b355bcdd2e82d6865d2cfa
+    commit_sha: 227d27dd6551a67fb9b3927d6a91c99c62c1e87e
 short_description: "Application for testing the fiscal drive (Only for the Russian market)"
 description: "@./.catalog/README.md"
 changelog: "@./.catalog/CHANGELOG.md"
