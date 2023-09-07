@@ -7,7 +7,6 @@ id: "radar_scanner"
 category: "GPIO"
 short_description: "Microwave Radar Scanner"
 description: "@README.md"
-icon: "icon.png"
 changelog: "v1.0 - Initial release"
 author: "@MatthewKuKanich"
 screenshots:
