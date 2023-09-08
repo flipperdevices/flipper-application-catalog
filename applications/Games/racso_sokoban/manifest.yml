@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/Racso/fzero-apps.git
-    commit_sha: cf61885cb5bd6156af5b9dd817179dc1ad7225ec
+    commit_sha: fcf094c78d1e8cea1eeab227445bb63a72c2aa25
     subdir: sokoban
 description: "@README.md"
 changelog: "@./release/changelog.md"
