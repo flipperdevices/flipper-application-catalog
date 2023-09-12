@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/xMasterX/all-the-plugins.git
-    commit_sha: cc34a2711fcdc39d88a29c8b66b7b6f6385cfe86
+    commit_sha: e1326198ec587571e2ec87b0da042b9ada571a42
     subdir: apps_source_code/timelapse
 description: "Simple intervalometer app, works via GPIO pins."
 changelog: "v1.0 - Initial release, v1.1 - Updates and fixes"
