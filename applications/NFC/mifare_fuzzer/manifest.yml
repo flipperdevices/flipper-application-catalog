@@ -5,7 +5,7 @@ sourcecode:
     commit_sha: cc34a2711fcdc39d88a29c8b66b7b6f6385cfe86
     subdir: apps_source_code/mifare_fuzzer
 description: "App emulates Mifare Classic cards with various UIDs to check how reader reacts on them"
-changelog: "v1.0 - Initial release"
+changelog: "v1.0 - Initial release, v1.1 - Sync Updates"
 author: "@spheeere98"
 screenshots:
   - "./img/2.png"

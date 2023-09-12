@@ -5,7 +5,7 @@ sourcecode:
     commit_sha: cc34a2711fcdc39d88a29c8b66b7b6f6385cfe86
     subdir: apps_source_code/ocarina
 description: "A basic Ocarina (of Time), Controls are the same as the N64 version of the Ocarina of Time"
-changelog: "v1.0 - Initial release"
+changelog: "v1.0 - Initial release, v1.1 - Sync Updates"
 author: "@invalidna-me"
 screenshots:
   - "./img/1.png"

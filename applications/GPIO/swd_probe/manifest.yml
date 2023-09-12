@@ -5,7 +5,7 @@ sourcecode:
     commit_sha: cc34a2711fcdc39d88a29c8b66b7b6f6385cfe86
     subdir: base_pack/swd_probe
 description: "ARM SWD (Single Wire Debug) Probe"
-changelog: "v1.0 - Initial release"
+changelog: "v1.0 - Initial release, v1.1 - Sync Updates"
 author: "@g3gg0 & (fixes by @xMasterX)"
 screenshots:
   - "./img/1.png"

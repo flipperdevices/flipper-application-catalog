@@ -5,7 +5,7 @@ sourcecode:
     commit_sha: cc34a2711fcdc39d88a29c8b66b7b6f6385cfe86
     subdir: apps_source_code/flipperzero-text2sam
 description: "@README-catalog.md"
-changelog: "v1.0 - Initial release, v1.1 - Description update"
+changelog: "v1.0 - Initial release, v1.1 - Description update, v1.2 - Sync Updates"
 author: "@Round-Pi & (Fixes by @Willy-JL)"
 screenshots:
   - "./img/1.png"

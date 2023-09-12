@@ -5,7 +5,7 @@ sourcecode:
     commit_sha: cc34a2711fcdc39d88a29c8b66b7b6f6385cfe86
     subdir: apps_source_code/resistors
 description: "Resistor calculations"
-changelog: "v1.1 - Initial release"
+changelog: "v1.1 - Initial release, v1.2 - Sync Updates"
 author: "Lewis Westbury"
 screenshots:
   - "./img/2.png"

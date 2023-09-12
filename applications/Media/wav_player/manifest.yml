@@ -5,7 +5,7 @@ sourcecode:
     commit_sha: cc34a2711fcdc39d88a29c8b66b7b6f6385cfe86
     subdir: base_pack/wav_player
 description: "Audio player for WAV files, recommended to convert files to unsigned 8-bit PCM stereo, but it may work with others too"
-changelog: "v1.0 - Initial release"
+changelog: "v1.0 - Initial release, v1.1 - Sync Updates"
 author: "@DrZlo13 & (ported, fixed by @xMasterX), (improved by @LTVA1)"
 screenshots:
   - "./img/2.png"

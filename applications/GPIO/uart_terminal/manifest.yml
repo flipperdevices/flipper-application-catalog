@@ -5,7 +5,7 @@ sourcecode:
     commit_sha: cc34a2711fcdc39d88a29c8b66b7b6f6385cfe86
     subdir: base_pack/uart_terminal
 description: "@README-catalog.md"
-changelog: "v1.0 - Initial release, v1.1 - Description update, v1.1 - More baudrates"
+changelog: "v1.0 - Initial release, v1.1 - Description update, v1.2 - More baudrates"
 author: "@cool4uma & (some fixes by @xMasterX)"
 screenshots:
   - "./img/2.png"
