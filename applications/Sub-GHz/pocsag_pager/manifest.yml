@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/xMasterX/all-the-plugins.git
-    commit_sha: 4c7d203aee8dfc5b01a677b1709103272c8142a3
+    commit_sha: cc34a2711fcdc39d88a29c8b66b7b6f6385cfe86
     subdir: base_pack/pocsag_pager
 description: "@README.md"
 changelog: "v1.0 - Initial release"
