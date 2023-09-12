@@ -2,10 +2,10 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/xMasterX/all-the-plugins.git
-    commit_sha: 1606da9d9f0dbdc239387c9fb061bb25b4e94720
-    subdir: main_apps_sources/game15
+    commit_sha: cc34a2711fcdc39d88a29c8b66b7b6f6385cfe86
+    subdir: base_pack/game15
 description: "Logic Game"
-changelog: "v1.0 - Initial release"
+changelog: "v1.0 - Initial release, v1.1 - Various important fixes"
 author: "@x27"
 screenshots:
   - "./img/1.png"

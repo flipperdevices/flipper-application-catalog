@@ -2,10 +2,10 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/xMasterX/all-the-plugins.git
-    commit_sha: 6647fb0222a3a27fb5773f3153c78a85ba885054
+    commit_sha: cc34a2711fcdc39d88a29c8b66b7b6f6385cfe86
     subdir: apps_source_code/flipper_passgen
 description: "Password Generator"
-changelog: "v0.1 - Initial release"
+changelog: "v1.0 - Initial release, v1.1 - Updates"
 name: "Password Generator"
 screenshots:
   - "./img/2.png"

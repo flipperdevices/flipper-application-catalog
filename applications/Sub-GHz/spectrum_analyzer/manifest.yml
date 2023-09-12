@@ -3,7 +3,7 @@ sourcecode:
   location:
     origin: https://github.com/xMasterX/all-the-plugins.git
     commit_sha: 4c7d203aee8dfc5b01a677b1709103272c8142a3
-    subdir: main_apps_sources/spectrum_analyzer
+    subdir: base_pack/spectrum_analyzer
 description: "@README.md"
 changelog: "v1.0 - Initial release, v1.1 - Fixes"
 author: "@xMasterX & @theY4Kman & @ALEEF02 (original by @jolcese)"
