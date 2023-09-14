@@ -1,0 +1,12 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/noproto/apple_ble_spam_ofw.git
+    commit_sha: 118db24b3b8b6edbe76dde19a98aafb14a6bf3da
+description: "@.catalog/README.md"
+changelog: "@.catalog/CHANGELOG.md"
+author: "@WillyJL & @noproto (ported/backported)"
+screenshots:
+  - ".catalog/screenshots/1.png"
+  - ".catalog/screenshots/2.png"
+  - ".catalog/screenshots/3.png"
