@@ -334,14 +334,14 @@ class AppBundler:
             self._log.info("Linting")
             subprocess.check_output([self.UFBT_COMMAND, "lint"], cwd=self._code_dir)
         except subprocess.CalledProcessError as e:
-            raise BundlerException(f"Code checks failed: {e.output}")
+            raise BundlerException(f"Code checks failed: {str(e.output, 'utf-8')}")
 
     def _build_sources(self):
         try:
             self._log.info("Building")
             subprocess.check_output([self.UFBT_COMMAND], cwd=self._code_dir)
         except subprocess.CalledProcessError as e:
-            raise BundlerException(f"Code checks failed: {e.output}")
+            raise BundlerException(f"Code checks failed: {str(e.output, 'utf-8')}")
 
     def _update_manifest_from_fap(self):
         app_manifest_path = self._code_dir / "application.fam"
