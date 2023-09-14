@@ -2,10 +2,10 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/xMasterX/all-the-plugins.git
-    commit_sha: 7502c9c9c4895a564bd90fd5e1df59023bfa4897
+    commit_sha: e1326198ec587571e2ec87b0da042b9ada571a42
     subdir: apps_source_code/fpz_cntdown_timer-main
 description: "Simple count down timer"
-changelog: "v1.0 - Initial release, v1.1 - Fixed exit issues"
+changelog: "v1.0 - Initial release, v1.1 - Fixed exit issues, v1.2 - Sync Updates"
 author: "@0w0mewo"
 screenshots:
   - "./img/1.png"

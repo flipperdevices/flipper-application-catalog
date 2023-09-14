@@ -2,10 +2,10 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/xMasterX/all-the-plugins.git
-    commit_sha: 1606da9d9f0dbdc239387c9fb061bb25b4e94720
-    subdir: main_apps_sources/morse_code
+    commit_sha: e1326198ec587571e2ec87b0da042b9ada571a42
+    subdir: base_pack/morse_code
 description: "Simple Morse Code parser"
-changelog: "v1.0 - Initial release"
+changelog: "v1.0 - Initial release, v1.1 - Sync Updates"
 author: "@wh00hw & @xMasterX"
 screenshots:
   - "./img/1.png"

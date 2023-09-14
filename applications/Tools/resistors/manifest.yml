@@ -2,10 +2,10 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/xMasterX/all-the-plugins.git
-    commit_sha: 1606da9d9f0dbdc239387c9fb061bb25b4e94720
+    commit_sha: e1326198ec587571e2ec87b0da042b9ada571a42
     subdir: apps_source_code/resistors
 description: "Resistor calculations"
-changelog: "v1.1 - Initial release"
+changelog: "v1.1 - Initial release, v1.2 - Sync Updates"
 author: "Lewis Westbury"
 screenshots:
   - "./img/2.png"

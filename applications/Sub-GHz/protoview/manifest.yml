@@ -2,10 +2,10 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/xMasterX/all-the-plugins.git
-    commit_sha: 4c7d203aee8dfc5b01a677b1709103272c8142a3
-    subdir: main_apps_sources/protoview
+    commit_sha: e1326198ec587571e2ec87b0da042b9ada571a42
+    subdir: base_pack/protoview
 description: "@README.md"
-changelog: "v1.0 - Initial release"
+changelog: "v1.0 - Initial release, v1.1 - Sync Updates"
 author: "@antirez & (fixes by @xMasterX)"
 screenshots:
   - "./img/1.png"
