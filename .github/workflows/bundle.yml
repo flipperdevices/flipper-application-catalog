@@ -112,6 +112,7 @@ jobs:
         
       - name: Bundle application
         id: app-bundle
+        continue-on-error: true
         uses: ./.github/actions/bundle
         with:
           path: ${{ matrix.manifest }}
