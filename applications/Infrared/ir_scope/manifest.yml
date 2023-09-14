@@ -2,10 +2,10 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/xMasterX/all-the-plugins.git
-    commit_sha: 7502c9c9c4895a564bd90fd5e1df59023bfa4897
-    subdir: main_apps_sources/ir_scope
+    commit_sha: e1326198ec587571e2ec87b0da042b9ada571a42
+    subdir: base_pack/ir_scope
 description: "App allows to see incoming IR signals."
-changelog: "v1.0 - Initial release"
+changelog: "v1.0 - Initial release, v1.1 - Various fixes, v1.1 - Various important fixes"
 author: "@kallanreed"
 screenshots:
   - "./img/1.png"

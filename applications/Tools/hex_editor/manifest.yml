@@ -2,10 +2,10 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/xMasterX/all-the-plugins.git
-    commit_sha: 2d20739899c929fbdb1a8d9cc67bb4e5e6eba34a
+    commit_sha: e1326198ec587571e2ec87b0da042b9ada571a42
     subdir: apps_source_code/hex_editor
 description: "@README-catalog.md"
-changelog: "v1.0 - Initial release, v1.1 - Description update"
+changelog: "v1.0 - Initial release, v1.1 - Description update, v1.2 - Sync Updates"
 author: "@dunaevai135"
 screenshots:
   - "./img/1.png"
