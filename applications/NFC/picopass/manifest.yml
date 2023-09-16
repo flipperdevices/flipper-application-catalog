@@ -2,10 +2,10 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/flipperdevices/flipperzero-good-faps.git
-    commit_sha: 876543c92f59b956ede3fb6f1d03955b7e5bd92f
+    commit_sha: 9d917542e6e76165041941593d1dea7d64d5e036
     subdir: picopass
 description: "@.catalog/README.md"
-changelog: "v1.0 - Initial release, v1.1 - Key dicts moved to app assets, v1.2 - Sentinel bit remove, v1.3 - Show standard key instead of hex bytes when detected, v1.4 - Optimize crypto speed to fix compatibliity with Signo and OmniKey readers"
+changelog: "@.catalog/changelog.md"
 author: "@bettse"
 screenshots:
   - ".catalog/screenshots/1.png"
