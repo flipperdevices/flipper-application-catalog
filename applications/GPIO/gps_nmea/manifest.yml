@@ -2,10 +2,10 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/xMasterX/all-the-plugins.git
-    commit_sha: b164537029bfc30aec112c66405cb3c2aea9022a
-    subdir: main_apps_sources/gps_nmea_uart
+    commit_sha: e1326198ec587571e2ec87b0da042b9ada571a42
+    subdir: base_pack/gps_nmea_uart
 description: "@README.md"
-changelog: "v1.0 - Initial release"
+changelog: "v1.0 - Initial release, v1.1 - Various important fixes"
 author: "@ezod & @xMasterX"
 screenshots:
   - "./img/1.png"
