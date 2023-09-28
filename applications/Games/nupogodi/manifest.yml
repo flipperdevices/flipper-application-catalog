@@ -2,9 +2,11 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/sionyx/flipper_nupogodi.git
-    commit_sha: e4c0410da9b36d2819a26441dfd31b228c98bb76
+    commit_sha: 39cad3519eb7e28177ff32ea99f107b9462fae1e
 description: "Elektronika IM-02 - Nu, Pogodi! / (Game & Watch - Egg) - Soviet retro game"
 changelog: "v1.2 - Extra eggs"
 author: "@sionyx"
 screenshots:
-  - "./.flipcorg/gallery/screenshot.jpg"
+  - "./screens/nupogodi1.png"
+  - "./screens/nupogodi2.png"
+  - "./screens/nupogodi3.png"
