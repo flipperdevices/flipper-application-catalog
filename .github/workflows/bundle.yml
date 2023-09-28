@@ -1,109 +1,164 @@
-name: Build and sumbit application package
+name: Process manifests
 
 on:
   push:
     branches:
-      - dev
+      - main
   pull_request:
 
 jobs:
-  build-package:
-    name: Build and submit application package
+  process-manifests:
+    name: Get changes
     runs-on: ubuntu-latest
+    outputs:
+      changed-manifests: ${{ steps.set-json-output.outputs.all-changed-files }}
+      deleted-manifests: ${{ steps.set-json-output.outputs.deleted-files }}
+      checks-only: ${{ steps.set-json-output.outputs.checks-only }}
+
     steps:
       - name: Checkout
         uses: actions/checkout@v3
         with:
-          fetch-depth: 1
+          fetch-depth: 2
 
       - name: Get updated manifests
         id: changed-files
         uses: tj-actions/changed-files@v35
         with:
           files: |
-            **/manifest.yml
+            applications/**/manifest.yml
           files_ignore: |
             .github
-            test
+            example
 
-      - name: Check updated manifests
-        id: get-manifest
+      - name: JSONify changes
+        id: set-json-output
         run: |
-          ARCHIVARIUS_URL=$(< .github/.ARCHIVARIUS_URL) ;
-          echo "ARCHIVARIUS_URL=${ARCHIVARIUS_URL}" >> $GITHUB_ENV ;
-          if [ "z{{ vars.CATALOG_STAGING }}" != "z" ] ; then
-            echo "BUNDLE_ALLOW_VERSION_MISMATCH=1" >> $GITHUB_ENV ;
+          if [ "${{ github.event_name }}" != "push" ] ; then
+            echo checks-only=true >> $GITHUB_OUTPUT ;
           fi ;
-          CHANGED_FILES_STR="${{ steps.changed-files.outputs.all_changed_files }}";
-          CHANGED_FILES=( $CHANGED_FILES_STR ) ;
-          CHANGED_FILES_COUNT=${#CHANGED_FILES[@]} ;
-          if [ "$CHANGED_FILES_COUNT" -gt "1" ] ; then
-            echo Only a single updated application manifest is expected! ;
-            exit 1 ;
-          elif [ "$CHANGED_FILES_COUNT" -eq "0" ] ; then
-            echo No updated application manifest found! ;
-            exit 0 ;
-          fi ;
-          echo "app-manifest=${CHANGED_FILES[0]}" >> $GITHUB_OUTPUT ;
-          echo "create-app-bundle=true" >> $GITHUB_OUTPUT ;
+          echo all-changed-files=$(echo "${{ steps.changed-files.outputs.all_changed_files }}" | jq -R -c 'split(" ")' ) >> $GITHUB_OUTPUT ;
+          echo deleted-files=$(echo "${{ steps.changed-files.outputs.deleted_files }}" | jq -R -c 'split(" ")' ) >> $GITHUB_OUTPUT ;
+
+      - name: Generate diff comment data
+        id: diff-comment
+        if: github.event_name == 'pull_request' && steps.changed-files.outputs.all_changed_files != ''
+        run: |
+          echo "### Application updates" >> diff.md ;
+          for manifest in ${{ steps.changed-files.outputs.all_changed_files }} ; do
+            SHA_DIFF=$( git diff --unified=0 ${{ github.event.pull_request.base.sha }} ${{ github.sha }} -- $manifest | grep "commit_sha: " ) ;
+            OLD_SHA_VALUE=$( echo "$SHA_DIFF" | grep -E '^\-' | sed "s/.*: //" | xargs ) ;
+            NEW_SHA_VALUE=$( echo "$SHA_DIFF" | grep -E '^\+' | sed "s/.*: //" | xargs ) ;
+            REPO_URL=$( grep " origin: " $manifest | sed "s/.*origin: \(.*\)/\1/" | sed "s/\(.*\).git$/\1/" ) ;
+            APP_ID=$(basename $( dirname $manifest ) ) ;
+            if [ "z$OLD_SHA_VALUE" == "z" ] ; then
+              echo "New app \`$APP_ID\`: [repo]($REPO_URL/tree/$NEW_SHA_VALUE)" >> diff.md ;
+            else
+              echo "Updated app \`$APP_ID\`: [changes]($REPO_URL/compare/$OLD_SHA_VALUE...$NEW_SHA_VALUE)" >> diff.md ;
+            fi ;
+          done ;
+          echo 'repo-diff-md-file=diff.md' >> $GITHUB_OUTPUT ;
+          echo 'repo-diff<<REPO-DIFF-DATA-EOF' >> $GITHUB_OUTPUT ;
+          cat diff.md >> $GITHUB_OUTPUT ;
+          echo 'REPO-DIFF-DATA-EOF' >> $GITHUB_OUTPUT ;
+
+      - name: Output diff to job status
+        if: steps.diff-comment.outputs.repo-diff != ''
+        run: |
+          cat "${{ steps.diff-comment.outputs.repo-diff-md-file }}" >> $GITHUB_STEP_SUMMARY ;
+
+      - name: Find diff comment
+        uses: peter-evans/find-comment@v2.4.0
+        id: find-comment
+        if: steps.diff-comment.outputs.repo-diff != '' && !github.event.pull_request.head.repo.fork
+        with:
+          issue-number: ${{ github.event.pull_request.number }}
+          comment-author: 'github-actions[bot]'
+          body-includes: '### Application updates'
+
+      - name: Create or update diff comment
+        if: steps.diff-comment.outputs.repo-diff != '' && !github.event.pull_request.head.repo.fork
+        uses: peter-evans/create-or-update-comment@v3
+        with:
+          issue-number: ${{ github.event.pull_request.number }}
+          comment-id: ${{ steps.find-comment.outputs.comment-id }}
+          body: ${{ steps.diff-comment.outputs.repo-diff }}
+          edit-mode: replace
+
+
+  build-package:
+    name: Build package
+    needs: process-manifests
+    if: needs.process-manifests.outputs.changed-manifests != '[]'
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        manifest: ${{ fromJson(needs.process-manifests.outputs.changed-manifests) }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
 
       - name: Set up source code flag
         id: source-code
         run: |
-          if [ "${{ github.event_name }}" == "push" ] ; then
-            echo "skip=false" >> $GITHUB_OUTPUT ;
-          else
-            echo "skip=true" >> $GITHUB_OUTPUT ;
-          fi
-
-      - name: Run self-test
-        if: "!steps.get-manifest.outputs.create-app-bundle"
-        uses: ./.github/actions/bundle
-        with:
-          path: test/manifest.yml
+          ARCHIVARIUS_URL=$( < .github/.ARCHIVARIUS_URL ) ;
+          echo "ARCHIVARIUS_URL=${ARCHIVARIUS_URL}" >> $GITHUB_ENV ;
+          if [ "z{{ vars.CATALOG_STAGING }}" != "z" ] ; then
+            echo "BUNDLE_ALLOW_VERSION_MISMATCH=1" >> $GITHUB_ENV ;
+          fi ;
         
       - name: Bundle application
         id: app-bundle
-        if: steps.get-manifest.outputs.create-app-bundle
+        continue-on-error: true
         uses: ./.github/actions/bundle
         with:
-          path: ${{ steps.get-manifest.outputs.app-manifest }}
-          skip-source-code: ${{ steps.source-code.outputs.skip }}
+          path: ${{ matrix.manifest }}
+          skip-source-code: ${{ needs.process-manifests.outputs.checks-only }}
           json-manifest: bundle.json
+          build-artifacts-zip: true
           # Uncomment to submit bundles with broken code
           # skip-build: true
-          # skip-lint: true
+          skip-lint: true
 
       - name: Retry build with RC SDK
         id: app-bundle-rc
         if: steps.app-bundle.outcome == 'failure'
         uses: ./.github/actions/bundle
         with:
-          path: ${{ steps.get-manifest.outputs.app-manifest }}
-          skip-source-code: ${{ steps.source-code.outputs.skip }}
+          path: ${{ matrix.manifest }}
+          skip-source-code: ${{ needs.process-manifests.outputs.checks-only }}
           sdk-channel: rc
           json-manifest: bundle.json
+          build-artifacts-zip: true
+          # Uncomment to submit bundles with broken code
+          # skip-build: true
+          skip-lint: true
 
       - name: Get succesful build output
         id: get-bundle-path
-        if: steps.get-manifest.outputs.create-app-bundle && (steps.app-bundle.outputs.bundle-path != '' || steps.app-bundle-rc.outputs.bundle-path != '')
+        if: (steps.app-bundle.outputs.bundle-path != '' || steps.app-bundle-rc.outputs.bundle-path != '')
         run: |
           if [ -f "${{ steps.app-bundle.outputs.bundle-path }}" ] ; then
             echo "path=${{ steps.app-bundle.outputs.bundle-path }}" >> $GITHUB_OUTPUT ;
+            echo "artifacts-path=${{ steps.app-bundle.outputs.artifacts-path }}" >> $GITHUB_OUTPUT ;
           elif [ -f $GITHUB_OUTPUT ] ; then
             echo "path=${{ steps.app-bundle-rc.outputs.bundle-path }}" >> $GITHUB_OUTPUT ;
+            echo "artifacts-path=${{ steps.app-bundle-rc.outputs.artifacts-path }}" >> $GITHUB_OUTPUT ;
           else
             echo Failed to build application bundle! ;
             exit 1 ;
           fi
-          APPID=$(jq -r '.id' bundle.json) ;
-          APPVERSION=$(jq -r '.version' bundle.json) ;
+          APPID=$( jq -r '.id' bundle.json ) ;
+          APPVERSION=$( jq -r '.version' bundle.json ) ;
           echo "app-id=$APPID" >> $GITHUB_OUTPUT ;
           echo "app-version=$APPVERSION" >> $GITHUB_OUTPUT ;
 
       - name: Submit application bundle
         id: bundle-submit
-        if: steps.get-manifest.outputs.create-app-bundle && github.event_name == 'push'
+        if: needs.process-manifests.outputs.checks-only != 'true'
         run: |
           curl --fail-with-body \
             -H "Authorization: Bearer ${{ secrets.FAST_AUTH_TOKEN }}" \
@@ -111,18 +166,103 @@ jobs:
             ${{ env.ARCHIVARIUS_URL }}/api/v0/application/version/bundle
 
       - name: Check if version exists
-        if: steps.get-manifest.outputs.create-app-bundle && github.event_name != 'push' && steps.app-bundle.outputs.bundle-path != ''
+        if: needs.process-manifests.outputs.checks-only == 'true' && steps.app-bundle.outputs.bundle-path != ''
         run: |
-          VER_HTTP_CODE=$(curl -sw '%{http_code}' -o /dev/null \
-          "${{ env.ARCHIVARIUS_URL }}/api/v0/application/${{ steps.get-bundle-path.outputs.app-id }}/versions?version=${{ steps.get-bundle-path.outputs.app-version }}");
+          VER_HTTP_CODE=$( curl -sw '%{http_code}' -o /dev/null \
+          "${{ env.ARCHIVARIUS_URL }}/api/v0/application/${{ steps.get-bundle-path.outputs.app-id }}/versions?version=${{ steps.get-bundle-path.outputs.app-version }}" ) ;
           if [ "$VER_HTTP_CODE" != "404" ] ; then
-            echo "Version ${{ steps.get-bundle-path.outputs.app-version }} for ${{ steps.get-bundle-path.outputs.app-id }} already exists (or server failed, code ${VER_HTTP_CODE})!";
+            echo "Version ${{ steps.get-bundle-path.outputs.app-version }} for ${{ steps.get-bundle-path.outputs.app-id }} already exists (or server failed, code ${VER_HTTP_CODE})!" ;
             exit 1 ;
           fi
 
       - name: Create bundle artifact
-        if: steps.get-manifest.outputs.create-app-bundle && github.event_name != 'push' && steps.app-bundle.outputs.bundle-path != ''
+        if: needs.process-manifests.outputs.checks-only == 'true' && steps.get-bundle-path.outputs.path != ''
         uses: actions/upload-artifact@v3
         with:
-          name: bundle
+          name: "${{ steps.get-bundle-path.outputs.app-id }}-${{ steps.get-bundle-path.outputs.app-version }}-bundle"
           path: ${{ steps.get-bundle-path.outputs.path }}
+
+      - name: Create build artifacts artifact
+        if: needs.process-manifests.outputs.checks-only == 'true' && steps.get-bundle-path.outputs.artifacts-path != ''
+        uses: actions/upload-artifact@v3
+        with:
+          name: "${{ steps.get-bundle-path.outputs.app-id }}-${{ steps.get-bundle-path.outputs.app-version }}-build-artifacts"
+          path: ${{ steps.get-bundle-path.outputs.artifacts-path }}
+  
+  
+  delete-app:
+    name: Delete app
+    needs: process-manifests
+    if: needs.process-manifests.outputs.deleted-manifests != '[]'
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        manifest: ${{ fromJson(needs.process-manifests.outputs.deleted-manifests) }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Set up source code flag
+        id: source-code
+        run: |
+          ARCHIVARIUS_URL=$( < .github/.ARCHIVARIUS_URL ) ;
+          echo "ARCHIVARIUS_URL=${ARCHIVARIUS_URL}" >> $GITHUB_ENV ;
+          if [ "z{{ vars.CATALOG_STAGING }}" != "z" ] ; then
+            echo "BUNDLE_ALLOW_VERSION_MISMATCH=1" >> $GITHUB_ENV ;
+          fi
+
+      - name: Extract app id from path
+        id: get-app-id
+        run: |
+          echo "app-id=$( basename $( dirname ${{ matrix.manifest }} ) )" >> $GITHUB_OUTPUT ;
+
+      - name: Check if app exists on backend
+        id: check-app-exists
+        run: |
+          curl --fail-with-body \
+            ${{ env.ARCHIVARIUS_URL }}/api/v0/application/${{ steps.get-app-id.outputs.app-id }}
+
+      - name: Delete app from backend
+        id: delete-manifest
+        if: steps.check-app-exists.outputs.exitcode == 0 && needs.process-manifests.outputs.checks-only != 'true'
+        run: |
+          curl --fail-with-body -X DELETE \
+            -H "Authorization: Bearer ${{ secrets.FAST_AUTH_TOKEN }}" \
+            ${{ env.ARCHIVARIUS_URL }}/api/v0/application/${{ steps.get-app-id.outputs.app-id }}
+
+
+  self-test:
+    name: Run self-test
+    needs: process-manifests
+    if: needs.process-manifests.outputs.deleted-manifests == '[]' && needs.process-manifests.outputs.changed-manifests == '[]'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Run self-test
+        id: self-test
+        uses: ./.github/actions/bundle
+        with:
+          path: example/manifest.yml
+
+      - name: Create bundle artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: "test-bundle"
+          path: ${{ steps.self-test.outputs.bundle-path }}
+
+
+  report-status:
+    name: Report status
+    needs: [ self-test, build-package, delete-app ]
+    if: always() && !contains(needs.*.result, 'failure')
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "All good ✨" ;

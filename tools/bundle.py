@@ -13,8 +13,6 @@ from tempfile import TemporaryDirectory
 from typing import Dict, List
 
 import yaml
-
-# import markdown2
 from dataclass_wizard import YAMLWizard
 from dataclass_wizard.dumpers import asdict
 from git import Repo
@@ -23,7 +21,18 @@ from markdown.extensions import Extension
 from markdown.preprocessors import HtmlBlockPreprocessor
 from PIL import Image
 
-# import markdown
+# Temporary hack
+try:
+    import SCons
+except ImportError:
+    import sys
+
+    class _fbt_util_stub:
+        @staticmethod
+        def resolve_real_dir_node(node):
+            return node
+
+    sys.modules["fbt.util"] = _fbt_util_stub
 
 
 class BundlerException(Exception):
@@ -156,13 +165,13 @@ class BasicTextExtension(Extension):
     def extendMarkdown(self, md):
         for md_element in (
             "backtick",
-            "reference",
-            "link",
+            # "reference",
+            # "link",
             "image_link",
             "image_reference",
             "short_reference",
             "short_image_ref",
-            "autolink",
+            # "autolink",
             "automail",
             "html",
             "entity",
@@ -205,9 +214,8 @@ class BasicTextExtension(Extension):
 class AppBundler:
     MANIFEST_YAML_NAME = "manifest.yml"
     UFBT_COMMAND = "ufbt"
-    ORANGE_BG_COLOR = (254, 138, 44)  # RGB for background color in screenshots
     FLIPPER_SCREEN_SIZE = (128, 64)
-    APP_SCREENSHOT_DOWNSCALE_FACTOR = 4
+    APP_SCREENSHOT_DOWNSCALE_FACTORS = (4, 8)
     FLIPPER_ICON_SIZE = (10, 10)
     APP_ID_REGEX = re.compile(r"^[a-z0-9_]+$")
 
@@ -326,14 +334,14 @@ class AppBundler:
             self._log.info("Linting")
             subprocess.check_output([self.UFBT_COMMAND, "lint"], cwd=self._code_dir)
         except subprocess.CalledProcessError as e:
-            raise BundlerException(f"Code checks failed: {e.output}")
+            raise BundlerException(f"Code checks failed: {str(e.output, 'utf-8')}")
 
     def _build_sources(self):
         try:
             self._log.info("Building")
             subprocess.check_output([self.UFBT_COMMAND], cwd=self._code_dir)
         except subprocess.CalledProcessError as e:
-            raise BundlerException(f"Code checks failed: {e.output}")
+            raise BundlerException(f"Code checks failed: {str(e.output, 'utf-8')}")
 
     def _update_manifest_from_fap(self):
         app_manifest_path = self._code_dir / "application.fam"
@@ -354,10 +362,20 @@ class AppBundler:
 
         if len(known_ext_apps) == 0:
             raise BundlerException("No external applications found")
-        elif len(known_ext_apps) > 1:
-            raise BundlerException("Multiple external applications found")
+        elif len(known_ext_apps) == 1:
+            self._fam_manifest = known_ext_apps[0]
+        else:
+            if app := next(
+                filter(lambda app: app.appid == self._manifest.id, known_ext_apps),
+                None,
+            ):
+                self._log.info(f"Selected application {app.name}")
+                self._fam_manifest = app
+            else:
+                raise BundlerException(
+                    f"Multiple external applications found, specify 'id' in the manifest.yml ({[app.appid for app in known_ext_apps]})"
+                )
 
-        self._fam_manifest = known_ext_apps[0]
         self._manifest.sync_from(self._fam_manifest)
 
     def _process_includes(self):
@@ -381,9 +399,23 @@ class AppBundler:
         if img.mode != "RGBA":
             img = img.convert("RGBA")
         # TODO: guess downsize ratio?
+        downscale_factors = (
+            img.width // self.FLIPPER_SCREEN_SIZE[0],
+            img.height // self.FLIPPER_SCREEN_SIZE[1],
+        )
+        if (
+            downscale_factors[0] != downscale_factors[1]
+            or downscale_factors[0] not in self.APP_SCREENSHOT_DOWNSCALE_FACTORS
+        ):
+            raise BundlerException(
+                f"Screenshot {screenshot_src_path} has resolution {img.width}x{img.height}, "
+                f"downscaled to {downscale_factors[0]}x{downscale_factors[1]}, "
+                f"expected {self.FLIPPER_SCREEN_SIZE[0]}x{self.FLIPPER_SCREEN_SIZE[1]}"
+            )
+
         downscaled_resolution = (
-            img.width // self.APP_SCREENSHOT_DOWNSCALE_FACTOR,
-            img.height // self.APP_SCREENSHOT_DOWNSCALE_FACTOR,
+            img.width // downscale_factors[0],
+            img.height // downscale_factors[1],
         )
         if downscaled_resolution != self.FLIPPER_SCREEN_SIZE:
             raise BundlerException(
@@ -393,10 +425,10 @@ class AppBundler:
             )
 
         img = img.resize(downscaled_resolution, resample=Image.Resampling.NEAREST)
-        # Set orange background to transparent
+        # Set all non-black pixels to transparent
         img.putdata(
             tuple(
-                (255, 255, 255, 0) if pixel[:3] == self.ORANGE_BG_COLOR else pixel
+                (255, 255, 255, 0) if pixel[:3] != (0, 0, 0) else pixel
                 for pixel in img.getdata()
             )
         )
@@ -513,12 +545,8 @@ class AppBundler:
             raise BundlerException(f"Markdown error: {e}")
 
     def _build_package(self, skip_source_code: bool = False):
-        self._log.info(f"Saving updated manifest: {skip_source_code}")
+        self._log.info(f"Saving updated manifest: {skip_source_code=}")
         self._manifest.to_yaml_file(self._tmp_path / self.MANIFEST_YAML_NAME)
-
-        if skip_source_code:
-            self._log.info("Removing source code")
-            shutil.rmtree(self._code_dir)
 
         with zipfile.ZipFile(
             self._bundle_path, mode="w", compression=zipfile.ZIP_DEFLATED
@@ -528,6 +556,10 @@ class AppBundler:
                 for folder_name in subfolders.copy():
                     if folder_name.startswith(".") or folder_name == "dist":
                         self._log.debug(f"Skipping folder {filename}")
+                        subfolders.remove(folder_name)
+                    # Exclude source code folder if requested
+                    if skip_source_code and self._code_dir == Path(folder, folder_name):
+                        self._log.debug(f"Skipping source code folder {folder}")
                         subfolders.remove(folder_name)
 
                 for filename in filenames:
@@ -545,9 +577,21 @@ class AppBundler:
         with open(manifest_path, "w") as f:
             json.dump(asdict(self._manifest), f, indent=4)
 
+    def package_artifacts(self, artifacts_path: Path):
+        self._log.info(f"Packaging artifacts: {artifacts_path}")
+        dist_dir = self._code_dir / "dist"
+        with zipfile.ZipFile(
+            artifacts_path, mode="w", compression=zipfile.ZIP_DEFLATED
+        ) as new_zip:
+            # Package "dist" folder with build artifacts
+            for folder, subfolders, filenames in os.walk(dist_dir):
+                for filename in filenames:
+                    file_path = Path(os.path.join(folder, filename))
+                    self._log.info(f"Adding {file_path}")
+                    new_zip.write(file_path, file_path.relative_to(dist_dir))
 
 class Main:
-    def __init__(self, no_exit=False):
+    def __init__(self):
         # Argument Parser
         # Logging
         self.logger = logging.getLogger()
@@ -592,6 +636,11 @@ class Main:
             default="",
             help="File to write extra manifest copy in JSON format to",
         )
+        self.parser.add_argument(
+            "--artifacts",
+            default=None,
+            help="ZIP file to write build artifacts to",
+        )
 
     def main(self):
         return self.process(self.parser.parse_args())
@@ -622,6 +671,8 @@ class Main:
                 )
                 if args.json:
                     bundler.write_manifest_json(args.json)
+                if args.artifacts:
+                    bundler.package_artifacts(Path(args.artifacts))
                 return 0
         except BundlerException as e:
             self.logger.error(e)
