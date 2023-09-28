@@ -2,16 +2,16 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/EstebanFuentealba/Flipper-Zero-Game-Boy-Pokemon-Trading.git
-    commit_sha: 6744eb607e9101a67d781b1bdf6334b1acb16236
+    commit_sha: 4522377d50db1d79833a499f22d9a5c14088a98e
 category: "GPIO"
 short_description: |
   Pokemon exchange from Flipper Zero to Game Boy for Generation I (Pokemon Red, Blue, Yellow)
 name: "Pokemon Trading"
 id: "pokemon"
-version: "1.2"
-description: "@README_catalog.md"
+version: "1.3"
+description: "@README.md"
 changelog: "@changelog.md"
-author: "Esteban Fuentealba"
+author: "Esteban Fuentealba, Kris Bahnsen, Darryn Cull"
 icon: "pokemon_10px.png"
 screenshots:
   - ".flipcorg/gallery/1.png"
