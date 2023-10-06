@@ -1,0 +1,12 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/xMasterX/all-the-plugins.git
+    commit_sha: a2085af4130d667a129c8f493b59fd644d03ca46
+    subdir: apps_source_code/musictracker
+description: "App plays hardcoded tracker song"
+changelog: "v1.0 - Initial release, v1.1 - Fixed icons folder"
+author: "@DrZlo13"
+screenshots:
+  - "./img/2.png"
+  - "./img/1.png"

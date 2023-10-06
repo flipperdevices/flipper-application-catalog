@@ -1,0 +1,11 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/xMasterX/all-the-plugins.git
+    commit_sha: e1326198ec587571e2ec87b0da042b9ada571a42
+    subdir: apps_source_code/calculator
+description: "Calculator, that can calculate simple expressions"
+changelog: "v1.0 - Initial release, v1.1 - Sync Updates"
+author: "@n-o-T-I-n-s-a-n-e"
+screenshots:
+  - "./img/1.png"

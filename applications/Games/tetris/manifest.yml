@@ -1,0 +1,13 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/xMasterX/all-the-plugins.git
+    commit_sha: e1326198ec587571e2ec87b0da042b9ada571a42
+    subdir: base_pack/tetris_game
+description: "Tetris Game"
+changelog: "v1.0 - Initial release, v1.1 - Various important fixes"
+author: "@xMasterX & @jeffplang"
+screenshots:
+  - "./img/2.png"
+  - "./img/3.png"
+  - "./img/1.png"

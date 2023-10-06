@@ -1,0 +1,15 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/bettse/seader.git
+    commit_sha: fd5de13dbe4bc61a8ca4e3c221453236b6f5de1d
+short_description: "Allows for reading credential from HID iClass, iClass SE, Desfire EV1, and Seos"
+description: |
+  Allows for reading credential from HID iClass, iClass SE, Desfire EV1, and Seos. Credentials can be saved in an agnostic format, or as various Flipper formats (Prox, MFC, iClass, iClass SR), depending on the original type.
+  Requires addon: UART to mini-SIM adapter and HID SAM. 
+  See full readme for wiring and more information: https://github.com/bettse/seader/blob/main/readme.md
+changelog: "@changelog.md"
+screenshots:
+  - .flipcorg/gallery/menu.png
+  - .flipcorg/gallery/pacs.png
+  - .flipcorg/gallery/save_menu.png
