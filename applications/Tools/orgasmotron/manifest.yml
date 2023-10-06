@@ -1,0 +1,11 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/leedave/Leeds-Flipper-Zero-Applications
+    commit_sha: e0d6597bc03811b1c56bada1f681449f2410b107
+    subdir: Misc/orgasmotron
+description: "@./docs/README.md"
+changelog: "@./docs/changelog.md"
+author: "Leedave"
+screenshots:
+  - "./screenshots/orgasmotron-1.png"

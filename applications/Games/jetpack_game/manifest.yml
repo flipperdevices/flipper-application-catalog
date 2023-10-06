@@ -1,0 +1,11 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/timstrasser/flipper-jetpack-game.git
+    commit_sha: ffe7f179a9348ed7348b21a42133f64a0168baed
+short_description: Jetpack Game
+description: 'Dive into the adventurous world of Jetpack Joyride on Flipper Zero! Navigate Barry through a high-tech lab filled with obstacles, collect coins, and fly in this thrilling remake of the classic game.'
+changelog: 'Initial release'
+author: '@timstrasser'
+screenshots:
+  - './docs/screenshots/gameplay.png'
