@@ -6,7 +6,10 @@ This repository hosts application manifests that contain application metadata an
 
 # How to Install an Application
 
-Applications from this repository are automatically built and archived to Flipper Application Mirror. Use Flipper companion apps to search and install apps from this repository.
+Applications from this repository are automatically built and archived to Flipper Application Mirror. Use Flipper companion apps to search and install apps from this repository:
+ - [Download from App Store](https://apps.apple.com/app/flipper-mobile-app/id1534655259)
+ - [Download from Google Play](https://play.google.com/store/apps/details?id=com.flipperdevices.app)
+ - [Web catalog](https://lab.flipper.net/) _(chromium-based browser required)_
 
 # How to Contribute an Application
 
