@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/MatthewKuKanich/flipper-radar.git
-    commit_sha: d783ff84f36bc5e0c48ee23cb21cf8f57513e852
+    commit_sha: e7acb57712d6609e387772135230629f40202302
 id: "radar_scanner"
 category: "GPIO"
 short_description: "Microwave Radar Scanner"
