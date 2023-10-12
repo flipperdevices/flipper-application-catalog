@@ -3,10 +3,10 @@ sourcecode:
   location:
     origin: https://github.com/hedger/unleashedapps.git
     subdir: barcode_generator
-    commit_sha: 503dc29386b6196fcbdef55000a09a653811c030
-version: 0.4
+    commit_sha: 503dc29386b6196fcbdef55000a09a653811c030 
+version: 0.5
 short_description: A barcode generation app
-description: A barcode generation app
+description: A barcode generation app1
 changelog: Now available!
 screenshots:
   - screenshots/ss0.png
