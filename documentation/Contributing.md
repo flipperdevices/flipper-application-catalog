@@ -44,7 +44,7 @@ pip install -r tools/requirements.txt
 Then run the validation script, passing it the path to your manifest file:
 
 ```bash
-python3 tools/bundle.py applications/CATEGORY/APPID/manifest.yml bundle.zip
+python3 tools/bundle.py --nolint applications/CATEGORY/APPID/manifest.yml bundle.zip
 ```
 
 If there are any errors, the script will print them and exit with non-zero exit code. **Be sure to fix all errors before submitting your application.**
