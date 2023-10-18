@@ -7,6 +7,3 @@ sourcecode:
 short_description: "Step Counter/Pedometer using Memsic2125 module."
 changelog: "v1.0 - Initial release"
 author: "47lecoste a.k.a. grugnoymeme"
-screenshots:
-  - "./images/menu_view.png"
-  - "./images/main_screen.png"
