@@ -5,7 +5,6 @@ sourcecode:
     commit_sha: 42f64f2a074d8ec8b5d39ddb18a5ccaf45b00463
     subdir: source
 short_description: "Step Counter/Pedometer using Memsic2125 module."
-description: "@./README.md"
 changelog: "v1.0 - Initial release"
 author: "47lecoste a.k.a. grugnoymeme"
 screenshots:
