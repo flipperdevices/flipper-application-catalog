@@ -66,7 +66,7 @@ runs:
         python3 -m pip install -r ${{ env.CATALOG_ROOT_PATH }}/tools/requirements.txt
 
     - name: Setup ufbt
-      uses: flipperdevices/flipperzero-ufbt-action@v0.1.2
+      uses: flipperdevices/flipperzero-ufbt-action@v0.1
       id: setup-ufbt
       with:
         task: setup
