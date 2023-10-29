@@ -30,7 +30,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Setup environment
         id: env-setup
@@ -59,7 +59,7 @@ jobs:
           echo "appid=${APPID}" >> $GITHUB_OUTPUT ;
 
       - name: Run ufbt
-        uses: flipperdevices/flipperzero-ufbt-action@v0.1.2
+        uses: flipperdevices/flipperzero-ufbt-action@v0.1
         continue-on-error: true
         id: ufbt
         with: 

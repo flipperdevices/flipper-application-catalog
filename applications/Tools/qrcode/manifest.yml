@@ -1,0 +1,17 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/bmatcuk/flipperzero-qrcode.git
+    commit_sha: e68fe33d253cbddc337fe30292f87932f6f26789
+short_description: Display qrcodes
+description: |
+  # qrcode
+  Display qrcodes on the Flipper Zero
+
+  See the documentation in the qrcode repo: https://github.com/bmatcuk/flipperzero-qrcode
+changelog: |
+  v2: Multi-line qrcodes, manual mode selection, may set mode, version, and ecc in file.
+  v1: First release; may manually change qrcode version and ecc level.
+screenshots:
+  - ss1.png
+  - ss2.png
