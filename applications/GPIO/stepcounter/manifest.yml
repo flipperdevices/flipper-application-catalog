@@ -6,9 +6,9 @@ sourcecode:
 id: "stepcounter"
 category: "GPIO"
 short_description: "Step Counter/Pedometer using Memsic2125 module."
-description: "@README.md"
+description: "./docs/README.md"
 changelog: "v1.0 - Initial release"
 author: "47lecoste a.k.a. grugnoymeme"
 screenshots:
-  - "images/menu_view.png"
-  - "images/main_screen.png"
+  - "./images/menu_view.png"
+  - "./images/main_screen.png"
