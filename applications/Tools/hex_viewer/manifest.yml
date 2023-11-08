@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/QtRoS/flipper-zero-hex-viewer.git
-    commit_sha: 6b4360652609c993417affabfebb0eaa07536459
+    commit_sha: b982fa50a3c677e6a414aa9807187fc0d408d56c
 description: "App allows to view various files as HEX."
 changelog: "v2.0 - Scrolling to any % and interal refactoring, v1.1 - Various important fixes, v1.0 - Initial release"
 author: "@QtRoS"
