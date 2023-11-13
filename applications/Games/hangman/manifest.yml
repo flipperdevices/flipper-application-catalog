@@ -8,7 +8,9 @@ description: "Hangman is a guessing game. Flipper thinks of a word and the gamer
 changelog: "v1.2 - Fixed some bugs"
 author: "@bolknote"
 screenshots:
+  - "./catalog/0.png"
   - "./catalog/1.png"
   - "./catalog/2.png"
+  - "./catalog/3.png"
 name: "Hangman"
 id: "hangman"
