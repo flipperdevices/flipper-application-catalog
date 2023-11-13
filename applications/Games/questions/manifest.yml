@@ -3,13 +3,9 @@ sourcecode:
   location:
     origin: https://github.com/nikilark/flipper_questions.git
     commit_sha: 421ebc28c1e70346f18a432d22737ca113bcbde7
-short_description: "Questions game"
-description: "Game contains questions to ask you frient, couple or someone new on party to get to know each other better."
+description: "Game contains questions to ask you friend, couple or someone new on party to get to know each other better."
 changelog: "v1.0 - Initial release"
-author: "@nikilark"
 screenshots:
   - "assets/q_menu.png"
   - "assets/q_ex1.png"
   - "assets/q_ex2.png"
-name: "Questions"
-id: "questions"
