@@ -2,13 +2,12 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/bolknote/Flipper-Zero-Hangman-Game
-    commit_sha: d0ff2c0f1e449b9312fd5dd73c16b5157a57d990
-short_description: "Hangman game"
+    commit_sha: 86629244f819d7c2f56fc185f6f8d50d899c61e0
 description: "Hangman is a guessing game. Flipper thinks of a word and the gamer tries to guess it by suggesting letters within a certain number of guesses."
-changelog: "v1.1 - English added"
+changelog: "v1.2 - Fixed some bugs"
 author: "@bolknote"
 screenshots:
+  - "./catalog/0.png"
   - "./catalog/1.png"
   - "./catalog/2.png"
-name: "Hangman"
-id: "hangman"
+  - "./catalog/3.png"
