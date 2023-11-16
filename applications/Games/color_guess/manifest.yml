@@ -1,9 +1,8 @@
 sourcecode:
   type: git
   location:
-    origin: https://github.com/leedave/Leeds-Flipper-Zero-Applications
-    commit_sha: 17c81bcde61c2dcec9908bd48e873d9258cbf075
-    subdir: Games/color_guess
+    origin: https://github.com/leedave/flipper-zero-color-guess
+    commit_sha: b00fd0b2a05416de1da8a38c83f9ffc141c6a3ff
 description: "@./docs/README.md"
 changelog: "@./docs/changelog.md"
 author: "Leedave"
