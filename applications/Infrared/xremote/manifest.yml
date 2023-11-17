@@ -1,9 +1,8 @@
 sourcecode:
   type: git
   location:
-    origin: https://github.com/leedave/Leeds-Flipper-Zero-Applications
-    commit_sha: 31b65d7cda981325281dc4a65a77b4e798c61e3b
-    subdir: Tools/xremote
+    origin: https://github.com/leedave/flipper-zero-cross-remote
+    commit_sha: ae626bd9a70f0728977d5136c5bb6c1d4f38ec1f
 description: "@./docs/README.md"
 changelog: "@./docs/changelog.md"
 author: "Leedave"
