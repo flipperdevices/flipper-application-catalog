@@ -1,0 +1,11 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/skotopes/flipperzero_mhz19_uart.git
+    commit_sha: b468ed94317a02d84d6f4284b5e89c19ad8d4e27
+description: "@ReadMe.md"
+changelog: "@ChangeLog.md"
+screenshots:
+  - screenshots/0.png
+  - screenshots/1.png
+  - screenshots/2.png
