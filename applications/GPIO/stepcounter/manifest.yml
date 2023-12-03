@@ -2,11 +2,11 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/grugnoymeme/flipperzero-StepCounter-fap.git
-    commit_sha: 2b6976e0f6b88d195d1aebe1d8f9d07c390d02ce
+    commit_sha: 48ac5cd187af8f5e0e376069d132e2b9685dadf1
 id: "stepcounter"
 category: "GPIO"
 short_description: "Step Counter/Pedometer using Memsic2125 module."
-description: "./docs/README.md"
+description: "@./docs/README.md"
 changelog: "v1.0 - Initial release"
 author: "47lecoste a.k.a. grugnoymeme"
 screenshots:
