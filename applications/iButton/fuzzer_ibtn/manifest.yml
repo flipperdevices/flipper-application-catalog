@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/DarkFlippers/Multi_Fuzzer.git
-    commit_sha: 64a4d768b26ac2a21eb8423fa5e6552a9ef7465b
+    commit_sha: a4588f71759cd8fa9c3fb555a8c66884eac3446b
 id: "fuzzer_ibtn"
 description: "@./catalog/docs/ibtn/README.md"
 changelog: "@./catalog/docs/ibtn/Changelog.md"

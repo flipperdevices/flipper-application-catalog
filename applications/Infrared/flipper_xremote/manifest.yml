@@ -1,0 +1,16 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/kala13x/flipper-xremote
+    commit_sha: e03773fba4a61d602b02770438044c3a005a962b
+description: "@./docs/README.md"
+changelog: "@./docs/changelog.md"
+author: "@kala13x"
+screenshots:
+  - "./screens/horizontal/screen1.png"
+  - "./screens/horizontal/screen2.png"
+  - "./screens/horizontal/screen3.png"
+  - "./screens/horizontal/screen4.png"
+  - "./screens/horizontal/screen5.png"
+  - "./screens/horizontal/screen6.png"
+  - "./screens/horizontal/screen7.png"

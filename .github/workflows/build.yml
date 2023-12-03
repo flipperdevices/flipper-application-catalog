@@ -30,7 +30,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Setup environment
         id: env-setup
@@ -59,7 +59,7 @@ jobs:
           echo "appid=${APPID}" >> $GITHUB_OUTPUT ;
 
       - name: Run ufbt
-        uses: flipperdevices/flipperzero-ufbt-action@v0.1.2
+        uses: flipperdevices/flipperzero-ufbt-action@v0.1
         continue-on-error: true
         id: ufbt
         with: 
@@ -88,6 +88,7 @@ jobs:
           FAP_PATH=$( grep ${{ steps.unzip-bundle.outputs.appid }} <<< "${{ steps.ufbt.outputs.fap-artifacts }}" ) ;
           FAP_SHA=$( sha256sum $FAP_PATH | cut -d' ' -f1 ) ;
           FAP_NAME=$( basename $FAP_PATH ) ;
+          echo "build-checksum=$FAP_SHA" >> $GITHUB_OUTPUT ;
           echo "SHA256 for $FAP_NAME = \`\`\`$FAP_SHA\`\`\`" >> $GITHUB_STEP_SUMMARY ;
           zip -qq -r -j ${{ runner.temp }}/build-artifacts.zip $FAP_PATH ;
           echo "artifact-path=${{ runner.temp }}/build-artifacts.zip" >> $GITHUB_OUTPUT ;
@@ -97,5 +98,6 @@ jobs:
         run: |
           curl --fail-with-body \
             -H "Authorization: Bearer ${{ secrets.FAST_AUTH_TOKEN }}" \
+            -F "build_checksum=${{ steps.zip-artifacts.outputs.build-checksum }}" \
             -F "build=@${{ steps.zip-artifacts.outputs.artifact-path }}" \
             ${{ steps.env-setup.outputs.upload-url }}

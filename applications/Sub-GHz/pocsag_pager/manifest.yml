@@ -2,11 +2,11 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/xMasterX/all-the-plugins.git
-    commit_sha: 4c7d203aee8dfc5b01a677b1709103272c8142a3
-    subdir: main_apps_sources/pocsag_pager
+    commit_sha: efeac368c2cf583adb28f3f11752f9694bae9c72
+    subdir: base_pack/pocsag_pager
 description: "@README.md"
-changelog: "v1.0 - Initial release"
-author: "@xMasterX & @Shmuma"
+changelog: "v1.0 - Initial release, v1.1 - Sync Updates, v1.2 - Fixes for new API and improved decoder"
+author: "@xMasterX & @Shmuma & (Improved decoder by @htotoo)"
 screenshots:
   - "./img/1.png"
   - "./img/2.png"

@@ -2,10 +2,10 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/xMasterX/all-the-plugins.git
-    commit_sha: 1606da9d9f0dbdc239387c9fb061bb25b4e94720
-    subdir: main_apps_sources/sentry_safe
+    commit_sha: e1326198ec587571e2ec87b0da042b9ada571a42
+    subdir: base_pack/sentry_safe
 description: "App exploiting vulnerability to open any Sentry Safe and Master Lock electronic safe without any pin code via UART pins."
-changelog: "v1.0 - Initial release"
+changelog: "v1.0 - Initial release, v1.1 - Various important fixes"
 author: "@H4ckd4ddy & @xMasterX (ported to latest firmware)"
 screenshots:
   - "./img/2.png"

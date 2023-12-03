@@ -214,10 +214,13 @@ class BasicTextExtension(Extension):
 class AppBundler:
     MANIFEST_YAML_NAME = "manifest.yml"
     UFBT_COMMAND = "ufbt"
+    APP_ID_REGEX = re.compile(r"^[a-z0-9_]+$")
     FLIPPER_SCREEN_SIZE = (128, 64)
     APP_SCREENSHOT_DOWNSCALE_FACTORS = (4, 8)
     FLIPPER_ICON_SIZE = (10, 10)
-    APP_ID_REGEX = re.compile(r"^[a-z0-9_]+$")
+    BLACK_THRESHOLD = (15, 15, 15)
+    PIXEL_BLACK = (0, 0, 0, 255)
+    PIXEL_TRANSPARENT = (255, 255, 255, 0)
 
     def __init__(self, manifest_yaml_path: str, bundle_path: str):
         self._log = logging.getLogger(self.__class__.__name__)
@@ -334,14 +337,14 @@ class AppBundler:
             self._log.info("Linting")
             subprocess.check_output([self.UFBT_COMMAND, "lint"], cwd=self._code_dir)
         except subprocess.CalledProcessError as e:
-            raise BundlerException(f"Code checks failed: {e.output}")
+            raise BundlerException(f"Code checks failed: {str(e.output, 'utf-8')}")
 
     def _build_sources(self):
         try:
             self._log.info("Building")
             subprocess.check_output([self.UFBT_COMMAND], cwd=self._code_dir)
         except subprocess.CalledProcessError as e:
-            raise BundlerException(f"Code checks failed: {e.output}")
+            raise BundlerException(f"Code checks failed: {str(e.output, 'utf-8')}")
 
     def _update_manifest_from_fap(self):
         app_manifest_path = self._code_dir / "application.fam"
@@ -390,6 +393,17 @@ class AppBundler:
 
         self._log.debug(f"Updated: {self._manifest}")
 
+    def __convert_image_pixels(self, img: Image):
+        # Set all pixels above threshold to transparent
+        img.putdata(
+            tuple(
+                self.PIXEL_TRANSPARENT
+                if pixel[:3] > self.BLACK_THRESHOLD
+                else self.PIXEL_BLACK
+                for pixel in img.getdata()
+            )
+        )
+
     def __process_screenshot(
         self, screenshot_src_path: Path, screenshot_dst_path: Path
     ):
@@ -425,13 +439,7 @@ class AppBundler:
             )
 
         img = img.resize(downscaled_resolution, resample=Image.Resampling.NEAREST)
-        # Set all non-black pixels to transparent
-        img.putdata(
-            tuple(
-                (255, 255, 255, 0) if pixel[:3] != (0, 0, 0) else pixel
-                for pixel in img.getdata()
-            )
-        )
+        self.__convert_image_pixels(img)
         img.save(screenshot_dst_path, "PNG")
 
     def __process_icon(self, icon_src_path: Path, icon_dst_path: Path):
@@ -445,13 +453,18 @@ class AppBundler:
                 f"Icon {icon_src_path} has resolution {img.width}x{img.height}, "
                 f"expected {self.FLIPPER_ICON_SIZE[0]}x{self.FLIPPER_ICON_SIZE[1]}"
             )
-        # Set all non-black pixels to transparent
-        img.putdata(
-            tuple(
-                (255, 255, 255, 0) if pixel[:3] != (0, 0, 0) else pixel
-                for pixel in img.getdata()
+
+        if any(
+            map(
+                lambda pixel: pixel[:3] != self.PIXEL_TRANSPARENT[:3]
+                and pixel[:3] != self.PIXEL_BLACK[:3],
+                img.getdata(),
             )
-        )
+        ):
+            raise BundlerException(
+                f"Icon {os.path.basename(icon_src_path)} is not black and white"
+            )
+        self.__convert_image_pixels(img)
         img.save(icon_dst_path, "PNG")
 
     def _process_assets(self):
@@ -589,6 +602,7 @@ class AppBundler:
                     file_path = Path(os.path.join(folder, filename))
                     self._log.info(f"Adding {file_path}")
                     new_zip.write(file_path, file_path.relative_to(dist_dir))
+
 
 class Main:
     def __init__(self):

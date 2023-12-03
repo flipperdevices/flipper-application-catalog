@@ -2,10 +2,10 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/xMasterX/all-the-plugins.git
-    commit_sha: 1606da9d9f0dbdc239387c9fb061bb25b4e94720
+    commit_sha: efeac368c2cf583adb28f3f11752f9694bae9c72
     subdir: apps_source_code/rubiks_cube_scrambler
 description: "App generates random moves to scramble a Rubik's cube."
-changelog: "v1.0 - Initial release"
+changelog: "v1.0 - Initial release, v1.1 - Various important fixes, v1.2 - Fixes for new API"
 author: "@RaZeSloth"
 screenshots:
   - "./img/2.png"
