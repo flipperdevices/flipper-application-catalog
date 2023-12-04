@@ -1,0 +1,19 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/EstebanFuentealba/MALVEKE-Flipper-Zero.git
+    commit_sha: 762ed2ccb15d70f7b0741c7e2cb3e5ddf818c44f
+    subdir: flipper_companion_apps/applications/external/malveke_gb_link_camera
+category: "GPIO"
+short_description: |
+  extract your GAME BOY Camera picture via WIFI, so they can be easily shared with your phone, tablet or pc. Easy to use, just hook up to your GAME BOY and print as usual, the device will store the images and share them on a web server via WIFI. You will need a printer cable or gameboy Color link cable.
+name: "[MALVEKE] GAME BOY Link-Camera"
+id: "malveke_gb_link_camera"
+version: "1.0"
+description: "@README_catalog.md"
+changelog: "@docs/changelog.md"
+author: "Esteban Fuentealba"
+icon: "icons/boilerplate_10px.png"
+screenshots:
+  - ".flipcorg/gallery/1.png"
+  - ".flipcorg/gallery/2.png"
