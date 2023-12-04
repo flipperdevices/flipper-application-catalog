@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/EstebanFuentealba/MALVEKE-Flipper-Zero.git
-    commit_sha: 5472f75b59d495cd5e9c877355a13a2837f561c5
+    commit_sha: cbbb48b5bae0eb9fd6c81d1bb400d8381cfb0ae1
     subdir: flipper_companion_apps/applications/external/malveke_gb_cartridge
 category: "GPIO"
 short_description: |
