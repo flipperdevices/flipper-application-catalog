@@ -1,0 +1,20 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/EstebanFuentealba/MALVEKE-Flipper-Zero.git
+    commit_sha: 9b52aec9e550671b457709c1c4844f6109c0eb20
+    subdir: flipper_companion_apps/applications/external/malveke_gb_live_camera
+category: "GPIO"
+short_description: |
+  Insert a GAME BOY Camera cartridge, you can use it as a camera and take snapshots from the Flipper Zero.
+name: "[MALVEKE] GB Live Camera"
+id: "malveke_gb_live_camera"
+version: "1.0"
+description: "@README_catalog.md"
+changelog: "@docs/changelog.md"
+author: "Esteban Fuentealba"
+icon: "icons/icon.png"
+screenshots:
+  - ".flipcorg/gallery/1.png"
+  - ".flipcorg/gallery/2.png"
+  - ".flipcorg/gallery/3.png"
