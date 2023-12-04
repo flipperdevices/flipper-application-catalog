@@ -1,0 +1,20 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/EstebanFuentealba/MALVEKE-Flipper-Zero.git
+    commit_sha: 762ed2ccb15d70f7b0741c7e2cb3e5ddf818c44f
+    subdir: flipper_companion_apps/applications/external/malveke_gba_cartridge
+category: "GPIO"
+short_description: |
+  MALVEKE app, its Interacts with GAME BOY and GAME BOY ADVANCE cartridges. You can read Information.
+name: "[MALVEKE] GAME BOY ADVANCE Cartridge"
+id: "malveke_gba_cartridge"
+version: "1.0"
+description: "@README_catalog.md"
+changelog: "@docs/changelog.md"
+author: "Esteban Fuentealba"
+icon: "icons/icon.png"
+screenshots:
+  - ".flipcorg/gallery/1.png"
+  - ".flipcorg/gallery/2.png"
+  - ".flipcorg/gallery/3.png"
