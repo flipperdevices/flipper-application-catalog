@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/EstebanFuentealba/MALVEKE-Flipper-Zero.git
-    commit_sha: 470c96f7ae6d3bccc77dd7438a0e2f4be3765ccb
+    commit_sha: cbbb48b5bae0eb9fd6c81d1bb400d8381cfb0ae1
     subdir: flipper_companion_apps/applications/external/malveke_pokemon_trading
 category: "GPIO"
 short_description: |
