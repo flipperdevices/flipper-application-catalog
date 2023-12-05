@@ -1,0 +1,23 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/EstebanFuentealba/MALVEKE-Flipper-Zero.git
+    commit_sha: d29bf5148c32de85c5396af8f4424c848494556c
+    subdir: flipper_companion_apps/applications/external/malveke_pokemon_trading
+category: "GPIO"
+short_description: |
+  Pokemon exchange from Flipper Zero to Game Boy for Generation I (Pokemon Red, Blue, Yellow)
+name: "[MALVEKE] Pokemon Trading"
+id: "malveke_pokemon_trading"
+version: "1.4"
+description: "@README_catalog.md"
+changelog: "@docs/changelog.md"
+author: "Esteban Fuentealba"
+icon: "pokemon_10px.png"
+screenshots:
+  - ".flipcorg/gallery/1.png"
+  - ".flipcorg/gallery/2.png"
+  - ".flipcorg/gallery/3.png"
+  - ".flipcorg/gallery/4.png"
+  - ".flipcorg/gallery/5.png"
+  - ".flipcorg/gallery/6.png"
