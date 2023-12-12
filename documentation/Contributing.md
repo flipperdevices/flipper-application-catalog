@@ -41,6 +41,13 @@ source venv/bin/activate
 pip install -r tools/requirements.txt
 ```
 
+If you haven't yet installed the SDK for `ufbt`, you can install one within the virtual environment.
+
+```bash
+export UFBT_HOME=venv/ufbt
+ufbt update
+```
+
 Then run the validation script, passing it the path to your manifest file:
 
 ```bash
