@@ -661,6 +661,13 @@ class Main:
 
     def _setup_imports(self):
         try:
+            subprocess.check_output(
+                [AppBundler.UFBT_COMMAND, "update"], encoding="utf-8"
+            )
+        except subprocess.CalledProcessError as e:
+            raise BundlerException(f"Could not update ufbt: {e}")
+        
+        try:
             ufbt_state_dir = subprocess.check_output(
                 [AppBundler.UFBT_COMMAND, "status", "sdk_dir"], encoding="utf-8"
             ).strip()
