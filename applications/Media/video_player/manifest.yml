@@ -1,0 +1,10 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/LTVA1/flipper-zero-video-player.git
+    commit_sha: fe95df072e28aac48e82a7e3f13a003aefd17516
+    subdir: flipper_project
+description: "@README_CATALOG.md"
+changelog: "@./docs/changelog.md"
+screenshots:
+  - screenshots/demo_screen.png
