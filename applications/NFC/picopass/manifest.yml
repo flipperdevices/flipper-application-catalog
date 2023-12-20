@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/flipperdevices/flipperzero-good-faps.git
-    commit_sha: 6b0379ddcd8f96d73f7d9fb0e086e8c4ac4acb6c
+    commit_sha: 0fa60776e869902217faa66f9a36d60f0d5afa34
     subdir: picopass
 description: "@.catalog/README.md"
 changelog: "@.catalog/changelog.md"
