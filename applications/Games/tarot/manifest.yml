@@ -6,6 +6,7 @@ sourcecode:
 short_description: Tarot spread for Flipper Zero
 description: "This app can give you a linear spread of the major arcana cards."
 changelog: "First release"
+author: "pionaiki & tihyltew"
 screenshots:
   - .flipcorg/gallery/screenshot_1.png
   - .flipcorg/gallery/screenshot_2.png
