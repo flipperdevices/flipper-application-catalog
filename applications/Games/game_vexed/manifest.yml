@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/dlvoy/flipper-zero-vexed.git
-    commit_sha: 460dd03ae6f54bd59128be6dccbd4393939570be
+    commit_sha: ce0280ea19306541425bdc488b263e0e821dffc5
 description: "@SHORTDESC.md"
 changelog: "@CHANGELOG.md"
 author: "Dominik Dzienia"
