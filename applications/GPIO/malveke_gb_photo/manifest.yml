@@ -3,17 +3,17 @@ sourcecode:
   location:
     origin: https://github.com/EstebanFuentealba/MALVEKE-Flipper-Zero.git
     commit_sha: 2a9aaa37a803f5e773334476c542bfc057e86303
-    subdir: flipper_companion_apps/applications/external/malveke_gb_cartridge
+    subdir: flipper_companion_apps/applications/external/malveke_gb_photo
 category: "GPIO"
 short_description: |
-  MALVEKE app, its Interacts with GAME BOY and GAME BOY Color cartridges. You can Dump & Restore RAM and ROM.
-name: "GAME BOY Cartridge (GB/GBC) MALVEKE"
-id: "malveke_gb_cartridge"
-version: "1.1"
+  Game Boy Camera save RAM photo to BMP from the Flipper Zero.
+name: "GAME BOY PHOTO MALVEKE"
+id: "malveke_gb_photo"
+version: "1.0"
 description: "@README_catalog.md"
 changelog: "@docs/changelog.md"
 author: "Esteban Fuentealba"
-icon: "icons/icon.png"
+icon: "icons/icon_10px.png"
 screenshots:
   - ".flipcorg/gallery/1.png"
   - ".flipcorg/gallery/2.png"
