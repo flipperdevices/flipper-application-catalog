@@ -7,9 +7,7 @@ sourcecode:
 category: "GPIO"
 short_description: |
   Insert a GAME BOY Camera cartridge, you can use it as a camera and take snapshots from the Flipper Zero.
-name: "[MALVEKE] GB Live Camera"
 id: "malveke_gb_live_camera"
-version: "1.3"
 description: "@README_catalog.md"
 changelog: "@docs/changelog.md"
 author: "Esteban Fuentealba"
