@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/leedave/flipper-zero-color-guess
-    commit_sha: 54116f0dc10ad2ce3683a11058ebb49d746d5a68
+    commit_sha: 37dd3bd2c4ded5eacdb2249c4bc044e942c2624b
 description: "@./docs/README.md"
 changelog: "@./docs/changelog.md"
 author: "Leedave"
