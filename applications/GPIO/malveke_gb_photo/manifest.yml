@@ -3,16 +3,17 @@ sourcecode:
   location:
     origin: https://github.com/EstebanFuentealba/MALVEKE-Flipper-Zero.git
     commit_sha: 7aa16610d4a4d60520c6b26e0cee78bf260bffc6
-    subdir: flipper_companion_apps/applications/external/malveke_gb_live_camera
+    subdir: flipper_companion_apps/applications/external/malveke_gb_photo
 category: "GPIO"
 short_description: |
-  Insert a GAME BOY Camera cartridge, you can use it as a camera and take snapshots from the Flipper Zero.
-id: "malveke_gb_live_camera"
+  Game Boy Camera save RAM photo to BMP from the Flipper Zero.
+id: "malveke_gb_photo"
 description: "@README_catalog.md"
 changelog: "@docs/changelog.md"
 author: "Esteban Fuentealba"
-icon: "icons/icon.png"
+icon: "icons/icon_10px.png"
 screenshots:
   - ".flipcorg/gallery/1.png"
   - ".flipcorg/gallery/2.png"
   - ".flipcorg/gallery/3.png"
+  - ".flipcorg/gallery/4.png"
