@@ -1,0 +1,14 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/squee72564/F0_Minesweeper_Fap
+    commit_sha: edd5b49889ea6aa6c3326bdcccffabe190ae7310
+description: "@./img/SIMPLEREADME.md"
+changelog: "@./docs/changelog.md"
+author: "Alexander Rodriguez"
+screenshots:
+  - "./img/screenshot1.png"
+  - "./img/screenshot2.png"
+  - "./img/screenshot3.png"
+  - "./img/screenshot4.png"
+  - "./img/screenshot5.png"
