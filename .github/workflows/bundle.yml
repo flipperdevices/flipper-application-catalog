@@ -23,7 +23,7 @@ jobs:
 
       - name: Get updated manifests
         id: changed-files
-        uses: tj-actions/changed-files@v35
+        uses: tj-actions/changed-files@v41
         with:
           files: |
             applications/**/manifest.yml
