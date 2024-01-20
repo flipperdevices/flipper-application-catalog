@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/flipperdevices/flipperzero-good-faps.git
-    commit_sha: fdabd12e3638b6c6e815947b7d0619ee9c1bbd1f
+    commit_sha: 0e0a9335dbe3bbcc75b3e0100be2ed70132890bd
     subdir: weather_station
 description: "@.catalog/README.md"
 changelog: "@.catalog/changelog.md"
