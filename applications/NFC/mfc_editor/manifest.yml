@@ -1,0 +1,15 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/TollyH/flipper-apps.git
+    commit_sha: 518081be545cf09bb352ab9d4a97b2a4d9cd0b34
+    subdir: mfc-editor
+description: "@.catalog/README.md"
+changelog: "@.catalog/CHANGELOG.md"
+screenshots:
+  - ".catalog/screenshots/1.png"
+  - ".catalog/screenshots/2.png"
+  - ".catalog/screenshots/3.png"
+  - ".catalog/screenshots/4.png"
+  - ".catalog/screenshots/5.png"
+  - ".catalog/screenshots/6.png"
