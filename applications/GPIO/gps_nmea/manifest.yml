@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/xMasterX/all-the-plugins.git
-    commit_sha: 37833bb96353a38f79503234e5fe59cc13bf9171
+    commit_sha: fe62eab5b7b50e0395ba9ae0fbd967192a3271d0
     subdir: base_pack/gps_nmea_uart
 description: "@README.md"
 changelog: "v1.0 - Initial release, v1.1 - Various important fixes, v1.2 - Fixes for latest API"
