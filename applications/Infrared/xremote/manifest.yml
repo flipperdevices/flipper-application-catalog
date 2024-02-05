@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/leedave/flipper-zero-cross-remote
-    commit_sha: 8520f4ccb4966180ae71fe2e166891d339b8eefc
+    commit_sha: 4d4962f68bec0554fe00d5209dc44ef668334c10
 description: "@./docs/README.md"
 changelog: "@./docs/changelog.md"
 author: "Leedave"
