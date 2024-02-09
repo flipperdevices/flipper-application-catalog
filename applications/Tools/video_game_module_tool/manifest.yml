@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/flipperdevices/flipperzero-good-faps.git
-    commit_sha: 8241404a3ca9cdb458479571b0698a1b60c228b9
+    commit_sha: 35c1fde6e02e97c0dc960b0450432b627645adf1
     subdir: video_game_module_tool
 description: "@.catalog/README.md"
 changelog: "@.catalog/CHANGELOG.md"
