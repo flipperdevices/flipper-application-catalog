@@ -1,0 +1,10 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/siberianbot/smack-my-dolphin-up.git
+    commit_sha: 71400765c08407d6a51072eab1d48359e2f0bafd
+description: "@README.md"
+changelog: "v1.0 - Initial release"
+author: "siberianbot"
+screenshots:
+  - "screenshot.png"
