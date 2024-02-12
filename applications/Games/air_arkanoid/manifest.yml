@@ -1,0 +1,14 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/flipperdevices/flipperzero-good-faps.git
+    commit_sha: 20cba42dc2ed14522ee27084778e46d3873c6c8e
+    subdir: air_arkanoid
+short_description: Arkanoid game that can use the IMU to control the paddle
+description: "@.catalog/README.md"
+changelog: "@.catalog/changelog.md"
+author: "@DrZlo13"
+screenshots:
+  - ".catalog/screenshots/1.png"
+  - ".catalog/screenshots/2.png"
+  - ".catalog/screenshots/3.png"
