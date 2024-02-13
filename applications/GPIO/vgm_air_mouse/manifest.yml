@@ -2,10 +2,10 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/flipperdevices/flipperzero-good-faps.git
-    commit_sha: de2ee6a6ef67cbec57992006dea8a0f4ef3e47bb
+    commit_sha: 128c33a745761ace9e7686582d9d57c4efcc5edd
     subdir: air_mouse
 description: "@.catalog/README.md"
-changelog: "v1.0 - Initial release"
+changelog: "@.catalog/CHANGELOG.md"
 author: "@nminaylov"
 screenshots:
   - ".catalog/screenshots/1.png"
