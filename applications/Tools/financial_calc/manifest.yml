@@ -1,0 +1,10 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/schaene/Flipper-Financial-Calculator.git
+    commit_sha: b972fda1457f88a02469010327d775777aff4163
+description: "A simple TVM Calculator"
+changelog: "v1.0 - Initial release"
+author: "schaene"
+screenshots:
+  - "screenshot.png"
