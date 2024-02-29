@@ -11,7 +11,6 @@ This is a simple game where you have to navigate a ball through a maze. The game
 ## Version history
 - 0.1.0 - Initial release by @CodeAllNight (https://youtube.com/@MrDerekJamison/about)
 
-
 ## Other
 
 This game was made based on the [air_arkanoid](https://github.com/flipperdevices/flipperzero-good-faps/tree/dev/air_arkanoid) and [flipperzero-game-engine-example](https://github.com/flipperdevices/flipperzero-game-engine-example) projects. Thanks to the authors of these projects for the inspiration and the code.
