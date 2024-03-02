@@ -1,7 +1,7 @@
 # DCF77 Clock Sync
 Emulates the [DCF77](https://en.wikipedia.org/wiki/DCF77) time signal on the RFID antenna and on GPIO A4 pin.
 
-Uses PWM with frequency of 77.5 kHz on the GPIO pin it to simulate the signal.
+Uses PWM with frequency of 77.5 kHz on the GPIO pin to simulate the signal.
 
 # Usage
 
