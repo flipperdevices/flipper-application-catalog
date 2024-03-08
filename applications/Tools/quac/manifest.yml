@@ -1,7 +1,7 @@
 sourcecode:
   type: git
   location:
-    origin: https://github.com/rdefe/quac.git
+    origin: https://github.com/rdefeo/quac.git
     commit_sha: b884fea5a669ba3ca8b3536d9b27df9f54fafce4
 description: "@./README.md"
 changelog: "@./CHANGELOG.md"
