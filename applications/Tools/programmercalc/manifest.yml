@@ -1,12 +1,10 @@
 sourcecode:
   type: git
   location:
-    origin: https://github.com/xMasterX/all-the-plugins.git
-    commit_sha: e1326198ec587571e2ec87b0da042b9ada571a42
-    subdir: apps_source_code/caesarcipher
-description: "Encrypt and decrypt text using Caesar Cipher"
-changelog: "v1.0 - Initial release, v1.1 - Sync Updates"
-author: "@panki27"
+    origin: https://github.com/armixz/Flipper-Zero-Programmer-Calculator.git
+    commit_sha: 207bb11656913dfc6441438b597d95634ea8cb05
+description: "Calculator, for Programmers!"
+changelog: "v0.9 - Initial release"
+author: "@armixz"
 screenshots:
-  - "./img/2.png"
   - "./img/1.png"
