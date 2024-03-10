@@ -2,10 +2,12 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/flipperdevices/flipperzero-good-faps.git
-    commit_sha: e9879e3b8dd5cc619f18cfd95a62c2a2d176b6b8
+    commit_sha: ad36dbdd99ee4e5c37aff191ced320fb5399f478
     subdir: clock
 description: "@.catalog/README.md"
-changelog: "v1.0 - Initial release"
+changelog: |
+  v1.1 - Update to latest datetime API
+  v1.0 - Initial release
 author: "@kowalski7cc"
 screenshots:
   - ".catalog/screenshots/1.png"
