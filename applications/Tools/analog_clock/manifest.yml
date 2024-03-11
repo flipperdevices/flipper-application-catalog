@@ -2,10 +2,10 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/xMasterX/all-the-plugins.git
-    commit_sha: e1326198ec587571e2ec87b0da042b9ada571a42
+    commit_sha: a8dc713a1051990789cc2941d81b6ffe16aa1385
     subdir: apps_source_code/flipper_analog_clock
 description: "Shows analog clock on Flipper screen"
-changelog: "v1.0 - Initial release, v1.1 - Sync Updates"
+changelog: "v1.0 - Initial release, v1.1 - Sync Updates, v1.2 - Fixes for latest API"
 author: "@scrolltex"
 screenshots:
   - "./img/1.png"
