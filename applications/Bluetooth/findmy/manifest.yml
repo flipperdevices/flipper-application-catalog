@@ -2,11 +2,11 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/MatthewKuKanich/FindMyFlipper.git
-    commit_sha: 7e6b8f386b8b6a09e4d4e8361f85a230e7a8bfc4
-    subdir: tree/ofw/findmy
+    commit_sha: ab5a3333b80438a286c8c22251ad170f850fa412
+    subdir: FindMyFlipper
 changelog: "v1.0 - Initial release"
 author: "@MatthewKuKanich"
 screenshots:
-  - "./screenshots/1.png"
-  - "./screenshots/2.png"
-  - "./screenshots/3.png"
+  - './screenshots/1.png'
+  - './screenshots/2.png'
+  - './screenshots/3.png'
