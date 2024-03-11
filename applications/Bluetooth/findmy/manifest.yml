@@ -4,6 +4,7 @@ sourcecode:
     origin: https://github.com/MatthewKuKanich/FindMyFlipper.git
     commit_sha: ab5a3333b80438a286c8c22251ad170f850fa412
     subdir: FindMyFlipper
+description: "FindMyFlipper, use your FlipperZero as an Airtag! Track on Apple, Samsung, and Tile find networks. Instructions are on the GitHub page: https://github.com/MatthewKuKanich/FindMyFlipper"
 changelog: "v1.0 - Initial release"
 author: "@MatthewKuKanich"
 screenshots:
