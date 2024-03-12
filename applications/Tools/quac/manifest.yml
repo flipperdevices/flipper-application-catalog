@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/rdefeo/quac.git
-    commit_sha: b884fea5a669ba3ca8b3536d9b27df9f54fafce4
+    commit_sha: 16c4ea180cf375e5d0acce09d0248d1f391856e3
 description: "@./README.md"
 changelog: "@./CHANGELOG.md"
 author: "Roberto De Feo"
