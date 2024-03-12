@@ -2,10 +2,10 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/xMasterX/all-the-plugins.git
-    commit_sha: e1326198ec587571e2ec87b0da042b9ada571a42
+    commit_sha: a8dc713a1051990789cc2941d81b6ffe16aa1385
     subdir: base_pack/game_2048
 description: "@README-catalog.md"
-changelog: "v1.0 - Initial release, v1.1 - Description update, v1.2 - Various important fixes"
+changelog: "v1.0 - Initial release, v1.1 - Description update, v1.2 - Various important fixes, v1.3 - Fixes for latest API, v1.4 - Fixes for latest API"
 author: "@eugene-kirzhanov"
 screenshots:
   - "./img/2.png"
