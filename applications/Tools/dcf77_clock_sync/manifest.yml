@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/mdaskalov/dcf77-clock-sync.git
-    commit_sha: 25a1698d4fa900ec4ce573523be97f68b7d4c58c
+    commit_sha: 51846ed5071bebda1f499e25df3e00942cdc2c30
 short_description: "Emulate DCF77 time signal on the RFID antenna and the A4 GPIO pin"
 description: "@README.md"
 changelog: "v1.3 - Use DateTime format, improved UI refresh"
