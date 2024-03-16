@@ -1,0 +1,10 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/armixz/Flipper-Zero-Programmer-Calculator.git
+    commit_sha: f871f33f7891e122061853fffafa976df3f4f688
+description: "Calculator, for Programmers!"
+changelog: "v0.9 - Initial release"
+author: "@armixz"
+screenshots:
+  - "./img/1.png"
