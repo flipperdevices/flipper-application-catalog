@@ -2,15 +2,15 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/kala13x/flipper-xremote
-    commit_sha: e03773fba4a61d602b02770438044c3a005a962b
+    commit_sha: bdc7afe66706f7cda4587188588cb745be6567fb
 description: "@./docs/README.md"
 changelog: "@./docs/changelog.md"
 author: "@kala13x"
 screenshots:
-  - "./screens/horizontal/screen1.png"
-  - "./screens/horizontal/screen2.png"
-  - "./screens/horizontal/screen3.png"
-  - "./screens/horizontal/screen4.png"
-  - "./screens/horizontal/screen5.png"
-  - "./screens/horizontal/screen6.png"
-  - "./screens/horizontal/screen7.png"
+  - "./.flipcorg/gallery/screen1.png"
+  - "./.flipcorg/gallery/screen2.png"
+  - "./.flipcorg/gallery/screen3.png"
+  - "./.flipcorg/gallery/screen4.png"
+  - "./.flipcorg/gallery/screen5.png"
+  - "./.flipcorg/gallery/screen6.png"
+  - "./.flipcorg/gallery/screen7.png"
