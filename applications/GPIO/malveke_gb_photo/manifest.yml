@@ -1,0 +1,19 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/EstebanFuentealba/MALVEKE-Flipper-Zero.git
+    commit_sha: fb7dba8c813a659c81fc37e5e7150c0b939fd4a7
+    subdir: flipper_companion_apps/applications/external/malveke_gb_photo
+category: "GPIO"
+short_description: |
+  Game Boy Camera save RAM photo to BMP from the Flipper Zero.
+id: "malveke_gb_photo"
+description: "@README_catalog.md"
+changelog: "@docs/changelog.md"
+author: "Esteban Fuentealba"
+icon: "icons/icon_10px.png"
+screenshots:
+  - ".flipcorg/gallery/1.png"
+  - ".flipcorg/gallery/2.png"
+  - ".flipcorg/gallery/3.png"
+  - ".flipcorg/gallery/4.png"

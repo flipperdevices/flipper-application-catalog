@@ -15,7 +15,6 @@ from typing import Dict, List
 import yaml
 from dataclass_wizard import YAMLWizard
 from dataclass_wizard.dumpers import asdict
-from git import Repo
 from markdown import Markdown
 from markdown.extensions import Extension
 from markdown.preprocessors import HtmlBlockPreprocessor
@@ -24,6 +23,7 @@ from PIL import Image
 # Temporary hack
 try:
     import SCons
+    import SCons.Node
 except ImportError:
     import sys
 
@@ -233,7 +233,6 @@ class AppBundler:
         self._code_dir = self._tmp_path / "code"
         self._assets_dir = self._tmp_path / "assets"
         self._assets_dir.mkdir()
-        self._repo = None
         self._fam_manifest = None
         self._log.info(f"Working in '{self._tmp_path}'")
         self._load()
@@ -289,6 +288,9 @@ class AppBundler:
     def _rel_path(self, path: Path):
         self._validate_path(path)
         return path.relative_to(self._tmp_path).as_posix()
+    
+    def __exec_git(self, *args, **kwargs):
+        return subprocess.check_output(["git", *args], cwd=self._tmp_code_path, **kwargs)
 
     def _fetch_sources(self):
         if self._manifest.sourcecode.type != "git":
@@ -298,13 +300,6 @@ class AppBundler:
 
         location_data = self._manifest.sourcecode.location
         repo_origin = location_data["origin"]
-        self._log.info(f"Cloning {repo_origin} to {self._tmp_code_path}")
-        self._repo = Repo.clone_from(
-            repo_origin,
-            self._tmp_code_path,
-            multi_options=["--recurse-submodules"],
-        )
-        self._log.info("Cloned")
 
         if not (commit_sha := location_data.get("commit_sha")):
             raise BundlerException(
@@ -316,11 +311,15 @@ class AppBundler:
                 f"Commit SHA (sourcecode.location.commit_sha) for {repo_origin} is not 40 characters long"
             )
 
-        code_branch = self._repo.create_head("_catalog_app_version", commit_sha)
-        self._repo.head.reference = code_branch
-        self._repo.head.reset(index=True, working_tree=True)
+        self._log.info(f"Cloning {repo_origin} to {self._tmp_code_path}")
+        self.__exec_git("clone", repo_origin, self._tmp_code_path, "--recurse-submodules")
 
-        self._log.info(f"Checked out commit {commit_sha}")
+        self._log.info("Cloned. Checking out commit")
+        self.__exec_git("checkout", commit_sha)
+
+        self._log.info(f"Checked out commit {commit_sha}. Updating submodules")
+        self.__exec_git("submodule", "update", "--init", "--recursive")
+
         repo_code = self._tmp_code_path
         if sub_dir := location_data.get("subdir"):
             repo_code = repo_code / sub_dir
@@ -329,6 +328,7 @@ class AppBundler:
             raise BundlerException(
                 f"Code path traversal detected: {repo_code} vs {self._tmp_code_path}"
             )
+
         self._log.info(f"Moving {repo_code} to {self._code_dir}")
         shutil.move(repo_code, self._code_dir)
 
@@ -660,6 +660,13 @@ class Main:
         return self.process(self.parser.parse_args())
 
     def _setup_imports(self):
+        try:
+            subprocess.check_output(
+                [AppBundler.UFBT_COMMAND, "update"], encoding="utf-8"
+            )
+        except subprocess.CalledProcessError as e:
+            raise BundlerException(f"Could not update ufbt: {e}")
+        
         try:
             ufbt_state_dir = subprocess.check_output(
                 [AppBundler.UFBT_COMMAND, "status", "sdk_dir"], encoding="utf-8"

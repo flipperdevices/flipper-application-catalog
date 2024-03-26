@@ -1,12 +1,12 @@
 sourcecode:
   type: git
   location:
-    origin: https://github.com/xMasterX/all-the-plugins.git
-    commit_sha: e1326198ec587571e2ec87b0da042b9ada571a42
-    subdir: apps_source_code/ir_intervalometer
-description: "This is a simple configurable valometer app for DSLR cameras. Works via Infrared port."
-changelog: "v1.0 - Initial release, v1.1 - More cameras support"
+    origin: https://github.com/Nitepone/flipper-intervalometer.git
+    commit_sha: 890c43905e243e3c13a1799aea87895935ba774a
+description: "Intervalometer for Canon, Nikon, and Sony cameras. Uses IR shutter release."
+changelog: "v1.0 - Initial release, v1.2 - Additional camera support"
 author: "@Nitepone"
 screenshots:
-  - "./img/2.png"
-  - "./img/1.png"
+  - "./doc/img/running-intervalometer.png"
+  - "./doc/img/settings-edit.png"
+  - "./doc/img/settings-burst.png"
