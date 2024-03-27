@@ -2,9 +2,9 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/nikilark/flipper_questions.git
-    commit_sha: 421ebc28c1e70346f18a432d22737ca113bcbde7
+    commit_sha: b701d55fca4d5fee85b241ba992754ac7a3695aa
 description: "Game contains questions to ask you friend, couple or someone new on party to get to know each other better."
-changelog: "v1.0 - Initial release"
+changelog: "v1.0 - Initial release, v1.1 - Adjusted build for API 58.0"
 screenshots:
   - "assets/q_menu.png"
   - "assets/q_ex1.png"
