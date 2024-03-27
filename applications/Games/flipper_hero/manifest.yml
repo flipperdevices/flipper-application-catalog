@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/mentoster/flipper-hero
-    commit_sha: 62db3e793ed78e7d2ddc3af80346e3894c929655
+    commit_sha: ac994287775c346f82db0ffd46f30a8cc5eadbf6
 description: "@./docs/README.md"
 changelog: "@./docs/changelog.md"
 author: "Mentoster"
