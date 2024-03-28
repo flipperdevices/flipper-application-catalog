@@ -78,6 +78,7 @@ jobs:
           curl --fail-with-body \
             -H "Authorization: Bearer ${{ secrets.FAST_AUTH_TOKEN }}" \
             --data-binary "@${{ runner.temp }}/build-errors" \
+            --data-urlencode "github_run_id=${{ github.run_id }}" \
             ${{ steps.env-setup.outputs.upload-url }}/status/fail ;
           exit 1 ;
 
@@ -99,5 +100,6 @@ jobs:
           curl --fail-with-body \
             -H "Authorization: Bearer ${{ secrets.FAST_AUTH_TOKEN }}" \
             -F "build_checksum=${{ steps.zip-artifacts.outputs.build-checksum }}" \
+            -F "github_run_id=${{ github.run_id }}" \
             -F "build=@${{ steps.zip-artifacts.outputs.artifact-path }}" \
             ${{ steps.env-setup.outputs.upload-url }}
