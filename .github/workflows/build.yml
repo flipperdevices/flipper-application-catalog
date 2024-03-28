@@ -77,8 +77,8 @@ jobs:
           UFBT-ERROR-EOF
           curl --fail-with-body \
             -H "Authorization: Bearer ${{ secrets.FAST_AUTH_TOKEN }}" \
-            --data-binary "@${{ runner.temp }}/build-errors" \
-            --data-urlencode "github_run_id=${{ github.run_id }}" \
+            -F "logs=@${{ runner.temp }}/build-errors" \
+            -F "github_run_id=${{ github.run_id }}" \
             ${{ steps.env-setup.outputs.upload-url }}/status/fail ;
           exit 1 ;
 
