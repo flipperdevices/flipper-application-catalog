@@ -1,0 +1,11 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/MrModd/Matagotchi.git
+    commit_sha: 7b5d3d0545cbb90d9b8215b7104b1b94a3854bef
+description: "Matagotchi: a Tamagotchi(R) like game for Flipper Zero"
+changelog: "@CHANGELOG.md"
+screenshots:
+  - images/home_screen.png
+  - images/stats_screen.png
+  - images/about_screen.png
