@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/LTVA1/flizzer_tracker.git
-    commit_sha: 5a011f4bafe9f75d4ccc18577c56d76eb012f317
+    commit_sha: 25f785e3574289c3f2dc8b562914a35809572f9b
 description: "@README_CATALOG.md"
 changelog: "@./docs/changelog.md"
 screenshots:
