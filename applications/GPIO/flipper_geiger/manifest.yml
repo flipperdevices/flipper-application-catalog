@@ -2,10 +2,10 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/xMasterX/all-the-plugins.git
-    commit_sha: e1326198ec587571e2ec87b0da042b9ada571a42
+    commit_sha: 288ecd1a2c1966467f6dbdf8a7f8fcb3b5e7299b
     subdir: apps_source_code/flipper_geiger
 description: "Works with J305 Geiger tube on external board"
-changelog: "v1.0 - Initial release, v1.1 - Sync Updates"
+changelog: "v1.0 - Initial release, v1.1 - Sync Updates, v1.2 - Fixes for latest API"
 author: "@nmrr"
 screenshots:
   - "./img/2.png"
