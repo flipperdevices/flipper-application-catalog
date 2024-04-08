@@ -2,11 +2,11 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/AlexTaran/flipperzero.git
-    commit_sha: d0f8ba062a9f094f1229c98e5b64548f900cf77f
+    commit_sha: 18b01330c7bb465cba2e8082670d51117db48359
     subdir: games/connect_wires
 description: "@README-catalog.md"
 short_description: "A famous puzzle game"
-changelog: "v1.0 - Initial release"
+changelog: "v1.0 - Initial release, v1.1 - Bug fixes"
 author: "@AlexTaran"
 screenshots:
   - "./screenshots/1.png"
