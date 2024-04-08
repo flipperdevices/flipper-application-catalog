@@ -2,10 +2,10 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/xMasterX/all-the-plugins.git
-    commit_sha: e1326198ec587571e2ec87b0da042b9ada571a42
+    commit_sha: 288ecd1a2c1966467f6dbdf8a7f8fcb3b5e7299b
     subdir: apps_source_code/bluetooth-trigger
 description: "@README-catalog.md"
-changelog: "v1.0 - Initial release, v1.1 - Description update, v1.2 - Various important fixes"
+changelog: "v1.0 - Initial release, v1.1 - Description update, v1.2 - Various important fixes, v1.3 - Fixes for latest API"
 author: "@Nem0oo"
 screenshots:
   - "./img/2.png"
