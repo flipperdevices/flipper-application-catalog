@@ -2,9 +2,9 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/sukvojte/wch_swio_flasher.git
-    commit_sha: 6dd029338537f438b1f671f4775979f5058a0170
+    commit_sha: 75266a7da1ceb3283321827cea8666421bf3a075
 description: "Flipper Zero WCH SWIO Flasher and debugger"
-changelog: "v1.0 - New Initial release"
+changelog: "v1.1 - Main app release"
 author: "Vojtech Suk"
 screenshots:
   - "./screenshots/wchf_debug.png"

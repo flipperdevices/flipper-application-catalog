@@ -2,10 +2,10 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/jamisonderek/flipper-zero-tutorials.git
-    commit_sha: 37252b745bdb1bd5056ba8ecdd20b249ca49b6f3
+    commit_sha: ca9efc0342c62ec96a5a5c39c3b9cf680899408e
     subdir: subghz/plugins/rock_paper_scissors
 description: "@./.flipcorg/README.md"
-changelog: "v1.4 - Update description\nv1.3 - More robust radio communication\nv1.2 - Updated subghz API"
+changelog: "v1.5 - datetime update v1.4 - Update description\nv1.3 - More robust radio communication\nv1.2 - Updated subghz API"
 author: "@jamisonderek"
 screenshots:
   - "./.flipcorg/gallery/win.png"
