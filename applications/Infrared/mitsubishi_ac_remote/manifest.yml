@@ -1,0 +1,10 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/achistyakov/flipperzero-mitsubishi-ac-remote.git
+    commit_sha: c401b835d4adff6a42106832c4a25818e26854d2
+short_description: "Mitsubishi Electric Air Conditioner remote control"
+description: "@./README_CATALOG.md"
+changelog: "@./CHANGELOG.md"
+screenshots:
+  - "./screenshot.png"
