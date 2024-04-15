@@ -7,4 +7,4 @@ short_description: "Mitsubishi Electric Air Conditioner remote control"
 description: "@./README_CATALOG.md"
 changelog: "@./CHANGELOG.md"
 screenshots:
-  - "./screenshot_01.png"
+  - "./img/1.png"
