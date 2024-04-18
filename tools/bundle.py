@@ -288,9 +288,11 @@ class AppBundler:
     def _rel_path(self, path: Path):
         self._validate_path(path)
         return path.relative_to(self._tmp_path).as_posix()
-    
+
     def __exec_git(self, *args, **kwargs):
-        return subprocess.check_output(["git", *args], cwd=self._tmp_code_path, **kwargs)
+        return subprocess.check_output(
+            ["git", *args], cwd=self._tmp_code_path, **kwargs
+        )
 
     def _fetch_sources(self):
         if self._manifest.sourcecode.type != "git":
@@ -312,7 +314,9 @@ class AppBundler:
             )
 
         self._log.info(f"Cloning {repo_origin} to {self._tmp_code_path}")
-        self.__exec_git("clone", repo_origin, self._tmp_code_path, "--recurse-submodules")
+        self.__exec_git(
+            "clone", repo_origin, self._tmp_code_path, "--recurse-submodules"
+        )
 
         self._log.info("Cloned. Checking out commit")
         self.__exec_git("checkout", commit_sha)
@@ -397,9 +401,11 @@ class AppBundler:
         # Set all pixels above threshold to transparent
         img.putdata(
             tuple(
-                self.PIXEL_TRANSPARENT
-                if pixel[:3] > self.BLACK_THRESHOLD
-                else self.PIXEL_BLACK
+                (
+                    self.PIXEL_TRANSPARENT
+                    if pixel[:3] > self.BLACK_THRESHOLD
+                    else self.PIXEL_BLACK
+                )
                 for pixel in img.getdata()
             )
         )
@@ -412,6 +418,12 @@ class AppBundler:
         img = Image.open(screenshot_src_path)
         if img.mode != "RGBA":
             img = img.convert("RGBA")
+
+        if img.width < img.height:
+            raise BundlerException(
+                f"Screenshot {screenshot_src_path} is in portrait orientation. Only landscape screenshots are allowed."
+            )
+
         # TODO: guess downsize ratio?
         downscale_factors = (
             img.width // self.FLIPPER_SCREEN_SIZE[0],
@@ -666,7 +678,7 @@ class Main:
             )
         except subprocess.CalledProcessError as e:
             raise BundlerException(f"Could not update ufbt: {e}")
-        
+
         try:
             ufbt_state_dir = subprocess.check_output(
                 [AppBundler.UFBT_COMMAND, "status", "sdk_dir"], encoding="utf-8"
