@@ -412,6 +412,13 @@ class AppBundler:
         img = Image.open(screenshot_src_path)
         if img.mode != "RGBA":
             img = img.convert("RGBA")
+
+
+        if img.width < img.height:
+            raise BundlerException(
+                f"Screenshot {screenshot_src_path} is in portrait orientation. Only landscape screenshots are allowed."
+            )
+
         # TODO: guess downsize ratio?
         downscale_factors = (
             img.width // self.FLIPPER_SCREEN_SIZE[0],
