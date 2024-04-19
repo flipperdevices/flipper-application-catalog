@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/Giraut/flipper_zero_noptel_lrf_sampler
-    commit_sha: bc2f78eb022c8b08a4baf39e3d88e9287621fb69
+    commit_sha: 0fb048cd597351fd484678bce7cbed81d21910d5
 short_description: Noptel LRF rangefinder sampler
 description: "Noptel LRF rangefinder sampler app for the Flipper Zero"
 changelog: "@Changelog.md"
