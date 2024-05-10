@@ -2,9 +2,9 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/techartdev/Calendar
-    commit_sha: 496dac9108a95a0cf4ad8d5935bbfd6936133374
+    commit_sha: 3f29994837002986dbf9afc117338d5ee633c1ee
 short_description: Calendar application
 description: "Simple Calendar App for Flipper Zero"
-changelog: "v1.0 - Initial Release"
+changelog: "v1.0 - Initial Release, v1.1 - Framework update"
 screenshots:
   - screenshots/ss0.png
