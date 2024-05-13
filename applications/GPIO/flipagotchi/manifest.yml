@@ -2,11 +2,11 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/Matt-London/pwnagotchi-flipper.git
-    commit_sha: 7734a26115efffb259117700da6389822b6c65c7
+    commit_sha: 786955bc4fbc92c9bb6134f36b1ee649dbe3fb9d
     subdir: flipagotchi
 short_description: Flipagotchi
 author: "Matt-London"
-description: "./README.md"
+description: "@./README.md"
 changelog: "All changes tracked on GitHub repository"
 screenshots:
   - "screenshots/PwnZeroBaseWFace.png"
