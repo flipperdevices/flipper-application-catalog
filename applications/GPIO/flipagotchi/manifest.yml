@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/Matt-London/pwnagotchi-flipper.git
-    commit_sha: 786955bc4fbc92c9bb6134f36b1ee649dbe3fb9d
+    commit_sha: 231029e185e15bd418feae77f9ab218531582e8c
     subdir: flipagotchi
 short_description: Flipagotchi
 author: "Matt-London"
