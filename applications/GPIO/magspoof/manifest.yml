@@ -9,7 +9,6 @@ description: |
   Reading & internal TX are works-in-progress; for more information, confer GitHub.
 changelog: "All version control & changes annotated on GitHub"
 screenshots:
-  - assets/start.png
   - assets/emulate.png
   - assets/settings.png
   - assets/emulate_config.png
