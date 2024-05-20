@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/flipperdevices/flipperzero-good-faps.git
-    commit_sha: a7536fa938bbb95490ac7f086ace4129e3306a5c
+    commit_sha: ec216e5690d548a9079c844e0cca70eda63212c7
     subdir: nfc_magic
 description: "@.catalog/README.md"
 changelog: "@.catalog/changelog.md"
