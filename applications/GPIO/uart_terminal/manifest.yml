@@ -1,0 +1,13 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/xMasterX/all-the-plugins.git
+    commit_sha: 37833bb96353a38f79503234e5fe59cc13bf9171
+    subdir: base_pack/uart_terminal
+description: "@README-catalog.md"
+changelog: "v1.0 - Initial release, v1.1 - Description update, v1.2 - More baudrates, v1.3 - HEX Mode, v1.4 - Fixes for latest API"
+author: "@cool4uma & @rnadyrshin & (some fixes by @xMasterX)"
+screenshots:
+  - "./img/2.png"
+  - "./img/3.png"
+  - "./img/1.png"
