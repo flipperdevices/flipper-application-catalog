@@ -1,0 +1,12 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/GEMISIS/tone_gen.git
+    commit_sha: 6dc1a236fe0c395261b9edbfb594d61352355c16
+description: "Generate simple tones on your Flipper Zero"
+changelog: "v1.0 - Initial release"
+author: "@gemisis"
+screenshots:
+  - "./screenshots/menu.png"
+  - "./screenshots/settings.png"
+  - "./screenshots/playback.png"

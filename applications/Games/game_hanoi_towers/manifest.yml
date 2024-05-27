@@ -1,0 +1,14 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/AlexTaran/flipperzero.git
+    commit_sha: 016307aaea59ac6776b6dbc3f5557d9b06ef0042
+    subdir: games/hanoi_towers
+description: "@README-catalog.md"
+short_description: "A puzzle game about moving tower of disks to another stick"
+changelog: "v1.0 - Initial release"
+author: "@AlexTaran"
+screenshots:
+  - "./screenshots/1.png"
+  - "./screenshots/2.png"
+  - "./screenshots/3.png"
