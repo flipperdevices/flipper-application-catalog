@@ -1,0 +1,12 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/jamisonderek/flipper-zero-tutorials.git
+    commit_sha: a54146a4af2a24869bc8950ad0941ccde103a275
+    subdir: vgm/apps/air_labyrinth
+description: "@.catalog/README.md"
+changelog: "@.catalog/CHANGELOG.md"
+author: "@CodeAllNight (MrDerekJamison)"
+screenshots:
+  - ".catalog/screenshots/1.png"
+
