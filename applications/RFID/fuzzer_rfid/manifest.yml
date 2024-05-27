@@ -1,0 +1,13 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/DarkFlippers/Multi_Fuzzer.git
+    commit_sha: a4588f71759cd8fa9c3fb555a8c66884eac3446b
+id: "fuzzer_rfid"
+description: "@./catalog/docs/rfid/README.md"
+changelog: "@./catalog/docs/rfid/Changelog.md"
+screenshots:
+  - "./catalog/screenshots/Main_menu.png"
+  - "./catalog/screenshots/Attack_screen.png"
+  - "./catalog/screenshots/Pause.png"
+  - "./catalog/screenshots/Field_editor.png"

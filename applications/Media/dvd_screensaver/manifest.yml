@@ -1,0 +1,9 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/shantih19/flipper_dvd_screensaver.git
+    commit_sha: 186ba79a7a31755305fa8b4ec6e80ce0c770bd3b
+description: "DVD screensaver clone."
+changelog: "v1.0 - Initial Release"
+screenshots:
+  - "screenshot.png"

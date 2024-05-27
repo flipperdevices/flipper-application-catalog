@@ -1,0 +1,13 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/xMasterX/all-the-plugins.git
+    commit_sha: e1326198ec587571e2ec87b0da042b9ada571a42
+    subdir: base_pack/spectrum_analyzer
+description: "@README.md"
+changelog: "v1.0 - Initial release, v1.1 - Fixes, v1.2 - Sync Updates"
+author: "@xMasterX & @theY4Kman & @ALEEF02 (original by @jolcese)"
+screenshots:
+  - "./img/1.png"
+  - "./img/2.png"
+  - "./img/3.png"
