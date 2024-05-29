@@ -4,7 +4,7 @@ sourcecode:
     
     origin: https://github.com/haffnerriley/Simultaneous-UHF-RFID-FlipperZero.git
     
-    commit_sha: 5fe3c949d551fd0f09a211b06614eeb3e68399c2
+    commit_sha: a7681e779cd83ec93cf4fcfada8ec48424969c56
     
     subdir: simultaneous_rfid_reader
 
@@ -21,12 +21,12 @@ description: |
   information, saving tags, 
   and more!
 
-changelog: "@CHANGELOG.md"
+changelog: "@.catalog/CHANGELOG.md"
 
 author: "@Haffnerriley"
 
 screenshots:
-  - images/uhf-rfid-m6e-main-menu.png
-  - images/read-screen.png
-  - images/write-screen.png
-  - images/tag-data-screen.png
+  - ".catalog/screenshots/uhf-rfid-m6e-main-menu.png"
+  - ".catalog/screenshots/read-screen.png"
+  - ".catalog/screenshots/write-screen.png"
+  - ".catalog/screenshots/tag-data-screen.png"
