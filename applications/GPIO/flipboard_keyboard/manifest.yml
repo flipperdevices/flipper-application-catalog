@@ -1,0 +1,16 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/jamisonderek/flipboard.git
+    commit_sha: 57b45694ac8439ce5bc62da6c7f73cc6ee85e7eb
+    subdir: flipkeyboard
+description: "@./gallery/README.md"
+changelog: "@./gallery/CHANGELOG.md"
+author: "CodeAllNight (MrDerekJamison)"
+screenshots:
+  - "gallery/07-key-splash.png"
+  - "gallery/04-key-config-3.png"
+  - "gallery/06-key-keyboard.png"
+  - "gallery/03-key-config-1.png"
+  - "gallery/04-key-config-2.png"
+  - "gallery/08-key-qrcode.png"
