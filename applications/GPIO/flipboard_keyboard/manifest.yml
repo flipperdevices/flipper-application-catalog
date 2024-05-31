@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/jamisonderek/flipboard.git
-    commit_sha: 57b45694ac8439ce5bc62da6c7f73cc6ee85e7eb
+    commit_sha: 4daf338df314c3a86cf1c7a32d55893b09cef323
     subdir: flipkeyboard
 description: "@./gallery/README.md"
 changelog: "@./gallery/CHANGELOG.md"
