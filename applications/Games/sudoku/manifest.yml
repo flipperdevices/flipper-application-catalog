@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/profelis/fz-sudoku.git
-    commit_sha: 730d048e0ef5dc52613df93508863332063ee56a
+    commit_sha: a9c4717826f28df5524811c73bcdf56ae54d256a
 description: "@README_catalog.md"
 changelog: "@CHANGELOG.md"
 author: "@profelis"

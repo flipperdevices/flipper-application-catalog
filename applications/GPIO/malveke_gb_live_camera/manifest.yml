@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/EstebanFuentealba/MALVEKE-Flipper-Zero.git
-    commit_sha: 7aa16610d4a4d60520c6b26e0cee78bf260bffc6
+    commit_sha: fb7dba8c813a659c81fc37e5e7150c0b939fd4a7
     subdir: flipper_companion_apps/applications/external/malveke_gb_live_camera
 category: "GPIO"
 short_description: |

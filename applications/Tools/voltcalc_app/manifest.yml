@@ -1,0 +1,15 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/HappyAmos/Flipper_FAPS.git 
+    commit_sha: 258177423e97997a72c794d591613cc2c5b27330 
+    subdir: voltcalc_app 
+description: "@README-catalog.md"
+short_description: "A simple Ohms Law calculator"
+changelog: "@changelog.md"
+author: "@HappyAmos"
+screenshots:
+  - "./screenshots/vri1.png"
+  - "./screenshots/vri2.png"
+  - "./screenshots/vri3.png"
+  - "./screenshots/vri4.png"
