@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/xMasterX/all-the-plugins.git
-    commit_sha: 9e29919a62459df80e9acb2a3220eb14cbb6276f
+    commit_sha: 7c0871feda4555afdf5960e86b8999173f59fdc4
     subdir: apps_source_code/ocarina
 description: "A basic Ocarina (of Time), Controls are the same as the N64 version of the Ocarina of Time"
 changelog: "v1.0 - Initial release, v1.1 - Sync Updates, v1.2 - Sync updates and latest API support"

@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/xMasterX/all-the-plugins.git
-    commit_sha: 9e29919a62459df80e9acb2a3220eb14cbb6276f
+    commit_sha: 7c0871feda4555afdf5960e86b8999173f59fdc4
     subdir: apps_source_code/mandelbrot
 description: "The Mandelbrot set is the set of all so-called (complex) numbers that meet Mandelbrots simple arithmetic criterion."
 changelog: "v1.0 - Initial release, v1.1 - Various important fixes, v1.2 - Sync updates and latest API support"

@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/xMasterX/all-the-plugins.git
-    commit_sha: 9e29919a62459df80e9acb2a3220eb14cbb6276f
+    commit_sha: 7c0871feda4555afdf5960e86b8999173f59fdc4
     subdir: base_pack/metronome
 description: "Metronome app"
 changelog: "v1.0 - Initial release, v1.1 - Various important fixes, v1.2 - Various fixes, v1.3 - Sync updates and latest API support"
