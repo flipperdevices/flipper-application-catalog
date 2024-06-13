@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/xMasterX/all-the-plugins.git
-    commit_sha: 6e6f3b1387e33608e3b07c1dadf7e3e7302af21c
+    commit_sha: 9e29919a62459df80e9acb2a3220eb14cbb6276f
     subdir: apps_source_code/caesarcipher
 description: "Encrypt and decrypt text using Caesar Cipher"
 changelog: "v1.0 - Initial release, v1.1 - Sync Updates, v1.2 - Sync updates and latest API support"
