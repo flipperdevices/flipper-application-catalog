@@ -2,10 +2,10 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/xMasterX/all-the-plugins.git
-    commit_sha: efeac368c2cf583adb28f3f11752f9694bae9c72
+    commit_sha: 6e6f3b1387e33608e3b07c1dadf7e3e7302af21c
     subdir: apps_source_code/brainfuck
 description: "Brainfuck language interpreter"
-changelog: "v1.0 - Initial release, v1.1 - Sync Updates, v1.2 - Fixes for new API"
+changelog: "v1.0 - Initial release, v1.1 - Sync Updates, v1.2 - Fixes for new API, v1.3 - Sync updates and latest API support"
 author: "@nymda"
 screenshots:
   - "./img/2.png"

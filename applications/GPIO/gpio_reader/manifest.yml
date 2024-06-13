@@ -2,10 +2,10 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/xMasterX/all-the-plugins.git
-    commit_sha: e1326198ec587571e2ec87b0da042b9ada571a42
+    commit_sha: 6e6f3b1387e33608e3b07c1dadf7e3e7302af21c
     subdir: apps_source_code/gpio_pins_reader
 description: "Read GPIO pins states, and display them on the screen"
-changelog: "v1.0 - Initial release, v1.1 - Various important fixes"
+changelog: "v1.0 - Initial release, v1.1 - Various important fixes, v1.2 - Sync updates and latest API support"
 author: "@aureli1c"
 screenshots:
   - "./img/2.png"

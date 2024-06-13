@@ -2,10 +2,10 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/xMasterX/all-the-plugins.git
-    commit_sha: a8dc713a1051990789cc2941d81b6ffe16aa1385
+    commit_sha: 6e6f3b1387e33608e3b07c1dadf7e3e7302af21c
     subdir: base_pack/doom
 description: "@README.md"
-changelog: "v1.0 - Initial release, v1.1 - Various important fixes, v1.2 - Fixes for latest API, v1.3 - Fixes for latest API"
+changelog: "v1.0 - Initial release, v1.1 - Various important fixes, v1.2 - Fixes for latest API, v1.3 - Fixes for latest API, v1.4 - Sync updates and latest API support"
 author: "@xMasterX & @Svarich & @hedger (original code by @p4nic4ttack)"
 screenshots:
   - "./img/1.png"
