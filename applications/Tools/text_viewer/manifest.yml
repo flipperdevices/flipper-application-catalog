@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/xMasterX/all-the-plugins.git
-    commit_sha: 0ece7167f37bd43c6c34e4e5464f003d3e83f486
+    commit_sha: b9443ac327d516005fe4001dec1c82fb317cc016
     subdir: base_pack/text_viewer
 description: "Text viewer application (Update!)"
 changelog: "v1.0 - New Initial release, v1.5 - Sync Updates, v1.6 - Sync updates and latest API support"

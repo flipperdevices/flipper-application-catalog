@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/xMasterX/all-the-plugins.git
-    commit_sha: 0ece7167f37bd43c6c34e4e5464f003d3e83f486
+    commit_sha: b9443ac327d516005fe4001dec1c82fb317cc016
     subdir: apps_source_code/flipp_pomodoro
 description: "Boost Your Productivity with the Pomodoro Timer"
 changelog: "v1.0 - Initial release, v1.1 - Updated from main repo, v1.2 - Updated from main repo, v1.3 - Sync Updates, v1.4 - Sync updates and latest API support"
