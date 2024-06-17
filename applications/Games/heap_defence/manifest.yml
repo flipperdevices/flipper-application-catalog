@@ -2,10 +2,10 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/xMasterX/all-the-plugins.git
-    commit_sha: 288ecd1a2c1966467f6dbdf8a7f8fcb3b5e7299b
+    commit_sha: 06c22064aa6ae0c33438795eb7cd27d4d083c6c8
     subdir: base_pack/heap_defence_game
 description: "Heap Defence game from hackathon (aka Stack Attack)"
-changelog: "v1.0 - Initial release, v1.1 - Sync Updates, v1.2 - Fixes for latest API"
+changelog: "v1.0 - Initial release, v1.1 - Sync Updates, v1.2 - Fixes for latest API, v1.3 - Sync updates and latest API support"
 author: "@xMasterX (original implementation by @wquinoa & @Vedmein)"
 screenshots:
   - "./img/2.png"
