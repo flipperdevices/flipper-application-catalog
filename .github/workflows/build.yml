@@ -62,7 +62,7 @@ jobs:
         uses: flipperdevices/flipperzero-ufbt-action@v0.1
         continue-on-error: true
         id: ufbt
-        with: 
+        with:
           task: build
           app-dir: ${{ steps.env-setup.outputs.code-path }}
           sdk-branch: ${{ inputs.branch }}
@@ -86,7 +86,7 @@ jobs:
         id: zip-artifacts
         if: steps.ufbt.outputs.build-errors == ''
         run: >
-          FAP_PATH=$( grep ${{ steps.unzip-bundle.outputs.appid }} <<< "${{ steps.ufbt.outputs.fap-artifacts }}" ) ;
+          FAP_PATH=$(echo "${{ steps.ufbt.outputs.fap-artifacts }}" | sed 's/ /\n/g' | grep ${{ steps.unzip-bundle.outputs.appid }} | grep -E ".fap$");
           FAP_SHA=$( sha256sum $FAP_PATH | cut -d' ' -f1 ) ;
           FAP_NAME=$( basename $FAP_PATH ) ;
           echo "build-checksum=$FAP_SHA" >> $GITHUB_OUTPUT ;
