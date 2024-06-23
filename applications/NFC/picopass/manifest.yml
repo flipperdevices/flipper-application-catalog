@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://gitlab.com/bettse/picopass.git
-    commit_sha: 0d682ee20222bbfb39e0dc55a198409d95b4a493
+    commit_sha: d60b4e8bb386648b7eae63dc1ebb927ea2af0411
 description: "@.catalog/README.md"
 changelog: "@.catalog/changelog.md"
 author: "@bettse"
