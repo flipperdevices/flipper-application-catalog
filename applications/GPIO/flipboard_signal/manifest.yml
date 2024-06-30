@@ -1,0 +1,15 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/jamisonderek/flipboard.git
+    commit_sha: c6176ac0fa395867432aed4a83d190cb98bb65b9
+    subdir: flipsignal
+description: "@./gallery/README.md"
+changelog: "@./gallery/CHANGELOG.md"
+author: "CodeAllNight (MrDerekJamison)"
+screenshots:
+  - "gallery/05-signal-splash.png"
+  - "gallery/03-signal-config-1.png"
+  - "gallery/04-signal-sending.png"
+  - "gallery/01-signal-main-menu.png"
+  - "gallery/06-signal-qrcode.png"
