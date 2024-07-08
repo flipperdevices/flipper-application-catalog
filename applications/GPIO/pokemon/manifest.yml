@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/EstebanFuentealba/Flipper-Zero-Game-Boy-Pokemon-Trading
-    commit_sha: 377a19a3f057b8ab2c4e8fe5e1948596e5b168e6
+    commit_sha: 282237f7ce9796c395eaadc06f8a86c8c562e405
 description: "@README_catalog.md"
 changelog: "@changelog.md"
 screenshots:
