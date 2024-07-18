@@ -15,14 +15,14 @@ on:
       bundle_url:
         description: "Application bundle URL"
         required: true
+      upload_url:
+        description: "Build results submit URL"
+        required: true
       branch:
         description: "SDK branch to use"
         required: true
       target:
         description: "SDK hardware target to use"
-        required: true
-      upload_url:
-        description: "Build results submit URL"
         required: true
 
 jobs:
@@ -38,68 +38,29 @@ jobs:
           ARCHIVARIUS_URL=$( < .github/.ARCHIVARIUS_URL ) ;
           echo "ARCHIVARIUS_URL=${ARCHIVARIUS_URL}" >> $GITHUB_ENV ;
           echo "::add-matcher::${{ github.workspace }}/.github/problem-matcher.json" ;
-          echo "bundle-url=${ARCHIVARIUS_URL}${{ inputs.bundle_url }}" >> $GITHUB_OUTPUT ;
-          echo "upload-url=${ARCHIVARIUS_URL}${{ inputs.upload_url }}" >> $GITHUB_OUTPUT ; 
-          echo "local-bundle-zip=${{ runner.temp }}/bundle.zip" >> $GITHUB_OUTPUT ;
-          echo "local-bundle-path=${{ runner.temp }}/app" >> $GITHUB_OUTPUT ;
-          echo "code-path=${{ runner.temp }}/app/code" >> $GITHUB_OUTPUT ;
 
-      - name: Download bundle file
-        run: |
-          curl --fail-with-body -L \
-            -H "Authorization: Bearer ${{ secrets.FAST_AUTH_TOKEN }}" \
-            -o ${{ steps.env-setup.outputs.local-bundle-zip }} \
-            ${{ steps.env-setup.outputs.bundle-url }}
-
-      - name: Unzip src bundle
-        id: unzip-bundle
-        run: |
-          unzip -qq ${{ steps.env-setup.outputs.local-bundle-zip }} -d ${{ steps.env-setup.outputs.local-bundle-path }} ;
-          APPID=$( grep -e "^id: " "${{ steps.env-setup.outputs.local-bundle-path }}/manifest.yml" | cut -d" " -f2 ) ;
-          echo "appid=${APPID}" >> $GITHUB_OUTPUT ;
-
-      - name: Run ufbt
+      - name: Install ufbt
         uses: flipperdevices/flipperzero-ufbt-action@v0.1
-        continue-on-error: true
         id: ufbt
         with: 
-          task: build
-          app-dir: ${{ steps.env-setup.outputs.code-path }}
+          task: setup
           sdk-branch: ${{ inputs.branch }}
           sdk-hw-target: ${{ inputs.target }}
 
-      - name: Report build failures
-        id: report-build-failures
-        if: steps.ufbt.outputs.build-errors != ''
-        run: |
-          cat << "UFBT-ERROR-EOF" > ${{ runner.temp }}/build-errors
-          ${{ steps.ufbt.outputs.build-errors }}
-          UFBT-ERROR-EOF
-          curl --fail-with-body \
-            -H "Authorization: Bearer ${{ secrets.FAST_AUTH_TOKEN }}" \
-            -F "logs=@${{ runner.temp }}/build-errors" \
-            -F "github_run_id=${{ github.run_id }}" \
-            ${{ steps.env-setup.outputs.upload-url }}/status/fail ;
-          exit 1 ;
-
-      - name: Zip artifacts
-        id: zip-artifacts
-        if: steps.ufbt.outputs.build-errors == ''
+      - name: Setup Python requirements
+        working-directory: ./tools
+        shell: bash
         run: >
-          FAP_PATH=$( grep ${{ steps.unzip-bundle.outputs.appid }} <<< "${{ steps.ufbt.outputs.fap-artifacts }}" ) ;
-          FAP_SHA=$( sha256sum $FAP_PATH | cut -d' ' -f1 ) ;
-          FAP_NAME=$( basename $FAP_PATH ) ;
-          echo "build-checksum=$FAP_SHA" >> $GITHUB_OUTPUT ;
-          echo "SHA256 for $FAP_NAME = \`\`\`$FAP_SHA\`\`\`" >> $GITHUB_STEP_SUMMARY ;
-          zip -qq -r -j ${{ runner.temp }}/build-artifacts.zip $FAP_PATH ;
-          echo "artifact-path=${{ runner.temp }}/build-artifacts.zip" >> $GITHUB_OUTPUT ;
+            python3 -m pip install -r requirements.txt
 
-      - name: Upload built files
-        if: steps.ufbt.outputs.build-errors == ''
-        run: |
-          curl --fail-with-body \
-            -H "Authorization: Bearer ${{ secrets.FAST_AUTH_TOKEN }}" \
-            -F "build_checksum=${{ steps.zip-artifacts.outputs.build-checksum }}" \
-            -F "github_run_id=${{ github.run_id }}" \
-            -F "build=@${{ steps.zip-artifacts.outputs.artifact-path }}" \
-            ${{ steps.env-setup.outputs.upload-url }}
+      - name: Build source code and report results
+        shell: bash
+        run: >
+            echo gh-out is $GITHUB_OUTPUT ;
+            python3 ${{ github.workspace }}/tools/build.py \
+                --api $( < .github/.ARCHIVARIUS_URL ) \
+                --bundle-path ${{ inputs.bundle_url }} \
+                --upload-path ${{ inputs.upload_url }} \
+                --token ${{ secrets.FAST_AUTH_TOKEN }} \
+                --gh-run-id ${{ github.run_id }} \
+                --gh-output $GITHUB_OUTPUT ;
