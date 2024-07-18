@@ -120,7 +120,7 @@ jobs:
           json-manifest: bundle.json
           build-artifacts-zip: true
           # Uncomment to submit bundles with broken code
-          # skip-build: true
+          skip-build: true
           skip-lint: true
 
       - name: Retry build with RC SDK
@@ -134,7 +134,7 @@ jobs:
           json-manifest: bundle.json
           build-artifacts-zip: true
           # Uncomment to submit bundles with broken code
-          # skip-build: true
+          skip-build: true
           skip-lint: true
 
       - name: Get succesful build output

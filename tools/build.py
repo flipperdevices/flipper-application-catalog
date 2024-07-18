@@ -7,6 +7,7 @@ import sys
 import tempfile
 import zipfile
 from typing import Optional
+import io
 
 import requests
 from bundle import ApplicationManifest
@@ -18,6 +19,9 @@ class GithubOutputHandler(logging.Handler):
         self.gh_output = gh_output
 
     def emit(self, record):
+        logging.info(
+            f"Adding log to Github output: {self.format(record)} to {self.gh_output}"
+        )
         with open(self.gh_output, "a") as f:
             f.write(f"{self.format(record)}\n")
 
@@ -91,7 +95,7 @@ class ArtifactUploader:
     def report_error(self, error_log: str):
         headers = self._get_headers()
         params = self._get_params()
-        params.update({"logs": (None, error_log)})
+        params.update({"logs": io.BytesIO(error_log.encode("utf-8"))})
 
         response = requests.post(
             self.upload_url + self.FAILURE_URL_SUFFIX,
@@ -147,17 +151,22 @@ class BundleBuilder:
 
         # Build the bundle
         logging.info("Building bundle")
-        try:
-            build_res = subprocess.check_output(
-                [
-                    "ufbt",
-                    "faps",
-                ],
-                cwd=code_dir,
-            )
-            logging.info(build_res.decode("utf-8"))
-        except subprocess.CalledProcessError as e:
-            raise BundleBuildError(e.output.decode("utf-8"), e.stderr.decode("utf-8"))
+
+        p = subprocess.run(
+            [
+                "ufbt",
+                "faps",
+            ],
+            cwd=code_dir,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
+        )
+        logging.info(p.stdout.decode("utf-8"))
+        if p.stderr:
+            logging.error(p.stderr.decode("utf-8"))
+
+        if p.returncode != 0:
+            raise BundleBuildError(p.stdout.decode("utf-8"), p.stderr.decode("utf-8"))
 
         logging.info(f"Bundle built in {code_dir}")
 
@@ -246,7 +255,7 @@ class Main:
             return 0
         except BundleBuildError as e:
             logging.error(f"Bundle build failed: {e.stderr}")
-            uploader.report_error(f"Stdout: {e.stdout}\nStderr: {e.stderr}")
+            uploader.report_error(f"Stdout: {e.stdout}\n\n\nStderr: {e.stderr}\n")
         except UploadError as e:
             logging.error(f"Upload failed: {e}")
         except Exception as e:

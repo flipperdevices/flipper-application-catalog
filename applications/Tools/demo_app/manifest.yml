@@ -1,0 +1,14 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/hedger/flipperzero-catalog-sample-app.git
+    commit_sha: 3d6e89290ec3948cb8e212b156355b499520c9a8
+description: |
+  A long app description.
+  Very long.
+  Spanning multiple lines.
+changelog: "@CHANGELOG.md"
+screenshots:
+  - screenshots/flp0.png
+  - screenshots/flp1.png
+  - screenshots/flp2.png
