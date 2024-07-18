@@ -219,9 +219,9 @@ class Main:
         )
 
         self.parser.add_argument(
-            "--gh-output",
+            "--gh-summary",
             type=str,
-            help="Github output file",
+            help="Github summary output file",
             default="",
         )
 
@@ -238,9 +238,9 @@ class Main:
         if args.debug:
             logging.getLogger().setLevel(logging.DEBUG)
 
-        if args.gh_output:
-            logging.info(f"Also logging to Github output file {args.gh_output}")
-            github_logger.addHandler(GithubOutputHandler(args.gh_output))
+        if args.gh_summary:
+            logging.info(f"Also logging to Github output file {args.gh_summary}")
+            github_logger.addHandler(GithubOutputHandler(args.gh_summary))
 
         builder = BundleBuilder(f"{args.api}{args.bundle_path}")
         uploader = ArtifactUploader(

@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/hedger/flipperzero-catalog-sample-app.git
-    commit_sha: 3d6e89290ec3948cb8e212b156355b499520c9a8
+    commit_sha: f76f3dcd0027ca7195c05adf060eaa3520b96b57
 description: |
   A long app description.
   Very long.

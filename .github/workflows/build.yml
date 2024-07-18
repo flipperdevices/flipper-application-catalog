@@ -62,6 +62,4 @@ jobs:
                 --upload-path ${{ inputs.upload_url }} \
                 --token ${{ secrets.FAST_AUTH_TOKEN }} \
                 --gh-run-id ${{ github.run_id }} \
-                --gh-output $GITHUB_OUTPUT ;
-            echo "gh-out is $GITHUB_OUTPUT" ;
-            cat $GITHUB_OUTPUT ;
+                --gh-summary $GITHUB_STEP_SUMMARY ;
