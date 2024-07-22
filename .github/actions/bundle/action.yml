@@ -1,0 +1,106 @@
+name: "Gather Flipper Application Bundle"
+author: "hedger"
+description: "Github Action that bundles your FZ app"
+inputs:
+  path:
+    description: "Path to bundle YML manifest"
+    required: true
+  skip-lint:
+    description: "Skip lint checks"
+    required: false
+    default: "false"
+  skip-build:
+    description: "Skip build step"
+    required: false
+    default: "false"
+  skip-source-code:
+    description: "Skip source code"
+    required: false
+    default: "false"
+  sdk-channel:
+    description: "SDK channel"
+    required: false
+    default: "release"
+  json-manifest:
+    description: "Output bundle info as JSON to file name"
+    required: false
+    default: ""
+  build-artifacts-zip:
+    description: "Build artifacts zip"
+    required: false
+    default: ""
+
+outputs:
+  bundle-path:
+    description: "Path to bundle zip"
+    value: ${{ steps.bundle.outputs.bundle-path }}
+  artifacts-path:
+    description: "Path to build artifacts zip"
+    value: ${{ steps.bundle-args.outputs.artifacts-path }}
+runs:
+  using: "composite"
+  steps:
+    - name: Set paths
+      shell: bash
+      run: >
+        echo "::add-matcher::${{ github.workspace }}/.github/problem-matcher.json" ;
+        if [ -z ${{ inputs.path }} ]; then
+          echo "YML_PATH=$GITHUB_WORKSPACE" >> $GITHUB_ENV ;
+        else
+          echo "YML_PATH=$GITHUB_WORKSPACE/${{ inputs.path }}" >> $GITHUB_ENV ;
+        fi ;
+        mkdir -p ${{ runner.temp }} ;
+        echo "BUNDLE_PATH=${{ runner.temp }}/bundle.zip" >> $GITHUB_ENV ;
+        echo "ARTIFACT_PATH=${{ runner.temp }}/artifacts.zip" >> $GITHUB_ENV ;
+        echo "CATALOG_ROOT_PATH=`realpath ${{ github.action_path }}/../../../`" >> $GITHUB_ENV ;
+
+    - name: Setup Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+        cache: 'pip'
+
+    - name: Setup Python requirements
+      shell: bash
+      run: >
+        python3 -m pip install -r ${{ env.CATALOG_ROOT_PATH }}/tools/requirements.txt
+
+    - name: Setup ufbt
+      uses: flipperdevices/flipperzero-ufbt-action@v0.1
+      id: setup-ufbt
+      with:
+        task: setup
+        skip-setup: true
+        sdk-channel: ${{ inputs.sdk-channel }}
+
+    - name: Setup build env
+      id: bundle-args
+      shell: bash
+      run: >
+        BUNDLE_FLAGS="" ;
+        if [ ${{ inputs.skip-lint }} != 'false' ]; then
+          BUNDLE_FLAGS="--nolint" ;
+        fi ;
+        if [ ${{ inputs.skip-build }} != 'false' ]; then
+          BUNDLE_FLAGS="$BUNDLE_FLAGS --nobuild" ;
+        fi ;
+        if [ ${{ inputs.skip-source-code }} != 'false' ]; then
+          BUNDLE_FLAGS="$BUNDLE_FLAGS --nosourcecode" ;
+        fi ;
+        if [ ${{ inputs.json-manifest }} != '' ]; then
+          BUNDLE_FLAGS="$BUNDLE_FLAGS --json-manifest ${{ inputs.json-manifest }}" ;
+        fi ;
+        if [ ${{ inputs.build-artifacts-zip }} != '' ]; then
+          BUNDLE_FLAGS="$BUNDLE_FLAGS --artifacts ${{ env.ARTIFACT_PATH }}" ;
+          echo "artifacts-path=${{ env.ARTIFACT_PATH }}" >> $GITHUB_OUTPUT ;
+        fi ;
+        echo "args=$BUNDLE_FLAGS" >> $GITHUB_OUTPUT ;
+
+    - name: Build bundle
+      id: bundle
+      shell: bash
+      run: >
+        python3 ${{ env.CATALOG_ROOT_PATH }}/tools/bundle.py \
+          ${{ steps.bundle-args.outputs.args }} \
+          ${{ env.YML_PATH }} ${{ env.BUNDLE_PATH }} ;
+        echo "bundle-path=${{ env.BUNDLE_PATH }}" >> $GITHUB_OUTPUT ;

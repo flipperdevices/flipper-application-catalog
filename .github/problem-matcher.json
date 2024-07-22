@@ -1,0 +1,25 @@
+{
+    "problemMatcher": [
+        {
+            "owner": "catalog-bundler-w",
+            "severity": "warning",
+            "pattern": [
+                {
+                    "regexp": "^\\d+:\\d+:\\d+\\.\\d+ \\[W\\] (.*)$",
+                    "message": 1
+                }
+            ]
+        },
+        {
+            "owner": "catalog-bundler-e",
+            "severity": "error",
+            "pattern": [
+                {
+                    "regexp": "^\\d+:\\d+:\\d+\\.\\d+ \\[E\\] (.*)$",
+                    "message": 1
+                }
+            ]
+        }
+
+    ]
+}

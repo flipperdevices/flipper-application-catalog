@@ -1,0 +1,65 @@
+name: Build
+run-name: Build ${{ inputs.application_name }} ${{ inputs.application_version }} for ${{ inputs.target }}@${{ inputs.branch }}
+
+on:
+  workflow_dispatch:
+    inputs:
+      application_name:
+        description: "Application name"
+        required: false
+        default: Unknown
+      application_version:
+        description: "Application version"
+        required: false
+        default: Unknown
+      bundle_url:
+        description: "Application bundle URL"
+        required: true
+      upload_url:
+        description: "Build results submit URL"
+        required: true
+      branch:
+        description: "SDK branch to use"
+        required: true
+      target:
+        description: "SDK hardware target to use"
+        required: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup environment
+        id: env-setup
+        run: |
+          ARCHIVARIUS_URL=$( < .github/.ARCHIVARIUS_URL ) ;
+          echo "ARCHIVARIUS_URL=${ARCHIVARIUS_URL}" >> $GITHUB_ENV ;
+          echo "::add-matcher::${{ github.workspace }}/.github/problem-matcher.json" ;
+
+      - name: Install ufbt
+        uses: flipperdevices/flipperzero-ufbt-action@v0.1
+        id: ufbt
+        with: 
+          task: setup
+          sdk-branch: ${{ inputs.branch }}
+          sdk-hw-target: ${{ inputs.target }}
+
+      - name: Setup Python requirements
+        working-directory: ./tools
+        shell: bash
+        run: >
+            python3 -m pip install -r requirements.txt
+
+      - name: Build source code and report results
+        shell: bash
+        run: >
+            python3 ${{ github.workspace }}/tools/build.py \
+                --api $( < .github/.ARCHIVARIUS_URL ) \
+                --bundle-path ${{ inputs.bundle_url }} \
+                --upload-path ${{ inputs.upload_url }} \
+                --token ${{ secrets.FAST_AUTH_TOKEN }} \
+                --gh-run-id ${{ github.run_id }} \
+                --gh-summary $GITHUB_STEP_SUMMARY ;
