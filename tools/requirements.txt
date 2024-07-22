@@ -1,8 +1,6 @@
-dataclass-wizard==0.22.2
-gitdb==4.0.10
-Pillow==10.3.0
+dataclass-wizard==0.22.3
+Pillow==10.4.0
 PyYAML==6.0.1
-smmap==5.0.0
-Markdown==3.4.3
+Markdown==3.6
 ufbt>=0.2.5
 requests==2.31.0

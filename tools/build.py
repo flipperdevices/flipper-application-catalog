@@ -1,5 +1,6 @@
 import argparse
 import hashlib
+import io
 import logging
 import pathlib
 import subprocess
@@ -7,10 +8,9 @@ import sys
 import tempfile
 import zipfile
 from typing import Optional
-import io
 
 import requests
-from bundle import ApplicationManifest
+from flipp_catalog.manifest import ApplicationManifest
 
 
 class GithubOutputHandler(logging.Handler):
@@ -270,6 +270,5 @@ if __name__ == "__main__":
         level=logging.INFO,
         datefmt="%H:%M:%S",
     )
-    logging.info("Building project")
 
     sys.exit(Main().main())
