@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/bettse/seader.git
-    commit_sha: e7e54264adc02445b19ebccd846f950d056bce10
+    commit_sha: a19b63dcb633c719e778c7640d8a7549554323a2
 short_description: "Allows for reading credential from HID iClass, iClass SE, Desfire EV1/EV2, and Seos"
 description: |
   Allows for reading credential from HID iClass, iClass SE, MFC SE, Desfire EV1/EV2, and Seos. Credentials can be saved in an agnostic format, or as various Flipper formats (Prox, MFC, iClass, iClass SR), depending on the original type.
