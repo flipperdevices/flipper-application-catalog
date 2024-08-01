@@ -1,12 +1,11 @@
 sourcecode:
   type: git
   location:
-    origin: https://github.com/molodos/dcf77-clock-spoof.git
-    commit_sha: 93183bf2b3628befe92ee3c602d08c5e50405af0
-short_description: "Spoof a DCF77 time signal with a selectable time on the RFID antenna and the A4 GPIO pin"
+    origin: https://github.com/mdaskalov/dcf77-clock-sync.git
+    commit_sha: 51846ed5071bebda1f499e25df3e00942cdc2c30
+short_description: "Emulate DCF77 time signal on the RFID antenna and the A4 GPIO pin"
 description: "@README.md"
-changelog: "@.catalog/changelog.md"
-author: "Molodos"
+changelog: "v1.3 - Use DateTime format, improved UI refresh"
+author: "mdaskalov"
 screenshots:
-  - ".catalog/screens/1.png"
-  - ".catalog/screens/2.png"
+  - "./img/1.png"
