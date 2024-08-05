@@ -1,0 +1,16 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/jamisonderek/flipper-zero-tutorials.git
+    commit_sha: 34095cf003d14a0b3d9949581867f8514414c7b2
+    subdir: subghz/fmf_to_sub
+description: "@./gallery/README.md"
+changelog: "@./gallery/CHANGELOG.md"
+author: "CodeAllNight (MrDerekJamison)"
+screenshots:
+  - "gallery/00-main-menu.png"
+  - "gallery/01-about1.png"
+  - "gallery/02-about2.png"
+  - "gallery/03-configure.png"
+  - "gallery/04-convert.png"
+  - "gallery/05-file.png"
