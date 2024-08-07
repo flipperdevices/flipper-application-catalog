@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/jamisonderek/flipper-zero-tutorials.git
-    commit_sha: 34095cf003d14a0b3d9949581867f8514414c7b2
+    commit_sha: 09ed9f6bd69bdae141469ab150bc2df698843d14
     subdir: subghz/fmf_to_sub
 description: "@./gallery/README.md"
 changelog: "@./gallery/CHANGELOG.md"
