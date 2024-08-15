@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/ginkage/FlippAirMouse.git
-    commit_sha: 1b5b3fe937de47264d8a8be6ff25f97db1f0bc73
+    commit_sha: 56aa9a92456c7cfdb4ae6ca333906be653e02451
 short_description: Flipper Air Mouse using BMI160 module
 description: "@DESCRIPTION.md"
 changelog: "@CHANGELOG.md"
