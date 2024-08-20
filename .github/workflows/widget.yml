@@ -26,7 +26,7 @@ jobs:
 
       - name: "Check README existence"
         id: check_files
-        uses: andstor/file-existence-action@v2
+        uses: andstor/file-existence-action@v3
         with:
           files: 'applications/${{ inputs.application-category }}/${{ inputs.application-id }}/README.md'
 
