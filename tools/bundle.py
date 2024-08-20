@@ -7,17 +7,15 @@ import shutil
 import subprocess
 import sys
 import zipfile
-from dataclasses import dataclass, field
 from pathlib import Path
 from tempfile import TemporaryDirectory
 from typing import Dict, List
 
 import yaml
-from dataclass_wizard import YAMLWizard
 from dataclass_wizard.dumpers import asdict
+from flipp_catalog.manifest import ApplicationManifest
+from flipp_catalog.markdown_filter import BasicFormattingEnforcingExtension
 from markdown import Markdown
-from markdown.extensions import Extension
-from markdown.preprocessors import HtmlBlockPreprocessor
 from PIL import Image
 
 # Temporary hack
@@ -37,178 +35,6 @@ except ImportError:
 
 class BundlerException(Exception):
     pass
-
-
-@dataclass
-class CodeLocation:
-    type: str
-    location: Dict[str, str]
-
-
-@dataclass
-class ApplicationManifest(YAMLWizard, key_transform="SNAKE"):
-    sourcecode: CodeLocation
-    name: str = ""
-    id: str = ""
-    author: str = ""
-    version: str = ""
-    icon: str = ""
-    category: str = ""
-    short_description: str = ""
-    description: str = ""
-    changelog: str = ""
-    screenshots: List[str] = field(default_factory=list)
-    targets: List[str] = field(default_factory=list)
-
-    def sync_from(self, app: "FlipperApplication"):
-        field_map = {
-            # yaml_field, (app_field, converter, must_match)
-            "name": ("name", None, True),
-            "id": ("appid", None, True),
-            "author": ("fap_author", None, False),
-            "category": ("fap_category", None, False),
-            "icon": ("fap_icon", None, False),
-            "short_description": ("fap_description", None, False),
-            "targets": ("targets", None, False),
-            # Version matcher error flag must be set to "True" on release
-            "version": (
-                "fap_version",
-                lambda v: ".".join(map(str, v)),
-                os.environ.get("BUNDLE_ALLOW_VERSION_MISMATCH", "0") == "0",
-            ),
-        }
-
-        for yaml_field, (app_field, converter, must_match) in field_map.items():
-            current_value = getattr(self, yaml_field)
-            fam_value = getattr(app, app_field)
-            if converter:
-                fam_value = converter(fam_value)
-
-            if type(current_value) != type(fam_value):
-                raise BundlerException(
-                    f"Type mismatch for {yaml_field}: {type(current_value)} != {type(fam_value)}"
-                )
-
-            if current_value and fam_value and current_value != fam_value:
-                error_msg = f"Value in YAML for '{yaml_field}' is different from value in FAM: '{current_value}' / '{fam_value}'"
-                if must_match:
-                    raise BundlerException(error_msg)
-
-                logging.getLogger(self.__class__.__name__).warning(
-                    f"{error_msg}. Using value from YAML."
-                )
-                continue
-
-            if not current_value:
-                logging.getLogger(self.__class__.__name__).info(
-                    f"Value for '{yaml_field}' is empty in YAML. Using value '{fam_value}' from FAM."
-                )
-                setattr(self, yaml_field, fam_value)
-
-
-# A Markdown extension that removes all but basic text formatting
-class BasicTextExtension(Extension):
-    ERROR_MESSAGE = "Markdown element '{}' is not allowed"
-    MAX_HEADER_DEPTH = 2
-
-    def __init__(self, **kwargs):
-        # override the html preprocessor to avoid html text conversion so as not to be skipped by HtmlInlineProcessor
-        HtmlBlockPreprocessor.run = lambda _self, lines: lines
-        super().__init__(**kwargs)
-
-    @staticmethod
-    def handleMatch(element_type):
-        def wrapper(instance, m):
-            raise Exception(BasicTextExtension.ERROR_MESSAGE.format(element_type))
-
-        return wrapper
-
-    @staticmethod
-    def not_supported_reference_processor_wrapper(instance, method):
-        def wrapper(parent, block):
-            res = method(parent, block)
-
-            if res:
-                raise Exception(BasicTextExtension.ERROR_MESSAGE.format("Reference"))
-
-            return False
-
-        return wrapper
-
-    @staticmethod
-    def not_supported_block_processor_wrapper(instance, name=None):
-        def wrapper(parent, block):
-            raise Exception(
-                BasicTextExtension.ERROR_MESSAGE.format(
-                    name or instance.__class__.__name__
-                )
-            )
-
-        return wrapper
-
-    @staticmethod
-    def not_supported_header_depth_processor_wrapper(instance):
-        orig_run = instance.run
-
-        def wrapper(parent, blocks):
-            if m := instance.RE.match(blocks[0]):
-                header_depth = len(m.group("level"))
-                if header_depth > BasicTextExtension.MAX_HEADER_DEPTH:
-                    raise Exception(
-                        f"Markdown element 'Header Depth' max level {BasicTextExtension.MAX_HEADER_DEPTH} exceeded"
-                    )
-
-            return orig_run(parent, blocks)
-
-        return wrapper
-
-    def extendMarkdown(self, md):
-        for md_element in (
-            "backtick",
-            # "reference",
-            # "link",
-            "image_link",
-            "image_reference",
-            "short_reference",
-            "short_image_ref",
-            # "autolink",
-            "automail",
-            "html",
-            "entity",
-        ):
-            md.inlinePatterns[md_element].handleMatch = self.handleMatch(
-                md_element.capitalize()
-            )
-
-        hash_header_processor = md.parser.blockprocessors["hashheader"]
-        hash_header_processor.run = self.not_supported_header_depth_processor_wrapper(
-            instance=hash_header_processor
-        )
-
-        setext_header_processor = md.parser.blockprocessors["setextheader"]
-        setext_header_processor.run = self.not_supported_block_processor_wrapper(
-            instance=setext_header_processor, name="Setext Header"
-        )
-
-        code_block_processor = md.parser.blockprocessors["code"]
-        code_block_processor.run = self.not_supported_block_processor_wrapper(
-            instance=code_block_processor, name="Code Block"
-        )
-
-        hr_processor = md.parser.blockprocessors["hr"]
-        hr_processor.run = self.not_supported_block_processor_wrapper(
-            instance=hr_processor, name="Horizontal Line"
-        )
-
-        quote_processor = md.parser.blockprocessors["quote"]
-        quote_processor.run = self.not_supported_block_processor_wrapper(
-            instance=quote_processor, name="Quote"
-        )
-
-        reference_processor = md.parser.blockprocessors["reference"]
-        reference_processor.run = self.not_supported_reference_processor_wrapper(
-            instance=reference_processor, method=reference_processor.run
-        )
 
 
 class AppBundler:
@@ -318,10 +144,10 @@ class AppBundler:
             "clone", repo_origin, self._tmp_code_path, "--recurse-submodules"
         )
 
-        self._log.info("Cloned. Checking out commit")
-        self.__exec_git("checkout", commit_sha)
+        self._log.info(f"Cloned. Checking out commit {commit_sha}")
+        self.__exec_git("-c", "advice.detachedHead=false", "checkout", commit_sha)
 
-        self._log.info(f"Checked out commit {commit_sha}. Updating submodules")
+        self._log.info(f"Checked out. Updating submodules")
         self.__exec_git("submodule", "update", "--init", "--recursive")
 
         repo_code = self._tmp_code_path
@@ -563,14 +389,14 @@ class AppBundler:
 
     def __check_markdown(self, markdown: str):
         try:
-            mk = Markdown(extensions=[BasicTextExtension()])
+            mk = Markdown(extensions=[BasicFormattingEnforcingExtension()])
             mk.convert(markdown)
 
         except Exception as e:
             raise BundlerException(f"Markdown error: {e}")
 
     def _build_package(self, skip_source_code: bool = False):
-        self._log.info(f"Saving updated manifest: {skip_source_code=}")
+        self._log.info(f"Saving updated manifest with {skip_source_code=}")
         self._manifest.to_yaml_file(self._tmp_path / self.MANIFEST_YAML_NAME)
 
         with zipfile.ZipFile(
