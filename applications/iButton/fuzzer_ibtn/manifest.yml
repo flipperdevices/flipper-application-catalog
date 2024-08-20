@@ -1,0 +1,13 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/DarkFlippers/Multi_Fuzzer.git
+    commit_sha: 2ecfcd857da54b7a08014d14d7b46eb235b72695
+id: "fuzzer_ibtn"
+description: "@./catalog/docs/ibtn/README.md"
+changelog: "@./catalog/docs/ibtn/Changelog.md"
+screenshots:
+  - "./catalog/screenshots/Main_menu.png"
+  - "./catalog/screenshots/Attack_screen.png"
+  - "./catalog/screenshots/Pause.png"
+  - "./catalog/screenshots/Field_editor.png"

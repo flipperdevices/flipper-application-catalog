@@ -1,0 +1,14 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/fridgepoet/knit-counter.git
+    commit_sha: 77d9b5084a9328f6edd95d5bd880f09a02ce0239
+short_description: Counter that saves after exiting
+description: |
+  # Knit Counter
+  This counter saves the count after exiting the app or restarting the Flipper.
+
+  This can be useful for knitting, since a knit counter is a tally counter for counting pattern repetitions in a stitch pattern, typically rows.
+changelog: "@CHANGELOG.md"
+screenshots:
+  - ./screenshots/1.png

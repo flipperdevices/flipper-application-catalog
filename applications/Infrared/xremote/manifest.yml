@@ -1,0 +1,15 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/leedave/flipper-zero-cross-remote
+    commit_sha: 3128ca95ca4f82ca664d15a8b73da78f93c97f32
+description: "@./docs/README.md"
+changelog: "@./docs/changelog.md"
+author: "Leedave"
+screenshots:
+  - "./screenshots/xremote_1.png"
+  - "./screenshots/xremote_2.png"
+  - "./screenshots/xremote_3.png"
+  - "./screenshots/xremote_4.png"
+  - "./screenshots/xremote_5.png"
+  - "./screenshots/xremote_6.png"

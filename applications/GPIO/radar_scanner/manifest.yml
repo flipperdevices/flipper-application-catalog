@@ -1,0 +1,39 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/MatthewKuKanich/flipper-radar.git
+    commit_sha: 1c1dc75dcec0acb79ee7445192735e2c72fa81a6
+id: "radar_scanner"
+category: "GPIO"
+short_description: "Microwave Radar Scanner"
+description: | 
+  The Flipper Zero Radar Scanner is an application designed for the Flipper Zeros GPIO capabilities, utilizing the RCWL-0516 Microwave Radar module to detect the presence and movement of living beings or people. This powerful radar module is capable of detecting movement at a range of approximately 8 meters, depending on the environment, and can even detect humans through walls, ceilings, and floors up to 5-6 meters away.
+  Features
+    Easy Hardware Setup- Connect the RCWL-0516 module to your Flipper Zero by supplying 5 volts to the VIN pin with ground connected. The OUT pin of the module should be connected to Pin 7 on the Flipper Zero. Be mindful of 5v and GND as reversing these will damage the radar module.
+    Bi-Directional Detection- The RCWL-0516 module is bi-directional, meaning it can detect movement from both the front and back sides. The front side with components is the primary detection side and should be oriented away from you. You can modify the detection range by adding metal shielding to focus detection where the Flipper is pointing.
+    Adjustable Sensitivity- If the sensitivity is too high, you can solder a resistor to the modules pad to reduce it, allowing you to fine-tune the detection sensitivity to your needs.
+    User-Friendly Interface- The app starts in an inactive or standby state. Press the OK button to activate it. The Flipper display will show Active, and the app will begin monitoring for movement.
+    Auto 5v - No need to manually turn on and off GPIO 5v
+    Real-Time Feedback-
+        When movement is detected, the text No presence will change to Presence detected.
+        An alarm will sound to alert you.
+        The LED will change from green (clear) to red (detected).
+        The Flipper will vibrate twice to notify you.
+        
+    Muted Mode- Press the Down button to enter muted mode. In this mode, detection still triggers text changes, LED status, and vibrations, but there is no sound. You can toggle this mode on and off.
+
+    Pause and Resume- Press the OK button to pause detection and return the Flipper to standby mode. Press it again to resume monitoring for movement.
+    
+    Alt-mode- Use without making a module! Simply buy and RCWL-0516 radar unit and solder the headers, thats it! In app press the right key to change to the alternate pinout.
+  
+  Note-
+    The range and detection capabilities may vary depending on environmental factors.
+    Experiment with sensitivity adjustments and metal shielding to optimize detection for your specific use case.
+    Be aware of privacy and legal considerations when using radar-based detection systems.
+    Enjoy your Flipper Zero Radar Scanner and explore its various applications!
+changelog: "v2.0 - Big update"
+author: "@MatthewKuKanich"
+screenshots:
+  - "./screenshots/flp0.png"
+  - "./screenshots/flp1.png"
+  - "./screenshots/flp2.png"

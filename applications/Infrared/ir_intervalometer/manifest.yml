@@ -1,0 +1,12 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/Nitepone/flipper-intervalometer.git
+    commit_sha: a80d4f530ff0da18ea91b5183c1131a766e63642
+description: "Intervalometer for Canon, Nikon, and Sony cameras. Uses IR shutter release."
+changelog: "v1.0 - Initial release, v1.2 - Additional camera support, v2.2 - Bugfix for New Flipper SDK"
+author: "@Nitepone"
+screenshots:
+  - "./doc/img/running-intervalometer.png"
+  - "./doc/img/settings-edit.png"
+  - "./doc/img/settings-burst.png"

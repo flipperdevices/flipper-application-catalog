@@ -1,0 +1,13 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/skotopes/flipperzero_max31855.git
+    commit_sha: ff01fa5da25b06cb5394be710e3ffb0bad4c7ef7
+short_description: MAX31855 Thermocouple Sensor App
+description: "@ReadMe.md"
+changelog: "@ChangeLog.md"
+screenshots:
+  - screenshots/0.png
+  - screenshots/1.png
+  - screenshots/2.png
+  - screenshots/3.png

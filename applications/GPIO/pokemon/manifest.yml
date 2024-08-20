@@ -1,0 +1,14 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/kbembedded/Flipper-Zero-Game-Boy-Pokemon-Trading
+    commit_sha: abeb8b126c598e7f2daaf3343507eb70b91b93e4
+description: "@README_catalog.md"
+changelog: "@changelog.md"
+screenshots:
+  - ".flipcorg/gallery/1.png"
+  - ".flipcorg/gallery/2.png"
+  - ".flipcorg/gallery/3.png"
+  - ".flipcorg/gallery/4.png"
+  - ".flipcorg/gallery/5.png"
+  - ".flipcorg/gallery/6.png"

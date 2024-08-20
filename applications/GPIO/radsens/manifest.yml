@@ -1,0 +1,12 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/sionyx/flipper_radsens.git
+    commit_sha: 23f7b6ea46d6e670195db1bc40a63da4e5be54ef
+description: "App for RadSense radiation measurement module by ClimateGuard"
+short_description: "App for RadSens module"
+changelog: "v1.0: First release"
+author: "@sionyx"
+screenshots:
+  - "./images/meas_mode.png"
+  - "./images/plot_mode.png"

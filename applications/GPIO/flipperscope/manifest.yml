@@ -1,0 +1,10 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/anfractuosity/flipperscope.git
+    commit_sha: 34787516d386a0c2962c6fbee13639375b6974c5
+description: "@./docs/README.md"
+changelog: "@./docs/CHANGELOG.md"
+screenshots:
+  - "./screenshots/freq.png"
+  - "./screenshots/volt.png"

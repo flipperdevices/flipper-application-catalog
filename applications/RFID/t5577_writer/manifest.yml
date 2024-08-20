@@ -1,0 +1,15 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/zinongli/T5577_Raw_Writer.git
+    commit_sha: 96fd8e8f3495bfbe2ce7cd65760d1e5eeba80115
+description: "@README.md"
+changelog: "@CHANGELOG.md"
+author: "Torron"
+screenshots:
+  - "screenshots/main_menu.png"
+  - "screenshots/config_1.png"
+  - "screenshots/config_2.png"
+  - "screenshots/writing.png"
+  - "screenshots/load.png"
+  - "screenshots/about.png"

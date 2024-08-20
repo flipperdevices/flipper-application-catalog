@@ -1,0 +1,13 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/sionyx/flipper_nupogodi.git
+    commit_sha: afdae127be3498ea5104a13f157aac0512e80bf2
+description: "Elektronika IM-02 - Nu, Pogodi! / (Game & Watch - Egg) - Soviet retro game"
+short_description: "Elektronika IM-02 - Nu, Pogodi!"
+changelog: "v1.3: Async eggs; new Pause screen"
+author: "@sionyx"
+screenshots:
+  - "./screens/nupogodi1.png"
+  - "./screens/nupogodi2.png"
+  - "./screens/nupogodi3.png"

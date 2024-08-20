@@ -1,0 +1,16 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/jamisonderek/flipboard.git
+    commit_sha: b2e0374a4c2b4451d9d39a5fbc4eb08bb0280b98
+    subdir: simon-tutorial/completed/step-16/flipsimon
+description: "@./gallery/README.md"
+changelog: "@./gallery/CHANGELOG.md"
+author: "CodeAllNight (MrDerekJamison)"
+screenshots:
+  - "gallery/01-simon-splash.png"
+  - "gallery/07-simon-ok-play.png"
+  - "gallery/07-simon-teaching.png"
+  - "gallery/06-simon-win.png"
+  - "gallery/04-simon-config-1.png"
+  - "gallery/08-simon-qrcode.png"

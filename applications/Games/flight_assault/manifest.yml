@@ -1,0 +1,12 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/evillero/flight_assault
+    commit_sha: 37a12a48677afdb11c43fdbd9ac6eb4180b9e655
+description: "@.catalog/README.md"
+changelog: "@.catalog/CHANGELOG.md"
+author: "@evillero"
+screenshots:
+  - ".catalog/screenshots/0.png"
+  - ".catalog/screenshots/1.png"
+  - ".catalog/screenshots/2.png"
