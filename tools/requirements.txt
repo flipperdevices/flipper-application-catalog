@@ -1,6 +1,6 @@
 dataclass-wizard==0.22.3
 Pillow==10.4.0
-PyYAML==6.0.1
-Markdown==3.6
+PyYAML==6.0.2
+Markdown==3.7
 ufbt>=0.2.5
-requests==2.31.0
+requests==2.32.3
