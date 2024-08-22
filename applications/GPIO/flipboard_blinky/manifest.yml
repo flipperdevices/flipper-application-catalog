@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/jamisonderek/flipboard.git
-    commit_sha: 24ee24014512bfc2ec6c6482fefdcf41561e2eed
+    commit_sha: b2e0374a4c2b4451d9d39a5fbc4eb08bb0280b98
     subdir: flipblinky
 description: "@./gallery/README.md"
 changelog: "@./gallery/CHANGELOG.md"
