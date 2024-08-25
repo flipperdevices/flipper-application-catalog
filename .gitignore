@@ -1,7 +1,0 @@
-/venv
-.idea
-__pycache__
-.DS_Store
-*.zip
-tools/flipp_catalog/manifest.py
-tools/flipp_catalog/manifest.py
