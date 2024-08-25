@@ -3,7 +3,12 @@ from dataclasses import dataclass, field
 from typing import Dict, List
 import logging
 
+
 from dataclass_wizard import YAMLWizard
+
+
+class BundlerException(Exception):
+    pass
 
 
 @dataclass
