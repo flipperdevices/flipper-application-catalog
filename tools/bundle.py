@@ -218,7 +218,7 @@ class AppBundler:
                     file_path = self._code_dir / attr_value[1:]
                     self._validate_path(file_path)
                     self._log.info(f"Including {attr_name} from file {file_path}")
-                    with open(file_path, "r") as f:
+                    with open(file_path, "r", encoding="utf-8") as f:
                         setattr(self._manifest, attr_name, f.read())
 
         self._log.debug(f"Updated: {self._manifest}")
