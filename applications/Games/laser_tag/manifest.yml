@@ -13,7 +13,7 @@ screenshots:
 short_description: 'Flipper Zero Laser Tag brings your favorite laser tag experience to your Flipper Zero device!'
 sourcecode:
   location:
-    commit_sha: 725f889
+    commit_sha: 725f8891d429efecdaf607f2987be855b87d9c14
     origin: https://github.com/RocketGod-git/Flipper-Zero-Laser-Tag.git
     subdir:
   type: git
