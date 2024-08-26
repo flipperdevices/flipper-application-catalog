@@ -1,0 +1,2 @@
+[console_scripts]
+mslex-split = mslex:split_cli

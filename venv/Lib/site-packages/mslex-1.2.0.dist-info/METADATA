@@ -1,0 +1,73 @@
+Metadata-Version: 2.1
+Name: mslex
+Version: 1.2.0
+Summary: shlex for windows
+Home-page: https://github.com/smoofra/mslex
+Author: Lawrence D'Anna
+Author-email: larry@elder-gods.org
+License: Apache Software License 2.0
+Keywords: mslex
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.5
+License-File: LICENSE
+License-File: AUTHORS.rst
+
+=====
+mslex
+=====
+
+
+.. image:: https://img.shields.io/pypi/v/mslex.svg
+        :target: https://pypi.python.org/pypi/mslex
+
+.. image:: https://img.shields.io/travis/com/smoofra/mslex.svg
+        :target: https://travis-ci.org/smoofra/mslex
+
+.. image:: https://readthedocs.org/projects/mslex/badge/?version=latest
+        :target: https://mslex.readthedocs.io/en/latest/?badge=latest
+        :alt: Documentation Status
+
+
+shlex for windows
+
+* Free software: Apache Software License 2.0
+* Documentation: https://mslex.readthedocs.io.
+
+Features
+--------
+
+This is the missing shlex package for windows shell quoting.   It provides three
+functions -- split, quote, and join -- just like shlex.
+
+
+Windows Quoting
+---------------
+
+These are excellent articles to read if you really want to face the
+sanity-melting reality buried under the surface of how windows passes command
+line arguments to your programs.   I recommend you read something else.
+
+* `How a Windows Program Splits Its Command Line Into Individual Arguments`_
+
+* `Everyone quotes command line arguments the wrong way`_
+
+.. _`How a Windows Program Splits Its Command Line Into Individual Arguments`:
+   https://web.archive.org/web/20220629212422/http://www.windowsinspired.com/how-a-windows-programs-splits-its-command-line-into-individual-arguments/
+
+.. _`Everyone quotes command line arguments the wrong way`:
+  https://blogs.msdn.microsoft.com/twistylittlepassagesallalike/2011/04/23/everyone-quotes-command-line-arguments-the-wrong-way/
+
+
+Automatic selection between mslex and shlex
+-------------------------------------------
+
+If you want to automatically use mslex on Windows, and shlex otherwise, check out the `oslex`_ package.
+
+.. _`oslex`: https://pypi.org/project/oslex/

@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: oslex
+Version: 0.1.3
+Summary: OS-independent wrapper for shlex and mslex
+Project-URL: Homepage, https://github.com/petamas/oslex
+Project-URL: Bug Tracker, https://github.com/petamas/oslex/issues
+Author-email: Tamás PEREGI <petamas@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.6
+Requires-Dist: mslex
+Description-Content-Type: text/markdown
+
+# oslex
+
+`oslex` is an OS-independent wrapper for [`shlex`](https://docs.python.org/3/library/shlex.html) and [`mslex`](https://pypi.org/project/mslex/).
+
+Its main purpose is to provide functions similar in functionality to `shlex.quote()`, `shlex.split()` and `shlex.join()` on both Windows and POSIX-compatible platforms.
+
+This goal is achieved by simply forwarding the calls to either `shlex` (from the standard library) on POSIX-compatible systems, or the excellent `mslex` library (written by Lawrence D'Anna / @smoofra) on Windows.
+
+In other words, `oslex` is to `shlex`/`mslex` what `os-path` is to `posixpath`/`ntpath`.
+
+## Licensing
+
+This library itself is licensed under the MIT license.
+
+`oslex` uses the [`mslex`](https://pypi.org/project/mslex/) library, which is distributed under the Apache 2.0 license.

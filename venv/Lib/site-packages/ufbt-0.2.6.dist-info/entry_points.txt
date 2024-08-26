@@ -1,0 +1,3 @@
+[console_scripts]
+ufbt = ufbt:ufbt_cli
+ufbt-bootstrap = ufbt.bootstrap:bootstrap_cli
