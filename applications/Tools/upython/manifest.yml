@@ -1,0 +1,10 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/ofabel/mp-flipper.git
+    commit_sha: d0d21132f31574faa39fdfbbc63e92355fbbc0d3
+description: "@./docs/README.md"
+changelog: "@./docs/CHANGELOG.md"
+screenshots:
+  - docs/file-browser.png
+  - docs/tic-tac-toe.png

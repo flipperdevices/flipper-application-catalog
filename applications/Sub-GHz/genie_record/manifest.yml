@@ -1,0 +1,19 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/jamisonderek/flipper-zero-tutorials.git
+    commit_sha: bd21796c034ed76738fa71bacb83cb099ad6f559
+    subdir: subghz/apps/genie-recorder
+description: "@./.flipcorg/gallery/README.md"
+changelog: "@./.flipcorg/gallery/CHANGELOG.md"
+author: "CodeAllNight (MrDerekJamison)"
+screenshots:
+  - ".flipcorg/gallery/01-about.png"
+  - ".flipcorg/gallery/02-learn-done.png"
+  - ".flipcorg/gallery/03-send-some-codes.png"
+  - ".flipcorg/gallery/04-main-menu.png"
+  - ".flipcorg/gallery/05-config.png"
+  - ".flipcorg/gallery/06-config-genie-file.png"
+  - ".flipcorg/gallery/07-learn-codes.png"
+  - ".flipcorg/gallery/08-send-new.png"
+  - ".flipcorg/gallery/09-send-complete.png"

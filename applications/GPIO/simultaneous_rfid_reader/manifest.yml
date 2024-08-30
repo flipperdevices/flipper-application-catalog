@@ -1,13 +1,9 @@
 sourcecode:
   type: git
   location:
-    
     origin: https://github.com/haffnerriley/Simultaneous-UHF-RFID-FlipperZero.git
-    
     commit_sha: aeea3b61041803130c75ac80cb0ff79f06ee7082
-    
     subdir: simultaneous_rfid_reader
-
 description: |
   This app is designed to 
   work with the M6e Nano, 
@@ -21,11 +17,8 @@ description: |
   Banks), viewing all tag 
   information, saving tags, 
   and more!
-
 changelog: "@.catalog/CHANGELOG.md"
-
 author: "@Haffnerriley"
-
 screenshots:
   - ".catalog/screenshots/uhf-rfid-m6e-main-menu.png"
   - ".catalog/screenshots/read-screen.png"

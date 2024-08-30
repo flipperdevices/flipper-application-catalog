@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/Ka3u6y6a/flipper-zero-dice.git
-    commit_sha: 8acf0535e676d1a2973183b27a584872cec32e92
+    commit_sha: 7411293b775a1643291491bbfd67602f9cfa715d
 description: "Dice rolling, types: Coin, d4, d6, d8, d10, d12, d20, d100"
 changelog: "@CHANGELOG.md"
 author: "@Ka3u6y6a"

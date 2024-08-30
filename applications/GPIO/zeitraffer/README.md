@@ -1,4 +1,4 @@
-# Simple timelapse/intervalometer app for Flipper Zero, works via GPIO pins.
+##Simple timelapse/intervalometer app for Flipper Zero, works via GPIO pins.
 
 [![zeitraffer](https://catalog.flipperzero.one/application/zeitraffer/widget)](https://catalog.flipperzero.one/application/zeitraffer/page)
 
