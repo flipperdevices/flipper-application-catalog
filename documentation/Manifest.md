@@ -6,7 +6,7 @@ Application Manifest must be placed in a corresponding subdirectory of `applicat
 
 ## Minimal manifest example
 
-Here is a minimal example of an application manifest. It expects some of the fields are specified in `application.fam` file in application's source code repository. Namely, `application.fam` should contain `name`, `appid` (set to "example_subghz_app"), `fap_category` (set to "Sub-GHz"), `fap_version`, `fap_author`, and `fap_icon` fields. 
+Here is a minimal example of an application manifest. It expects some of the fields are specified in `application.fam` file in application's source code repository. Namely, `application.fam` should contain `name`, `appid` (set to "example_subghz_app"), `fap_category` (set to "Sub-GHz"), `fap_version`, `fap_author`, and `fap_icon` fields.
 
 There should also be "README.md" and "docs/changelog.md" files in the repository, and "screenshots/ss0.png" file.
 
@@ -47,13 +47,13 @@ Your application must be placed in one of the following categories:
 
 ## Manifest structure
 
-An application manifest is a YAML file that points to the application source code and provides additional information about the application. Note that Required fileds that are not specified in manifest file must be specified in `application.fam` file in application's source code repository. 
+An application manifest is a YAML file that points to the application source code and provides additional information about the application. Note that Required fileds that are not specified in manifest file must be specified in `application.fam` file in application's source code repository.
 
 | Field | Required? | Description | Corresponding field in `application.fam` |
 | --- | --- | --- | --- |
 | `sourcecode` | Yes | Source code location. See [Source code location](#source-code-location) | None |
 | `screenshots` | Yes | A list of paths to screenshot images in application's source code repo. See [Screenshots](#screenshots). | None |
-| `changelog` | Yes | Applicatimon changelog. Supports Markdown formatting and file inclusion. [Details](#loading-values-from-files) | None |
+| `changelog` | Yes | Application changelog. Supports Markdown formatting and file inclusion. [Details](#loading-values-from-files) | None |
 | `short_description` | Yes | Short application description, plain text. | `fap_description` |
 | `description` | Yes | Application description. Supports limited Markdown. [Details](#loading-values-from-files) | None |
 | `name` | Yes | Application name | `name` |
@@ -66,7 +66,7 @@ An application manifest is a YAML file that points to the application source cod
 
 **It is recommended to specify as many fields as possible in `application.fam` and not in `manifest.yml`, to avoid duplication and keep the manifest file short.**
 
-If your `application.fam` defines multiple applications, you can specify the application ID in `manifest.yml` using `id` field. 
+If your `application.fam` defines multiple applications, you can specify the application ID in `manifest.yml` using `id` field.
 
 The most important field is `sourcecode`. It points to the application source code repository. The repository must be public. See [Source code location](#source-code-location) for details.
 
@@ -76,7 +76,7 @@ Some fields support loading their values from files in application's source code
 
 Source code origin is specified in `sourcecode` section. It contains `type` field, which must be set to `git`. It must also contain `location` section, which specifies the source code repository location.
 
-For `location` object, fields `origin` and `commit_sha` are required. 
+For `location` object, fields `origin` and `commit_sha` are required.
  * `origin` is the git URL of the repository.
  * `commit_sha` is the commit SHA of the commit that contains the application source code being submitted.
  * `subdir` is optional and specifies the subdirectory within the repository where the application is located. If `subdir` is not specified, the root of the repository is used. This is useful if the repository contains multiple applications.
@@ -88,7 +88,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/example/test.git
-    commit_sha: 520d9f1f04a5fcc67d20c759509ba7fe3d3f9091 
+    commit_sha: 520d9f1f04a5fcc67d20c759509ba7fe3d3f9091
     subdir: metronome
 ```
 
@@ -122,6 +122,6 @@ For fields that support loading values from files, Markdown formatting is suppor
 
 ## Screenshots
 
-Applications submitted to this catalog must contain at least one screenshot. Screenshots are used to showcase the application in the catalog. Screenshots are specified in `screenshots` section of the manifest. It is a list of screenshot paths.  
+Applications submitted to this catalog must contain at least one screenshot. Screenshots are used to showcase the application in the catalog. Screenshots are specified in `screenshots` section of the manifest. It is a list of screenshot paths.
 
 **Screenshots must be created using qFlipper's screenshot feature.** Please don't change their resolution or format.
