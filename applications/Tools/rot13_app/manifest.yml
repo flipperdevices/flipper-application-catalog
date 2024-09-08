@@ -1,7 +1,7 @@
 sourcecode:
   type: git
   location:
-    origin: https://codeberg.org/nothingbutlucas/flipperzero_rot13.git
+    origin: https://github.com/nothingbutlucas/flipperzero_rot13.git
     commit_sha: 6b7c6ed874ddf17f23fc8b16b2712703d5c115dc
 short_description: Cipher text with ROT13
 description: "@README.md"
