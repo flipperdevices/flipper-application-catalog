@@ -1,0 +1,12 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/antsy/Lifecounter.git
+    commit_sha: 7bbf79c0e992ea981119a06a06eb8b5f3eee0943
+category: 'Games'
+author: '@antsy'
+short_description: Life tracker for collectible card games such as Flesh and Blood, Magic the Gathering, Sorcery, Lorcana etc.
+description: '@./README.md'
+changelog: '@./CHANGELOG.md'
+screenshots:
+  - .'@./screenshot.png'
