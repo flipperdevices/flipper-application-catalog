@@ -5,14 +5,14 @@ Thanks for taking an interest in contributing to the Flipper Apps Catalog. The A
 
 ## General Terms and Requirements
 
- * Applications submitted to this repository must be licensed under an Open Source License of your choice, permitting building and distribution of the application in binary form by the Flipper Apps Catalog's infrastructure.
- * Applications and data they produce or process must not infringe on any third-party rights or trademarks.
- * Submitted applications must not contain any malicious code or code that may cause harm to the user's device or data.
- * Applications must comply with the User-Generated Content Policies of [Play Store](https://support.google.com/googleplay/android-developer/answer/9876937) and [App Store](https://developer.apple.com/app-store/review/guidelines/#user-generated-content).
-    * We reserve the right to reject and remove applications that do not comply with these policies.
- * If any changes to the application metadata or source code are required, we will contact the application author, as specified in the of submitted pull request or using the contact information provided in the manifest file. If we do not receive a response within 14 days, the application will be removed from the Catalog.
-    * If immediate changes are required to address a security vulnerability, copyright or other critical issue, we reserve the right to unpublish the application from the Catalog before contacting the author.
- * We also reserve the right to reject and unpublish applications that do not comply with these terms and requirements, or for any other reason at any time.
+ 1. Applications submitted to this repository must be licensed under an Open Source License of your choice, permitting building and distribution of the application in binary form by the Flipper Apps Catalog's infrastructure.
+ 2. Applications and data they produce or process must not infringe on any third-party rights or trademarks.
+ 3. Submitted applications must not contain any malicious code or code that may cause harm to the user's device or data.
+ 4. Applications must comply with the User-Generated Content Policies of [Play Store](https://support.google.com/googleplay/android-developer/answer/9876937) and [App Store](https://developer.apple.com/app-store/review/guidelines/#user-generated-content).
+    1. We reserve the right to reject and remove applications that do not comply with these policies.
+ 5. If any changes to the application metadata or source code are required, we will contact the application author, as specified in the of submitted pull request or using the contact information provided in the manifest file. If we do not receive a response within 14 days, the application will be removed from the Catalog.
+    1. If immediate changes are required to address a security vulnerability, copyright or other critical issue, we reserve the right to unpublish the application from the Catalog before contacting the author.
+ 6. We also reserve the right to reject and unpublish applications that do not comply with these terms and requirements, or for any other reason at any time.
 
 Applications are submitted as a pull request to this repository.
 
