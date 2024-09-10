@@ -5,7 +5,7 @@ sourcecode:
     commit_sha: b791dea234f855155027bb46215dc60f3ddeb243
     subdir: signal_generator
 description: "@.catalog/README.md"
-changelog: "v1.0 - Initial release"
+changelog: "v1.0 - Initial release, v1.1 - Removed call to deprecated SDK API"
 author: "@nminaylov"
 screenshots:
   - ".catalog/screenshots/1.png"
