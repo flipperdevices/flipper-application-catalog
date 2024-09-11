@@ -9,4 +9,4 @@ short_description: Life tracker for collectible card games such as Flesh and Blo
 description: '@./README.md'
 changelog: '@./CHANGELOG.md'
 screenshots:
-  - .'@./screenshot.png'
+  - './screenshot.png'
