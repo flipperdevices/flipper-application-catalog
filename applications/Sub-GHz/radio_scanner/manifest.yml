@@ -10,7 +10,7 @@ screenshots:
 short_description: 'Sub-GHz Radio Scanner with audio output to internal speaker'
 sourcecode:
   location:
-    commit_sha: 8b14309aba5119c33e2e3ee3705df8033a31937e
+    commit_sha: c9704dea8d16e2d40aaff49ec614e6301993cca8
     origin: https://github.com/RocketGod-git/Flipper-Zero-Radio-Scanner.git
     subdir:
   type: git
