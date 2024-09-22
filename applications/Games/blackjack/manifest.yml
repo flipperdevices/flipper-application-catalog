@@ -1,0 +1,17 @@
+author: '@RocketGod-git'
+category: 'Games'
+changelog: '@./docs/CHANGELOG.md'
+description: '@./docs/README.md'
+icon: 'icons/blackjack_icon.png'
+id: 'blackjack'
+name: 'Blackjack'
+screenshots:
+  - 'screenshots/Screenshot1.png'
+short_description: 'Blackjack!'
+sourcecode:
+  location:
+    commit_sha: 0592e2f0bd7c9004c8bd3dd3928395d75da1302f
+    origin: https://github.com/RocketGod-git/Flipper-Zero-Blackjack.git
+    subdir:
+  type: git
+version: 0.1
