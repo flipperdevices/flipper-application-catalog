@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/evillero/flight_assault
-    commit_sha: 37a12a48677afdb11c43fdbd9ac6eb4180b9e655
+    commit_sha: fa2c6d4bcfb056cfe76daa3d4e4486ee2211dca9
 description: "@.catalog/README.md"
 changelog: "@.catalog/CHANGELOG.md"
 author: "@evillero"
