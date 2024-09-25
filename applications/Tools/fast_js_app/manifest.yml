@@ -14,6 +14,6 @@ category: "Tools"
 targets: ['all']
 icon: "app.png"
 screenshots:
-  - "gallery/03-config.png"
-  - "gallery/01-home.png"
-  - "gallery/02-about.png"
+  - "/gallery/03-config.png"
+  - "/gallery/01-home.png"
+  - "/gallery/02-About.png"
