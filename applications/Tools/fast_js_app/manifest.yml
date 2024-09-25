@@ -1,0 +1,19 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/jblanked/FastJS-FlipperZero.git
+    commit_sha: f1661834f7725aa9b4e6574d7de8d5b74c24585a
+short_description: "Pre-save your JavaScript files for quick execution."
+description: "Pre-save your JavaScript files for quick execution."
+changelog: "v1.0 - Initial release"
+author: "JBlanked"
+name: "FastJS"
+version: "1.0"
+id: "fast_js_app"
+category: "Tools"
+targets: ['all']
+icon: "app.png"
+screenshots:
+  - "gallery/03-config.png"
+  - "gallery/01-home.png"
+  - "gallery/02-about.png"
