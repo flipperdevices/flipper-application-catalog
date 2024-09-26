@@ -70,7 +70,7 @@ To learn more about contributing and forking on GitHub, see [Contributing to pro
 
 ### Step 4. App moderation
 
-Once you submit your pull request, it will be moderated. You'll receive GitHub notifications about the review process of your pull request. Если вы получите уведомление от GitHub об ошибке возникшей во время review, you can check the details about it на странице вашего PR. If everything is formatted correctly and your app runs without errors, we'll usually accept your pull request within 1-2 business days.
+Once you submit your pull request, it will be moderated. Check out your GitHub notifications to follow the review process. If you receive any error notifications, please go to your PR page and find the review step that caused the issue for more details. If everything is formatted correctly and your app runs without errors, we'll usually accept your pull request within 1-2 business days.
 
 In a few minutes after your pull request is accepted, your app will be available in the Apps Catalog in [mobile apps](https://flpr.app/?ref=blog.flipper.net) and in [Flipper Lab](https://lab.flipper.net/apps).
 
