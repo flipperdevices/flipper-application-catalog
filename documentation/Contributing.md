@@ -49,7 +49,7 @@ added changelog
 
 1. Create `application.fam` (in your app's source code repo). You need to edit this manifest to specify several fields, such as `appid` (must be unique), `name`, `fap_category`, `fap_version`, etc. See [Flipper App Manifests (.fam)](https://developer.flipper.net/flipperzero/doxygen/app_manifests.html) for details and examples.
 2. Commit the `application.fam` to your repository.
-3. Create `manifest.yml` (you later need to add it to the Apps Catalog repo via pull request, see step 3). Fill in text files in it, including paths to additional files. In the `commit_sha` field of manifest.yml, specify commit ID from the source repository (after committing all files to the source repository). See [Manifest](./Manifest.md) for details and an [example](../example/manifest.yml).
+3. Create `manifest.yml` (you later need to add it to the Apps Catalog repo via pull request, see step 3). Fill in text files in it, including paths to additional files. In the `commit_sha` field of manifest.yml, specify commit ID from the source repository (after committing all files to the source repository). See [Manifest](./Manifest.md) for details. See also the [`manifest.yml` sample file](../example/manifest.yml).
 
 > [!NOTE]  
 > Please make sure your `manifest.yml` is valid as described [here](Manifest.md#validating-manifest).
@@ -63,7 +63,7 @@ Info from these fields will later be shown in the Apps Catalog after your app is
  1. Fork this repository and clone your fork to the local path.
  2. Create a new branch. The recommended naming scheme for your branch is the following: `<username>/<appid>_<appversion>`, where `username` is your GitHub username, `appid` is your app ID, and `appversion` is your app's version.
  3. In the new branch, add your `manifest.yml` file to the directory: `applications/<category>/<application-id>/`. Before adding it, remember to check its validity as described [here](./Manifest.md#validating-manifest).
- 4. Optionally, you can add a markdown-formatted `README.md` file with additional information about your app to the same directory. It will open when a user clicks on the `Manifest` link on the app page in the Apps Catalog. 
+ 4. (Optional) Add a Markdown-formatted `README.md` file with additional information about your app to the same directory as `manifest.yml`. When the user clicks on the Manifest link on your published app page, they will access your app folder in the Apps Catalog repository, and this readme will be shown.
  5. Create a pull request from your local branch, filling in the pull request template.
 
 To learn more about contributing and forking on GitHub, see [Contributing to projects](https://docs.github.com/en/get-started/quickstart/contributing-to-projects).
