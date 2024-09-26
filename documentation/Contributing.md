@@ -49,7 +49,7 @@ added changelog
 
 1. Create `application.fam` (in your app's source code repo). You need to edit this manifest to specify several fields, such as `appid` (must be unique), `name`, `fap_category`, `fap_version`, etc. See [Flipper App Manifests (.fam)](https://developer.flipper.net/flipperzero/doxygen/app_manifests.html) for details and examples.
 2. Commit the `application.fam` to your repository.
-3. Create `manifest.yml` (you later need to add it to the Apps Catalog repo via pull request, see step 3). Fill in text files in it, including paths to additional files. In the `commit_sha` field of manifest.yml, specify commit ID from the source repository (after committing all files to the source repository). See [Manifest](./Manifest.md) for details and examples.
+3. Create `manifest.yml` (you later need to add it to the Apps Catalog repo via pull request, see step 3). Fill in text files in it, including paths to additional files. In the `commit_sha` field of manifest.yml, specify commit ID from the source repository (after committing all files to the source repository). See [Manifest](./Manifest.md) for details and an [example](../example/manifest.yml).
 
 > [!NOTE]  
 > Please make sure your `manifest.yml` is valid as described [here](Manifest.md#validating-manifest).
@@ -70,7 +70,7 @@ To learn more about contributing and forking on GitHub, see [Contributing to pro
 
 ### Step 4. App moderation
 
-Once you submit your pull request, it will be moderated. You'll receive GitHub notifications about the review process of your pull request. If everything is formatted correctly and your app runs without errors, we'll usually accept your pull request within 1-2 business days.
+Once you submit your pull request, it will be moderated. You'll receive GitHub notifications about the review process of your pull request. Если вы получите уведомление от GitHub об ошибке возникшей во время review, you can check the details about it на странице вашего PR. If everything is formatted correctly and your app runs without errors, we'll usually accept your pull request within 1-2 business days.
 
 In a few minutes after your pull request is accepted, your app will be available in the Apps Catalog in [mobile apps](https://flpr.app/?ref=blog.flipper.net) and in [Flipper Lab](https://lab.flipper.net/apps).
 
