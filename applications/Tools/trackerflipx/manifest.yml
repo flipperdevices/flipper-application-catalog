@@ -7,7 +7,7 @@ sourcecode:
     ## Specify the git URL of your repository here
     origin: https://github.com/MassivDash/flipper-tracker.git
     ## Put the fill commit SHA of the commit with the app's code you want to submit
-    commit_sha: b1fb9286fd06695e594519287522afac688034cb
+    commit_sha: a788f4cbe3ef0ce9c609925a66fdaf9aadeb7b15
     ## If your app is located in a subdirectory of the repository, specify it here
     # subdir: .
 ## If applicaion.fam contains 'fap_descriptiopn', it will be used as a short description
