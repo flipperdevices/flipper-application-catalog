@@ -1,0 +1,15 @@
+author: '@Skorpionm'
+category: 'USB'
+changelog: "@.catalog/changelog.md"
+description: "@.catalog/README.md"
+screenshots:
+  - ".catalog/screenshots/1.png"
+  - ".catalog/screenshots/2.png"
+  - ".catalog/screenshots/3.png"
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/flipperdevices/flipperzero-good-faps.git
+    commit_sha: ee70c30014bfd5b85691fb8a219ae436c84e04e8
+    subdir: flip_tdi
+version: 0.1
