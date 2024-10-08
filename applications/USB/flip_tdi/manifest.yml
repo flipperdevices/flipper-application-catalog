@@ -10,6 +10,6 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/flipperdevices/flipperzero-good-faps.git
-    commit_sha: ee70c30014bfd5b85691fb8a219ae436c84e04e8
+    commit_sha: be5b1036d69fbdd1c0c1edb05e14f1e3aee9653c
     subdir: flip_tdi
 version: 1.0
