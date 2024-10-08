@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/ofabel/mp-flipper.git
-    commit_sha: 7b895773c09d6ccca51ea2b5536ec958dd828e3c
+    commit_sha: 35f3246ffde51b99daa6afec14670349788dff7d
 description: "@./docs/README.md"
 changelog: "@./docs/CHANGELOG.md"
 screenshots:
