@@ -1,4 +1,4 @@
-author: '@Skorpionm'
+author: '@SkorP'
 category: 'USB'
 changelog: "@.catalog/changelog.md"
 description: "@.catalog/README.md"
@@ -12,4 +12,4 @@ sourcecode:
     origin: https://github.com/flipperdevices/flipperzero-good-faps.git
     commit_sha: ee70c30014bfd5b85691fb8a219ae436c84e04e8
     subdir: flip_tdi
-version: 0.1
+version: 1.0
