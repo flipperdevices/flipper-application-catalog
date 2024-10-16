@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/xMasterX/all-the-plugins.git
-    commit_sha: 9003782b7222eddc93b88213b430d417e56b1005
+    commit_sha: 9473b31e5f66a85dca4733dec362730a1e6a7f61
     subdir: apps_source_code/eth_troubleshooter
 description: "@README.md"
 changelog: "v1.1 - Release"
