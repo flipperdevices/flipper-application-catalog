@@ -9,10 +9,11 @@ In this guide, you will learn how to use this repository to publish and update y
  1. **Open Source License**. Apps submitted to this repository must be licensed under an Open Source License of your choice, permitting building and distribution of the app in binary form by the Flipper Apps Catalog's infrastructure.
  2. **No infringement on rights or trademarks**. Apps and data they produce or process must not infringe on any third-party rights or trademarks.
  3. **No malicious code**. Submitted apps must not contain any malicious code or code that may cause harm to the user's device or data.
- 4. **Compliance with UGC Policies**. Apps must comply with the User-Generated Content Policies of [Play Store](https://support.google.com/googleplay/android-developer/answer/9876937) and [App Store](https://developer.apple.com/app-store/review/guidelines/#user-generated-content). We reserve the right to reject and remove apps that do not comply with these policies.
- 5. **App metadata or source code updates**. If any changes to the app metadata or source code are required, we will contact the app author, as specified in the submitted pull request or using the contact information provided in the manifest file. If we do not receive a response within 14 days, the app will be removed from the Catalog.
- 6. **Emergency app updates**. If immediate changes are required to address a security vulnerability, copyright or any other critical issue, we reserve the right to unpublish the app from the Catalog before contacting the author.
- 7. **Reserved right to unpublish apps**. We reserve the right to reject and unpublish apps that do not comply with these terms and requirements, or for any other reason at any time.
+ 4. **No illegal activity**. Apps must not bypass Flipper Zero's intentional limits. Sharing links, instructions, or encouragement for firmware forks with illegal features or illegal activities is prohibited.
+ 5. **Compliance with UGC Policies**. Apps must comply with the User-Generated Content Policies of [Play Store](https://support.google.com/googleplay/android-developer/answer/9876937) and [App Store](https://developer.apple.com/app-store/review/guidelines/#user-generated-content). We reserve the right to reject and remove apps that do not comply with these policies.
+ 6. **App metadata or source code updates**. If any changes to the app metadata or source code are required, we will contact the app author, as specified in the submitted pull request or using the contact information provided in the manifest file. If we do not receive a response within 14 days, the app will be removed from the Catalog.
+ 7. **Emergency app updates**. If immediate changes are required to address a security vulnerability, copyright or any other critical issue, we reserve the right to unpublish the app from the Catalog before contacting the author.
+ 8. **Reserved right to unpublish apps**. We reserve the right to reject and unpublish apps that do not comply with these terms and requirements, or for any other reason at any time.
 
 ## Publishing your app to the Apps Catalog
 
