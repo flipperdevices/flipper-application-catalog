@@ -2,8 +2,8 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/jblanked/WebCrawler-FlipperZero.git
-    commit_sha: 3c2cf76a14bfd010ad8e3b1ab3a648bc067b1126
-short_description: "Use Wifi to access the internet and web scrape"
+    commit_sha: 50181e9110d794012c0292f1da0552597d901de0
+short_description: "Use Wi-Fi to access the internet and scrape data from the web."
 description: "@README.md"
 changelog: "@CHANGELOG.md"
 author: "JBlanked"
