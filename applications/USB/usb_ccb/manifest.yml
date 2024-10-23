@@ -1,0 +1,10 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/WithSecureLabs/usb-consumer-control
+    commit_sha: a8f46f7af6d1563243f3f847d2aa933524a17636
+description: "@README.md"
+changelog: "@./docs/changelog.md"
+screenshots:
+  - "./screenshots/1.png"
+  - "./screenshots/2.png"

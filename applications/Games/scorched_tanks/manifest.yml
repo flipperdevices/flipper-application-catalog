@@ -1,0 +1,12 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/xMasterX/all-the-plugins.git
+    commit_sha: 06c22064aa6ae0c33438795eb7cd27d4d083c6c8
+    subdir: apps_source_code/scorched_tanks
+description: "A flipper zero game inspired by scorched earth."
+changelog: "v1.0 - Initial release, v1.1 - Icon fixes, v1.2 - Various fixes, v1.3 - Sync updates and latest API support"
+author: "@jasniec"
+screenshots:
+  - "./img/2.png"
+  - "./img/1.png"

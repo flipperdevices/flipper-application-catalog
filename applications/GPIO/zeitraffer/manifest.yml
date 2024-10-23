@@ -1,0 +1,14 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/theageoflove/flipperzero-zeitraffer.git
+    commit_sha: 20dcb663bc23e24dce16b8d68398979a69514ed5
+description: "@./.catalog/README.md"
+changelog: "v1.2 - Compatibility to API 65.0"
+author: "Aurelius Rosenbaum"
+version: "1.2"
+screenshots:
+  - "./.catalog/001.png"
+  - "./.catalog/002.png"
+  - "./.catalog/003.png"
+  - "./.catalog/004.png"

@@ -15,6 +15,7 @@ In this guide, you will learn how to use this repository to publish and update y
  7. **Emergency app updates**. If immediate changes are required to address a security vulnerability, copyright or any other critical issue, we reserve the right to unpublish the app from the Catalog before contacting the author.
  8. **Reserved right to unpublish apps**. We reserve the right to reject and unpublish apps that do not comply with these terms and requirements, or for any other reason at any time.
 
+
 ## Publishing your app to the Apps Catalog
 
 The Flipper Apps Catalog repository doesn't host the app source code. It **only hosts** `manifest.yml` files with a link to the app source code repository and the app metadata.

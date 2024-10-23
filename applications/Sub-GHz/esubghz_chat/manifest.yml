@@ -1,0 +1,14 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/xMasterX/all-the-plugins.git
+    commit_sha: 9473b31e5f66a85dca4733dec362730a1e6a7f61
+    subdir: apps_source_code/esubghz_chat
+description: "@README.md"
+changelog: "v1.1 - Release"
+author: "@twisted-pear & @xMasterX & more in ReadMe"
+screenshots:
+  - "./screenshots/1.png"
+  - "./screenshots/2.png"
+  - "./screenshots/3.png"
+  - "./screenshots/4.png"

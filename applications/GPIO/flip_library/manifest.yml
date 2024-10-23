@@ -1,0 +1,19 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/jblanked/FlipLibrary.git
+    commit_sha: a3bb16e30bdc6a9ec2423826c0f818c00b47432c
+short_description: "A Flipper Zero app with a dictionary, random facts, and more."
+description: "@README.md"
+changelog: "@CHANGELOG.md"
+author: "JBlanked"
+name: "FlipLibrary"
+version: "1.0"
+id: "flip_library"
+category: "GPIO"
+targets: ['all']
+icon: "app.png"
+screenshots:
+  - "assets/01-main.png"
+  - "assets/02-random-facts.png"
+  - "assets/03-definition.png"

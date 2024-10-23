@@ -1,0 +1,14 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/zacharyweiss/magspoof_flipper.git
+    commit_sha: be6fdbf8af4a4a6ea08b812732474d6c71d6bbd5
+description: |
+  Port of Samy Kamkar's MagSpoof project to the Flipper Zero. Emulates magstripe data wirelessly using an external electromagnet.
+
+  Reading & internal TX are works-in-progress; for more information, confer GitHub.
+changelog: "All version control & changes annotated on GitHub"
+screenshots:
+  - assets/emulate.png
+  - assets/settings.png
+  - assets/emulate_config.png
