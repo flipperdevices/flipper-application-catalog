@@ -1,0 +1,12 @@
+sourcecode:
+  type: git
+  location:
+    origin: git@github.com:DrEverr/FlipperApps.git
+    commit_sha: 641f71053a764414992423c4706eea6dda56b0e3
+    subdir: banana
+description: "Banana. Everyone loves bananas."
+changelog: "v0.1: init"
+author: "Marcin Sokołowski (@DrEverr)"
+screenshots:
+  - "./screens/1.png"
+  - "./screens/2.png"
