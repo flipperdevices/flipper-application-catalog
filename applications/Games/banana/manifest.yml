@@ -2,10 +2,10 @@ sourcecode:
   type: git
   location:
     origin: git@github.com:DrEverr/FlipperApps.git
-    commit_sha: 7c2c59537e6ad4cd781d62e53824fe74c2397c97
+    commit_sha: 2ad5bff08a88dd1ee8f03e22a658ef29408f7d74
     subdir: banana
 description: "Banana. Everyone loves bananas."
-changelog: "v0.2: deleted text counter v0.1: init"
+changelog: "v0.3: saving progress v0.2: deleted text counter v0.1: init"
 author: "Marcin Sokołowski (@DrEverr)"
 screenshots:
   - "./screens/1.png"
