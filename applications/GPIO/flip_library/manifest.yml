@@ -2,13 +2,13 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/jblanked/FlipLibrary.git
-    commit_sha: 572cc1934baff03ee857f9d96e7b201ee763f322
+    commit_sha: 12cfaf093be3980b1bf488feb3111b3226bf66bd
 short_description: "A Flipper Zero app with a dictionary, random facts, and more."
 description: "@README.md"
 changelog: "@CHANGELOG.md"
 author: "JBlanked"
 name: "FlipLibrary"
-version: "1.0"
+version: "1.1"
 id: "flip_library"
 category: "GPIO"
 targets: ['all']
