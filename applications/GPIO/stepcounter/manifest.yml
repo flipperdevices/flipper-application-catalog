@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/grugnoymeme/flipperzero-StepCounter-fap.git
-    commit_sha: 2b6976e0f6b88d195d1aebe1d8f9d07c390d02ce
+    commit_sha: 694c02e31fec394ddf71374207ac919930e390aa
 id: "stepcounter"
 author: "47lecoste a.k.a. grugnoymeme"
 category: "GPIO"
