@@ -1,0 +1,14 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/HappyAmos/Flipper_FAPS.git 
+    commit_sha: 135be9893fa4e606d8bfb2a703dab19242941794
+    subdir: kcline 
+description: "@README-catalog.md"
+short_description: "A simple one line bit munching game." 
+changelog: "@changelog.md"
+author: "@HappyAmos"
+screenshots:
+  - "./screenshots/screenshot_1.png"
+  - "./screenshots/screenshot_2.png"
+  - "./screenshots/screenshot_3.png"

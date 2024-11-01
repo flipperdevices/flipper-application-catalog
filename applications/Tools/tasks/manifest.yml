@@ -1,0 +1,12 @@
+sourcecode:
+  type: git
+  location:
+    origin: "https://github.com/MadLadSquad/FlipperTasks.git"
+    commit_sha: "e670dfcd1d2e09ecaa1a54478423936508799558"
+description: "A simple to-do application."
+changelog: "v1.0 - Initial release, v1.1 - Minor refactor"
+screenshots:
+  - "showcase/flipper1.png"
+  - "showcase/flipper2.png"
+  - "showcase/flipper3.png"
+  - "showcase/flipper4.png"

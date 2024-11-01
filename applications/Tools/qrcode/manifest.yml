@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/bmatcuk/flipperzero-qrcode.git
-    commit_sha: e68fe33d253cbddc337fe30292f87932f6f26789
+    commit_sha: 64135f4d511be1b4acf633da08f2447758aa00a4
 short_description: Display qrcodes
 description: |
   # qrcode

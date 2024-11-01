@@ -1,0 +1,13 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/zinongli/KeyCopier.git
+    commit_sha: 7955b1a42d19cb04bfe379d599bb93f7a0dfba8d
+description: "@README.md"
+changelog: "@CHANGELOG.md"
+author: "Torron"
+screenshots:
+  - "screenshots/kw1.png"
+  - "screenshots/main_menu.png"
+  - "screenshots/config.png"
+  - "screenshots/load.png"
