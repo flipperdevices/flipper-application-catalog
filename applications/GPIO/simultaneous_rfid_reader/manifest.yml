@@ -1,17 +1,14 @@
 sourcecode:
   type: git
   location:
-    
     origin: https://github.com/haffnerriley/Simultaneous-UHF-RFID-FlipperZero.git
-    
-    commit_sha: a7681e779cd83ec93cf4fcfada8ec48424969c56
-    
+    commit_sha: aeea3b61041803130c75ac80cb0ff79f06ee7082
     subdir: simultaneous_rfid_reader
-
 description: |
   This app is designed to 
-  work with the M6e Nano 
-  UHF RFID Reader and the 
+  work with the M6e Nano, 
+  M7E Hecto, or YRM100 
+  UHF RFID Readers and the 
   Flipper Zero. 
   This app supports reading
   up to 150 tags per second,
@@ -20,13 +17,12 @@ description: |
   Banks), viewing all tag 
   information, saving tags, 
   and more!
-
 changelog: "@.catalog/CHANGELOG.md"
-
 author: "@Haffnerriley"
-
 screenshots:
   - ".catalog/screenshots/uhf-rfid-m6e-main-menu.png"
   - ".catalog/screenshots/read-screen.png"
   - ".catalog/screenshots/write-screen.png"
   - ".catalog/screenshots/tag-data-screen.png"
+  - ".catalog/screenshots/lock-screen.png"
+  - ".catalog/screenshots/kill-screen.png"

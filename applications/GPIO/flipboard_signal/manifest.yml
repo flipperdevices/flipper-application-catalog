@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/jamisonderek/flipboard.git
-    commit_sha: b2e0374a4c2b4451d9d39a5fbc4eb08bb0280b98
+    commit_sha: a2b670ea3b6387f6aab1f33b5b9b57f92e1f13e8
     subdir: flipsignal
 description: "@./gallery/README.md"
 changelog: "@./gallery/CHANGELOG.md"

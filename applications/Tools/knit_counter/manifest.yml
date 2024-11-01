@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/fridgepoet/knit-counter.git
-    commit_sha: 09df7e2beac83c76884d49a33625169034b7e97f
+    commit_sha: 77d9b5084a9328f6edd95d5bd880f09a02ce0239
 short_description: Counter that saves after exiting
 description: |
   # Knit Counter
