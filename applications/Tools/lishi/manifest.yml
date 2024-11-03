@@ -1,8 +1,8 @@
 sourcecode:
   type: git
   location:
-    origin: https://github.com/evillero/lishi_hu66
-    commit_sha: bfa9ccb2b4339d32ac5bfeb69e42f137b21cc4b7
+    origin: https://github.com/evillero/lishi
+    commit_sha: 3404c34e820c2f7737a92bb845c66c0c46bb8ff9
 description: "@.catalog/README.md"
 changelog: "@.catalog/CHANGELOG.md"
 author: "@evillero"
