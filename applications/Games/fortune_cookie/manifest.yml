@@ -1,0 +1,12 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/evillero/fortune_cookie
+    commit_sha: 2dd905b19ebebdf793f2d75f164c891927ae1af6
+description: "@.catalog/README.md"
+changelog: "@.catalog/CHANGELOG.md"
+author: "@evillero"
+screenshots:
+  - ".catalog/screenshots/screenshot1.png"
+  - ".catalog/screenshots/screenshot2.png"
+
