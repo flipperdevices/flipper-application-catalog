@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/jblanked/FlipStore.git
-    commit_sha: 0d506057ab9f96d860ea7c252ae3e204d4e9dffa
+    commit_sha: 4966c64d68650e23af9f1f8361f3a1938ca767af
 short_description: "Download apps via WiFi directly to your Flipper Zero."
 description: "@./assets/README.md"
 changelog: "@./assets/CHANGELOG.md"
