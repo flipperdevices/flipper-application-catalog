@@ -1,0 +1,21 @@
+## This is a sample manifest file for the Flipper Apps Catalog.
+## Create one for your app in a corresponding directory in the 'applications' folder.
+
+sourcecode:
+  type: git
+  location:
+    ## Specify the git URL of your repository
+    origin: https://github.com/serma-safety-security/Flipper-Zero-CAN-FD-HS-SW.git
+    ## Put the full commit SHA of the commit with the app's code you want to submit
+    commit_sha: 5c050f4f825957c44e3cd54bd784b8dfec9cdcdf  
+    ## (Optional) If your app is located in a subdirectory of the repository, specify it here
+    # subdir: .
+## If application.fam contains 'fap_description', it will be used as a short description
+short_description: This software implements an USB to CAN bridge compatible with Linux can-utils and slcan driver.
+## For 'description' and 'changelog', you can use limited markdown syntax
+## You can also specify a file from your app's repository as a source with @
+description:  "@Documentation/README_lite.md"
+changelog: "@changelog.md"
+## Unmodified screenshots from qFlipper
+screenshots:
+  - Documentation/qflipper_screenshots/Screenshot-1.png
