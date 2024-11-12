@@ -1,0 +1,18 @@
+id: "fencing_testbox"
+name: "Fencing Test Box"
+category: "GPIO"
+author: "@aarjaneiro"
+version: "0.1"
+icon: "assets/fencing_testbox_10px.png"
+description: "A simple emulator of a fencing testbox for the Flipper Zero."
+changelog: "@CHANGELOG.md"
+screenshots:
+  - "screenshots/main_page.png"
+  - "screenshots/testbox.png"
+  - "screenshots/wiring.png"
+
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/aarjaneiro/fencing_testbox/
+    commit_sha: 58e4fad8796fc295ea9e7a8da72fa62db1d6b8fe
