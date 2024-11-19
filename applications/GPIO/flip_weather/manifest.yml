@@ -1,0 +1,18 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/jblanked/FlipWeather.git
+    commit_sha: 61a18a2e087faad9c0186a3d4beed89a6ec2202b
+short_description: "Use WiFi to get GPS and Weather information on your Flipper Zero."
+description: "@README.md"
+changelog: "@CHANGELOG.md"
+author: "JBlanked"
+name: "FlipWeather"
+version: "1.1"
+id: "flip_weather"
+category: "GPIO"
+targets: ['all']
+icon: "app.png"
+screenshots:
+  - "assets/01-home.png"
+  - "assets/02-weather.png"
