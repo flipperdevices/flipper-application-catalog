@@ -1,0 +1,13 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/Spooks4576/ghost_esp_app.git
+    commit_sha: cabac46cebf1f4d6861e4d674cf92b7fb0af3f6b
+description: "App for interfacing with the Ghost ESP firmware"
+changelog: "@CHANGELOG.md"
+author: "@Spooks4567 and @jaylikesbunda"
+screenshots:
+  - "./screenshots/mainmenu.png"
+  - "./screenshots/wifi.png"
+  - "./screenshots/connect.png"
+  - "./screenshots/scan.png"
