@@ -2,13 +2,13 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/jblanked/FlipTrader.git
-    commit_sha: fb2f2144791e4db31ff2eca21cc059a179ebfa22
+    commit_sha: 1717a8ac7e916bd7a246b79971a5d602e018faf6
 short_description: "Use WiFi to get the price of stocks and currency pairs on your Flipper Zero."
 description: "@README.md"
 changelog: "@CHANGELOG.md"
 author: "JBlanked"
 name: "FlipTrader"
-version: "1.0"
+version: "1.2"
 id: "flip_trader"
 category: "GPIO"
 targets: ['all']
