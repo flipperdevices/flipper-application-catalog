@@ -6,10 +6,10 @@ icon: 'icon.png'
 id: 'metroflip'
 name: 'Metroflip'
 screenshots:
-  - 'Menu-Top.png'
-  - 'Menu-Middle.png'
-  - 'Rav-Kav.png'
-  - 'App.png'
+  - 'screenshots/Menu-Top.png'
+  - 'screenshots/Menu-Middle.png'
+  - 'screenshots/Rav-Kav.png'
+  - 'screenshots/App.png'
 short_description: 'An implementation of metrodroid on the flipper'
 sourcecode:
   location:
