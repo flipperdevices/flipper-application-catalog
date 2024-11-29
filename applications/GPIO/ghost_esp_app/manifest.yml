@@ -8,7 +8,7 @@ id: "ghost_esp_app"
 version: "1.1.7"
 author: "@Spooks4567 and @jaylikesbunda"
 short_description: "Companion app for Ghost ESP Firmware."
-description: "WiFi Operations: Scan networks, beacon spam, deauth attacks, packet capture, evil portal, network connection, and printer control. Bluetooth: Flipper discovery, BLE spam detection, AirTag scanning, and packet capture. GPS: Wardriving capabilities. Configuration: RGB LED, channel hopping, MAC randomization, auto-stop, logs, ESP reboot, and NVS clearing."
+description: "WiFi: Scan networks, beacon spam, deauth attacks, packet capture, evil portal, network connection, and printer control. Bluetooth: Flipper discovery, BLE spam detection, AirTag scanning, and packet capture. GPS: Wardriving capabilities."
 changelog: "v1.1.7 - Initial release"
 category: "GPIO"
 screenshots:
