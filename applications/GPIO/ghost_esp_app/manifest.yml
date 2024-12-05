@@ -2,14 +2,14 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/Spooks4576/ghost_esp_app.git
-    commit_sha: 9a7336fde2f3fc13cdc23a511cf58f2c89328765
+    commit_sha: 4418f780f9350b912d072bd5a47339ff7545ae3d
 name: "Ghost ESP"
-id: "ghost_esp_app"
+id: "ghost_esp"
 version: "1.1.7"
 author: "@Spooks4567 and @jaylikesbunda"
 short_description: "Companion app for Ghost ESP Firmware."
 description: "WiFi: Scan networks, beacon spam, deauth attacks, packet capture, evil portal, network connection, and printer control. Bluetooth: Flipper discovery, BLE spam detection, AirTag scanning, and packet capture. GPS: Wardriving capabilities."
-changelog: "v1.1.7 - Initial release"
+changelog: "v1.1.7 - Initial Catalog release"
 category: "GPIO"
 screenshots:
   - "./screenshots/mainmenu.png"
