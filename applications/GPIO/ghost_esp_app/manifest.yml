@@ -17,5 +17,3 @@ screenshots:
   - "./screenshots/connect.png"
   - "./screenshots/scan.png"
 icon: "ghost_esp.png"
-targets:
-  - "all"
