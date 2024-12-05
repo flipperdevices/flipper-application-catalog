@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/Spooks4576/ghost_esp_app.git
-    commit_sha: 4418f780f9350b912d072bd5a47339ff7545ae3d
+    commit_sha: f54cfba54e52cb86e81c63ae2d21b0b281912124
 name: "Ghost ESP"
 id: "ghost_esp"
 version: "1.1.7"
