@@ -4,7 +4,7 @@ sourcecode:
     origin: https://github.com/Spooks4576/ghost_esp_app.git
     commit_sha: 7372663db342df0333916f0b0b75a80c51e0a381
 name: "Ghost ESP"
-id: "ghost_esp_app"
+id: "ghost_esp"
 version: "1.1.7"
 author: "@Spooks4567 and @jaylikesbunda"
 short_description: "Companion app for Ghost ESP Firmware."
