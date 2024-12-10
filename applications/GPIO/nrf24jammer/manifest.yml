@@ -1,0 +1,23 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/huuck/FlipperZeroNRFJammer.git
+    commit_sha: 6226bb6bf6f506c7a3bfe2b878831f20833b62d4
+    # subdir: .
+short_description: Bluetooth jammer leveraging an NRF24 module.
+description: |
+  Simple Flipper Zero nRF24 jammer for the 2.4Ghz spectrum. Turn your Flipper Zero into a bluetooth jammer. 
+  Tested with the latest Unleashed firmware.
+  Don't forget to enable 5V on GPIO!
+  More details: https://github.com/huuck/FlipperZeroNRFJammer
+  Demo: https://bsky.app/profile/hookgab.bsky.social/post/3lcgnsx7wfk2x
+changelog: "@CHANGELOG.md"
+author: "hookgab"
+name: "NRF24 Bluetooth Jammer"
+version: "1.0"
+id: "nrf24_bluetooth_jammer"
+category: "GPIO"
+## Unmodified screenshots from qFlipper
+screenshots:
+  - images/screen-2.png
+  - images/screen-2.png
