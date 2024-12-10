@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/huuck/FlipperZeroNRFJammer.git
-    commit_sha: 6226bb6bf6f506c7a3bfe2b878831f20833b62d4
+    commit_sha: 4650f374b03389ab92b7b8ef2ef235c2ec61613d
     # subdir: .
 short_description: Bluetooth jammer leveraging an NRF24 module.
 description: |
