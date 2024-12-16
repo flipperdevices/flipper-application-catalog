@@ -4,7 +4,7 @@ sourcecode:
     origin: https://github.com/janwiesemann/flipper-spi-terminal.git
     commit_sha: 3599d268d0f8ba3b51389f665d44ac8174ce8347
 description: "@README_app_catalog.MD"
-changelog: "@CHANGELOG.md"
+changelog: "@CHANGELOG.MD"
 screenshots:
   - screenshots/screen_main.png
   - screenshots/screen_terminal_hex.png
