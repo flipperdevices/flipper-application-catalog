@@ -2,10 +2,11 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/Gl1tchub/Flipperzero-SD-SPI.git
-    commit_sha: daa7b374b9b7316f203aefe4506be470ee85e30d
-description: |
-  Lock and Unlock SD card / Micro SD card through SPI protocol.
-changelog: "@CHANGELOG.md"
+    commit_sha: fbb6589996a011f352c1f878a077615b47f86595
+    subdir: sd_spi
+description: "Lock and Unlock SD card / Micro SD card through SPI protocol."
+changelog: "@changelog.md"
+author: "Gl1tchub"
 screenshots:
   - screenshots/flp0.png
   - screenshots/flp1.png
