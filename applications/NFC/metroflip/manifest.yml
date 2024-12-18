@@ -1,7 +1,7 @@
 author: 'luu176'
 category: 'NFC'
-changelog: 'CHANGELOG.md'
-description: 'app/README.md'
+changelog: '@./CHANGELOG.md'
+description: '@./app/README.md'
 icon: 'icon.png'
 id: 'metroflip'
 name: 'Metroflip'
@@ -10,11 +10,11 @@ screenshots:
   - 'screenshots/Menu-Middle.png'
   - 'screenshots/Rav-Kav.png'
   - 'screenshots/App.png'
-short_description: 'An implementation of metrodroid on the flipper'
+short_description: 'An implementation of Metrodroid on the Flipper Zero'
 sourcecode:
   location:
-    commit_sha: d07cf3396b0a486c9b39f136e9a6ec84fec534e8
+    commit_sha: b09408210671afef8a39247c71e21996b370dadf
     origin: https://github.com/luu176/Metroflip
     subdir:
   type: git
-version: 0.1
+version: 0.3
