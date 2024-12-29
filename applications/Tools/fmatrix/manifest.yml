@@ -6,9 +6,7 @@
       commit_sha: ba0e9fb3a798c9c180220e743e1fad1ecb5da22e
   short_description: The 'matrix rain' effect for the Flipper Zero.
   version: 0.3
-  description: |
-    fmatrix displays the 'matrix rain' effect on your Flipper Zero.
-    For more info, please visit https://github.com/misterwaztaken/fmatrix/
+  description: "@README.md"
   changelog: >
     v0.3:
   
