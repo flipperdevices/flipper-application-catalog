@@ -6,37 +6,37 @@ fmatrix is a simple Flipper Zero app that displays the famous "matrix rain" effe
 
 Main menu:
 
-    Make it rain! - Makes it rain (Displays the matrix effect.)
-    Configure fmatrix - Configuration menu for tweaking fmatrix.
-    Exit - Does exactly what you think it does; exits the app.
+Make it rain! - Makes it rain (Displays the matrix effect.)
+Configure fmatrix - Configuration menu for tweaking fmatrix.
+Exit - Does exactly what you think it does; exits the app.
 
 Options menu:
 
-    UPPERCASE: Toggle whether or not uppercase letters are displayed when characters are randomly chosen. 
+UPPERCASE: Toggle whether or not uppercase letters are displayed when characters are randomly chosen. 
     (default YES)
 
-    lowercase: Toggle whether or not lowercase letters are displayed when characters are randomly chosen.
+lowercase: Toggle whether or not lowercase letters are displayed when characters are randomly chosen.
     (default NO)
 
-    Numbers: Toggle whether or not numbers are displayed when characters are randomly chosen. 
+Numbers: Toggle whether or not numbers are displayed when characters are randomly chosen. 
     (default NO)
 
-    Symbols: Toggle whether or not symbols are displayed when characters are randomly chosen. 
+Symbols: Toggle whether or not symbols are displayed when characters are randomly chosen. 
     (default NO)
 
-    Max Speed: The fastest possible matrix rain can go. 
+Max Speed: The fastest possible matrix rain can go. 
     (1-20, default 3)
 
-    Min Speed: The slowest possible matrix rain can go.
+Min Speed: The slowest possible matrix rain can go.
     (1-20, default 1)
 
-    Spawn Rate: The rate that matrix rain spawns in on the screen.
+Spawn Rate: The rate that matrix rain spawns in on the screen.
     (1-10, default 5)
 
-    Max Length: The most longest possible matrix rain can become/spawn as.
+Max Length: The most longest possible matrix rain can become/spawn as.
     (1-10, default 10)
 
-    Min Length: The smallest possible matrix rain can become/spawn as.
+Min Length: The smallest possible matrix rain can become/spawn as.
     (1-10, default 3)
 
 ## How can I install fmatrix? 
