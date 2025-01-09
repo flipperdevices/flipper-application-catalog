@@ -8,13 +8,15 @@ name: 'Metroflip'
 screenshots:
   - 'screenshots/Menu-Top.png'
   - 'screenshots/Menu-Middle.png'
+  - 'screenshots/Navigo.png'
+  - 'screenshots/Navigo2.png'
   - 'screenshots/Rav-Kav.png'
   - 'screenshots/App.png'
 short_description: 'An implementation of Metrodroid on the Flipper Zero'
 sourcecode:
   location:
-    commit_sha: b09408210671afef8a39247c71e21996b370dadf
+    commit_sha: a5311068d33a2a49fc2f120940c3a6e4636855af
     origin: https://github.com/luu176/Metroflip
     subdir:
   type: git
-version: 0.3
+version: 0.4
