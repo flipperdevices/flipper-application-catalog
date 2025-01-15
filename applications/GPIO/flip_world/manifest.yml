@@ -2,13 +2,13 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/jblanked/FlipWorld.git
-    commit_sha: aa2b93c3e8de9a7cdcb00fd4a9faa10741081298
+    commit_sha: f367447a4cad282ff481c41ec3cb1d56f9fcc4d9
 short_description: "The first open-world multiplayer game for the Flipper Zero, best played with the VGM."
 description: "@./assets/README.md"
 changelog: "@./assets/CHANGELOG.md"
 author: "JBlanked"
 name: "FlipWorld"
-version: "0.2.1"
+version: "0.3"
 id: "flip_world"
 category: "GPIO"
 targets: ['all']
