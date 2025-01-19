@@ -1,0 +1,11 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/expected-ingot/flipper-xinput.git
+    commit_sha: 48b3b146edc0de2f0e6cf0b0f23463fc3f3f8b3f
+short_description: An app that emulates XInput controllers
+description: "@README.md"
+changelog: "@./docs/changelog.md"
+screenshots:
+  - screenshots/ss0.png
+  - screenshots/ss1.png
