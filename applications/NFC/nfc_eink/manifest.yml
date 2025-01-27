@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/RebornedBrain/nfc_eink.git
-    commit_sha: 4f905553cd7bfeb950b6ed9c51496c2ed1a57372
+    commit_sha: edd3900c30608e9301be85bbe997833e54a1f220
 description: "@README.md"
 changelog: "@changelog.md"
 screenshots:
