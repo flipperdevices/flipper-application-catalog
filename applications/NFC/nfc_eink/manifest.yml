@@ -3,7 +3,6 @@ sourcecode:
   location:
     origin: https://github.com/RebornedBrain/nfc_eink.git
     commit_sha: 4f905553cd7bfeb950b6ed9c51496c2ed1a57372
-    subdir: nfc_eink
 description: "@README.md"
 changelog: "@changelog.md"
 screenshots:
