@@ -1,0 +1,13 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/fuckmaz/flipper_cigarette.git
+    commit_sha: 2f896fa50b48b0c8f063ea5588f7733c6395e957
+changelog: "@./CHANGELOG.md"
+description: "@./README.md"
+author: "Maz"
+screenshots:
+  - "./screenshots/screenshot_1.png"
+  - "./screenshots/screenshot_2.png"
+  - "./screenshots/screenshot_3.png"
+  - "./screenshots/screenshot_4.png"
