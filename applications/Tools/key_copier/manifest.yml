@@ -2,8 +2,8 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/zinongli/KeyCopier.git
-    commit_sha: 7955b1a42d19cb04bfe379d599bb93f7a0dfba8d
-description: "@README.md"
+    commit_sha: 07c0513f24cbaa952934cf1494a020ddda37d705
+description: "To measure your key:\n\n1. Place it on top of the screen.\n\n2. Use the contour to align your key.\n\n3. Adjust each pin's depth until they match. It's easier if you look with one eye closed."
 changelog: "@CHANGELOG.md"
 author: "Torron"
 screenshots:
