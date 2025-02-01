@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/janwiesemann/flipper-spi-terminal.git
-    commit_sha: 3599d268d0f8ba3b51389f665d44ac8174ce8347
+    commit_sha: 78eb50da57119cbc45abb7f4ee8c83c8cb3f5a8f
 description: "@README_app_catalog.MD"
 changelog: "@CHANGELOG.MD"
 screenshots:
