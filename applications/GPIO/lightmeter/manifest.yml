@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/oleksiikutuzov/flipperzero-lightmeter
-    commit_sha: 13b958b07eb21813680bca39923151364f035daf
+    commit_sha: 671723ddba0eb8f0089fcd2e9901e0a535bb8724
     subdir: application
 description: "@./docs/README.md"
 changelog: "@./docs/changelog.md"
