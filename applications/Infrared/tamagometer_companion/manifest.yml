@@ -1,0 +1,16 @@
+sourcecode:
+  type: git
+  location:
+    ## Specify the git URL of your repository
+    origin: https://github.com/zacharesmer/tamagometer-companion-flipper.git
+    ## Put the full commit SHA of the commit with the app's code you want to submit
+    commit_sha: f0e7d032c848d3c42096564d132bc333010bcd02
+    ## (Optional) If your app is located in a subdirectory of the repository, specify it here
+    # subdir: .
+## For 'description' and 'changelog', you can use limited markdown syntax
+## You can also specify a file from your app's repository as a source with @
+description: "@description.md"
+changelog: "@CHANGELOG.md"
+## Unmodified screenshots from qFlipper
+screenshots:
+  - screenshots/screenshot1.png
