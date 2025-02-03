@@ -2,9 +2,9 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/xtruan/flipper-chess.git
-    commit_sha: e5ee4520dfc68080b1723b03f6d8e857ec10a6b0
+    commit_sha: f850ffbc6d8ca9c9e12c3a2bab16d5cbb009365e
 description: "How about a nice game of chess?"
-changelog: "v1.11 - Update to support new FW"
+changelog: "v1.12 - Update to fix illegal move bug"
 author: "@xtruan"
 screenshots:
   - "./catalog/startscreen.png"
