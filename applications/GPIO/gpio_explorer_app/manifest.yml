@@ -1,0 +1,15 @@
+sourcecode:
+  type: git
+  location:
+
+    origin: https://github.com/EvgeniGenchev07/gpio_explorer.git
+    commit_sha: ff85c27eee36316d60d8177f8c9022056115614e 
+    
+description: "@ReadMe.md"
+changelog: "@changelog.md"
+author: "dun-crop"
+screenshots:
+  - screenshots/main.png
+  - screenshots/gpio_reader.png
+  - screenshots/rgb.png
+  - screenshots/led.png
