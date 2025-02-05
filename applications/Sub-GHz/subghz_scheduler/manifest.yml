@@ -2,10 +2,10 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/shalebridge/flipper-subghz-scheduler.git
-    commit_sha: e70d903b6d1111e35e4a3e3d0b8756d0318fdaed
+    commit_sha: 2813ac6adbabce4281d2cbfc9baa06a95261724c
 name: "Sub-GHz Scheduler"
 id: "subghz_scheduler"
-version: "1.0"
+version: "2.0"
 description: "A Flipper Zero app to send SubGHz signals at a given interval. Individual *.sub or playlist *.txt files can be used. Discrete intervals from 10 seconds to 12 hours are selectable, as well as repeating transmissions for individual data."
 short_description: "An app to send a SUB or playlist file repeatedly at a given interval."
 changelog: "@CHANGELOG.md"
@@ -14,6 +14,6 @@ targets: ['all']
 category: "Sub-GHz"
 icon: "icons/icon.png"
 screenshots:
-  - "./screenshots/v0/s_10min_x1.png"
-  - "./screenshots/v0/pl_1min_x3.png"
-  - "./screenshots/v0/1_s_run_30sec_x3.png"
+  - "./screenshots/v2.0/a_run_view.png"
+  - "./screenshots/v2.0/10s_x1_tx250_norm.png"
+  - "./screenshots/v2.0/x3_tx250_oneshot.png"
