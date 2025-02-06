@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/retrooper/deadzone.git
-    commit_sha: fffb3cbcdf1d141b1f7de7a32b4d356263e8feab
+    commit_sha: 6675f35c0bbdb4ddd20b13797e79e62ab0af99f2
 short_description: Fight through tough challenges, dodge enemy fire, and avoid the falling obstacles to survive!
 description: "@README.md"
 changelog: "v0.1 - Initial release"
