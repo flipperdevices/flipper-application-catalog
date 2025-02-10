@@ -1,0 +1,20 @@
+## LightMessenger - by Tixlegeek, brought to you by LAB401
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/lab-401/fzLightMessenger.git
+    commit_sha: fde9a73ec829929be4d5d9f49887ef6e775e2f6f
+    subdir: ./401lightMessengerApp
+short_description: LightMessenger's hardware companion.
+description: |
+  LightMessenger by Tixlegeek, and brought to you by LAB401 is a hardware module allowing to write and draw on the air using a 16 RGB Led array and an accelerometer.
+  You can write your own text and create or modify your own custom images, use it as a flashlight, and configure every aspect of your new fabulous toy.
+  Photobomb only when it's ok
+changelog: "@CHANGELOG.md"
+author: "@tixlegeek"
+screenshots:
+  - screenshots/sc01.png
+  - screenshots/sc02.png
+  - screenshots/sc03.png
+  - screenshots/sc04.png
+  - screenshots/sc05.png
