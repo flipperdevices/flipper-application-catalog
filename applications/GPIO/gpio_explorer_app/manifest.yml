@@ -1,0 +1,14 @@
+sourcecode:
+  type: git
+  location:
+
+    origin: https://github.com/EvgeniGenchev07/gpio_explorer.git
+    commit_sha: a1e00e3f97e5f3981e86f3e5701164eb4c78fd5c
+    
+description: "@README.md"
+changelog: "@CHANGELOG.md"
+screenshots:
+  - screenshots/main.png
+  - screenshots/gpio_reader.png
+  - screenshots/rgb.png
+  - screenshots/led.png
