@@ -1,0 +1,10 @@
+changelog: "@CHANGELOG.md"
+description: "@README.md"
+screenshots:
+  - ".catalog/screenshots/empty.png"
+  - ".catalog/screenshots/figure.png"
+sourcecode:
+  type: git
+  location:
+    origin: https://gitlab.com/bettse/portal_of_flipper.git
+    commit_sha: 91e201a82d1702b9082a363f94635303ab667a98
