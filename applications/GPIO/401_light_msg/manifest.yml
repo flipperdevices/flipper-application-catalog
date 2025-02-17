@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/lab-401/fzLightMessenger.git
-    commit_sha: 14946451097d057bafbb92d4cca1e480db46e51b
+    commit_sha: d2b62c271c1d8a8c8617faa5e7b800ea79664162
     subdir: ./401lightMessengerApp
 short_description: Companion app for the Lab401 Light Messenger
 description: "@DESCRIPTION.md"
