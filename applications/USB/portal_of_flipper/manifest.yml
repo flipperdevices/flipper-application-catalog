@@ -6,5 +6,5 @@ screenshots:
 sourcecode:
   type: git
   location:
-    origin: https://gitlab.com/bettse/portal_of_flipper.git
-    commit_sha: 91e201a82d1702b9082a363f94635303ab667a98
+    origin: https://github.com/sanjay900/portal_of_flipper.git
+    commit_sha: 1dd84ba80c1e0ebf412218e756cc423a3abae0b5
