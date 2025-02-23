@@ -1,0 +1,13 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/Cupprum/Blinker.git
+    commit_sha: 9220d514feaac6b16b7d929422d6c6ee9b42492f
+short_description: "Blinking LED light, which gradually slows down."
+description: "@./README.md"
+changelog: "@./changelog.md"
+author: "@Cupprum"
+screenshots:
+  - "./screenshots/blinker_blinking.png"
+  - "./screenshots/blinker_menu.png"
+  - "./screenshots/blinker_number_menu.png"
