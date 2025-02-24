@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/zinongli/KeyCopier.git
-    commit_sha: 7955b1a42d19cb04bfe379d599bb93f7a0dfba8d
+    commit_sha: 23959760b91d1a7d6bea50c20ce3c2d910d361f7
 description: "@README.md"
 changelog: "@CHANGELOG.md"
 author: "Torron"
