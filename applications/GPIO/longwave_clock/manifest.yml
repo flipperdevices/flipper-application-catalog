@@ -1,0 +1,15 @@
+author: "@m7i-org"
+category: "GPIO"
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/m7i-org/flipper_longwave_clock.git
+    commit_sha: 85317993287ae00334423d88cde220212e791732
+description: |
+  Receive long wave time signals through inexpensive GPIO modules, or simulate receipt if you don't own any.
+  Supports DCF77 as well as MSF, with more protocols to be implemented in the future.
+changelog: "@CHANGELOG.md"
+screenshots:
+  - screenshots/v0.1/big_dcf77.png
+  - screenshots/v0.1/big_msf.png
+  - screenshots/v0.1/big_menu.png

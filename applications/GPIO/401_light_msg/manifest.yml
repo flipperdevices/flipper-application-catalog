@@ -1,0 +1,16 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/lab-401/fzLightMessenger.git
+    commit_sha: 2f7fc969e4eb6e75b343ef50b827ca2489d728e2
+    subdir: ./401lightMessengerApp
+short_description: Companion app for the Lab401 Light Messenger
+description: "@DESCRIPTION.md"
+changelog: "@CHANGELOG.md"
+## Unmodified screenshots from qFlipper
+screenshots:
+  - screenshots/sc01.png
+  - screenshots/sc02.png
+  - screenshots/sc03.png
+  - screenshots/sc04.png
+  - screenshots/sc05.png

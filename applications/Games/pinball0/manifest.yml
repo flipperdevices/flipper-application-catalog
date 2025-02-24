@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/rdefeo/pinball0.git
-    commit_sha: 7057a07d91b8b2e423083364fe4370c14f5c5d9d
+    commit_sha: 26ed6d3b523428cc00df26fea5c1e9a5e14b85f3
 changelog: "@./CHANGELOG.md"
 description: "@./README_flipperlab.md"
 author: "Roberto De Feo"

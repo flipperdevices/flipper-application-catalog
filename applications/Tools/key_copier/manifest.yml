@@ -3,7 +3,7 @@ sourcecode:
   location:
     origin: https://github.com/zinongli/KeyCopier.git
     commit_sha: 23959760b91d1a7d6bea50c20ce3c2d910d361f7
-description: "@README.md"
+description: "To measure your key:\n\n1. Place it on top of the screen.\n\n2. Use the contour to align your key.\n\n3. Adjust each pin's depth until they match. It's easier if you look with one eye closed."
 changelog: "@CHANGELOG.md"
 author: "Torron"
 screenshots:
