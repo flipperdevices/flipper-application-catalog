@@ -1,0 +1,10 @@
+sourcecode:
+  type: git
+  location:
+    origin: git@github.com:kaklik/ServoTesterApp.git
+    commit_sha: 100f7c28714dd4af3ced9268f182febc505b16e9
+description: "@README.md"
+changelog: "@changelog.md"
+screenshots:
+  - "./ServoTesterApp1.png"
+  - "./ServoTesterApp2.png"
