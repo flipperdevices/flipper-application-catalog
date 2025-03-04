@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/akopachov/flipper-zero_authenticator.git
-    commit_sha: aafe8724bef8f156d996db9e050e048cd63cacbc
+    commit_sha: 66755be0352a435bf3739caaac7987148dd8fca9
     subdir: totp
 description: "@.ofwcatalog/DESCRIPTION.md"
 changelog: "@.ofwcatalog/CHANGELOG.md"
