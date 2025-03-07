@@ -1,12 +1,12 @@
 sourcecode:
   type: git
   location:
-    origin: https://github.com/xMasterX/all-the-plugins.git
-    commit_sha: 06c22064aa6ae0c33438795eb7cd27d4d083c6c8
-    subdir: apps_source_code/servotester
-description: "Application uses A7 pin for servo PWM output. Has different modes: Manual, Center, Auto."
-changelog: "v1.0 - Initial release, v1.1 - Various important fixes, v1.2 - Sync updates and latest API support"
-author: "Alexander Semion"
+    origin: https://github.com/ThunderFly-aerospace/flipper-servotester.git
+    commit_sha: 42dc0ff0598b7bc1f1d242a85be48b92fbc3815a
+    subdir: servotester
+description: "@README.md"
+changelog: "@changelog.md"
 screenshots:
-  - "./img/2.png"
-  - "./img/1.png"
+  - "./assets/Servo_Tester_Auto_mode.png"
+  - "./assets/Servo_Tester_Center_mode.png"
+  - "./assets/Servo_Tester_Manual_mode.png"
