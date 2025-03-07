@@ -2,10 +2,10 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/ThunderFly-aerospace/flipper-servotester.git
-    commit_sha: 42dc0ff0598b7bc1f1d242a85be48b92fbc3815a
+    commit_sha: 0b89aa97899be7a5592493a68c8a5c19bc6d05d6
     subdir: servotester
-description: "@README.md"
-changelog: "@changelog.md"
+description: "../@README.md"
+changelog: "../@changelog.md"
 screenshots:
   - "./assets/Servo_Tester_Auto_mode.png"
   - "./assets/Servo_Tester_Center_mode.png"
