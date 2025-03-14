@@ -4,7 +4,7 @@ sourcecode:
     
     origin: https://github.com/haffnerriley/Simultaneous-UHF-RFID-FlipperZero.git
     
-    commit_sha: 5fe3c949d551fd0f09a211b06614eeb3e68399c2
+    commit_sha: 1084e6bf6d9bbacba4ea0a13242a20b938de8756
     
     subdir: simultaneous_rfid_reader
 
