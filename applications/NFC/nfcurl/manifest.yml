@@ -1,0 +1,11 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/y-dejong/nfcurl.git
+    commit_sha: 1e243e49e6c8f60f7094d52e5ed5914b4323d29a
+changelog: "@./docs/changelog.md"
+description: "@./docs/description.md"
+screenshots:
+  - screenshots/enter-url.png
+  - screenshots/emulate.png
+  - screenshots/options.png

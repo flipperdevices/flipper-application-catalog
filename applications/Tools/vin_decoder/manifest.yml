@@ -1,0 +1,12 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/evillero/vin_decoder
+    commit_sha: d0dbc90176e053185d89fab771e5ca754e4db12a
+description: "@.catalog/README.md"
+changelog: "@.catalog/CHANGELOG.md"
+author: "@evillero"
+screenshots:
+  - ".catalog/screenshots/Screenshot1.png"
+  - ".catalog/screenshots/Screenshot2.png"
+

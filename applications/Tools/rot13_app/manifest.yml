@@ -1,0 +1,15 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/nothingbutlucas/flipperzero_rot13.git
+    commit_sha: ec52397333d61d4f35fe53801731e0dd832d5db5
+short_description: Cipher text with ROT13
+description: "@README.md"
+changelog: "@./docs/CHANGELOG.md"
+screenshots:
+  - screenshots/screenshot_00.png
+  - screenshots/screenshot_01.png
+  - screenshots/screenshot_02.png
+  - screenshots/screenshot_03.png
+  - screenshots/screenshot_04.png
+  - screenshots/screenshot_05.png

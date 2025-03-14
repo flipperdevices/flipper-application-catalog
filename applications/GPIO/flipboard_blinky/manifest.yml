@@ -1,0 +1,17 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/jamisonderek/flipboard.git
+    commit_sha: b2e0374a4c2b4451d9d39a5fbc4eb08bb0280b98
+    subdir: flipblinky
+description: "@./gallery/README.md"
+changelog: "@./gallery/CHANGELOG.md"
+author: "CodeAllNight (MrDerekJamison)"
+screenshots:
+  - "gallery/00-blinky-splash.png"
+  - "gallery/02-blinky-config-text.png"
+  - "gallery/07-blinky-nametag.png"
+  - "gallery/06-blinky-qrcode.png"
+  - "gallery/01-blinky-main-menu.png"
+  - "gallery/03-blinky-config-text-line.png"
+

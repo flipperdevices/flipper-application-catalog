@@ -1,0 +1,18 @@
+author: '@RocketGod-git'
+category: 'Games'
+changelog: '@./docs/CHANGELOG.md'
+description: '@./docs/README.md'
+icon: 'icons/umpire_indicator_icon.png'
+id: 'umpire_indicator'
+name: 'Umpire Indicator'
+screenshots:
+  - 'screenshots/Screenshot1.png'
+  - 'screenshots/Screenshot2.png'
+short_description: 'Baseball and Softball balls, strikes, and outs tracker for umpires'
+sourcecode:
+  location:
+    commit_sha: dd5b57a69da969911d8ba4ead96528ccfe616542
+    origin: https://github.com/RocketGod-git/Flipper-Zero-Umpire-Indicator.git
+    subdir:
+  type: git
+version: 0.1
