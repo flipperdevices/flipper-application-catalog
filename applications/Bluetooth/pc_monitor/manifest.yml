@@ -6,7 +6,6 @@ sourcecode:
 description: "@README.md"
 changelog: "@CHANGELOG.md"
 author: "@Olejka"
-version: "1.1.0"
 screenshots:
   - "screenshots/0.png"
   - "screenshots/1.png"
