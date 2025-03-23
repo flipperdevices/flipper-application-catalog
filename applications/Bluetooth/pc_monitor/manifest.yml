@@ -2,10 +2,10 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/TheSainEyereg/flipper-pc-monitor.git
-    commit_sha: 605f08c40205ae3fae9f0b1baff72a6ebd513b25
+    commit_sha: 8c5569abc3a76a40179c20753e6650cf5a1da6cc
 description: "@README.md"
 changelog: "@CHANGELOG.md"
-author: "@Olejka"
+author: "Olejka"
 screenshots:
   - "screenshots/0.png"
   - "screenshots/1.png"
