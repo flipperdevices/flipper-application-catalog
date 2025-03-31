@@ -1,0 +1,12 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/bettse/passy.git
+    commit_sha: a7876a134a74710b3afc9ce44a182a243808e017
+description: "@readme.md"
+changelog: "@.catalog/changelog.md"
+author: "bettse"
+screenshots:
+  - ".catalog/screenshots/menu.png"
+  - ".catalog/screenshots/passport_number_input.png"
+  - ".catalog/screenshots/read_success.png"
