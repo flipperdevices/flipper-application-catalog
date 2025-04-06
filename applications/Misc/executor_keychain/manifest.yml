@@ -1,6 +1,6 @@
 author: 'Esteban Fuentealba'
 category: 'Misc'
-changelog: '@./.catalog/CHANGELOG.md'
+changelog: '@./.catalog/changelog.md'
 description: "@./.catalog/README.md"
 icon: 'assets/executor_keychain_10px.png'
 id: 'executor_keychain'
