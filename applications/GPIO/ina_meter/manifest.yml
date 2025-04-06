@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/cepetr/flipper-tina.git
-    commit_sha: f9e637006e00e8614507bbaaa36267454ba762b4
+    commit_sha: e716e45770de102d54a4ca513ca43b008b84578a
 description: "@README.md"
 changelog: "@CHANGELOG.md"
 screenshots:
