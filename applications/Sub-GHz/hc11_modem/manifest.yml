@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/Giraut/flipper_zero_hc11_wireless_modem
-    commit_sha: d41d4f21da3dbe33915e1631b2d70fa2eb34c1d9
+    commit_sha: cddf9dab43daa51743dd29d97d6ad771ddfbb26c
 short_description: HC-11 wireless modem
 description: "HC-11 wireless modem emulator for the Flipper Zero"
 changelog: "@Changelog.md"
