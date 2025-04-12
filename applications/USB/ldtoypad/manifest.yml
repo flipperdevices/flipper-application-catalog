@@ -1,0 +1,16 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/SegerEnd/Flipper-Zero-LD-Toypad-Emulator.git
+    commit_sha: 9800f67253c512c357136b99f2a3c38feac7b333
+short_description: Toy Pad emulator for Lego Dimensions via USB
+description: |
+  Use your Flipper as a ToyPad!!
+  This app emulates the behavior of the original USB ToyPad.
+  Allowing you to place characters, vehicles all directly from your Flipper!
+changelog: "@CHANGELOG.md"
+screenshots:
+  - screenshots/toypad.png
+  - screenshots/selectionmenu.png
+  - screenshots/minfigs.png
+  - screenshots/toypadfilled.png
