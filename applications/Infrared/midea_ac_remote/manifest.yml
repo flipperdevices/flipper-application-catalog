@@ -1,0 +1,11 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/xakep666/flipperzero-midea-ac-remote.git
+    commit_sha: b92c426cfe7fb3c78e5d9d4480d50d3a84758932
+short_description: "Midea Electric Air Conditioner remote control"
+description: "@./README_CATALOG.md"
+changelog: "@./CHANGELOG.md"
+screenshots:
+  - "./img/screenshot_landscape.png"
+  - "./img/screenshot_silent_mode_landscape.png"
