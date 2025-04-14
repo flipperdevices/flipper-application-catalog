@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/SegerEnd/Flipper-Zero-LD-Toypad-Emulator.git
-    commit_sha: 9800f67253c512c357136b99f2a3c38feac7b333
+    commit_sha: 8b47aac29755db2f06bc102ebe422277e44d6458
 short_description: Toy Pad emulator for Lego Dimensions via USB
 description: |
   Use your Flipper as a ToyPad!!
