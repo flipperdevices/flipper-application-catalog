@@ -4,7 +4,7 @@ sourcecode:
     origin: https://gitlab.com/bettse/flipper_seos.git
     commit_sha: 190ba1dc6e4854eb0f4d32ff5c39f64dec106f51
 description: "@.catalog/README.md"
-changelog: "@changelog.md"
+changelog: "@CHANGELOG.md"
 author: "bettse"
 screenshots:
   - ".catalog/screenshots/menu.png"
