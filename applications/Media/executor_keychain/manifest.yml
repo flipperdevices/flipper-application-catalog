@@ -1,5 +1,5 @@
 author: 'Esteban Fuentealba'
-category: 'Misc'
+category: 'Media'
 changelog: '@./.catalog/changelog.md'
 description: "@./.catalog/README.md"
 icon: 'assets/executor_keychain_10px.png'
@@ -11,7 +11,7 @@ screenshots:
 short_description: 'Flipper Keyller is an app for the Flipper Zero that emulates the iconic sounds of the classic 80s keychain.'
 sourcecode:
   location:
-    commit_sha: 013ef70a9746bf9a8a3de8c2f46f49b5e24aee87
+    commit_sha: ffea64ec5a443e8ef08707fd20d431b9601d8f1b
     origin: https://github.com/EstebanFuentealba/Flipper-Keyller.git
     subdir:
   type: git
