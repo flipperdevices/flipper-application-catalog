@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/bettse/passy.git
-    commit_sha: 68ec04137545db662a6f5da222cfad0c213bd384
+    commit_sha: d3e921af6d965500da6ba6d455e66243422764f6
 description: "@.catalog/README.md"
 changelog: "@.catalog/changelog.md"
 author: "bettse"
