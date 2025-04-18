@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/cepetr/sio2flip.git
-    commit_sha: efc92373c4ca7246463988f7424e11624c4e8ae6
+    commit_sha: f9c3309e33f9f89957ef7d33162400d09e7227e5
 description: "@description.md"
 changelog: "@CHANGELOG.md"
 screenshots:
