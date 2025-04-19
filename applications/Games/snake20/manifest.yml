@@ -2,10 +2,10 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/xMasterX/all-the-plugins.git
-    commit_sha: 06c22064aa6ae0c33438795eb7cd27d4d083c6c8
+    commit_sha: 1380605e6ae59e7ea3e3934da5f0106a5756e9cd
     subdir: apps_source_code/Snake_2
 description: "Advanced Snake Game (Remake of original Snake)"
-changelog: "v2.0 - Initial release, v2.1 - Various important fixes, v2.2 - Sync updates and latest API support"
+changelog: "@changelog.md"
 author: "@Willzvul"
 screenshots:
   - "./img/2.png"

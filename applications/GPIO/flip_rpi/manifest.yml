@@ -1,0 +1,18 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/jblanked/FlipRPI.git
+    commit_sha: 7626374166230db1034f9a00f01c1c53639dd781
+short_description: "Use your Flipper Zero to control your Raspberry Pi."
+description: "@README.md"
+changelog: "@./assets/CHANGELOG.md"
+author: "JBlanked"
+name: "FlipRPI"
+version: "1.0"
+id: "flip_rpi"
+category: "GPIO"
+targets: ['all']
+icon: "app.png"
+screenshots:
+  - "assets/01-home.png"
+  - "assets/02-saved.png"

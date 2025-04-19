@@ -23,7 +23,7 @@ jobs:
 
       - name: Get updated manifests
         id: changed-files
-        uses: tj-actions/changed-files@v41
+        uses: tj-actions/changed-files@ed68ef82c095e0d48ec87eccea555d944a631a4c
         with:
           files: |
             applications/**/manifest.yml
@@ -68,7 +68,7 @@ jobs:
           cat "${{ steps.diff-comment.outputs.repo-diff-md-file }}" >> $GITHUB_STEP_SUMMARY ;
 
       - name: Find diff comment
-        uses: peter-evans/find-comment@v2.4.0
+        uses: peter-evans/find-comment@v3
         id: find-comment
         if: steps.diff-comment.outputs.repo-diff != '' && !github.event.pull_request.head.repo.fork
         with:
@@ -78,7 +78,7 @@ jobs:
 
       - name: Create or update diff comment
         if: steps.diff-comment.outputs.repo-diff != '' && !github.event.pull_request.head.repo.fork
-        uses: peter-evans/create-or-update-comment@v3
+        uses: peter-evans/create-or-update-comment@v4
         with:
           issue-number: ${{ github.event.pull_request.number }}
           comment-id: ${{ steps.find-comment.outputs.comment-id }}
@@ -177,14 +177,14 @@ jobs:
 
       - name: Create bundle artifact
         if: needs.process-manifests.outputs.checks-only == 'true' && steps.get-bundle-path.outputs.path != ''
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: "${{ steps.get-bundle-path.outputs.app-id }}-${{ steps.get-bundle-path.outputs.app-version }}-bundle"
           path: ${{ steps.get-bundle-path.outputs.path }}
 
       - name: Create build artifacts artifact
         if: needs.process-manifests.outputs.checks-only == 'true' && steps.get-bundle-path.outputs.artifacts-path != ''
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: "${{ steps.get-bundle-path.outputs.app-id }}-${{ steps.get-bundle-path.outputs.app-version }}-build-artifacts"
           path: ${{ steps.get-bundle-path.outputs.artifacts-path }}
@@ -253,7 +253,7 @@ jobs:
           path: example/manifest.yml
 
       - name: Create bundle artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: "test-bundle"
           path: ${{ steps.self-test.outputs.bundle-path }}
