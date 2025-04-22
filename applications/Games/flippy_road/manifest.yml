@@ -2,11 +2,10 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/rkilpadi/flippy-road.git
-    commit_sha: 97f80d8d7275417149de7c4396b390b0d8201480
-short_description: Flippy Road Game
-description: 'Cross roads and rivers in a Frogger-inspired platformer'
-changelog: 'Initial release'
-author: '@rkilpadi'
+    commit_sha: 21a5b41b0a26a8d3dffa16ab74eb5dfda0e28a06
+description: "Cross roads and rivers in a Frogger-inspired platformer"
+changelog: "@changelog.md"
+author: "@rkilpadi"
 screenshots:
-  - './screenshots/screenshot1.png'
-  - './screenshots/screenshot2.png'
+  - "./screenshots/screenshot1.png"
+  - "./screenshots/screenshot2.png"

@@ -1,0 +1,17 @@
+author: '@RocketGod-git'
+category: 'Sub-GHz'
+changelog: '@./docs/CHANGELOG.md'
+description: '@./docs/README.md'
+icon: 'icons/radio_scanner.png'
+id: 'radio_scanner'
+name: 'Radio Scanner'
+screenshots:
+  - 'screenshots/Screenshot1.png'
+short_description: 'Sub-GHz Radio Scanner with audio output to internal speaker'
+sourcecode:
+  location:
+    commit_sha: 238513c477789caf43e361424fbf1b8768986637
+    origin: https://github.com/RocketGod-git/Flipper-Zero-Radio-Scanner.git
+    subdir:
+  type: git
+version: 0.2

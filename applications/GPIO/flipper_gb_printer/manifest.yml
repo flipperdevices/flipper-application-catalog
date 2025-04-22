@@ -1,0 +1,12 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/kbembedded/flipper-gb-printer/
+    commit_sha: 26820ad58096ef916717a46f7206592ed058823d
+description: "@.assets/README_catalog.md"
+changelog: "@changelog.md"
+screenshots:
+  - ".assets/fgp-recv.png"
+  - ".assets/fgp-mainmenu.png"
+  - ".assets/fgp-recvconfig.png"
+  - ".assets/fgp-pinconf.png"

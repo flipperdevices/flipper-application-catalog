@@ -1,0 +1,14 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/d4rks1d33/Gemini-Flipper.git
+    commit_sha: 6776f9ae40dc5e1954d29ac517460c6bb33b2571
+id: "gemini_ia"
+category: "GPIO"
+short_description: "Companion app for interfacing with Gemini IA using the Flipper Zero"
+description: "@./README.md"
+changelog: "@./changelog.md"
+screenshots:
+  - "./screenshots/menu.png"
+  - "./screenshots/menu2.png"
+  - "./screenshots/chat.png"

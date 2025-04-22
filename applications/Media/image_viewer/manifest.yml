@@ -1,0 +1,10 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/polioan/flipper-zero-image-viewer.git
+    commit_sha: 82fbcb5d669bd3e6cbf7af7593ad8efe0f19f1bd
+description: "@./README.md"
+changelog: "@./CHANGELOG.md"
+author: "@polioan"
+screenshots:
+  - "./screenshot.png"

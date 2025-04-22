@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/haffnerriley/Simultaneous-UHF-RFID-FlipperZero.git
-    commit_sha: aeea3b61041803130c75ac80cb0ff79f06ee7082
+    commit_sha: 12092dab651c1b1d667043e56f3dc8ae21df1699
     subdir: simultaneous_rfid_reader
 description: |
   This app is designed to 
