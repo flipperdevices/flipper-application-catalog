@@ -2,13 +2,13 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/jblanked/FlipWiFi.git
-    commit_sha: 48d69fef90615c94d422923d9b603ebc759d8cbb
+    commit_sha: e4bfe0897d7c2d5b0510a88d548d0f547bacc7ff
 short_description: "FlipperHTTP companion app. Scan and save WiFi networks on your Flipper Zero."
 description: "@README.md"
 changelog: "@CHANGELOG.md"
 author: "JBlanked"
 name: "FlipWiFi"
-version: "1.5.1"
+version: "1.5.2"
 id: "flip_wifi"
 category: "GPIO"
 targets: ['all']
