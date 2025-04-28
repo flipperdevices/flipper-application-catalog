@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/Rrycbarm/flipperZeroPasswordManager
-    commit_sha: 64cd003e4351c8aa5bad715f67ac0f3286497bea
+    commit_sha: 350cc85ece042cc3380b212d86a2aa3dd376e0b6
 short_description: This app stores your usernames and password and can write them on your PC acting as a keyboard
 description: "@README_catalog.md"
 changelog: "@CHANGELOG.md"
