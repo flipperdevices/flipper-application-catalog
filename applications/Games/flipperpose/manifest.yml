@@ -1,0 +1,15 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/MrNull1/flipperpose.git
+    commit_sha: 282bf9247d0b7bbf76d829b846b071e7065892fd
+short_description: A simple app to pose your flipper buddy for photos!
+description: "@README.md"
+changelog: "@changelog.md"
+version: 1.0
+author: "mrnullone"
+screenshots:
+  - "screenshots/sc1.png"
+  - "screenshots/sc2.png"
+  - "screenshots/sc3.png"
+  - "screenshots/sc4.png"
