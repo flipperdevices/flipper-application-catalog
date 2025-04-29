@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/hahnworks/UDECard.git
-    commit_sha: 639df5a7a8ac843ae22d887b17d2f7005aa0a5a3
+    commit_sha: 70806cd4374d371f178208880bd21446a0de59d3
 short_description: Flipper application to analyse student ID cards from the University of Duisburg-Essen (Intercard).
 description: "@.catalog/README.md"
 changelog: "@.catalog/CHANGELOG.md"
