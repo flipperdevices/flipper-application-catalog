@@ -3,7 +3,7 @@ sourcecode:
   location:
     origin: https://github.com/jaylikesbunda/ghost_esp_app.git
     commit_sha: 2d4e5fba5f9ec504e22b7a64779e2c9ef72f3df9
-name: "Ghost ESP"
+name: "[ESP32] Ghost ESP"
 id: "ghost_esp"
 version: "1.2.5"
 author: "@Spooks4567 and @jaylikesbunda"
