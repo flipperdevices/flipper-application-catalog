@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/xMasterX/all-the-plugins.git
-    commit_sha: 4ba7310e1262e6db5dab7dceeb3faffefe1c0e20
+    commit_sha: b12eebc5a99ae3a6ba85dfe4c2330dec5cdfea20
     subdir: base_pack/swd_probe
 description: "ARM SWD (Single Wire Debug) Probe"
 changelog: "v1.0 - Initial release, v1.1 - Sync Updates, v1.2 - Sync updates and latest API support, v1.3 - Latest API support"
