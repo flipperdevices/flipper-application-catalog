@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/Leptopt1los/ibutton_converter.git
-    commit_sha: d1c87bdb4e9c8067dcb2e63405ded153e2674649
+    commit_sha: 5c00cadfd1781f4b8c412e603997071f43bc4c9c
 description: "@README.md"
 changelog: "@CHANGELOG.md"
 screenshots:
