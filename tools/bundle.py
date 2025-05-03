@@ -13,6 +13,7 @@ from typing import Dict, List
 
 import yaml
 from dataclass_wizard.dumpers import asdict
+from flipp_catalog import BundlerException
 from flipp_catalog.manifest import ApplicationManifest
 from flipp_catalog.markdown_filter import BasicFormattingEnforcingExtension
 from markdown import Markdown
@@ -32,9 +33,6 @@ except ImportError:
 
     sys.modules["fbt.util"] = _fbt_util_stub
 
-
-class BundlerException(Exception):
-    pass
 
 
 class AppBundler:
