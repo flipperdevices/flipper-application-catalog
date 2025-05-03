@@ -1,0 +1,12 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/molodos/dcf77-clock-spoof.git
+    commit_sha: b7adfdcc22b38fb5608ef8923e3769ef2e42b269
+short_description: "Spoof a DCF77 time signal with a selectable time on the RFID antenna and the A4 GPIO pin"
+description: "@README.md"
+changelog: "@.catalog/changelog.md"
+author: "Molodos"
+screenshots:
+  - ".catalog/screens/1.png"
+  - ".catalog/screens/2.png"

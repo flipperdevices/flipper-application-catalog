@@ -1,0 +1,35 @@
+---
+  sourcecode:
+    type: git
+    location:
+      origin: https://github.com/misterwaztaken/fmatrix.git
+      commit_sha: 2232ca49826f0605e4e6288f30c13ffafbe582bf
+  short_description: The 'matrix rain' effect for the Flipper Zero.
+  version: 0.3
+  description: "@README.md"
+  changelog: >
+    v0.3:
+  
+    - added menu for fmatrix 
+    - added a submenu for options (for configuring fmatrix)
+    - added options for lowercase letters, numbers, and symbols
+    - added options to control spawn rate, max/min speed, and max/min character trail length 
+  
+  
+    v0.2:
+  
+    - added screenshots in preparation to upload to application catalog
+    - wrote and committed final edits to manifest.yml
+  
+  
+    v0.1:
+  
+    - initialized repository (woo!)
+    - moved project to a github repo, started changelog
+  screenshots:
+    - screenshots/ss1.png
+    - screenshots/ss2.png
+    - screenshots/ss3.png
+    - screenshots/ss4.png
+    - screenshots/ss5.png
+  
