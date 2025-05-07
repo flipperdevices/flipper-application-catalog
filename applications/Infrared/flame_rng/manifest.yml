@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/OrionW06/Flame-RNG.git
-    commit_sha: f6507c15329555a291f19c1a0ffd92ee0e9c77e6
+    commit_sha: 662baaab0566bec5c33a1332ade3fbc03623955a
 short_description: An RNG intended for use with flames and other IR sources.
 description: "@README.md"
 changelog: "@./docs/changelog.md"
