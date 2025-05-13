@@ -9,7 +9,7 @@ description: "This app allows you to use your Flipper Zero's d-pad as input in g
 changelog: "v1.0: Initial release"
 author: "JBlanked"
 name: "[VGM] Game Remote"
-version: "1.0"
+version: "1.1"
 id: "vgm_game_remote"
 category: "GPIO"
 targets: ['all']
