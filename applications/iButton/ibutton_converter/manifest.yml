@@ -2,12 +2,12 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/Leptopt1los/ibutton_converter.git
-    commit_sha: 5c00cadfd1781f4b8c412e603997071f43bc4c9c
+    commit_sha: 9d191d71f2811d928625900de36de914071b3d6d
 description: "@README.md"
-changelog: "@CHANGELOG.md"
+changelog: "@.catalog/CHANGELOG.md"
 screenshots:
-  - screenshots/main_menu_options.png
-  - screenshots/key_select.png
-  - screenshots/metakom_convert_options.png
-  - screenshots/cyfral_convert_options.png
-  - screenshots/save_success.png
+  - ".catalog/screenshots/main_menu_options.png"
+  - ".catalog/screenshots/key_select.png"
+  - ".catalog/screenshots/metakom_convert_options.png"
+  - ".catalog/screenshots/cyfral_convert_options.png"
+  - ".catalog/screenshots/save_success.png"
