@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/rdefeo/quac.git
-    commit_sha: 1719213da259715b2f559bd6643a7e855e374abd
+    commit_sha: 703f3e5c685d7de6391c1ef7e848f180ca333ca2
 changelog: "@./CHANGELOG.md"
 description: "@./README_flipperlab.md"
 author: "Roberto De Feo"
