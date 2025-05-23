@@ -1,0 +1,9 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/dwight9339/pet_your_dolphin
+    commit_sha: 517a2c279b2aad6de8ff6015aa836676ab0d6f19
+description: "The Pet Your Dolphin app let's you check in on your little dolphin buddy! Stop by daily to give it some pets to improve its mood and earn XP!"
+changelog: "@./docs/changelog.md"
+screenshots:
+  - screenshots/petting_dolphin_2.png

@@ -1,0 +1,12 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/cepetr/sio2flip.git
+    commit_sha: e8dd2effd469f6a598a03e7004e57ca6799a052b
+description: "@description.md"
+changelog: "@CHANGELOG.md"
+screenshots:
+  - "./screenshots/screenshot_fdd.png"
+  - "./screenshots/screenshot_xex_loader.png"
+  - "./screenshots/screenshot_app_config.png"
+  - "./screenshots/screenshot_fdd_config.png"

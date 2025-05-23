@@ -2,10 +2,10 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/mdaskalov/flipperzero-clock.git
-    commit_sha: 927aea05f27577b896fbc60b20f61ea2712e46dc
+    commit_sha: 63bb18a07d577f183d25c633ab120327cb4a0fa3
 short_description: "FlipperZero Customizable Clock"
 description: "@README.md"
-changelog: "v1.1 - Small bugfixes, v1.2 - Drawing optimizations"
+changelog: "v1.2 - Drawing optimizations, v1.3 - fixed weekday"
 author: "mdaskalov"
 screenshots:
   - "./img/1.png"

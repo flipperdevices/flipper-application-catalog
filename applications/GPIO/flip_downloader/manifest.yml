@@ -1,0 +1,21 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/jblanked/FlipDownloader.git
+    commit_sha: 812fcaa6816db70c7b20d69ae3eae4ae051a3a68
+short_description: "Download apps and assets directly to your Flipper Zero using WiFi."
+description: "@./assets/README.md"
+changelog: "@./assets/CHANGELOG.md"
+author: "JBlanked"
+name: "FlipDownloader"
+version: "1.0"
+id: "flip_downloader"
+category: "GPIO"
+targets: ['all']
+icon: "app.png"
+screenshots:
+  - "assets/01-main-menu.png"
+  - "assets/05-browse.png"
+  - "assets/02-catalog.png"
+  - "assets/03-list.png"
+  - "assets/04-success.png"

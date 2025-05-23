@@ -2,13 +2,13 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/jblanked/FlipLibrary.git
-    commit_sha: ae8ed2210b3b1c60e017248fba34d4d76fdb2735
-short_description: "A Flipper Zero app with a dictionary, random facts, and more."
+    commit_sha: 014d744fec9f36aabe85fbd754e0bcacd296d3cc
+short_description: "Utilize WiFi to retrieve data from 20 different APIs."
 description: "@README.md"
 changelog: "@CHANGELOG.md"
 author: "JBlanked"
 name: "FlipLibrary"
-version: "1.3"
+version: "1.4"
 id: "flip_library"
 category: "GPIO"
 targets: ['all']
