@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/hahnworks/UDECard.git
-    commit_sha: 7c176ed67e96fb74d07abcb9ef1488daa8c7cb37
+    commit_sha: 53bf53fd4b66d003da2e56a95de09893683ebbe3
 short_description: Analyse student ID cards from the University of Duisburg-Essen (Intercard).
 description: "@.catalog/README.md"
 changelog: "@.catalog/CHANGELOG.md"
@@ -10,4 +10,4 @@ screenshots:
   - .catalog/screenshots/detect_scene.png
   - .catalog/screenshots/result_scene.png
   - .catalog/screenshots/main_menu.png
-version: 1.0.2
+version: 1.0.3
