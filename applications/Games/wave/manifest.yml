@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/Sladkisnovraper/Wave-game-for-Flipper-Zero.git
-    commit_sha: "a298741b1927880a88892c74fa9aaa37c3d650c8"
+    commit_sha: "50bc424cb8c93ae45054b6ff7360578882a46f2a"
 short_description: "AI generated game that replicates gameplay for a wave from Geometry Dash"
 description: "@./README.md"
 changelog: "@changelog.md"
