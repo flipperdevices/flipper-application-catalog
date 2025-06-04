@@ -2,9 +2,11 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/dogtopus/flipperzero-hitachi-ac-remote.git
-    commit_sha: 1524f03c3dd0f290c11b932cdc1557c9ca53de7d
-short_description: "Hitachi Air Conditioner remote control"
+    commit_sha: 4cbf740e7a1fd7036e93be2a42b7e6fa4a4cc956
+short_description: "Hitachi Air Conditioner remote controller"
 description: "@./README_CATALOG.md"
 changelog: "@./CHANGELOG.md"
 screenshots:
   - "./img/1.png"
+  - "./img/2.png"
+  - "./img/screenshot3.png"
