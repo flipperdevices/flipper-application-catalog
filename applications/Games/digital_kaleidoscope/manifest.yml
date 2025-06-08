@@ -1,37 +1,19 @@
-## This is a sample manifest file for the Flipper Apps Catalog.
-## Create one for your app in a corresponding directory in the 'applications' folder.
-
 sourcecode:
   type: git
   location:
-    ## Specify the git URL of your repository
     origin: https://github.com/JamesR555/digital_kaleidoscope
-    ## Put the full commit SHA of the commit with the app's code you want to submit
-    commit_sha: 1fcd177d90b3cc91363e95c617c13ce32683c412
-    ## (Optional) If your app is located in a subdirectory of the repository, specify it here
-    # subdir: .
-## If application.fam contains 'fap_description', it will be used as a short description
+    commit_sha: 9e8a18e1f44855fe56674463fb22380024dc97be
 short_description: Digital Kaleidoscope turns your Flipper Zero into a pocket-sized animated visualizer. Choose from four distinct kaleidoscope styles and adjust the pattern density on the fly.
-## For 'description' and 'changelog', you can use limited markdown syntax
-## You can also specify a file from your app's repository as a source with @
 description: |
-  Digital Kaleidoscope is a lightweight app for Flipper Zero that transforms the device’s screen into a dynamic, ever-changing kaleidoscope. You get four unique visual styles, each with its own character:
+  Digital Kaleidoscope is a lightweight app for Flipper Zero that transforms the device’s screen into a dynamic, ever-changing kaleidoscope. You get four unique visual styles, each with its own characteristics:
   
-  Rotating Star
-  A radiating starburst spins slowly around the center of the display, giving the impression of a celestial dance.
+  - **Rotating Star**: A radiating starburst spins slowly around the center of the display, giving the impression of a celestial dance.
+  - **Concentric Arcs**: Pixelated semi-circles expand and contract in rings from the middle of the screen, creating a fluid, ripple-like effect.
+  - **Gradient Noise**: Random noise pixels appear brightest at the center and fade toward the edges. The pattern shifts subtly over time, producing a mesmerizing “shifting haze.”
+  - **Mirrored Dots**: A static cloud of random dots is mirrored left-to-right. Unlike the other styles, this one does not animate automatically—you press an arrow key to regenerate the dot pattern whenever you like.
 
-  Concentric Arcs
-  Pixelated semi-circles expand and contract in rings from the middle of the screen, creating a fluid, ripple-like effect.
-
-  Gradient Noise
-  Random noise pixels appear brightest at the center and fade toward the edges. The pattern shifts subtly over time, producing a mesmerizing “shifting haze.”
-
-  Mirrored Dots
-  A static cloud of random dots is mirrored left-to-right. Unlike the other styles, this one does not animate automatically—you press an arrow key to regenerate the dot pattern whenever you like.
-
- You can fine-tune how “busy” each style looks by adjusting the density (0–100%) with the Up/Down buttons. The Left/Right arrows switch between the four visualizers, and pressing Back returns you to the main menu. Styles 1–3 animate continuously (refreshing every ~100 ms), whereas Style 4 stays frozen until you manually redraw it.
+  You can fine-tune how “busy” each style looks by adjusting the density (0–100%) with the Up/Down buttons. The Left/Right arrows switch between the four visualizers, and pressing Back returns to the main menu.
 changelog: "changelog.md"
-## Unmodified screenshots from qFlipper
 screenshots:
   - images/Screenshot-1.png
   - images/Screenshot-2.png
