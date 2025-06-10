@@ -1,0 +1,18 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/TAxelAnderson/FlipCrypt.git
+    commit_sha: fa172c044b9c02034b44cafb37d1fce59bc9a752
+description: "@README.md"
+changelog: "@docs/CHANGELOG.md"
+author: "@TAxelAnderson"
+screenshots:
+  - "./screenshots/screenshot1.png"
+  - "./screenshots/screenshot2.png"
+  - "./screenshots/screenshot3.png"
+  - "./screenshots/screenshot4.png"
+  - "./screenshots/screenshot5.png"
+  - "./screenshots/screenshot6.png"
+  - "./screenshots/screenshot7.png"
+  - "./screenshots/screenshot8.png"
+  - "./screenshots/screenshot9.png"
