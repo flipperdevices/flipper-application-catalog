@@ -1,0 +1,21 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/JamesR555/digital_kaleidoscope
+    commit_sha: 9e8a18e1f44855fe56674463fb22380024dc97be
+short_description: Digital Kaleidoscope turns your Flipper Zero into a pocket-sized animated visualizer. Choose from four distinct kaleidoscope styles and adjust the pattern density on the fly.
+description: |
+  Digital Kaleidoscope is a lightweight app for Flipper Zero that transforms the device’s screen into a dynamic, ever-changing kaleidoscope. You get four unique visual styles, each with its own characteristics:
+  
+  - **Rotating Star**: A radiating starburst spins slowly around the center of the display, giving the impression of a celestial dance.
+  - **Concentric Arcs**: Pixelated semi-circles expand and contract in rings from the middle of the screen, creating a fluid, ripple-like effect.
+  - **Gradient Noise**: Random noise pixels appear brightest at the center and fade toward the edges. The pattern shifts subtly over time, producing a mesmerizing “shifting haze.”
+  - **Mirrored Dots**: A static cloud of random dots is mirrored left-to-right. Unlike the other styles, this one does not animate automatically—you press an arrow key to regenerate the dot pattern whenever you like.
+
+  You can fine-tune how “busy” each style looks by adjusting the density (0–100%) with the Up/Down buttons. The Left/Right arrows switch between the four visualizers, and pressing Back returns to the main menu.
+changelog: "changelog.md"
+screenshots:
+  - images/Screenshot-1.png
+  - images/Screenshot-2.png
+  - images/Screenshot-3.png
+  - images/Screenshot-4.png
