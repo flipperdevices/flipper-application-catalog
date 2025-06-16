@@ -1,0 +1,20 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/jblanked/Free-Roam.git
+    commit_sha: 529c5dd362ac03acfbdc818493fd6480eff1ac9d
+    subdir: FlipperZero
+short_description: "3D Open World Multiplayer Game"
+description: "@README.md"
+changelog: "@CHANGELOG.md"
+author: "JBlanked"
+name: "Free Roam"
+version: "0.1"
+id: "free_roam"
+category: "GPIO"
+targets: ['all']
+icon: "app.png"
+screenshots:
+  - "assets/game.png"
+  - "assets/menu.png"
+  - "assets/main.png"
