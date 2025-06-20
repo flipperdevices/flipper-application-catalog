@@ -2,10 +2,10 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/xMasterX/all-the-plugins.git
-    commit_sha: efeac368c2cf583adb28f3f11752f9694bae9c72
+    commit_sha: 06c22064aa6ae0c33438795eb7cd27d4d083c6c8
     subdir: apps_source_code/mifare_fuzzer
 description: "App emulates Mifare Classic cards with various UIDs to check how reader reacts on them"
-changelog: "v1.0 - Initial release, v1.1 - Sync Updates, v1.2 - Fixes for new API"
+changelog: "v1.0 - Initial release, v1.1 - Sync Updates, v1.2 - Fixes for new API, v1.3 - Various fixes, v1.4 - Sync updates and latest API support"
 author: "@spheeere98 & (Fixes for new API by @Sil333033)"
 screenshots:
   - "./img/2.png"

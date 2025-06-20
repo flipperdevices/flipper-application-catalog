@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/liamhays/ublox.git
-    commit_sha: 950f9991c69f3e20bcd577dee83094149f2568fc
+    commit_sha: 1f47a5a8badd74a1d079eb7f0d1b10fb701e5fac
 description: "@apphub_readme.md"
 changelog: "@changelog.md"
 screenshots:

@@ -1,9 +1,8 @@
 sourcecode:
   type: git
   location:
-    origin: https://github.com/flipperdevices/flipperzero-good-faps.git
-    commit_sha: 247cd8027e53f931b0c170ecbdf7fffb0a347d0e
-    subdir: picopass
+    origin: https://gitlab.com/bettse/picopass.git
+    commit_sha: 0016283fc7aca4689b65e94082ba29f8718f64da
 description: "@.catalog/README.md"
 changelog: "@.catalog/changelog.md"
 author: "@bettse"

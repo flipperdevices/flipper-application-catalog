@@ -1,0 +1,12 @@
+sourcecode:
+    type: git
+    location:
+        origin: https://github.com/stevenquinn/flipper-8-ball.git
+        commit_sha: 356af387c6889daf245856f314427102ecddb630
+description: "@.catalog/README.md"
+changelog: "@.catalog/CHANGELOG.md"
+author: "Steven Quinn"
+screenshots:
+    - ".catalog/screenshots/1.png"
+    - ".catalog/screenshots/2.png"
+    - ".catalog/screenshots/3.png"

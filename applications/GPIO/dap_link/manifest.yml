@@ -2,10 +2,10 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/flipperdevices/flipperzero-good-faps.git
-    commit_sha: 6b57580880810a15ae08b2ea243d50dc7bf1250e
+    commit_sha: b791dea234f855155027bb46215dc60f3ddeb243
     subdir: dap_link
 description: "@.catalog/README.md"
-changelog: "v1.0 - Initial release"
+changelog: "v1.0 - Initial release, v1.1 - Various updates and fixes, v1.2 - Fixes for latest UART API, v1.3 - Removed call to deprecated SDK API"
 author: "@DrZlo13"
 screenshots:
   - ".catalog/screenshots/1.png"

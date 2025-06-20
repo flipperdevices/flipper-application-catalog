@@ -1,0 +1,15 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/janwiesemann/flipper-spi-terminal.git
+    commit_sha: 72c4e8de18dd49d6e32e7f016c983eafc4e245dd
+description: "@./app_catalog/README.MD"
+changelog: "@./app_catalog/CHANGELOG.MD"
+screenshots:
+  - screenshots/screen_main.png
+  - screenshots/screen_terminal_hex.png
+  - screenshots/screen_terminal_text.png
+  - screenshots/screen_terminal_auto.png
+  - screenshots/screen_terminal_binary.png
+  - screenshots/screen_config.png
+  - screenshots/screen_config_help.png

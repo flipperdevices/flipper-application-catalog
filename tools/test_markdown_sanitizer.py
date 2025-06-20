@@ -1,11 +1,12 @@
 import unittest
+
+from flipp_catalog.markdown_filter import BasicFormattingEnforcingExtension
 from markdown import Markdown
-from bundle import BasicTextExtension
 
 
 class TestBasicTextExtension(unittest.TestCase):
     def setUp(self):
-        self.md = Markdown(extensions=[BasicTextExtension()])
+        self.md = Markdown(extensions=[BasicFormattingEnforcingExtension()])
 
     def test_backtick_not_allowed(self):
         with self.assertRaises(Exception):
