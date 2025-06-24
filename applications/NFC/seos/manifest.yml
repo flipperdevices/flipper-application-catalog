@@ -1,8 +1,8 @@
 sourcecode:
   type: git
   location:
-    origin: https://gitlab.com/bettse/flipper_seos.git
-    commit_sha: 45ba8be7fc352d43941b582a5d45ac08ed3ba376
+    origin: https://github.com/bettse/seos_compatible.git
+    commit_sha: 34a553ead19642f80053a9867be3d953e67a7b1d
 description: "@.catalog/README.md"
 changelog: "@CHANGELOG.md"
 author: "bettse"
