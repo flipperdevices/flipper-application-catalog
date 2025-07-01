@@ -1,0 +1,19 @@
+author: '@paul-sopin'
+category: 'Tools'
+description: '@README.md'
+changelog: '@changelog.md'
+icon: 'quadratic_solver.png'
+id: 'quadratic_solver'
+name: 'Quadratic Solver'
+screenshots:
+  - 'screenshots/screenshot_1.png'
+  - 'screenshots/screenshot_2.png'
+  - 'screenshots/screenshot_3.png'
+short_description: 'A simple quadratic equation solver app'
+sourcecode:
+  location:
+    commit_sha: 6bb4b232bdaaa5a4ad0e3ec775b418b5a4cb7291
+    origin: https://github.com/paul-sopin/flipper-quadratic-solver.git
+    subdir:
+  type: git
+version: 0.1
