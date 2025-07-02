@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/gebeto/flipper-xbox-controller
-    commit_sha: f4809a69e06cb3de2331351226f6cb2382ce7bfa
+    commit_sha: 86ad252e06917c449b8b0f1d6a4ef74053ea6a69
 description: "@./docs/README.md"
 changelog: "@./docs/changelog.md"
 author: "@gebeto"
