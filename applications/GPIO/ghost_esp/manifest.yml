@@ -2,14 +2,14 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/jaylikesbunda/ghost_esp_app.git
-    commit_sha: 2d4e5fba5f9ec504e22b7a64779e2c9ef72f3df9
+    commit_sha: 69f00664e25f36430440e94c939253ad64ba6e2f
 name: "[ESP32] Ghost ESP"
 id: "ghost_esp"
-version: "1.2.5"
+version: "1.3"
 author: "@Spooks4567 and @jaylikesbunda"
 short_description: "Companion app for Ghost ESP Firmware."
 description: "WiFi: Scan networks, beacon spam, deauth attacks, packet capture, evil portal, network connection, and printer control. Bluetooth: Flipper discovery, Pineapple Detection, AirTag scanning, and packet capture. GPS: Wardriving capabilities."
-changelog: "v1.2.5 - Initial Catalog release"
+changelog: "v1.3.1 - Add WiFi and BLE menu subcategories - Remember menu position after command execution - Add missing and new commands - Move settings from WiFi menu to Settings menu v1.2.5 - Initial Catalog release"
 category: "GPIO"
 screenshots:
   - "./screenshots/mainmenu.png"
