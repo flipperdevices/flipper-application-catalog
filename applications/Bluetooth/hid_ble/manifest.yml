@@ -1,4 +1,4 @@
-id: hid_usb
+id: hid_ble
 author: Momentum Team
 sourcecode:
     type: git
