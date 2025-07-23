@@ -2,17 +2,17 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/Stichoza/flipper-nearby-files.git
-    commit_sha: 4e2205ba22b80a780d4bcb5c3ded9a9ad468a84b
+    commit_sha: 8c2eed25df83a979618806bd898eb891f2a7d2ae
 name: "Nearby Files"
 id: "nearby_files"
 version: "1.2"
 author: "@Stichoza"
 short_description: "GPS-enabled file browser that displays files sorted by distance from your current location."
-description: "@README.md"
-changelog: "@CHANGELOG.md"
+description: "@.catalog/README.md"
+changelog: "@.catalog/CHANGELOG.md"
 category: "GPIO"
 screenshots:
-  - "./screenshots/screenshot3.png"
-  - "./screenshots/screenshot1.png"
-  - "./screenshots/screenshot2.png"
+  - ".catalog/screenshots/screenshot3.png"
+  - ".catalog/screenshots/screenshot1.png"
+  - ".catalog/screenshots/screenshot2.png"
 icon: "nearby_files_10px.png"
