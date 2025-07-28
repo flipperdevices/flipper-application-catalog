@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/Stichoza/flipper-nearby-files.git
-    commit_sha: 5b1c13f4a0601690bfde45bc9fd2fbf977b45e50
+    commit_sha: 5190ebaa5041e3d00f5ff1235ad6fb9f5374d2dd
 name: "Nearby Files"
 id: "nearby_files"
 version: "1.3"
