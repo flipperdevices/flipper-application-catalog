@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/Blue5GD/Anki-Remote
-    commit_sha: f6875bd9528d3ec67d1d79372e9d16a6bdb0d120
+    commit_sha: f54a3966f679eb8401a5137e5302247eb3758dfb
 description: "@README.md"
 changelog: "@./docs/CHANGELOG.md"
 screenshots:
