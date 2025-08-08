@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/w84death/morse-master.git
-    commit_sha: aee5436b408b5261912fbd102be785dfd0018c96
+    commit_sha: f6028bcfcbe6f14e94e6c4684db45759d11cc1b1
 description: "A comprehensive Morse code learning and practice app."
 version: 1.0
 changelog: "@CHANGELOG.md"
