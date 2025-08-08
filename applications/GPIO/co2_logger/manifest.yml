@@ -1,0 +1,10 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/harryob2/co2_logger.git
+    commit_sha: d5d8be9035eea88c3d936878c99eb70060ac53b0
+description: "@README.md"
+changelog: "@CHANGELOG.md"
+screenshots:
+  - screenshots/0.png
+  - screenshots/1.png
