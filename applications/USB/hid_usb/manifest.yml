@@ -1,0 +1,24 @@
+id: hid_usb
+author: Momentum Team
+sourcecode:
+    type: git
+    location:
+        origin: https://github.com/fidian/flipper-hid-app.git
+        ## Put the full commit SHA of the commit with the app's code you want to submit
+        commit_sha: f4a4c3e663838a2f1363f638b3366d4e03b78d79
+description: "@README.md"
+changelog: "@CHANGELOG.md"
+screenshots:
+    - screenshots/main-menu.png
+    - screenshots/keynote.png
+    - screenshots/keyboard.png
+    - screenshots/media.png
+    - screenshots/apple-music-macos.png
+    - screenshots/movie.png
+    - screenshots/mouse.png
+    - screenshots/tiktoc-yt-shorts.png
+    - screenshots/mouse-clicker.png
+    - screenshots/mouse-jiggler.png
+    - screenshots/mouse-jiggler-stealth.png
+    - screenshots/push-to-talk-1.png
+    - screenshots/push-to-talk-2.png

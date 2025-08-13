@@ -1,0 +1,14 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/ivanbarsukov/flipperzero-quadrastic.git
+    commit_sha: 1837a9a203ffd2d137fb0b3c6321f97fcb173b4b
+description: |
+  Quadrastic is a simple addicting game inspired by the Arduboy game of the same name. This, in turn, was based on a popular PSP homebrew game called Squarez. Squarez itself drew inspiration from Ball, a game created by Nicolay Edin and Axel Hammarback, which was originally inspired by Eskiv, a game developed by Jean-François Geyelin.
+changelog: "@CHANGELOG.md"
+screenshots:
+  - "screenshots/screenshot-1.png"
+  - "screenshots/screenshot-2.png"
+  - "screenshots/screenshot-3.png"
+  - "screenshots/screenshot-4.png"
+  - "screenshots/screenshot-5.png"

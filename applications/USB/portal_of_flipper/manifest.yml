@@ -1,0 +1,10 @@
+changelog: "@CHANGELOG.md"
+description: "@README.md"
+screenshots:
+  - ".catalog/screenshots/empty.png"
+  - ".catalog/screenshots/figure.png"
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/sanjay900/portal_of_flipper.git
+    commit_sha: cfc775efe510e0a4e8b259c35514f0a584a4c005
