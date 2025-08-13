@@ -1,0 +1,13 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/grugnoymeme/Flipper-Zero-NFC-Dicts-Manager.git
+    commit_sha: 4438d45d23fa508fb88877e99c693573eda758d4
+description: "@.catalog/README.md"
+changelog: "@.catalog/changelog.md"
+author: "@grugnoymeme"
+screenshots:
+  - ".catalog/screenshots/1.png"
+  - ".catalog/screenshots/2.png"
+  - ".catalog/screenshots/3.png"
+  - ".catalog/screenshots/4.png"
