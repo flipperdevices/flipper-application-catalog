@@ -35,5 +35,5 @@ app:
     - Tools
 
   screenshots:
-    - screenshot_1.png
-    - screenshot_2.png
+    - screenshot1.png
+    - screenshot2.png
