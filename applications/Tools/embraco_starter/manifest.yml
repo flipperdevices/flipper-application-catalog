@@ -13,7 +13,7 @@ app:
   name: Embraco Starter
   version: "1.0.0"
   author: "Adam Gray (Expert Hub)"
-  license: Apache-2.0
+  license: Apache-2.0 (code), custom (icon)
   homepage: https://experthub.app/
 
   entry_point: embraco_starter
