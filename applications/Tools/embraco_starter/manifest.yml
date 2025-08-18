@@ -5,27 +5,35 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/graycoderep/Embraco-Starter.git
-  commit_sha: 7be623d2edf8133ae8754f7159972703163e5252
+    commit_sha: 7be623d2edf8133ae8754f7159972703163e5252
   subdir: .
 
 app:
+  # Explicit values to avoid FAM fallbacks
   name: Embraco Starter
   version: "1.0.0"
-  fap_author: "Adam Gray (Expert Hub)"
-  fap_weburl: https://experthub.app/
+  author: "Adam Gray (Expert Hub)"
   license: Apache-2.0
+  homepage: https://experthub.app/
+
   entry_point: embraco_starter
   requires:
     - gui
   stack_size: 2048
+
+  # FAP metadata (icon must be 10x10, 1‑bit PNG, no alpha)
   fap_icon: icon_embraco.png
+
+  # Catalog descriptions
   short_description: "Three-speed hardware PWM starter for Embraco compressors (safe Hi-Z startup & exit)."
   long_description: >
     Embraco Starter safely tests Embraco inverter compressors using hardware PWM on PA7.
     The app opens with Help (pin set to Hi-Z), offers Power off, Low (55 Hz), Mid (100 Hz), Max (160 Hz)
     modes at 50% duty, and returns PA7 to Hi-Z on exit.
+
   categories:
     - Tools
+
   screenshots:
     - screenshot_1.png
     - screenshot_2.png
