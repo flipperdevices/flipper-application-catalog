@@ -5,8 +5,8 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/graycoderep/Embraco-Starter.git
-    commit_sha: 7be623d2edf8133ae8754f7159972703163e5252
-  subdir: .
+    commit_sha: 941a5d4fae8bd48a1c2f89b668dd037c92e6a2b0
+  subdir: src
 
 app:
   # Explicit values to avoid FAM fallbacks
@@ -34,6 +34,6 @@ app:
   categories:
     - Tools
 
-  screenshots:
-    - screenshot1.png
-    - screenshot2.png
+screenshots:
+  - media/screenshot1.png
+  - media/screenshot2.png
