@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/Next-Flip/Momentum-Apps.git
-    commit_sha: d2552a28524abc28f36e74ea6f9f7f38577738a2
+    commit_sha: 72f377e8d104181260511079c91a443bff9c4721
     subdir: nfc_maker
 description: "@.catalog/README.md"
 changelog: "@.catalog/CHANGELOG.md"
