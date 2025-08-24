@@ -1,0 +1,17 @@
+# PR this file to: https://github.com/flipperdevices/flipper-application-catalog/
+# applications/Sub-GHz/flipper_share/manifest.yml
+
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/lomalkin/flipper-zero-apps.git
+    commit_sha: 5324f52d283df12d2bec8e007bf5b4e10cddc7b7
+    subdir: flipper_share
+description: "@README.md"
+changelog: "@CHANGELOG.md"
+screenshots:
+  - screenshots/1.png
+  - screenshots/2.png
+  - screenshots/3.png
+  - screenshots/4.png
+
