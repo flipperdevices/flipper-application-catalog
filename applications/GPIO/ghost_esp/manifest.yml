@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/jaylikesbunda/ghost_esp_app.git
-    commit_sha: 0a2a2215c9e03908c827ade4215f78523b38715b
+    commit_sha: fdef404983c38778c5602b30f37f6c9586f95aea
 name: "[ESP32] Ghost ESP"
 id: "ghost_esp"
 version: "1.4"
