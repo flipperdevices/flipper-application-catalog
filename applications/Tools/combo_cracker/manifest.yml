@@ -11,7 +11,7 @@ screenshots:
 short_description: 'Crack combo locks in 8 attempts or less'
 sourcecode:
   location:
-    commit_sha: 4b1ca95eec26ce9069522c92e988bfc7a83137ed
+    commit_sha: a1325a583d5e34320f567e87100f87dd4a0e5c6a
     origin: https://github.com/CharlesTheGreat77/ComboCracker-FZ.git
     subdir:
   type: git
