@@ -2,10 +2,10 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/Stichoza/flipper-nearby-files.git
-    commit_sha: 5190ebaa5041e3d00f5ff1235ad6fb9f5374d2dd
+    commit_sha: 9eba57bccd79f15b1e90cbdb914e5671071ec192
 name: "Nearby Files"
 id: "nearby_files"
-version: "1.3"
+version: "1.5"
 author: "@Stichoza"
 short_description: "GPS-enabled file browser that displays files sorted by distance from your current location."
 description: "@.catalog/README.md"
