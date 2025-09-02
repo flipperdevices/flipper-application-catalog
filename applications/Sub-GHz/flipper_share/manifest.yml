@@ -9,7 +9,6 @@ sourcecode:
     origin: https://github.com/lomalkin/flipper-zero-apps.git
     commit_sha: aebcf568d380ead2ce32edb8bb22e08ac7de3823
     subdir: flipper_share
-description: "@README.md"
 description: "@README_catalog.md"
 changelog: "@CHANGELOG.md"
 screenshots:
