@@ -2,10 +2,10 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/xMasterX/all-the-plugins.git
-    commit_sha: 70250cad140b6526fe20bfe4d64e6538ad8bb980
+    commit_sha: 1066d17ad1e8fbf75cea5c6612d79ba539ec8a33
     subdir: apps_source_code/rootoflife
 description: "A zen-puzzle game for FlipperZero, puzzle made on GlobalGameJam23 (theme: Roots)"
-changelog: "v1.0 - Initial release, v1.1 - Various important fixes, v1.2 - Sync updates and latest API support, v1.3 - Latest API fix"
+changelog: "v1.0 - Initial release, v1.1 - Various important fixes, v1.2 - Sync updates and latest API support, v1.3 - Latest API fix, v1.4 - Sync with latest version"
 author: "@Xorboo"
 screenshots:
   - "./img/2.png"
