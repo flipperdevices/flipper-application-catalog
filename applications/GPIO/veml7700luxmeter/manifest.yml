@@ -1,0 +1,14 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/kamylwnb/Flipper-zero-app-VEML7700.git
+    commit_sha: 7ab6ac3c6711d844739627c1a8dd0615757bfa18
+
+short_description: An application for measuring light intensity using the VEML7700 sensor.
+
+description: "@README.md"
+changelog: "@docs/changelog.md"
+
+screenshots:
+  - screenshots/screenshot1.png
+  - screenshots/screenshot2.png
