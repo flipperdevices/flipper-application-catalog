@@ -10,5 +10,6 @@ description: "@README.md"
 changelog: "@docs/changelog.md"
 
 screenshots:
-  - screenshots/1.jpg
-  - screenshots/2.jpg
+  - screenshots/1.png
+  - screenshots/2.png
+  - screenshots/3.png
