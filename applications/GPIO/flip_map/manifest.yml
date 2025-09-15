@@ -2,13 +2,13 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/jblanked/FlipMap.git
-    commit_sha: d5192efcb07fd17645414d79106281fc351cee26
+    commit_sha: a7f5ef4468bd873d5cb31eb4f14a3db71f28ef33
 short_description: "Find Flipper Zero Users."
 description: "@README.md"
 changelog: "@CHANGELOG.md"
 author: "JBlanked"
 name: "FlipMap"
-version: "0.1"
+version: "0.2"
 id: "flip_map"
 category: "GPIO"
 targets: ['all']
@@ -16,3 +16,4 @@ icon: "app.png"
 screenshots:
   - "assets/home.png"
   - "assets/settings.png"
+  - "assets/warning.png"
