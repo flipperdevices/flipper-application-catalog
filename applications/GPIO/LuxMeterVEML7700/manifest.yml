@@ -9,7 +9,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/kamylwnb/Flipper-zero-app-VEML7700
-    commit_sha: 7ab6ac3c6711d844739627c1a8dd0615757bfa18
+    commit_sha: b2f61f1613d56ddabe7eb9bef8386be98be1c49a
     subdir: .
 short_description: "Lux meter app using VEML7700 sensor for Flipper Zero"
 description: |
