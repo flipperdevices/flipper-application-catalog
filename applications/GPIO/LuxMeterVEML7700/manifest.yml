@@ -1,4 +1,4 @@
-id: "LuxMeterVEML7700"
+id: "veml7700luxmeter"
 name: "VEML7700 Lux Meter"
 author: "@Dr.Mosfet"
 category: "GPIO"
