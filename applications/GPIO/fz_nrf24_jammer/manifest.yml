@@ -1,0 +1,33 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/W0rthlessS0ul/FZ_nRF24_jammer.git
+    commit_sha: 3e27819eb4060912bf479fb3071665dae15a1391
+    subdir: src/nRF24_jammer
+short_description: Allows to jam protocols at 2.4GHz such as Bluetooth, Ble, Drones, WiFi and Zigbee
+description: |
+  # FZ nRF24 Jammer
+
+  A powerful signal jamming tool for Flipper Zero that uses nRF24 modules to create targeted interference across multiple wireless protocols. Capable of disrupting Bluetooth, BLE 📱, drones 🚁, Wi-Fi 📶, and Zigbee 📡 signals.
+
+  **Features:**
+  - Multi-protocol jamming capability
+  - Customizable channel selection  
+  - Dual nRF24 module support
+
+  **📖 Complete documentation with wiring diagrams and build guides:**  
+  **[https://github.com/W0rthlessS0ul/FZ_nRF24_jammer](https://github.com/W0rthlessS0ul/FZ_nRF24_jammer)**
+
+  *Includes detailed schematics, component lists, and usage examples.*
+changelog: V1.4.0 - Added the ability to connect two nF24 modules (Thanks to [djmuerteitm](https://github.com/djmuerteitm) for the idea)
+author: W0rthlessS0ul
+screenshots:
+  - screenshots/Bluetooth_jam.png
+  - screenshots/Status.png
+  - screenshots/Bluetooth.png
+  - screenshots/Drones.png
+  - screenshots/WiFi.png
+  - screenshots/BLE.png
+  - screenshots/Zigbee.png
+  - screenshots/Misc.png
+
