@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/xMasterX/all-the-plugins.git
-    commit_sha: 010759ab6a69bd47558934d525737efe6f81bec8
+    commit_sha: 5df9cce47c200945c03e1a5ec8139b0c23d27e71
     subdir: apps_source_code/uhf_rfid
 description: "@./catalog/docs/Readme.md"
 changelog: "@./catalog/docs/Changelog.md"
