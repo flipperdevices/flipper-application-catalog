@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/xMasterX/all-the-plugins.git
-    commit_sha: 5df9cce47c200945c03e1a5ec8139b0c23d27e71
+    commit_sha: a2004a3539c50ced20f6f24e61ba17c1dd86460b
     subdir: apps_source_code/usping
 description: "@./catalog/docs/Readme.md"
 changelog: "@./catalog/docs/Changelog.md"
