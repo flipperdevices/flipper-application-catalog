@@ -1,0 +1,14 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/LucaTomei/flipper-miband-nfc-writer.git
+    commit_sha: 447f41f86f1209d7f5b0a326c806be4d632a52c7
+description: "@.catalog/README.md"
+changelog: "@.catalog/CHANGELOG.md"
+author: "Luca Tomei"
+category: "RFID"
+tags:
+  - nfc
+  - miband
+  - mifare
+  - writer
