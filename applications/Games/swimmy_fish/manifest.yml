@@ -1,0 +1,11 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/Invizabel/fish
+    commit_sha: b00f8ba
+    subdir: FlipperZero
+short_description: "A game about a fish"
+changelog: "@./FlipperZero/docs/changelog.md"
+screenshots: "@./FlipperZero/screenshots/screenshot.png"
+sourcecode: "@./FlipperZero/src/fish.cpp"
+version: 1.0
