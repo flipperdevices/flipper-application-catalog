@@ -1,0 +1,11 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/xMasterX/all-the-plugins.git
+    commit_sha: a2004a3539c50ced20f6f24e61ba17c1dd86460b
+    subdir: apps_source_code/wire_tester
+description: "@./catalog/docs/Readme.md"
+changelog: "@./catalog/docs/Changelog.md"
+screenshots:
+  - "./catalog/screenshots/1.png"
+
