@@ -6,7 +6,7 @@ sourcecode:
     ## Specify the git URL of your repository
     origin: https://github.com/lab-401/fzDigiLab
     ## Put the full commit SHA of the commit with the app's code you want to submit
-    commit_sha: 3780cc1e63d07415976a949886fc5f3e92f0071a
+    commit_sha: 0b48d832849d74b4e75cfcfca0ddf13a877b5b95
     ## (Optional) If your app is located in a subdirectory of the repository, specify it here
     subdir: ./401DigiLabApp
 ## If application.fam contains 'fap_description', it will be used as a short description
