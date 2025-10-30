@@ -2,10 +2,11 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/RyanAboueljoud/Fire-String.git
-    commit_sha: 8a890b03fa1b2d848132c7ccd82d534d62420bc0
+    commit_sha: 428ccce8134b17e67bb6943555ac1f3e5529472b
 description: "@./.catalog/README.md"
 changelog: "@./.catalog/CHANGELOG.md"
 screenshots:
   - "./.catalog/screens/screen0.png"
   - "./.catalog/screens/screen1.png"
   - "./.catalog/screens/screen2.png"
+  - "./.catalog/screens/screen3.png"
