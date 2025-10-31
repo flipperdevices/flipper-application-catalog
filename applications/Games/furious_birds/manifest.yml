@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/bmstr-ru/furious-birds.git
-    commit_sha: 0ba1fca8ac69ec7bf6f9bee19ee30bcae5e03833
+    commit_sha: 66f7d30038d8523abedf5a38304429cdb65157b3
 short_description: Furious Birds game
 description: "@README-manifest.md"
 changelog: "@changelog.md"
