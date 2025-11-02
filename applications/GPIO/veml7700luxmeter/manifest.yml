@@ -2,14 +2,14 @@ id: "veml7700luxmeter"
 name: "VEML7700 Lux Meter"
 author: "@Dr.Mosfet"
 category: "GPIO"
-version: "1.0"
+version: "1.1"
 targets:
   - "all"
 sourcecode:
   type: git
   location:
     origin: https://github.com/kamylwnb/Flipper-zero-app-VEML7700
-    commit_sha: 81b0d2b63cbd75cafbba8cd94807d4a3606007ba
+    commit_sha: 5c014fa615f3b1442dc6f3759fe50bb6312aaaac
     subdir: .
 short_description: "Lux meter app using VEML7700 sensor for Flipper Zero"
 description: |
