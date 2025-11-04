@@ -9,7 +9,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/kamylwnb/bme680_flipper_zero
-    commit_sha: 5cd31ff824d91eab99b213be2993431c9f16b7da
+    commit_sha: dc92b151bcb4f1ce413dd7051f28c55a15b675b8
 short_description: "BME680 sensor via I2C"
 description: |
   This is a comprehensive environmental monitoring application 
