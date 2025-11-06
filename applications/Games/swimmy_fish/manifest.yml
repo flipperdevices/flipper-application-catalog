@@ -6,7 +6,7 @@ sourcecode:
     subdir: FlipperZero
 short_description: "A game about a fish"
 changelog: "@./docs/changelog.md"
-description: "Swimmy Fish. One goal, Survive. One button, Enterssss"
+description: "Swimmy Fish. One goal, Survive. One button, Enter"
 source_file:
   - src/fish.cpp
 screenshots:
