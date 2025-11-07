@@ -11,6 +11,7 @@ license: MIT
 homepage: https://github.com/Haw8411/magic-band-plus-lights
 source_code_url: https://github.com/Haw8411/magic-band-plus-lights
 icon: https://raw.githubusercontent.com/Haw8411/magic-band-plus-lights/main/icons/main.png
+changelog: "https://github.com/Haw8411/magic-band-plus-lights/blob/main/changelog.md"
 screenshots:
   - https://raw.githubusercontent.com/Haw8411/magic-band-plus-lights/main/screenshots/Green.png
   - https://raw.githubusercontent.com/Haw8411/magic-band-plus-lights/main/screenshots/TasteRainbow.png
