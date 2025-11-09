@@ -1,0 +1,19 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/jamisonderek/flipper-zero-tutorials
+    commit_sha: ef5dfb57fbb559fe760c15dcfc6c4b6abbd19b15
+    subdir: gpio/wiegand
+category: "GPIO"
+short_description: "Application for reading and sending Wiegand signals. Connect D0, D1, GND wires to Flipper Zero to read signals."
+id: "wiegand_reader"
+description: "@docs/README.md"
+changelog: "@docs/CHANGELOG.md"
+author: "Derek Jamison (@CodeAllNight)"
+version: "1.4"
+screenshots:
+  - "docs/image0.png"
+  - "docs/image1.png"
+  - "docs/image2.png"
+  - "docs/image3.png"
+  - "docs/image4.png"

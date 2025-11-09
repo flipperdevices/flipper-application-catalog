@@ -1,0 +1,20 @@
+author: '@paul-sopin'
+category: 'Tools'
+description: '@README.md'
+changelog: '@changelog.md'
+icon: 'eye_saver.png'
+id: 'eye_saver'
+name: 'Eye Saver'
+screenshots:
+  - 'screenshots/screenshot_1.png'
+  - 'screenshots/screenshot_2.png'
+  - 'screenshots/screenshot_3.png'
+  - 'screenshots/screenshot_4.png'
+short_description: 'Simple eye strain prevention tool using the 20-20-20 rule.'
+sourcecode:
+  location:
+    commit_sha: f67ad0ae9a173ec0683ac1a570b7d1d4dc8bc689
+    origin: https://github.com/paul-sopin/flipper-eye-saver.git
+    subdir:
+  type: git
+version: 0.1
