@@ -3,8 +3,8 @@ sourcecode:
   location:
     origin: https://github.com/osmangokc/flipper_serial_chat.git
     commit_sha: 2da854a8500312afd8c0c82170e638dc86b45133
-description: "../@README.md"
-changelog: "../@changelog.md"
+description: "@README.md"
+changelog: "@changelog.md"
 screenshots:
   - "./screenshots/1.png"
   - "./screenshots/2.png"
