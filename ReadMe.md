@@ -23,3 +23,10 @@ If you want to report abuse or violation of your rights, please open an issue in
 - `applications` - Apps Catalog manifests
 - `documentation` - Apps Catalog documentation, including notes on the build process and architecture
 - `tools` - CI/CD tools for workflow automation: verifying app manifest and its code, creating app code bundles
+
+## Screen Shots
+![image info](https://github.com/osmangokc/flipper_serial_chat/blob/main/screenshots/1.png)
+
+![image info](https://github.com/osmangokc/flipper_serial_chat/blob/main/screenshots/2.png)
+
+![image info](https://github.com/osmangokc/flipper_serial_chat/blob/main/screenshots/3.png)
