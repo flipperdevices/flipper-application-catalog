@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/0xchocolate/flipperzero-wifi-marauder.git
-    commit_sha: 10f31cdf836ee08039e05809eafe39006d1788df
+    commit_sha: 5dc2fd6828a0ceede3145ca434e1d6c36747a723
 id: "esp32_wifi_marauder"
 category: "GPIO"
 short_description: "Companion app for interfacing with ESP32 WiFi Marauder"
