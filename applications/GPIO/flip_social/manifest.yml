@@ -2,13 +2,13 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/jblanked/FlipSocial.git
-    commit_sha: a8042eef6a8ac9a108e0f48ed9f0622fe46abcd3
+    commit_sha: 78b181e40651abd2ef4e9a2cb88cf74fdd3a0924
 short_description: "Social media platform for the Flipper Zero."
 description: "@./assets/README.md"
 changelog: "@./assets/CHANGELOG.md"
 author: "JBlanked"
 name: "FlipSocial"
-version: "2.0.3"
+version: "2.0.4"
 id: "flip_social"
 category: "GPIO"
 targets: ['all']
