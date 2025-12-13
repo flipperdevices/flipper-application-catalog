@@ -1,0 +1,20 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/jblanked/FlipTelegram.git
+    commit_sha: a4f7aece3be03c11ab3805879fcf6993d7193328
+short_description: "Flipper Zero Telegram Client"
+description: "@README.md"
+changelog: "@CHANGELOG.md"
+author: "JBlanked"
+name: "FlipTelegram"
+version: "1.0"
+id: "flip_telegram"
+category: "GPIO"
+targets: ['all']
+icon: "app.png"
+screenshots:
+  - "assets/home.png"
+  - "assets/messages.png"
+  - "assets/settings.png"
+  - "assets/send.png"
