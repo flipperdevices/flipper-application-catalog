@@ -1,0 +1,12 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/bettse/weebo.git
+    commit_sha: a87b998c65dd00c04b90994372746e8736488142
+description: "@.catalog/README.md"
+changelog: "@.catalog/changelog.md"
+author: "bettse"
+screenshots:
+  - ".catalog/screenshots/menu.png"
+  - ".catalog/screenshots/emulate.png"
+  - ".catalog/screenshots/info.png"
