@@ -1,0 +1,12 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/sokogen/flipperzero-htw-ac-remote.git
+    commit_sha: 5d62ffcd4cc2ef5d645ad9162004450a656916bf
+short_description: "HTW air conditioner IR remote control"
+description: "@./README_CATALOG.md"
+changelog: "@./CHANGELOG.md"
+screenshots:
+  - "./docs/screenshots/main.png"
+  - "./docs/screenshots/timer.png"
+  - "./docs/screenshots/settings.png"
