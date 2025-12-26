@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/apfxtech/FlipperCatacombs.git
-    commit_sha: 6e17781cf971fd67d5f03c5556d99417cba0c57a
+    commit_sha: 5ac1df72dada01bf520725cfcc2c317236232742
 
 short_description: A first-person dungeon crawler ported to Flipper Zero.
 description: "@APPSTORE.md"
