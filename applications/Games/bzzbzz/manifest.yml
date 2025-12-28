@@ -1,0 +1,46 @@
+# This is a sample manifest.yml file for submission to the Flipper Apps Catalog
+# You would need to update the repository URL and commit SHA when publishing
+
+appid: bzzbzz
+name: BzzBzz
+author: Koray Er
+version: 0.2
+category: Games
+short_description: Rhythm matching game where you repeat vibration patterns
+description: |
+  Bzz Bzz is a rhythm game where players must match vibration patterns by pressing the OK button at the right times.
+
+  Game Features:
+  - Fixed 5-element rhythm patterns
+  - Accuracy percentage display showing how well you matched the pattern timing
+  - Variable pauses between vibrations (200-800ms) create the rhythm pattern
+  - Score tracking with consecutive and total correct patterns
+  - Hi-score tracking
+  - No game over - game continues indefinitely
+  - One-button gameplay using only the OK button
+
+repository: https://github.com/ikiruneo/BzzBzz
+commit_sha: ec22212b1890fb553ab0726a58daf62cac617c95
+
+
+# Files that are part of the app (required for the app to function)
+files:
+  - path: application.fam
+    size: auto
+  - path: BzzBzz.c
+    size: auto
+  - path: bzz_bzz.png
+    size: auto
+  - path: images/game.png
+    size: auto
+  - path: images/start.png
+    size: auto
+  - path: README.md
+    size: auto
+  - path: changelog.md
+    size: auto
+
+# Screenshots for the Apps Catalog
+screenshots:
+  - path: screenshots/screenshot1.png
+  - path: screenshots/screenshot2.png
