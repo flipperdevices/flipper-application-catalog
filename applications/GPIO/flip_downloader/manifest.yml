@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/jblanked/FlipDownloader.git
-    commit_sha: 1bc1c048139088592fbdf23d906e77f70ec14c2a
+    commit_sha: c10a100400d014ac70a9d228ae395fcab2ee3635
 short_description: "Download apps and assets directly to your Flipper Zero using WiFi."
 description: "@./assets/README.md"
 changelog: "@./assets/CHANGELOG.md"
