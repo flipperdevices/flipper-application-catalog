@@ -1,0 +1,25 @@
+id: listem
+name: ListEM
+author: Clawzman
+category: Tools
+version: 1.0
+short_description: Generates wordlists for RFID, NFC, and iButton Fuzzer.
+
+screenshots:
+  - 'screenshots/main_menu.jpg'
+  - 'screenshots/prefix_select.jpg'
+  - 'screenshots/generating.jpg'
+
+description: '@./README.md'
+changelog: '@./CHANGELOG.md'
+
+icon: icon.png
+
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/Clawzman/Flipper_ListEM
+
+binary:
+  type: release
+  location: https://github.com/Clawzman/Flipper_ListEM/releases/download/v1.0/listem.fap
