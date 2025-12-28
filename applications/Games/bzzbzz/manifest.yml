@@ -1,36 +1,20 @@
-appid: bzzbzz
-name: BzzBzz
-author: Koray Er
-version: 0.2
-category: Games
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/ikiruneo/BzzBzz
+    commit_sha: 156eff45cacad44ada891438fdbe71aa62ce0e4c
+
 short_description: Haptic rhythm-matching game
 description: |
-Haptic rhythm-matching game focusing on tactile feedback rather than visual cues.
+  Haptic rhythm-matching game focusing on tactile feedback rather than visual cues.
 
-- The app generates a 5-step vibration sequence.
-- Gaps between vibrations are randomized between 200, 500, and 800ms.
-- Users must replicate the timing using any navigation key or the OK button.
-- Accuracy is calculated based on timing offsets; a >60% threshold is required to progress.
-- Patterns auto-repeat after 5 seconds of inactivity.
+  - The app generates a 5-step vibration sequence.
+  - Gaps between vibrations are randomized between 200, 500, and 800ms.
+  - Users must replicate the timing using any navigation key or the OK button.
+  - Accuracy is calculated based on timing offsets; a >60% threshold is required to progress.
+  - Patterns auto-repeat after 5 seconds of inactivity.
 
-repository: https://github.com/ikiruneo/BzzBzz
-commit_sha: 156eff45cacad44ada891438fdbe71aa62ce0e4c
-
-files:
-  - path: application.fam
-    size: auto
-  - path: BzzBzz.c
-    size: auto
-  - path: bzz_bzz.png
-    size: auto
-  - path: images/game.png
-    size: auto
-  - path: images/start.png
-    size: auto
-  - path: README.md
-    size: auto
-  - path: changelog.md
-    size: auto
+changelog: "@changelog.md"
 
 screenshots:
   - path: screenshots/screenshot1.png
