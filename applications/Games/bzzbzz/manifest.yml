@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/ikiruneo/BzzBzz
-    commit_sha: 156eff45cacad44ada891438fdbe71aa62ce0e4c
+    commit_sha: 83c40bb7833b0039429bbc08e94cfa2f51e3f403
 
 short_description: Haptic rhythm-matching game
 description: |
