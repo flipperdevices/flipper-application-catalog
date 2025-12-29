@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/ikiruneo/BzzBzz
-    commit_sha: 83c40bb7833b0039429bbc08e94cfa2f51e3f403
+    commit_sha: 1ecda09b52e6171710a262f67d69c50be8e7548f
 
 short_description: Haptic rhythm-matching game
 description: |
@@ -10,9 +10,8 @@ description: |
 
   - The app generates a 5-step vibration sequence.
   - Gaps between vibrations are randomized between 200, 500, and 800ms.
-  - Users must replicate the timing using any navigation key or the OK button.
-  - Accuracy is calculated based on timing offsets; a >60% threshold is required to progress.
-  - Patterns auto-repeat after 5 seconds of inactivity.
+  - Users must replicate the timing using the OK button.
+  - Accuracy is calculated based on timing offsets; a >=50% threshold is required to progress.
 
 changelog: "@changelog.md"
 
