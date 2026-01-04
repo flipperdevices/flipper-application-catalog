@@ -1,7 +1,7 @@
 sourcecode:
   type: git
   location:
-    origin: https://github.com/ikiruneo/BzzBzz
+    origin: https://github.com/ikiruneo/bzzbzz
     commit_sha: 1ecda09b52e6171710a262f67d69c50be8e7548f
 
 short_description: Haptic rhythm-matching game
