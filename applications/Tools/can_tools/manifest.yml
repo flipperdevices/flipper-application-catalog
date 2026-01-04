@@ -4,12 +4,12 @@ sourcecode:
     origin: https://github.com/MatthewKuKanich/FlipperCANTools.git
     commit_sha: 8fa1fcf043c308921be4818f7e4e80bfe062a438
     subdir: can_tools
-description: "./can_tools/README.md"
-changelog: "./can_tools/changelog.md"
+description: "./README.md"
+changelog: "./changelog.md"
 author: "@MatthewKuKanich"
 screenshots:
-  - "./can_tools/screenshots/1.png"
-  - "./can_tools/screenshots/2.png"
-  - "./can_tools/screenshots/3.png"
-  - "./can_tools/screenshots/4.png"
+  - "./screenshots/1.png"
+  - "./screenshots/2.png"
+  - "./screenshots/3.png"
+  - "./screenshots/4.png"
 
