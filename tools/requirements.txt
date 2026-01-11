@@ -1,4 +1,4 @@
-dataclass-wizard==0.22.3
+dataclass-wizard==0.26.0
 Pillow==10.4.0
 PyYAML==6.0.2
 Markdown==3.7

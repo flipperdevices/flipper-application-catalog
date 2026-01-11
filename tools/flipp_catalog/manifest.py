@@ -4,6 +4,7 @@ from typing import Dict, List
 import logging
 
 from dataclass_wizard import YAMLWizard
+from . import BundlerException
 
 
 @dataclass

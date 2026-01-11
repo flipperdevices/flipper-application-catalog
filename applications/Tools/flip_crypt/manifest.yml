@@ -1,0 +1,20 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/Tyl3rA/FlipCrypt.git
+    commit_sha: 3b87663616c5322173f4ee2212bc4ab99d424530
+description: "@README.md"
+changelog: "@docs/CHANGELOG.md"
+author: "@Tyl3rA"
+screenshots:
+  - "./screenshots/screenshot1.png"
+  - "./screenshots/screenshot2.png"
+  - "./screenshots/screenshot3.png"
+  - "./screenshots/screenshot4.png"
+  - "./screenshots/screenshot5.png"
+  - "./screenshots/screenshot6.png"
+  - "./screenshots/screenshot7.png"
+  - "./screenshots/screenshot8.png"
+  - "./screenshots/screenshot9.png"
+  - "./screenshots/screenshot10.png"
+  - "./screenshots/screenshot11.png"

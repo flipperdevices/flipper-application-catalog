@@ -1,15 +1,15 @@
 sourcecode:
   type: git
   location:
-    origin: https://github.com/jblanked/VGM-Library.git
-    commit_sha: aaa68ced8709ff413b5353290a7dbcf86b0d4f4e
-    subdir: engine/App
+    origin: https://github.com/jblanked/pico-game-engine.git
+    commit_sha: 7b13e1d2724b7c4fcb22ab0a77313fe5bdc1d2e4
+    subdir: src/FlipperZeroApp
 short_description: "Companion app for the VGM Game Engine"
 description: "This app allows you to use your Flipper Zero's d-pad as input in games created with the VGM Game Engine."
-changelog: "v1.0: Initial release"
+changelog: "v1.0: Initial release v1.1: Fixed UART button input"
 author: "JBlanked"
 name: "[VGM] Game Remote"
-version: "1.0"
+version: "1.1"
 id: "vgm_game_remote"
 category: "GPIO"
 targets: ['all']

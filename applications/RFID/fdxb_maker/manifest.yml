@@ -1,0 +1,12 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/snowsign/fdxb-maker.git
+    commit_sha: 506a5d58c2c2ba6d13a11608e520d8ddb57f6540
+description: "@README.md"
+changelog: "@changelog.md"
+screenshots:
+  - screenshots/country.png
+  - screenshots/national.png
+  - screenshots/extra_info.png
+  - screenshots/warning.png

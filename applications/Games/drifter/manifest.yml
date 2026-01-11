@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/jean-edouard/flipperzero-drifter.git
-    commit_sha: f3db14353fdfb0aeee82402097cce1a53c7c0d9c
+    commit_sha: 95e395c4eaa8b3284ca132c4ebf67b1d3c8639b1
 changelog: "@./CHANGELOG.md"
 description: "@./README.md"
 author: "Jed Lejosne"

@@ -1,0 +1,11 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/Erbonator3000/Flipper-Zero-Space-Impact-II
+    commit_sha: 5f618a1bb269cfea799699e7fe0f6567e2a8f9c9
+short_description: Space Impact II clone
+description: |
+  Clone of classic mobile phone game Space Impact II
+changelog: "@changelog.md"
+screenshots:
+  - screenshots/gameplay.png

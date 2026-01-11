@@ -1,0 +1,10 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/Erbonator3000/flipper-fighter-jet
+    commit_sha: 50b8213eb48271ee5944db90a126aa818e3b3388
+short-description: "Fighter Jet game."
+description: "Game about flying a fighter jet anf hunting down enemies."
+changelog: "@changelog.md"
+screenshots:
+  - screenshots/gameplay.png

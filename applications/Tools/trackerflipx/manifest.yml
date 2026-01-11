@@ -7,13 +7,14 @@ sourcecode:
     ## Specify the git URL of your repository here
     origin: https://github.com/MassivDash/flipper-tracker.git
     ## Put the fill commit SHA of the commit with the app's code you want to submit
-    commit_sha: fffca337585861a6b6ad02eb52405f509065452f
+    commit_sha: fdd6b7d4ec6aabb71cef6e919061a59c88d29844
     ## If your app is located in a subdirectory of the repository, specify it here
     # subdir: .
 ## If applicaion.fam contains 'fap_descriptiopn', it will be used as a short description
 # short_description: A short app description.
 ## For description and changelog you can use limited markdown syntax.
 ## you can also specify a file from your app's repository as a source with @
+version: 1.1
 description: |
   Flipper Time Tracker is an application for flipperzero device that allows the user to track multiple tasks at the same time.
 author: "@MassivDash (https://spaceout.pl)"

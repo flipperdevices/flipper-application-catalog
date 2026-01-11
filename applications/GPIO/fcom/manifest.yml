@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/TylerWilley/flipper-f-com
-    commit_sha: 3269702e5949680e9d71554c92c5962d83228723
+    commit_sha: 36fd7080ba98871b50ae6925feb50826dd8d3c7f
 id: "fcom"
 category: "GPIO"
 short_description: "App for interacting with digimon virtual pets"
