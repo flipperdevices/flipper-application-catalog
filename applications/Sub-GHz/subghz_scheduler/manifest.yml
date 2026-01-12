@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/shalebridge/flipper-subghz-scheduler.git
-    commit_sha: b3d75dad545255cf3d6762be2b07626ed117fc85
+    commit_sha: f0c6c8a2bb4c248e4db7f080074ceae6e61fbd42
 name: "Sub-GHz Scheduler"
 id: "subghz_scheduler"
 version: "2.3"
