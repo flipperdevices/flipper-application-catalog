@@ -1,0 +1,15 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/w84death/morse-master.git
+    commit_sha: f6028bcfcbe6f14e94e6c4684db45759d11cc1b1
+description: "A comprehensive Morse code learning and practice app."
+version: 1.0
+changelog: "@CHANGELOG.md"
+author: "Krzysztof Krystian Jankowski"
+screenshots:
+  - "media/titlescreen.png"
+  - "media/menu.png"
+  - "media/learn.png"
+  - "media/practice.png"
+  - "media/help.png"

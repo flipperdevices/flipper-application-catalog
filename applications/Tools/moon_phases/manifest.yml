@@ -1,0 +1,12 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/w84death/moon-phases.git
+    commit_sha: 5d6380dccf5a7fa56abac6593a6d90c3e6777b95
+description: "A simple application to display the current phase of the moon along with additional lunar information."
+version: 1.1
+changelog: "@CHANGELOG.md"
+author: "Krzysztof Krystian Jankowski"
+screenshots:
+  - "screenshots/screen1.png"
+  - "screenshots/screen2.png"

@@ -1,0 +1,12 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/qw3rtty/flipperzero-qrcode-generator.git
+    commit_sha: c1d2591ef69e93eef5dc681ac3b5c1370c70a5d4
+description: "@./.catalog/README.md"
+changelog: "@./.catalog/CHANGELOG.md"
+screenshots:
+  - screenshots/Screenshot-menu.png
+  - screenshots/Screenshot-entered-text.png
+  - screenshots/Screenshot-saved-qrcodes.png
+  - screenshots/Screenshot-open-saved-qrcode.png

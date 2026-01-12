@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/DarkFlippers/SubGHz_Remote.git
-    commit_sha: b6ccd507c2fe24419a42de11af6961659a425141
+    commit_sha: 841f36b269a467a27b26d55223e1d80520e279a0
 id: "subghz_remote_ofw"
 description: "@./catalog/docs/Readme.md"
 changelog: "@./catalog/docs/Changelog.md"

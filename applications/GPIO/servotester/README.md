@@ -1,3 +1,1 @@
-## Status
-
-[![servotester](https://catalog.flipperzero.one/application/servotester/widget)](https://catalog.flipperzero.one/application/servotester/page)
+Simple servo tester application with PMW output on pin A7.

@@ -1,0 +1,12 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/michaelbaisch/uv_meter.git
+    commit_sha: 4c32e20ca842201191fb77ded98b1c0b8dbc81f0
+description: "@DESCRIPTION.md"
+changelog: "@CHANGELOG.md"
+screenshots:
+  - screenshots/data_1.png
+  - screenshots/data_2.png
+  - screenshots/wiring.png
+  - screenshots/settings.png
