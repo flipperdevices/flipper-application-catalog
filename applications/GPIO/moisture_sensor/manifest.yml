@@ -3,6 +3,14 @@ sourcecode:
   location:
     origin: https://github.com/smallwat3r/flipperzero-moisture-sensor
     commit_sha: 9895209b2609915fefe099256cf8fa3031af74a7
+name: Moisture Sensor
+id: moisture_sensor
+author: smallwat3r
+category: GPIO
+version: "1.0"
+icon: icons/icon.png
+targets:
+  - all
 short_description: Read values from a capacitive moisture sensor v1.2
 description: "@README.md"
 changelog: "@changelog.md"
