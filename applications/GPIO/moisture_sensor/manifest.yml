@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/smallwat3r/flipperzero-moisture-sensor
-    commit_sha: 716c4a7350bc024c1c6dcc5443c1eb3fdd0a521b
+    commit_sha: 492098ba7d229fe52ea011ee6753ae957f0ed805
 name: Moisture Sensor
 id: moisture_sensor
 author: smallwat3r
