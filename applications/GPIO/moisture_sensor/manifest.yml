@@ -1,0 +1,11 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/smallwat3r/flipperzero-moisture-sensor
+    commit_sha: fe128c09a37bbb4c09417d1e0e92423d40d859f6
+short_description: Read values from a capacitive moisture sensor
+description: "@README.md"
+changelog: "@changelog.md"
+screenshots:
+  - screenshots/sensor.png
+  - screenshots/calibration.png
