@@ -2,14 +2,14 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/jblanked/Free-Roam.git
-    commit_sha: 855a4740d4f99ae7ea154e00ae4928077a1afa39
+    commit_sha: e79a3df041a7ccf89b7b90550c4ea9d644739a8c
     subdir: FlipperZero
 short_description: "3D Open World Multiplayer Game"
 description: "@README.md"
 changelog: "@CHANGELOG.md"
 author: "JBlanked"
 name: "Free Roam"
-version: "0.2"
+version: "0.3.2"
 id: "free_roam"
 category: "GPIO"
 targets: ['all']
