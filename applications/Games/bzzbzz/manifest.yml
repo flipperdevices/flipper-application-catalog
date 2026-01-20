@@ -16,5 +16,5 @@ description: |
 changelog: "@changelog.md"
 
 screenshots:
-  - path: screenshots/screenshot1.png
-  - path: screenshots/screenshot2.png
+  - screenshots/screenshot1.png
+  - screenshots/screenshot2.png
