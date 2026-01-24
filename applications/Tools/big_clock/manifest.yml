@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/Eris-Margeta/flipper-apps.git
-    commit_sha: f992d88e5d6d622612e56130bff86fd414e9c7d0
+    commit_sha: c7f6661506607dedcb7a0cd95746f737a680abdb
     subdir: apps/big-clock
 description: "@README.md"
 changelog: "@changelog.md"
