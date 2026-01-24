@@ -4,7 +4,7 @@ sourcecode:
     ## Specify the git URL of your repository
     origin: https://github.com/fgreil/mitzi-hirn.git
     ## Put the full commit SHA of the commit with the app's code you want to submit
-    commit_sha: 5ac9e6c537b21809bce3d2081ff48f9c62da4d0c
+    commit_sha: 11d1aa7426aa67c7df42e91b1513f1ce2147ccb3
     ## (Optional) If your app is located in a subdirectory of the repository, specify it here
     # subdir: .
 ## My application.fam contains 'fap_description', hope it will be used as a short description
