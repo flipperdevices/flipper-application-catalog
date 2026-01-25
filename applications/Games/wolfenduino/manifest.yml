@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/apfxtech/FlipperWolfenstein.git
-    commit_sha: 5113c2890f08babbe1f023e19ca3ef8a791ff10d
+    commit_sha: f09c354a614dbd8a394274ab2ef858cceb38ad42
 
 short_description: Wolfenduino is a demake of id Software's Wolfenstein 3D originally created for the Arduboy FX and ported to Flipper Zero.
 description: "@APPSTORE.md"
