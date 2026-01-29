@@ -7,7 +7,7 @@ category: "GPIO"
 short_description: "Application for reading temperature, humidity and pressure sensors like a DHT11/22, DS18B20, BMP280, HTU21 and more"
 description: "@README_CATALOG.md"
 changelog: "@CHANGELOG.md"
-version: "1.5"
+version: "1.8"
 screenshots:
   - ".flipcorg/gallery/1.png"
   - ".flipcorg/gallery/2.png"
