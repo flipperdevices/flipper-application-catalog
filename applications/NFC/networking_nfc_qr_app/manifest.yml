@@ -1,0 +1,20 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/DonJulve/Networking_NFC_QR_Flipper_Zero.git
+    commit_sha: "79e10efaa9ba9268dea6662e5c06d3b6788d6dbf"
+short_description: "Emulate NFC and display QR codes simultaneously"
+description: |
+  This application allows emulating an NFC card and displaying a QR code simultaneously on the Flipper Zero screen.
+  Ideal for networking to share contact info via two methods at once.
+  
+  Features:
+  - NFC Emulation: Loads .nfc files.
+  - QR Visualization: Displays .qrcode files.
+  - Dual Interface: QR on screen while NFC emulates.
+  
+  See full readme: https://github.com/DonJulve/Networking_NFC_QR_Flipper_Zero/blob/main/README_en.md
+changelog: "@.catalog/changelog.md"
+screenshots:
+  - .catalog/screenshots/menu.png
+  - .catalog/screenshots/app_running.png
