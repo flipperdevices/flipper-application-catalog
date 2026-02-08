@@ -2,9 +2,9 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/Matt-London/pause_timer.git
-    commit_sha: 16a989a31e4ba2c5884297a5408b7c9e1838ebb3
+    commit_sha: e6874a2bd75508e34a0c10a664496b204098b082
 
-short_description: Pause your TV after an ad ends if you are away.
+short_description: Pause your show when the ad break ends
 description: "@APPSTORE.md"
 changelog: "@CHANGELOG.md"
 screenshots:
