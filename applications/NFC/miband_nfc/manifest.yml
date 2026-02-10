@@ -1,14 +1,23 @@
-sourcecode:
-  type: git
-  location:
-    origin: https://github.com/LucaTomei/flipper-miband-nfc-writer.git
-    commit_sha: e5f20aaac389088b671c6c954675e81bb74f9e69
-description: "@.catalog/README.md"
-changelog: "@.catalog/CHANGELOG.md"
+id: miband_nfc_writer
+name: "MiBand NFC Writer"
+version: "1.0.0"
+category: "NFC"
+
+short_description: "Read, write and emulate NFC data on Xiaomi Mi Band devices using Flipper Zero."
+
+description: "@README_flipperlab.md"
+changelog: "@CHANGELOG.md"
+
 author: "Luca Tomei"
-category: "RFID"
+
 tags:
   - nfc
   - miband
   - mifare
   - writer
+
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/LucaTomei/flipper-miband-nfc-writer.git
+    commit_sha: 3b8129c32eaba9e851fa6c075ee079a8ba19e19c
