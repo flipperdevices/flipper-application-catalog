@@ -9,7 +9,7 @@ sourcecode:
   type: git
   location:
     origin: "https://github.com/kamylwnb/24cxxprog"
-    commit_sha: "01ad7c52328ff78829667fc785c29eb2736dcce"
+    commit_sha: "bfd0424e7585bb65b2bc2f592b54f2461d49ee0a"
 short_description: "EEPROM 24Cxx programmer via I2C"
 description: |
   A comprehensive EEPROM programmer application for the Flipper Zero
