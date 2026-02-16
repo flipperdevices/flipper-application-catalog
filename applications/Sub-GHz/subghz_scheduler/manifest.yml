@@ -2,11 +2,11 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/shalebridge/flipper-subghz-scheduler.git
-    commit_sha: d6348d7f8e2a333d1a92b6109ac590f22cde6ecc
+    commit_sha: 3c760f122036780e80e342486afbaeec17186747
 name: "Sub-GHz Scheduler"
 id: "subghz_scheduler"
-version: "2.2"
-description: "Individual *.sub or playlist *.txt files can be used for Sub-GHz interval transmission. Discrete intervals from 10 seconds to 12 hours are selectable, as well as repeating transmissions for individual data. See repo for description of settings and modes."
+version: "2.3"
+description: "Individual *.sub or playlist *.txt files can be used for Sub-GHz interval transmission. Discrete intervals from 1 seconds to 24 hours are selectable, as well as repeating transmissions for individual data. See repo for description of settings and modes."
 short_description: "Send a Sub-GHz signal repeatedly at a given interval."
 changelog: "@CHANGELOG.md"
 author: "Patrick Edwards"
@@ -14,7 +14,7 @@ targets: ['all']
 category: "Sub-GHz"
 icon: "icons/icon.png"
 screenshots:
-  - "./screenshots/v2/a_run_view.png"
-  - "./screenshots/v2/10s_x1_tx250_norm.png"
-  - "./screenshots/v2/24hrs_x1_rel.png"
-  - "./screenshots/v2/x3_tx250_oneshot.png"
+  - "./screenshots/v2.3/rundisplay.png"
+  - "./screenshots/v2.3/intervals.png"
+  - "./screenshots/v2.3/radio.png"
+  - "./screenshots/v2.3/txmode.png"
