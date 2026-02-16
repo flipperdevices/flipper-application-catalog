@@ -18,7 +18,7 @@ short_description: NFC based desktop login using USB HID or BLE HID
 
 sourcecode:
   location:
-    commit_sha: db0ce19a58ada8589e81aef8e7a53e019ffc04fc
+    commit_sha: d854c292b13f8a8f7a23a6483edd425e2a3365f9
     origin: https://github.com/Play2BReal/NFC-Login
   type: git
 
