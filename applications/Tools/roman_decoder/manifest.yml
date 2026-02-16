@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/evillero/roman_decoder
-    commit_sha: ed0b03b3650fddad33b82c27630014bc58761404
+    commit_sha: b83e96e71a8db5d5fb5bbb8bb173444d75661ad3
 description: "@.catalog/README.md"
 changelog: "@.catalog/CHANGELOG.md"
 author: "@evillero"
