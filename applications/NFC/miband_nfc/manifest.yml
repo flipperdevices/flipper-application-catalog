@@ -10,11 +10,10 @@ changelog: "@CHANGELOG.md"
 
 author: "Luca Tomei"
 
-tags:
-  - nfc
-  - miband
-  - mifare
-  - writer
+screenshots:
+  - "screenshots/screenshot_1.png"
+  - "screenshots/screenshot_2.png"
+  - "screenshots/screenshot_3.png"
 
 sourcecode:
   type: git
