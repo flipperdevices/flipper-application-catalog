@@ -1,10 +1,11 @@
-author: '@Play2BReal'
+author: 'Play2BReal'
 category: 'NFC'
 changelog: "@changelog.md"
 description: "@README.md"
 icon: 'icons/icon.png'
 id: 'nfc_login'
 name: 'NFC Login'
+
 screenshots:
   - screenshots/ss0.png
   - screenshots/ss1.png
@@ -12,10 +13,13 @@ screenshots:
   - screenshots/ss3.png
   - screenshots/ss4.png
   - screenshots/ss5.png
-  short_description: NFC based desktop login using USB HID or BLE HID
-  sourcecode:
-   location:
-    commit_sha: 70b9ac4b884d39ef930e3ee1b3e38092563106aa
+
+short_description: NFC based desktop login using USB HID or BLE HID
+
+sourcecode:
+  location:
+    commit_sha: db0ce19a58ada8589e81aef8e7a53e019ffc04fc
     origin: https://github.com/Play2BReal/NFC-Login
-   type: git
-  version: 1.1
+  type: git
+
+version: 1.1.1
