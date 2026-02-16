@@ -1,12 +1,12 @@
 sourcecode:
   type: git
-    location:
-        origin: https://github.com/mrc19056/flipper-race-game.git
-            commit_sha: 9dc1d5987e6ea11b080cc62f9cae58b2c2aeb433
-            short_description: 3-lane racing game with power-ups, combos, and night mode
-            description: "@README.md"
-            changelog: "@CHANGELOG.md"
-            screenshots:
-              - screenshots/menu.png
-                - screenshots/gameplay.png
-                  - screenshots/gameover.png
+  location:
+    origin: https://github.com/mrc19056/flipper-race-game.git
+    commit_sha: 9dc1d5987e6ea11b080cc62f9cae58b2c2aeb433
+short_description: 3-lane racing game with power-ups, combos, and night mode
+description: "@README.md"
+changelog: "@CHANGELOG.md"
+screenshots:
+  - screenshots/menu.png
+  - screenshots/gameplay.png
+  - screenshots/gameover.png
