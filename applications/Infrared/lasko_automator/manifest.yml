@@ -1,0 +1,25 @@
+sourcecode:
+  type: git
+  location: https://github.com/LN4CY/lasko-2519-timer
+  commit_sha: "3c6db647a608383300abb6bcba129964040dc672"
+  subdir: lasko_automator
+
+description: >
+  Automates certain Lasko Tower Fans (e.g. model 2519) by cycling the power ON and OFF at configurable intervals.
+  
+  Features:
+  - Custom ON/OFF durations (default 20m ON, 40m OFF)
+  - Configurable directly on the Flipper Zero
+  - Status display with countdown
+  - Custom Icon
+
+changelog: changelog.md
+
+author: LN4CY
+
+screenshots:
+  - screenshots/screen1.png
+  - screenshots/screen2.png
+  - screenshots/screen3.png
+
+short_description: Automatic timer for Lasko fans
