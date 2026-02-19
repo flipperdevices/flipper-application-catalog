@@ -1,0 +1,23 @@
+{
+  "appid": "lofz",
+  "name": "Lights Out Flipper Zero",
+  "category": "Games",
+  "author": "DigiMancer3D",
+  "description": "A Star Wars-themed Lights Out puzzle where you, the last Jedi, turn off a 4x4 grid against Sith Lord Flipper Zero.",
+  "source": "https://github.com/DigiMancer3D/LOFZ",
+  "fap_category": "Games",
+  "icon": "https://github.com/DigiMancer3D/LOFZ/blob/main/lofz.png",
+  "screenshots": [
+    "https://raw.githubusercontent.com/DigiMancer3D/LOFZ/refs/heads/main/Screenshots/Screenshot-20250718-172625.png"
+    "https://raw.githubusercontent.com/DigiMancer3D/LOFZ/refs/heads/main/Screenshots/Screenshot-20250718-172632.png"
+    "https://raw.githubusercontent.com/DigiMancer3D/LOFZ/refs/heads/main/Screenshots/Screenshot-20250718-172639.png"
+    "https://raw.githubusercontent.com/DigiMancer3D/LOFZ/refs/heads/main/Screenshots/Screenshot-20250718-172646.png"
+    "https://raw.githubusercontent.com/DigiMancer3D/LOFZ/refs/heads/main/Screenshots/Screenshot-20250718-172651.png"
+    "https://raw.githubusercontent.com/DigiMancer3D/LOFZ/refs/heads/main/Screenshots/Screenshot-20250718-172714.png"
+    "https://raw.githubusercontent.com/DigiMancer3D/LOFZ/refs/heads/main/Screenshots/Screenshot-20250718-172724.png"
+    "https://raw.githubusercontent.com/DigiMancer3D/LOFZ/refs/heads/main/Screenshots/Screenshot-20250718-172750.png"
+  ],
+  "license": "GPL-3.0",
+  "firmware_version": "1.0.0",
+  "target": "f7"
+}
