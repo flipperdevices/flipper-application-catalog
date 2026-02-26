@@ -1,29 +1,11 @@
-# Flipper Application Catalog Manifest
-# https://github.com/flipperdevices/flipper-application-catalog
-
-# IMPORTANT: Update these values after creating your GitHub repository
-id: tonuino_writer
-category: NFC
-
-# GitHub repository information
-source_code: https://github.com/Bastelsaal/tonuino-flipper-zero
-
-# Commit SHA reference - use the commit hash from your repository
-commit: 24c99d3
-
-# Application metadata
-name: TonUINO Writer
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/Bastelsaal/tonuino-flipper-zero.git
+    commit_sha: 3c14aaad3f1e719bf456aa1ec749109cf6214fb9
 short_description: NFC card writer for TonUINO audio boxes
-description: |
-  Create and manage NFC cards for TonUINO DIY music player systems.
-  Write, read, and preview TonUINO MIFARE Classic cards with all 11 play modes.
-  Features cancelable operations, rapid write mode, and menu position memory.
-
-# Icon and screenshots
-# Icon should be 10x10px PNG in your repository
-icon: icon.png
-
-# Screenshots showing key features
+description: "@README.md"
+changelog: "@changelog.md"
 screenshots:
   - screenshots/01_main_menu.png
   - screenshots/02_set_folder.png
@@ -31,20 +13,3 @@ screenshots:
   - screenshots/05_view_card.png
   - screenshots/06_write_waiting.png
   - screenshots/09_rapid_write.png
-
-# Application version
-version: 2.0.0
-
-# Author information
-author: Thomas Kekeisen-Schanz
-author_github: blaues0cke
-
-# Optional: Project homepage
-# webpage: https://www.tonuino.de
-
-# Changelog reference
-changelog: changelog.md
-
-# Build configuration
-# The catalog will build your app using uFBT
-# Ensure your application.fam is correctly configured
