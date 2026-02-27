@@ -135,6 +135,8 @@ python3 -m venv venv
 source venv/bin/activate
 pip install -r tools/requirements.txt
 ```
+*Hint 1.* Above is the Linux-way of doing it. For instance in Windows Power-shell, activating the phython-environment is done with `.\venv\Scripts\Activate.ps1`. 
+*Hint 2.* The `tools/requirements.txt` is obviously located in your local repo `flipper-application-catalog`.
 
 If you haven't yet installed the SDK for `ufbt` for your current user, you can install one within the virtual environment.
 
