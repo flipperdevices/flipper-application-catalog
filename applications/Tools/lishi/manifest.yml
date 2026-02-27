@@ -2,11 +2,11 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/evillero/lishi
-    commit_sha: 3404c34e820c2f7737a92bb845c66c0c46bb8ff9
+    commit_sha: 7a7e33091549271777f0842bf01f726eff805096
 description: "@.catalog/README.md"
 changelog: "@.catalog/CHANGELOG.md"
 author: "@evillero"
 screenshots:
   - ".catalog/screenshots/screenshot1.png"
   - ".catalog/screenshots/screenshot2.png"
-
+  - ".catalog/screenshots/screenshot3.png"
