@@ -1,0 +1,20 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/Hoasker/flipper-theme-manager.git
+    commit_sha: 58f28408864ebfbf89b404c9bf675e0b58affaca
+short_description: Manage dolphin animation themes from SD card
+description: "@description.md"
+changelog: "@changelog.md"
+screenshots:
+  - screenshots/1.png
+  - screenshots/2.png
+  - screenshots/3.png
+  - screenshots/4.png
+  - screenshots/5.png
+  - screenshots/6.png
+  - screenshots/7.png
+  - screenshots/8.png
+  - screenshots/9.png
+  - screenshots/10.png
+  - screenshots/11.png
