@@ -1,0 +1,16 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/lsalik2/FlipperAnimationSwitcher.git
+    commit_sha: dcc225ccbac031c91659dd2f0175f27a3816ac85
+short_description: Change your background animations on the fly!
+description: "@README.md"
+changelog: "@CHANGELOG.md"
+screenshots:
+  - screenshots/1_menu.png
+  - screenshots/2_playlist_create.png
+  - screenshots/3_playlist_name.png
+  - screenshots/4_playlist_preview.png
+  - screenshots/5_playlist_apply.png
+  - screenshots/6_settings.png
+  - screenshots/7_about.png
