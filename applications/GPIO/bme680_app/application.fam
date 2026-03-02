@@ -1,0 +1,14 @@
+App(
+    appid="bme680_iaq",
+    name="BME680 IAQ",
+    apptype=FlipperAppType.EXTERNAL,
+    entry_point="bme680_iaq_app",
+    requires=["gui", "notification", "storage"],
+    stack_size=4 * 1024,
+    fap_icon="images/bme680_10px.png",
+    fap_category="GPIO",
+    fap_icon_assets="images",
+    fap_author="kiisu",
+    fap_version="2.0",
+    fap_description="BME680 sensor with IAQ, alarms, comfort index, and SD logging",
+)
