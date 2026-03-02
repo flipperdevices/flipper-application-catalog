@@ -142,8 +142,6 @@ cd bme680_app
 # Build
 ufbt build
 
-# Flash directly to Flipper via USB
-ufbt launch
 ```
 
 The compiled `.fap` file will be in the `dist` folder.
