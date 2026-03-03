@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/DonJulve/Networking_NFC_QR_Flipper_Zero.git
-    commit_sha: "79e10efaa9ba9268dea6662e5c06d3b6788d6dbf"
+    commit_sha: "e788ffc0d464d7ae5fc8cf7be0bf2f64802007e0"
 short_description: "Emulate NFC and display QR codes simultaneously"
 description: |
   This application allows emulating an NFC card and displaying a QR code simultaneously on the Flipper Zero screen.
