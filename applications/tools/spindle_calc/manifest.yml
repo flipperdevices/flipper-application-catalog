@@ -35,13 +35,14 @@ screenshots:
   - screenshots/menu.jpg
   - screenshots/angle.jpg
   - screenshots/inputs.jpg
-  - screenshots/result1.jpg
-  - screenshots/result2.jpg
+  - screenshots/results1.jpg
+  - screenshots/results2.jpg
 
 category: Tools
 
 author: Jordan M
-author_url: https://github.com/YOUR_USERNAME
+author_url: https://github.com/Minto97
+
 
 changelog: |
   1.0.0 - Initial release
