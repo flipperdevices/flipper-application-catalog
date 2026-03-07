@@ -3,7 +3,7 @@ sourcecode:
   location: https://github.com/LN4CY/lasko-2519-timer
   commit_sha: "3c6db647a608383300abb6bcba129964040dc672"
 
-description: | not description: >
+description:
   Automates certain Lasko Tower Fans (e.g. model 2519) by cycling the power ON and OFF at configurable intervals.
   
   Features:
