@@ -1,0 +1,14 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/Matt-London/pause_timer.git
+    commit_sha: 71d570d22f61acf642fce098d6524a251ca7d10f
+
+short_description: Pause your show when the ad break ends
+description: "@APPSTORE.md"
+changelog: "@CHANGELOG.md"
+screenshots:
+  - "screenshots/pause_timer_numpad_entry.png"
+  - "screenshots/pause_timer_countdown.png"
+  - "screenshots/pause_timer_countdown_complete.png"
+  - "screenshots/pause_timer_IR_learning.png"
