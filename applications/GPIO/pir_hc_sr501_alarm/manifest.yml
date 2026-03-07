@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/ku6a-cj/-PIR-HC-SR501-Proximity-alarm-Flipper-zero.git
-    commit_sha: 0902e6704b4dafc286207a01c543a5499f26a91b
+    commit_sha: af64061f09441f16b8bba3b4abb96048492c073f
 description: "@README.md"
 changelog: "@CHANGELOG.md"
 screenshots:
