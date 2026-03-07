@@ -1,4 +1,4 @@
-id: miband_nfc_writer
+id: miband_nfc
 name: "Mi Band NFC"
 version: "1.0.0"
 category: "NFC"
