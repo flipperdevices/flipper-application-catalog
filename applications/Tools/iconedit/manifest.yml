@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/rdefeo/iconedit.git
-    commit_sha: 8d427fa47139fde53980abcb2d53d81e924a7255
+    commit_sha: 82fda63fd980f651e7e2ff678c129221200bac7b
 changelog: "@./CHANGELOG.md"
 description: "@./README_flipperlab.md"
 author: "Roberto De Feo"

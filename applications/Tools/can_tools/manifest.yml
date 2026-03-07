@@ -1,0 +1,15 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/MatthewKuKanich/FlipperCANTools.git
+    commit_sha: 8fa1fcf043c308921be4818f7e4e80bfe062a438
+    subdir: can_tools
+description: "./README.md"
+changelog: "./changelog.md"
+author: "@MatthewKuKanich"
+screenshots:
+  - "./screenshots/1.png"
+  - "./screenshots/2.png"
+  - "./screenshots/3.png"
+  - "./screenshots/4.png"
+
