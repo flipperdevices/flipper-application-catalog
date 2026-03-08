@@ -1,0 +1,443 @@
+Archive member included to satisfy reference by file (symbol)
+
+c:/users/rapha/.ufbt/toolchain/x86_64-windows/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-wf_log.o)
+                              C:/Users/rapha/.ufbt/build/bme680_iaq/bme680_iaq_app.o (logf)
+c:/users/rapha/.ufbt/toolchain/x86_64-windows/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-sf_nan.o)
+                              c:/users/rapha/.ufbt/toolchain/x86_64-windows/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-wf_log.o) (nanf)
+c:/users/rapha/.ufbt/toolchain/x86_64-windows/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-wf_exp.o)
+                              C:/Users/rapha/.ufbt/build/bme680_iaq/bme680_iaq_app.o (expf)
+c:/users/rapha/.ufbt/toolchain/x86_64-windows/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-sf_finite.o)
+                              c:/users/rapha/.ufbt/toolchain/x86_64-windows/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-wf_exp.o) (finitef)
+c:/users/rapha/.ufbt/toolchain/x86_64-windows/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-wf_log10.o)
+                              C:/Users/rapha/.ufbt/build/bme680_iaq/bme680.o (log10f)
+c:/users/rapha/.ufbt/toolchain/x86_64-windows/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-ef_log.o)
+                              c:/users/rapha/.ufbt/toolchain/x86_64-windows/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-wf_log.o) (__ieee754_logf)
+c:/users/rapha/.ufbt/toolchain/x86_64-windows/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-ef_exp.o)
+                              c:/users/rapha/.ufbt/toolchain/x86_64-windows/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-wf_exp.o) (__ieee754_expf)
+c:/users/rapha/.ufbt/toolchain/x86_64-windows/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-math_errf.o)
+                              c:/users/rapha/.ufbt/toolchain/x86_64-windows/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-ef_exp.o) (__math_uflowf)
+c:/users/rapha/.ufbt/toolchain/x86_64-windows/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-ef_log10.o)
+                              c:/users/rapha/.ufbt/toolchain/x86_64-windows/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-wf_log10.o) (__ieee754_log10f)
+c:/users/rapha/.ufbt/toolchain/x86_64-windows/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+                              C:/Users/rapha/.ufbt/build/bme680_iaq/bme680_iaq_app.o (__aeabi_f2d)
+
+Discarded input sections
+
+ .text          0x00000000        0x0 C:/Users/rapha/.ufbt/build/bme680_iaq/bme680_iaq_icons.o
+ .data          0x00000000        0x0 C:/Users/rapha/.ufbt/build/bme680_iaq/bme680_iaq_icons.o
+ .bss           0x00000000        0x0 C:/Users/rapha/.ufbt/build/bme680_iaq/bme680_iaq_icons.o
+ .rodata.I_bme680_10px
+                0x00000000        0xc C:/Users/rapha/.ufbt/build/bme680_iaq/bme680_iaq_icons.o
+ .rodata._I_bme680_10px
+                0x00000000        0x4 C:/Users/rapha/.ufbt/build/bme680_iaq/bme680_iaq_icons.o
+ .rodata._I_bme680_10px_0
+                0x00000000        0xa C:/Users/rapha/.ufbt/build/bme680_iaq/bme680_iaq_icons.o
+ .debug_info    0x00000000      0x176 C:/Users/rapha/.ufbt/build/bme680_iaq/bme680_iaq_icons.o
+ .debug_abbrev  0x00000000       0xb1 C:/Users/rapha/.ufbt/build/bme680_iaq/bme680_iaq_icons.o
+ .debug_aranges
+                0x00000000       0x18 C:/Users/rapha/.ufbt/build/bme680_iaq/bme680_iaq_icons.o
+ .debug_line    0x00000000      0x184 C:/Users/rapha/.ufbt/build/bme680_iaq/bme680_iaq_icons.o
+ .debug_str     0x00000000      0x25a C:/Users/rapha/.ufbt/build/bme680_iaq/bme680_iaq_icons.o
+ .comment       0x00000000       0x1c C:/Users/rapha/.ufbt/build/bme680_iaq/bme680_iaq_icons.o
+ .debug_line_end
+                0x00000000        0x0 C:/Users/rapha/.ufbt/build/bme680_iaq/bme680_iaq_icons.o
+ .text          0x00000000        0x0 C:/Users/rapha/.ufbt/build/bme680_iaq/bme680.o
+ .data          0x00000000        0x0 C:/Users/rapha/.ufbt/build/bme680_iaq/bme680.o
+ .bss           0x00000000        0x0 C:/Users/rapha/.ufbt/build/bme680_iaq/bme680.o
+ .comment       0x00000000       0x1c C:/Users/rapha/.ufbt/build/bme680_iaq/bme680.o
+ .text          0x00000000        0x0 C:/Users/rapha/.ufbt/build/bme680_iaq/bme680_iaq_app.o
+ .data          0x00000000        0x0 C:/Users/rapha/.ufbt/build/bme680_iaq/bme680_iaq_app.o
+ .bss           0x00000000        0x0 C:/Users/rapha/.ufbt/build/bme680_iaq/bme680_iaq_app.o
+ .comment       0x00000000       0x1c C:/Users/rapha/.ufbt/build/bme680_iaq/bme680_iaq_app.o
+ .text          0x00000000        0x0 c:/users/rapha/.ufbt/toolchain/x86_64-windows/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-wf_log.o)
+ .data          0x00000000        0x0 c:/users/rapha/.ufbt/toolchain/x86_64-windows/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-wf_log.o)
+ .bss           0x00000000        0x0 c:/users/rapha/.ufbt/toolchain/x86_64-windows/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-wf_log.o)
+ .text          0x00000000        0x0 c:/users/rapha/.ufbt/toolchain/x86_64-windows/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-sf_nan.o)
+ .data          0x00000000        0x0 c:/users/rapha/.ufbt/toolchain/x86_64-windows/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-sf_nan.o)
+ .bss           0x00000000        0x0 c:/users/rapha/.ufbt/toolchain/x86_64-windows/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-sf_nan.o)
+ .text          0x00000000        0x0 c:/users/rapha/.ufbt/toolchain/x86_64-windows/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-wf_exp.o)
+ .data          0x00000000        0x0 c:/users/rapha/.ufbt/toolchain/x86_64-windows/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-wf_exp.o)
+ .bss           0x00000000        0x0 c:/users/rapha/.ufbt/toolchain/x86_64-windows/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-wf_exp.o)
+ .text          0x00000000        0x0 c:/users/rapha/.ufbt/toolchain/x86_64-windows/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-sf_finite.o)
+ .data          0x00000000        0x0 c:/users/rapha/.ufbt/toolchain/x86_64-windows/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-sf_finite.o)
+ .bss           0x00000000        0x0 c:/users/rapha/.ufbt/toolchain/x86_64-windows/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-sf_finite.o)
+ .text          0x00000000        0x0 c:/users/rapha/.ufbt/toolchain/x86_64-windows/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-wf_log10.o)
+ .data          0x00000000        0x0 c:/users/rapha/.ufbt/toolchain/x86_64-windows/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-wf_log10.o)
+ .bss           0x00000000        0x0 c:/users/rapha/.ufbt/toolchain/x86_64-windows/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-wf_log10.o)
+ .text          0x00000000        0x0 c:/users/rapha/.ufbt/toolchain/x86_64-windows/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-ef_log.o)
+ .data          0x00000000        0x0 c:/users/rapha/.ufbt/toolchain/x86_64-windows/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-ef_log.o)
+ .bss           0x00000000        0x0 c:/users/rapha/.ufbt/toolchain/x86_64-windows/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-ef_log.o)
+ .text          0x00000000        0x0 c:/users/rapha/.ufbt/toolchain/x86_64-windows/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-ef_exp.o)
+ .data          0x00000000        0x0 c:/users/rapha/.ufbt/toolchain/x86_64-windows/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-ef_exp.o)
+ .bss           0x00000000        0x0 c:/users/rapha/.ufbt/toolchain/x86_64-windows/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-ef_exp.o)
+ .text          0x00000000        0x0 c:/users/rapha/.ufbt/toolchain/x86_64-windows/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-math_errf.o)
+ .data          0x00000000        0x0 c:/users/rapha/.ufbt/toolchain/x86_64-windows/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-math_errf.o)
+ .bss           0x00000000        0x0 c:/users/rapha/.ufbt/toolchain/x86_64-windows/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-math_errf.o)
+ .text.__math_divzerof
+                0x00000000       0x24 c:/users/rapha/.ufbt/toolchain/x86_64-windows/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-math_errf.o)
+ .text.__math_invalidf
+                0x00000000       0x1e c:/users/rapha/.ufbt/toolchain/x86_64-windows/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-math_errf.o)
+ .text          0x00000000        0x0 c:/users/rapha/.ufbt/toolchain/x86_64-windows/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-ef_log10.o)
+ .data          0x00000000        0x0 c:/users/rapha/.ufbt/toolchain/x86_64-windows/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-ef_log10.o)
+ .bss           0x00000000        0x0 c:/users/rapha/.ufbt/toolchain/x86_64-windows/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-ef_log10.o)
+ .data          0x00000000        0x0 c:/users/rapha/.ufbt/toolchain/x86_64-windows/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+ .bss           0x00000000        0x0 c:/users/rapha/.ufbt/toolchain/x86_64-windows/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD C:/Users/rapha/.ufbt/build/bme680_iaq/bme680_iaq_icons.o
+LOAD C:/Users/rapha/.ufbt/build/bme680_iaq/bme680.o
+LOAD C:/Users/rapha/.ufbt/build/bme680_iaq/bme680_iaq_app.o
+LOAD c:/users/rapha/.ufbt/toolchain/x86_64-windows/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a
+LOAD c:/users/rapha/.ufbt/toolchain/x86_64-windows/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard\libgcc.a
+LOAD c:/users/rapha/.ufbt/toolchain/x86_64-windows/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libstdc++_nano.a
+LOAD c:/users/rapha/.ufbt/toolchain/x86_64-windows/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libsupc++_nano.a
+
+.text           0x00000000     0x3b5c
+ *(.text)
+ .text          0x00000000      0x378 c:/users/rapha/.ufbt/toolchain/x86_64-windows/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+                0x00000000                __aeabi_drsub
+                0x00000008                __aeabi_dsub
+                0x00000008                __subdf3
+                0x0000000c                __aeabi_dadd
+                0x0000000c                __adddf3
+                0x00000284                __floatunsidf
+                0x00000284                __aeabi_ui2d
+                0x000002a4                __floatsidf
+                0x000002a4                __aeabi_i2d
+                0x000002c8                __aeabi_f2d
+                0x000002c8                __extendsfdf2
+                0x0000030c                __floatundidf
+                0x0000030c                __aeabi_ul2d
+                0x0000031c                __floatdidf
+                0x0000031c                __aeabi_l2d
+ *(.stub)
+ *(.text*)
+ .text.bme680_i2c_read
+                0x00000378       0x78 C:/Users/rapha/.ufbt/build/bme680_iaq/bme680.o
+ .text.bme680_write_reg.isra.0
+                0x000003f0       0x4c C:/Users/rapha/.ufbt/build/bme680_iaq/bme680.o
+ .text.bme680_init
+                0x0000043c      0x220 C:/Users/rapha/.ufbt/build/bme680_iaq/bme680.o
+                0x0000043c                bme680_init
+ .text.bme680_read_forced
+                0x0000065c      0x524 C:/Users/rapha/.ufbt/build/bme680_iaq/bme680.o
+                0x0000065c                bme680_read_forced
+ .text.bme680_calc_iaq
+                0x00000b80       0xf4 C:/Users/rapha/.ufbt/build/bme680_iaq/bme680.o
+                0x00000b80                bme680_calc_iaq
+ .text.menu_move
+                0x00000c74       0x28 C:/Users/rapha/.ufbt/build/bme680_iaq/bme680_iaq_app.o
+ .text.input_cb
+                0x00000c9c       0x14 C:/Users/rapha/.ufbt/build/bme680_iaq/bme680_iaq_app.o
+ .text.timer_cb
+                0x00000cb0       0x20 C:/Users/rapha/.ufbt/build/bme680_iaq/bme680_iaq_app.o
+ .text.try_init_sensor
+                0x00000cd0       0x88 C:/Users/rapha/.ufbt/build/bme680_iaq/bme680_iaq_app.o
+ .text.menu_change
+                0x00000d58      0x244 C:/Users/rapha/.ufbt/build/bme680_iaq/bme680_iaq_app.o
+ .text.draw_alarm_bar
+                0x00000f9c       0x64 C:/Users/rapha/.ufbt/build/bme680_iaq/bme680_iaq_app.o
+ .text.draw_page_dots.constprop.0
+                0x00001000       0x3c C:/Users/rapha/.ufbt/build/bme680_iaq/bme680_iaq_app.o
+ .text.do_reading
+                0x0000103c      0x5a8 C:/Users/rapha/.ufbt/build/bme680_iaq/bme680_iaq_app.o
+ .text.draw_cb  0x000015e4     0x1d44 C:/Users/rapha/.ufbt/build/bme680_iaq/bme680_iaq_app.o
+ .text.bme680_iaq_app
+                0x00003328      0x274 C:/Users/rapha/.ufbt/build/bme680_iaq/bme680_iaq_app.o
+                0x00003328                bme680_iaq_app
+ .text.logf     0x0000359c       0x5c c:/users/rapha/.ufbt/toolchain/x86_64-windows/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-wf_log.o)
+                0x0000359c                logf
+ .text.nanf     0x000035f8        0xc c:/users/rapha/.ufbt/toolchain/x86_64-windows/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-sf_nan.o)
+                0x000035f8                nanf
+ .text.expf     0x00003604       0x6c c:/users/rapha/.ufbt/toolchain/x86_64-windows/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-wf_exp.o)
+                0x00003604                expf
+ .text.finitef  0x00003670       0x14 c:/users/rapha/.ufbt/toolchain/x86_64-windows/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-sf_finite.o)
+                0x00003670                finitef
+ .text.log10f   0x00003684       0x5c c:/users/rapha/.ufbt/toolchain/x86_64-windows/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-wf_log10.o)
+                0x00003684                log10f
+ .text.__ieee754_logf
+                0x000036e0      0x1e4 c:/users/rapha/.ufbt/toolchain/x86_64-windows/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-ef_log.o)
+                0x000036e0                __ieee754_logf
+ .text.__ieee754_expf
+                0x000038c4      0x19c c:/users/rapha/.ufbt/toolchain/x86_64-windows/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-ef_exp.o)
+                0x000038c4                __ieee754_expf
+ .text.with_errnof
+                0x00003a60       0x1c c:/users/rapha/.ufbt/toolchain/x86_64-windows/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-math_errf.o)
+ .text.xflowf   0x00003a7c       0x16 c:/users/rapha/.ufbt/toolchain/x86_64-windows/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-math_errf.o)
+ *fill*         0x00003a92        0x2 
+ .text.__math_uflowf
+                0x00003a94        0xc c:/users/rapha/.ufbt/toolchain/x86_64-windows/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-math_errf.o)
+                0x00003a94                __math_uflowf
+ .text.__math_oflowf
+                0x00003aa0        0xc c:/users/rapha/.ufbt/toolchain/x86_64-windows/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-math_errf.o)
+                0x00003aa0                __math_oflowf
+ .text.__ieee754_log10f
+                0x00003aac       0xb0 c:/users/rapha/.ufbt/toolchain/x86_64-windows/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-ef_log10.o)
+                0x00003aac                __ieee754_log10f
+ *(.text.*)
+ *(.text._*)
+ *(.init)
+ *(.fini)
+
+.rodata         0x00003b5c      0x54c
+ *(.rodata)
+ *(.rodata1)
+ *(.rodata.*)
+ .rodata.bme680_init.str1.1
+                0x00003b5c       0x69 C:/Users/rapha/.ufbt/build/bme680_iaq/bme680.o
+ .rodata.draw_alarm_bar.str1.1
+                0x00003bc5        0x9 C:/Users/rapha/.ufbt/build/bme680_iaq/bme680_iaq_app.o
+ .rodata.do_reading.str1.1
+                0x00003bce      0x119 C:/Users/rapha/.ufbt/build/bme680_iaq/bme680_iaq_app.o
+ .rodata.draw_cb.str1.1
+                0x00003ce7      0x2e7 C:/Users/rapha/.ufbt/build/bme680_iaq/bme680_iaq_app.o
+ .rodata.bme680_iaq_app.str1.1
+                0x00003fce       0x24 C:/Users/rapha/.ufbt/build/bme680_iaq/bme680_iaq_app.o
+ *fill*         0x00003ff2        0x2 
+ .rodata.seq_beep.0
+                0x00003ff4       0x10 C:/Users/rapha/.ufbt/build/bme680_iaq/bme680_iaq_app.o
+ .rodata.seq_vib.1
+                0x00004004       0x10 C:/Users/rapha/.ufbt/build/bme680_iaq/bme680_iaq_app.o
+ .rodata.str1.1
+                0x00004014       0x4a C:/Users/rapha/.ufbt/build/bme680_iaq/bme680_iaq_app.o
+ *fill*         0x0000405e        0x2 
+ .rodata.iaq_labels
+                0x00004060       0x1c C:/Users/rapha/.ufbt/build/bme680_iaq/bme680_iaq_app.o
+ .rodata.led_names
+                0x0000407c       0x10 C:/Users/rapha/.ufbt/build/bme680_iaq/bme680_iaq_app.o
+ .rodata.logf.str1.1
+                0x0000408c        0x1 c:/users/rapha/.ufbt/toolchain/x86_64-windows/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-wf_log.o)
+ .rodata.log10f.str1.1
+                0x0000408d        0x1 c:/users/rapha/.ufbt/toolchain/x86_64-windows/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-wf_log10.o)
+ *fill*         0x0000408e        0x2 
+ .rodata.ln2LO  0x00004090        0x8 c:/users/rapha/.ufbt/toolchain/x86_64-windows/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-ef_exp.o)
+ .rodata.ln2HI  0x00004098        0x8 c:/users/rapha/.ufbt/toolchain/x86_64-windows/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-ef_exp.o)
+ .rodata.halF   0x000040a0        0x8 c:/users/rapha/.ufbt/toolchain/x86_64-windows/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-ef_exp.o)
+
+.data
+ *(.data)
+ *(.data1)
+ *(.data.*)
+
+.bss
+ *(.bss)
+ *(.bss*)
+ *(.sbss)
+ *(.sbss*)
+ *(COMMON)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.gnu.build.attributes
+ *(.gnu.build.attributes .gnu.build.attributes.*)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000       0xa8
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x40 C:/Users/rapha/.ufbt/build/bme680_iaq/bme680.o
+ .debug_aranges
+                0x00000040       0x68 C:/Users/rapha/.ufbt/build/bme680_iaq/bme680_iaq_app.o
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x00000000     0x749d
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x00000000     0x17e4 C:/Users/rapha/.ufbt/build/bme680_iaq/bme680.o
+ .debug_info    0x000017e4     0x5cb9 C:/Users/rapha/.ufbt/build/bme680_iaq/bme680_iaq_app.o
+
+.debug_abbrev   0x00000000      0x944
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000      0x3ff C:/Users/rapha/.ufbt/build/bme680_iaq/bme680.o
+ .debug_abbrev  0x000003ff      0x545 C:/Users/rapha/.ufbt/build/bme680_iaq/bme680_iaq_app.o
+
+.debug_line     0x00000000     0x2d75
+ *(.debug_line .debug_line.* .debug_line_end)
+ .debug_line    0x00000000      0x3bf C:/Users/rapha/.ufbt/build/bme680_iaq/bme680.o
+ .debug_line.text.bme680_i2c_read
+                0x000003bf       0x6a C:/Users/rapha/.ufbt/build/bme680_iaq/bme680.o
+ .debug_line.text.bme680_write_reg.isra.0
+                0x00000429       0x52 C:/Users/rapha/.ufbt/build/bme680_iaq/bme680.o
+ .debug_line.text.bme680_init
+                0x0000047b      0x26a C:/Users/rapha/.ufbt/build/bme680_iaq/bme680.o
+ .debug_line.text.bme680_read_forced
+                0x000006e5      0x472 C:/Users/rapha/.ufbt/build/bme680_iaq/bme680.o
+ .debug_line.text.bme680_calc_iaq
+                0x00000b57       0xdb C:/Users/rapha/.ufbt/build/bme680_iaq/bme680.o
+ .debug_line_end
+                0x00000c32        0x0 C:/Users/rapha/.ufbt/build/bme680_iaq/bme680.o
+ .debug_line    0x00000c32      0x57f C:/Users/rapha/.ufbt/build/bme680_iaq/bme680_iaq_app.o
+ .debug_line.text.menu_move
+                0x000011b1       0x50 C:/Users/rapha/.ufbt/build/bme680_iaq/bme680_iaq_app.o
+ .debug_line.text.input_cb
+                0x00001201       0x20 C:/Users/rapha/.ufbt/build/bme680_iaq/bme680_iaq_app.o
+ .debug_line.text.timer_cb
+                0x00001221       0x2b C:/Users/rapha/.ufbt/build/bme680_iaq/bme680_iaq_app.o
+ .debug_line.text.try_init_sensor
+                0x0000124c       0x91 C:/Users/rapha/.ufbt/build/bme680_iaq/bme680_iaq_app.o
+ .debug_line.text.menu_change
+                0x000012dd      0x2b9 C:/Users/rapha/.ufbt/build/bme680_iaq/bme680_iaq_app.o
+ .debug_line.text.draw_alarm_bar
+                0x00001596       0x3f C:/Users/rapha/.ufbt/build/bme680_iaq/bme680_iaq_app.o
+ .debug_line.text.draw_page_dots.constprop.0
+                0x000015d5       0x53 C:/Users/rapha/.ufbt/build/bme680_iaq/bme680_iaq_app.o
+ .debug_line.text.do_reading
+                0x00001628      0x487 C:/Users/rapha/.ufbt/build/bme680_iaq/bme680_iaq_app.o
+ .debug_line.text.draw_cb
+                0x00001aaf     0x1107 C:/Users/rapha/.ufbt/build/bme680_iaq/bme680_iaq_app.o
+ .debug_line.text.bme680_iaq_app
+                0x00002bb6      0x1bf C:/Users/rapha/.ufbt/build/bme680_iaq/bme680_iaq_app.o
+ .debug_line_end
+                0x00002d75        0x0 C:/Users/rapha/.ufbt/build/bme680_iaq/bme680_iaq_app.o
+
+.debug_frame    0x00000000      0x2c8
+ *(.debug_frame)
+ .debug_frame   0x00000000      0x104 C:/Users/rapha/.ufbt/build/bme680_iaq/bme680.o
+ .debug_frame   0x00000104      0x1c4 C:/Users/rapha/.ufbt/build/bme680_iaq/bme680_iaq_app.o
+
+.debug_str      0x00000000     0x2046
+ *(.debug_str)
+ .debug_str     0x00000000      0x926 C:/Users/rapha/.ufbt/build/bme680_iaq/bme680.o
+ .debug_str     0x00000926     0x1720 C:/Users/rapha/.ufbt/build/bme680_iaq/bme680_iaq_app.o
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges
+ *(.debug_ranges)
+
+.debug_addr
+ *(.debug_addr)
+
+.debug_line_str
+                0x00000000       0xaa
+ *(.debug_line_str)
+ .debug_line_str
+                0x00000000       0xaa c:/users/rapha/.ufbt/toolchain/x86_64-windows/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+
+.debug_loclists
+                0x00000000     0x3245
+ *(.debug_loclists)
+ .debug_loclists
+                0x00000000      0xa4f C:/Users/rapha/.ufbt/build/bme680_iaq/bme680.o
+ .debug_loclists
+                0x00000a4f     0x27f6 C:/Users/rapha/.ufbt/build/bme680_iaq/bme680_iaq_app.o
+
+.debug_macro
+ *(.debug_macro)
+
+.debug_names
+ *(.debug_names)
+
+.debug_rnglists
+                0x00000000      0x648
+ *(.debug_rnglists)
+ .debug_rnglists
+                0x00000000      0x119 C:/Users/rapha/.ufbt/build/bme680_iaq/bme680.o
+ .debug_rnglists
+                0x00000119      0x52f C:/Users/rapha/.ufbt/build/bme680_iaq/bme680_iaq_app.o
+
+.debug_str_offsets
+ *(.debug_str_offsets)
+
+.debug_sup
+ *(.debug_sup)
+
+.ARM.attributes
+                0x00000000       0x34
+ *(.ARM.attributes)
+ .ARM.attributes
+                0x00000000       0x34 C:/Users/rapha/.ufbt/build/bme680_iaq/bme680_iaq_icons.o
+ .ARM.attributes
+                0x00000034       0x34 C:/Users/rapha/.ufbt/build/bme680_iaq/bme680.o
+ .ARM.attributes
+                0x00000068       0x34 C:/Users/rapha/.ufbt/build/bme680_iaq/bme680_iaq_app.o
+ .ARM.attributes
+                0x0000009c       0x34 c:/users/rapha/.ufbt/toolchain/x86_64-windows/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-wf_log.o)
+ .ARM.attributes
+                0x000000d0       0x34 c:/users/rapha/.ufbt/toolchain/x86_64-windows/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-sf_nan.o)
+ .ARM.attributes
+                0x00000104       0x34 c:/users/rapha/.ufbt/toolchain/x86_64-windows/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-wf_exp.o)
+ .ARM.attributes
+                0x00000138       0x34 c:/users/rapha/.ufbt/toolchain/x86_64-windows/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-sf_finite.o)
+ .ARM.attributes
+                0x0000016c       0x34 c:/users/rapha/.ufbt/toolchain/x86_64-windows/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-wf_log10.o)
+ .ARM.attributes
+                0x000001a0       0x34 c:/users/rapha/.ufbt/toolchain/x86_64-windows/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-ef_log.o)
+ .ARM.attributes
+                0x000001d4       0x34 c:/users/rapha/.ufbt/toolchain/x86_64-windows/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-ef_exp.o)
+ .ARM.attributes
+                0x00000208       0x34 c:/users/rapha/.ufbt/toolchain/x86_64-windows/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-math_errf.o)
+ .ARM.attributes
+                0x0000023c       0x34 c:/users/rapha/.ufbt/toolchain/x86_64-windows/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-ef_log10.o)
+ .ARM.attributes
+                0x00000270       0x22 c:/users/rapha/.ufbt/toolchain/x86_64-windows/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+ *(.gnu.attributes)
+
+.note.gnu.arm.ident
+ *(.note.gnu.arm.ident)
+
+/DISCARD/
+ *(.note.GNU-stack)
+ *(.gnu_debuglink)
+ *(.gnu.lto_*)
+
+/DISCARD/
+ *(.comment)
+ *(.comment.*)
+ *(.llvmbc)
+ *(.llvmcmd)
+OUTPUT(C:/Users/rapha/.ufbt/build/bme680_iaq_d.elf elf32-littlearm)
+LOAD linker stubs
