@@ -1,0 +1,19 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/H4W9/SKIDcity_App.git
+    commit_sha: a8809a1cd567e92943c878f0ba671d49e4f6adce
+short_description: "The ultimate app for SKIDs for the Flipper Zero."
+description: "@./README.md"
+changelog: "@./CHANGELOG.md"
+author: "H4W9"
+name: "SKIDcity"
+version: "1.2.0"
+id: "skidcity"
+category: "Tools"
+targets: ['all']
+icon: "icon.png"
+screenshots:
+  - "screenshots/main_menu.png"
+  - "screenshots/main_menu_2.png"
+  - "screenshots/unauthorized_access.png"
