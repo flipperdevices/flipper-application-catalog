@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/H4W9/SKIDcity_App.git
-    commit_sha: c2b5935dd32ed44f157af0931acc67e96fa3041e
+    commit_sha: 46b25f4f7b8b3d5667f1350a71a6eeb55d9715b2
 short_description: "Educational: Don't be a SKID!"
 description: "@./README.md"
 changelog: "@./CHANGELOG.md"
