@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/H4W9/FlipCheckers.git
-    commit_sha: e6a30562c855a404b105b32dcf2f0c5d2ae09b15
+    commit_sha: 5bc63a6893e867921b04419c4d9ba70d1acc083e
 short_description: "Checkers for Flipper"
 description: "@./catalog_README.md"
 changelog: "@./CHANGELOG.md"
