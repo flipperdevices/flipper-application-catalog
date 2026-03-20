@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/OpenShock/FlipperZero.git
-    commit_sha: 25c6e686a140dd53c2f53cce810be69cefa5921e
+    commit_sha: 9afe332ce4487073370d46296426cb4b5f309a06
 short_description: Control OpenShock compatible shockers over 433 MHz
 description: "@README.md"
 changelog: "@CHANGELOG.md"
