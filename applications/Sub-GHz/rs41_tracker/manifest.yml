@@ -7,9 +7,3 @@ sourcecode:
 short_description: RS41 radiosonde receiver & decoder
 description: "@README.md"
 changelog: "@changelog.md"
-
-screenshots:
-  - screenshots/ss0.png
-  - screenshots/ss1.png
-  - screenshots/ss2.png
-  - screenshots/ss3.png
