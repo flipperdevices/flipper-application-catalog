@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/code-phreak/flipper-holdem.git
-    commit_sha: f77f68867977fdbc4ac236cf0ade7744c62a3335
+    commit_sha: a81f65a011ef727a973bc60a698878a1949cee73
     subdir: .
 
 description: "@.catalog/README.md"
@@ -15,12 +15,16 @@ screenshots:
   - ".catalog/screenshots/03-big-win.png"
   - ".catalog/screenshots/04-menu-1.png"
   - ".catalog/screenshots/05-menu-2.png"
-  - ".catalog/screenshots/06-hand-showdown.png"
-  - ".catalog/screenshots/07-hand-result.png"
-  - ".catalog/screenshots/08-you-won.png"
+  - ".catalog/screenshots/06-edit-blinds-1.png"
+  - ".catalog/screenshots/07-edit-blinds-2.png"
+  - ".catalog/screenshots/08-edit-bots.png"
+  - ".catalog/screenshots/09-hand-ranks.png"
+  - ".catalog/screenshots/10-showdown.png"
+  - ".catalog/screenshots/11-results.png"
+  - ".catalog/screenshots/12-you-won.png"
 
 current_version:
   type: externalApp
-  value: "1.0"
-  fap_sha256: "5B5D0107893ABD3781C323B954CB1AF7949BC6BB38659BA24F6E2441A83A763B"
+  value: "1.1"
+  fap_sha256: "329189FA2DC7FB027C431B469F12A0BF3855F47D5AACD08B2318749AF8B2228E"
   catalog_api: 87.1
