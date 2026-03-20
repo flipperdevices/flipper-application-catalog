@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/code-phreak/flipper-holdem.git
-    commit_sha: a81f65a011ef727a973bc60a698878a1949cee73
+    commit_sha: f2e41e71f7633ed76622ea57088b0c928b095020
     subdir: .
 
 description: "@.catalog/README.md"
@@ -26,5 +26,5 @@ screenshots:
 current_version:
   type: externalApp
   value: "1.1"
-  fap_sha256: "329189FA2DC7FB027C431B469F12A0BF3855F47D5AACD08B2318749AF8B2228E"
+  fap_sha256: "10B9E1B0405846B3624D09DB36DF964B359B534552A5E3AD66137142846E6F5A"
   catalog_api: 87.1
