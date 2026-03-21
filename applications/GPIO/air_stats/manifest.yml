@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/thevan4/flipper-air-stats.git
-    commit_sha: a811f5d5735e871013f13118e6b00791a25abd3a
+    commit_sha: ecc428a9fde6a88d4f0828ba3a4766f50c4f3ecc
 category: "GPIO"
 description: "@README_CATALOG.md"
 changelog: "@CHANGELOG.md"
