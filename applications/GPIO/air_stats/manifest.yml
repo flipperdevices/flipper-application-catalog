@@ -1,0 +1,14 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/thevan4/flipper-air-stats.git
+    commit_sha: 910b46a2e82fd846b9bfa131b827fcd73ac897b3
+category: "GPIO"
+description: "@README.md"
+changelog: "@CHANGELOG.md"
+author: "thevan4"
+version: "1.0"
+screenshots:
+  - "screenshots/main_screen_1.png"
+  - "screenshots/menu_1.png"
+  - "screenshots/menu_2.png"
