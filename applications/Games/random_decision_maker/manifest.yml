@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/Gerijacki/random_decision_maker.git
-    commit_sha: 863fa52550bd798c13a145c9b0efd9f52eb2fabe
+    commit_sha: f8143f56d214ae0099ef09902b9407433b31ffde
 
 description: "Spin a roulette to pick a random option for you."
 
