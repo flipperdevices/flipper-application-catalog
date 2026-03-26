@@ -1,0 +1,5 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/kallevaravas/flipper-miele-scout.git
+    commit_sha: 80e3c1ee31a9e30f82141b994af722f2de8e8dd2
