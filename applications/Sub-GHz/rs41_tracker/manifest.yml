@@ -1,0 +1,9 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/yeckel/RS41flipper.git
+    commit_sha: 0ce42d5c4cd2070571c7bce8eb111dfdad2a833b
+
+short_description: RS41 radiosonde receiver & decoder
+description: "@README.md"
+changelog: "@changelog.md"
