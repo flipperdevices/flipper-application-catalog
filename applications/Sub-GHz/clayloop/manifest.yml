@@ -1,0 +1,9 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/b0bby225/ClayLoop.git
+    commit_sha: 424e300d3676836b974e9af4e621a81825619634
+screenshots:
+  - screenshots/delay_screen.png
+  - screenshots/setup_screen.png
+  - screenshots/control_screen.png
