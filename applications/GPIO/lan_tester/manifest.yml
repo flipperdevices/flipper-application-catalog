@@ -1,0 +1,19 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/dok2d/fz-W5500-lan-analyse.git
+    commit_sha: ba124867ba4ea6628cd1be690b3020bff7120fd3
+    subdir: lan_tester
+id: lan_tester
+name: "LAN Tester"
+category: "GPIO"
+short_description: "Portable LAN tester with W5500 Ethernet module"
+description: "@README.md"
+changelog: "@CHANGELOG.md"
+author: "Dok2d"
+version: "1.2"
+screenshots:
+  - docs/screenshots/discovered_hosts.png
+  - docs/screenshots/main_menu.png
+  - docs/screenshots/lldp_result.png
+  - docs/screenshots/ETH_Bridge.png
