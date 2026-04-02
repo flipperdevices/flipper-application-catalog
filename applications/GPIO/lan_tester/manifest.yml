@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/dok2d/fz-W5500-lan-analyse.git
-    commit_sha: af7f2b96e43c09a4b8a4a7c01ac2d0271a619273
+    commit_sha: f5e63e72cd2eee18c6ffdc0756f4b335800b606c
 id: lan_tester
 name: "LAN Tester"
 category: "GPIO"
@@ -16,7 +16,7 @@ description: |
   diagnostic tools in a single FAP application.
 changelog: "@CHANGELOG.md"
 author: "Dok2d"
-version: "2.2.1"
+version: "2.4.0"
 screenshots:
   - docs/screenshots/discovered_hosts.png
   - docs/screenshots/main_menu.png
