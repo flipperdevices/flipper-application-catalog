@@ -1,0 +1,12 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/pinkpwningclub/flipperTrack.git
+    commit_sha: 78798d1e4f06e53e2b99f81e96c8afeaeaa0eea6
+short_description: "Simulates HID activity to test productivity monitoring detection"
+description: "@README.md"
+changelog: "@CHANGELOG.md"
+author: "@pinkpwningclub"
+screenshots:
+  - screenshots/1.png
+  - screenshots/2.png
