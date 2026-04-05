@@ -1,0 +1,12 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/hypery11/flipper-tesla-fsd.git
+    commit_sha: 2e698b7263e1700ca06ceabc27eb2e3f90d261d1
+
+short_description: Unlock Tesla FSD via CAN bus. Auto-detects HW3/HW4. Requires CAN Add-On.
+description: "@README.md"
+changelog: "@changelog.md"
+screenshots:
+  - screenshots/main_menu.png
+  - screenshots/fsd_running.png
