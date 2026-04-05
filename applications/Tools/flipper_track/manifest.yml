@@ -1,0 +1,12 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/pinkpwningclub/flipperTrack.git
+    commit_sha: 49524907967c96b569598daf683182a6bf0fe3e7
+short_description: "USB HID activity simulator: mouse jitter, keystrokes, and window cycling"
+description: "@README.md"
+changelog: "@CHANGELOG.md"
+author: "@pinkpwningclub"
+screenshots:
+  - screenshots/1.png
+  - screenshots/2.png
