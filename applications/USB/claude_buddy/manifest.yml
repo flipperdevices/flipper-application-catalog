@@ -2,11 +2,13 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/jxw1102/flipper-claude-buddy.git
-    commit_sha: 79da7b4ece5c6a620c6d6729734374f0ea1caf24
+    commit_sha: e77b1e73694a8aeab6c35eeff4f7af26db75d6dd
     subdir: flipper-app
 name: Claude Buddy
 id: claude_buddy
-short_description: "Physical companion for Claude Code - remote control with audio/haptic feedback"
+category: USB
+icon: "icons/claude_10x10.png"
+short_description: "Claude Code companion - physical remote control with audio feedback"
 description: "@README.md"
 changelog: "@CHANGELOG.md"
 author: jxw1102
