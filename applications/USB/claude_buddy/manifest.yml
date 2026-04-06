@@ -1,0 +1,18 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/jxw1102/flipper-claude-buddy.git
+    commit_sha: 79da7b4ece5c6a620c6d6729734374f0ea1caf24
+    subdir: flipper-app
+name: Claude Buddy
+id: claude_buddy
+short_description: "Physical companion for Claude Code - remote control with audio/haptic feedback"
+description: "@README.md"
+changelog: "@CHANGELOG.md"
+author: jxw1102
+screenshots:
+  - "./screenshots/1.png"
+  - "./screenshots/2.png"
+  - "./screenshots/3.png"
+  - "./screenshots/4.png"
+  - "./screenshots/5.png"
