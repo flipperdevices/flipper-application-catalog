@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/jxw1102/flipper-claude-buddy.git
-    commit_sha: e77b1e73694a8aeab6c35eeff4f7af26db75d6dd
+    commit_sha: 93623b901f4b910aa8baf48415ad34d52e3e8af4
     subdir: flipper-app
 name: Claude Buddy
 id: claude_buddy
