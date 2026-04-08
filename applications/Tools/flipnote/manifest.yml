@@ -1,0 +1,16 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/morty517/flipnote.git
+    commit_sha: 80e31d4f84aa63e5a0a4bfdda5ca1d1ee31dfd52
+
+description: "A real text editor for Flipper Zero. Open, edit, and save files directly on your flipper — no PC needed. Features virtual buffer for large files, Find & Replace, Copy/Paste, horizontal scroll, zoom levels, and more."
+
+short_description: "Real text editor for Flipper Zero"
+
+screenshots:
+  - screenshots/0.png
+  - screenshots/1.png
+  - screenshots/2.png
+
+changelog: changelog.md
