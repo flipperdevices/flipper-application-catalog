@@ -1,0 +1,17 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/Defensor7/flipperzero-mfp-reader.git
+    commit_sha: 27e7e830f83a0c3edb240913754498ad5e612aa5
+    subdir: app
+
+description: "@.catalog/README.md"
+changelog: "@.catalog/changelog.md"
+
+screenshots:
+  - .catalog/screenshots/1.png
+  - .catalog/screenshots/2.png
+  - .catalog/screenshots/3.png
+  - .catalog/screenshots/4.png
+  - .catalog/screenshots/5.png
+  - .catalog/screenshots/6.png
