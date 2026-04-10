@@ -1,0 +1,21 @@
+id: click_recorder
+name: Click Recorder
+version: "1.0.0"
+category: USB
+
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/0x78f1935/Click-Recorder.git
+    commit_sha: eabb82a13a3fb6347a88256fe0b6e38a8924bcd0
+    subdir: click_recorder
+
+author: "undeƒined (@0x78f1935)"
+
+short_description: "A powerful mouse automation tool. Record, replay, randomize, or spam mouse clicks over USB or BLE."
+
+description: "@README.md"
+
+changelog: |
+  1.0.0:
+    - Initial release
