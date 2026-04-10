@@ -1,0 +1,33 @@
+id: mouse_click_recorder
+name: Click Recorder
+version: "1.1"
+category: USB
+
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/0x78f1935/Click-Recorder.git
+    commit_sha: f080af7dcb369a4b16ecb11ee95d0d863a84f445
+    subdir: click_recorder
+
+icon: "@images/mouse_10x10.png"
+
+author: "undeƒined (@0x78f1935)"
+
+short_description: |
+  Turn your Flipper Zero into a powerful mouse automation tool. Record, replay, randomize, or spam mouse clicks over USB or Bluetooth. No software needed on the target computer thanks to HID, just connect your flipper zero.
+
+description: "@README.md"
+changelog: "@CHANGELOG.md"
+
+screenshots:
+  - "images/Screenshot_A1.png"
+  - "images/Screenshot_A2.png"
+  - "images/Screenshot_A3.png"
+  - "images/Screenshot_A4.png"
+  - "images/Screenshot_B1.png"
+  - "images/Screenshot_B2.png"
+  - "images/Screenshot_B3.png"
+  - "images/Screenshot_C1.png"
+  - "images/Screenshot_C2.png"
+  - "images/Screenshot_C3.png"
