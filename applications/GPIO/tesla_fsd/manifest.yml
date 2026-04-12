@@ -1,0 +1,12 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/hypery11/flipper-tesla-fsd.git
+    commit_sha: 668f7cd39369f0602a5c88c69e081c0afab37401
+
+short_description: Tesla CAN bus toolkit — FSD region-gate bypass, nag killer, BMS dashboard, extras. Requires CAN Add-On.
+description: "@README.md"
+changelog: "@changelog.md"
+screenshots:
+  - screenshots/main_menu.png
+  - screenshots/fsd_running.png
