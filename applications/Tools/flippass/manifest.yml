@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/Arckanos/FlipPass.git
-    commit_sha: fd5eadfeca675c28a012977f260bb7982bf1f15fa
+    commit_sha: fd5eadfeca675c28a012977f260bb7982bf1f15f
 short_description: KeePass (KDBX) password vault browser with HID writing via USB and Bluetooth.
 description: "@README.md"
 changelog: "@docs/changelog.md"
