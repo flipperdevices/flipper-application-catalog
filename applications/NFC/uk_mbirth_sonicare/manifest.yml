@@ -1,0 +1,21 @@
+# Flipper Zero App Catalog manifest
+
+sourcecode:
+    type: git
+    location:
+        origin: https://git.mbirth.uk/flipper_zero/sonicare.git
+        commit_sha: 8933b64139f0653011201898d1d68cd3ffa6ce9d
+        #subdir: .
+short_description: Philips Sonicare brush head NFC reader
+description: |
+    This app reads the NFC chip in Sonicare brush heads
+    and shows the amount of time this head has been used
+    as well as the intended lifespan. It also generates
+    the NFC password from the UID and MFG code.
+changelog: "@CHANGELOG.md"
+screenshots:
+    # First one will be main image in app listing - make it count!
+    - screenshots/flp0.png
+    - screenshots/flp1.png
+    - screenshots/flp2.png
+    - screenshots/flp3.png
