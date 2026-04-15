@@ -3,8 +3,8 @@ sourcecode:
   location:
     origin: https://github.com/code-phreak/flipper-holdem.git
     commit_sha: f2e41e71f7633ed76622ea57088b0c928b095020
-    subdir: .
 
+short_description: Texas Hold'em for Flipper Zero
 description: "@.catalog/README.md"
 changelog: "@.catalog/CHANGELOG.md"
 author: "code-phreak"
@@ -22,9 +22,3 @@ screenshots:
   - ".catalog/screenshots/10-showdown.png"
   - ".catalog/screenshots/11-results.png"
   - ".catalog/screenshots/12-you-won.png"
-
-current_version:
-  type: externalApp
-  value: "1.1"
-  fap_sha256: "10B9E1B0405846B3624D09DB36DF964B359B534552A5E3AD66137142846E6F5A"
-  catalog_api: 87.1
