@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/H4W9/FlipCheckers.git
-    commit_sha: 5bc63a6893e867921b04419c4d9ba70d1acc083e
+    commit_sha: cea8a945bdafaf1e8304c8950dbe4d01eb9139ed
 short_description: "Checkers for Flipper"
 description: "@./catalog_README.md"
 changelog: "@./CHANGELOG.md"
@@ -14,10 +14,10 @@ category: "Games"
 targets: ['all']
 icon: "flipcheckers_10px.png"
 screenshots:
-  - "screenshots/Main Menu.png"
-  - "screenshots/Settings.png"
-  - "screenshots/Checkers1.png"
-  - "screenshots/Checkers2.png"
-  - "screenshots/Checkers3.png"
-  - "screenshots/CheckersWIN.png"
-  - "screenshots/About.png"
+  - "screenshots/main_menu.png"
+  - "screenshots/settings_view.png"
+  - "screenshots/checkers_1.png"
+  - "screenshots/checkers_2.png"
+  - "screenshots/checkers_3.png"
+  - "screenshots/checkers_win.png"
+  - "screenshots/about_app.png"
