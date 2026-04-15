@@ -4,7 +4,6 @@ sourcecode:
     origin: https://github.com/code-phreak/flipper-holdem.git
     commit_sha: f2e41e71f7633ed76622ea57088b0c928b095020
 
-short_description: Texas Hold'em for Flipper Zero
 description: "@.catalog/README.md"
 changelog: "@.catalog/CHANGELOG.md"
 author: "code-phreak"
