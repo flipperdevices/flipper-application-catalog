@@ -2,9 +2,9 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/Bastelsaal/tonuino-flipper-zero.git
-    commit_sha: 1af30fd0e462c42b3993909e924ea0be44710e98
+    commit_sha: 11de379b67b37d24bb1812dd8c361b8f2b5c9999
 short_description: NFC card writer for TonUINO audio boxes
-description: "@README.md"
+description: "@docs/catalog_description.md"
 changelog: "@changelog.md"
 screenshots:
   - screenshots/01_main_menu.png
