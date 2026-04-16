@@ -1,3 +1,0 @@
-class BundlerException(Exception):
-    pass
-
