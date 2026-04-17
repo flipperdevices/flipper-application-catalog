@@ -1,0 +1,19 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/Endika/flipper-hyper-focus-calc.git
+    commit_sha: 62c69963f294b45be5fdcc87726109eb1b73b5b7
+short_description: Hyperfocal calculator for Flipper Zero — focal length, full-stop aperture, and per-sensor circle of confusion (CoC), with optional manual CoC editing.
+description: |
+  HyperFocus Calc computes hyperfocal distance from focal length in millimeters, aperture in standard full stops (1.4, 2, 2.8, 4, 5.6, 8, 11, 16, 22), and a per-sensor circle of confusion (CoC). CoC is derived from sensor width and height using a diagonal divided by 1500 (Zeiss-style rule), or you can set CoC manually with fine steps in the sensor editor. The main screen shows focal length, aperture, CoC, and hyperfocal distance in meters, with a simple camera-to-infinity graphic. You can define multiple sensors, pick the active one, and store data on the SD card. Includes main menu, sensor list and editor, text input for names, and a credits screen with version and repository link.
+author: Endika
+version: 0.1.1
+changelog: |
+  - v0.1.1: Documentation and catalog manifest updates.
+  - v0.1.0: Initial release — hyperfocal calculator, per-sensor CoC storage, sensor editor with decimal W/H and CoC, credits screen, host tests and CI.
+category: Tools
+id: flipper_hyper_focus_calc
+name: HyperFocus Calc
+screenshots:
+  - assets/menu.png
+  - assets/hyperfocal.png
