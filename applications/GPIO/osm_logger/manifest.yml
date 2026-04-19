@@ -1,0 +1,15 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/simongrossi/flipperzero-osm-logger-gps.git
+    commit_sha: 374de0875e393b6bcbfdd29641b6747f2212daa7
+    subdir: "."
+description: "@README.md"
+changelog: "@changelog.md"
+author: "@simongrossi"
+screenshots:
+  - "./screenshots/01-menu.png"
+  - "./screenshots/02-presets.png"
+  - "./screenshots/03-quicklog.png"
+  - "./screenshots/04-track.png"
+  - "./screenshots/05-status.png"
