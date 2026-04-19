@@ -1,0 +1,22 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/Endika/flipper-habit-flow.git
+    commit_sha: 6cfbe2100bb203233c15895cf52226aaf1ad6561
+short_description: Offline habit tracker for Flipper Zero — goals, streaks, progress, automatic saves, and optional prompts when the calendar advances.
+description: |
+  HabitFlow runs entirely on the device: name your habits, set a day-based goal (1–365, default 66), mark today complete, and follow streaks and your best run toward mastery. Changes are saved automatically. When the date moves forward, the app can ask whether you finished yesterday so streaks update in a clear way instead of dropping silently.
+
+  ## Features
+
+  - Dashboard with scrollable habits and a compact recent-activity strip per habit (filled = done, frame = missed).
+  - Detail view with progress, streak and record streak, optional medal after mastery, OK to toggle today, Up to reset streak (with confirm).
+  - Manage habits from the dashboard (Left): add, edit name and goal, save, delete.
+  - Launch handling for calendar gaps: a one-day gap with unfinished yesterday opens Yes/No per habit; longer gaps reset streaks and clear the strip.
+author: Endika
+version: 0.1.2
+changelog: |
+  - Initial catalog listing: habit list, detail, manage/edit, automatic saves, session and yesterday flow.
+screenshots:
+  - assets/main.png
+  - assets/habit.png
