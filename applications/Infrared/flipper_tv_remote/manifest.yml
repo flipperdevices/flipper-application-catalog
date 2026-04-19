@@ -1,0 +1,17 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/jmanion0139/flipper_tv_remote.git
+    commit_sha: 58ad2a4191e2d09ee0da95757a0549581fd7145f
+description: "@README.md"
+changelog: "@./docs/changelog.md"
+screenshots:
+  - docs/screenshots/Vertical-Remote.png
+  - docs/screenshots/Horizontal-Remote.png
+  - docs/screenshots/Menu.png
+  - docs/screenshots/Learn-Remote.png
+  - docs/screenshots/Learn-Remote-Power.png
+  - docs/screenshots/Remote-Selection.png
+  - docs/screenshots/Settings.png
+  - docs/screenshots/Veritcal-Remote-Button-Up-Pressed.png
+  - docs/screenshots/Veritcal-Remote-Button-Ok-Pressed.png
