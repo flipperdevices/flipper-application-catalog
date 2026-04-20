@@ -1,0 +1,17 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/SAMS0N1TE/ZeroMesh.git
+    commit_sha: df0558610952e5e2ee406d6b2494cd2e08b83eec
+
+short_description: Meshtastic serial interface for Flipper Zero
+
+description: "@README.md"
+
+changelog: "@changelog.md"
+
+screenshots:
+  - docs/images/messages.png
+  - docs/images/roster.png
+  - docs/images/chat.png
+  - docs/images/settings.png
