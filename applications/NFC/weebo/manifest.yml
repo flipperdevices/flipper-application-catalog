@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/bettse/weebo.git
-    commit_sha: ccfa358540954e3c2d4826fde7e6de6ab0705cd8
+    commit_sha: c22ef9edd1452ddf96dbd607849d72706094c472
 description: "@.catalog/README.md"
 changelog: "@.catalog/changelog.md"
 author: "bettse"
