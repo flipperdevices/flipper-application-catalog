@@ -1,0 +1,16 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/ismail-oe/flipdeck
+    commit_sha: "23e38447976a5812d252e19446aba829c9e4d4eb"
+
+short_description: "USB HID Macro Pad – media keys & custom shortcuts for Flipper Zero"
+
+description: README.md
+
+changelog: CHANGELOG.md
+
+screenshots:
+  - screenshots/1.png
+  - screenshots/2.png
+  - screenshots/3.png
