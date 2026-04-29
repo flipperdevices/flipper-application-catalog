@@ -2,13 +2,13 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/jblanked/Ghouls-Flipper.git
-    commit_sha: e9c4fc6e724c27c8a37b42c3e0879f354e93c989
+    commit_sha: 31ec4c75bf1e41196e8d7e5244ec54ebc94ae7b5
 short_description: "3D Round-based survival game"
 description: "@README.md"
 changelog: "@CHANGELOG.md"
 author: "JBlanked"
 name: "Ghouls"
-version: "0.4"
+version: "0.5"
 id: "ghouls"
 category: "GPIO"
 targets: ['all']
