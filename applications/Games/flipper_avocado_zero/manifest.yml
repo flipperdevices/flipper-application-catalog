@@ -1,0 +1,29 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/Endika/flipper-avocado-zero.git
+    commit_sha: 469f24891ec0fccc0212267b8aa6c2e39018000f
+short_description: "Avocado pit care sim: clean water, grow roots, avoid grime."
+description: |
+  ## Avocado Zero
+
+  A tiny **care sim** for Flipper Zero: you suspend an avocado pit over a glass of water (toothpicks and all) and try to keep it alive long enough to grow a full root system. Time passes, the water gets murky, and if you neglect it for too long—game over.
+
+  ## How to play
+
+  - **Clean** the glass when the water is dirty so your pit stays healthy. Cleaning when it really needs it helps the roots grow.
+  - **Days** tick by in real time; dirt builds up if you stay away too long.
+  - **Win** when the roots reach their full length—then you can start a fresh pit and do it again.
+  - If the water gets **too dry or too filthy**, it is **game over**; hit **Start** to try again from the beginning.
+changelog: |
+  **0.1.0** — First stable release.
+author: Endika
+name: Avocado Zero
+version: 0.1.0
+id: "flipper_avocado_zero"
+category: "Games"
+targets: ["all"]
+screenshots:
+  - "assets/clean.png"
+  - "assets/roots.png"
+  - "assets/game_over.png"
