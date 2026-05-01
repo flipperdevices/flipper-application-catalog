@@ -1,0 +1,17 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/MinorGlitch/zerofido.git
+    commit_sha: 3d3dfc83f5f05818c44d6b272b23096910cef6d1
+short_description: FIDO2 for Flipper Zero
+description: "@docs/catalog.md"
+changelog: "@docs/changelog.md"
+screenshots:
+  - docs/screenshots/home-waiting.png
+  - docs/screenshots/create-passkey.png
+  - docs/screenshots/credentials-list.png
+  - docs/screenshots/passkey-detail.png
+  - docs/screenshots/pin-menu.png
+  - docs/screenshots/pin-entry.png
+  - docs/screenshots/reset-confirm.png
+  - docs/screenshots/delete-passkey.png
