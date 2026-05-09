@@ -18,8 +18,8 @@ short_description: NFC Tools can read and write your NFC tags
 
 sourcecode:
   location:
-    commit_sha: 81c1aac74b6fdba39c5625115671345299174273
+    commit_sha: 41eeb4fcc8cfc1a79642b7cffd2c5b8848f0d6d4
     origin: https://github.com/wakdev/nfctools-fz
   type: git
 
-version: 1.0
+version: 1.1
