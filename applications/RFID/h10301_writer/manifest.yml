@@ -6,5 +6,5 @@ metadata:
   changelog: changelog.md
   README: README.md
   screenshots:
-    - ready_to_burn.png
-    - writing_tag.png
+    - screenshots/ready_to_burn.png
+    - screenshots/writing_tag.png
