@@ -1,0 +1,31 @@
+id: "pingequa_rf_toolkit"
+name: "PINGEQUA RF Lab"
+author: "@pingequalab"
+category: "GPIO"
+version: "0.5"
+targets:
+  - "all"
+sourcecode:
+  type: git
+  location:
+    origin: "https://github.com/pingequalab/rf-lab.git"
+    commit_sha: "04ac8c54c430b117a95126d63461262f633dba8a"
+short_description: "NRF24 2.4 GHz spectrum scanner + 7-mode jammer with CSV export."
+description: |
+  PINGEQUA RF Lab is a research-grade 2.4 GHz RF toolkit for Flipper Zero
+  using an NRF24L01+ module with PA/LNA.
+
+  Features:
+  - 126-channel real-time NRF24 spectrum scanner with WiFi/BLE markers
+  - 7-mode jammer: CW Custom, BLE Adv, BLE Reactive (RPD-based),
+    WiFi 1/6/11 pilot-aware OFDM, ALL 2.4G sweep
+  - CSV data export: long-press OK exports scan hits; auto session log on jammer exit
+  - Settings persistence: jammer mode and channel saved across sessions
+  - Hardware auto-detect at startup with diagnostic error screen
+
+  Requires the PINGEQUA 2-in-1 RF Devboard (NRF24L01+ with integrated PA/LNA).
+changelog: "CHANGELOG.md"
+screenshots:
+  - screenshots/menu.png
+  - screenshots/scanner.png
+  - screenshots/jammer.png
