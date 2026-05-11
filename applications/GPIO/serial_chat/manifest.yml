@@ -1,0 +1,11 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/osmangokc/flipper_serial_chat.git
+    commit_sha: 9cfd5f6d888d3ada4452ff6f7454ed18fed18b5a
+description: "@README.md"
+changelog: "@changelog.md"
+screenshots:
+  - screenshots/1.png
+  - screenshots/2.png
+  - screenshots/3.png
