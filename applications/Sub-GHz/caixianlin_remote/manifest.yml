@@ -1,0 +1,14 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/anty-ce/flipper_zero_caixianlin_remote.git
+    commit_sha: e1f11be6b60dc4eb1f8ca69bb78277e6f03f6ccc
+short_description: Remote control for CaiXianlin shock collar via Sub-GHz radio
+description: "@SIMPLE_README.md"
+changelog: "@changelog.md"
+screenshots:
+  - screenshots/0-home-vibrate.png
+  - screenshots/1-home-beep.png
+  - screenshots/2-setup.png
+  - screenshots/3-listen-waiting.png
+  - screenshots/4-setup-edit-station-id.png
