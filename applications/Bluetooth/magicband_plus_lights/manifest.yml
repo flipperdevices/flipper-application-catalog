@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/Haw8411/magic-band-plus-lights
-    commit_sha: 7ed44e43bf316bf37c10aaf8806359161ca83c98
+    commit_sha: 808295841f41c40a0a07b46572eac0ee676f0ec2
 description: "@README.md"
 changelog: "@changelog.md"
 screenshots:
