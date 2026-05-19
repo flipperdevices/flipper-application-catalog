@@ -5,11 +5,11 @@ sourcecode:
     commit_sha: 0e9cd9232f66c62413a11c5a1d882e3c63ee3254
 id: "i2c_tools_cli"
 category: "GPIO"
-short_description: "I2C scanner, sender and sniffer with N-byte read, HEX/ASCII view, and a serial CLI."
+short_description: "I2C scanner / sender / sniffer with N-byte read, HEX/ASCII view, and a serial CLI (i2c scan/probe/read/write)."
 description: "@README.md"
 changelog: "@CHANGELOG.md"
-author: "@Tristus1er"
-version: "1.0.0"
+author: "@Tristus1er (forked from @NaejEL)"
+version: "1.0"
 name: "I2C Tools CLI"
 screenshots:
   - screenshots/01_main_menu.png
