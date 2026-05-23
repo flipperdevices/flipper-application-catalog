@@ -2,8 +2,8 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/lordbuffcloud/flipper-ck42x-passvault.git
-    commit_sha: 550a4ae60c35e4ec04031b4d741ba80b027a32f4
-short_description: CK42X.com field password vault with memorable generator and opt-in HID password typing.
+    commit_sha: 49386a7ddb9c489339af3544f66f17a50e6f2e14
+short_description: CK42X.com password vault with RNG generation and opt-in HID password typing.
 description: "@catalog_description.md"
 changelog: "@catalog_changelog.md"
 screenshots:
