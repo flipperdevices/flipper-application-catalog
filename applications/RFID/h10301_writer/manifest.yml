@@ -1,10 +1,11 @@
-source_code:
+sourcecode:
+  location:
+    commit_sha: 9807cf071b0fdc4a99d11987518909bc90be251c
+    origin: https://github.com/Zacvr/h10301_writer
   type: git
-  url: https://github.com/Zacvr/h10301_writer
-  commit_sha: 9807cf071b0fdc4a99d11987518909bc90be251c
-metadata:
-  changelog: changelog.md
-  README: README.md
-  screenshots:
-    - screenshots/ready_to_burn.png
-    - screenshots/writing_tag.png
+
+changelog: "@changelog.md"
+description: "@README.md"
+screenshots:
+ - screenshots/ready_to_burn.png
+ - screenshots/writing_tag.png
