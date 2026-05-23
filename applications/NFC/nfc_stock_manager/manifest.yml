@@ -1,0 +1,25 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/Endika/flipper-nfc-stock.git
+    commit_sha: 9ae89cceea14d5ee0b8250a7c2fded2a70f678d5
+short_description: "NFC-based inventory: scan a tag to open or create an item, edit stock, location and minimum, with multi-warehouse DB and CSV export."
+description: |
+  NFC Stock Manager turns your Flipper Zero into a portable inventory tool. Scan an NFC tag to open the matching item or create a new one on the fly, then edit its stock, minimum stock and location directly from the device. Items are stored in compact .bin databases and can be exported to .csv for easy backup or sharing. Multiple warehouses are supported: switch between databases, create new ones, or rename the active one from Settings.
+author: Endika
+version: 0.1.5
+changelog: |
+  0.1.5
+  - fix(app): resolve fam errors
+  0.1.4
+  - fix: update scanner scene
+  0.1.3
+  - feat: improve stability, warehouse DB management, and CSV export UX
+  0.1.2
+  - fix(ci): upload fix
+  0.1.1
+  - feat(init): initial release
+screenshots:
+  - assets/menu.png
+  - assets/items.png
+  - assets/details.png
