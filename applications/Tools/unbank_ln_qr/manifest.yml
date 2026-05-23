@@ -1,0 +1,24 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/shanzy39/Unbank-BTCLN-QR-Generator.git
+    commit_sha: 2b77fdc8864da268edd8abbe89875dce4b249864
+name: Unbank LN QR
+id: unbank_ln_qr
+category: Tools
+version: "1.0"
+author: Unbank
+short_description: Display Lightning Address QR codes for receiving sats over the Lightning Network.
+description: "@README.md"
+changelog: "@changelog.md"
+screenshots:
+  - screenshots/01-splash-screen.png
+  - screenshots/02-main-menu.png
+  - screenshots/03-wallet-selection.png
+  - screenshots/04-speed-wallet.png
+  - screenshots/05-qr-code.png
+  - screenshots/06-write-nfc-tag.png
+  - screenshots/07-download-unbank.png
+  - screenshots/08-about-screen-1.png
+  - screenshots/09-about-screen-2.png
+icon: icon.png
