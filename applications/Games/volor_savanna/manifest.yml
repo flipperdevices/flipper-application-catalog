@@ -2,11 +2,11 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/Invizabel/VolorSavanna
-    commit_sha: d9933454bae6efc3a159e5c374408f0f93116db8
+    commit_sha: 6f841f0ecace60b34c1e49e2e830854fd5268573
     subdir: "Volor Savanna/FlipperZero"
 short_description: "A text adventure game"
 changelog: "@./docs/changelog.md"
-description: "A text adventure game that takes you to the African Savanna!"
+description: "A text adventure game that takes you to the African Savanna! Type 'E' to exit the game at any time!"
 source_file:
   - src/main.c
 screenshots:
