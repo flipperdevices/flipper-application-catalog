@@ -1,0 +1,10 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/lordbuffcloud/flipper-ck42x-payload-bay.git
+    commit_sha: 4c890079a250da4686e6cd1a67dfbb0460a3c620
+short_description: Authorized USB payload training launcher for Flipper Zero.
+description: "@catalog_description.md"
+changelog: "@changelog.md"
+screenshots:
+  - screenshots/payload-bay-main.png
