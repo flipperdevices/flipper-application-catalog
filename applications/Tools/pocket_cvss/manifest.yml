@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/vavkamil/pocket-cvss.git
-    commit_sha: c911a5f7aa41f2338d019443f4f48ecc448a33f2
+    commit_sha: b8aaace66063e6d3ed551b6f28e70580fbc58d22
 description: "@.catalog/README.md"
 changelog: "@CHANGELOG.md"
 screenshots:
