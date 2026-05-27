@@ -3,7 +3,7 @@ sourcecode:
   location:
     origin: https://github.com/TheRealLuro/Flipper-zero-drop-detector.-
     subdir: flipper-zero/expo_app
-    commit_sha: e9d7992579dde819409fab2b03f660af43978bcd
+    commit_sha: 0119cc746b4d89db7a72495f4e1b5da4a83838f0
 
 id: drop_detect
 name: FliPort
