@@ -1,0 +1,12 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/adamaratski/flipperzero-r60afd1.git
+    commit_sha: b85f3cc63bf0522f623f4b660575dd47d1c9d559
+
+id: mr60fda_radar
+name: "MR60FDA Radar"
+category: "GPIO"
+author: "Alexandr Aratski"
+description: "@README.md"
+short_description: "60 GHz mmWave fall detection radar viewer (Seeed R60AFD1/R60AFD2)"
