@@ -1,9 +1,18 @@
 sourcecode:
-  - type: git
-    location:
-      origin: https://github.com/TheRealLuro/Flipper-zero-drop-detector.-
-      subdir: flipper-zero/expo_app
-      commit_sha: abef2ded5d0a735715904dec827a4c67a03e46aa
+  type: git
+  location:
+    origin: https://github.com/TheRealLuro/Flipper-zero-drop-detector.-
+    subdir: flipper-zero/expo_app
+    commit_sha: e9d7992579dde819409fab2b03f660af43978bcd
+
+id: drop_detect
+name: FliPort
+category: Tools
+version: "0.3"
+author: FliPort
+icon: fliport_10px.png
+targets:
+  - all
 short_description: IMU drop / idle / walking / fidget sample collector for training a Flipper-side motion classifier.
 description: |
   FliPort records labeled IMU windows from an ICM42688P breakout on the
@@ -11,7 +20,7 @@ description: |
   Walking, Fidget. Drop captures a fixed 300-sample event window
   triggered by an on-screen "READY → DROP!" countdown; the other modes
   record continuously until you back out. CSV files are written to
-  `/ext/apps_data/drop_detect/<label>/<timestamp>.csv` and are intended
+  /ext/apps_data/drop_detect/LABEL/TIMESTAMP.csv and are intended
   for offline classifier training (the matching Conv1D / dataset
   tooling lives in the same repo).
 
