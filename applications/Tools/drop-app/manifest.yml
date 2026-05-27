@@ -1,0 +1,38 @@
+sourcecode:
+  - type: git
+    location:
+      origin: https://github.com/TheRealLuro/Flipper-zero-drop-detector.-
+      subdir: flipper-zero/expo_app
+      commit_sha: abef2ded5d0a735715904dec827a4c67a03e46aa
+short_description: IMU drop / idle / walking / fidget sample collector for training a Flipper-side motion classifier.
+description: |
+  FliPort records labeled IMU windows from an ICM42688P breakout on the
+  external SPI/GPIO header. Four screens, one per label: Drop, Idle,
+  Walking, Fidget. Drop captures a fixed 300-sample event window
+  triggered by an on-screen "READY → DROP!" countdown; the other modes
+  record continuously until you back out. CSV files are written to
+  `/ext/apps_data/drop_detect/<label>/<timestamp>.csv` and are intended
+  for offline classifier training (the matching Conv1D / dataset
+  tooling lives in the same repo).
+
+  Requires an ICM42688P module wired to the external header
+  (CS = PC3, INT = PB2, on the standard SPI bus). Without the IMU the
+  app starts but capture will fail.
+changelog: |
+  ## 0.3
+  - Removed unneeded files.
+  ## 0.2
+  - Reset each view's animation + timer on every menu entry so the REC
+    clock and Drop countdown start fresh every visit.
+  - Fixed a phase-transition bug that was skipping the Drop falling
+    animation entirely.
+  - Removed per-frame UART logging that was causing visible jitter at 30 fps.
+  - Restart icon animations from frame 0 on view entry.
+
+  ## 0.1
+  - Initial release. Submenu + four capture views, IMU init, CSV writer.
+screenshots:
+  - screenshots/01_menu.png
+  - screenshots/02_fidget.png
+  - screenshots/03_walking.png
+  - screenshots/04_idle_rec.png
