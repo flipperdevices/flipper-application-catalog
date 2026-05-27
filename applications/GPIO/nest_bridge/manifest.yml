@@ -2,17 +2,11 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/Bibfortuna5057/NestBridge-Flipper.git
-    commit_sha: 9d5471b
- 
-app:
-  id: nest_bridge
-  name: NestBridge
-  author: Bibfortuna5057
-  version: "1.0"
-  short_description: Control a NoLongerEvil Nest thermostat from your Flipper via BLE advertisements
-  description: |
-    Control a NoLongerEvil flashed Nest Gen 1/2 thermostat from your Flipper Zero using BLE advertisement packets. No phone, no pairing, no connection between devices. Set temperature, change mode, and set fan timers from a simple menu.
-  category: GPIO
-  screenshots: []
-  links:
-    source_code: https://github.com/Bibfortuna5057/NestBridge-Flipper
+    commit_sha: 92be2681ff9fc4924cef16acdc8ee80e646ecf40
+short_description: "Control a NoLongerEvil Nest thermostat from your Flipper Zero via BLE advertisements"
+description: "@README.md"
+changelog: "v1.0 - Initial release"
+screenshots:
+  - "./screenshots/1.png"
+  - "./screenshots/2.png"
+  - "./screenshots/3.png"
