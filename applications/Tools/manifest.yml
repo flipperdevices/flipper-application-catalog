@@ -1,0 +1,5 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/harimwoo/flipper-flo-tracker.git
+    commit_sha: 691b368fc0648aa6a57d5337c17e498e33d9fa8c
