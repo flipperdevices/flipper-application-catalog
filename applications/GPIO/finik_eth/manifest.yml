@@ -1,0 +1,11 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/karasevia/finik_eth.git
+    commit_sha: de95b93afdda9722156ccd5d84783f1b8907a9b0
+description: "Driver for W5500 ethernet module. Can DHCP or Static IP and Ping some IP-address"
+screenshots:
+  - "./images/screenshot_ping.png"
+  - "./images/screenshot_init.png"
+  - "./images/screenshot_dhcp.png"
+  - "./images/screenshot_static.png"
