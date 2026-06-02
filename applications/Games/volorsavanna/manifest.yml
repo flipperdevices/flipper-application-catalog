@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/Invizabel/VolorSavanna
-    commit_sha: ea0a4bf19fded60037b409593218a0aee892190d
+    commit_sha: 5a7f1e44cc888d87e75ec847649fc024df837095
     subdir: "Volor Savanna/FlipperZero"
 short_description: "A text adventure game"
 changelog: "@./docs/changelog.md"
