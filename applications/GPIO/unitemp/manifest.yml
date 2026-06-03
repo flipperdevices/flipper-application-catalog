@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/quen0n/unitemp-flipperzero.git
-    commit_sha: 0e01787e31caa97b19089f0cf112cd875f8900b2
+    commit_sha: ae6271000f9f4a06ea8f36bb86229159331d9e6e
 category: "GPIO"
 description: "@README_CATALOG.md"
 changelog: "@CHANGELOG.md"
