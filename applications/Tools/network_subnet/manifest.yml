@@ -1,0 +1,24 @@
+## This is a sample manifest file for the Flipper Apps Catalog.
+## Create one for your app in a corresponding directory in the 'applications' folder.
+
+sourcecode:
+  type: git
+  location:
+    ## Specify the git URL of your repository
+    origin: https://github.com/aaumkar/network_subnet.git
+    ## Put the full commit SHA of the commit with the app's code you want to submit
+    commit_sha: 0467a8b4c717b5d9647cbf8c714bc530f4ccaf87
+    ## (Optional) If your app is located in a subdirectory of the repository, specify it here
+    # subdir: .
+## If application.fam contains 'fap_description', it will be used as a short description
+short_description: A tool to view network subnets and other details.
+## For 'description' and 'changelog', you can use limited markdown syntax
+## You can also specify a file from your app's repository as a source with @
+description: |
+  This started as my personl tool to view details of networks, subnets, CIDRs.
+changelog: "@CHANGELOG.md"
+## Unmodified screenshots from qFlipper
+screenshots:
+  - screenshots/screenshots-1.png
+  - screenshots/screenshots-2.png
+  - screenshots/screenshots-3.png
