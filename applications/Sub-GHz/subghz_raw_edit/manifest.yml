@@ -31,7 +31,7 @@ description: |
   4. Place **A** at the start of one clean frame, press OK, place **B** at the end.
   5. Hold **OK** to open the action menu and choose:
      - **Save** - a name is suggested. Edit it if you like and confirm.
-     The A..B selection is written to /ext/subghz/<name>.sub.
+     The A..B selection is written to /ext/subghz/(name).sub.
   6. **Cut** - the stretch between A and B is removed from the working copy and
      the two sides are joined.
   7. **Undo** - revert the last cut.
