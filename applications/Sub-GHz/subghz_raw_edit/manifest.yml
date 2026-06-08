@@ -1,0 +1,38 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/Lechnio/SubGHz-RAW-Edit.git
+    commit_sha: e8658d509dca89d951425bf3522314da2c3c4222
+short_description: "A tiny on-device waveform editor for Flipper Zero that trims RAW .sub captures down to just the part you care about."
+description: |
+  A tiny on-device waveform editor for Flipper Zero that trims RAW .sub
+  captures down to just the part you care about. Open a recording, let the
+  app find the actual signal hiding inside a long stretch of silence, slide
+  two markers to the start and end of one clean frame, and save it as a new
+  .sub file.
+
+  **Receive and analysis only.** This app never transmits. It only reads,
+  displays and rewrites files you already have on the SD card.
+
+  ## Controls
+
+  - **Left / Right** - move the active cut marker (hold to move faster)
+  - **Up / Down** - zoom in and out, centered on the active marker
+  - **OK (short press)** - switch the active marker between A and B
+  - **OK (hold)** - save the trimmed file
+  - **Back** - exit
+
+  ## Usage
+
+  1. Launch Sub-GHz RAW Edit from the Apps menu, under Sub-GHz.
+  2. Pick a RAW .sub file from /ext/subghz.
+  3. The view opens centered on the detected frame. Zoom out to see the whole
+     signal, zoom in to see individual pulses.
+  4. Place A at the start of one clean frame, press OK, then place B at the end.
+  5. Hold OK to save. The trimmed copy is written next to the original in
+     /ext/subghz, auto-numbered so saves never overwrite an earlier trim.
+changelog: "@changelog.md"
+screenshots:
+  - ./docs/images/03-zoom-mid.png
+  - ./docs/images/04-zoom-closer.png
+  - ./docs/images/05-waveform.png
