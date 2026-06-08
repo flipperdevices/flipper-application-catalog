@@ -1,0 +1,25 @@
+author: "Wakdev"
+category: "NFC"
+changelog: "@changelog.md"
+description: "@README.md"
+icon: "icons/icon.png"
+id: "nfc_tools"
+name: "NFC Tools"
+
+screenshots:
+  - screenshots/screenshot_01.png
+  - screenshots/screenshot_02.png
+  - screenshots/screenshot_03.png
+  - screenshots/screenshot_04.png
+  - screenshots/screenshot_05.png
+  - screenshots/screenshot_06.png
+
+short_description: NFC Tools can read and write your NFC tags
+
+sourcecode:
+  location:
+    commit_sha: b36c5f31cf2f2f595bd27b7ad6fab1fd919e7249
+    origin: https://github.com/wakdev/nfctools-fz
+  type: git
+
+version: 1.2
