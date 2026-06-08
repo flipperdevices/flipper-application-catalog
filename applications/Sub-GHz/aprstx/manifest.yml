@@ -1,0 +1,13 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/yo3gnd/flipper-zero-aprs-tx
+    commit_sha: 1558ee46619b20d97f937a32849ac887c9e192eb
+description: "@README-MARKET.md"
+changelog: "@CHANGELOG-MARKET.md"
+screenshots:
+  - docs/pics/Screenshot-20231015-082151.png
+  - docs/pics/Screenshot-20231015-082145.png
+  - docs/pics/Screenshot-20260424-130712.png
+  - docs/pics/Screenshot-20231015-082119.png
+  - docs/pics/Screenshot-20231015-082113.png
