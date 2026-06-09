@@ -1,0 +1,10 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/lordbuffcloud/flipper-ck42x-dopeflipper.git
+    commit_sha: 0af659197cc8744b465942c26cc299f756fe7076
+short_description: CK42X pocket market game inspired by ck42x.com/dopewars.
+description: "@catalog_description.md"
+changelog: "@catalog_changelog.md"
+screenshots:
+  - screenshots/dopeflipper-title.png
