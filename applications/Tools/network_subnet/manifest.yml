@@ -4,7 +4,7 @@ sourcecode:
     ## Specify the git URL of your repository
     origin: https://github.com/aaumkar/network_subnet.git
     ## Put the full commit SHA of the commit with the app's code you want to submit
-    commit_sha: 428dd1997d9df78651339b45d3bda9acdd28ff4f
+    commit_sha: dea3e7427dca0db1f4babad6c33bc799a06f4b74
     ## (Optional) If your app is located in a subdirectory of the repository, specify it here
     # subdir: .
 ## If application.fam contains 'fap_description', it will be used as a short description
