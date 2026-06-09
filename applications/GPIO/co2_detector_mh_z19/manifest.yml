@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/razerhome/flipper-zero-co2-mh-z19.git
-    commit_sha: 946a34a16bc527acfa9b63c76895d81065fe4f6f
+    commit_sha: 532deebaeed5bd11972ac01a693f1500df37f5be
 description: "@README.md"
 changelog: "@CHANGELOG.md"
 screenshots:
