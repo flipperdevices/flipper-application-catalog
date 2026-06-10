@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/maxwalks/subhound.git
-    commit_sha: fd40fbe26d007601463a05c02f896e419ee26b03
+    commit_sha: ea0976a2e2bfac54a1e372e4df81497a5af8bd18
     subdir: flipper-app
 description: "@CATALOG.md"
 changelog: "@./docs/changelog.md"
