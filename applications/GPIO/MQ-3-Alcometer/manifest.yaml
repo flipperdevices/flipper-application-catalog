@@ -1,0 +1,9 @@
+source:
+  url: https://github.com/serjantlk/MQ-3-Alcometer
+  commit_sha: b6ee60fe936df94823b79e9edd21de0a570863b6
+  subdir: .
+
+icon: icon.png
+screenshots:
+readme: README.md
+changelog: changelog.md
