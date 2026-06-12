@@ -1,0 +1,11 @@
+id: led_ring_matrix_studio
+name: LED Ring & Matrix Studio
+category: GPIO
+description: Ultimate hardware tester for WS2812B/SK6812 NeoPixel rings and square matrices. Includes live configuration for LED count and layouts, dynamic brightness limiting for Flipper protection, adjustable speed, and multiple advanced animations like Rainbow, Breath, KITT Scanner, and Organic Fire.
+source_url: https://github.com/xfwluna/led_ring_matrix_studio
+author: xfwluna
+icon: led_studio_icon.png
+screenshots:
+  - screenshots/1.png
+  - screenshots/2.png
+  - screenshots/3.png
