@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/cybersantana83/ChaosID.git
-    commit_sha: f7263e7799dafe307ed50cb32d7e968fef044b51
+    commit_sha: 5be2697803a23992a8c8d71a854b9edf160fec5e
 description: |
   ChaosID is a forensic card identifier for Flipper Zero. It does not aim to
   clone cards or break cryptography on the device itself, but to tell you
@@ -29,12 +29,12 @@ description: |
     and final report of how many keys/sectors were recovered.
 
   Intended for security research, physical access control auditing and
-  educational use. Part of the Chaos IAM research series by Cafe com Solda.
+  educational use.
 
   Project page: https://github.com/cybersantana83/ChaosID
 short_description: "Card forensics + risk classification + MIFARE Classic dictionary attack"
 changelog: |
-  0.6 - Catalog submission, full English metadata
+  0.6 - Catalog submission, full English UI, ANATEL easter egg
   0.5 - MIFARE Classic dictionary attack with Investigate button
   0.4 - Scan persistence (CSV log) + History menu
   0.3 - Real UID/ATQA/SAK extraction via iso14443_3a_poller_sync
