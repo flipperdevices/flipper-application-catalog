@@ -1,4 +1,4 @@
-# FlipIRFreq
+## FlipIRFreq
 
 FlipIRFreq is a Flipper Zero external app for generating either a high-frequency IR carrier or a low-frequency IR pulse train.
 
