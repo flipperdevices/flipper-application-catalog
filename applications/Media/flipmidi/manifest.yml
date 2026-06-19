@@ -11,7 +11,7 @@ screenshots:
 short_description: 'FlipMIDI is a Flipper Zero external app that plays Standard MIDI files as retro buzzer music through the built-in speaker.'
 sourcecode:
   location:
-    commit_sha: a93041d7282284fa1082b8b436bfcf3c78eab99a
+    commit_sha: 9f2f07c6b257eb14700c36fa31ec1b268e55a405
     origin: https://github.com/Aspenini/flipmidi.git
     subdir:
   type: git
