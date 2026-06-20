@@ -1,0 +1,13 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/varunyellina/flipper-ir-remote-polkmagnifi.git
+    commit_sha: 5a0d75985a80a7f3f07fa04fd41a562b779a0bcc
+
+short_description: IR remote for the Polk MagnifiMini soundbar
+description: "@README.md"
+changelog: "@CHANGELOG.md"
+screenshots:
+  - images/screenshots/screen_controls.png
+  - images/screenshots/screen_audio_sources.png
+  - images/screenshots/screen_eq_presets.png
