@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/AugustinKrb/flipper-led-remote.git
-    commit_sha: 358584b187a7b60d0d0189a12180f57868751ed8
+    commit_sha: 093b2ae3463461c2772abb40771d6d1fb8de6636
 short_description: Universal LED strip remote with IR learning mode
 description: "@README.md"
 changelog: "@./changelog.md"
