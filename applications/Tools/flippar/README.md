@@ -1,19 +1,13 @@
-# FlipPar Catalog Submission
+## FlipPar
 
-Copy `manifest.yml` from this folder into your fork of:
+FlipPar is a Flipper Zero external app for tracking golf or disc golf rounds on-device. It lets you set the number of holes and players, rename players, record par and score values hole-by-hole, and export a plain-text score sheet to the SD card.
 
-`flipperdevices/flipper-application-catalog`
-
-at:
-
-`applications/Tools/flippar/manifest.yml`
-
-Before opening the PR:
-
-1. Commit and push the latest changes in the FlipPar source repository.
-2. Replace `REPLACE_WITH_COMMITTED_SHA` in `manifest.yml` with that source-repo commit SHA.
-3. Validate the manifest in your local clone of the Flipper catalog repo.
-
-Optional:
-
-- Add a small readme in the same catalog folder if you want extra notes visible from the catalog manifest link.
+- Supports 1 to 27 holes
+- Supports 1 to 10 players
+- Editable player names
+- Per-hole par tracking
+- Per-player hole scores
+- Automatic current-round persistence and restore
+- Running total view with leader summary relative to par
+- Plain-text score-sheet export to the SD card
+- In-app lock screen for quickly hiding the current round
