@@ -5,13 +5,13 @@ sourcecode:
     commit_sha: 5b58614b4a29602b2650b23805b829898ecd1229
 
 short_description: Track golf and disc golf rounds on Flipper Zero.
-description: "@README.md"
+description: "@README-flipper.md"
 changelog: "@changelog.md"
 
 screenshots:
-  - "Screenshots/Loading Screen.png"
-  - "Screenshots/Menu1.png"
-  - "Screenshots/Menu2.png"
-  - "Screenshots/Main View No Grid.png"
-  - "Screenshots/Grid View.png"
-  - "Screenshots/Totals.png"
+  - "@Screenshots/Loading Screen.png"
+  - "@Screenshots/Menu1.png"
+  - "@Screenshots/Menu2.png"
+  - "@Screenshots/Main View No Grid.png"
+  - "@Screenshots/Grid View.png"
+  - "@Screenshots/Totals.png"
