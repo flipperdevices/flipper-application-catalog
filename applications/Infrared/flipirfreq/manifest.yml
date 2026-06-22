@@ -9,6 +9,6 @@ description: "@README-flipper.md"
 changelog: "@changelog.md"
 
 screenshots:
-  - "@Screenshots/Main.png"
-  - "@Screenshots/Pulse Mode.png"
-  - "@Screenshots/Send Screen.png"
+  - "Screenshots/Main.png"
+  - "Screenshots/Pulse Mode.png"
+  - "Screenshots/Send Screen.png"
