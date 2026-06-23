@@ -1,0 +1,17 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/ViperDroid/flipper-badge-audit.git
+    commit_sha: 92c75175d9ef41ac8380ef051e392a00a891dbd3
+name: Badge Audit
+id: badge_audit
+category: NFC
+version: "1.0"
+author: ViperDroid
+targets:
+  - f7
+short_description: Defensive auditor that rates how clone-resistant an NFC access badge is.
+description: "@docs/catalog.md"
+changelog: "@docs/changelog.md"
+screenshots:
+  - screenshots/ss0.png
