@@ -9,7 +9,8 @@ description: |
   Full wiring, controls, and hardware notes: see the project README on GitHub.
 changelog: "@changelog.md"
 screenshots:
+  - images/Screenshot-20260504-162131.png
+  - images/Screenshot-20260504-131734.png
   - images/Screenshot-20260504-131512.png
   - images/Screenshot-20260504-131541.png
-  - images/Screenshot-20260504-131734.png
   - images/Screenshot-20260504-145422.png
