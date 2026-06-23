@@ -1,0 +1,15 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/pchmielewski1/tea5767-pt22xx-fm-radio-with-volume-control
+    commit_sha: 7b8b8267b05e9f890f935b8f51e93d4864dd6737
+description: |
+  FReD FM is a GPIO app for the FReD FM radio board (TEA5767 tuner, PT2257/PT2259-S volume, RDS decode).
+  Tune FM stations, manage presets, adjust volume, and capture RDS debug data to SD.
+  Full wiring, controls, and hardware notes: see the project README on GitHub.
+changelog: "@changelog.md"
+screenshots:
+  - images/Screenshot-20260504-131512.png
+  - images/Screenshot-20260504-131541.png
+  - images/Screenshot-20260504-131734.png
+  - images/Screenshot-20260504-145422.png
