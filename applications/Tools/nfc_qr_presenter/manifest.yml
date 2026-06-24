@@ -1,0 +1,13 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/RogerF5-Security/NFC_QR_Presenter.git
+    commit_sha: 27b8e23f43dffa1732afa29bf016b98436aa7e05
+author: Roger F5
+short_description: Digital QR and NFC NDEF business card presenter
+description: "@docs/catalog_description.md"
+changelog: "@docs/changelog.md"
+screenshots:
+  - screenshots/ss0.png
+  - screenshots/ss1.png
+  - screenshots/ss2.png
