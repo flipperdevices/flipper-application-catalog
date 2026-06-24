@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/bettse/seos_compatible.git
-    commit_sha: 34a553ead19642f80053a9867be3d953e67a7b1d
+    commit_sha: 3b31ff37bc68a1ce2a622ab2c6e2de65ee4bc9a0
 description: "@.catalog/README.md"
 changelog: "@CHANGELOG.md"
 author: "bettse"

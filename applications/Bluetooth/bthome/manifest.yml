@@ -1,0 +1,13 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/ghedo/flipper-playground
+    commit_sha: 1c415ac282e3fbd2c19c1b6e2aa0dd7f574e8a0d
+    subdir: bthome
+description: |
+  This application turns the Flipper Zero into a [BTHome](https://bthome.io) beacon, and can be used to integrate the Flipper with home automation systems that support BTHome, such as Home Assistant.
+
+  See the [app's README](https://github.com/ghedo/flipper-playground/tree/master/bthome#readme) for more information.
+changelog: "@CHANGELOG.md"
+screenshots:
+  - screenshots/bthome_app.png

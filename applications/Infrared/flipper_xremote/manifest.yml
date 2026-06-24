@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/kala13x/flipper-xremote
-    commit_sha: 5a0c359f51f1dc2a50605ed60f3e6e2c1da18999
+    commit_sha: 95e629eff960c71754d0a2768a54883df066a588
 description: "@./docs/README.md"
 changelog: "@./docs/changelog.md"
 author: "@kala13x"
