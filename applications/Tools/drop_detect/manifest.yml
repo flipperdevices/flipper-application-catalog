@@ -1,0 +1,22 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/TheRealLuro/Flipper-zero-drop-detector.-
+    subdir: flipper-zero/expo_app
+    commit_sha: 561d6e97ff4210463d698055eddc45037f41681a
+
+id: drop_detect
+name: FliPort
+category: Tools
+author: FliPort
+icon: fliport_10px.png
+targets:
+  - all
+short_description: IMU drop / idle / walking / fidget sample collector for training a Flipper-side motion classifier.
+description: "@.catalog/description.md"
+changelog: "@.catalog/changelog.md"
+screenshots:
+  - screenshots/01_menu.png
+  - screenshots/02_fidget.png
+  - screenshots/03_walking.png
+  - screenshots/04_idle_rec.png
