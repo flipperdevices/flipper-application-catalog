@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/T3chieJack/FlipperBlinker.git
-    commit_sha: fc38db8b1fcad18bf5d72e90cf4a02257f4e7350
+    commit_sha: e769551bb4f51cb234ba1f6ab958545e33325c5c
 
 description: Transmit Morse code with an external LED connected to GPIO PC3.
 changelog: changelog.md
