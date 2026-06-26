@@ -1,0 +1,12 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/Bibfortuna5057/NestBridge-Flipper.git
+    commit_sha: 92be2681ff9fc4924cef16acdc8ee80e646ecf40
+short_description: "Control a NoLongerEvil Nest thermostat from your Flipper Zero via BLE advertisements"
+description: "@README.md"
+changelog: "v1.0 - Initial release"
+screenshots:
+  - "./screenshots/1.png"
+  - "./screenshots/2.png"
+  - "./screenshots/3.png"
