@@ -1,14 +1,25 @@
 sourcecode:
-type: git
-location:
-origin: https://github.com/yurimonteir0/wanbo-rc-flipper.git
-commit_sha: 1486787394362011653bb4fa5d6e8bc9554538fb
+  type: git
+  location:
+    origin: https://github.com/yurimonteir0/wanbo-rc-flipper.git
+    commit_sha: 1090a76e7e9a7ac70c45d2b1196413de88dd9d66
 
-short_description: "Infrared remote control for Wanbo projectors"
-description: "@README.md"
+description: |
+  Wanbo RC turns the Flipper Zero into an infrared remote control for
+  Wanbo projectors. Its vertical, icon-based interface follows the layout
+  of the original remote and includes power, mouse mode, options, setup,
+  mute, focus, return, home, volume, and navigation controls.
+
+  The dedicated D-Pad screen maps the Flipper Zero buttons for comfortable
+  use while the device is held vertically. OK and Return can be sent
+  directly from this screen.
+
+  **Tested with the Wanbo DaVinci 1.** Other Wanbo projectors that use the
+  same infrared remote and command set may also be compatible, but have not
+  yet been tested by the author.
+
 changelog: "@changelog.md"
 
 screenshots:
-
-* screenshots/main.png
-* screenshots/dpad.png
+  - "screenshots/main.png"
+  - "screenshots/dpad.png"
