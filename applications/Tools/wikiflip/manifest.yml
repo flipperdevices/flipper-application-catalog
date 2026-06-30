@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/RogerF5-Security/WikiFlip.git
-    commit_sha: d0b65e125135f5f96f6ffce03256e6af744653bd
+    commit_sha: 8fd1e313d2e0e6bc19d6d06b23da17728e70e941
 
 short_description: Offline cybersecurity dictionary for Flipper Zero
 description: "@./docs/catalog_description.md"
