@@ -2,9 +2,9 @@ sourcecode:
 type: git
 location:
 origin: https://github.com/yurimonteir0/wanbo-rc-flipper.git
-commit_sha: 6c206c8429025629641da14e10f532dd577ee25c
+commit_sha: 1486787394362011653bb4fa5d6e8bc9554538fb
 
-short_description: "Infrared remote control for Wanbo DaVinci 1 projector"
+short_description: "Infrared remote control for Wanbo projectors"
 description: "@README.md"
 changelog: "@changelog.md"
 
