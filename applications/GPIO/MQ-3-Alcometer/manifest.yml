@@ -10,7 +10,6 @@ sourcecode:
   location:
     origin: "https://github.com/serjantlk/MQ-3-Alcometer"
     commit_sha: "b6ee60fe936df94823b79e9edd21de0a570863b6"
-    subdir: "."
 short_description: "Alcohol meter (breathalyzer) using MQ-3 sensor"
 description: |
   Breathalyzer application for Flipper Zero using MQ-3 alcohol sensor.
@@ -29,4 +28,3 @@ screenshots:
   - screenshots/1.png
   - screenshots/2.png
   - screenshots/3.png
-  - screenshots/4.png
