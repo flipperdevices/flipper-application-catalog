@@ -1,0 +1,11 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/rcombs/tas-playback.git
+    commit_sha: 7d0f3d817a267afabfff4cf61dfc7ae0d5cef60f
+    subdir: flipper
+description: "@README.md"
+changelog: "@changelog.md"
+screenshots:
+  - screenshots/file-select.png
+  - screenshots/running.png
