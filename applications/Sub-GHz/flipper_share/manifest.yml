@@ -7,7 +7,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/lomalkin/flipper-zero-apps.git
-    commit_sha: 168f3b743a01173a3b09d239355cfa827ab3352e
+    commit_sha: 157bd86496c8584eb62de3a8d310888ff6ae0a45
     subdir: flipper_share
 description: "@README_catalog.md"
 changelog: "@CHANGELOG.md"
