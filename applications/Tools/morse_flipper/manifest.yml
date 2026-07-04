@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/yo3gnd/morse-flipper
-    commit_sha: 4a3527046de7e690252caa19e59e5a84d76221d0
+    commit_sha: 4e851faf045d4716198ad5f7dbc600f81216444b
 description: "@README-MARKET.md"
 changelog: "@CHANGELOG-MARKET.md"
 screenshots:
