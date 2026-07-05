@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/deanmachinedev/debug_mode.git
-    commit_sha: af61052833d0a2d72663000dfdeec3e2873f0a6c
+    commit_sha: 6b2857e9d883cc2fb2a6b451112cab702b8b0d24
 short_description: A pocket debugging notebook for messy real problems.
 description: "@README.md"
 changelog: "@changelog.md"
