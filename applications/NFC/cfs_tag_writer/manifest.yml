@@ -1,0 +1,13 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/pwschattenberg/cfs-tag-writer.git
+    commit_sha: 9c2d7e3382f7e5598126c52e0d1deac7fbcafb9b
+description: "@.catalog/README.md"
+changelog: "@changelog.md"
+screenshots:
+  - .catalog/screenshots/00_main_menu.png
+  - .catalog/screenshots/01_read_result.png
+  - .catalog/screenshots/08_write_confirm.png
+  - .catalog/screenshots/12_saved_browser.png
+  - .catalog/screenshots/26_help_index.png
