@@ -5,7 +5,7 @@ sourcecode:
     commit_sha: d8d89443cb2580daddf1a0802a396f1d6fb01a52
 
 description: Transmit Morse code with an external LED connected to GPIO PC3.
-changelog: changelog.md
+changelog: "@changelog.md"
 screenshots:
   - screenshots/1.png
   - screenshots/2.png
