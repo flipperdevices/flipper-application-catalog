@@ -13,7 +13,7 @@ short_description: A tool to view network subnets and other details.
 ## You can also specify a file from your app's repository as a source with @
 description: |
   This started as my personl tool to view details of networks, subnets, CIDRs.
-changelog: "@CHANGELOG.md"
+changelog: "@changelog.md"
 ## Unmodified screenshots from qFlipper
 screenshots:
   - screenshots/screenshot-1.png
