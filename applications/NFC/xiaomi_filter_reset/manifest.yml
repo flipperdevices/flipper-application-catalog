@@ -1,0 +1,13 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/khmm12/flipper-xiaomi-filter-reset.git
+    commit_sha: 38ed9eb7bd39388477ddb9ed1b122d6daa0db898
+short_description: Reset or check the filter-life counter on Xiaomi air purifier NFC filters.
+description: "@catalog/description.md"
+changelog: "@catalog/changelog.md"
+author: "@khmm12"
+screenshots:
+  - catalog/screenshots/screenshot_1.png
+  - catalog/screenshots/screenshot_2.png
+  - catalog/screenshots/screenshot_3.png
