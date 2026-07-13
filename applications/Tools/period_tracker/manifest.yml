@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/gorshunovr/period_tracker.git
-    commit_sha: 193770d1a4421d681ed736ee455e15fc36019bfd
+    commit_sha: b8fc37d0ec84a209fce11482d815de6901e76b5f
 description: "@docs/catalog_description.md"
 changelog: "@docs/changelog.md"
 screenshots:
