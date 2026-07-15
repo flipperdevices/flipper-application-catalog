@@ -1,0 +1,34 @@
+# Flipper Application Catalog manifest for FM Radio
+#
+# To submit: fork https://github.com/flipperdevices/flipper-application-catalog
+# and add this file as: applications/GPIO/fm_radio/manifest.yml
+# then open a Pull Request.
+#
+# When releasing a new version: update `commit_sha` to the new tagged commit
+# and bump `version` (must match fap_version in application.fam).
+
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/coolshrimp/flipperzero-fm-radio.git
+    commit_sha: 192daea9b595a73e0a8540ced4429ce38ec45cb1
+
+name: FM Radio
+id: fm_radio
+category: GPIO
+version: "2.2"
+author: Coolshrimp
+
+icon: radio.png
+
+short_description: FM radio for TEA5767 and Si4703 tuner boards with auto-detection and SD card station presets.
+
+description: "@.catalog/README.md"
+changelog: "@.catalog/CHANGELOG.md"
+
+screenshots:
+  - screenshots/Screenshot1.png
+  - screenshots/Screenshot2.png
+
+targets:
+  - f7
