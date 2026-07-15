@@ -5,7 +5,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/kamylwnb/smoke_free
-    commit_sha: 0603f0009bc5563268fd0f672cebca006aab197b
+    commit_sha: 2a493e251a5d2787f7afb430a656d3e2091277a1
 
 short_description: "Tracks time without smoking with persistent SD card logging"
 
