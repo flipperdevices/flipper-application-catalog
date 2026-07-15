@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/PerfectoWeb/flipper-pocketlab.git
-    commit_sha: eb95266a0932e73233da1c176171bd27674dc0ea
+    commit_sha: 3ac57f49ce9a49790326bc48ce3d87d6fbe1270b
 author: "PerfectoWeb"
 short_description: "Learn your Flipper with short, gamified hands-on labs."
 description: "@docs/catalog-description.md"
@@ -16,3 +16,4 @@ screenshots:
   - screenshots/achievements.png
   - screenshots/about.png
   - screenshots/reward.png
+  - screenshots/settings.png
