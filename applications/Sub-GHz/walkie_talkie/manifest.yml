@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/coolshrimp/flipperzero-walkie-talkie.git
-    commit_sha: 0e0cd78e69c51e23344ecdb5fd83ccf2d015374c
+    commit_sha: 843e8785ffc09bc3d70c57eaac137f62eef8e368
 short_description: Receive-only FRS channel activity and RSSI scanner
 description: |
   Monitor FRS walkie-talkie channels with your Flipper Zero. Tunes the
@@ -36,3 +36,6 @@ description: |
 changelog: "@docs/changelog.md"
 screenshots:
   - screenshots/Screenshot1.png
+  - screenshots/Screenshot2.png
+  - screenshots/Screenshot3.png
+  - screenshots/Screenshot4.png
