@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/andybeg/AndroidFlipperZeroKBD.git
-    commit_sha: e877eacabe530fb5fddb6999c64e68c68394b1b5
+    commit_sha: 273b30be5fec3bf5608f4e8f59591d7cdcbb3fde
     subdir: flipper/android_keyboard_bridge
 description: "@README.md"
 changelog: "@changelog.md"
