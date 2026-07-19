@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/Atompunk78/IRONWYRM.git
-    commit_sha: 4ef63e7a19f94dc8dc9d2bee0f8b122b37d69303
+    commit_sha: a4c8f6b768aee68fc7cfb69e96fc3a617a6a3c68
 
 description: "@README.md"
 changelog: "@changelog.md"
