@@ -1,0 +1,46 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/Lechnio/SubGHz-RAW-Edit.git
+    commit_sha: 49a12e37a8c940a1665477bb41eb25d21bc82721
+short_description: "A tiny on-device waveform editor for Flipper Zero that trims RAW .sub captures down to just the part you care about."
+description: |
+  A tiny on-device waveform editor for Flipper Zero that trims RAW .sub
+  captures down to just the part you care about. Open a recording, let the
+  app find the actual signal hiding inside a long stretch of silence, slide
+  two markers to the start and end of one clean frame, and save it as a new
+  .sub file.
+
+  **Receive and analysis only.** This app never transmits. It only reads,
+  displays and rewrites files you already have on the SD card.
+
+  ## Controls
+
+  - **Left / Right** - Move the active cut marker (hold = move faster)
+  - **Up / Down** - Zoom in / out (centered on the active marker)
+  - **OK (short press)** - Switch the active marker between **A** and **B**
+  - **OK (hold)** - Open the action menu (**Save / Cut / Undo**)
+  - **Back** - Exit
+
+  ## Usage
+
+  1. Launch Sub-GHz RAW Edit from the Apps menu, under Sub-GHz.
+  2. Pick a RAW .sub file from /ext/subghz.
+  3. The view opens centered on the detected frame. Zoom out to see the whole
+     signal, zoom in to see individual pulses.
+  4. Place **A** at the start of one clean frame, press OK, place **B** at the end.
+  5. Hold **OK** to open the action menu and choose:
+     - **Save** - a name is suggested. Edit it if you like and confirm.
+     The A..B selection is written to /ext/subghz/(name).sub.
+  6. **Cut** - the stretch between A and B is removed from the working copy and
+     the two sides are joined.
+  7. **Undo** - revert the last cut.
+changelog: "@changelog.md"
+screenshots:
+  - ./docs/images/03-signal-zoom.png
+  - ./docs/images/04-single-signal-frame.png
+  - ./docs/images/05-keeloq-preambule-waveform.png
+  - ./docs/images/06-single-waveform-edge.png
+  - ./docs/images/10-action-menu.png
+  - ./docs/images/08-main-menu.png
+  - ./docs/images/09-config-menu.png
