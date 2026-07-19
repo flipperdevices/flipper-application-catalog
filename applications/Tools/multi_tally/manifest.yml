@@ -1,0 +1,15 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/aseypalich1/flipper-multi-counter.git
+    commit_sha: 19b5c8031a7621d1dd17ace246f934f18c0ba7fe
+short_description: Six independent tally counters, one per hardware button
+description: "@README.md"
+changelog: "@./docs/changelog.md"
+screenshots:
+  - screenshots/main.png
+  - screenshots/menu.png
+  - screenshots/groups.png
+  - screenshots/settings.png
+  - screenshots/how_to_use.png
+  - screenshots/hold_central.png
