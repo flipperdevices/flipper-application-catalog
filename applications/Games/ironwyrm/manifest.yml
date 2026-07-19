@@ -8,7 +8,7 @@ description: "@README.md"
 changelog: "@changelog.md"
 
 screenshots:
-  - screenshots/titlescreen.png
   - screenshots/gameplay.png
   - screenshots/shop.png
   - screenshots/gameplay2.png
+  - screenshots/titlescreen.png
