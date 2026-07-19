@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/cybersantana83/ChaosID.git
-    commit_sha: 04d6c1ca27fb77c315e86d6fd6d7b7552ba56517
+    commit_sha: c7d9b5c6ce1b683e93c9b5e541d9cd9384a8bcea
 description: |
   ChaosID is a forensic card identifier for Flipper Zero. It does not aim to
   clone cards or break cryptography on the device itself, but to tell you
