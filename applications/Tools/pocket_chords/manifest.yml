@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/rvonsch/flipper-pocket-chords.git
-    commit_sha: 8802015e1851e7bfe1342586adffb856cd7ebb7f
+    commit_sha: d6d62454e6b9cfa3ef43715bc2c1c66b66ffb271
 
 short_description: "Quick reference for guitar chords. Navigate keys with L/R, variations with U/D."
 
