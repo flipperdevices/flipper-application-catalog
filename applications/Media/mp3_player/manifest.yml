@@ -1,0 +1,37 @@
+# Flipper Application Catalog manifest for MP3 Player
+#
+# To submit: fork https://github.com/flipperdevices/flipper-application-catalog
+# and add this file as: applications/Media/mp3_player/manifest.yml
+# then open a Pull Request.
+#
+# When releasing a new version: update `commit_sha` to the new tagged commit
+# and bump `version` (must match fap_version in application.fam).
+
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/coolshrimp/flipperzero-mp3-player.git
+    commit_sha: 8132ac374dddb731378ebae48bbb14da27b20b4c
+
+name: MP3 Player
+id: mp3_player
+category: Media
+version: "3.4"
+author: Coolshrimp
+
+icon: music_icon.png
+
+short_description: Play any MP3 from the SD card through the internal speaker, a MAX98357A amplifier, or a filtered PAM8403 board.
+
+description: "@.catalog/README.md"
+changelog: "@.catalog/CHANGELOG.md"
+
+screenshots:
+  - screenshots/MainMenu.png
+  - screenshots/SongsList.png
+  - screenshots/NowPlaying.png
+  - screenshots/Settings.png
+  - screenshots/About.png
+
+targets:
+  - f7
