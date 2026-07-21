@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/yo3gnd/flipper-zero-aprs-tx
-    commit_sha: 52b3821ae7f0f8efb69cea2387832ad9ce4145fe
+    commit_sha: c012ff09123320b598803ac1c3e1387b5c1b31aa
 description: "@README-MARKET.md"
 changelog: "@CHANGELOG-MARKET.md"
 screenshots:
