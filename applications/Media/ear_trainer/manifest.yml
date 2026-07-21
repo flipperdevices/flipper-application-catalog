@@ -1,0 +1,16 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/barismert98/flipper-ear-trainer.git
+    commit_sha: 151698fcd83d2d2576b8993e62a033bc8556b81c
+short_description: Learn to recognise musical intervals by ear
+description: "@README.md"
+changelog: "@changelog.md"
+screenshots:
+  - screenshots/ss0.png
+  - screenshots/ss1.png
+  - screenshots/ss2.png
+  - screenshots/ss3.png
+  - screenshots/ss4.png
+  - screenshots/ss5.png
+  - screenshots/ss6.png
