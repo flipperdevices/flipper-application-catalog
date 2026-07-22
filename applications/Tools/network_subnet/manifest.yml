@@ -1,0 +1,21 @@
+sourcecode:
+  type: git
+  location:
+    ## Specify the git URL of your repository
+    origin: https://github.com/aaumkar/network_subnet.git
+    ## Put the full commit SHA of the commit with the app's code you want to submit
+    commit_sha: 7d0bd75bb58d14bf92987332b91c8722359a1f71
+    ## (Optional) If your app is located in a subdirectory of the repository, specify it here
+    # subdir: .
+## If application.fam contains 'fap_description', it will be used as a short description
+short_description: A tool to view network subnets and other details.
+## For 'description' and 'changelog', you can use limited markdown syntax
+## You can also specify a file from your app's repository as a source with @
+description: |
+  This started as my personl tool to view details of networks, subnets, CIDRs.
+changelog: "@changelog.md"
+## Unmodified screenshots from qFlipper
+screenshots:
+  - screenshots/screenshot-1.png
+  - screenshots/screenshot-2.png
+  - screenshots/screenshot-3.png
