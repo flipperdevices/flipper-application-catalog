@@ -1,0 +1,20 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/shanzy39/BTCLN-QR-Generator.git
+    commit_sha: 49ceebcc4683c0a59e343a1d4a23a10c541e6edf
+name: BTCLN QR Generator
+id: btcln_qr_generator
+author: shanzy39
+version: 1.0
+category: Tools
+short_description: Show Lightning Address QR codes to receive Bitcoin over Lightning.
+description: "@catalog-description.md"
+changelog: "@changelog.md"
+screenshots:
+  - screenshots/ss0.png
+  - screenshots/ss1.png
+  - screenshots/ss2.png
+  - screenshots/ss3.png
+  - screenshots/ss4.png
+  - screenshots/ss5.png
