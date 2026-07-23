@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/coolshrimp/flipperzero-mp3-player.git
-    commit_sha: 8132ac374dddb731378ebae48bbb14da27b20b4c
+    commit_sha: 30738ff364f62f5e59ccac56cf996087b693cfeb
 author: "Coolshrimp"
 short_description: "Play any MP3 from the SD card through the internal speaker, a MAX98357A amplifier, or a filtered PAM8403 board."
 description: "@.catalog/README.md"
