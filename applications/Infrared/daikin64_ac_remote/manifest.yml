@@ -1,0 +1,14 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/mrcalifornium/flipperzero-daikin64-ac-remote.git
+    commit_sha: eb9264cbcc747357d5c2a78518c94eb89a64b075
+    subdir: applications_user/daikin64_ac_remote
+short_description: "Daikin64 APGS02-compatible AC remote"
+description: "@catalog/description.md"
+changelog: "@changelog.md"
+screenshots:
+  - catalog/screenshots/main.png
+  - catalog/screenshots/functions.png
+  - catalog/screenshots/timer.png
+  - catalog/screenshots/favorites.png
