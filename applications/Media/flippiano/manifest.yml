@@ -1,0 +1,9 @@
+source:
+  type: git
+  location:
+    url: https://github.com/bergr22/FlipPiano.git
+    commit: a4347f9
+category: Media
+description: "14-key 2-octave mini piano app with frequency display and volume controls."
+changelog: "v1.0.0 - Initial release"
+author: "@bergr22"
