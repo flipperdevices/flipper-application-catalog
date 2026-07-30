@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/keetsta/wol-flipper.git
-    commit_sha: 9da400586f01bd4eef529b22bfb473efcaed36db
+    commit_sha: d93e9a6f11245745a97957487a51bcbdcc0f5921
 
 short_description: Wake-on-LAN over the ESP32-S2 WiFi dev board, with a built in flasher
 
