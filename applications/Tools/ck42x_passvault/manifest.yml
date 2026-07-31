@@ -2,8 +2,8 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/lordbuffcloud/flipper-ck42x-passvault.git
-    commit_sha: 9eb3f8b2f54b2489204dfa4cd168de09e5c54bfc
-short_description: Encrypted password vault, opt-in HID typing, and experimental FIDO2 authentication.
+    commit_sha: e38cdbb90fbe048d4f58d84d2ec6c6686fd19e54
+short_description: Encrypted editable password vault, macOS HID setup, and experimental FIDO2.
 description: "@catalog_description.md"
 changelog: "@catalog_changelog.md"
 screenshots:
