@@ -1,0 +1,14 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/k20120509/flipper-release.git
+    commit_sha: 1789817adda653fbf463934a71d1756b8abd9c29
+short_description: 3D raycasting maze game (story / endless / visitor) with bilingual CN/EN UI
+description: "@README.md"
+changelog: "@CHANGELOG.md"
+screenshots:
+  - screenshots/1.png
+  - screenshots/2.png
+  - screenshots/3.png
+  - screenshots/4.png
+  - screenshots/5.png
