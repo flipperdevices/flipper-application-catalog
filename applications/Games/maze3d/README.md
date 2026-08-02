@@ -35,5 +35,5 @@ A first-person 3D raycasting maze game for Flipper Zero.
 Repository: https://github.com/k20120509/flipper-release
 
 Release + prebuilt `.fap` (copy to `apps/Games/` on the SD card):  
-https://github.com/k20120509/flipper-release/releases/tag/v3.0.0
+https://github.com/k20120509/flipper-release/releases/tag/v3.1.0
 
