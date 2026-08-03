@@ -1,0 +1,45 @@
+# Flipper Apps Catalog manifest.
+#
+# This file is NOT used by this repository. It is submitted as a pull request
+# to flipperdevices/flipper-application-catalog, placed at:
+#   applications/NFC/nfc_alerter/manifest.yml
+#
+# Paths in this file are relative to the app source root (this repo), because
+# the catalog builds from the sourcecode reference below.
+#
+# On each release: bump `version` here and `fap_version` in application.fam to
+# match, update commit_sha, and add a changelog.md entry.
+#
+# See ../docs/RELEASING.md for the full checklist.
+
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/antitree/nfc_alerter.git
+    commit_sha: 789913413d5f39b6c5c600f847922b3343f7c97a
+
+name: NFC Alerter
+id: nfc_alerter
+category: NFC
+version: "0.2"
+author: antitree
+
+short_description: Alerts you by vibration when someone scans you over NFC.
+
+# Not @README.md: the catalog supports only limited Markdown (headers 1-2,
+# bold/italic, lists, links) and the README relies on image tables and code
+# blocks that would not render.
+description: "@./catalog/description.md"
+changelog: "@./changelog.md"
+
+icon: nfc_alerter.png
+
+# 128x64 1-bit, the panel's native resolution.
+screenshots:
+  - catalog/screenshots/01-status.png
+  - catalog/screenshots/02-alarm.png
+  - catalog/screenshots/03-events.png
+  - catalog/screenshots/04-settings.png
+
+targets:
+  - f7
