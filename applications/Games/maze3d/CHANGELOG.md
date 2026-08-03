@@ -1,3 +1,8 @@
+v4.4.1:
+- Opening animation is no longer skippable by keys — it plays to completion (~4.5s, full BGM). It can only be disabled entirely from Settings.
+- Long-press Up/Down/Left/Right during the opening now feeds the developer-mode unlock sequence (same as in the menu).
+- Removed the misleading "Press any key" prompt on the final intro stage.
+
 v4.4:
 - Developer mode: unlocks all campaign levels from the level-select screen and enables a debug overlay. Persists across sessions.
 - Debug overlay: top status bar over the 3D view showing level/floor, player X/Y, world tick, actor count, facing direction. Toggled from Settings (visible once developer mode is active).
@@ -8,7 +13,7 @@ v4.3.1:
 - FIX: no sound — speaker was never acquired, so every SFX was silently dropped. sfx_init() now acquires the speaker; all SFX and the opening BGM play correctly.
 
 v4.3:
-- Opening animation on app start: 4-stage intro (logo drop + bounce, particle burst, subtitle slide-up, blinking prompt) with a C-major chiptune BGM. Any key skips to the menu. Can be disabled from Settings (persisted).
+- Opening animation on app start: 4-stage intro (logo drop + bounce, particle burst, subtitle slide-up) with a C-major chiptune BGM. Can be disabled from Settings (persisted).
 - SFX using the Flipper speaker: menu move/confirm, pickup, door, trap, damage, attack, kill, quest/level clear, game over, story page turn. Tick-based sequencer, no external audio files.
 - New Settings screen: SFX and Opening toggles, persisted (MAZ4; old MAZ3 saves migrated).
 
