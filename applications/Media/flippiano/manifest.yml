@@ -5,8 +5,8 @@ sourcecode:
     commit_sha: a4347f9ec54b46069a1628c5016b8510aadf3a80
 short_description: "14-key 2-octave mini piano app with frequency display and volume controls."
 description: |
-# FlipPiano
-A interactive mini piano application for Flipper Zero. Play melodies, view real-time frequencies.
+  # FlipPiano
+  A interactive mini piano application for Flipper Zero. Play melodies, view real-time frequencies.
 
   ## Features
 
@@ -21,19 +21,7 @@ A interactive mini piano application for Flipper Zero. Play melodies, view real-
   - OK: Play selected note
   - Up / Down: Open or close volume settings
   - BACK: Exit the application
-  
 changelog: "@changelog.md"
 screenshots:
   - docs/FlipPiano.png
   - docs/FlipPiano2.png
- 
-
-
-
-
-
-
-
-
-
-
