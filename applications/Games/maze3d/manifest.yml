@@ -2,8 +2,8 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/k20120509/flipper-release.git
-    commit_sha: 982940bf3c915c1d2518eff34dde0b1dc0fc4b10
-short_description: 3D raycasting maze with Minecraft sandbox, BFS-guaranteed solvability, world pre-gen cache
+    commit_sha: 7de24f3fb67999442df239b7d5f84e789b33f240
+short_description: 3D raycasting maze with Minecraft sandbox, precision controls, BFS-guaranteed solvable mazes
 description: "@README.md"
 changelog: "@CHANGELOG.md"
 screenshots:
