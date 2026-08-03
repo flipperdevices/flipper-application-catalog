@@ -1,7 +1,0 @@
-source:
-  type: git
-  location:
-    url: https://github.com/bergr22/Stopwatch-Flipper.git
-    commit: a04a07d
-fetcher:
-  type: git
