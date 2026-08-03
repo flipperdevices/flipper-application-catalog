@@ -2,13 +2,13 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/k20120509/flipper-release.git
-    commit_sha: 798809628da68922f80a7d5e67b80298a9266775
-short_description: 3D raycasting maze game with Minecraft sandbox mode, particle effects, day/night cycle, bilingual CN/EN UI
+    commit_sha: 982940bf3c915c1d2518eff34dde0b1dc0fc4b10
+short_description: 3D raycasting maze with Minecraft sandbox, BFS-guaranteed solvability, world pre-gen cache
 description: "@README.md"
 changelog: "@CHANGELOG.md"
 screenshots:
-  - screenshots/1.png
-  - screenshots/2.png
-  - screenshots/3.png
-  - screenshots/4.png
-  - screenshots/5.png
+  - screenshots/ss0.png
+  - screenshots/ss1.png
+  - screenshots/ss2.png
+  - screenshots/ss3.png
+  - screenshots/ss4.png
