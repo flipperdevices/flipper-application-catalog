@@ -1,65 +1,100 @@
+v6.6:
+- FIX: Maze dead-ends — BFS pathfinding replaces Manhattan distance for exit placement, guaranteeing solvable mazes.
+- FIX: Key reachability — BFS validation ensures keys are always placed in reachable area before doors.
+- FIX: Endless mode stage mismatch — was passing floor+100 causing false combat branch.
+- World pre-generation cache — complete maze snapshots saved to App Data for instant loading.
+
+v6.5:
+- Health system overhaul: base 10 HP (was 5-7), +2 per 5 levels (max 20).
+- 2-second invincibility after taking damage (immune to all damage during iframe).
+- Auto regen: +1 HP per second after invincibility ends.
+- Enemy shoot cooldown scales with level (80 frames early → 40 frames late).
+- ~20 hits needed to die (10 HP + sustained regen).
+
+v6.4:
+- FIX: Exit bug — levels without keys were blocked by quest check (dead loop).
+- FIX: Locked exit always blocked even after quest completion — now passes when all_done.
+- FIX: Missing WALL_SAND/DIRT/LOG in blocking() — player could walk through sand/dirt/log.
+- Minecraft mode: pure flatland (no walls, no random blocks, open sky).
+- Day/night cycle: sun/moon arc across sky, brightness changes, stars at night.
+- MC controls: OK short=place, OK long=mine, Back short=switch block.
+- MC HUD: 8-slot hotbar with icons, MC-style heart health bar (10 hearts).
+
+v6.3:
+- Minecraft texture pack: 12 MC-style textures (grass side, dirt, log, leaves, sand, etc.).
+- New blocks: WALL_SAND, WALL_DIRT, WALL_LOG (3 new block types).
+- Water animation: wave texture scrolls with game tick.
+- MC sky: gradient ceiling + 5×5 sun with cross rays.
+- Sand landing particles: dust burst when placing sand/dirt.
+- MC survival: mine block → auto-switch held to that block type.
+- 8 placeable blocks: Brick/Stone/Wood/Grass/Dirt/Sand/Log/Leaf.
+
+v6.2:
+- Input redefinition: OK short=shoot (all modes), OK long=mine (MC mode).
+- Back short=place block (MC mode), Back long=exit.
+- Contrast crosshair: XOR rendering ensures visibility on any background.
+- Particle system: 32-particle pool (shooting sparks, hit explosions, bullet trails, walking dust).
+- Global brightness boost + enemy movement frequency increased.
+
+v6.0:
+- Combat system: shooting with bullets, enemy AI (chase + ranged).
+- Quest/task system: FIND_EXIT, GET_KEY, OPEN_DOOR, KILL_ENEMY, SURVIVE.
+- Achievement system: total kills, total clears, total mined, milestone flags.
+- Story mode: prologue with branching choices (Warrior +HP / Seeker +torch).
+- Level stages: 1-10 maze, 11-20 puzzle, 21-50 combat.
+- Locked exits: quest-gated exits that unlock on task completion.
+- New items: potions, amulets, traps, ammo pickups.
+
 v4.4.1:
-- Opening animation is no longer skippable by keys — it plays to completion (~4.5s, full BGM). It can only be disabled entirely from Settings.
-- Long-press Up/Down/Left/Right during the opening now feeds the developer-mode unlock sequence (same as in the menu).
-- Removed the misleading "Press any key" prompt on the final intro stage.
+- Opening animation plays to completion (~4.5s, full BGM).
+- Developer mode unlock sequence via long-press during opening.
 
 v4.4:
-- Developer mode: unlocks all campaign levels from the level-select screen and enables a debug overlay. Persists across sessions.
-- Debug overlay: top status bar over the 3D view showing level/floor, player X/Y, world tick, actor count, facing direction. Toggled from Settings (visible once developer mode is active).
-- Settings rewrite: option rows horizontally centered; scrollable list with ^/v indicators; bottom hint bar no longer overlaps the last option. Up/Down now move the cursor in opposite directions.
-- Save format stays MAZ4 (new flags reuse reserved bytes; old v4.3 saves load with defaults).
+- Developer mode: unlocks all campaign levels, debug overlay.
+- Settings rewrite: centered options, scrollable list.
 
 v4.3.1:
-- FIX: no sound — speaker was never acquired, so every SFX was silently dropped. sfx_init() now acquires the speaker; all SFX and the opening BGM play correctly.
+- FIX: no sound — speaker was never acquired.
 
 v4.3:
-- Opening animation on app start: 4-stage intro (logo drop + bounce, particle burst, subtitle slide-up) with a C-major chiptune BGM. Can be disabled from Settings (persisted).
-- SFX using the Flipper speaker: menu move/confirm, pickup, door, trap, damage, attack, kill, quest/level clear, game over, story page turn. Tick-based sequencer, no external audio files.
-- New Settings screen: SFX and Opening toggles, persisted (MAZ4; old MAZ3 saves migrated).
+- Opening animation: 4-stage intro with BGM.
+- SFX system: tick-based sequencer, no external audio files.
+- Settings screen: SFX and Opening toggles.
 
 v4.2:
-- Quest/task system for story levels: long-press OK pauses and opens a 2-page Inventory (items + quest). Press Left/Right to switch pages.
-- Quests on story levels: Level 1 (Find Exit), puzzle levels 10–19 (Get Key + Open Door), combat levels 20+ (Kill all enemies). Completing all subtasks grants a one-time full-HP reward.
-- Enemy combat: enemies have HP (2). Dashing (OK) into an enemy in front deals 1 damage; two dashes kill it.
+- Quest/task system for story levels.
+- Enemy combat: enemies have HP, dashing deals damage.
 
 v4.1:
-- FIX: Endless Mode crash — maze-carving DFS used two 3844-byte local arrays that overflowed the 8 KB stack. Moved to static storage; stack raised to 12 KB.
+- FIX: Endless Mode crash — stack overflow from large local arrays.
 
 v4.0:
-- Endless Mode stability: tight maze size cap, DDA step cap, render guard, better seed hashing.
-- Smooth controls: direction keys set target rotation/move; game_update applies a fractional step each frame.
-- Big exit marker: a down-arrow at the top showing the exit direction; a blinking frame when the exit is straight ahead.
-- 3D sprites for ground items (key/torch/potion/amulet/trap/exit) with depth scaling.
+- Endless Mode stability: size cap, DDA step cap, seed hashing.
+- Smooth controls: fractional step interpolation.
+- Big exit marker + 3D sprites for ground items.
 
 v3.3:
-- Level select rewrite: smaller font, scrollable list (7 rows) with ^/v indicators.
-- In-game HUD hidden by default; long-press OK opens a full Map Panel (HUD bar + minimap + exit arrow).
-- Inventory shows a compact HUD status bar at the top.
+- Level select rewrite: scrollable list.
+- In-game HUD + Map Panel with minimap.
 
 v3.2:
-- Full Chinese localization of story, inventory, and level-select screens (XBM bitmaps).
-
-v3.1:
-- Force full rebuild so the published fap actually contains the v3.0 features.
+- Full Chinese localization (XBM bitmaps).
 
 v3.0:
-- Endless mode lets you pick any level to enter (level select).
-- Inventory: long-press OK in game; Up/Down select, OK use, Back resume.
-- New items: Potion (restore HP), Amulet (warp to start).
-- Story mode: 600-word prologue with 2 branching choices (Warrior +HP / Seeker +torch).
-- Level select before Story mode: cleared replayable, uncleared locked.
+- Endless mode level select.
+- Inventory system: Potion, Amulet.
+- Story mode with branching choices.
 
 v2.1:
-- Bilingual UI: switch Chinese / English from the menu (Left / Right).
+- Bilingual UI: Chinese / English switch.
 
 v2.0:
-- Half-resolution raycasting (64 columns) for stable performance.
-- On-demand world tick (~8 Hz) to prevent flicker/crash.
-- Compass to exit, minimap, exit highlight.
-- Chinese XBM bitmaps for all in-game text.
+- Half-resolution raycasting (64 columns).
+- On-demand world tick (~8 Hz).
+- Compass, minimap, exit highlight.
 
 v1.0:
 - Initial release: Campaign + Endless + Visitor modes.
-- Recursive-backtracker maze generation, difficulty scaling.
-- Items (key/torch/trap/door), enemy AI, NPC visitors.
+- Recursive-backtracker maze generation.
+- Items, enemy AI, NPC visitors.
 - 4 wall textures with distance & orientation shading.
