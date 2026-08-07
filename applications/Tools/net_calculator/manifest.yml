@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/WolfRorDev/Net-Calculator-for-Flipper-Zero.git
-    commit_sha: 9e02075a4d9927ca898f51b059262d00fab1253b
+    commit_sha: ae8088442a402f0f75700e9a9927fb64023b3c21
 
 short_description: Offline IPv4 VLSM subnet calculator
 description: "@README.md"
