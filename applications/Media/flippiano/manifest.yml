@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location: 
     origin: https://github.com/bergr22/FlipPiano.git
-    commit_sha: a4347f9ec54b46069a1628c5016b8510aadf3a80
+    commit_sha: 7aa5bd3ec1c2a2596ef766f988214f136cc01b83
 short_description: "14-key 2-octave mini piano app with frequency display and volume controls."
 description: |
   # FlipPiano
