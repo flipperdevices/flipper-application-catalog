@@ -7,8 +7,7 @@ short_description: 3D raycasting maze with MC sandbox, score shop, 10 items, buf
 description: "@README.md"
 changelog: "@CHANGELOG.md"
 screenshots:
-  - screenshots/ss0.png
-  - screenshots/ss1.png
-  - screenshots/ss2.png
-  - screenshots/ss3.png
-  - screenshots/ss4.png
+  - screenshots/official_1.png
+  - screenshots/official_2.png
+  - screenshots/official_3.png
+  - screenshots/official_4.png
