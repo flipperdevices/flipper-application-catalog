@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/DruzhininPavel/wifi-internet-watch-flipper.git
-    commit_sha: 6d171ccef671ab8de36e8081c25de2fd752a6050
+    commit_sha: da36aaa3c4f7db1a1ee854f89d6747548beb654a
 short_description: Select a WiFi network and monitor internet availability through ESP-AT
 description: |
   WiFi Internet Watch connects an official Flipper Zero Wi-Fi Developer Board
