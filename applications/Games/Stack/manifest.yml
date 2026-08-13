@@ -1,0 +1,28 @@
+sourcecode:
+  type: git
+  location: 
+    origin: https://github.com/bergr22/Stack.git
+    commit_sha: ddf0280eb22a050d7545be6aa1eac0d01b39bd89
+short_description: "Classic skill and timing game where you layer falling blocks to build the highest tower."
+description: |
+  # Stack
+  A classic skill and timing game for Flipper Zero. Precision is key as you stack moving blocks layer by layer.
+
+  ## Features
+
+  - Addictive tower-building gameplay driven by precise timing
+  - Smooth animation optimized for the Flipper Zero display
+  - On-screen score tracker to push your personal high scores
+  - The gaming experience has been enhanced with vibration, dynamic sound effects, and LED lighting during gameplay
+
+  ## Controls
+
+  - OK: Drop the moving block onto the stack
+  - BACK: Exit the application
+  - Up / Down: Navigate through the menu options
+  
+changelog: "@changelog.md"
+screenshots:
+  - docs/stack1.png
+  - docs/stack2.png
+  - docs/stack3.png
