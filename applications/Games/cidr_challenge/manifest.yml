@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/AlastorApps/cidrchallengef0
-    commit_sha: 8dfb4d7d42970c48ae119f0eefcba443d2a939ec
+    commit_sha: 41437a5b1f1ceefe4bbc50a63a8267f3ecc0b6b2
 
 short_description: IPv4 subnetting trainer for Flipper Zero
 
@@ -22,4 +22,5 @@ screenshots:
   - screenshots/challenge.png
   - screenshots/survival.png
   - screenshots/exam_result.png
+  - screenshots/correct_answer.png
   - screenshots/statistics.png
