@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/MinorGlitch/zerofido.git
-    commit_sha: 3d3dfc83f5f05818c44d6b272b23096910cef6d1
+    commit_sha: dc80a216f73c5ba035b4180e904bbf2f8f7ba5a2
 short_description: FIDO2 for Flipper Zero
 description: "@docs/catalog.md"
 changelog: "@docs/changelog.md"
