@@ -16,14 +16,17 @@
 - [ ] I have commented my code, particularly in hard-to-understand areas
 - [ ] I [have validated](../blob/HEAD/documentation/Contributing.md#validating-manifest) the manifest file(s) with `python3 tools/bundle.py --nolint applications/CATEGORY/APPID/manifest.yml bundle.zip`
 
-# AI usage disclosure (Fill this out):
+# AI usage disclosure (Fill this out)
 
-- [ ] Partially AI assisted (clarify below which code was AI assisted and briefly explain what it does).
-- [ ] Fully AI generated (explain what all the generated code does in moderate detail).
+Keep the ONE option below that matches your submission and DELETE the other two.
 
-- [ Describe how AI was used in this PR if it was used ]
+- No AI was used - all code was written by hand.
+- Partially AI assisted - clarify below which parts were AI assisted and briefly explain what they do.
+- Fully AI generated - explain what all the generated code does in moderate detail.
 
-# Reviewer Checklist (Don't fill this out!)
+- [ If AI was used, describe how here. Delete this line if no AI was used. ]
+
+# Reviewer Checklist (Don't fill this out, and don't remove it from the template)
 
 - [ ] Bundle is valid
 - [ ] There are no obvious issues with the source code
