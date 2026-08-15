@@ -1,0 +1,28 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/b0bby225/ClayLoop.git
+    commit_sha: 9604224527e5c3cf3262bed2445618d3223b5516
+
+description: |
+  Queue up to 4 `.sub` files and transmit them in sequence with configurable timing and repeat control.
+
+  **Features:**
+  - Multi-file queue (1–4 files) transmitted in order
+  - Configurable duration (0.5–30s), interval (0–60s), and start delay (None or 1–10s)
+  - Repeat control: 1–16 fixed cycles or infinite loop
+  - LED countdown: Red → Yellow → Green flash sequence with vibration before each TX
+  - Purple LED + 1000 Hz beep during active transmission
+  - Mid-cancel: press OK during any countdown gap to abort immediately
+  - Supports both RAW and keyed protocol files (Princeton, MegaCode, etc.)
+  - Persistent settings and per-group file path memory saved to SD card
+  - Reset combo (Up+Left on delay screen) restores all settings to defaults
+  - 13-frame animated clay pigeon silhouette on the right half of the display
+
+changelog: |
+  1.0: Initial release — multi-file queue (1–4 files), configurable delay/duration/interval/repeats, LED/beep countdown with vibration, gapless TX via pre-computed waveform buffer, persistent settings, per-group path memory, mid-cancel, reset combo
+
+screenshots:
+  - screenshots/delay_screen.png
+  - screenshots/setup_screen.png
+  - screenshots/control_screen.png
