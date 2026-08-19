@@ -1,0 +1,15 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/barismert98/flipper-ear-trainer.git
+    commit_sha: fdfd0d6ed6114366f501efb8de2025a5cc35f18f
+short_description: Learn intervals, chords and scales by ear
+description: "@README.md"
+changelog: "@changelog.md"
+screenshots:
+  - screenshots/menu.png
+  - screenshots/scale_teach.png
+  - screenshots/chord_quiz.png
+  - screenshots/chord_feedback.png
+  - screenshots/chord_levels.png
+  - screenshots/progress.png
