@@ -1,0 +1,14 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/VishovVladimir/flipper-zero-tpms.git
+    commit_sha: a93a5daf541839301aeaddbe8efa855d14e89c3c
+    subdir: flipper/tpms_bridge
+
+description: "@README.md"
+changelog: "@changelog.md"
+screenshots:
+  - screenshots/4.png
+  - screenshots/3.png
+  - screenshots/2.png
+  - screenshots/1.png
