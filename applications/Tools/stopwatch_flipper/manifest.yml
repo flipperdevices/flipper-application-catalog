@@ -22,7 +22,7 @@ description: |
   - Up: Reset stopwatch (when stopped)
   - BACK: Exit the application
   
-changelog: "@changelog.md"
+changelog: v1.0 - Initial release 
 screenshots:
   - docs/stopwatch1.png
   - docs/stopwatch2.png
