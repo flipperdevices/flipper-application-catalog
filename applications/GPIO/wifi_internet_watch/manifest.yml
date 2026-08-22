@@ -1,0 +1,26 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/DruzhininPavel/wifi-internet-watch-flipper.git
+    commit_sha: da36aaa3c4f7db1a1ee854f89d6747548beb654a
+short_description: Select a WiFi network and monitor internet availability through ESP-AT
+description: |
+  WiFi Internet Watch connects an official Flipper Zero Wi-Fi Developer Board
+  running ESP-AT to a selected wireless network and checks internet availability
+  every 60 seconds.
+
+  **Features**
+
+  - Scans and selects nearby Wi-Fi networks
+  - Full lowercase, uppercase, numeric, and symbol password keyboard
+  - Saves, updates, and forgets up to 16 network credentials
+  - Shows online, offline, and Wi-Fi connection states
+  - Plays a notification when internet connectivity returns
+
+  The ESP32-S2 board must run ESP-AT configured for GPIO17 and GPIO18 at 115200
+  baud with hardware flow control disabled. Setup instructions are available in
+  the source repository.
+changelog: "@docs/changelog.md"
+screenshots:
+  - screenshots/password-keyboard.png
+  - screenshots/scanning.png
