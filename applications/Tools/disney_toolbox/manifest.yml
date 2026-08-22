@@ -1,0 +1,15 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://gitlab.com/Nathaniel.Belles/flipper-disney-toolbox.git
+    commit_sha: d9aa1fa8af9e0222da59ed16481d967619850b42
+description: "@docs/catalog_description.md"
+changelog: "@CHANGELOG"
+screenshots:
+  - "docs/Homepage.png"
+  - "docs/Kyber Crystal.png"
+  - "docs/Kyber Crystal Selection.png"
+  - "docs/Kyber Crystal Writer.png"
+  - "docs/MagicBand+ Beacon.png"
+  - "docs/MagicBand+ Beacon Selection.png"
+  - "docs/MagicBand+ Beacon Broadcasting.png"
