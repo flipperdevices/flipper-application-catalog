@@ -1,0 +1,16 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/flamebarke/biovault-flipper.git
+    commit_sha: 647550ecef3a91a9f227b69c42c10b3f24d544ce
+description: "@.catalog/README.md"
+changelog: "@changelog.md"
+screenshots:
+  - screenshots/1_vault.png
+  - screenshots/2_pin_entry.png
+  - screenshots/3_main_menu.png
+  - screenshots/4_entry_actions.png
+  - screenshots/5_secret_keyboard.png
+  - screenshots/6_settings.png
+  - screenshots/7_settings_pin.png
+  - screenshots/8_diagnostics.png
