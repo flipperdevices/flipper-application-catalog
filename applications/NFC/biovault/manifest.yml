@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/flamebarke/biovault-flipper.git
-    commit_sha: 647550ecef3a91a9f227b69c42c10b3f24d544ce
+    commit_sha: 98be332a51f6fd4e321db84199767193ec0d2c42
 description: "@.catalog/README.md"
 changelog: "@changelog.md"
 screenshots:
