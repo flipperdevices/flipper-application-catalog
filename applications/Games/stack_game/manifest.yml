@@ -21,7 +21,7 @@ description: |
   - BACK: Exit the application
   - Up / Down: Navigate through the menu options
   
-changelog: "@changelog.md"
+changelog: v1.0 - Initial release
 screenshots:
   - docs/stack1.png
   - docs/stack2.png
