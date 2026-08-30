@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/SAMS0N1TE/ZeroMesh.git
-    commit_sha: 9846160439bf9736399d4706fc3777e6075920b5
+    commit_sha: 2ed6ac6331ad7a5c4db0a3900d060fa0bae98f8a
 
 short_description: Meshtastic client with offline vector maps, over serial or Bluetooth
 
