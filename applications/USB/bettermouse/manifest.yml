@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/Timon-sys/Bettermouse.git
-    commit_sha: fe4e2e0f7340f93602c5438f11e1052b843380d2
+    commit_sha: c15318bb7de850d7a995c33978e4adaa60878aa5
 description: "@docs/description.md"
 changelog: "@docs/changelog.md"
 screenshots:
