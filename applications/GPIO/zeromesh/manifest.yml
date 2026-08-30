@@ -2,16 +2,19 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/SAMS0N1TE/ZeroMesh.git
-    commit_sha: df0558610952e5e2ee406d6b2494cd2e08b83eec
+    commit_sha: 9846160439bf9736399d4706fc3777e6075920b5
 
-short_description: Meshtastic serial interface for Flipper Zero
+short_description: Meshtastic client with offline vector maps, over serial or Bluetooth
 
-description: "@README.md"
+description: "@docs/description.md"
 
 changelog: "@changelog.md"
 
 screenshots:
+  - docs/images/map.png
+  - docs/images/map_toolbar.png
   - docs/images/messages.png
   - docs/images/roster.png
   - docs/images/chat.png
+  - docs/images/stats.png
   - docs/images/settings.png
