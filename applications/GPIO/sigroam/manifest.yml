@@ -10,7 +10,7 @@
 #   name              <- name="SigRoam"
 #   id                <- appid="sigroam"
 #   category          <- fap_category="GPIO"
-#   version           <- fap_version="0.1"
+#   version           <- fap_version="0.2"
 #   short_description <- fap_description="Wi-Fi survey companion for external ESP32 scanners"
 #   author            <- fap_author="PINGEQUA_Lab"
 #   icon              <- fap_icon="icons/sigroam.png"  (verified 10x10, bit_depth=1, 96 B)
@@ -22,7 +22,7 @@
 # headers; none of those are in the subset, so pointing at those files would render badly on
 # the app page. Everything below stays inside the supported subset.
 
-# commit_sha is pinned to the commit the v0.1 tag points at -- the exact snapshot the
+# commit_sha is pinned to the commit the v0.2 tag points at -- the exact snapshot the
 # published release was built from -- not to whatever main happens to be at submission time.
 # The Catalog takes a sha precisely so a submission is reproducible; later commits on main
 # (documentation fixes and the like) must not silently change what was reviewed.
@@ -30,7 +30,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/pingequalab/sigroam-wardriving.git
-    commit_sha: 2269fe81cb20eedb9dd2c81f9a61b57654eaa0b0
+    commit_sha: 529257641a50f23e8b7f932715c7f7ab7794fd2f
 
 screenshots:
   - screenshots/menu.png
@@ -83,14 +83,15 @@ description: |
   the GPIO header. Any Marauder-compatible board works; the reference board is
   [Scout Lite](https://github.com/pingequalab/scout-lite).
 
-  Two things must be right or the app cannot open the port, and it tells you so
-  on screen rather than failing silently:
+  **Log Device must be Off** in Settings, System, or the app cannot open the
+  port: pins 13 and 14 are shared with the firmware serial log. The app detects
+  that conflict and says so on screen rather than failing silently.
 
-  - **Log Device must be Off** in Settings, System. Pins 13 and 14 are shared
-    with the firmware serial log.
-  - **5V on pin 1 comes from the OTG boost converter**, not a permanent rail.
-    While USB is plugged in the firmware defers OTG, so the scanner may have no
-    power until USB is unplugged and the app restarted.
+  5V on pin 1 has two sources and the app handles both -- USB VBUS while USB is
+  connected, and the OTG boost converter on battery -- so it runs on a car
+  charger and on battery alike. Unplugging USB mid-session restarts the scanner
+  board; the app notices and re-issues the scan command until the board answers
+  again.
 
   Do not power the scanner from pin 9. It is limited to 150 mA and a
   5 GHz-capable ESP32 exceeds that on transmit peaks.
@@ -102,6 +103,35 @@ description: |
   that file is what you upload to [WiGLE](https://wigle.net/).
 
 changelog: |
+  ## 0.2
+
+  Power handling. Both fixes come from a single wrong assumption about where the
+  5V on pin 1 comes from.
+
+  Fixed:
+
+  - The serial port would not open while USB was plugged in. The firmware keeps
+    the boost converter off while USB VBUS is above 4.5 V -- the charger refuses
+    it -- and feeds pin 1 straight from VBUS instead, so gating the port on the
+    boost state alone closed it on a board that had power the whole time. The
+    app now checks both sources.
+  - Unplugging USB stopped the survey without saying so. The handover to battery
+    succeeds, but the scanner board browns out and restarts into its
+    non-scanning state; nothing noticed, so collection could stop with nothing
+    on screen to show it. The app now detects the stall and re-issues the scan
+    command until the board answers, bounded at 24 attempts 5 seconds apart with
+    a 2 minute cap.
+
+  Added:
+
+  - Resync status on the Dash tab while the app is bringing the scanner back.
+
+  Changed:
+
+  - The OTG request is left standing while USB feeds pin 1, so the power service
+    raises the boost on its own the moment USB goes away. Handover from a car
+    charger to the battery no longer needs a restart.
+
   ## 0.1
 
   First public release. Wi-Fi survey front-end for the Flipper Zero driving an
