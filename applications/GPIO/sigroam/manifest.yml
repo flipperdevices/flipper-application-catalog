@@ -10,7 +10,7 @@
 #   name              <- name="SigRoam"
 #   id                <- appid="sigroam"
 #   category          <- fap_category="GPIO"
-#   version           <- fap_version="0.2"
+#   version           <- fap_version="0.3"
 #   short_description <- fap_description="Wi-Fi survey companion for external ESP32 scanners"
 #   author            <- fap_author="PINGEQUA_Lab"
 #   icon              <- fap_icon="icons/sigroam.png"  (verified 10x10, bit_depth=1, 96 B)
@@ -22,7 +22,7 @@
 # headers; none of those are in the subset, so pointing at those files would render badly on
 # the app page. Everything below stays inside the supported subset.
 
-# commit_sha is pinned to the commit the v0.2 tag points at -- the exact snapshot the
+# commit_sha is pinned to the commit the v0.3 tag points at -- the exact snapshot the
 # published release was built from -- not to whatever main happens to be at submission time.
 # The Catalog takes a sha precisely so a submission is reproducible; later commits on main
 # (documentation fixes and the like) must not silently change what was reviewed.
@@ -30,7 +30,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/pingequalab/sigroam-wardriving.git
-    commit_sha: 529257641a50f23e8b7f932715c7f7ab7794fd2f
+    commit_sha: 6f52553475f809a2276b51c8c8df9fffca5cb74b
 
 screenshots:
   - screenshots/menu.png
@@ -72,6 +72,8 @@ description: |
     did not recognise.
   - **Settings** for baud rate (six choices, default 115200), source codec,
     sound, vibro, backlight, stealth and debug rows, persisted across restarts.
+    Sound, vibro and the LED fire when the GPS fix is acquired or lost during a
+    survey; stealth suppresses the LED.
   - **Unique-BSSID estimate** from a 4 KB Bloom filter, session-scoped and
     RAM-only, as a progress indicator rather than a record of what you
     collected.
@@ -103,6 +105,45 @@ description: |
   that file is what you upload to [WiGLE](https://wigle.net/).
 
 changelog: |
+  ## 0.3
+
+  The notification switches, where the GPS reading comes from, scan control, and
+  one file to download instead of two.
+
+  Added:
+
+  - The sound, vibro, backlight and stealth switches now do something. They have
+    been in Settings since 0.1, stored and displayed but never read by anything.
+    They now drive an alert when the GPS fix changes state during a survey: a
+    rising two-note beep and a green blink when the fix is acquired, a falling
+    beep and a red blink when it is lost, and a short vibrate on either. Each
+    channel is gated on its own switch, stealth suppresses the LED, and alerts
+    are throttled to one every 3 seconds.
+
+  Changed:
+
+  - A release now ships one .fap for both supported firmwares instead of one per
+    firmware. Loading is gated on the API major, which Official 1.4.3 and
+    Momentum mntm-012 share at 87, and building this source against both SDKs
+    produces files that differ in five bytes -- a debug-link checksum the loader
+    never reads and one byte of section size -- with every code, data,
+    relocation and symbol section byte-identical. Unleashed runs a different API
+    major and is still not covered.
+  - The GPS reading now comes from the survey data itself. The GPS tab used to
+    be filled by a separate query the scanner answers only while it is not
+    scanning, so the reading went stale exactly when it mattered. Every scan row
+    already carries its own latitude, longitude and timestamp, and the tab now
+    reads those. Sampling still works while no scan is running.
+
+  Fixed:
+
+  - Pressing OK during a scan start or stop no longer stacks up commands. The
+    key was mapped from two states only, so a press while a stop was still in
+    flight sent another command on top of it, and a press after a failed stop
+    sent a start. All seven states are now mapped explicitly.
+  - A command that failed to reach the scanner no longer looked like it had been
+    sent.
+
   ## 0.2
 
   Power handling. Both fixes come from a single wrong assumption about where the
