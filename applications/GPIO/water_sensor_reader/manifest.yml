@@ -1,0 +1,9 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/MatveyStrelov/flipper-water-sensor.git
+    commit_sha: eb6dfd132ddb5b13cb30cb082d20acf5cd96dbf9
+description: "@readme.md"
+changelog: "@CHANGELOG.md"
+screenshots:
+  - screenshots/0.png

@@ -20,11 +20,11 @@ screenshots:
   - 'screenshots/Suica_Store2.png'
   
   
-short_description: 'An implementation of Metrodroid on the Flipper Zero'
+short_description: 'Read public transport cards from around the world'
 sourcecode:
   location:
-    commit_sha: 8472fbce191f0c5fab3bbb85423a8416d2107128
+    commit_sha: 97bdbb9af28caf78856ac9333bb2576f1194dd52
     origin: https://github.com/luu176/Metroflip
     subdir:
   type: git
-version: 0.9
+version: 2.0

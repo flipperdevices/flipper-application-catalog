@@ -1,0 +1,18 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/jblanked/FlipGemini.git
+    commit_sha: 64ea22ca7321e1b895a7868f63ab6cf9491e76db
+short_description: "Chat with Google's Gemini AI on your Flipper Zero"
+description: "@README.md"
+changelog: "@CHANGELOG.md"
+author: "JBlanked"
+name: "FlipGemini"
+version: "1.0"
+id: "flip_gemini"
+category: "GPIO"
+targets: ['all']
+icon: "app.png"
+screenshots:
+  - "assets/chat.png"
+  - "assets/prompt.png"

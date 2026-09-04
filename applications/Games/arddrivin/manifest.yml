@@ -1,0 +1,14 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/apfxtech/FlipperDrivin.git
+    commit_sha: 0baada353f4d6b8bcc181a493d8cb52412b6a472
+
+short_description: Race game ported to Flipper Zero.
+description: "@APPSTORE.md"
+changelog: "@CHANGELOG.md"
+screenshots:
+  - "package/screenshots/1.png"
+  - "package/screenshots/2.png"
+  - "package/screenshots/3.png"
+  - "package/screenshots/4.png"

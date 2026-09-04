@@ -1,0 +1,15 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/DonJulve/Flipper-Zero-PC-Monitor-USB
+    commit_sha: "66100de81ee8baed0d77ade915df2b9b4dc979e3"
+short_description: "Application for monitoring PC resources via USB"
+description: |
+  Flipper Application for monitoring PC resources via USB (Virtual COM Port).
+  This is a ported version of the original (https://github.com/TheSainEyereg/flipper-pc-monitor) application to work over USB instead of Bluetooth.
+  
+  See full readme: https://github.com/DonJulve/Networking_NFC_QR_Flipper_Zero/blob/main/README_en.md
+changelog: "@.catalog/changelog.md"
+screenshots:
+  - .catalog/screenshots/bars.png
+  - .catalog/screenshots/QR.png

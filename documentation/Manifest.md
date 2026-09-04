@@ -128,7 +128,9 @@ Apps submitted to the Flipper Apps Catalog must contain at least one screenshot.
 
 ## Validating manifest
 
-You can check your manifest file for validity. To do so, set up a virtual Python environment with the required dependencies:
+You can check your manifest file for validity before submitting it. First, set up a virtual Python environment with the required dependencies from your local `flipper-application-catalog` checkout.
+
+On Linux, macOS, or WSL:
 
 ```bash
 python3 -m venv venv
@@ -136,10 +138,42 @@ source venv/bin/activate
 pip install -r tools/requirements.txt
 ```
 
+On Windows PowerShell:
+
+```powershell
+python -m venv venv
+.\venv\Scripts\Activate.ps1
+python -m pip install -r tools\requirements.txt
+```
+
+On Windows Command Prompt:
+
+```bat
+python -m venv venv
+venv\Scripts\activate.bat
+python -m pip install -r tools\requirements.txt
+```
+
 If you haven't yet installed the SDK for `ufbt` for your current user, you can install one within the virtual environment.
 
+On Linux, macOS, or WSL:
+
 ```bash
-export UFBT_HOME=`realpath venv/ufbt`
+export UFBT_HOME="$PWD/venv/ufbt"
+ufbt update
+```
+
+On Windows PowerShell:
+
+```powershell
+$env:UFBT_HOME = Join-Path (Get-Location) "venv\ufbt"
+ufbt update
+```
+
+On Windows Command Prompt:
+
+```bat
+set UFBT_HOME=%CD%\venv\ufbt
 ufbt update
 ```
 
@@ -147,6 +181,12 @@ Then run the validation script, passing it the path to your manifest file:
 
 ```bash
 python3 tools/bundle.py --nolint applications/CATEGORY/APPID/manifest.yml bundle.zip
+```
+
+On Windows, use `python` instead of `python3` if `python3` is not available:
+
+```powershell
+python tools/bundle.py --nolint applications/CATEGORY/APPID/manifest.yml bundle.zip
 ```
 
 If there are any errors, the script will print them and exit with non-zero exit code. **Be sure to fix all errors before submitting your app.**
