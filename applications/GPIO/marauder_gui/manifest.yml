@@ -1,0 +1,18 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/mel4mi/Marauder-GUI-Flipper.git
+    commit_sha: 6ea741c7dca7f1afb9e48aa6df40b585cd1e04e7
+    subdir: marauder_gui
+
+description: "@README.md"
+changelog: "@docs/changelog.md"
+
+screenshots:
+  - screenshots/main-menu.png
+  - screenshots/wifi-menu.png
+  - screenshots/wifi-attack-menu.png
+  - screenshots/bluetooth-menu.png
+  - screenshots/bluetooth-detectors.png
+  - screenshots/multi-ap-attack-selection.png
+  - screenshots/multi-ap-deauth-attack.png
