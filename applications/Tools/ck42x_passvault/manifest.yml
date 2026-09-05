@@ -2,8 +2,8 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/lordbuffcloud/flipper-ck42x-passvault.git
-    commit_sha: b51e3a71316b0e3d4fa3e52018c41113b805ef7b
-short_description: CK42X.com PIN-gated encrypted password vault with RNG generation and opt-in HID password typing.
+    commit_sha: e38cdbb90fbe048d4f58d84d2ec6c6686fd19e54
+short_description: Encrypted editable password vault, macOS HID setup, and experimental FIDO2.
 description: "@catalog_description.md"
 changelog: "@catalog_changelog.md"
 screenshots:
