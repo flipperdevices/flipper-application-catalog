@@ -30,7 +30,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/pingequalab/sigroam-wardriving.git
-    commit_sha: 6f52553475f809a2276b51c8c8df9fffca5cb74b
+    commit_sha: 36f9ab5567c9fe5bffbec5b997a16a2fd84e587a
 
 screenshots:
   - screenshots/menu.png
@@ -81,9 +81,19 @@ description: |
   ## Hardware and setup
 
   Requires an ESP32 board running
-  [ESP32 Marauder](https://github.com/justcallmekoko/ESP32Marauder) firmware on
-  the GPIO header. Any Marauder-compatible board works; the reference board is
-  [Scout Lite](https://github.com/pingequalab/scout-lite).
+  [ESP32 Marauder](https://github.com/justcallmekoko/ESP32Marauder) firmware
+  on the GPIO header (pins 13 TX / 14 RX, 5V on pin 1).
+
+  The app speaks the Marauder serial protocol, not a specific product. It is
+  built for dual-band wardriving on **ESP32-C5 + GPS + microSD**: C5 sees
+  2.4 GHz and 5 GHz, GPS tags each network, and Marauder writes WiGLE CSV
+  to the scanner's own SD card. On-device verification used that combination.
+  Other Marauder-compatible boards that expose the same UART, GPS and SD
+  should work; they have not been bench-tested here.
+
+  GPS is optional: without it you get live counts, not locations. Logging
+  is the scanner's job -- SigRoam does not write survey data to the Flipper
+  SD card.
 
   **Log Device must be Off** in Settings, System, or the app cannot open the
   port: pins 13 and 14 are shared with the firmware serial log. The app detects
@@ -122,13 +132,10 @@ changelog: |
 
   Changed:
 
-  - A release now ships one .fap for both supported firmwares instead of one per
-    firmware. Loading is gated on the API major, which Official 1.4.3 and
-    Momentum mntm-012 share at 87, and building this source against both SDKs
-    produces files that differ in five bytes -- a debug-link checksum the loader
-    never reads and one byte of section size -- with every code, data,
-    relocation and symbol section byte-identical. Unleashed runs a different API
-    major and is still not covered.
+  - A release now ships one .fap instead of one per firmware. Loading is
+    gated on the API major. This build targets API 87 (Official firmware
+    1.4.3). CFW images that report the same API major can load the same
+    file; images on a different API major are not covered.
   - The GPS reading now comes from the survey data itself. The GPS tab used to
     be filled by a separate query the scanner answers only while it is not
     scanning, so the reading went stale exactly when it mattered. Every scan row
@@ -201,5 +208,4 @@ changelog: |
     karma, beacon or BLE spam, or password cracking -- permanently out of scope.
   - Survey data is not written to the Flipper SD card. Logging is the scanner's
     job; the Flipper provides control and live visibility.
-  - Builds against Official and Momentum firmware from the same source using
-    only the common Flipper API.
+  - Built against the official SDK (API 87) using only the common Flipper API.
