@@ -1,0 +1,21 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/Phaskich/Flipper-Zero-IR-Jammer.git
+    commit_sha: "f3394b7c41619703ae8f89e7c28ebe5fd0d4f32e"
+short_description: Advanced IR Jammer optimized for high-power external 6W IR Blasters.
+description: |
+  The application supports two operation modes: INTERNAL (using the Flipper Zero's built-in IR LED) and EXTERNAL (unlocking the full potential of powerful external 6W IR Blasters via GPIO).
+  
+  HARDWARE SAFETY ADVICE:
+  - When EXTERNAL mode is active, the app pushes massive current to Pin A7 and enables 5V OTG power.
+  - High-power 6W IR Blasters will heat up rapidly. To protect your IR LEDs from thermal degradation, do not run active jamming for more than 10-15 seconds continuously.
+  - Always toggle status to PAUSED before hot-plugging or removing the external module from the GPIO header.
+  
+  See full readme: https://github.com/Phaskich/Flipper-Zero-IR-Jammer/blob/main/README.md
+  
+  ABOUT THE PROJECT:
+  This is my very first custom application built for Flipper Zero. I am still learning how to work with GPIO, power lines, and the Flipper screen. (This project was created and refined with the assistance of AI, which helped fix compiler bugs and organize the clean architecture).
+changelog: "@CHANGELOG.md"
+screenshots:
+  - screenshots/Screenshot-20260906-220922.png
