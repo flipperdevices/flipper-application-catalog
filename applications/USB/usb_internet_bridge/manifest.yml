@@ -1,0 +1,12 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/mete888/flipper_usb_to_wifi.git
+    commit_sha: 93fd808bea5c9da6b5a099bbf7592fbdb2609fbf
+
+short_description: HTTPS bridge over USB CDC
+description: "@docs/catalog-description.md"
+changelog: "@CHANGELOG.md"
+screenshots:
+  - screenshots/main_menu.png
+  - screenshots/internet_radio.png
