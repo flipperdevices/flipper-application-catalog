@@ -1,16 +1,12 @@
 sourcecode:
   type: git
   location:
-    ## Specify the git URL of your repository
     origin: https://github.com/j-stud-res/flipper-ac-fujitsu-general-remote.git
-    ## Put the full commit SHA of the commit with the app's code you want to submit
     commit_sha: 0241fb8135437bb856ebb1bc7e73970688395dd7
-## For 'description' and 'changelog', you can use limited markdown syntax
-## You can also specify a file from your app's repository as a source with @
 description: "@README.md"
 changelog: "@changelog.md"
-## Unmodified screenshots from qFlipper
 screenshots:
   - docs/img/catalog-screenshots/Screenshot-1.png
   - docs/img/catalog-screenshots/Screenshot-2.png
   - docs/img/catalog-screenshots/Screenshot-3.png
+  
