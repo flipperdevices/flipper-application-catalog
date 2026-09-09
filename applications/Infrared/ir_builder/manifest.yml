@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/sanoobis/IR-Builder.git
-    commit_sha: d58da713b9b4f94c96902958d75ee961561fa904
+    commit_sha: 5b292b2656bc6966e6b87ff48116412c2d0de3c5
 short_description: "Create saved TV remotes from Universal Remote signal positions."
 description: "@docs/description.md"
 changelog: "@docs/changelog.md"
