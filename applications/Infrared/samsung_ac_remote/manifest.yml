@@ -1,0 +1,11 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/dappermint/samsung-ac-remote-flipper-app.git
+    commit_sha: 9aa864949b60e290ce30dcfb62533202675b36d9
+short_description: Samsung Electric Air Conditioner remote control
+description: "@./docs/description.md"
+changelog: "@./docs/changelog.md"
+screenshots:
+  - screenshots/ss0.png
+  - screenshots/ss1.png

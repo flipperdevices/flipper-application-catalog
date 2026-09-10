@@ -8,7 +8,5 @@ The app is pretty intuitive, arrow buttons are used to navigate the menus, OK bu
 
 # What's next?
 
-- Manual manifest.txt import as a playlist
-- Automatic backup of the previous manifest.txt before applying a new playlist
 - Animation previewer screen
 - Increase maximum animation count beyond 128

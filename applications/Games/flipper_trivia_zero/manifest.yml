@@ -1,0 +1,23 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/Endika/flipper-trivia-zero.git
+    commit_sha: 1e22cbc2591393a26f3405bfc4c0f870154bdd9a
+short_description: "Bilingual flashcard trivia: random questions with reveal-on-OK, two languages shipped."
+description: |
+  Trivia Zero is a bilingual flashcard trivia application for Flipper Zero. It shows random questions one at a time and reveals the answer when you press OK, with anti-repeat history so you don't see the same question twice in a row. The app ships with two embedded question packs (English and Spanish), no SD card copy required, and stores user settings persistently across sessions.
+author: Endika
+version: 0.1.12
+changelog: |
+  0.1.12
+  - pack: curate multiple questions
+  - pack: curate questions
+  0.1.11
+  - pack: drop questions with multiple-choice phrasing
+  0.1.10
+  - pack: curate questions
+  0.1.9
+  - Initial release
+screenshots:
+  - assets/screen1.png
+  - assets/screen2.png

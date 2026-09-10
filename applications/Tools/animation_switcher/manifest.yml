@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/lsalik2/FlipperAnimationSwitcher.git
-    commit_sha: dcc225ccbac031c91659dd2f0175f27a3816ac85
+    commit_sha: ec9d20f583bd87fc45d4697e8c0a4f1391df944b
 short_description: Change your background animations on the fly!
 description: "@README.md"
 changelog: "@CHANGELOG.md"
