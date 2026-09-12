@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/Mohnki/dragotchi-flipper.git
-    commit_sha: da978da86d2e9e0c481c086691d335aff49ae34d
+    commit_sha: ce8f21ca62c8fee772007c40c59d3e29ddfe0716
 description: "@docs/description.md"
 changelog: "@docs/changelog.md"
 screenshots:
