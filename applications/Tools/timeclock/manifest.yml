@@ -51,9 +51,9 @@ description: |
 changelog: "@changelog.md"
 
 screenshots:
-  - screenshots/menu.png
-  - screenshots/work.png
-  - screenshots/greeting.png
-  - screenshots/overview.png
-  - screenshots/export.png
-  - screenshots/pin.png
+  - docs/img/menu.png
+  - docs/img/work-clock.png
+  - docs/img/greeting.png
+  - docs/img/overview.png
+  - docs/img/export.png
+  - docs/img/pin.png
