@@ -1,0 +1,37 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/jdmills-edu/flipper-morse-beacon.git
+    commit_sha: a78b8b94490cc9c81e0b77e93d86bd7d7d0aa51f
+name: Morse Beacon
+id: morse_beacon
+author: jdmills
+category: Sub-GHz
+version: "1.0"
+icon: morse_beacon.png
+short_description: Sub-GHz Morse station ID and text beacon
+description: |
+  Keys Morse code out of the CC1101: a station ID beacon and a remote text keyer.
+
+  ## Beacon triggers
+  - **On activity**: IDs after the first transmission that follows a configurable stretch of dead air, the way a repeater controller does.
+  - **Interval**: keys the ID on a fixed schedule for fox hunts and plain beacons, with the period measured start-to-start or end-to-start.
+
+  ## Keying modes
+  - **MCW**: an audible tone on an FM carrier - what an FM handheld hears
+  - **CW (OOK)**: true carrier keying, for AM/CW detectors and BFO receivers
+  - **SSB (USB/LSB)**: the carrier offset by the tone pitch, so an SSB receiver on the dial frequency hears the beat note
+
+  ## Remote text
+  Send a line from a phone over BLE serial, or from anything wired to UART pins 13/14, and it is keyed on air. Speed 5-40 wpm with PARIS-standard timing and ARRL Farnsworth spacing.
+
+  Transmit permission is decided by the firmware's region policy: the app asks before keying and logs a refusal instead of working around it. Every ID is written to a timestamped log, capped at 256 KB with rotation.
+changelog: "@changelog.md"
+screenshots:
+  - docs/catalog/beacon.png
+  - docs/catalog/menu.png
+  - docs/catalog/settings.png
+  - docs/catalog/settings2.png
+  - docs/catalog/remote.png
+  - docs/catalog/sendtext.png
+  - docs/catalog/about.png
