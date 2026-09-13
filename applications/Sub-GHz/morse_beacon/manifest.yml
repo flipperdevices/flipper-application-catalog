@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/jdmills-edu/flipper-morse-beacon.git
-    commit_sha: 3c4147b8c87db96e118ca03b73d25ab7cbd61e6a
+    commit_sha: 9b8d05c280e926f56793ffa2d6b86be6295cc4aa
 name: Morse Beacon
 id: morse_beacon
 author: jdmills
