@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/cindersocket/dfc-flipper.git
-    commit_sha: c745d8bcd59c6259da75e708a85dbea361b1f804
+    commit_sha: e026642ecc6540b1d0f5a1f5348a19761cebf46e
 description: "@.catalog/README.md"
 changelog: "@CHANGELOG.md"
 screenshots:
