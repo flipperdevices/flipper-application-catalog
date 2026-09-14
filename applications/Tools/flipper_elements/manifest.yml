@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/steanlab/flipper-elements.git
-    commit_sha: b1ae5a216101f225bcdc211ea075faea7970d23d
+    commit_sha: a489d2fba9117ca0f01ded951fa9ccfdfaa45064
 
 short_description: Periodic Table of Elements for Flipper Zero
 
@@ -11,16 +11,17 @@ description: "@README.md"
 changelog: "@docs/changelog.md"
 
 screenshots:
-  - "./screenshots/screen_1.png"
-  - "./screenshots/screen_2.png"
-  - "./screenshots/screen_3.png"
-  - "./screenshots/screen_4.png"
-  - "./screenshots/screen_5.png"
-  - "./screenshots/screen_6.png"
-  - "./screenshots/screen_7.png"
-  - "./screenshots/screen_8.png"
-  - "./screenshots/screen_9.png"
-  - "./screenshots/screen_10.png"
-  - "./screenshots/screen_11.png"
-  - "./screenshots/screen_12.png"
-  - "./screenshots/screen_13.png"
+  - "./screenshots/icon.png"
+  - "./screenshots/splash.png"
+  - "./screenshots/grid_1.png"
+  - "./screenshots/grid_2.png"
+  - "./screenshots/grid_3.png"
+  - "./screenshots/detail_1.png"
+  - "./screenshots/detail_2.png"
+  - "./screenshots/detail_3.png"
+  - "./screenshots/detail_4.png"
+  - "./screenshots/detail_5.png"
+  - "./screenshots/detail_6.png"
+  - "./screenshots/about.png"
+  - "./screenshots/exit.png"
+  - "./screenshots/exit_1.png"
