@@ -1,0 +1,12 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/sureserverman/internet-time-screen.git
+    commit_sha: f31a05f75907dc92e23794a9c16a1e3e5c5b6024
+short_description: Swatch Internet Time (@beats), local clock, optional DCF77 sync
+description: "@./docs/catalog_description.md"
+changelog: "@./docs/changelog.md"
+screenshots:
+  - screenshots/ss0_clock.png
+  - screenshots/ss1_settings.png
+  - screenshots/ss2_sync.png
