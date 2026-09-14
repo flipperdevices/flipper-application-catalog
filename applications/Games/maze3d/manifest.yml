@@ -1,0 +1,13 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/k20120509/flipper-release.git
+    commit_sha: 17fb9c51e11e6197db9c8bb0a4b900b7653c95fc
+short_description: 3D raycasting maze with MC sandbox, score shop, 10 items, buff system, bilingual
+description: "@README.md"
+changelog: "@CHANGELOG.md"
+screenshots:
+  - screenshots/official_1.png
+  - screenshots/official_2.png
+  - screenshots/official_3.png
+  - screenshots/official_4.png
