@@ -3,12 +3,6 @@ sourcecode:
   location:
     origin: https://github.com/jdmills-edu/flipper-morse-beacon.git
     commit_sha: 9b8d05c280e926f56793ffa2d6b86be6295cc4aa
-name: Morse Beacon
-id: morse_beacon
-author: jdmills
-category: Sub-GHz
-version: "1.0"
-icon: morse_beacon.png
 short_description: Sub-GHz Morse station ID and text beacon
 description: |
   Keys Morse code out of the CC1101: a station ID beacon and a remote text keyer.
