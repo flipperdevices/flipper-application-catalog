@@ -1,10 +1,10 @@
 sourcecode:
   type: git
   location:
-    origin: https://github.com/apfxtech/FlipperCatacombs.git
-    commit_sha: 4c74fb0e307834d6d8a7b43f48846f9c8dab1989
+    origin: https://github.com/apfxtech/FlipperMicroCity.git
+    commit_sha: 3722eb876ef819bbabf7df43607662aecdd68339
 
-short_description: Ten floors of a generated dungeon, cleared with fireballs
+short_description: MicroCity is a SimCity-style city builder for Flipper Zero
 description: "@.catalog/APPSTORE.md"
 changelog: "@.catalog/CHANGELOG.md"
 screenshots:
@@ -13,5 +13,3 @@ screenshots:
   - ".catalog/screenshots/3.png"
   - ".catalog/screenshots/4.png"
   - ".catalog/screenshots/5.png"
-  - ".catalog/screenshots/6.png"
-  - ".catalog/screenshots/7.png"
