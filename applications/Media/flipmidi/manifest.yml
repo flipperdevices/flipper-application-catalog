@@ -1,0 +1,18 @@
+author: 'Aspenini'
+category: 'Media'
+changelog: '@./.catalog/changelog.md'
+description: "@./.catalog/README.md"
+icon: 'assets/flipmidi_10px.png'
+id: 'midi_player'
+name: 'MIDI Player'
+screenshots:
+  - '.catalog/screenshots/1.png'
+  - '.catalog/screenshots/2.png'
+short_description: 'MIDI Player is a Flipper Zero external app that plays Standard MIDI files as retro buzzer music through the built-in speaker.'
+sourcecode:
+  location:
+    commit_sha: 8d6cdc8a34adbe6f5b27f1322d8040caa1a27597
+    origin: https://github.com/Aspenini/Flipper-Zero-MIDI-Player.git
+    subdir:
+  type: git
+version: 0.1
