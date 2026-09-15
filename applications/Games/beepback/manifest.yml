@@ -1,0 +1,16 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/h4sw5q2wr9-byte/BEEPBACK.git
+    commit_sha: bdf19aa85d3f2796fb274d906de9da7f063dc8e8
+
+description: "@catalog/description.md"
+changelog: "@changelog.md"
+
+screenshots:
+  - screenshots/ss0.png
+  - screenshots/ss1.png
+  - screenshots/ss3.png
+  - screenshots/ss2.png
+  - screenshots/ss5.png
+  - screenshots/ss4.png
