@@ -1,0 +1,211 @@
+# Flipper Apps Catalog submission manifest for SigRoam.
+#
+# Destination in flipperdevices/flipper-application-catalog:
+#   applications/GPIO/sigroam/manifest.yml
+# (path = applications / <category> / <appid> / manifest.yml, per documentation/Manifest.md)
+#
+# Fields deliberately NOT repeated here because application.fam already carries them --
+# the Catalog docs recommend specifying as many fields as possible in application.fam and
+# not in manifest.yml, to avoid duplication:
+#   name              <- name="SigRoam"
+#   id                <- appid="sigroam"
+#   category          <- fap_category="GPIO"
+#   version           <- fap_version="0.3"
+#   short_description <- fap_description="Wi-Fi survey companion for external ESP32 scanners"
+#   author            <- fap_author="PINGEQUA_Lab"
+#   icon              <- fap_icon="icons/sigroam.png"  (verified 10x10, bit_depth=1, 96 B)
+#
+# description and changelog are written inline rather than as "@README.md" / "@CHANGELOG.md"
+# on purpose. The Catalog renders only a subset of Markdown -- headers of levels 1-2, bold
+# and italic, lists, and links (documentation/Manifest.md, "Markdown support"). README.md
+# uses centered HTML, tables, images and fenced code blocks, and CHANGELOG.md uses level-3
+# headers; none of those are in the subset, so pointing at those files would render badly on
+# the app page. Everything below stays inside the supported subset.
+
+# commit_sha is pinned to the commit the v0.3 tag points at -- the exact snapshot the
+# published release was built from -- not to whatever main happens to be at submission time.
+# The Catalog takes a sha precisely so a submission is reproducible; later commits on main
+# (documentation fixes and the like) must not silently change what was reviewed.
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/pingequalab/sigroam-wardriving.git
+    commit_sha: 36f9ab5567c9fe5bffbec5b997a16a2fd84e587a
+
+screenshots:
+  - screenshots/menu.png
+  - screenshots/dashboard.png
+  - screenshots/about.png
+  - screenshots/settings.png
+
+description: |
+  SigRoam turns a Flipper Zero into the control head for an external ESP32
+  Marauder Wi-Fi scanner. It starts and stops scans over the GPIO serial port,
+  shows AP, BLE and GPS counts live, and exposes the raw serial stream when the
+  numbers look wrong.
+
+  The Flipper has no Wi-Fi radio and does not scan by itself. The scanner board
+  does the scanning and the logging; SigRoam gives you control and live
+  visibility over the session.
+
+  ## Receive-only by design
+
+  SigRoam never transmits attack traffic. The following are permanently out of
+  scope -- a product rule, not a missing feature:
+
+  - deauthentication and disassociation frames
+  - WPA handshake capture
+  - evil twin, karma, and rogue AP
+  - beacon spam and BLE spam
+  - password cracking of any kind
+
+  The app only parses what the scanner prints.
+
+  ## What you get
+
+  - **Dashboard** with four tabs: live counters, parsed record stream, GPS
+    status, and session diagnostics. OK on the Dash tab starts and stops the
+    scan.
+  - **Probe firmware** sends an info request and reports what answered, so
+    "nothing connected" is distinguishable from "connected but not Marauder".
+  - **Raw log** shows the unparsed serial lines, including anything the parser
+    did not recognise.
+  - **Settings** for baud rate (six choices, default 115200), source codec,
+    sound, vibro, backlight, stealth and debug rows, persisted across restarts.
+    Sound, vibro and the LED fire when the GPS fix is acquired or lost during a
+    survey; stealth suppresses the LED.
+  - **Unique-BSSID estimate** from a 4 KB Bloom filter, session-scoped and
+    RAM-only, as a progress indicator rather than a record of what you
+    collected.
+
+  ## Hardware and setup
+
+  Requires an ESP32 board running
+  [ESP32 Marauder](https://github.com/justcallmekoko/ESP32Marauder) firmware
+  on the GPIO header (pins 13 TX / 14 RX, 5V on pin 1).
+
+  The app speaks the Marauder serial protocol, not a specific product. It is
+  built for dual-band wardriving on **ESP32-C5 + GPS + microSD**: C5 sees
+  2.4 GHz and 5 GHz, GPS tags each network, and Marauder writes WiGLE CSV
+  to the scanner's own SD card. On-device verification used that combination.
+  Other Marauder-compatible boards that expose the same UART, GPS and SD
+  should work; they have not been bench-tested here.
+
+  GPS is optional: without it you get live counts, not locations. Logging
+  is the scanner's job -- SigRoam does not write survey data to the Flipper
+  SD card.
+
+  **Log Device must be Off** in Settings, System, or the app cannot open the
+  port: pins 13 and 14 are shared with the firmware serial log. The app detects
+  that conflict and says so on screen rather than failing silently.
+
+  5V on pin 1 has two sources and the app handles both -- USB VBUS while USB is
+  connected, and the OTG boost converter on battery -- so it runs on a car
+  charger and on battery alike. Unplugging USB mid-session restarts the scanner
+  board; the app notices and re-issues the scan command until the board answers
+  again.
+
+  Do not power the scanner from pin 9. It is limited to 150 mA and a
+  5 GHz-capable ESP32 exceeds that on transmit peaks.
+
+  ## Where the data goes
+
+  SigRoam does not write survey data to the Flipper SD card; it persists only
+  your settings. Marauder writes its own CSV to the scanner board SD card, and
+  that file is what you upload to [WiGLE](https://wigle.net/).
+
+changelog: |
+  ## 0.3
+
+  The notification switches, where the GPS reading comes from, scan control, and
+  one file to download instead of two.
+
+  Added:
+
+  - The sound, vibro, backlight and stealth switches now do something. They have
+    been in Settings since 0.1, stored and displayed but never read by anything.
+    They now drive an alert when the GPS fix changes state during a survey: a
+    rising two-note beep and a green blink when the fix is acquired, a falling
+    beep and a red blink when it is lost, and a short vibrate on either. Each
+    channel is gated on its own switch, stealth suppresses the LED, and alerts
+    are throttled to one every 3 seconds.
+
+  Changed:
+
+  - A release now ships one .fap instead of one per firmware. Loading is
+    gated on the API major. This build targets API 87 (Official firmware
+    1.4.3). CFW images that report the same API major can load the same
+    file; images on a different API major are not covered.
+  - The GPS reading now comes from the survey data itself. The GPS tab used to
+    be filled by a separate query the scanner answers only while it is not
+    scanning, so the reading went stale exactly when it mattered. Every scan row
+    already carries its own latitude, longitude and timestamp, and the tab now
+    reads those. Sampling still works while no scan is running.
+
+  Fixed:
+
+  - Pressing OK during a scan start or stop no longer stacks up commands. The
+    key was mapped from two states only, so a press while a stop was still in
+    flight sent another command on top of it, and a press after a failed stop
+    sent a start. All seven states are now mapped explicitly.
+  - A command that failed to reach the scanner no longer looked like it had been
+    sent.
+
+  ## 0.2
+
+  Power handling. Both fixes come from a single wrong assumption about where the
+  5V on pin 1 comes from.
+
+  Fixed:
+
+  - The serial port would not open while USB was plugged in. The firmware keeps
+    the boost converter off while USB VBUS is above 4.5 V -- the charger refuses
+    it -- and feeds pin 1 straight from VBUS instead, so gating the port on the
+    boost state alone closed it on a board that had power the whole time. The
+    app now checks both sources.
+  - Unplugging USB stopped the survey without saying so. The handover to battery
+    succeeds, but the scanner board browns out and restarts into its
+    non-scanning state; nothing noticed, so collection could stop with nothing
+    on screen to show it. The app now detects the stall and re-issues the scan
+    command until the board answers, bounded at 24 attempts 5 seconds apart with
+    a 2 minute cap.
+
+  Added:
+
+  - Resync status on the Dash tab while the app is bringing the scanner back.
+
+  Changed:
+
+  - The OTG request is left standing while USB feeds pin 1, so the power service
+    raises the boost on its own the moment USB goes away. Handover from a car
+    charger to the battery no longer needs a restart.
+
+  ## 0.1
+
+  First public release. Wi-Fi survey front-end for the Flipper Zero driving an
+  external ESP32 Marauder scanner over the GPIO serial port.
+
+  Added:
+
+  - Dashboard with four tabs -- live counters, parsed record stream, GPS status,
+    and session diagnostics. OK on the Dash tab starts and stops the scan, and
+    the scan keeps running when you leave the page with Back.
+  - Firmware probe that reports what answered an info request, distinguishing
+    "nothing connected" from "connected but not Marauder".
+  - Raw log view of unparsed serial lines, so a malformed feed is inspectable
+    rather than invisible.
+  - Settings for baud rate, source codec, sound, vibro, backlight, stealth and
+    debug rows, persisted across restarts.
+  - Unique-BSSID estimate from a 4 KB Bloom filter, session-scoped and RAM-only.
+  - GPIO serial handling with an OTG power gate, physical-state verification
+    before opening the port, and detection of the Log Device conflict on pins 13
+    and 14 -- each reported on screen instead of failing silently.
+  - QR code on the About page linking to the source repository.
+
+  Notes:
+
+  - Receive-only by design. No deauthentication, handshake capture, evil twin,
+    karma, beacon or BLE spam, or password cracking -- permanently out of scope.
+  - Survey data is not written to the Flipper SD card. Logging is the scanner's
+    job; the Flipper provides control and live visibility.
+  - Built against the official SDK (API 87) using only the common Flipper API.
