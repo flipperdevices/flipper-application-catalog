@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/steanlab/flipper-elements.git
-    commit_sha: a489d2fba9117ca0f01ded951fa9ccfdfaa45064
+    commit_sha: f024d55114b0f53167fa0da15c7da740985d496b
 
 short_description: Periodic Table of Elements for Flipper Zero
 
