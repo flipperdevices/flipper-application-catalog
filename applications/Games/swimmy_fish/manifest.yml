@@ -2,10 +2,10 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/Invizabel/fish
-    commit_sha: 790963ba2288cb7e1e94b45892bf6ad7e10130f0
+    commit_sha: 16b2a64f1201dcbefccd1c0028889b2e112b7d6f
     subdir: FlipperZero
 short_description: "A game about a fish"
 changelog: "@./docs/changelog.md"
-description: "Swimmy Fish. One goal, Survive. One button, Enter"
+description: "Swimmy Fish. One goal, Survive. One button, Center. Flappy Bird like."
 screenshots:
   - screenshots/screenshot.png

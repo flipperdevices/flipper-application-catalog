@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/maximkulkin/flipper-zero-stratagem-hero
-    commit_sha: 5f99e7033e744e1287a9bfc97a6d3081d8456e12
+    commit_sha: dc97d57ddcbca0ae4a565ab62c81fc7711c98d4d
 description: "Stratagem Hero game made after arcade game with the same name inside Helldivers 2 video game."
 changelog: "@./changelog.md"
 author: "Maxim Kulkin"

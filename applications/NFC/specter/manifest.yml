@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/at0m-b0mb/Specter-FlipperZero.git
-    commit_sha: 212d6eacf9265063308967010394b8cbd205f9f3
+    commit_sha: ecd52fd7340f742c193d6622d814d214455179f9
 short_description: Passively sense active 13.56 MHz NFC readers and skimmers with the onboard NFC chip. No extra hardware, never transmits.
 description: |
   Specter turns your Flipper Zero into a pocket counter-surveillance bug-sweep for active 13.56 MHz NFC readers. It **passively listens** for the RF field that a powered-on reader constantly emits — a hidden card skimmer slipped into a payment terminal, a covert reader behind a door panel, a rogue logger taped under a desk — then tells you where it is, what kind of thing it is, whether the room is clean, and, left on watch, the moment one appears while you are away.
@@ -20,7 +20,7 @@ description: |
 
   ## Logbook
 
-  Every detection can be saved to the SD card, RTC-timestamped, as both a human-readable logbook.txt and a spreadsheet-friendly logbook.csv.
+  Every detection can be saved to the SD card, RTC-timestamped, as both a human-readable logbook.txt and a spreadsheet-friendly logbook.csv. The on-device logbook can be filtered by type — sweep readings, readers found, site surveys, or watch contacts.
 
   ## How it works
 
@@ -31,6 +31,13 @@ description: |
   - **13.56 MHz (HF) only.** Specter cannot sense 125 kHz (LF) readers — the onboard field-detect path exists only on the HF radio.
   - It detects an active, powered reader's field. A passive tag or a reader that is switched off produces no field to detect.
 changelog: |
+  ## 2.8
+
+  - The field meter now reaches 100% resting on a reader. The strength smoother lost precision to integer rounding and settled about ten points low; it now keeps sub-unit resolution, so a real terminal reads 100% MAX as it should.
+  - The Watch alarm band no longer animates at all — a solid inverted block is already the loudest thing on the screen, and liveness is carried by the readouts that actually change.
+  - New: filter the Logbook by type — everything, sweep readings, readers found, site surveys, or watch contacts. A matched entry keeps both of its lines, because a finding without its timestamp is not evidence.
+  - The demo animation is now generated from the app's own detection code, so it shows exactly what the device would display. Host test suite is up to 437 checks across seven pure modules.
+
   ## 2.7
 
   - Watch Mode alarm is calmer: the READER PRESENT band no longer strobes at 5 Hz — it is solidly inverted, with a small marker pulsing at about 1 Hz as a "this is live" cue.
@@ -41,11 +48,6 @@ changelog: |
 
   - Fixed a divider line clipping the NOISE FLOOR text during a noise-floor scan, and the ACTIVE READER alarm text losing its bottom pixel row.
   - Added a static layout checker that fails the build if any two drawing primitives overlap on screen.
-
-  ## 2.5
-
-  - Fixed an input lock-up that could force a Flipper reboot when keys were pressed during a noise-floor scan. The sampling worker now yields to the scheduler and runs below the UI.
-  - OK cancels a noise-floor scan in progress, and settings writes are deferred off the hot path.
 
   Full version history: [docs/changelog.md](https://github.com/at0m-b0mb/Specter-FlipperZero/blob/main/docs/changelog.md)
 screenshots:
