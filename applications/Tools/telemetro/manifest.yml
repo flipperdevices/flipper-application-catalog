@@ -1,0 +1,11 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/alaviation/flipper-telemeter.git
+    commit_sha: a615877f18281d4ef08be7d6a214b1991b20e48c
+short_description: Measure distance from lightning-to-thunder or muzzle-flash-to-boom delay
+description: "@README.md"
+changelog: "@changelog.md"
+screenshots:
+  - screenshots/s0.png
+  - screenshots/s1.png
