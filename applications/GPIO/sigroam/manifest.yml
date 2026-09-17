@@ -30,7 +30,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/pingequalab/sigroam-wardriving.git
-    commit_sha: bdec662cbe6530318edd8b4bd08e0cd94424a259
+    commit_sha: 859378501178255d353cd53d4bf4a2429a085430
 
 # FAM short_description names the reference board; Catalog review asked not to
 # put that product on the catalog page. Override here.
@@ -67,9 +67,9 @@ description: |
 
   ## What you get
 
-  - **Dashboard** with four tabs: live counters, parsed record stream, GPS
-    status, and session diagnostics. OK on the Dash tab starts and stops the
-    scan.
+  - **Dashboard** with four tabs: a large unique-BSSID count and bottom status
+    line, parsed record stream, GPS status, and session diagnostics. OK on the
+    Dash tab starts and stops the scan.
   - **Probe firmware** sends an info request and reports what answered, so
     "nothing connected" is distinguishable from "connected but not Marauder".
   - **Raw log** shows the unparsed serial lines, including anything the parser
@@ -121,7 +121,8 @@ description: |
 changelog: |
   ## 0.4
 
-  Capture quality on the dashboard, Sess-tab identity, and BLE-off.
+  Capture quality on the dashboard, Sess-tab identity, BLE-off, Dash/GPS
+  layout, and the About page title.
 
   Added:
 
@@ -139,6 +140,14 @@ changelog: |
     is talking to this scanner. The handshake token on the wire is unchanged.
     Loading is still gated on API major 87 (Official firmware 1.4.3). CFW
     images that report the same API major can load the same file.
+  - About page: SigRoam Wardriving v0.4 on one line, maker line by
+    PINGEQUA Lab. Receive-only, No attack, Marauder compatible, and the QR
+    short link are unchanged.
+  - The unique-BSSID count is the big number at the top of Dash again.
+  - The status line sits on the bottom: OK, fix percent, drop, and SAT. Bytes
+    received no longer show on the normal Dash while a SigRoam scan is running.
+  - The GPS tab no longer marks a live tag. Accuracy is labelled as an
+    estimate.
 
   ## 0.3
 
