@@ -7,5 +7,5 @@ short_description: Measure distance from lightning-to-thunder or muzzle-flash-to
 description: "@README.md"
 changelog: "@changelog.md"
 screenshots:
-  - screenshots/s0.png
-  - screenshots/s1.png
+  - screenshots/0.png
+  - screenshots/1.png
