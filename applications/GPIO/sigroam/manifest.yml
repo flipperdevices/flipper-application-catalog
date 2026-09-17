@@ -10,7 +10,7 @@
 #   name              <- name="SigRoam"
 #   id                <- appid="sigroam"
 #   category          <- fap_category="GPIO"
-#   version           <- fap_version="0.3"
+#   version           <- fap_version="0.4"
 #   short_description <- fap_description="Wi-Fi survey companion for external ESP32 scanners"
 #   author            <- fap_author="PINGEQUA_Lab"
 #   icon              <- fap_icon="icons/sigroam.png"  (verified 10x10, bit_depth=1, 96 B)
@@ -22,7 +22,7 @@
 # headers; none of those are in the subset, so pointing at those files would render badly on
 # the app page. Everything below stays inside the supported subset.
 
-# commit_sha is pinned to the commit the v0.3 tag points at -- the exact snapshot the
+# commit_sha is pinned to the commit the v0.4 tag points at -- the exact snapshot the
 # published release was built from -- not to whatever main happens to be at submission time.
 # The Catalog takes a sha precisely so a submission is reproducible; later commits on main
 # (documentation fixes and the like) must not silently change what was reviewed.
@@ -30,7 +30,11 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/pingequalab/sigroam-wardriving.git
-    commit_sha: 36f9ab5567c9fe5bffbec5b997a16a2fd84e587a
+    commit_sha: bdec662cbe6530318edd8b4bd08e0cd94424a259
+
+# FAM short_description names the reference board; Catalog review asked not to
+# put that product on the catalog page. Override here.
+short_description: "Wi-Fi survey companion for an external ESP32 scanner"
 
 screenshots:
   - screenshots/menu.png
@@ -115,6 +119,27 @@ description: |
   that file is what you upload to [WiGLE](https://wigle.net/).
 
 changelog: |
+  ## 0.4
+
+  Capture quality on the dashboard, Sess-tab identity, and BLE-off.
+
+  Added:
+
+  - The Sess tab names the reference scanner SigRoam. The eight-byte wire token
+    is still Firmware: Marauder and is not shown there. Status is Running or
+    Sealed, the duration, and the radio permission.
+  - Dashboard capture-quality headline. When the scanner sends Qual:, Dash
+    shows fix%, drop and net, refreshed on a 5-second tick. A stale headline
+    degrades instead of looking current.
+  - Dash shows BLE=OFF when the scanner reports Radio: ble=0.
+
+  Changed:
+
+  - The app title is SigRoam Wardriving. Probe names SigRoam firmware when it
+    is talking to this scanner. The handshake token on the wire is unchanged.
+    Loading is still gated on API major 87 (Official firmware 1.4.3). CFW
+    images that report the same API major can load the same file.
+
   ## 0.3
 
   The notification switches, where the GPS reading comes from, scan control, and
