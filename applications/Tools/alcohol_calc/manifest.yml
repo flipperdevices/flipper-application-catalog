@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/vtlklr/alcohol_calc.git
-    commit_sha: 8a920916aa19b7c3d2e89f3348e10406901cfaa1
+    commit_sha: 851f8618adb45ca5861f3fd04f0c6ea6cbcf8b83
 short_description: Spirit dilution and mixing calculator
 description: |
   A small app for home distillers with three calculators:
