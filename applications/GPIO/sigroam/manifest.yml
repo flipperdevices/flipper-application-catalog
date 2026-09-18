@@ -30,7 +30,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/pingequalab/sigroam-wardriving.git
-    commit_sha: 859378501178255d353cd53d4bf4a2429a085430
+    commit_sha: fa7d2688bf5216ce5fd26950b970e0263c823a01
 
 # FAM short_description names the reference board; Catalog review asked not to
 # put that product on the catalog page. Override here.
@@ -148,6 +148,10 @@ changelog: |
     received no longer show on the normal Dash while a SigRoam scan is running.
   - The GPS tab no longer marks a live tag. Accuracy is labelled as an
     estimate.
+  - Probe sends info a second time if the scanner does not answer in 1.5 s.
+  - While a scan is running with no AP or BLE rows yet, Dash shows
+    Waiting for first AP instead of a zeroed count line.
+  - On the GPS tab, a scan row with no datetime shows POI: no fix in log.
 
   ## 0.3
 
