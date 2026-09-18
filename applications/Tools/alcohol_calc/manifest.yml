@@ -1,0 +1,21 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/vtlklr/alcohol_calc.git
+    commit_sha: 8a920916aa19b7c3d2e89f3348e10406901cfaa1
+short_description: Spirit dilution and mixing calculator
+description: |
+  A small app for home distillers with three calculators:
+
+  - **Dilute spirit** — enter starting strength, target strength and volume, get the amount of water to add and the resulting volume.
+  - **Mix two spirits** — enter volume and strength of two drinks, get the resulting volume and strength.
+  - **Target volume** — enter the desired volume and strength of the final drink plus the strength of your spirit, get how much spirit and water to take.
+
+  All values are edited with the Left/Right buttons, like in Flipper's own settings menus.
+changelog: "@changelog.md"
+screenshots:
+  - screenshots/01_menu.png
+  - screenshots/02_dilute.png
+  - screenshots/03_mix.png
+  - screenshots/04_target.png
+  - screenshots/05_about.png
