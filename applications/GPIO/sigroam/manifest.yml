@@ -30,7 +30,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/pingequalab/sigroam-wardriving.git
-    commit_sha: 29d348aa6b7ab29c6fa76bad811b71d0c628efde
+    commit_sha: b5ebbacb642da173d277b1a1cfbbabe40a9b96ce
 
 # FAM short_description names the reference board; Catalog review asked not to
 # put that product on the catalog page. Override here.
@@ -155,6 +155,10 @@ changelog: |
   - On a stock Marauder scanner, Dash no longer sends info when the page
     opens. That command would swallow the next scan start. Probe still
     sends info. A SigRoam scanner still gets the read-only info refresh.
+  - Empty Version is not treated as a generic Marauder. Dash holds START
+    until Version arrives.
+  - Dash shows No SD and Saving, and does not cover those with the ident
+    overlay.
 
   ## 0.3
 
