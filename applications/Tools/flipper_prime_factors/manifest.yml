@@ -1,0 +1,20 @@
+## Flipper Apps Catalog manifest for Prime Factorization.
+## In the catalog repo it lives at: applications/Tools/flipper_prime_factors/manifest.yml
+
+sourcecode:
+  type: git
+  location:
+    ## Public HTTPS URL (the catalog cannot use the git@github.com SSH form)
+    origin: https://github.com/gbritoda/flipper0-prime_factors.git
+    ## Full SHA of the commit with the code being submitted
+    commit_sha: b64d4c2e8454dcdbbe632df42a3892d796af84c5
+## Taken from 'fap_description' in application.fam if omitted; set explicitly here.
+short_description: Prime factorization of an integer by trial division
+## Loaded from files in the source repo (paths are relative to the repo root)
+description: "@README.md"
+changelog: "@changelog.md"
+## Unmodified screenshots from qFlipper; the first one is the catalog preview
+screenshots:
+  - screenshots/Screenshot-20260920-214234.png
+  - screenshots/Screenshot-20260920-214353.png
+  - screenshots/Screenshot-20260920-214356.png
