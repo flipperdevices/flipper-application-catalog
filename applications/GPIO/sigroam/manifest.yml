@@ -30,7 +30,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/pingequalab/sigroam-wardriving.git
-    commit_sha: fa7d2688bf5216ce5fd26950b970e0263c823a01
+    commit_sha: 29d348aa6b7ab29c6fa76bad811b71d0c628efde
 
 # FAM short_description names the reference board; Catalog review asked not to
 # put that product on the catalog page. Override here.
@@ -152,6 +152,9 @@ changelog: |
   - While a scan is running with no AP or BLE rows yet, Dash shows
     Waiting for first AP instead of a zeroed count line.
   - On the GPS tab, a scan row with no datetime shows POI: no fix in log.
+  - On a stock Marauder scanner, Dash no longer sends info when the page
+    opens. That command would swallow the next scan start. Probe still
+    sends info. A SigRoam scanner still gets the read-only info refresh.
 
   ## 0.3
 
