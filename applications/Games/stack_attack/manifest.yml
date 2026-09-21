@@ -1,0 +1,13 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/Negenii/flipper-stack-attack.git
+    commit_sha: 658e60e82930888e8a9c703bac34a4e83a7b0db5
+short_description: "Push crates, fill rows, don't get crushed. A remake of the legendary Siemens mobile game"
+description: "@docs/description.md"
+changelog: "@changelog.md"
+screenshots:
+  - "screenshots/title.png"
+  - "screenshots/gameplay.png"
+  - "screenshots/climbing.png"
+  - "screenshots/row_clear.png"
