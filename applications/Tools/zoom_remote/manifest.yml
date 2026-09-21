@@ -1,0 +1,12 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/Mableton/zoom_remote.git
+    commit_sha: 305dc88e44246fee405e7ed08e922b2757c47c10
+description: "@.catalog/README.md"
+changelog: "@.catalog/CHANGELOG.md"
+screenshots:
+  - .catalog/screenshots/1.png
+  - .catalog/screenshots/2.png
+  - .catalog/screenshots/3.png
+  - .catalog/screenshots/4.png
