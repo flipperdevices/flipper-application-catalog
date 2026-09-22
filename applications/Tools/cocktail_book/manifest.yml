@@ -1,0 +1,12 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/resu95/flipper_cocktail_book.git
+    commit_sha: 9bb4bf0d8fed44382e38bf37a972c1b7ea22afe5
+description: "@README.md"
+changelog: "@CHANGELOG.md"
+author: "resu95"
+screenshots:
+  - "flipper_cocktail_book_title.png"
+  - "flipper_cocktail_book_category.png"
+  - "flipper_cocktail_book_example_cocktail.png"
