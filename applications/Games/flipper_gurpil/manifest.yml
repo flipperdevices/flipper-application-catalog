@@ -1,0 +1,30 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/Endika/flipper-gurpil.git
+    commit_sha: 04763fd770cf8a1df4d260b92b66d64615b055de
+short_description: "Endless side-scroller: pick your wheel shape, the terrain decides your speed."
+description: |
+  Gurpil is an endless side-scroller for the Flipper Zero. The ground scrolls by in zones —
+  flat, rocky, uphill and obstacles — and the wheel SHAPE you mount decides how fast you roll
+  over each one. Press the D-pad to switch shape on the fly: Up = circle, Right = line,
+  Down = square, Left = triangle. Match the shape to the terrain ahead to keep your speed up;
+  the wrong shape stalls you.
+
+  The pace ramps as you go — a run opens gentle at x1 and builds to x2 and x3 (full speed) the
+  further you get, shown next to the speed bar. Reach checkpoints to earn extra time; the run
+  is endless and only ends when the clock runs out. Your best distance is saved to the SD card.
+  Fully offline — no network, no accounts.
+author: Endika
+version: 0.1.8
+changelog: |
+  - v0.1.8: Incremental speed ramp — runs open gentle at x1 and build to x2 and x3 (full speed)
+    as you go, with the current tier shown beside the speed bar.
+  - v0.1.7: Faster pace and a tighter time budget for a harder, twitchier run.
+  - v0.1.0: Initial release — endless shape-vs-terrain side-scroller with four D-pad wheel
+    shapes, checkpoints for extra time, and your best distance saved to the SD card.
+category: Games
+id: flipper_gurpil
+name: Gurpil
+screenshots:
+  - assets/game.png

@@ -1,0 +1,11 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/deya-eldeen/flipperzero-brainy.git
+    commit_sha: e0475541a50f02d2b2e5013b78434bb04b69565d
+description: "Classic Simon Says memory game with a pixel-art brain mascot. Follow the sequence of flashing buttons for as long as you can!"
+changelog: "v1.1 - Initial release"
+author: "@deya-eldeen"
+screenshots:
+  - "screenshot_1.png"
+  - "screenshot_2.png"

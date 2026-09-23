@@ -1,13 +1,13 @@
 id: mouse_click_recorder
 name: Click Recorder
-version: "1.1"
+version: "1.2"
 category: USB
 
 sourcecode:
   type: git
   location:
     origin: https://github.com/0x78f1935/Click-Recorder.git
-    commit_sha: f080af7dcb369a4b16ecb11ee95d0d863a84f445
+    commit_sha: e39b3b323de927a18ad47c0a597b1ce85af6680f
     subdir: click_recorder
 
 icon: "@images/mouse_10x10.png"

@@ -1,0 +1,12 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/NoodleNugget-com/flipper-guitar-chords.git
+    commit_sha: e98240c2a1049eb69016d8e09c42b55e5ac29035
+description: "@docs/description.md"
+changelog: "@changelog.md"
+screenshots:
+  - screenshots/01-chord.png
+  - screenshots/02-voicing.png
+  - screenshots/03-practice.png
+  - screenshots/04-progressions.png

@@ -1,0 +1,26 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/AlastorApps/cidrchallengef0
+    commit_sha: 41437a5b1f1ceefe4bbc50a63a8267f3ecc0b6b2
+
+short_description: IPv4 subnetting trainer for Flipper Zero
+
+description: |
+  CIDR Challenge is an offline IPv4 subnetting trainer for Flipper Zero.
+
+  Practice network addresses, broadcast addresses, usable hosts, subnet masks
+  and CIDR conversions through dynamically generated challenges.
+
+  Includes Training, Speed Challenge, Survival and Exam modes with XP
+  progression and local statistics.
+
+changelog: "@changelog.md"
+
+screenshots:
+  - screenshots/menu.png
+  - screenshots/challenge.png
+  - screenshots/survival.png
+  - screenshots/exam_result.png
+  - screenshots/correct_answer.png
+  - screenshots/statistics.png
