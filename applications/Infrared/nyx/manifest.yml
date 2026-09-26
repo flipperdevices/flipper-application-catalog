@@ -1,0 +1,62 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/at0m-b0mb/Nyx-FlipperZero.git
+    commit_sha: e56f60fd0cd7da8f05e631cd6336e3118ab3404d
+short_description: Find covert night-vision cameras by the 850 and 940 nm infrared they leak in the dark. Onboard receiver for pulsed sources, optional probe for steady ones. Never transmits.
+description: |
+  Nyx turns your Flipper Zero into an infrared sweep for counter-surveillance. Covert night-vision cameras light a dark room with 850 and 940 nm infrared your eyes cannot see — Nyx turns that giveaway into a meter you can walk around a hotel room, a changing room, or an Airbnb.
+
+  **Listen-only. Nyx never transmits infrared.**
+
+  ## Two modes, and it is honest about both
+
+  - **Onboard — pulsed sources.** Uses the Flipper's built-in infrared receiver. That part is a 38 kHz demodulator, so it sees sources that pulse or modulate: remotes, beacons, PIR floodlights, and illuminators driven with PWM. It is genuinely deaf to a steady illuminator no matter how bright it is, and the sweep screen says so rather than letting a quiet reading pass for an all-clear.
+  - **Probe — steady sources.** An optional infrared phototransistor costing about a dollar, clipped onto a GPIO analogue pin, reads the true DC infrared level. It nulls the ambient level when you arm it, then tells a STEADY source — the night-vision camera signature — apart from a FLICKER, which is a mains lamp at 100 or 120 Hz, and a PULSED one. Nyx draws the wiring on the device and gives you a live check, so you can confirm the probe works by aiming any TV remote at it.
+
+  ## The sweep
+
+  An eye whose iris ring fills with the live level, a pupil that dilates as you close on the source, a tick at your best reading so far, and a warmer or colder arrow, which is the thing you actually hunt with. Left and Right change sensitivity without leaving the screen. Presence is decided across a run of recent windows rather than a single reading, so a bursty source reads as one steady find instead of a stuttering alarm.
+
+  ## Honesty
+
+  A clean sweep in Onboard mode does not mean the room is clean, and Nyx says that on the screen rather than in a footnote. Finding a source is proof; finding nothing is not. That asymmetry is the whole reason Probe mode exists.
+
+  ## Requirements
+
+  Onboard mode needs nothing but the Flipper. Probe mode is optional and needs one infrared phototransistor and a 10k resistor on the GPIO header; the wiring page on the device shows exactly where they go.
+changelog: |
+  ## 1.2
+
+  A usability and honesty pass. The detection engine is unchanged; what changed is whether the thing responds to you, and whether the screen tells the truth about itself.
+
+  - The detector chattered, and over-claimed while doing it. Presence was a bare threshold on a single 100 ms window, so a bursty source — which every source is, through a demodulating receiver — toggled the verdict several times a second. Measured with a dome camera's illuminator held directly against the receiver, 143 of 155 windows read exactly zero and four read 10 to 15% of full scale, and each of those four blips became its own alarm. Presence now asks whether activity has persisted: one bit per window in a shift register, asserted once at least 3 of the last 16 windows clear the floor, released only on complete silence. On the same camera it now reports 0 detections across 148 frames, while a TV remote still locks on solidly and reads STRONG.
+  - Presence disagreed with its own meter. The level reads whichever of edge rate or receiver duty cycle is louder, but the present-or-absent decision only ever looked at edge rate, so a receiver that holds its output asserted filled the ring while the verdict said nothing was there. Both now read the same number.
+  - The onboard readout called edge transitions pulses. Each pulse produces two transitions, so the figure was roughly double the real rate. It is labelled edges per second now.
+  - Upgrading from 1.1 silently wiped your settings: adding an option changed the size of the saved struct, and the loader validates size. Old files are now read through their own layout and carried forward.
+  - Sluggish and dropped key presses during a probe sweep. The sampling burst was paced with a non-yielding busy-wait, at the same thread priority the view dispatcher runs in. The worker now runs one step below the UI, so input preempts it instead of queuing behind it.
+  - Two layout collisions found by capturing real device frames rather than by reading the code, plus an alarm border that shaved the bottom row off its own text.
+  - The documented default probe pin was wrong. The code has always used the first analogue pin in the SDK's own table, which is PA7 on header pin 2, not PC0.
+
+  **Added:** sensitivity on the sweep screen with Left and Right, so you can change it while standing in the dark room rather than back in the menu; live telemetry in place of a word the screen was already showing; page arrows and a peak reset on Probe Setup; and a setting to turn the boot intro off.
+
+  **Changed:** a release now ships one build per firmware line, because a compiled app bakes in the API version of the SDK it was built against — nyx.fap for stock firmware and nyx-fw-dev.fap for the Unleashed, RogueMaster and Momentum line. Every screenshot and the demo animation are now captured from real hardware over the Flipper's own RPC session; the mockup renderer is gone.
+
+  ## 1.1
+
+  - Animated boot intro: a Nyx eye opening through expanding infrared wave-rings. Any key skips it.
+  - Settings persistence for mode, sensitivity, probe pin, and the sound, vibro and LED toggles.
+  - The Sweep screen redesigned around an eye that watches back: the iris ring fills clockwise with the live level, the pupil dilates as you close on a source, a tick marks your best reading so far, and lock-on glare spikes rotate around the iris.
+
+  ## 1.0
+
+  Initial release. A dual-path infrared emitter sweep for counter-surveillance: onboard mode for pulsed sources, an optional phototransistor probe for steady ones, an on-device wiring guide and live probe check, and the honesty notes that say which mode can see what. Listen-only.
+
+  Full version history: [CHANGELOG.md](https://github.com/at0m-b0mb/Nyx-FlipperZero/blob/main/CHANGELOG.md)
+screenshots:
+  - screenshots/sweep_alarm@4x.png
+  - screenshots/sweep@4x.png
+  - screenshots/probe_wiring@4x.png
+  - screenshots/probe_check@4x.png
+  - screenshots/menu@4x.png
+  - screenshots/settings@4x.png
