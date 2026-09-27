@@ -1,0 +1,11 @@
+# Draft: replace commit_sha with the published source commit before submission.
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/Nerd1029/flipper-flappy-bird.git
+    commit_sha: REPLACE_WITH_PUBLISHED_40_CHARACTER_COMMIT_SHA
+short_description: A forgiving pipe-dodging game with wide gaps.
+description: "@docs/description.md"
+changelog: "@changelog.md"
+screenshots:
+  - screenshots/gameplay.png
