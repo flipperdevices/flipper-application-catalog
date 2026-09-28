@@ -1,0 +1,14 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/guness/flipper-acun-remote.git
+    commit_sha: f8afaa3ccede71a40f15ef279d30d1772f530b2d
+    subdir: flipper_apps/acun_remote
+description: "@README.md"
+changelog: "@changelog.md"
+screenshots:
+  - screenshots/1.main.png
+  - screenshots/2.listening.png
+  - screenshots/3.saved.png
+  - screenshots/4.remote.png
+  - screenshots/5.sending.png
