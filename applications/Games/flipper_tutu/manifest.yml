@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/Endika/flipper-tutu.git
-    commit_sha: b325ad728cf85c7e896b47c9e8bd5bb507b9a56f
+    commit_sha: 4b45c52bc245607c1853eb753b76ba1e4dd296bf
 short_description: Sliding car puzzle (Rush Hour) with 100 levels of increasing difficulty.
 description: |
   Tutu is a sliding car puzzle (Rush Hour) for the Flipper Zero. Slide the other cars out
@@ -14,8 +14,9 @@ description: |
   saved to the SD card. Fully offline, with no network or accounts, plus a level-select
   grid and a credits screen.
 author: Endika
-version: 0.1.5
+version: 0.1.8
 changelog: |
+  - v0.1.8: Saved progress that cannot be read is kept instead of being overwritten, so a bad SD read no longer resets your levels.
   - v0.1.5: Updated catalog screenshots to native device-resolution captures (no gameplay changes).
   - v0.1.4: New app icon (the puzzle board with the hero car exiting), a clearer exit marker, and layout polish on the menu, credits and in-game HUD.
   - v0.1.0: Initial release — 100 Rush Hour levels with increasing difficulty, cycle-and-slide controls, a level-select grid with progress saved to the SD card, and a credits screen.
