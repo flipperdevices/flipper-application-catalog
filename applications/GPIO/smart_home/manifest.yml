@@ -2,9 +2,8 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/biotechnicallc/SmartHome.git
-    commit_sha: daaa77f9ba1317b43e4fdccc52bddd7aab1c5246
-
-short_description: Control Shelly and Home Assistant devices over Wi-Fi
+    commit_sha: b04adf02431740ee9f7c92c92bdfd5e48067fc84
+short_description: Control supported smart home devices through a Wi-Fi Developer Board
 description: "@docs/description.md"
 changelog: "@docs/changelog.md"
 
