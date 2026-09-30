@@ -1,0 +1,21 @@
+
+sourcecode:
+  type: git
+  location:
+    ## Specify the git URL of your repository
+    origin: https://github.com/fgreil/mitzi-windbreak.git
+    ## Put the full commit SHA of the commit with the app's code you want to submit
+    commit_sha: a095e13bab89a3220f52f21966d4793c467a1fa7
+    ## (Optional) If your app is located in a subdirectory of the repository, specify it here
+    # subdir: .
+## My application.fam contains 'fap_description', hope it will be used as a short description
+# short_description: A short app description.
+## For 'description' and 'changelog', you can use limited markdown syntax
+## You can also specify a file from your app's repository as a source with @
+description: |
+ The fun app allows your Flipper to break winds with adjustable parameters 'Wet/Dry', 'Length', 'Pitch', and 'Bubbliness'. 
+ In other words: A simple fart sound generator for the user (and fun way to get acquinted with sound generation for the coder).
+changelog: "@changelog.md"
+## Unmodified screenshots from qFlipper
+screenshots:
+  - screenshots/MainScreen.png
