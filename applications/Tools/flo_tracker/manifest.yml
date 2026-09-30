@@ -1,0 +1,13 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/harimwoo/flipper-flo-tracker.git
+    commit_sha: 2678e015201647b99eb5c68cf9bfa6f9826d85e0
+
+short_description: Period and menstrual cycle tracker for women's health
+description: "@README.md"
+changelog: "@changelog.md"
+screenshots:
+  - screenshots/ss1_menu.png
+  - screenshots/ss2_status.png
+  - screenshots/ss3_calendar.png
