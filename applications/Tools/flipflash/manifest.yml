@@ -1,0 +1,14 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/Mushi0/FlippFlash.git
+    commit_sha: 7eaf366d0668268fe395f76db1f0f37696d69936
+short_description: "A Flipper Zero flashcard app"
+description: "@./docs/catalog_readme.md"
+changelog: "@./docs/changelog.md"
+author: "@Mushi0"
+screenshots:
+  - "./screenshots/01-hola.png"
+  - "./screenshots/02-hello.png"
+  - "./screenshots/03-oui.png"
+  - "./screenshots/04-settings.png"
