@@ -1,0 +1,10 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/gergely-xyz/OnkyoRemote.git
+    commit_sha: 81e84f85f8a822f2032cbceca54b7e28e6f3539a
+description: "@docs/catalog-description.md"
+changelog: "@./docs/changelog.md"
+screenshots:
+  - docs/screenshots/ss0.png
+  - docs/screenshots/ss1.png
