@@ -2,9 +2,25 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/cindersocket/dfc-flipper.git
-    commit_sha: e026642ecc6540b1d0f5a1f5348a19761cebf46e
+    commit_sha: c0fc24e66d843f6f7706ec544c61774cf764efb0
 description: "@.catalog/README.md"
-changelog: "@CHANGELOG.md"
+changelog: |
+  ## 1.1.1
+
+  - Reset DESFire selection and authentication when the reader field turns off
+    or the ISO-DEP session ends. Each new activation starts at PICC level.
+
+  ## 1.1
+
+  - Add the EV3 build profile with EV1 and EV2 commands, up to four
+    applications, 16 files, and 3 KiB of file data.
+  - Keep human-readable .dfc credentials. Load the text codec only when
+    importing or saving; compiled .dfcb credentials remain supported.
+  - Correct ATQA and ISO-DEP framing for PC/SC readers, including ACR1552.
+  - Reduce RAM use by allocating transaction snapshots and incoming command
+    chains only when needed.
+  - Add host credential compilation and protocol and memory probes. Update to
+    dfc-core 1.2.0 and the consolidated tiny-crypto-c backend.
 screenshots:
   - .catalog/screenshots/info.png
   - .catalog/screenshots/main_menu.png
