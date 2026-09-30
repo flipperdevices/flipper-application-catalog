@@ -1,0 +1,10 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/asaldele1/u2f_over_nfc.git
+    commit_sha: 7b3ae0de78d2e6f65ae3e4b1ceb71df1d5e338df
+description: "@.catalog/README.md"
+changelog: "@CHANGELOG.md"
+screenshots:
+  - ".catalog/screenshots/1.png"
+  - ".catalog/screenshots/2.png"
