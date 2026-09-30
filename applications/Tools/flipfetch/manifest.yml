@@ -1,0 +1,5 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/alexroses47/flipper-flipfetch.git
+    commit_sha: 8948205223e115c28b64290780084ed33b41eb0a
