@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/hypery11/flipper-tesla-fsd.git
-    commit_sha: e18026ed8116696d48112830958457efba15773f
+    commit_sha: 6a3404fb167cf6f2fdefa758b6ecd472f5305c30
 
 description: "@.catalog/README.md"
 changelog: "@.catalog/changelog.md"
