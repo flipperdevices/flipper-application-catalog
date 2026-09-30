@@ -1,0 +1,13 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/enexis1337/Gatekeeper
+    commit_sha: 395d54ada18f062cb4221046a71db898519d99b6
+short_description: A secure password vault and BadUSB injector for Flipper Zero.
+description: "@catalogReadme.md"
+changelog: "@CHANGELOG.md"
+screenshots:
+  - gitImages/deployMenu.png
+  - gitImages/List.png
+  - gitImages/setCombo.png
+  - gitImages/iconsSelect.png
