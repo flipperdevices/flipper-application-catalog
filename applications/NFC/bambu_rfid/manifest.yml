@@ -1,0 +1,22 @@
+sourcecode:
+  type: git
+  location:
+    ## Specify the git URL of your repository
+    origin: hhttps://github.com/DanTheMan827/bambu-rfid-flipper.git
+    ## Put the full commit SHA of the commit with the app's code you want to submit
+    commit_sha: 7709f2a56fa72301e5c7f99f46cdc6d35eb805bf
+    ## (Optional) If your app is located in a subdirectory of the repository, specify it here
+    # subdir: .
+## If application.fam contains 'fap_description', it will be used as a short description
+# short_description: A short app description.
+## For 'description' and 'changelog', you can use limited markdown syntax
+## You can also specify a file from your app's repository as a source with @
+description: "@README.md"
+changelog: "@changelog.md"
+## Unmodified screenshots from qFlipper
+screenshots:
+  - screenshots/flp0.png
+  - screenshots/flp1.png
+  - screenshots/flp2.png
+  - screenshots/flp3.png
+  - screenshots/flp4.png
