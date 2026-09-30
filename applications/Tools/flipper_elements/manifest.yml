@@ -1,0 +1,27 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/steanlab/flipper-elements.git
+    commit_sha: 497d1f2c03eb513a3c4d37cf4a96eff1281dff50
+
+short_description: Periodic Table of Elements for Flipper Zero
+
+description: "@README.md"
+
+changelog: "@docs/changelog.md"
+
+screenshots:
+  - "./screenshots/icon.png"
+  - "./screenshots/splash.png"
+  - "./screenshots/grid_1.png"
+  - "./screenshots/grid_2.png"
+  - "./screenshots/grid_3.png"
+  - "./screenshots/detail_1.png"
+  - "./screenshots/detail_2.png"
+  - "./screenshots/detail_3.png"
+  - "./screenshots/detail_4.png"
+  - "./screenshots/detail_5.png"
+  - "./screenshots/detail_6.png"
+  - "./screenshots/about.png"
+  - "./screenshots/exit.png"
+  - "./screenshots/exit_1.png"
