@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/jeremydbean/FlipperRFIDMaker.git
-    commit_sha: 94936f9acabfdc7ef8086bf0a4d5340260d045d9
+    commit_sha: 39ff1e359257197140ba6b1fa2ac530fc39f9296
 description: "@docs/catalog-description.md"
 changelog: "@docs/changelog.md"
 screenshots:
