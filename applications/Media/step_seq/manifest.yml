@@ -1,0 +1,9 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/rseufert/step_seq.git
+    commit_sha: 651a803ea154e26692474d6373dca4bc9ba7642c
+description: "@docs/description.md"
+changelog: "@docs/changelog.md"
+screenshots:
+  - screenshots/ss0.png
