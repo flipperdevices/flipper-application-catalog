@@ -1,0 +1,11 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/yo3gnd/fmtx
+    commit_sha: 12fd39a84e5d2f97f76653fa223befb182207498
+description: "@market/README.md"
+changelog: "@market/CHANGELOG.md"
+screenshots:
+  - market/s1.png
+  - market/s2.png
+  - market/s3.png

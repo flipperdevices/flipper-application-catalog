@@ -1,0 +1,14 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/Atompunk78/IRONWYRM.git
+    commit_sha: 1635b6966186fc6548e10016588c85f9f501d083
+
+description: "@README.md"
+changelog: "@changelog.md"
+
+screenshots:
+  - screenshots/gameplay.png
+  - screenshots/shop.png
+  - screenshots/gameplay2.png
+  - screenshots/titlescreen.png

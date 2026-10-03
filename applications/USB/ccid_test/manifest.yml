@@ -1,0 +1,12 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/kidbomb/flipper-ccid-app.git
+    commit_sha: 60cf9352f0e95c266cd065e1f5f7627851f27d19
+
+description: "@README.md"
+
+changelog: "@./docs/changelog.md"
+
+screenshots:
+  - screenshots/ss0.png

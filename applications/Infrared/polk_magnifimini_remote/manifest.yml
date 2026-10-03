@@ -1,0 +1,44 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/varunyellina/flipper-ir-remote-polkmagnifi.git
+    commit_sha: 9018164e83b0df7fd3e9a02162d5cd329bde3703
+
+short_description: IR remote for the Polk MagnifiMini soundbar
+description: |
+  A Flipper Zero IR remote for the **Polk MagnifiMini soundbar**.
+
+  ## Features
+
+  - Power, Mute, Night mode
+  - Volume Up / Down
+  - Playback controls (Previous, Play/Pause, Next)
+  - Voice level Up / Down
+  - Bass level Up / Down
+  - Source selection: AUX, Optical, HDMI ARC
+  - EQ Preset selection: Cinema, Sports, Music
+
+  ## Controls
+
+  Use **Up/Down** to move between rows. Use **Left/Right** to trigger the action on that side. Press **OK** for the centre action.
+
+  | Row | Left | OK | Right |
+  |---|---|---|---|
+  | POWER | Night mode | Power on/off | Mute |
+  | VOL | Volume Down | — | Volume Up |
+  | PLAYBACK | Previous | Play/Pause | Next |
+  | VOICE | Voice Down | — | Voice Up |
+  | BASS | Bass Down | — | Bass Up |
+  | SOURCE | — | Open source menu | — |
+  | EQ PRESET | — | Open EQ menu | — |
+
+  For **SOURCE** and **EQ PRESET**, press OK to open the selection menu, then Up/Down to choose and OK to confirm. Press Back to return.
+
+  ## Compatibility
+
+  Tested with the **Polk MagnifiMini** soundbar. May work with other Polk MagnifiMini variants that share the same IR protocol (NECext, address 0xC8 0x91).
+changelog: "@CHANGELOG.md"
+screenshots:
+  - images/screenshots/screen_controls.png
+  - images/screenshots/screen_audio_sources.png
+  - images/screenshots/screen_eq_presets.png

@@ -1,0 +1,22 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/AmirNcode/flipper-persian-calendar.git
+    commit_sha: 880ae20c81afea13f38c398764083ec3f7a34626
+short_description: "Persian (Jalali) calendar with date converter and weekday display"
+description: |
+  Shows today's date in both the Persian (Jalali) and Gregorian calendars,
+  with the day of the week in Persian transliteration and English.
+
+  Features:
+
+  - Convert dates: Gregorian to Persian and Persian to Gregorian
+  - Set today's date (writes to the Flipper RTC)
+  - Optional Shahanshahi (Imperial) year display in Settings
+  - Conversion verified against every day from 1800 to 2200
+changelog: "@docs/changelog.md"
+screenshots:
+  - screenshots/ss0.png
+  - screenshots/ss1.png
+  - screenshots/ss2.png
+  - screenshots/ss3.png
