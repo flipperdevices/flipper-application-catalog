@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/at0m-b0mb/Nyx-FlipperZero.git
-    commit_sha: e56f60fd0cd7da8f05e631cd6336e3118ab3404d
+    commit_sha: c1ef387554bd2890bee1cc8b525d0cea908ff647
 short_description: Find covert night-vision cameras by the 850 and 940 nm infrared they leak in the dark. Onboard receiver for pulsed sources, optional probe for steady ones. Never transmits.
 description: |
   Nyx turns your Flipper Zero into an infrared sweep for counter-surveillance. Covert night-vision cameras light a dark room with 850 and 940 nm infrared your eyes cannot see — Nyx turns that giveaway into a meter you can walk around a hotel room, a changing room, or an Airbnb.
@@ -40,7 +40,7 @@ changelog: |
 
   **Added:** sensitivity on the sweep screen with Left and Right, so you can change it while standing in the dark room rather than back in the menu; live telemetry in place of a word the screen was already showing; page arrows and a peak reset on Probe Setup; and a setting to turn the boot intro off.
 
-  **Changed:** a release now ships one build per firmware line, because a compiled app bakes in the API version of the SDK it was built against — nyx.fap for stock firmware and nyx-fw-dev.fap for the Unleashed, RogueMaster and Momentum line. Every screenshot and the demo animation are now captured from real hardware over the Flipper's own RPC session; the mockup renderer is gone.
+  **Changed:** a release now ships one build per firmware line, because a compiled app bakes in the API version of the SDK it was built against — nyx.fap targets the current release API line, and nyx-fw-dev.fap targets the newer development API line. Every screenshot and the demo animation are now captured from real hardware over the Flipper's own RPC session; the mockup renderer is gone.
 
   ## 1.1
 
