@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/rseufert/nw_crawl.git
-    commit_sha: 0101279b15de3ae7f08dded4749eb80f0934bf5e
+    commit_sha: 2732c24e97cb0c787e0d8bdb31660aeb464e4c9b
 description: "@docs/description.md"
 changelog: "@docs/changelog.md"
 screenshots:
