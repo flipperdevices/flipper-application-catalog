@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/rseufert/step_seq.git
-    commit_sha: 18157474432fa7e50e33b729dd985a43e26d5199
+    commit_sha: e2ac0972dd034b7dde1103e2b09bcd83b71a554e
 description: "@docs/description.md"
 changelog: "@docs/changelog.md"
 screenshots:
