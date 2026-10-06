@@ -1,0 +1,14 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/thecoolguy2001/flipper-pod.git
+    commit_sha: 7e1c0aca097d25c2ebcd6ad2bba4283de49def93
+description: "@catalog_description.md"
+changelog: "@changelog.md"
+screenshots:
+  - screenshots/walk.png
+  - screenshots/inrange.png
+  - screenshots/battle.png
+  - screenshots/result.png
+  - screenshots/encounters.png
+  - screenshots/menu.png
