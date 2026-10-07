@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/at0m-b0mb/Nyx-FlipperZero.git
-    commit_sha: c1ef387554bd2890bee1cc8b525d0cea908ff647
+    commit_sha: 5ed3c153df3514e61b235a191ae80ae0e33ad9e4
 short_description: Find covert night-vision cameras by the 850 and 940 nm infrared they leak in the dark. Onboard receiver for pulsed sources, optional probe for steady ones. Never transmits.
 description: |
   Nyx turns your Flipper Zero into an infrared sweep for counter-surveillance. Covert night-vision cameras light a dark room with 850 and 940 nm infrared your eyes cannot see — Nyx turns that giveaway into a meter you can walk around a hotel room, a changing room, or an Airbnb.
