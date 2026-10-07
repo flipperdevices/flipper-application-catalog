@@ -1,8 +1,8 @@
 sourcecode:
   type: git
   location:
-    origin: https://github.com/dpshde/kindled-flipper.git
-    commit_sha: 6ed732e7e47a6cd66787cff25949ff72e99d2c73
+    origin: https://github.com/dpshde/bible-bsb.git
+    commit_sha: ff44096355540269808a84072f4614b185768e0c
     subdir: bible_bsb
 description: "@README.md"
 changelog: "@docs/changelog.md"
