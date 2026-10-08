@@ -1,0 +1,11 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/tbelbek/flipper-app-search.git
+    commit_sha: b4c6d65274500852f198acea479b6648acc0daa7
+short_description: Launch any installed app or built-in tool, most-used first.
+description: "@./docs/description.md"
+changelog: "@./docs/changelog.md"
+screenshots:
+  - screenshots/ss0.png
+  - screenshots/ss1.png
