@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/dpshde/bible-bsb.git
-    commit_sha: d7d51e062b56dc1e95532c1fa6c7624d01826f4b
+    commit_sha: ed6d70077d7dcfbf19e045ad7bdf4973e955b67c
     subdir: bible_bsb
 description: "@README.md"
 changelog: "@docs/changelog.md"
