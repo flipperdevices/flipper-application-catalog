@@ -1,0 +1,18 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/AlexeySmirnov74/YRM100X_PRO.git
+    commit_sha: f737db720f1f0b9e84b82b45eeddbb67d3880e02
+
+short_description: UHF RFID reader, writer, clone and tag toolkit.
+description: "@docs/CATALOG.md"
+changelog: "@CHANGELOG.md"
+screenshots:
+  - screenshots/01-main-menu.png
+  - screenshots/02-antenna-info.png
+  - screenshots/03-read-multi.png
+  - screenshots/04-read-forever.png
+  - screenshots/05-saved-dumps.png
+  - screenshots/06-clone-options.png
+  - screenshots/07-bank-info.png
+  - screenshots/08-configure.png
