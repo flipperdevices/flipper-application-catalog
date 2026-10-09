@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/tbelbek/flipper-rf-survey.git
-    commit_sha: 6b196102f16442485f53052442647e19156f7f73
+    commit_sha: 01707d7d0a128acc696d028eafaf3fa9e685fa13
 short_description: Sweep a frequency range, log RSSI to CSV, locate a source and capture it.
 description: "@./docs/description.md"
 changelog: "@./docs/changelog.md"
