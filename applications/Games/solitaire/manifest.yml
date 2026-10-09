@@ -1,0 +1,14 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/doofy-dev/flipper_solitaire.git
+    commit_sha: cbc368eab8f9a147c56f768e11cda389ef55080d
+description: "@docs/README.md"
+changelog: "@docs/CHANGELOG.md"
+screenshots:
+  - "screenshots/catalog_1.png"
+  - "screenshots/catalog_2.png"
+  - "screenshots/catalog_3.png"
+  - "screenshots/catalog_4.png"
+  - "screenshots/catalog_5.png"
+  - "screenshots/catalog_6.png"

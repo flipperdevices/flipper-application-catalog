@@ -1,0 +1,14 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/vladatman/pc-health-remote.git
+    commit_sha: 6d0ed38b3e85bfd374fcbcbb04380dcb7317cd32
+    subdir: flipper
+description: "@.catalog/README.md"
+changelog: "@.catalog/changelog.md"
+screenshots:
+  - .catalog/screenshots/1_temps.png
+  - .catalog/screenshots/2_details.png
+  - .catalog/screenshots/3_alert.png
+  - .catalog/screenshots/4_settings.png
+  - .catalog/screenshots/5_rule.png
