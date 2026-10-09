@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/tbelbek/flipper-ir-pad.git
-    commit_sha: 6c24638c9755f9cfd05727aaef3da1e427e5b815
+    commit_sha: 3d9ca35956b3c1fe4e980bd85b359a073c28e9e0
 short_description: Customizable portrait IR remote with an on-device editor.
 description: "@./docs/description.md"
 changelog: "@./docs/changelog.md"
