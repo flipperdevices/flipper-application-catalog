@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/thecoolguy2001/flipper-pod.git
-    commit_sha: e3752fb7fca7af44cb567214f1d3855986c47661
+    commit_sha: bc7fadc8abd9431216324ed5af806bcc479ea8f1
 description: "@catalog_description.md"
 changelog: "@changelog.md"
 screenshots:
