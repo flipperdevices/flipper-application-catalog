@@ -15,15 +15,15 @@ description: |
 
   - Open **Apps → USB → FlipBase**, plug the Flipper into the console, then start the game.
   - Pick a row (Player 1/2, Play set, Disc slots) and press **OK** on an empty row to choose **File**, **Fav** or **New**.
-  - **File** loads a 320-byte `.bin` from `SD:/apps_data/flipbase/`. **Fav** opens your favorites list. **New** creates a blank figure from the built-in list for Infinity 1.0, 2.0 and 3.0 (**Left/Right** switches between them).
-  - **Left/Right** swaps through favorites, **hold OK** stars the figure, **hold Right** saves `debug.txt`.
+  - **File** loads a 320-byte .bin from SD:/apps_data/flipbase/. **Fav** opens your favorites list. **New** creates a blank figure from the built-in list for Infinity 1.0, 2.0 and 3.0 (**Left/Right** switches between them).
+  - **Left/Right** swaps through favorites, **hold OK** stars the figure, **hold Right** saves debug.txt.
   - The top line shows the connection state and buzzes when a working connection drops.
 
   ## Notes
 
-  - **New** figures are blank, kept in memory only and **not saved** to the SD card, so progress is lost when you remove them or close the app. To keep progress, load a `.bin` with **File**.
+  - **New** figures are blank, kept in memory only and **not saved** to the SD card, so progress is lost when you remove them or close the app. To keep progress, load a .bin with **File**.
   - Figures you create contain no game data. Do not upload figure files or logs.
-  - Keep your own backups of `apps_data/flipbase`.
+  - Keep your own backups of apps_data/flipbase.
   - The USB protocol, figure format and figure list follow RPCS3's Disney Infinity emulation. License: GPL-2.0-only.
 changelog: "@changelog.md"
 screenshots:
