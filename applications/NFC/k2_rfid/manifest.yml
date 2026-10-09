@@ -1,0 +1,12 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/mitchsurp/K2-RFID-Flipper.git
+    commit_sha: 22bb329845f16d0da55b3b3f74e55f9c078fc1a5
+short_description: Creality K2/K1/CFS RFID Spool Reader, Writer & Emulator
+description: "@catalog/description.md"
+changelog: "@catalog/changelog.md"
+screenshots:
+  - catalog/screenshots/screenshot_1.png
+  - catalog/screenshots/screenshot_2.png
+  - catalog/screenshots/screenshot_3.png
