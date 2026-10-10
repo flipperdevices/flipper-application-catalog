@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/biotechnicallc/SmartHome.git
-    commit_sha: 80f6296d060e28ea2976d96c3f4617b711cf64a2
+    commit_sha: 80a43f207227e87fa43ac3a877a197c7a2764a36
 short_description: Control Home Assistant devices through a Wi-Fi Developer Board
 description: "@docs/description.md"
 changelog: "@docs/changelog.md"
