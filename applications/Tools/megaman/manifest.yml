@@ -1,0 +1,15 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/Mr-Nobody88/BusterMan.git
+    commit_sha: c99ef5a065ca9d0209cde4f96300906b8537e4da
+short_description: Text decoder with Hex, Base64, ROT13, Brainfuck and saved XP
+description: "@docs/description.md"
+changelog: "@docs/changelog.md"
+screenshots:
+  - screenshots/Screenshot-20261010-005321.png
+  - screenshots/Screenshot-20261010-005459.png
+  - screenshots/Screenshot-20261010-005448.png
+  - screenshots/Screenshot-20261010-005428.png
+  - screenshots/Screenshot-20261010-005438.png
+  - screenshots/Screenshot-20261010-005402.png
