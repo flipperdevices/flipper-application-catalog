@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/rseufert/jiggler.git
-    commit_sha: 60761375662d026d943e91b4b2488ec4402fb173
+    commit_sha: f3bfffe259317b2155385957b8966efe1a2da61c
 description: "@docs/description.md"
 changelog: "@docs/changelog.md"
 screenshots:
