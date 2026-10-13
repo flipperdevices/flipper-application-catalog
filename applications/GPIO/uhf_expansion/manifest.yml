@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/mtoolstec/fz-uhf-expansion.git
-    commit_sha: 647b52f06975857077d52297a596152e8afe90ce
+    commit_sha: d81af9fc2876cbc2b9d0f88d9794c0aac22117eb
 short_description: UHF RFID inventory reader over GPIO UART
 description: "@CATALOG.md"
 changelog: "@CHANGELOG.md"
