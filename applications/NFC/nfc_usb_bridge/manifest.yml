@@ -1,0 +1,5 @@
+name: NFC USB Bridge
+appid: nfc_usb_bridge
+category: NFC
+version: 0.2
+repo: https://github.com/Space-Raler/nfc_bridge
