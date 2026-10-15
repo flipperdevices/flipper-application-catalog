@@ -1,0 +1,15 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/Vchekryzhov/mac-media-remote.git
+    commit_sha: af3f44e319c27b46b1fe058a6f5a96ec27239f22
+    subdir: flipper/now_playing
+screenshots:
+  - screenshots/01-playing-yandex.png
+changelog: "@CHANGELOG.md"
+short_description: Mac Now Playing display and BLE remote
+description: "@README.md"
+name: Now Playing
+id: now_playing
+category: Bluetooth
+version: "1.2"
