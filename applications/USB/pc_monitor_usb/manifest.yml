@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/DonJulve/Flipper-Zero-PC-Monitor-USB
-    commit_sha: "112166c73f183bc8362d0b0be2e1a617992fd8ee"
+    commit_sha: "9b22c5f5c3d8f3045c378ca825b921e8683031b4"
 short_description: "PC resource monitor & USB soundboard pad"
 description: |
   Flipper application for real-time PC resource monitoring (CPU %, RAM, GPU %, VRAM, and Temperatures in °C) and USB soundboard pad via Virtual COM Port.
