@@ -1,0 +1,20 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/daryalok/KneeFlip-Rehab.git
+    commit_sha: 799478cd0adc8b51acf347f110908bf64b7507e8
+
+id: kneeflip_rehab
+name: KneeFlip Rehab
+category: Tools
+version: "0.1"
+author: Darya Lok
+icon: icons/kneeflip_rehab_10px.png
+short_description: Timer and counter for clinician-prescribed knee rehab routines
+description: "KneeFlip Rehab is a Flipper Zero timer and counter app for knee rehabilitation routines prescribed by a clinician. It helps users follow timed sessions and pace simple user-configured routine blocks. KneeFlip Rehab is a timer and counter tool only. It does not provide medical advice, diagnosis, or treatment. Always follow the recovery plan provided by your doctor, surgeon, or physical therapist."
+changelog: "@changelog.md"
+screenshots:
+  - screenshots/main-menu.png
+  - screenshots/ice-timer.png
+  - screenshots/elevation-timer.png
+  - screenshots/quad-sets.png

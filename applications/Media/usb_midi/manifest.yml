@@ -1,0 +1,10 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/kribesk/flipper-zero-usb-midi.git
+    commit_sha: a79eafb38e94ed9dac54c7e1f0d50526877d0996
+description: "@README.md"
+changelog: "@.catalog/changelog.md"
+author: "@Kribesk (forked from @DrZlo13)"
+screenshots:
+  - ".catalog/screenshots/1.png"

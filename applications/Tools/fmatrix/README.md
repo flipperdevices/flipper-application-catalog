@@ -1,4 +1,4 @@
-# fmatrix v0.3
+# fmatrix v0.3.5
 fmatrix is a simple Flipper Zero app that displays the famous "matrix rain" effect.
 (suggestions appreciated and welcome!)
 
@@ -22,6 +22,9 @@ Numbers: Toggle whether or not numbers are displayed when characters are randoml
     (default NO)
 
 Symbols: Toggle whether or not symbols are displayed when characters are randomly chosen. 
+    (default NO)
+
+Inverted Mode: Toggle whether or not the app makes the text and menu content white and the background black (makes everything inverted!)
     (default NO)
 
 Max Speed: The fastest possible matrix rain can go. 

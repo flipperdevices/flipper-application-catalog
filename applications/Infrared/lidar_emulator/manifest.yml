@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/regaly/flipperzero-lidar_emulator.git
-    commit_sha: d2092a01ae627129c24c257102f619813a61986e
+    commit_sha: 8c792ad5ae48143209ad04dc75055976dba12f22
 description: "@./README.md"
 short_description: This app can be used to emulate infrared signals of different LIDARs.
 changelog: "@./CHANGELOG.md"
@@ -10,3 +10,4 @@ author: "regaly"
 screenshots:
   - "./screenshots/main_menu.png"
   - "./screenshots/submenu_predefined_lidar_guns.png"
+  - "./screenshots/submenu_settings.png"

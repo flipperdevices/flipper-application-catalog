@@ -3,11 +3,16 @@
     type: git
     location:
       origin: https://github.com/misterwaztaken/fmatrix.git
-      commit_sha: 2232ca49826f0605e4e6288f30c13ffafbe582bf
+      commit_sha: 1a54a13dbd50be98574035ada9616c6327ac297b
   short_description: The 'matrix rain' effect for the Flipper Zero.
-  version: 0.3
+  version: 0.3.5
   description: "@README.md"
   changelog: >
+  
+    v0.3.5:
+
+    - added inverted mode; inverts the background and the text such that the background is all-black and the letters are white
+  
     v0.3:
   
     - added menu for fmatrix 

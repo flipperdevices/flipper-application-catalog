@@ -1,0 +1,22 @@
+short_description: "Read temperature from your VivoKey Thermo via NFC. Supports multi-Thermo tracking, history, and graph views."
+
+description: "@README_CATALOG.md"
+
+changelog: "@CHANGELOG_CATALOG.md"
+
+author: "VivoKey Technologies"
+
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/VivoKey/vkthermo-flipper.git
+    commit_sha: ded6be8dcfb6048f06bbfa33c4e6e963786c5f95
+
+icon: "icons/vk_thermo_10px.png"
+
+screenshots:
+  - './screenshots/vkthermo-flipper-main.png'
+  - './screenshots/vkthermo-flipper-result-c.png'
+  - './screenshots/vkthermo-flipper-log.png'
+  - './screenshots/vkthermo-flipper-graph.png'
+  - './screenshots/vkthermo-flipper-settings.png'

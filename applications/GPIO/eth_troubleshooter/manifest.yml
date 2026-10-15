@@ -2,10 +2,10 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/xMasterX/all-the-plugins.git
-    commit_sha: 9473b31e5f66a85dca4733dec362730a1e6a7f61
+    commit_sha: 1066d17ad1e8fbf75cea5c6612d79ba539ec8a33
     subdir: apps_source_code/eth_troubleshooter
 description: "@README.md"
-changelog: "v1.1 - Release"
+changelog: "v1.1 - Release, v1.2 - Sync with latest version"
 author: "@karasevia & @arag0re & @xMasterX"
 screenshots:
   - "./docs/1.png"

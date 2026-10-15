@@ -1,12 +1,12 @@
 sourcecode:
   type: git
   location:
-    origin: https://github.com/xMasterX/all-the-plugins.git
-    commit_sha: 06c22064aa6ae0c33438795eb7cd27d4d083c6c8
-    subdir: apps_source_code/flipper-asteroids
-description: "Asteroids game"
-changelog: "v1.0 - Initial release, v1.1 - Sync Updates, v1.2 - Sync updates and latest API support"
-author: "@antirez & @SimplyMinimal"
+    origin: https://github.com/SimplyMinimal/FlipperZero-Asteroids.git
+    commit_sha: c2eb6c8b14f65a97d6b8c09f623b5a122888db03
+description: "Classic Asteroids game with enhanced features including power-ups, high score system, auto-fire, haptic feedback, and LED effects"
+changelog: "v3.4.0 - Enhanced version with auto rapid fire, power up system, high score system, haptic feedback, LED effects, pause functionality, and reverse thrusters"
+author: "@SimplyMinimal"
 screenshots:
-  - "./img/2.png"
-  - "./img/1.png"
+  - "./images/Asteroids-PowerUps.png"
+  - "./images/PauseScreen.png"
+

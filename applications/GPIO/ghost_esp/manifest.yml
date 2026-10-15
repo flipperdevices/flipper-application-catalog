@@ -1,0 +1,19 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/GhostESP-Revival/GhostESP-FlipperCompanion.git
+    commit_sha: e739dad7f55908cab07238ad47780d38d7cb1b27
+name: "[ESP32] Ghost ESP"
+id: "ghost_esp"
+version: "1.8.0"
+author: "@Spooks4567, @jaylikesbunda and @tototo31"
+short_description: "Companion app for Ghost ESP Firmware."
+description: "WiFi: Scan networks, beacon spam, deauth attacks, packet capture, evil portal, network connection, and printer control. Bluetooth: Flipper discovery, Pineapple Detection, AirTag scanning, and packet capture. GPS: Wardriving capabilities."
+changelog: "v1.8.0 - New commands from v2.0 of the GhostESP firmware"
+category: "GPIO"
+screenshots:
+  - "./screenshots/mainmenu.png"
+  - "./screenshots/wifi.png"
+  - "./screenshots/connect.png"
+  - "./screenshots/scan.png"
+icon: "ghost_esp.png"

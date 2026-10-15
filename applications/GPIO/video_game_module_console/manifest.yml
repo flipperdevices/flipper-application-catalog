@@ -1,0 +1,17 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/jblanked/Video-Game-Module-Console.git
+    commit_sha: b066fa8b80e322f5f07d86773f7eb4975a7480b0
+short_description: "Flipper Zero console, handling game display rendering and input forwarding"
+description: "@README.md"
+changelog: "@CHANGELOG.md"
+author: "JBlanked"
+name: "Video Game Module Console"
+version: "1.0"
+id: "video_game_module_console"
+category: "GPIO"
+targets: ['all']
+icon: "app.png"
+screenshots:
+  - "assets/pokemon.png"

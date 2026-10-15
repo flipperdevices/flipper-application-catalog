@@ -2,10 +2,10 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/xMasterX/all-the-plugins.git
-    commit_sha: 06c22064aa6ae0c33438795eb7cd27d4d083c6c8
+    commit_sha: 1066d17ad1e8fbf75cea5c6612d79ba539ec8a33
     subdir: apps_source_code/flipperzero-text2sam
 description: "@README-catalog.md"
-changelog: "v1.0 - Initial release, v1.1 - Description update, v1.2 - Sync Updates, v1.3 - Fixes for latest API, v1.4 - Sync updates and latest API support"
+changelog: "v1.0 - Initial release, v1.1 - Description update, v1.2 - Sync Updates, v1.3 - Fixes for latest API, v1.4 - Sync updates and latest API support, v1.5 - Sync with latest version"
 author: "@Round-Pi & (Fixes by @Willy-JL)"
 screenshots:
   - "./img/1.png"

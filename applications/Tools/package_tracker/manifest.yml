@@ -1,0 +1,11 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/thecoolguy2001/flipper-pack-track.git
+    commit_sha: 304f2fe0821bd439cfe8121349be0dc03dd51865
+description: "@catalog_description.md"
+changelog: "@changelog.md"
+screenshots:
+  - screenshots/list.png
+  - screenshots/detail.png
+  - screenshots/menu.png

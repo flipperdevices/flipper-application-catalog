@@ -1,0 +1,26 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/dok2d/fz-W5500-lan-analyse.git
+    commit_sha: 8c892cafe9570b9d900d3f157ce5d0ef28298b8e
+id: lan_tester
+name: "LAN Tester"
+category: "GPIO"
+short_description: "Portable LAN tester: ARP scan, ping, traceroute, DHCP, LLDP/CDP, port scan, packet capture via W5500"
+description: |
+  Use without qflipper!
+
+  Portable LAN tester for Flipper Zero with W5500 Ethernet module.
+  ARP scan, ping, traceroute, DHCP analysis, LLDP/CDP discovery,
+  port scan, mDNS/SSDP, STP/VLAN detection, DNS lookup, Wake-on-LAN,
+  packet capture, USB-to-Ethernet bridge (CDC-ECM) with PCAP recording,
+  PXE boot server, and web-based SD card file manager — 20+ network
+  diagnostic tools in a single FAP application.
+changelog: "@CHANGELOG.md"
+author: "Dok2d"
+version: "2.8.0"
+screenshots:
+  - docs/screenshots/discovered_hosts.png
+  - docs/screenshots/main_menu.png
+  - docs/screenshots/lldp_result.png
+  - docs/screenshots/ETH_Bridge.png

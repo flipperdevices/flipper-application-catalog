@@ -1,0 +1,11 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/d7d8/apple-grabber.git
+    commit_sha: c662ff193ac361ed602670b688f33fa622e9e71a
+short_description: Apple grabber game, default mode is vertical
+description: "@README.md"
+changelog: "@changelog.md"
+screenshots:
+  - screenshots/Game.png
+  - screenshots/Menu.png

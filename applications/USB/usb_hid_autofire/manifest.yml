@@ -1,0 +1,11 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/xMasterX/all-the-plugins.git
+    commit_sha: dda1d83a53a2c330440a641ac167b64ce4c448ba
+    subdir: apps_source_code/usb_hid_autofire
+description: "@./catalog/docs/Readme.md"
+changelog: "@./catalog/docs/Changelog.md"
+screenshots:
+  - "./catalog/screenshots/1.png"
+

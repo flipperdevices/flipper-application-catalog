@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/CookiePLMonster/flipper-bakery.git
-    commit_sha: 8654bf49f29185ffd44e0bd908b52c8a6938dda3
+    commit_sha: 08533bfcd5cc676af5b168d72e4a9381308bbf56
     subdir: flipper95
 description: "@./.catalog/README.md"
 changelog: "@./.catalog/CHANGELOG.md"

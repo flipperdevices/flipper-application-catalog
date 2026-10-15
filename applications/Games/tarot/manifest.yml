@@ -2,10 +2,10 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/pionaiki/fz-tarot.git
-    commit_sha: 4563f47589cd592cadf9af91d5cb6b449a3beed5
+    commit_sha: 0de4417aaa709ff6225c9548d6c52501726bc04c
 short_description: Tarot spread for Flipper Zero
-description: "This app can give you a linear spread of the major arcana cards."
-changelog: "First release"
+description: "This app can give you a linear spread of the major arcana cards, sourcing radio for the random number generator."
+changelog: "Added a card browser, Added upside-down cards (togglable setting), The random number generator now sources the radio, Optimisations"
 author: "pionaiki & tihyltew"
 screenshots:
   - .flipcorg/gallery/screenshot_1.png

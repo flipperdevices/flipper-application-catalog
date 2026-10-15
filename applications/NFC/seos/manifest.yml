@@ -1,0 +1,11 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/bettse/seos_compatible.git
+    commit_sha: 3b31ff37bc68a1ce2a622ab2c6e2de65ee4bc9a0
+description: "@.catalog/README.md"
+changelog: "@CHANGELOG.md"
+author: "bettse"
+screenshots:
+  - ".catalog/screenshots/menu.png"
+  - ".catalog/screenshots/read_success.png"

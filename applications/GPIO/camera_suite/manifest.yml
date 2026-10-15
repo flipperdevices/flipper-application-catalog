@@ -1,4 +1,4 @@
-author: "@CodyTolene @Z4urce @leedave"
+author: "@CodyTolene @Z4urce @leedave @rnadyrshin"
 category: "GPIO"
 changelog: "@./docs/CHANGELOG.md"
 description: "@./docs/README.md"
@@ -16,7 +16,7 @@ screenshots:
 short_description: "A camera suite application for the Flipper Zero ESP32-CAM module."
 sourcecode:
   location:
-    commit_sha: 184f52a3283eb61b61eacd470424a8d7619f6922
+    commit_sha: c17777396da92cad1e0ece372b6c3934e2937e91
     origin: https://github.com/CodyTolene/Flipper-Zero-Camera-Suite.git
     subdir: fap
   type: git

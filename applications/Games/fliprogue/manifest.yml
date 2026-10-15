@@ -1,0 +1,15 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/Abzac/fliprogue.git
+    commit_sha: d5664b63497687f42ad5a4a3c74f95457d2e6566
+short_description: "A tiny roguelike RPG for Flipper Zero: ASCII dungeons, charms, hazards, and monster trouble."
+description: "@CATALOG.md"
+changelog: "@CHANGELOG.md"
+author: "Abzac"
+screenshots:
+  - imgs/map-view.png
+  - imgs/flooded-room.png
+  - imgs/inventory-tabs.png
+  - imgs/combat-log.png
+  - imgs/game-over.png
