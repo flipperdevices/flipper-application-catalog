@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/Adhamura/gitphin.git
-    commit_sha: 4374c8add495be8c9347fcce1ab2f8d2361482e5
+    commit_sha: 72501d047865e4b96355da70c21e2149ebb7ad26
     subdir: flipper_app
 id: gitphin
 description: "@README.md"
