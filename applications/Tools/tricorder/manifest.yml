@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/rseufert/tricorder.git
-    commit_sha: b21d6c64251184a66e37696e0f34e972ecf905fa
+    commit_sha: 3181167aec9927b098eb0f1b96ceb8b8e94d4912
 description: "@docs/description.md"
 changelog: "@docs/changelog.md"
 screenshots:
