@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/tarikbc/hotspot-arcade.git
-    commit_sha: 3ae0fd2378f01ee092bfc07c3bd21ba8091cbb30
+    commit_sha: 6ed32fa8c61aa494fdc025249fa44adf96ff6e34
     subdir: flipper/hotspot-arcade
 id: hotspot_arcade
 category: GPIO
