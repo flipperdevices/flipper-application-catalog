@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/Space-Raler/nfc_bridge.git
-    commit_sha: b9683c49ce6d13eca532c8035002e0a7c4b6ede4
+    commit_sha: 13ceaf659b88bb37ea9480e3060c77522de9313f
 short_description: USB NFC reader/writer for real cards or .nfc dumps
 description: |
   # NFC USB Bridge
