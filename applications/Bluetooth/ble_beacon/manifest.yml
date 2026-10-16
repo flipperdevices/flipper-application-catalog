@@ -1,0 +1,17 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/steanlab/BLE-Beacon.git
+    commit_sha: 0db4410582726de8df6367fac7d7fd5a58384b6b
+short_description: Simulates unencrypted BLE beacons for testing scanners and smart-home apps
+description: "@docs/catalog-readme.md"
+changelog: "@docs/catalog-changelog.md"
+screenshots:
+  - screenshots/splash_screen.png
+  - screenshots/main_1.png
+  - screenshots/main_2.png
+  - screenshots/info.png
+  - screenshots/help.png
+  - screenshots/exit.png
+  - screenshots/exit_splash.png
+  - screenshots/icon.png
