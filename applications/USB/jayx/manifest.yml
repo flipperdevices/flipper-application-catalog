@@ -1,8 +1,8 @@
 sourcecode:
   type: git
   location:
-    origin: https://github.com/contactjayclatty/JAYX.git
-    commit_sha: 45de6eeecf00a788f1e597b6a755b0640e99eb37
+    origin: https://github.com/contactjayclatty/JAYX---live-PC-stats.git
+    commit_sha: bdc59353d7e968de1a1842e8b082d86619d0b0c4
     subdir: apps/jayx
 short_description: Live PC CPU/RAM/GPU stats, FPS, and system info over USB
 description: |
@@ -13,6 +13,7 @@ description: |
   # Features
   - Live CPU, RAM, GPU, and VRAM usage and temperatures
   - FPS and active game or window name (via RTSS)
+  - Live upload and download throughput
   - System info cards: OS, CPU, memory, GPU, machine brand
   - USB CDC virtual serial connection
 
@@ -22,7 +23,7 @@ description: |
   - Optional: NVIDIA drivers for GPU stats, RTSS for FPS, LibreHardwareMonitor for CPU temp
 
   Full setup and documentation:
-  https://github.com/contactjayclatty/JAYX/blob/main/docs/SETUP.md
+  https://github.com/contactjayclatty/JAYX---live-PC-stats/blob/main/docs/SETUP.md
 changelog: "@changelog.md"
 screenshots:
   - screenshots/livestats.png
