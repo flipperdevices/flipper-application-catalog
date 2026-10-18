@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/Endika/flipper-avocado-zero.git
-    commit_sha: 469f24891ec0fccc0212267b8aa6c2e39018000f
+    commit_sha: 430bbbce7b17064bbff843df66ab54c25c545963
 short_description: "Avocado pit care sim: clean water, grow roots, avoid grime."
 description: |
   ## Avocado Zero
@@ -16,10 +16,11 @@ description: |
   - **Win** when the roots reach their full length—then you can start a fresh pit and do it again.
   - If the water gets **too dry or too filthy**, it is **game over**; hit **Start** to try again from the beginning.
 changelog: |
+  **0.1.2** — A saved game that cannot be read is kept instead of being overwritten.
   **0.1.0** — First stable release.
 author: Endika
 name: Avocado Zero
-version: 0.1.0
+version: 0.1.2
 id: "flipper_avocado_zero"
 category: "Games"
 targets: ["all"]

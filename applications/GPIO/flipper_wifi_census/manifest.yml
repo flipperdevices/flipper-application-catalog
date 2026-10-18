@@ -1,0 +1,44 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/Endika/flipper-wifi-census.git
+    commit_sha: 772c5630c4eaeb247d73761a4fee9328f5276daa
+description: |
+  WiFi Census listens for the probe requests phones and laptops broadcast while looking for
+  known networks. Nothing is transmitted and nothing is connected to: the ESP32 Marauder board
+  sniffs, the Flipper counts, and every capture stays on your SD card.
+
+  Scan a place and you get a live count of unique devices, how many carry a stable address, how
+  many randomize it, what kinds they are and which networks they are asking for. Save it, scan
+  somewhere else, and compare the two to see which devices were at both.
+
+  ## Features
+
+  - Live scan with unique, stable and randomized counts, device types and networks sought.
+  - Captures saved to the SD as a binary file plus a CSV you can open on a computer.
+  - Auto-save on the Scan row itself, flipped with left and right: long sessions name and
+    rotate their own files.
+  - Compare two captures: which devices were at both, and why each one matched.
+  - Merge captures, and import a raw 802.11 pcap from anywhere on the SD.
+  - Known devices: label a device by its stable address, or a network by name, so a phone that
+    rotates its address is still recognised by the network it asks for.
+  - Capture summary, including how many phones are behind the randomized addresses.
+  - Host tools for a laptop, past the device's own limits: import, merge, compare, undo MAC
+    rotation in a long capture, and measure how much a long scan inflates its own count.
+
+  Modern phones randomize their address to avoid being followed, so a device is only crossed
+  between captures on a strong signal — the same stable address, or a named network both ask
+  for. Anything weaker is counted and reported as not crossable rather than guessed at.
+
+  Requires an ESP32 board running Marauder on the GPIO header.
+author: Endika
+version: 0.1.31
+changelog: |
+  ## 0.1.31
+  - First catalog listing: live scan, captures, compare, merge, pcap import, known devices,
+    capture summary with an honest phone-count range, and host tools for a laptop.
+screenshots:
+  - assets/compare.png
+  - assets/menu.png
+  - assets/sniff.png
+  - assets/summary.png

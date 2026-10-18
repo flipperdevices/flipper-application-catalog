@@ -1,0 +1,10 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/xantopren/fortune-spinner.git
+    commit_sha: 136cb3081ae52541f726a53f6f7a875d4f8056b3
+short_description: Spin for YES, NO, or MAYBE
+description: "@catalog-description.md"
+changelog: "@changelog.md"
+screenshots:
+  - images/fortune-spinner-screen.png

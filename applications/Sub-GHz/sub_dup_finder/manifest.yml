@@ -2,13 +2,14 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/Endika/flipper-sub-dup.git
-    commit_sha: 379a6ce47bdb4e18d5cb21217aa30d3c61695d9d
+    commit_sha: 29afd02a650db9cd284962a0fec6e21588de8661
 short_description: A Flipper Zero application to identify, manage, and safely clean up duplicate Sub-GHz (.sub) files.
 description: |
   Sub Duplicate Finder is an optimized Flipper Zero application designed to reclaim storage space by managing duplicate Sub-GHz (.sub) files. Providing a safe and intuitive interface to group, review, and delete redundant signals directly from your device. It ensures stability and performance for your Sub-GHz storage management.
 author: Endika
-version: 1.2.0
+version: 1.3.0
 changelog: |
+  - 1.3.0: Choose which folder to scan, and the app remembers it. Unreadable or truncated files are no longer offered for deletion.
   - Automated releases with release-please and FAP upload
   - Refactored codebase into separate modules (SRP, DIP)
   - Auto-versioned credits screen

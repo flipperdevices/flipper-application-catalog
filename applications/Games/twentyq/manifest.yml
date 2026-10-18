@@ -1,0 +1,11 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/Cheesedog223/20Q_Flipper0.git
+    commit_sha: a5e0b59d1e7a35f31d0e37911f2faa96444ce1ee
+description: "@./docs/catalog.md"
+changelog: "@./docs/changelog.md"
+screenshots:
+  - screenshots/question.png
+  - screenshots/category.png
+  - screenshots/menu.png
