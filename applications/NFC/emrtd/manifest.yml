@@ -1,0 +1,13 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/filipsedivy/emrtd-flipperzero.git
+    commit_sha: 6790427cc4ee5e86fadab9914a3d19362c20306b
+description: "@.catalog/README.md"
+changelog: "@.catalog/changelog.md"
+screenshots:
+  - .catalog/screenshots/screen1-menu.png
+  - .catalog/screenshots/screen2-options.png
+  - .catalog/screenshots/screen3-reading.png
+  - .catalog/screenshots/screen4-result.png
+  - .catalog/screenshots/screen5-result-holder.png

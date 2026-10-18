@@ -1,0 +1,12 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/alaviation/flipper-pulse.git
+    commit_sha: 7beadfb5b562baeead03c0572cff7883b439879f
+short_description: Tap along a pulse to measure heart rate; live BPM, locks after 20 seconds
+description: "@catalog.md"
+changelog: "@changelog.md"
+screenshots:
+  - screenshots/0.png
+  - screenshots/1.png
+  - screenshots/2.png
