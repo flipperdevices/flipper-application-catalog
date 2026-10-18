@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/ngxson/flipper-telink.git
-    commit_sha: 9e1f192d417cf23a7bffa23e679fc52f5261854c
+    commit_sha: 2c8d7b67446dcec020a5e597f17240865ad13738
     subdir: telink_sws
 author: ngxson
 description: |
