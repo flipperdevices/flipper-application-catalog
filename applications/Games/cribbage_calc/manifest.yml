@@ -1,0 +1,14 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/dchristiansen/cribCalc.git
+    commit_sha: cd497192f2ac6c77a55d7dd3f420b37cdf7f9857
+short_description: Quickly count a cribbage hand or crib
+description: "@docs/description.md"
+changelog: "@docs/changelog.md"
+screenshots:
+  - screenshots/ss1.png
+  - screenshots/ss2.png
+  - screenshots/ss3.png
+  - screenshots/ss4.png
+  - screenshots/ss5.png

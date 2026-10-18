@@ -1,0 +1,11 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/sifi11/Flipper-Roku-App.git
+    commit_sha: 7f893ee8ed55f226682549c4940cc857ef6f1367
+    subdir: Roku-App
+short_description: Control your Roku TV from one interface
+description: "@README_CATALOG.md"
+changelog: "@CHANGELOG.md"
+screenshots:
+  - images/screenshot1.png
