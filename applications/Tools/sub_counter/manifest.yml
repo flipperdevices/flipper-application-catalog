@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/TheProductAgency/flipper-subscriber-counter.git
-    commit_sha: 82ba87f4cb6222d70f16685fd4b7f146a62dbe86
+    commit_sha: 5f3dc5a89aa119dfdc5ae14f38a1e62687832e75
 short_description: "Live YouTube subscriber count via Internet Bridge"
 description: "@docs/description.md"
 changelog: "@docs/changelog.md"
