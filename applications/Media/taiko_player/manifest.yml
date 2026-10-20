@@ -4,7 +4,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/ZeroNinx/flipper-zero-taiko-player.git
-    commit_sha: "65f97149e350f07cecd54dd9e6a5748c4923bf8f"
+    commit_sha: "3ab2b3cf2a90d799d4f7e302488fb3971741549a"
 description: "@docs/catalog-description.md"
 changelog: "@docs/changelog.md"
 screenshots:
