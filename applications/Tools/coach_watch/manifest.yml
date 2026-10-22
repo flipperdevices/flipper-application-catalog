@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/alaviation/flipper-coach-watch.git
-    commit_sha: da01970157c10d678f074e5a2107938b05d8e0e5
+    commit_sha: e6900dd01750b88dd7544d636e22f47b9081f89e
 short_description: "Coach stopwatch: start/stop/reset, splits, and session log on SD"
 description: "@catalog.md"
 changelog: "@changelog.md"
