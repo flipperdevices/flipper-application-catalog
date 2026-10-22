@@ -1,0 +1,12 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/jankammerath/FlipperFire.git
+    commit_sha: 1c2f405ee6ec0affe0724ec76ab732a96937fd97
+description: "The classic PSX Doom fire effect with optional crackling fire sound."
+changelog: "v1.0 first and only release"
+screenshots:
+  - "screenshots/screenshot1.png"
+  - "screenshots/screenshot2.png"
+  - "screenshots/screenshot3.png"
+  - "screenshots/screenshot4.png"
