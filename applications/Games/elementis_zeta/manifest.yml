@@ -4,14 +4,6 @@ sourcecode:
     origin: https://github.com/jahziel1/Elementis-Zeta.git
     commit_sha: 81bb375a9cc33d56cd94efbfa4df67d8701ce312
     subdir: nucleo
-name: Elementis Zeta
-id: elementis_zeta
-category: Games
-version: "1.0"
-author: Daniel Jahziel
-short_description: Creature-collecting RPG with 4-level grayscale, 4 languages and an IR link
-targets:
-  - f7
 description: "@catalog/description.md"
 changelog: "@catalog/changelog.md"
 screenshots:
