@@ -3,7 +3,6 @@ sourcecode:
   location:
     origin: https://github.com/Space-Raler/FlipBase.git
     commit_sha: 7ed9399ba5cfe7766c9b39a501788f18f07704a8
-short_description: USB toy-to-life base emulator (Disney Infinity portal)
 description: |
   # FlipBase
 
