@@ -1,0 +1,33 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/whitewhidow/flipper-badusb-ph.git
+    commit_sha: 8013d69d3a03cd4ac2b17f5d7c91858e3036fd27
+
+short_description: "BadUSB with placeholder substitution and saved per-payload configs, over USB or BLE."
+
+description: |
+  BadUSB with \[placeholder\] token substitution and per-payload saved configs, over USB or BLE.
+
+  **From stock Flipper BadUSB**
+  - Run DuckyScript payloads over USB or BLE; keyboard layouts; BLE pair / bond / unpair.
+
+  **Ported from RogueMaster's BadUSB (now running on stock firmware too)**
+  - Configurable USB VID/PID
+  - Configurable USB manufacturer and product name
+  - Configurable BLE advertised name
+  - Configurable BLE MAC address
+  - NFC pairing emulation (emulates an NFC tag to help a phone pair over BLE)
+
+  **Added by whitewhidow**
+  - \[placeholder\] token substitution: write payloads with tokens like \[host\], \[url\], \[username\] and fill them in at run time
+  - Per-payload saved configs: store and reuse named value sets per payload
+
+changelog: |
+  ## 1.0
+  - Initial catalog release: \[placeholder\] token substitution and per-payload saved configs; firmware-agnostic build (USB + BLE).
+
+screenshots:
+  - screenshots/01.png
+  - screenshots/02.png
+  - screenshots/03.png
