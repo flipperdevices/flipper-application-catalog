@@ -5,7 +5,7 @@ sourcecode:
     commit_sha: 62a526f52870c9b7e6b6f1fa5878d57711523155
 name: "Sub-GHz Scheduler"
 id: "subghz_scheduler"
-version: "3.0"
+version: "3.4"
 description: "Individual *.sub or playlist *.txt files can be used for Sub-GHz interval transmission, with settings saveable for later use. Schedule intervals in H:M:S format from 00:00:01 to 99:59:59. See repo for description of settings and modes."
 short_description: "Send a single or repeated Sub-GHz signal at a given interval."
 changelog: "@CHANGELOG.md"
