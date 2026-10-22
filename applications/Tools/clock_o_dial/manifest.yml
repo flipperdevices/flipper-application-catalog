@@ -6,7 +6,7 @@ sourcecode:
 short_description: A tiny app that helps you keep track of your workday and avoid overtime.
 description: "@docs/catalog_description.md"
 changelog: "@changelog.md"
-author: Ilia Petrov-Komotskii (Mane Function)
+author: "Ilia Petrov-Komotskii (Mane Function)"
 screenshots:
   - screenshots/screenshot_1.png
   - screenshots/screenshot_2.png
