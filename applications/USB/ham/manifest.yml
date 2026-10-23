@@ -1,0 +1,11 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/lumen-rot/flipper-ham.git
+    commit_sha: 955ceb8e6db601c9be7a89f8eb192731863c7086
+    subdir: ham
+description: "@catalog/description.md"
+changelog: "@catalog/changelog.md"
+screenshots:
+  - catalog/screenshots/paused.png
+  - catalog/screenshots/infinite.png
