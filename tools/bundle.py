@@ -404,7 +404,7 @@ class AppBundler:
                 # Exclude hidden folders and "dist" folder with build artifacts
                 for folder_name in subfolders.copy():
                     if folder_name.startswith(".") or folder_name == "dist":
-                        self._log.debug(f"Skipping folder {filename}")
+                        self._log.debug(f"Skipping folder {folder_name}")
                         subfolders.remove(folder_name)
                     # Exclude source code folder if requested
                     if skip_source_code and self._code_dir == Path(folder, folder_name):

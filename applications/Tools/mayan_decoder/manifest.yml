@@ -1,0 +1,21 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/RogerF5-Security/Mayan_decoder
+    commit_sha: 8b927d6218b21344c958c06978266a104282f856
+short_description: Decimal to Mayan numeral converter with direct numeric input
+description: |
+  Mayan Decoder is an educational math utility for Flipper Zero that converts
+  decimal numbers into Mayan numerals.
+
+  The application renders shells, dots, and bars directly with the Flipper
+  Canvas API. It includes an intro screen with simple Mayan pyramid artwork,
+  arrow-based increment and decrement controls, and a digit editor for faster
+  input of larger values.
+changelog: "@docs/changelog.md"
+author: "Roger F5"
+screenshots:
+  - screenshots/ss0.png
+  - screenshots/ss1.png
+  - screenshots/ss2.png
+  - screenshots/ss3.png

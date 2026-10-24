@@ -1,0 +1,13 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/H4W9/AnimationPreviewerFlipperApp.git
+    commit_sha: f052c08af5a10ae3c60a82a2f2da4fbdbe27bb34
+short_description: Browse and preview Flipper Zero dolphin animations directly on the device.
+description: "@README.md"
+changelog: "@CHANGELOG.md"
+screenshots:
+  - screenshots/app.png
+  - screenshots/browse.png
+  - screenshots/preview1.png
+  - screenshots/preview2.png

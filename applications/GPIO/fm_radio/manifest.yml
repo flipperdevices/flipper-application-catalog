@@ -1,0 +1,20 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/coolshrimp/flipperzero-fm-radio.git
+    commit_sha: f54692a8847ae7de5a4655262a14be71b05c625f
+
+name: FM Radio
+id: fm_radio
+category: GPIO
+version: "2.2"
+author: Coolshrimp
+short_description: FM radio for TEA5767 and Si4703 tuner boards with auto-detection and SD card station presets.
+description: "@.catalog/README.md"
+changelog: "@.catalog/CHANGELOG.md"
+screenshots:
+  - screenshots/Screenshot1.png
+  - screenshots/Screenshot2.png
+  - screenshots/Screenshot3.png
+  - screenshots/Screenshot4.png
+

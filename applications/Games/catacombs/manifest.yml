@@ -2,15 +2,16 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/apfxtech/FlipperCatacombs.git
-    commit_sha: b10be52c493d5d9eae26bf65bb59ec41813adea8
+    commit_sha: 4c74fb0e307834d6d8a7b43f48846f9c8dab1989
 
-short_description: A first-person dungeon crawler ported to Flipper Zero.
-description: "@APPSTORE.md"
-changelog: "@CHANGELOG.md"
+short_description: Ten floors of a generated dungeon, cleared with fireballs
+description: "@.catalog/APPSTORE.md"
+changelog: "@.catalog/CHANGELOG.md"
 screenshots:
-  - "package/screenshots/screen1.png"
-  - "package/screenshots/screen2.png"
-  - "package/screenshots/screen3.png"
-  - "package/screenshots/screen4.png"
-  - "package/screenshots/screen5.png"
-  - "package/screenshots/screen6.png"
+  - ".catalog/screenshots/1.png"
+  - ".catalog/screenshots/2.png"
+  - ".catalog/screenshots/3.png"
+  - ".catalog/screenshots/4.png"
+  - ".catalog/screenshots/5.png"
+  - ".catalog/screenshots/6.png"
+  - ".catalog/screenshots/7.png"

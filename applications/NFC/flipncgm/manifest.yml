@@ -1,0 +1,10 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/darendarrow/flipnCGM.git
+    commit_sha: 4524fb0e6d679e20a185191851921352f2104f83
+description: "@catalog_description.md"
+changelog: "@CHANGELOG.md"
+screenshots:
+  - screenshots/scanning.png
+  - screenshots/result.png

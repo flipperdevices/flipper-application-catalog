@@ -1,0 +1,12 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/xantopren/rock-paper-scissors.git
+    commit_sha: fffa4ea5233e1c56c18952b357ab34f409a9cf7d
+short_description: Play rock, paper, or scissors
+description: "@catalog-description.md"
+changelog: "@changelog.md"
+screenshots:
+  - images/rock.png
+  - images/paper.png
+  - images/scissors.png

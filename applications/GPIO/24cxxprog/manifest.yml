@@ -2,14 +2,14 @@ id: "24cxxprog"
 name: "24cxxprog"
 author: "@Dr.Mosfet"
 category: "GPIO"
-version: "1.0"
+version: "2.0"
 targets:
   - "all"
 sourcecode:
   type: git
   location:
     origin: "https://github.com/kamylwnb/24cxxprog"
-    commit_sha: "833a33fb1f3fd51e3b0ed050a29708cacdefe7ba"
+    commit_sha: "a06410404a66cb99b4839abfc9b9f31246e3f98d"
 short_description: "EEPROM 24Cxx programmer via I2C"
 description: |
   A comprehensive EEPROM programmer application for the Flipper Zero
