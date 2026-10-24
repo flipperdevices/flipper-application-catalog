@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/Zinetick/ghost_tracker.git
-    commit_sha: 8800d49b2302f67ec235c7a94de56dd549c2cd41
+    commit_sha: 14b60f79671bd5368cf31df0d78b9f236e96d7b4
 short_description: Paranormal investigation instrument - EMF meter, Spirit Box and REM Pod
 description: |
   Ghost Tracker turns your Flipper Zero into a 3-in-1 paranormal investigation
