@@ -1,0 +1,14 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/EVL87/catwardrive.git
+    commit_sha: beb1637b9e3396da4b9c04fcfca70753c5a20a24
+    subdir: fap
+short_description: Full WiFi + BLE Wardriving with GPS for Flipper Zero
+description: "@README.md"
+changelog: "@changelog.md"
+screenshots:
+  - screenshots/screen_01_menu.png
+  - screenshots/screen_02_wardrive.png
+  - screenshots/screen_03_gps.png
+  - screenshots/screen_04_settings.png
