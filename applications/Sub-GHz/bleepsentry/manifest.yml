@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/hdyrawan/bleepsentry.git
-    commit_sha: 51491a05c8d1eaf8db4e453e2c0cd903b6d49a2b
+    commit_sha: 017c7b695cd88f0ccdbbbed4b6df04452f1751c9
 short_description: Passive RF anomaly sentry for red-team recon and TSCM bug sweeps
 description: "@docs/description.md"
 changelog: "@changelog.md"
