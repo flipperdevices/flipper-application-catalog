@@ -1,0 +1,14 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/piersroberts/flippercd.git
+    commit_sha: acab7877b20c7de8f70b23037157d6da2998a022
+short_description: Emulates a USB CD/DVD-ROM drive from .iso images on the SD card
+description: "@docs/description.md"
+changelog: "@docs/changelog.md"
+screenshots:
+  - screenshots/work.png
+  - screenshots/start.png
+  - screenshots/tray_open.png
+  - screenshots/about.png
+  - screenshots/bad_image.png
