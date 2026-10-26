@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/vazgen3201/flipper-key-wizard.git
-    commit_sha: 13f7b708789a14fdd2f2cc3abd30adc56756d62c
+    commit_sha: 41947e894a8d537960e160653a889fc64ce24932
 description: "@docs/catalog-description.md"
 changelog: "@changelog.md"
 author: "Vazgen Grigoryan"
