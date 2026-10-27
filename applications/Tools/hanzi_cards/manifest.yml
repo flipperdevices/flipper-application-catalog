@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/rseufert/hanzi_cards.git
-    commit_sha: 2146f5f722ea5b2722a8151359cf41a8b2ec84e5
+    commit_sha: 1077e5092f0812ce84f856a8d134b584a611f289
 description: "@docs/description.md"
 changelog: "@docs/changelog.md"
 screenshots:
