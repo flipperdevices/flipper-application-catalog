@@ -1,0 +1,11 @@
+# Generate manifest.yml after committing and pushing the source repository.
+# Name, app ID, category, version, author, and icon are inherited from application.fam.
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/ZeroNinx/flipper-zero-taiko-player.git
+    commit_sha: "3ab2b3cf2a90d799d4f7e302488fb3971741549a"
+description: "@docs/catalog-description.md"
+changelog: "@docs/changelog.md"
+screenshots:
+  - screenshots/playing.png
