@@ -3,7 +3,6 @@ sourcecode:
   location:
     origin: https://github.com/gbhobbytech/flipper-servo-tester.git
     commit_sha: 50b01db47d4fefcfa2fb9a41075847c43c2b1fc7
-short_description: "Servo tester with wiring help and managed GPIO 5 V"
 description: |
   Servo Tester+ tests hobby servos using the Flipper Zero GPIO header.
 
