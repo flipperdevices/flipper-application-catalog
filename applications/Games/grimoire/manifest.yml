@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/rseufert/grimoire.git
-    commit_sha: 3ae1be058e37422eb740b05149647437037d285d
+    commit_sha: 2f09b2c1e06575e1d51a70bbaf5ab103dc990258
 description: "@docs/description.md"
 changelog: "@docs/changelog.md"
 screenshots:
