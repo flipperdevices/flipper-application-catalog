@@ -1,0 +1,12 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/polarikus/FlipperZero-TeaTimer.git
+    commit_sha: b60065fb4d222925950c72c128065f4eeee3e3bf
+short_description: "Pour-over tea timer with presets: leaf dosage, pour times and water temperature range."
+description: "@./.catalog/README.md"
+changelog: "@./.catalog/CHANGELOG.md"
+screenshots:
+  - "./.catalog/screenshots/ss0.png"
+  - "./.catalog/screenshots/ss1.png"
+  - "./.catalog/screenshots/ss2.png"
