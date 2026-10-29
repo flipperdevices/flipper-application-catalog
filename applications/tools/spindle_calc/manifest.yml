@@ -1,0 +1,50 @@
+sourcecode:
+  type: git
+  url: https://github.com/Minto97/spindle-calc-flipper
+  commit: main
+
+manifest_version: 0.3
+
+title: Spindle Calculator
+app_version: 1.0.0
+short_description: Calculates spindle spacing for stair and straight balustrades
+description: |
+  A trade tool for carpenters and joiners to quickly calculate spindle counts
+  and spacings for balustrades — on site, no phone needed.
+
+  ## Features
+  - **Stair mode** — enter diagonal (rake) length and stair angle; automatically
+    converts to horizontal, then calculates spindle count and spacing within the
+    99 mm building regulation gap limit
+  - **Straight run mode** — enter total length and spindle size to get count,
+    gap, and centre-to-centre spacing
+  - **IMU angle assist** — lay the Flipper flat on a stair tread and it reads
+    the pitch angle live via the built-in accelerometer
+  - **Manual angle entry** — fine-tune in 0.1° or 1.0° steps
+  - Results include spindle count, gap count, horizontal gap, rake gap, and
+    centre-to-centre spacing
+  - Scrollable results screen
+
+  ## Controls (length input)
+  - Up / Down (short press) — ±1 mm
+  - Up / Down (hold) — ±10 mm
+  - Left / Right (short press) — ±10 mm
+  - Left / Right (long press) — ±100 mm
+
+screenshots:
+  - screenshots/menu.jpg
+  - screenshots/angle.jpg
+  - screenshots/inputs.jpg
+  - screenshots/results1.jpg
+  - screenshots/results2.jpg
+
+category: Tools
+
+author: Jordan M
+author_url: https://github.com/Minto97
+
+
+changelog: |
+  1.0.0 - Initial release
+
+license: MIT
