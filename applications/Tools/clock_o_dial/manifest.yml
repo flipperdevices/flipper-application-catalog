@@ -3,10 +3,8 @@ sourcecode:
   location:
     origin: https://github.com/ManeFunction/clock-o-dial--fz.git
     commit_sha: 77b0e1632107be2ef299a0714ee61e89be40ebf5
-short_description: A tiny app that helps you keep track of your workday and avoid overtime.
 description: "@docs/catalog_description.md"
 changelog: "@changelog.md"
-author: "Ilia Petrov-Komotskii (Mane Function)"
 screenshots:
   - screenshots/screenshot_1.png
   - screenshots/screenshot_2.png
