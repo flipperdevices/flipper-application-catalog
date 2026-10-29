@@ -1,0 +1,12 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/cycalo/Flipper-Zero-Game-Boy-Pokemon-Battle.git
+    commit_sha: e7d81c4dad0ca7614fd43f1ce0d59b00d68d806b
+description: "@README_catalog.md"
+changelog: "@changelog.md"
+screenshots:
+  - .flipcorg/gallery/1.png
+  - .flipcorg/gallery/2.png
+  - .flipcorg/gallery/3.png
+  - .flipcorg/gallery/4.png
