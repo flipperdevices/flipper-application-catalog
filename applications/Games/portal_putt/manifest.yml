@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/rseufert/portal_putt.git
-    commit_sha: 1b2ae2a414deed534f8541915a7bac3acee585f1
+    commit_sha: b5e1a80650f354d8696a59ffa18d72377f037324
 description: "@docs/description.md"
 changelog: "@docs/changelog.md"
 screenshots:
