@@ -3,7 +3,6 @@ sourcecode:
   location:
     origin: https://github.com/TheProductAgency/flipper-subscriber-counter.git
     commit_sha: a3e46f9b0b440a792aa7481ed42201be1b19b0a7
-short_description: "Live YouTube subscriber count via Internet Bridge or Wi-Fi board"
 description: "@docs/description.md"
 changelog: "@docs/changelog.md"
 screenshots:
