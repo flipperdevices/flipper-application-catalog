@@ -1,0 +1,13 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/piersroberts/flipperfloppy.git
+    commit_sha: da64611e2a108f5e903c3849b4db48adfeafde83
+short_description: Emulates a USB floppy drive (UFI) from a 720K or 1.44M disk image
+description: "@docs/description.md"
+changelog: "@docs/changelog.md"
+screenshots:
+  - screenshots/work.png
+  - screenshots/start.png
+  - screenshots/bad_image.png
+  - screenshots/usb_locked.png
