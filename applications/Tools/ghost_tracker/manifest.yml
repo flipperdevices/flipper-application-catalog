@@ -1,0 +1,27 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/Zinetick/ghost_tracker.git
+    commit_sha: 14b60f79671bd5368cf31df0d78b9f236e96d7b4
+short_description: Paranormal investigation instrument - EMF meter, Spirit Box and REM Pod
+description: |
+  Ghost Tracker turns your Flipper Zero into a 3-in-1 paranormal investigation
+  instrument, using **real hardware techniques** instead of fake/random readings:
+
+  - **EMF Meter**: ambient RF noise via the built-in Sub-GHz radio (no wiring
+    needed), or an optional external Hall sensor with mains-hum filtering for
+    a more authentic K-II-style reading.
+  - **Spirit Box**: a real Sub-GHz frequency sweep with genuine RF static
+    played through the speaker - not a synthesized tone.
+  - **REM Pod**: capacitive proximity detection using a simple copper wire
+    antenna, the same principle as a real REM Pod.
+
+  See the in-app About screen and the repository README for wiring diagrams
+  and details on each module's optional external sensor.
+changelog: "@CHANGELOG.md"
+screenshots:
+  - screenshots/ss0.png
+  - screenshots/ss1.png
+  - screenshots/ss2.png
+  - screenshots/ss3.png
+  - screenshots/ss4.png
