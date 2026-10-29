@@ -1,0 +1,19 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/SeanChangX/flipper-ssh-runner.git
+    # main after "docs(app): add the Flipper Apps Catalog files (#13)"
+    commit_sha: 2c988e1cea03d33564d28ad24bca7d6420883f30
+    subdir: flipper-app
+# name, id (appid), category (fap_category), version (fap_version), author, icon and
+# short_description (fap_description) come from flipper-app/application.fam
+description: "@DESCRIPTION.md"
+changelog: "@changelog.md"
+# from qFlipper's screenshot format (512x256); the first is the preview
+screenshots:
+  - screenshots/1.png
+  - screenshots/2.png
+  - screenshots/3.png
+  - screenshots/4.png
+  - screenshots/5.png
+  - screenshots/6.png
