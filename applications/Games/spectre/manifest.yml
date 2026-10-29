@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/rseufert/spectre.git
-    commit_sha: 724d6ba8b1cfc637c26c4044ab7fcfaf272a342f
+    commit_sha: b658c3cf0f84ad17ec94d6ce3f2e2f4029e62e54
 description: "@docs/description.md"
 changelog: "@docs/changelog.md"
 screenshots:
