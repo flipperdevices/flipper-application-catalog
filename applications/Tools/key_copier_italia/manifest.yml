@@ -2,8 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/Maranello89/KeyCopier-Italia.git
-    commit_sha: 49e573bb351d1c4fccf535dce5158c63e88e267e
-short_description: Experimental CISA-style key profiles with finer depth display
+    commit_sha: 9d0aac497b53fcbf6fae7e46ec46e77b6688cc9d
 description: "@docs/catalog_description.md"
 changelog: "@docs/catalog_changelog.md"
 screenshots:
