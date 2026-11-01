@@ -5,9 +5,14 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/andreimagic/flipper-lettercade.git
-    commit_sha: 858c6ce20d5e6fd9f8c8b08fa89847a098933cb7
+    commit_sha: 38ea5359b147db95d959a6e7c0b1aa6c8cdbd979
+author: "andreimagic"
+changelog: "@./changelog.md"
+description: "Three letter-themed arcade games for Flipper Zero: Letters Rain, Snake Letters, and Tennis Letters."
+short_description: "ASCII Arcade: Letters Rain, Snake Letters and Tennis Letters."
 screenshots:
   - screenshots/ss0.png
-short_description: ASCII Arcade Games
-description: "@README.md"
-changelog: "@./changelog.md"
+  - screenshots/ss1.png
+  - screenshots/ss2.png
+  - screenshots/ss3.png
+version: 1.0
