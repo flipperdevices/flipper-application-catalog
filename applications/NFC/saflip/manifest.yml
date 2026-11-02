@@ -1,0 +1,11 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/aaronjamt/saflip.git
+    commit_sha: 6b7add1953069a220bac1047b90822dd2ad13b95
+description: "@README.md"
+changelog: "@.catalog/changelog.md"
+screenshots:
+  - ".catalog/screenshots/menu.png"
+  - ".catalog/screenshots/card_info.png"
+  - ".catalog/screenshots/edit.png"
