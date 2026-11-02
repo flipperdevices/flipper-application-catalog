@@ -1,0 +1,44 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/Lechnio/Dooya-Remote.git
+    commit_sha: 2abceec60166d88af00fc6e4b5ca4eced614c999
+short_description: "Dooya shutter remote emulator for Flipper Zero. Store single remotes or whole groups of serials, pick a channel and send Up/Stop/Down over Sub-GHz."
+description: |
+  A Flipper Zero app that emulates a Dooya shutter remote. Store a single
+  remote or a whole group of serials in one file, pick a channel, and send
+  Up / Stop / Down over Sub-GHz. A group sends the command to every stored
+  serial on the chosen channel, so one key press can drive a roomful of
+  blinds at once.
+
+  **Transmit only.** This app sends Dooya commands, it never listens on the
+  air. Serials come from .sub captures you recorded earlier or are typed in
+  by hand. You still pair a serial with a motor the normal Dooya way.
+
+  ## Controls
+
+  - **Left / Right** - change channel, wraps 0 to 15 (channel 0 is master)
+  - **Up / Down (tap)** - send Up / Down (long in roller, short in tilt)
+  - **OK (tap)** - send Stop
+  - **Up / Down (hold)** - roller: limit menu, tilt: jog until released
+  - **OK (hold)** - actions menu (P2, swap dir, clear limits, tilt/roller)
+  - **Back** - open the Remote menu, hold to exit, cancels a send in progress
+
+  ## Usage
+
+  1. Launch Dooya Remote from the Apps menu, under Sub-GHz.
+  2. Load the bundled Defaults remote, open a saved one, or create a new one
+     from a .sub file or by typing a serial.
+  3. On the keypad, pick a channel with Left / Right.
+  4. Tap Up, OK or Down to send. A group sends to every enabled serial.
+  5. Open the Remote menu with Back to manage serials, set TX Count, or save.
+changelog: "@changelog.md"
+screenshots:
+  - ./docs/images/01-main-menu.png
+  - ./docs/images/10-sending-key.png
+  - ./docs/images/11-action-menu.png
+  - ./docs/images/12-limit-menu.png
+  - ./docs/images/06-serial-actions.png
+  - ./docs/images/07-serial-editor.png
+  - ./docs/images/08-serial-wildcard.png
+  - ./docs/images/09-serial-disabled.png
