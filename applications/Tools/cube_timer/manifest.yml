@@ -1,0 +1,13 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/navarr393/CubeTimer.git
+    commit_sha: 0723a4047023bc79a956fdfbaf28363f9640ae4a
+description: "@docs/catalog.md"
+changelog: "@docs/changelog.md"
+screenshots:
+  - screenshots/1.png
+  - screenshots/2.png
+  - screenshots/3.png
+  - screenshots/4.png
+  - screenshots/5.png
