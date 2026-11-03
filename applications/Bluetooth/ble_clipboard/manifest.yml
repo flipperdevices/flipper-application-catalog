@@ -1,0 +1,13 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/otcan/ble-clipboard.git
+    commit_sha: acfaa22e4caa804588850c4c525f03d8f089e643
+    subdir: BluetoothClipboard
+author: otcan
+short_description: Clipboard and macros from Mac to USB over Bluetooth
+description: "@README.md"
+changelog: "@changelog.md"
+screenshots:
+  - screenshots/info.png
+  - screenshots/downloads.png
