@@ -18,4 +18,4 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/rastislavcore/flipper_payto.git
-    commit_sha: 51071b44bd1ae58bdd321109b8ecbaffea66e78f
+    commit_sha: be8558419fc2b7af3532951a81f6fb24d3060b84
