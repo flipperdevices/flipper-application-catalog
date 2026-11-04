@@ -1,0 +1,13 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/daniqed/flipper-identity.git
+    commit_sha: a5b446969a6442d0086550861f68fa2b6ad2f9ee
+    subdir: dnie_reader
+description: "@./docs/README.md"
+changelog: "@./docs/changelog.md"
+screenshots:
+  - screenshots/carnet.png
+  - screenshots/menu2.png
+  - screenshots/menu3.png
+  - screenshots/volume.png
