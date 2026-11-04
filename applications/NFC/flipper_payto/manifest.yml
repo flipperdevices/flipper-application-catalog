@@ -1,0 +1,21 @@
+id: flipper_payto
+name: "PayTo Wallets"
+version: "0.1"
+category: "NFC"
+author: "Rastislav Core"
+icon: "icon.png"
+
+short_description: "Scan, save, display, and emulate PayTo wallet URIs over NFC."
+description: "@docs/catalog-description.md"
+changelog: "@docs/changelog.md"
+
+screenshots:
+  - "screenshots/01_main_menu.png"
+  - "screenshots/02_enter_wallet.png"
+  - "screenshots/03_scanning_nfc.png"
+
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/rastislavcore/flipper_payto.git
+    commit_sha: 51071b44bd1ae58bdd321109b8ecbaffea66e78f
