@@ -1,0 +1,16 @@
+# Submission template: finish the steps in docs/catalog-submission.md first.
+# Copy this file to applications/Sub-GHz/wmbus_decoder/manifest.yml in the catalog.
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/maresmar/wmbus-decoder.git
+    # Replace with the full SHA after committing and pushing source and screenshots.
+    commit_sha: 2bd7240642d3ab4907b3adf3cc256456d943cfda
+description: "@docs/catalog-description.md"
+changelog: "@changelog.md"
+screenshots:
+  # Original qFlipper captures; first image is the catalog preview.
+  - docs/Screenshot-main.png
+  - docs/Scrrenshot-rx.png
+  - docs/Screenshot-T_frame.png
+  - docs/Screenshot-C_frame.png
