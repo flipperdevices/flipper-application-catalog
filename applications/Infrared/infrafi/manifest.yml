@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/amd989/InfraFi.git
-    commit_sha: 8fae727e1e237f0ca27dd88f8f8ef004191885e5
+    commit_sha: d0108e19fd85862414b87b3a4cda93243951696b
 short_description: Transmit WiFi credentials via IR to a Linux server
 description: "@README_CATALOG.md"
 changelog: "@changelog.md"
