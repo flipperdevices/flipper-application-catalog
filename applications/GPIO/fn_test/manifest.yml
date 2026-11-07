@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/polarikus/flipper-zero_fn_tester
-    commit_sha: e04029d4201f8722aa2aeea7fd66f5c1c1bb24d8
+    commit_sha: abda06ca0ff04412cfed64272a24f00797a90f40
 description: "@./.catalog/README.md"
 changelog: "@./.catalog/CHANGELOG.md"
 screenshots:
