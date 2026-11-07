@@ -1,0 +1,15 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/therezor/hazke-flipper.git
+    commit_sha: 03d3a4c25b34e93d8642c87b6fa84386f53dc086
+description: "@docs/catalog.md"
+changelog: "@changelog.md"
+screenshots:
+  - screenshots/1_dogfight.png
+  - screenshots/2_autodock.png
+  - screenshots/3_gate.png
+  - screenshots/5_hyperspace.png
+  - screenshots/6_market.png
+  - screenshots/7_jobs.png
+  - screenshots/4_chart.png
