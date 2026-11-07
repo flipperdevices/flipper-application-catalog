@@ -1,0 +1,24 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/Firefox2100/ami-tool.git
+    commit_sha: 8ec9efd0ea7bcdb606e009f4992eb5f8ba8b03ae
+    # subdir: .
+short_description: An NTAG215 toolkit for Flipper Zero to work with tags used with gaming consoles.
+description: |
+  Designed as a general-purpose toolkit for Flipper Zero to work with NTAG215 figures/cards for gaming consoles, this app aims to provide the following features:
+  - **Reading NTAG215 character NFC tags**: Read data from physical NTAG215 gaming tags and store it on the Flipper Zero.
+  - **Displaying character information**: Show detailed information about the tag, including character name, series, type, usage, and other metadata. This information is sourced from the AmiiboAPI (https://amiiboapi.com/).
+  - **Emulating NTAG215 gaming NFC tags**: Emulate the loaded data, allowing the Flipper Zero to function as the corresponding character tag.
+  - **Writing game data to NFC tags**: Write currently loaded tag data to blank NTAG 215 tags, or a compatible device.
+  - **Generating character data**: Create a synthetic character data structure based on selected character.  The result would be a blank data file that can be written to a blank NTAG 215 tag, with no owner or game information.
+  - **Randomising the unique identifier (UID)**: Modify the UID of the loaded character data to a random valid value, allowing one tag to be used as multiple different tags.
+  - **Emulating a blank tag**: Emulate a blank NTAG 215 tag that can be written into with other devices.
+  - **Saving and loading character data files**: Store generated or read data files on the Flipper Zero's storage for later use.
+  And other combinations of the above features.
+changelog: "@changelog.md"
+screenshots:
+  - docs/screenshots/main-menu.png
+  - docs/screenshots/read-menu.png
+  - docs/screenshots/emulate-menu.png
+  - docs/screenshots/generate-menu.png
