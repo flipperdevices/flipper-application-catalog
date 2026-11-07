@@ -1,0 +1,17 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/rseufert/tricorder.git
+    commit_sha: b9c7430246e338fa8804e9ddd2f9993ec621d7a2
+description: "@docs/description.md"
+changelog: "@docs/changelog.md"
+screenshots:
+  - screenshots/ss0.png
+  - screenshots/ss1.png
+  - screenshots/ss2.png
+  - screenshots/ss3.png
+  - screenshots/ss4.png
+  - screenshots/ss5.png
+  - screenshots/ss6.png
+  - screenshots/ss7.png
+  - screenshots/ss8.png
