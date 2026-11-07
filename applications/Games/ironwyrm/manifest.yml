@@ -2,9 +2,13 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/Atompunk78/IRONWYRM.git
-    commit_sha: 3bd2386e40b0a34c50f900217d47d90f4eeffc32
+    commit_sha: f089c9905dc6a9e9367f56e3750b8c991def7446
 
-description: Giant mechs rule the wasteland; strategically attach modular plates to your WYRM and survive as long as you can!
+description: >-
+  Giant mechs rule the wasteland; strategically attach modular plates to your WYRM and survive as long as you can!
+
+  I'd love to hear your feedback or review on my [forum](https://henrygurney.co.uk/forums/comp/) (the password is RX-8)
+
 changelog: "@changelog.md"
 
 screenshots:
