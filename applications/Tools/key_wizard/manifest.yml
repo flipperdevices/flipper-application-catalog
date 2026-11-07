@@ -5,7 +5,6 @@ sourcecode:
     commit_sha: 01237fac252a97a6cc359f7ddf2d9b5d6ceae76b
 description: "@docs/catalog-description.md"
 changelog: "@changelog.md"
-author: "Vazgen Grigoryan"
 screenshots:
   - screenshots/ui_screen.png
   - screenshots/about_screen.png
