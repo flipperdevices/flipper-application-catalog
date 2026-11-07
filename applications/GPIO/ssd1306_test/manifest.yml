@@ -1,0 +1,10 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/martinbogo/ssd1306_test.git
+    commit_sha: c6ae307116e06bb1019fe175214a4ccb3c08d4f1
+short_description: "Diagnostic tool for SSD1306 I2C OLED displays (128x64, yellow-bar and mono variants)"
+description: "@DESCRIPTION.md"
+changelog: "@CHANGELOG.md"
+screenshots:
+  - screenshots/screen1.png

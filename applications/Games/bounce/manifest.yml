@@ -1,0 +1,10 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/tomxposed/flipper-bounce.git
+    commit_sha: 5dcca3167f69efb6fb0abe8c699e3fd88186b5df
+description: "@docs/description.md"
+changelog: "@docs/changelog.md"
+screenshots:
+  - screenshots/ss0.png
+  - screenshots/ss1.png

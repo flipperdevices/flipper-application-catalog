@@ -1,0 +1,12 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/Mableton/talk_timer.git
+    commit_sha: 346a4200e0553ba7a19104fa4beb9aecf59ac5e9
+description: "@.catalog/README.md"
+changelog: "@.catalog/CHANGELOG.md"
+screenshots:
+  - .catalog/screenshots/1.png
+  - .catalog/screenshots/2.png
+  - .catalog/screenshots/3.png
+  - .catalog/screenshots/4.png

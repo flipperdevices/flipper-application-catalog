@@ -1,0 +1,13 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/dpshde/bible-bsb.git
+    commit_sha: ed6d70077d7dcfbf19e045ad7bdf4973e955b67c
+    subdir: bible_bsb
+description: "@README.md"
+changelog: "@docs/changelog.md"
+screenshots:
+  - screenshots/books.png
+  - screenshots/chapters.png
+  - screenshots/verses.png
+  - screenshots/reader.png

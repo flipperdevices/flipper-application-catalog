@@ -1,0 +1,44 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/ngxson/flipper-telink.git
+    commit_sha: 2c8d7b67446dcec020a5e597f17240865ad13738
+    subdir: telink_sws
+author: ngxson
+description: |
+  # Telink SWS
+
+  Read and program Telink TLSR825x devices using Flipper Zero's GPIO pins
+  and the single-wire SWire debug protocol.
+
+  ## Features
+
+  - Live contact monitoring with on-screen status, LED and sound feedback.
+  - Optional automatic CPU halt when a target is detected.
+  - Chip identification, GPIO diagnostics, and core and analog register access.
+  - Flash dumps to the microSD card with repeated reads, CRC32 reporting,
+    and contact-loss recovery.
+  - Flash erase and programming with verification, write-protection checks,
+    and protection for factory MAC and calibration sectors.
+
+  ## Hardware and operation
+
+  Connect the target's SWS pad to Flipper C0, C1, or C3 and connect a common
+  ground. Flipper's 3V3 output can power a compatible target.
+
+  Keep the app open and use the Flipper USB serial CLI to perform operations.
+  Enter **sws help** for commands. The device screen shows contact status;
+  press OK to toggle automatic CPU halt and Back to exit.
+
+  [Wiring and command documentation](https://github.com/ngxson/flipper-telink)
+changelog: |
+  # v0.1
+
+  - Initial catalog release of the Telink SWire master.
+  - Live contact monitoring, register access, verified flash dumps,
+    and flash erase and programming.
+screenshots:
+  # Unmodified qFlipper exports, relative to sourcecode.location.subdir.
+  # Show the connected target first in the catalog preview.
+  - screenshots/screenshot1.png
+  - screenshots/screenshot0.png

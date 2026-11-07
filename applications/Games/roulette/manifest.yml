@@ -1,0 +1,11 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/thecoolguy2001/flipper-roulette.git
+    commit_sha: 63f608ad4dc42266ecdbe8a3f459932ed2b01d34
+description: "@catalog_description.md"
+changelog: "@changelog.md"
+screenshots:
+  - screenshots/cylinder.png
+  - screenshots/title.png
+  - screenshots/bang.png

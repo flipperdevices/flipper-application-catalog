@@ -1,0 +1,12 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/j-stud-res/flipper-ac-fujitsu-general-remote.git
+    commit_sha: 0241fb8135437bb856ebb1bc7e73970688395dd7
+description: "@README.md"
+changelog: "@changelog.md"
+screenshots:
+  - docs/img/catalog-screenshots/Screenshot-1.png
+  - docs/img/catalog-screenshots/Screenshot-2.png
+  - docs/img/catalog-screenshots/Screenshot-3.png
+  

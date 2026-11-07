@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/polarikus/flipper-zero_bc_scanner_emulator.git
-    commit_sha: 94a401bbe3d5d8c60ac25c5b7ab71c843f35945e
+    commit_sha: 7f512ecafd0b12579aa967fc7579921fb5f548a6
 short_description: "Emulates a barcode scanner for testing cash registers. Why buy a scanner when you have a flipper?"
 description: "@./.catalog/README.md"
 changelog: "@./.catalog/CHANGELOG.md"

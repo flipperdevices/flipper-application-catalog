@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/Endika/flipper-gurpil.git
-    commit_sha: 04763fd770cf8a1df4d260b92b66d64615b055de
+    commit_sha: 41f162670cd52cfec461f08db8cc8aa774f08642
 short_description: "Endless side-scroller: pick your wheel shape, the terrain decides your speed."
 description: |
   Gurpil is an endless side-scroller for the Flipper Zero. The ground scrolls by in zones —
@@ -16,8 +16,9 @@ description: |
   is endless and only ends when the clock runs out. Your best distance is saved to the SD card.
   Fully offline — no network, no accounts.
 author: Endika
-version: 0.1.8
+version: 0.1.10
 changelog: |
+  - v0.1.10: A best distance that cannot be read is kept instead of being overwritten.
   - v0.1.8: Incremental speed ramp — runs open gentle at x1 and build to x2 and x3 (full speed)
     as you go, with the current tier shown beside the speed bar.
   - v0.1.7: Faster pace and a tighter time budget for a harder, twitchier run.
