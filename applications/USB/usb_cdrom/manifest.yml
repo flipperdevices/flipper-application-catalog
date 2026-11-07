@@ -1,0 +1,12 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/piersroberts/flippercd.git
+    commit_sha: 9efbba8c04c2b7bb6e212e78cc6e0d97282cf560
+description: "@docs/description.md"
+changelog: "@docs/changelog.md"
+screenshots:
+  - screenshots/work.png
+  - screenshots/start.png
+  - screenshots/tray_open.png
+  - screenshots/bad_image.png
