@@ -2,12 +2,10 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/DruzhininPavel/wifi-internet-watch-flipper.git
-    commit_sha: e562527607bf7a53bddf3e21a6f4042e24cc7e36
-short_description: "Select a WiFi network and monitor internet availability through ESP-AT"
+    commit_sha: 36d429964e4b3cc64699f0ae0d6ecb513a7188c2
 description: |
-  WiFi Internet Watch connects an official Flipper Zero Wi-Fi Developer Board
-  running ESP-AT to a selected wireless network and checks internet availability
-  every 60 seconds.
+  WiFi Internet Watch connects a Flipper Zero Wi-Fi Developer Board to a selected
+  wireless network and checks internet availability every 60 seconds.
 
   **Features**
 
@@ -16,10 +14,19 @@ description: |
   - Saves, updates, and forgets up to 16 network credentials
   - Shows online, offline, and Wi-Fi connection states
   - Plays a notification when internet connectivity returns
+  - Detects the devboard firmware automatically and lets you set it manually in the settings menu
+  - Lets you change the check target address, the check interval, and the devboard firmware type
 
-  The ESP32-S2 board must run ESP-AT configured for GPIO17 and GPIO18 at 115200
-  baud with hardware flow control disabled. Setup instructions are available in
-  the source repository.
+  **Supported devboard firmware**
+
+  - ESP-AT: scanning, joining, and internet checks
+  - GhostESP: scanning, joining, and internet checks
+  - Marauder, Bruce, and Black Magic: recognized, but reported as not supported for internet monitoring
+
+  The official devboard arrives with the Black Magic debug probe firmware, which has
+  no Wi-Fi commands. Flash ESP-AT or GhostESP to use this app. An ESP32-S2 running
+  ESP-AT must be configured for GPIO17 and GPIO18 at 115200 baud with hardware flow
+  control disabled. Setup instructions are available in the source repository.
 changelog: "@docs/changelog.md"
 screenshots:
   - screenshots/password-keyboard.png
