@@ -3,7 +3,6 @@ sourcecode:
   location:
     origin: https://github.com/Mushi0/FlippFlash.git
     commit_sha: ed5654f82d3ae3d6c88e5d8a843c4e7edb266b49
-short_description: "A Flipper Zero flashcard app"
 description: "@./docs/catalog_readme.md"
 changelog: "@./docs/changelog.md"
 author: "@Mushi0"
