@@ -1,0 +1,13 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/Manawyrm/ntag5_thermometer.git
+    commit_sha: e5e35e5407c93ec25ec7d535a15b5bd4f39a329f
+description: |
+  Reader for animal/human implantable NXP NTAG5 and 134kHz RFID tags with a thermometer function
+  Tested with BeUno patch and 134kHz implant
+changelog: "@changelog.md"
+screenshots:
+  - screenshots/where.png
+  - screenshots/hold.png
+  - screenshots/sensor.png
