@@ -2,13 +2,22 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/DonJulve/Flipper-Zero-PC-Monitor-USB
-    commit_sha: "66100de81ee8baed0d77ade915df2b9b4dc979e3"
-short_description: "Application for monitoring PC resources via USB"
+    commit_sha: "9b22c5f5c3d8f3045c378ca825b921e8683031b4"
+short_description: "PC resource monitor & USB soundboard pad"
 description: |
-  Flipper Application for monitoring PC resources via USB (Virtual COM Port).
+  Flipper application for real-time PC resource monitoring (CPU %, RAM, GPU %, VRAM, and Temperatures in °C) and USB soundboard pad via Virtual COM Port.
+  
+  Features:
+  - Real-time hardware telemetry and temperatures (°C).
+  - Built-in USB soundboard: short presses on D-Pad/OK/Back trigger customizable .mp3 sounds on your PC (supports headphones and Discord/game streaming via virtual cable).
+  - Hold Back button to safely exit the app without locking the USB port.
+  
+  Requires the accompanying Rust backend running on your PC:
+  https://github.com/DonJulve/Flipper-Zero-PC-Monitor-USB-Backend
+  
   This is a ported version of the original (https://github.com/TheSainEyereg/flipper-pc-monitor) application to work over USB instead of Bluetooth.
   
-  See full readme: https://github.com/DonJulve/Networking_NFC_QR_Flipper_Zero/blob/main/README_en.md
+  See full readme: https://github.com/DonJulve/Flipper-Zero-PC-Monitor-USB/blob/main/README.md
 changelog: "@.catalog/changelog.md"
 screenshots:
   - .catalog/screenshots/bars.png
