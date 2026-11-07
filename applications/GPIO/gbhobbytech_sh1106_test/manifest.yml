@@ -4,7 +4,6 @@ sourcecode:
     origin: https://github.com/gbhobbytech/ssd1306_test.git
     commit_sha: fc0c57da888547d1762c2df2b5df6ac872e301f9
 
-short_description: "Diagnostic tool for SH1106 128x64 I2C OLED displays"
 description: "@DESCRIPTION.md"
 changelog: "@CHANGELOG.md"
 
