@@ -1,0 +1,15 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/AzzureSkyy/flipper-amiibo-browser.git
+    commit_sha: cdc44c8dcc6c7c6230be9dc4a544745275a3b623
+    subdir: FlipperApp/amiibo_browser
+short_description: Browse amiibo by game and emulate them
+description: "@README.md"
+changelog: "v1.0 - Initial release: browse by game, remembers list position on Back, About screen"
+author: "AzureSky"
+screenshots:
+  - screenshots/1.png
+  - screenshots/2.png
+  - screenshots/3.png
+  - screenshots/4.png

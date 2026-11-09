@@ -1,0 +1,12 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/AzzureSkyy/flipper-gps-marauder-c5.git
+    commit_sha: 13c57a96a984df708c052b75c559f0fd7544efce
+    subdir: flipper_app
+description: "@CATALOG.md"
+changelog: "v1.6 - Fork of gps_nmea: drives the onboard GPS of an ESP32 Marauder board (ESP32-C5) via the 'nmea' CLI stream; default 115200 baud; Long Down restarts stream"
+screenshots:
+  - img/1.png
+  - img/2.png
+  - img/3.png
