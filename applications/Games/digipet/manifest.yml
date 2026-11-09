@@ -1,0 +1,14 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/AzzureSkyy/flipper-games.git
+    commit_sha: 84d083b1059cc8fe97661bb08242b6afc9729e8a
+    subdir: digipet
+short_description: Virtual pet for Flipper Zero
+description: "@README.md"
+changelog: "v1.0 - Initial release"
+author: "AzureSky"
+screenshots:
+  - screenshots/1.png
+  - screenshots/2.png
+  - screenshots/3.png

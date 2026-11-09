@@ -1,0 +1,12 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/AzzureSkyy/flipper-theme-player.git
+    commit_sha: a431ac931c1c85d36f8235e0a26359a8d2c1c000
+short_description: Loop theme tunes in 8-bit style on the Flipper speaker
+description: "@CATALOG.md"
+changelog: "v1.0 - Initial release"
+author: "AzureSky"
+screenshots:
+  - screenshots/1.png
+  - screenshots/2.png
