@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/AzzureSkyy/flipper-amiibo-browser.git
-    commit_sha: 0a6a950703fac77e723f1a716ff3e3993a8abbb3
+    commit_sha: 4d34fb165dd59b361d4618a4618bd9485ab198c2
     subdir: FlipperApp/amiibo_browser
 short_description: Browse amiibo by game and emulate them
 description: "@README.md"
