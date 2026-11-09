@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/ZombieDolphin/BadUSB_MSC.git
-    commit_sha: 9b846fe2454d5a2c874b87f2ad857f4661e54b10
+    commit_sha: 65ca53b32a65cf1bf17c65676521fe20023ac2c9
 
 short_description: BadUSB scripts with isolated USB Mass Storage
 
