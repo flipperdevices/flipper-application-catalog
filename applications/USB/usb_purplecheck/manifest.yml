@@ -1,0 +1,14 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/RogerF5-Security/USB-PurpleCheck.git
+    commit_sha: efa4f84496ec4473b168269a80e3747201ae859b
+description: "@docs/catalog-description.md"
+changelog: "@docs/catalog-changelog.md"
+screenshots:
+  - screenshots/splash.png
+  - screenshots/menu.png
+  - screenshots/settings.png
+  - screenshots/spanish.png
+  - screenshots/ukrainian.png
+  - screenshots/about.png
