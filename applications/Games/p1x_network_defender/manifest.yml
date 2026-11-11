@@ -1,0 +1,15 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/w84death/network-defender.git
+    commit_sha: 0583b06335245b48bdfd8e7cac390fd0aafded36
+description: "A Game&Watch style network security game for the Flipper Zero."
+version: 1.2.1
+changelog: "@CHANGELOG.md"
+author: "Krzysztof Krystian Jankowski"
+screenshots:
+  - "media/screenshot1.png"
+  - "media/screenshot2.png"
+  - "media/screenshot3.png"
+  - "media/screenshot4.png"
+  - "media/screenshot5.png"
