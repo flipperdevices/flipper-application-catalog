@@ -1,0 +1,35 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/gbhobbytech/flipper-ac-multi-remote.git
+    commit_sha: 4a1bde5f632ee1fec5e5c40ecaad0d50e19eb061
+
+short_description: Multi-profile infrared controller for air conditioners
+
+description: |
+  A/C Master is a multi-profile infrared remote controller for compatible
+  air conditioners using Flipper Zero.
+
+  Features:
+  - Control power, temperature, operating mode and fan speed on supported units.
+  - Save, select, rename and delete multiple air conditioner profiles.
+  - Identify compatible protocols using a manufacturer-based setup wizard.
+  - Learn and replay basic power signals from an existing remote.
+  - Support for Mitsubishi Electric, Mitsubishi Heavy Industries, Fujitsu,
+    LG/LG2 and experimental Gree protocols.
+
+  Known limitations:
+  - Not every air conditioner model is supported.
+  - Some older Gree units are currently incompatible.
+  - Learned profiles provide basic ON/OFF replay rather than full control.
+  - LG support has been tested on one physical unit; wider compatibility
+    requires further testing.
+
+changelog: "@CHANGELOG.md"
+
+screenshots:
+  - screenshots/Main Screen.png
+  - screenshots/Setup Wizard.png
+  - screenshots/Select Unit Screen.png
+  - screenshots/Unit Add Wizard.png
+  - screenshots/Manage Unit.png
