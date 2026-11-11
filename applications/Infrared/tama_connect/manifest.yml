@@ -1,0 +1,15 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/s2013p/TamaConnect.git
+    commit_sha: 10da0030af78d6f4d5ba688a97f99ccb6e9ba8f0
+
+short_description: Infrared companion for virtual pet devices
+description: "@docs/description.md"
+changelog: "@docs/changelog.md"
+
+screenshots:
+  - screenshots/ss0.png
+  - screenshots/ss1.png
+  - screenshots/ss2.png
+  - screenshots/ss3.png

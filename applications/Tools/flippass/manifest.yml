@@ -1,0 +1,19 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/Arckanos/FlipPass.git
+    commit_sha: 713d79f3121dd3c31d9191211ebf916af8672fdd
+short_description: KeePass-based password manager with HID writing via USB and Bluetooth.
+description: "@README.md"
+changelog: "@docs/changelog.md"
+screenshots:
+  - screenshots/Type-Options.png
+  - screenshots/Browsering.png
+  - screenshots/Password-Entry.png
+  - screenshots/Typing.png
+  - screenshots/Keyboard-Layout.png
+  - screenshots/Password-Entry-Extended.png
+  - screenshots/OTP.png
+  - screenshots/Generator.png
+  - screenshots/Collecting.png
+  - screenshots/Close.png

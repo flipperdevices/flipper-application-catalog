@@ -1,0 +1,20 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/anders-dc/timed-remote.git
+    commit_sha: 3609fbfe951db5e1fac604ce4e0570bb7b7a926e
+short_description: Send IR commands after timed duration.
+description: |
+  Send IR commands after a configurable time delay.
+  - Browse and select IR signals from existing .ir files
+  - **Countdown Mode**: Set a timer (HH:MM:SS) and send the signal when it completes
+  - **Scheduled Mode**: Send the signal at a specific time of day
+  - **Repeat Options**: Off, Unlimited, or 1-99 repeats (countdown mode only)
+  - Live countdown display with repeat progress tracking, press Back to cancel
+changelog: "@CHANGELOG.md"
+author: "A. Damsgaard"
+screenshots:
+  - screenshots/00-ir-browse.png
+  - screenshots/01-timer-config.png
+  - screenshots/02-timer-config.png
+  - screenshots/03-timer-running.png

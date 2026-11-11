@@ -1,0 +1,23 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/Tristus1er/flipperzero-i2c-tools-cli
+    commit_sha: b53daecaa8eb0628e60e9f1f285dab8285dd41ec
+id: "i2c_tools_cli"
+category: "GPIO"
+short_description: "I2C scanner / sender / sniffer with N-byte read, HEX/ASCII view, and a serial CLI (i2c scan/probe/read/write)."
+description: "@README.md"
+changelog: "@CHANGELOG.md"
+author: "@Tristus1er (forked from @NaejEL)"
+version: "1.0"
+name: "I2C Tools CLI"
+screenshots:
+  - screenshots/01_main_menu.png
+  - screenshots/02_scanner.png
+  - screenshots/03_sender_read.png
+  - screenshots/04_sender_write.png
+  - screenshots/05_sender_ascii.png
+  - screenshots/06_sniffer.png
+  - screenshots/07_infos.png
+  - screenshots/08_infos_cli.png
+icon: "i2c_tools_cli.png"

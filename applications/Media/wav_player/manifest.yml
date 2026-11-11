@@ -2,10 +2,10 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/xMasterX/all-the-plugins.git
-    commit_sha: 06c22064aa6ae0c33438795eb7cd27d4d083c6c8
+    commit_sha: 1066d17ad1e8fbf75cea5c6612d79ba539ec8a33
     subdir: base_pack/wav_player
 description: "Audio player for WAV files, recommended to convert files to unsigned 8-bit PCM stereo, but it may work with others too"
-changelog: "v1.0 - Initial release, v1.1 - Sync Updates, v1.2 - Sync updates and latest API support"
+changelog: "v1.0 - Initial release, v1.1 - Sync Updates, v1.2 - Sync updates and latest API support, v1.3-v1.5 - Fixes and improvements"
 author: "@DrZlo13 & (ported, fixed by @xMasterX), (improved by @LTVA1)"
 screenshots:
   - "./img/2.png"

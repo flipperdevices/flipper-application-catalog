@@ -1,0 +1,16 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/BaniMun/cfs-tag-writer.git
+    commit_sha: e7d3198fe468a684de20c52d37cd6ce9d2ee614c
+description: "@.catalog/README.md"
+changelog: "@changelog.md"
+screenshots:
+  - .catalog/screenshots/00_main_menu.png
+  - .catalog/screenshots/06_write_color.png
+  - .catalog/screenshots/08_write_confirm.png
+  - .catalog/screenshots/11_templates.png
+  - .catalog/screenshots/09_write_hold.png
+  - .catalog/screenshots/10_write_done.png
+  - .catalog/screenshots/12_saved_browser.png
+  - .catalog/screenshots/26_help_index.png

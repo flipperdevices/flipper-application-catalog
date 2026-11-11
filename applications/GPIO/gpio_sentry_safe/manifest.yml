@@ -1,12 +1,13 @@
 sourcecode:
   type: git
   location:
-    origin: https://github.com/xMasterX/all-the-plugins.git
-    commit_sha: 06c22064aa6ae0c33438795eb7cd27d4d083c6c8
-    subdir: base_pack/sentry_safe
-description: "App exploiting vulnerability to open any Sentry Safe and Master Lock electronic safe without any pin code via UART pins."
-changelog: "v1.0 - Initial release, v1.1 - Various important fixes, v1.2 - Fixes for latest API, v1.3 - Sync updates and latest API support"
-author: "@H4ckd4ddy & @xMasterX (ported to latest firmware)"
+    origin: https://github.com/H4ckd4ddy/flipperzero-sentry-safe-plugin.git
+    commit_sha: 03bef91f24195fac3f1e6562d46ea4c5321d0c0b
+short_description: "App exploiting vulnerability to open any Sentry Safe and Master Lock electronic safes without pin code."
+description: "@README_plain.md"
+changelog: "@changelog.md"
+author: "@H4ckd4ddy"
 screenshots:
-  - "./img/2.png"
-  - "./img/1.png"
+  - "./images/main.png"
+  - "./images/help.png"
+  - "./images/link.png"

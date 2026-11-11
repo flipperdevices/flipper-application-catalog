@@ -1,0 +1,15 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/T-Damer/flipper-ai-dashboard.git
+    commit_sha: 788d8e97d3ea7133d8a44d312dedc156e806f384
+    subdir: flipper
+short_description: Track AI usage windows on Flipper Zero
+description: "@README_catalog.md"
+changelog: "@CHANGELOG.md"
+author: "T-Damer"
+screenshots:
+  - screenshots/flp0.png
+  - screenshots/flp1.png
+  - screenshots/flp2.png
+  - screenshots/flp3.png

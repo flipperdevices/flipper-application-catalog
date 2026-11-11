@@ -1,0 +1,68 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/at0m-b0mb/Faraday-FlipperZero.git
+    commit_sha: 934a3bd105d45e4b4bcc517ab5c80f60357e045c
+short_description: Measure how much a signal-blocking pouch actually blocks, in real decibels, and grade it A+ to F. Sub-GHz key fob and NFC card, plus a leak hunt.
+description: |
+  Faraday tells you whether a signal-blocking pouch actually blocks signals. It measures how much a pouch attenuates a car key fob on Sub-GHz and a contactless reader's field on NFC, in real decibels, and grades the result from A+ to F.
+
+  The flow is the same for both radios: take a **Baseline** in open air, take a **Shielded** reading with the pouch closed, and read the **Verdict**.
+
+  ## Which thing goes in the bag
+
+  The two tests are mirror images of each other, and getting them the wrong way round produces a confident, meaningless grade — so the app says which is which on every test:
+
+  - **Sub-GHz shields the fob.** The fob is the transmitter, so the fob goes in the pouch and the Flipper stays outside, listening.
+  - **NFC shields the Flipper.** The reader's field comes from outside, so the Flipper goes in the pouch and stands in for the card in your wallet.
+
+  ## What else it does
+
+  - **Leak Hunt** — sweep a sealed pouch and find where it leaks, by ear. The clicks speed up as you close on the seam.
+  - **Find my fob's band** — a fob transmits on exactly one band, and which one depends on where the car was sold, so this sweeps 315, 433.92, 868 and 915 MHz, names the winner, and hands it to the test. Picking the wrong band measures ambient noise and grades that instead.
+  - **Saved results** — every graded test is written to the SD card, so pouches can be compared later.
+
+  ## Honesty
+
+  A shielded reading can never sink below the room's noise floor, so the most attenuation any test can prove is the distance between your baseline and that floor. When a reading bottoms out, Faraday reports at least N dB rather than inventing a number, and captions the grade so a result that hit the floor is never mistaken for a verdict on the pouch. The baseline screen names the best grade still reachable, while moving the fob closer would still help.
+
+  It refuses to grade at all if nothing actually transmitted, and reports NO DROP when the shielded reading is not weaker than the baseline, because that is a measurement that did not work rather than zero attenuation.
+
+  Grading is absolute rather than scaled to what your particular setup could achieve, so a weak baseline cannot hand a mediocre pouch an A+ and the saved results stay comparable between pouches.
+changelog: |
+  ## 1.3
+
+  The correctness release. A ten-dimension audit of the firmware turned up 48 confirmed defects, including two that made whole features lie.
+
+  **Added**
+
+  - Find my fob's band. A fob transmits on one band, and which one depends on where the car was sold — 315 MHz across much of North America, 433.92 across Europe, 868 and 915 elsewhere. Hold the fob against the Flipper and this sweeps all four, then offers to save the winner. It refuses to guess, because with no fob pressed at all one room read 315 MHz 14 dB above the other three purely from ambient traffic, and an earlier, looser threshold announced a fob that did not exist.
+
+  **Fixed, measurements that were wrong**
+
+  - Every NFC pouch graded F. The worker cleared the peak-hold on reset and then immediately re-seeded it from its own low-pass, which still held the baseline field, so the shielded capture read back the baseline no matter how good the pouch was.
+  - The NFC test could not be performed at all. It is the Flipper that goes in the pouch, so you cannot see the screen or press a key while the measurement is taken. The shielded half now runs on a timer — arm, measure, freeze — with a countdown on screen, and the frozen peak survives taking the Flipper back out.
+  - The gate that is supposed to stop the app grading thin air was decorative. It wanted 8 dB over the noise floor; measured on a quiet 433.92 MHz channel with nothing transmitting, peak-hold reaches 13 dB within five seconds. It is 20 dB now, chosen from that measurement.
+  - The noise floor climbed onto the carrier it was measuring, so a fob held down for a second dragged the floor up onto its own transmission — after which the app decided nothing was transmitting and shrank every attenuation measured against it. It now creeps only while the channel is genuinely quiet.
+  - Both trackers were seeded from the meter's display scale rather than from the room's ambient, which reported a permanent phantom carrier on a quiet band and an unrecoverably low floor on a noisy one.
+  - The Leak Hunt trace covered about a tenth of a second rather than the sweep you just made, and the hunt went quiet exactly when you found the leak, because the click interval underflowed and clamped to the slowest rate.
+  - A finished test could vanish silently: the result-log write returned a status that was discarded, so a missing or full SD card lost the measurement without warning.
+
+  **Fixed, controls that did not respond**
+
+  - A long press on OK did nothing. The measurement and leak-hunt screens handled short presses only, while the firmware emits long and never short once a key is held past the threshold — on the one control the whole test depends on.
+  - Both radio workers starved the interface with a non-yielding busy-wait at normal thread priority, so the app appeared to ignore buttons. They are now paced in kernel ticks at low priority.
+  - A refused OK changed nothing on screen, which is indistinguishable from a dead button. The action strip now inverts and says why it refused.
+
+  **Changed**
+
+  - Every image in the repository is now captured off a real device over the Flipper's own RPC session. The mockup renderer has been deleted, because a drawing of the interface is a second implementation that can disagree with the firmware while looking convincing.
+
+  Full version history: [CHANGELOG.md](https://github.com/at0m-b0mb/Faraday-FlipperZero/blob/main/CHANGELOG.md)
+screenshots:
+  - screenshots/baseline.png
+  - screenshots/results.png
+  - screenshots/nfc.png
+  - screenshots/band.png
+  - screenshots/hunt.png
+  - screenshots/menu.png

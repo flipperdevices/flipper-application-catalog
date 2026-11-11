@@ -1,0 +1,16 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/sistemasorp/flipper-ld2410_human_detector.git
+    commit_sha: 57cf20e742712946d73f39014c2619a9be6e76e8
+
+id: ld2410_human_detector
+name: "LD2410 Human Detector"
+category: "GPIO"
+author: "Oscar Rodriguez"
+description: "@DESCRIPTION.md"
+short_description: "Human presence detection using HLK-LD2410 mmWave sensor"
+changelog: "@CHANGELOG.md"
+
+screenshots:
+  - "screenshots/screenshot1.png"

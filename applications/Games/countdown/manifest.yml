@@ -1,0 +1,18 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/sistemasorp/flipper-countdown.git
+    commit_sha: 4f60ab4c9b973dcdd2adc5dc496fcc7f13ec1371
+
+id: countdown
+name: "CountDown"
+category: "Games"
+author: "Oscar Rodriguez"
+description: "@README.md"
+short_description: "Solve target number from 6 numbers like the CountDown TV Show"
+changelog: "@./docs/changelog.md"
+
+
+screenshots:
+  - "screenshots/screenshot1.png"
+  - "screenshots/screenshot2.png"

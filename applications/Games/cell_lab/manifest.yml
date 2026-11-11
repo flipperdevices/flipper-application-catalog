@@ -1,0 +1,20 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/PilotOfAsuka/cell_lab_fliperzero.git
+    commit_sha: d9151384c09a4ab6872c2fd4ca562a608c71195a
+
+short_description: A tiny pixel-world life simulator for Flipper Zero.
+description: |
+  Cell Lab is a tiny evolving pixel-world life simulator for Flipper Zero.
+
+  The 128x64 screen becomes a living world where each pixel can be empty, food, or a living cell. Cells spend energy, move, eat, reproduce, mutate, die, and start a new epoch after extinction.
+
+  Each living cell has a compact genome that affects temperature preference, light preference, behavior, metabolism, mutation chance, stress resistance, and cannibalism. The world adds pressure through temperature, radiation, toxins, and crowding.
+
+  The app includes a live world view, a compact world state page, world settings, app settings, smooth page scrolling, and qFlipper screenshots.
+changelog: "@changelog.md"
+screenshots:
+  - screenshots/world.png
+  - screenshots/state.png
+  - screenshots/settings.png

@@ -8,11 +8,14 @@ name: 'Combo Cracker'
 screenshots:
   - 'screenshots/screenshot1.png'
   - 'screenshots/screenshot2.png'
+  - 'screenshots/screenshot3.png'
+  - 'screenshots/screenshot4.png'
+  - 'screenshots/screenshot5.png'
 short_description: 'Crack combo locks in 8 attempts or less'
 sourcecode:
   location:
-    commit_sha: 111964dde0b029730ccf706b633c5f4dc33aea1f
+    commit_sha: a1325a583d5e34320f567e87100f87dd4a0e5c6a
     origin: https://github.com/CharlesTheGreat77/ComboCracker-FZ.git
     subdir:
   type: git
-version: 0.2
+version: 0.5

@@ -1,0 +1,13 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/rdefeo/iconedit.git
+    commit_sha: 82fda63fd980f651e7e2ff678c129221200bac7b
+changelog: "@./CHANGELOG.md"
+description: "@./README_flipperlab.md"
+author: "Roberto De Feo"
+screenshots:
+  - "./screenshots/iconedit_screenshot_1.png"
+  - "./screenshots/iconedit_screenshot_2.png"
+  - "./screenshots/iconedit_screenshot_3.png"
+  - "./screenshots/iconedit_screenshot_4.png"

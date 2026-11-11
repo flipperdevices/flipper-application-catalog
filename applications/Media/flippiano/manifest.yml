@@ -1,0 +1,27 @@
+sourcecode:
+  type: git
+  location: 
+    origin: https://github.com/bergr22/FlipPiano.git
+    commit_sha: 7aa5bd3ec1c2a2596ef766f988214f136cc01b83
+short_description: "14-key 2-octave mini piano app with frequency display and volume controls."
+description: |
+  # FlipPiano
+  A interactive mini piano application for Flipper Zero. Play melodies, view real-time frequencies.
+
+  ## Features
+
+  - 14-key and 2-octave range for playing custom melodies
+  - Real-time frequency display (Hz) for visual feedback on active notes
+  - Dedicated volume control menu to adjust or mute sound output
+  - Clean monochrome pixel UI optimized for the Flipper screen
+
+  ## Controls
+
+  - Left / Right: Navigate between piano keys
+  - OK: Play selected note
+  - Up / Down: Open or close volume settings
+  - BACK: Exit the application
+changelog: "@changelog.md"
+screenshots:
+  - docs/FlipPiano.png
+  - docs/FlipPiano2.png

@@ -1,0 +1,11 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/Adhamura/gitphin.git
+    commit_sha: 6df76f965f269307a8771b2f2f3008d1fc56d217
+    subdir: flipper_app
+description: "@README.md"
+changelog: "@docs/changelog.md"
+screenshots:
+  - screenshots/ss0.png
+  - screenshots/ss1.png
