@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/daniqed/flipper-identity.git
-    commit_sha: a5b446969a6442d0086550861f68fa2b6ad2f9ee
+    commit_sha: 064758188c7118c337f0ee3a4102986d142b198d
     subdir: dnie_reader
 description: "@./docs/README.md"
 changelog: "@./docs/changelog.md"
