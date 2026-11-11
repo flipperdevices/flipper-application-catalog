@@ -3,7 +3,6 @@ sourcecode:
   location:
     origin: https://github.com/NicPWNs/HamCram.git
     commit_sha: e3bac65584c8d46a7591c2b3024b11cb9ee61e2c
-short_description: Offline study for the US ham radio license exams
 description: "@README.md"
 changelog: "@./docs/changelog.md"
 screenshots:
