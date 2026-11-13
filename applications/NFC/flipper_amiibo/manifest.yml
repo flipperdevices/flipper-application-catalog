@@ -1,0 +1,13 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/Soap-n-Cartridge/flipper_amiibo.git
+    commit_sha: a662cd7c335ff46382659382b1075e43b6371cf0
+short_description: Browse amiibo dumps, emulate NTAG215, and sign a new UID per scan.
+description: |
+  Browse amiibo .bin and .nfc dumps on the SD card, emulate them as NTAG215 tags, and sign a new UID for each scan.
+
+  The key file is not included. Place a 160-byte key_retail.bin in apps_data/flipper_amiibo/. A folder named ZE always uses a new UID. A folder named SSB keeps the UID stored in the file.
+changelog: "@changelog.md"
+screenshots:
+  - screenshots/screen1.png
