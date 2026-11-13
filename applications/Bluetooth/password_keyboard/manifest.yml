@@ -1,0 +1,14 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/evgeniyraev/password_keyboard.git
+    commit_sha: 11d5ac2a0f3102b577697da2188999e66e093ad8
+
+short_description: BLE password keyboard with concealed daily-limited passwords
+description: "@README.md"
+changelog: "@docs/changelog.md"
+screenshots:
+  - screenshots/flp0.png
+  - screenshots/flp1.png
+  - screenshots/flp2.png
+  - screenshots/flp3.png
