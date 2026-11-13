@@ -1,0 +1,21 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/pingequalab/5ghost-wifi-lab.git
+    commit_sha: 8b0245b4c32b536016827a58af23da7f4f9b763e
+    subdir: fap
+id: "5ghost_wifi_lab"
+category: "GPIO"
+short_description: "Companion app for the 5Ghost BW16 dual-band Wi-Fi module"
+description: "@description.md"
+changelog: "@changelog.md"
+screenshots:
+  - screenshots/home.png
+  - screenshots/scan-list.png
+  - screenshots/ap-detail.png
+  - screenshots/home-capture.png
+  - screenshots/handshake-pick.png
+  - screenshots/channel-map.png
+  - screenshots/ble-scan.png
+  - screenshots/audit-pick.png
+  - screenshots/create-ap.png
