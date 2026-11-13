@@ -1,0 +1,12 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/daniebker/flipper_ereader.git
+    commit_sha: 2a0aab3d81abee041bf5628c40013c582651c066
+description: "@README.md"
+changelog: "@CHANGELOG.md"
+version: 1.0.0
+screenshots:
+  - screenshots/0.png
+  - screenshots/1.png
+  - screenshots/2.png
