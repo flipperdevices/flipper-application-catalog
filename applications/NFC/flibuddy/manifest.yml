@@ -1,0 +1,17 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/sokogen/flipperzero-flibuddy.git
+    commit_sha: 895eb237913e41a821216fa481e0c91b3f4f1e6b
+    subdir: flipper
+short_description: "Reads Bambu Lab spool NFC tags; logs spools and weights to Bambuddy via the FliBuddy iPhone app"
+description: "@catalog/description.md"
+changelog: "@CHANGELOG.md"
+# Unedited qFlipper exports; the first is the preview (screenshots/README.md).
+screenshots:
+  - screenshots/1_no_app.png
+  - screenshots/2_spool.png
+  - screenshots/3_weight.png
+  - screenshots/4_saved.png
+  - screenshots/5_new_spool.png
+  - screenshots/6_get_app.png
