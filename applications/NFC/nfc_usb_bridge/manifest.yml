@@ -1,0 +1,23 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/Space-Raler/nfc_bridge.git
+    commit_sha: 2ad6765e329c355ac81b8f44706cecb99134b81b
+short_description: USB NFC reader/writer for real cards or .nfc dumps
+description: |
+  # NFC USB Bridge
+
+  Turns the Flipper into a USB NFC reader/writer for your PC, two ways. The card the PC sees is either one you hold to the Flipper, or one you load from a dump / `.nfc` file.
+
+  ## Modes
+  - **PN532 serial**: a second COM port speaking the PN532 protocol. Use with libnfc, libfreefare, nfcpy.
+  - **PC/SC reader**: a USB CCID smart-card reader. Use with `pcsc_scan`, `opensc`, Python `pyscard`, and any PC/SC app.
+
+  ## Features
+  - Supports real NFC cards.
+  - Supports loading virtual cards from `.nfc` files stored on the Flipper's SD card.
+  - Works with MIFARE Classic (Mini/1K/4K), NTAG/Ultralight, and UID-only cards.
+changelog: "@changelog.md"
+screenshots:
+  - screenshots/main_menu.png
+  - screenshots/pn532_mode.png
