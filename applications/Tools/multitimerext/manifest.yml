@@ -1,0 +1,14 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/andybeg/flipper-multitimer-ext.git
+    commit_sha: 3be11d33984f8cac105a5748ef8812dcc4b7172c
+description: "@README.md"
+changelog: "@changelog.md"
+author: "C0d3-5t3w"
+screenshots:
+  - images/screenshot/01_main_menu.png
+  - images/screenshot/02_new_timer.png
+  - images/screenshot/03_settings.png
+  - images/screenshot/04_eink_settings.png
+  - images/screenshot/05_welcome.png
