@@ -1,0 +1,20 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/eric-m-holub/controller-ducky.git
+    commit_sha: 9eeb6e1224a6965ae1b68773b635fb9301d12c44
+short_description: Test app
+description: |
+  Controller Ducky turns your Flipper Zero into a USB game controller, emulating Nintendo Switch Pro, PlayStation DualSense, and Xbox controllers. 
+  Play directly using the Flipper's buttons or automate gameplay with customizable Ducky-style scripts. 
+  Supports button combinations, analog stick inputs, timed actions, and repeatable macros.
+  Tested on real Switch 1/2 Hardware.
+changelog: "@CHANGELOG.md"
+screenshots:
+  - screenshots/switch_pro_controller_screen.png
+  - screenshots/select_controller.png
+  - screenshots/main_menu.png
+  - screenshots/select_script.png
+  - screenshots/run_script.png
+  - screenshots/dualsense_controller_screen.png
+  - screenshots/xbox_controller_screen.png
