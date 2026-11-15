@@ -1,0 +1,16 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/Soap-n-Cartridge/flipper_amiibo.git
+    commit_sha: 683e949c608071ed3a00e8c569eb4fd29f2a312c
+description: "@README.md"
+changelog: "@changelog.md"
+screenshots:
+  - screenshots/screen01.png
+  - screenshots/screen02.png
+  - screenshots/screen03.png
+  - screenshots/screen04.png
+  - screenshots/screen05.png
+  - screenshots/screen06.png
+  - screenshots/screen07.png
+  - screenshots/screen08.png
