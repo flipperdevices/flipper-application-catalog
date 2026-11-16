@@ -1,0 +1,17 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/TONYIVCZ1/tiv_led_hodiny.git
+    commit_sha: 1d90069b1643b986ecf97cdf83e83363
+
+description: >
+  Visualizes real-time clock data using the Flipper Zero RGB LED.
+  Seconds control red, minutes green and hours blue channel.
+  Displays battery status, current time and RTC timestamp.
+
+screenshots:
+  - screenshots/flipper_zero.jpg
+  - screenshots/bat_24h.png
+  - screenshots/nab_24h.png
+  - screenshots/nab_ok_24h.png
+  - screenshots/nab_ok_12h.png
