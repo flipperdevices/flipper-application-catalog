@@ -1,0 +1,11 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/kamylwnb/codex-monitor.git
+    commit_sha: 3473b267e07ed72b5562a9901c74e3fc1c3a45d8
+    subdir: flipper
+short_description: Codex quota and reset timers over Bluetooth or USB
+description: "@description.md"
+changelog: "@changelog.md"
+screenshots:
+  - screenshots/main.png
