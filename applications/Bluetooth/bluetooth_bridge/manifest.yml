@@ -1,0 +1,10 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/excitoon/zero-bluetooth-bridge.git
+    commit_sha: 57e32684bae3beb370a0b384855f82251f0c51a8
+short_description: "Remote management of Flipper Zero over Bluetooth"
+description: "@README.md"
+changelog: "@docs/changelog.md"
+screenshots:
+- screenshots/ss0.png
