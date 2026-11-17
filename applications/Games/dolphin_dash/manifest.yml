@@ -1,0 +1,18 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/rasulkireev/dolphin-dash.git
+    commit_sha: 77f85369eda92a5cb2e59cb1be2ed9e89e64f84a
+short_description: Chase bubbles and dodge the reef in three lanes.
+description: |
+  Every bubble is worth three points. Every bubble has a rock right behind it.
+
+  Swim through three lanes. Each rock you pass earns one point. The game speeds up after 6, 12, and 18 rocks. After a wipeout, try to beat your session best.
+
+  - **Up** and **Down** switch lanes.
+  - **OK** starts a dive or retries after a wipeout.
+  - **Back** exits the game.
+changelog: "@changelog.md"
+screenshots:
+  - screenshots/gameplay.png
+  - screenshots/wipeout.png
