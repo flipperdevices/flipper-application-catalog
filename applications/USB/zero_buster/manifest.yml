@@ -1,0 +1,23 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/DonJulve/Zero_Buster.git
+    commit_sha: "68337528574dcbd54a819a0ca43667c0da15fda4"
+short_description: "Bidirectional BadUSB & USB CDC exfiltration tool"
+description: |
+  Zero Buster combines BadUSB injection with bidirectional USB CDC Virtual COM port communication for direct local data exfiltration without requiring network access.
+  
+  Features:
+  - Automated keystroke execution on Windows (PowerShell) and Linux (Bash).
+  - Dynamic on-the-fly switch to USB CDC to receive incoming exfiltrated telemetry.
+  - Automatic saving of exfiltrated data to MicroSD (/ext/zero_buster/loot/).
+  - Custom hardware spoofing (Logitech K120, Dell, Apple, Flipper, Custom VID/PID editor).
+  - Built-in payloads for system reconnaissance, Wi-Fi password dumps, and file transfers.
+  - Dual layout support (ES and US).
+  - Clean USB teardown on completion or cancellation.
+  
+  See full readme: https://github.com/DonJulve/Zero_Buster/blob/main/README.md
+changelog: "@.catalog/changelog.md"
+screenshots:
+  - .catalog/screenshots/main_menu.png
+
