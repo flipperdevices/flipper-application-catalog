@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/Soap-n-Cartridge/flipper_amiibo.git
-    commit_sha: b074746d6693103fadbfe9c69d7cc5fc8e663a8d
+    commit_sha: f8c5cc6bafa7450cb586c0a96946cac860fbf002
 description: "@README.md"
 changelog: "@changelog.md"
 screenshots:
