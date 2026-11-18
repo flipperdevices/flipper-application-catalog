@@ -1,0 +1,14 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/blackjackprostudio/optimal-blackjack-flipper.git
+    commit_sha: 82cb4dcc124b7d1eb70b17b41cdfc703fe2936af
+    subdir: .
+short_description: Blackjack basic-strategy and card-counting trainer.
+description: "@README.md"
+changelog: "@changelog.md"
+screenshots:
+  - screenshots/table.png
+  - screenshots/chart.png
+  - screenshots/count.png
+  - screenshots/advantage.png
