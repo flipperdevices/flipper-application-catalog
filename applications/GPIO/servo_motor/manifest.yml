@@ -1,0 +1,14 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/alcdaniel/flipper-servo-tester-hw.git
+    commit_sha: 453093f3e601c1f66827dd17e601c17374e7aa4d
+description: "@docs/catalog.md"
+changelog: "@changelog.md"
+screenshots:
+  - screenshots/1_manual.png
+  - screenshots/2_center.png
+  - screenshots/3_sweep.png
+  - screenshots/4_wiring.png
+  - screenshots/5_pulse.png
+  - screenshots/6_safety.png
