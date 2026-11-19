@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/ANTONiO-eagle/badusb-ducky-lang.git
-    commit_sha: 38a4a512327c299779387279db36d63140784d07
+    commit_sha: 9edb72a7e3768a665b2335decb2f791522cd25c9
 short_description: BadUSB with persistent default keyboard layouts and a DuckyScript DUCKY_LANG command.
 description: >-
   A community external app for Flipper Zero BadUSB. Adds a saved default
