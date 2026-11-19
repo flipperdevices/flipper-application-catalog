@@ -1,0 +1,12 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/gztproject/avr-updi.git
+    commit_sha: 690774c5705b9f4bb3ce3e8959077c56a30621db
+short_description: Program AVR microcontrollers over UPDI
+description: "@README.md"
+changelog: "@docs/changelog.md"
+screenshots:
+  - screenshots/ss0.png
+  - screenshots/ss1.png
+  - screenshots/ss2.png
