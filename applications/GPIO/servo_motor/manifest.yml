@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/alcdaniel/flipper-servo-tester-hw.git
-    commit_sha: 453093f3e601c1f66827dd17e601c17374e7aa4d
+    commit_sha: da5549b0849fafa52a319e98c69ec7218fedfa04
 description: "@docs/catalog.md"
 changelog: "@changelog.md"
 screenshots:
