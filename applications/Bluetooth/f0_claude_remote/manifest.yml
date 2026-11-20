@@ -1,0 +1,16 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/petr-korobeinikov/f0-claude-remote.git
+    commit_sha: afaf7a20634116c46c43a2fb5284fc6ef8a94d5e
+description: "@catalog/description.md"
+changelog: "@catalog/changelog.md"
+screenshots:
+  - asset/screenshot/main.png
+  - asset/screenshot/main-usb.png
+  - asset/screenshot/voice-bt.png
+  - asset/screenshot/no-link-bt.png
+  - asset/screenshot/no-link-usb.png
+  - asset/screenshot/voice-cut-bt.png
+  - asset/screenshot/stopped-bt.png
+  - asset/screenshot/options-bt.png
