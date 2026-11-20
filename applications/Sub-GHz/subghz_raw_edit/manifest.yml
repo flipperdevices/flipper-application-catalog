@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/Lechnio/SubGHz-RAW-Edit.git
-    commit_sha: 49a12e37a8c940a1665477bb41eb25d21bc82721
+    commit_sha: ff171e7dc0f7cf2ee0f9e4c38f65ac28920f38e5
 short_description: "A tiny on-device waveform editor for Flipper Zero that trims RAW .sub captures down to just the part you care about."
 description: |
   A tiny on-device waveform editor for Flipper Zero that trims RAW .sub
