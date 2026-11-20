@@ -1,0 +1,27 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/gbhobbytech/flipper-servo-tester.git
+    commit_sha: 50b01db47d4fefcfa2fb9a41075847c43c2b1fc7
+description: |
+  Servo Tester+ tests hobby servos using the Flipper Zero GPIO header.
+
+  ## Features
+  - Manual, center and sweep modes
+  - 10 degree manual adjustments
+  - On-screen wiring instructions
+  - Automatically enables the Flipper GPIO 5 V rail
+
+  ## Wiring
+  - Pin 1: servo positive, 5 V
+  - Pin 2 (PA7): servo signal, 3.3 V logic
+  - GND: servo ground
+
+  The Flipper 5 V rail is rated up to 1.2 A. Use an external supply if the servo needs more current, and connect its ground to Flipper GND.
+
+  Servo travel varies by model. The author's MG90S reached about 90 degrees of physical travel with version 0.5. Please report your servo model, Flipper firmware, power source and observed travel in [GitHub Issues](https://github.com/gbhobbytech/flipper-servo-tester/issues/new). Avoid holding a servo against its mechanical end stops.
+changelog: "@CHANGELOG.md"
+screenshots:
+  - "./screenshots/Screenshot-20261026-153137.png"
+  - "./screenshots/Screenshot-20261026-153147.png"
+  - "./screenshots/Screenshot-20261026-153156.png"

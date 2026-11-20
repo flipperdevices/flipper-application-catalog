@@ -1,0 +1,14 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/gbhobbytech/ssd1306_test.git
+    commit_sha: fc0c57da888547d1762c2df2b5df6ac872e301f9
+
+description: "@DESCRIPTION.md"
+changelog: "@CHANGELOG.md"
+
+screenshots:
+  - screenshots/screen1.png
+  - screenshots/screen2.png
+  - screenshots/screen3.png
+  - screenshots/screen4.png
