@@ -1,0 +1,12 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/luvrltop/ReactionTime.git
+    commit_sha: fd706fd314fd53942dbb0f81db44a44147e8f01b
+description: "@docs/description.md"
+changelog: "@changelog.md"
+screenshots:
+  - screenshots/start_screen.png
+  - screenshots/wait_for_signal_to_react.png
+  - screenshots/time_to_react.png
+  - screenshots/reaction_time_result.png
