@@ -1,0 +1,17 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/its-sven/vaultflipper.git
+    commit_sha: 389738d2f1b46bd7c9da11376fe34ffb82b3553b
+    subdir: flipper/vaultflipper
+description: "@./docs/README.md"
+changelog: "@./docs/changelog.md"
+author: "@its-sven"
+screenshots:
+  - "./docs/screenshots/2-home.png"
+  - "./docs/screenshots/4-entries.png"
+  - "./docs/screenshots/5-card.png"
+  - "./docs/screenshots/8-codes.png"
+  - "./docs/screenshots/9-code.png"
+  - "./docs/screenshots/7-settings.png"
+  - "./docs/screenshots/1-pin.png"
