@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/rseufert/yulia_cats.git
-    commit_sha: 3f3ae91da850bb9fb556533491384c3cfa73edb1
+    commit_sha: 697ee9c36cbd74ccc1a1d951ffe47710350f17be
 description: "@docs/description.md"
 changelog: "@docs/changelog.md"
 screenshots:
@@ -15,4 +15,3 @@ screenshots:
   - screenshots/ss6.png
   - screenshots/ss7.png
   - screenshots/ss8.png
-  - screenshots/ss9.png
