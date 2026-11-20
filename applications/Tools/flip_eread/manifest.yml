@@ -2,10 +2,10 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/daniebker/flipper_ereader.git
-    commit_sha: 2a0aab3d81abee041bf5628c40013c582651c066
-description: "@README.md"
+    commit_sha: fda28fae161632064ed285fa44d23673b57adc35
+    description: "Read plain-text (.txt) books from the SD card."
 changelog: "@CHANGELOG.md"
-version: 1.0.0
+version: 1.2.0
 screenshots:
   - screenshots/0.png
   - screenshots/1.png
