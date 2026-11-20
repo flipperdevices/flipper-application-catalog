@@ -1,0 +1,14 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/boeheimjonas-rgb/keilerei-flipper.git
+    commit_sha: 9de78729eacf10f87b3b86c3ce4f25760da58065
+short_description: "LCD brawler: enemy waves, weapons in crates, changing arenas"
+description: "@docs/catalog.md"
+changelog: "@docs/changelog.md"
+screenshots:
+  - "screenshots/screen1.png"
+  - "screenshots/screen2.png"
+  - "screenshots/screen3.png"
+  - "screenshots/screen4.png"
+  - "screenshots/screen5.png"
