@@ -3,7 +3,6 @@ sourcecode:
   location:
     origin: https://github.com/rasulkireev/dolphin-dash.git
     commit_sha: 77f85369eda92a5cb2e59cb1be2ed9e89e64f84a
-short_description: Chase bubbles and dodge the reef in three lanes.
 description: |
   Every bubble is worth three points. Every bubble has a rock right behind it.
 
