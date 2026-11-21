@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/Tobirg/z5flip.git
-    commit_sha: 4fad10a4158bce08a7f23ca93b0b2779936906cb
+    commit_sha: 76dcc837ad6ef8edf404f0d0608ef174e432d105
 description: "@README.md"
 changelog: "@CHANGELOG.md"
 screenshots:
