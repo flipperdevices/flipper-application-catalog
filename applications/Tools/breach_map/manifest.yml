@@ -1,0 +1,12 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/Gerijacki/BreachMap.git
+    commit_sha: a3bae3a3ba955ddafb79f0bf661c5af5ba2e01eb
+description: "@docs/catalog-description.md"
+changelog: "@docs/changelog.md"
+screenshots:
+  - screenshots/ss0.png
+  - screenshots/ss1.png
+  - screenshots/ss2.png
+  - screenshots/ss3.png
