@@ -1,0 +1,13 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/cruzer45/rf-studio.git
+    commit_sha: 21e57fa6d5c83ef82847b01b364c2fb22d2fc61f
+short_description: Build and operate virtual Sub-GHz remotes from captured signals
+description: "@catalog/description.md"
+changelog: "@changelog.md"
+screenshots:
+  - screenshots/1_remote.png
+  - screenshots/2_menu.png
+  - screenshots/3_capture.png
+  - screenshots/4_library.png
