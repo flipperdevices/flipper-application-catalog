@@ -2,8 +2,8 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/mtoolstec/flipper-mtools.git
-    commit_sha: 6d32ff9c2e19ea95d3f904f1e57e7658f9059eee
-short_description: Magic tag tools for MIFARE Classic and ISO15693
+    commit_sha: f89b3d3607770f3fc7503468525337a3b0455d44
+short_description: Magic tag tools for MIFARE Classic, Ultralight, and ISO15693
 description: "@CATALOG.md"
 changelog: "@CHANGELOG.md"
 screenshots:
