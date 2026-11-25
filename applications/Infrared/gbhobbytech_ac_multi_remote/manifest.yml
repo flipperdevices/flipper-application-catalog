@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/gbhobbytech/flipper-ac-multi-remote.git
-    commit_sha: 62da774eacd06460a07baea420e148e0c2693550
+    commit_sha: 3e0e74a72d53bbbd54e53cf60cb2aa61ff35882c
 
 short_description: Multi-profile infrared controller for air conditioners
 
