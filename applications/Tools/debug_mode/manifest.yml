@@ -1,0 +1,13 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/deanmachinedev/debug_mode.git
+    commit_sha: 6b2857e9d883cc2fb2a6b451112cab702b8b0d24
+short_description: A pocket debugging notebook for messy real problems.
+description: "@README.md"
+changelog: "@changelog.md"
+screenshots:
+  - screenshots/ss0.png
+  - screenshots/ss1.png
+  - screenshots/ss2.png
+  - screenshots/ss3.png
