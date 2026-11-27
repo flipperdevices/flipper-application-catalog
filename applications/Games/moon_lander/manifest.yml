@@ -1,0 +1,12 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/FToThe3rdPower/flipperMoonLander.git
+    commit_sha: f7169d26721e9af33bcd57432f0d6ae6cce6f15b
+description: "@docs/description.md"
+changelog: "@changelog.md"
+screenshots:
+  - screenshots/gameplay.png
+  - screenshots/mainMenu.png
+  - screenshots/crashed.png
+  - screenshots/landed.png
