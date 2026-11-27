@@ -1,0 +1,10 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/kamylwnb/codex-monitor.git
+    commit_sha: 75eb8c8694b4e170919d8378827c5504a7ae2870
+    subdir: flipper
+description: "@description.md"
+changelog: "@changelog.md"
+screenshots:
+  - screenshots/main.png
