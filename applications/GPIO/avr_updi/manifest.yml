@@ -3,15 +3,8 @@ sourcecode:
   location:
     origin: https://github.com/gztproject/avr-updi.git
     commit_sha: 176685a31f2e8193828fd3868656af4eb088ff4d
-id: avr_updi
-name: AVR UPDI
-category: GPIO
-version: "0.2"
-author: gztproject
-icon: updi_10px.png
 targets:
   - all
-short_description: Program AVR microcontrollers over UPDI (flash, EEPROM, fuses, SerialUPDI)
 description: "@README.md"
 changelog: "@docs/changelog.md"
 screenshots:
