@@ -1,0 +1,9 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/martinelsner/flipper-zero-ducobox.git
+    commit_sha: 82bbf6f1bb2c2be9625964745cb3170c07ea0bef
+description: "@CATALOG.md"
+changelog: "@changelog.md"
+screenshots:
+  - screenshots/ss0.png
