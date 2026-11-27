@@ -1,0 +1,16 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/NirochiCode/flipper-dhikr.git
+    commit_sha: 69eb7dfbd8d732cb10ecf7bf42b047751558821d
+description: "@docs/catalog-description.md"
+changelog: "@docs/catalog-changelog.md"
+screenshots:
+  - screenshots/catalog/01-counter.png
+  - screenshots/catalog/02-target-reached.png
+  - screenshots/catalog/03-dhikr-profiles.png
+  - screenshots/catalog/04-profile-details.png
+  - screenshots/catalog/05-view-progress.png
+  - screenshots/catalog/06-reset-confirmation.png
+  - screenshots/catalog/07-counter-feedback.png
+  - screenshots/catalog/08-target-feedback.png
