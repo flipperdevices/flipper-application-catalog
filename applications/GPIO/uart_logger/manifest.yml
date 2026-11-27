@@ -3,7 +3,6 @@ sourcecode:
   location:
     origin: https://github.com/2p4g0/flipper-uart-logger.git
     commit_sha: 80f58139b460ed72958ec2855fb6cb7c9a2ef123
-short_description: Log UART (USART/LPUART) data to SD card in text or hex
 description: "@README.md"
 changelog: "@./docs/changelog.md"
 screenshots:
