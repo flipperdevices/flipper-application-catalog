@@ -1,0 +1,10 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/DuskEngServices/lanternfall-flipper.git
+    commit_sha: decd855719d1837435272efa16ada9447ac37d43
+description: "@docs/description.md"
+changelog: "@docs/changelog.md"
+screenshots:
+  - "screenshots/2_night_village.png"
+  - "screenshots/1_title.png"
