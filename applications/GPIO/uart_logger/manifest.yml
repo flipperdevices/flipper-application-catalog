@@ -1,0 +1,11 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/2p4g0/flipper-uart-logger.git
+    commit_sha: 80f58139b460ed72958ec2855fb6cb7c9a2ef123
+description: "@README.md"
+changelog: "@./docs/changelog.md"
+screenshots:
+  - screenshots/ss0.png
+  - screenshots/ss1.png
+  - screenshots/ss2.png

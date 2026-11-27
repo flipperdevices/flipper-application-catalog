@@ -1,0 +1,15 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/Tobirg/z5flip.git
+    commit_sha: 76dcc837ad6ef8edf404f0d0608ef174e432d105
+description: "@README.md"
+changelog: "@CHANGELOG.md"
+screenshots:
+  - screenshots/main.png
+  - screenshots/connection.png
+  - screenshots/base.png
+  - screenshots/add_key.png
+  - screenshots/waiting.png
+  - screenshots/keys.png
+  - screenshots/reading.png

@@ -1,0 +1,9 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/kamylwnb/DrMosfetCan.git
+    commit_sha: 8e0e7d2141d979f50ae64e933e21c947747e30ba
+description: "@docs/catalog.md"
+changelog: "@changelog.md"
+screenshots:
+  - screenshots/bridge.png
