@@ -1,0 +1,13 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/ZombieDolphin/BadUSB_MSC.git
+    commit_sha: 74f7681ae059917669fc33ee00eadb1099f9d539
+
+description: "@docs/catalog_description.md"
+changelog: "@docs/catalog_changelog.md"
+
+screenshots:
+  - screenshots/ss0.png
+  - screenshots/ss1.png
+  - screenshots/ss2.png
