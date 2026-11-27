@@ -1,0 +1,17 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/ANTONiO-eagle/badusb-ducky-lang.git
+    commit_sha: 9edb72a7e3768a665b2335decb2f791522cd25c9
+short_description: BadUSB with persistent default keyboard layouts and a DuckyScript DUCKY_LANG command.
+description: >-
+  A community external app for Flipper Zero BadUSB. Adds a saved default
+  keyboard layout and a DUCKY_LANG script command that switches the layout
+  for subsequent text. It uses the native layout-file format from compatible
+  firmware; this is not Unicode keyboard support, and non-ASCII UTF-8 text is
+  rejected. The computer's active keyboard layout must match the selected
+  Flipper layout. This independent community app is not an official Flipper
+  Devices release. Use scripts only on systems you own or have permission to test.
+changelog: "@changelog.md"
+screenshots:
+  - screenshots/ss0.png
