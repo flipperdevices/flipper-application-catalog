@@ -1,0 +1,13 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/smolbun/flipper-cepas.git
+    commit_sha: aa4eeaec195cd9097215b4d6956cc2dace743937
+description: "@docs/catalog_description.md"
+changelog: "@CHANGELOG.md"
+screenshots:
+  - screenshots/1_main.png
+  - screenshots/2_history.png
+  - screenshots/3_history_next.png
+  - screenshots/4_detail.png
+  - screenshots/5_scan.png
