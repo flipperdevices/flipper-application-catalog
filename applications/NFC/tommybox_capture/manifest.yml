@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/mitchsurp/Tonies-Capture-Flipper.git
-    commit_sha: 7d2e2ece00d6309ae5de3f0ec7c14277e8887c0d
+    commit_sha: 90f325786fef393dfd39fa14e2d50ac885aa3af3
 
 description: "@docs/description.md"
 changelog: "@docs/changelog.md"
@@ -11,3 +11,4 @@ screenshots:
   - screenshots/01_saved.png
   - screenshots/02_menu.png
   - screenshots/03_audit.png
+  - screenshots/04_settings.png
