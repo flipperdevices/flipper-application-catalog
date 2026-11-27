@@ -1,0 +1,12 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/Radiomanrf/Survival_manual.git
+    commit_sha: 6f957c7d6996af30ee451c4a241693ddb44209f9
+description: "@README.md"
+changelog: "@changelog.md"
+author: "Louis (@Radiomanrf)"
+screenshots:
+  - "screenshots/list.png"
+  - "screenshots/selection.png"
+  - "screenshots/text.png"
