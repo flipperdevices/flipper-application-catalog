@@ -1,0 +1,17 @@
+# Flipper Application Catalog manifest for Optimal Blackjack.
+# This file goes in the CATALOG repo at:
+#   applications/Games/optimal_blackjack/manifest.yml
+# name / id / category / version / author / icon are read from application.fam.
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/blackjackprostudio/optimal-blackjack-flipper.git
+    commit_sha: 70751c7ff65877c3580f4c61abbe2f5942c70703
+    subdir: .
+description: "@README.md"
+changelog: "@changelog.md"
+screenshots:
+  - screenshots/table.png
+  - screenshots/chart.png
+  - screenshots/count.png
+  - screenshots/advantage.png

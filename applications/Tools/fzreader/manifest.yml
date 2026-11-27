@@ -1,0 +1,14 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/Leptopt1los/fzreader.git
+    commit_sha: c9b4e1e38939ed382e60ae6682c3a7e259b8b822
+description: "@README.md"
+changelog: "@.catalog/CHANGELOG.md"
+screenshots:
+  - ".catalog/screenshots/1.png"
+  - ".catalog/screenshots/2.png"
+  - ".catalog/screenshots/3.png"
+  - ".catalog/screenshots/4.png"
+  - ".catalog/screenshots/5.png"
+  - ".catalog/screenshots/6.png"
