@@ -1,0 +1,55 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/pavelzaitsau/airrounds.git
+    commit_sha: 912fb90b0897adb18b9d56478aa6c9094cfc39db
+    subdir: flipper
+
+short_description: Passive, receive-only Wi-Fi capture for the ESP32-S2 Devboard.
+
+description: |
+  ## AirRounds
+
+  AirRounds runs passive Wi-Fi capture sessions on the ESP32-S2 Wi-Fi
+  Devboard. Scan nearby 2.4 GHz networks, select the approved access points,
+  and capture to the Devboard microSD card. The app and its public firmware
+  are receive-only and add no transmit path.
+
+  ## Hardware
+
+  Requires the Flipper Zero ESP32-S2 Wi-Fi Devboard running the AirRounds
+  board firmware. Close the Flipper USB-to-UART Bridge before opening
+  AirRounds, and keep the Devboard powered during a session.
+
+  ## Using the app
+
+  - **Scan area** finds nearby beacons. Select one to five points and press
+    Right on **Start**.
+  - **Capture** shows the current network and the captured point count. Press
+    OK on **Stop** to end the round.
+  - **Saved** marks a verified beacon capture and receipt. **Not seen** marks a
+    finished visit with no matching beacon.
+  - **Capture mode** picks Beacon or EAPOL for the next round. EAPOL appears
+    once the board reports support.
+  - **About** shows the app and board firmware versions.
+
+  Older boards fall back to a manual profile flow with one to three points,
+  stored on the Flipper card.
+
+  Source and documentation:
+  [github.com/pavelzaitsau/airrounds](https://github.com/pavelzaitsau/airrounds)
+
+changelog: |
+  ## 0.2
+  - Show the capture type on the capture screen.
+  - Accept every hashcat message pair in the EAPOL check.
+
+  ## 0.1
+  - First release: passive beacon and EAPOL capture to the Devboard SD card.
+
+screenshots:
+  - screenshots/01-menu.png
+  - screenshots/02-scanning.png
+  - screenshots/03-networks.png
+  - screenshots/04-capture.png
+  - screenshots/05-about.png
