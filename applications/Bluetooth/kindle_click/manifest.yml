@@ -1,0 +1,12 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/zuyan9/Flipper-Zero-Kindle-Click.git
+    commit_sha: a8cfd74c5b8ea52f8bb59e653ab05dd03472a7f0
+description: "@docs/description.md"
+changelog: "@docs/changelog.md"
+screenshots:
+  - screenshots/ss0.png
+  - screenshots/ss1.png
+  - screenshots/ss2.png
+  - screenshots/ss3.png

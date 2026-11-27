@@ -1,0 +1,13 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/thecoolguy2001/flipper-motion-lab.git
+    commit_sha: c32e4b71c5cf1af9e2f66e01331d555fd26d32d9
+description: "@catalog_description.md"
+changelog: "@changelog.md"
+screenshots:
+  - screenshots/01-home.png
+  - screenshots/02-swing-meter-ready.png
+  - screenshots/03-swing-result.png
+  - screenshots/04-logger.png
+  - screenshots/05-logger-recording.png

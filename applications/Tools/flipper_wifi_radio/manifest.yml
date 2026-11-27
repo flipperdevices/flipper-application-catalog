@@ -1,0 +1,13 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/thecoolguy2001/flipper-wifi-radio.git
+    commit_sha: b2baba7465328fa02cd00bbfb94577e32c4e2e4f
+description: "@catalog_description.md"
+changelog: "@changelog.md"
+screenshots:
+  - screenshots/01-menu.png
+  - screenshots/02-choose-track.png
+  - screenshots/03-on-air.png
+  - screenshots/04-settings.png
+  - screenshots/05-about.png

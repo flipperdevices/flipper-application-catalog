@@ -1,0 +1,15 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/jahziel1/Elementis-Zeta.git
+    commit_sha: 81bb375a9cc33d56cd94efbfa4df67d8701ce312
+    subdir: nucleo
+description: "@catalog/description.md"
+changelog: "@catalog/changelog.md"
+screenshots:
+  - catalog/screenshots/01_title.png
+  - catalog/screenshots/02_town.png
+  - catalog/screenshots/03_route.png
+  - catalog/screenshots/04_battle.png
+  - catalog/screenshots/05_registry.png
+  - catalog/screenshots/06_party.png

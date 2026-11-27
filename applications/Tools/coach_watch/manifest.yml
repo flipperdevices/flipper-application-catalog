@@ -1,0 +1,11 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/alaviation/flipper-coach-watch.git
+    commit_sha: e6900dd01750b88dd7544d636e22f47b9081f89e
+description: "@catalog.md"
+changelog: "@changelog.md"
+screenshots:
+  - screenshots/0.png
+  - screenshots/1.png
+  - screenshots/2.png

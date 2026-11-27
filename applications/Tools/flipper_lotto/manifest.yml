@@ -1,0 +1,11 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/molykima/Flipper-Lottery-Number-Generator.git
+    commit_sha: 4a592b8e6e0cc1c01944712bd4c50c86acf9072e
+description: "@README.md"
+changelog: "@docs/changelog.md"
+screenshots:
+  - screenshots/ss0.png
+  - screenshots/ss1.png
+  - screenshots/ss2.png

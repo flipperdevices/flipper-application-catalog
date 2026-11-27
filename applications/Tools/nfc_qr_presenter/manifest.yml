@@ -1,0 +1,11 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/RogerF5-Security/NFC_QR_Presenter.git
+    commit_sha: 843b96e8ed3e5a2fb5a665c5af4467b9dd2f002c
+description: "@docs/catalog_description.md"
+changelog: "@docs/changelog.md"
+screenshots:
+  - screenshots/ss0.png
+  - screenshots/ss1.png
+  - screenshots/ss2.png

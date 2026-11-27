@@ -1,0 +1,12 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/cobanov/kota.git
+    commit_sha: c8b0fd6bd0188d3d9eb5b5798e5daf7006be37b2
+    subdir: flipper
+short_description: Claude plan usage (session and weekly limits) over Bluetooth
+description: "@README.md"
+changelog: "@changelog.md"
+author: "@cobanov"
+screenshots:
+  - screenshots/1.png
