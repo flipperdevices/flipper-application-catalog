@@ -3,7 +3,6 @@ sourcecode:
   location:
     origin: https://github.com/DuskEngServices/lanternfall-flipper.git
     commit_sha: decd855719d1837435272efa16ada9447ac37d43
-short_description: "Lantern-lit action RPG: procedural island, villages, day and night, storms."
 description: "@docs/description.md"
 changelog: "@docs/changelog.md"
 screenshots:
