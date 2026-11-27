@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/xMasterX/all-the-plugins.git
-    commit_sha: 1066d17ad1e8fbf75cea5c6612d79ba539ec8a33
+    commit_sha: 17a788eb2f14006cdfb44ccfda186bf97a8fe9b1
     subdir: apps_source_code/esubghz_chat
 description: "@README.md"
 changelog: "v1.1 - Release, v1.2 - Fixes and imporvements"
