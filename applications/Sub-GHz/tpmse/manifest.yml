@@ -1,0 +1,23 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/teiksef/TPMS-Editor-TxF.git
+    commit_sha: 90fc3cb1f87c60444d4b4fef6b8b0dedbcc60f13
+    subdir: 
+description: "@README.md"
+changelog: "@CHANGELOG.md"
+screenshots:
+  - "./catalog/screenshots/tpmse00.png"
+  - "./catalog/screenshots/tpmse01.png"
+  - "./catalog/screenshots/tpmse02.png"
+  - "./catalog/screenshots/tpmse03.png"
+  - "./catalog/screenshots/tpmse04.png"
+  - "./catalog/screenshots/tpmse05.png"
+  - "./catalog/screenshots/tpmse06.png"
+  - "./catalog/screenshots/tpmse07.png"
+  - "./catalog/screenshots/tpmse08.png"
+  - "./catalog/screenshots/tpmse09.png"
+  - "./catalog/screenshots/tpmse10.png"
+  - "./catalog/screenshots/tpmse11.png"
+  - "./catalog/screenshots/tpmse12.png"
+
