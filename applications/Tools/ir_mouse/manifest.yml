@@ -1,0 +1,12 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com
+    commit_sha: df51cc3df1e8b62f61fec4f978c1d2b084f62bba
+short_description: Wireless BLE IR remote and webcam Wii-style pointer
+description: "@README.md"
+changelog: "Initial v1.0.0 release"
+screenshots:
+  - screenshots/Screenshot-20261127-184001.png
+  - screenshots/Screenshot-20261127-184029.png
+  - screenshots/Screenshot-20261127-184040.png
